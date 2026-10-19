@@ -73,7 +73,7 @@ async function showStatus(){
   $('packDetails').textContent=s.ready?info.boilers+' boilers · '+info.gasFires+' gas fires · '+Math.ceil(s.totalBytes/1024/1024)+' MB verified · version '+info.appVersion+' · pack '+s.buildId:'First online download and verification is required before offline use.';
   if(!s.ready&&s.reason)notice('Offline copy unavailable: '+s.reason+'. Reconnect, check for an update, then close and reopen the app.');
 }
-function showWaiting(){if(registration?.waiting&&registration.active&&navigator.serviceWorker.controller)notice('An update has downloaded. Finish your current lookup, close all Boiler Assist app/browser windows, then reopen to use it. Your current guide will not be replaced while it is open.');}
+function showWaiting(){if(registration?.waiting&&registration.active&&navigator.serviceWorker.controller)notice('Update ready. Finish this lookup, close Boiler Assist and reopen.');}
 $('checkUpdates').onclick=async()=>{
   if(!navigator.onLine){notice('Reconnect before checking for updates. Your verified saved library can still be used.');return;}
   try{await registration?.update();showWaiting();await showStatus();if(!registration?.waiting)notice('Update check completed. The saved pack date does not certify that every manufacturer source is the latest revision.');}

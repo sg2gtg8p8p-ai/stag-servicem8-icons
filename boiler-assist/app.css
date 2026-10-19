@@ -33,3 +33,35 @@ main>*,#detailView,#tabs,#detailContent,#detailContent>*{min-inline-size:0;max-i
 /* Existing practical-guide helper and oil selectors use the current phone theme. */
 .engineer-guide{--stag-surface:#182225;--stag-ink:#f4f8f8;min-inline-size:0;max-inline-size:100%}
 .fga-context-picker{box-sizing:border-box;width:100%;min-width:0;max-width:100%}
+
+/* Shared simple navigation for every catalogue record. Source content stays unchanged. */
+#offlineBar{position:relative!important;padding:8px 14px!important}
+#offlineBar .app-actions{flex-wrap:nowrap!important}
+#offlineBar strong{font-size:14px!important}
+#offlineBar #resumeGuide{display:none!important}
+#offlineStatus[data-ready=true]{display:none!important}
+#appNotice{font-size:13px!important;line-height:1.4!important}
+#installHelp{font-size:12px!important;min-height:40px!important}
+body:has(#detailView:not([hidden])) .stag-themed-banner{display:none!important}
+#detailTitle{font-size:25px!important;margin:15px 0 6px!important;overflow-wrap:anywhere}
+#detailMeta{font-size:14px!important;margin:6px 0!important}
+#verification{font-size:13px!important;margin:10px 0 16px!important;padding:10px!important;line-height:1.45!important}
+#verification>span:first-child{display:none!important}
+#verification>button{display:none!important}
+#verification .service-coverage-badge{display:block!important;margin:8px 0 0!important;font-size:13px!important}
+#tabs.simple-menu{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:10px!important;padding:0!important;margin:0!important;position:static!important}
+#tabs.simple-menu .simple-section-button,#tabs.simple-menu .simple-more button{display:block!important;width:100%!important;max-width:none!important;min-height:58px!important;border-radius:9px!important;padding:13px!important;font-size:17px!important;text-align:center!important;background:#182225!important;color:#f4f8f8!important;border:1px solid #536c72!important}
+.simple-more{padding:12px;border:1px solid #40565b;border-radius:9px}.simple-more summary{font-size:15px}.simple-more button{margin-top:9px!important}
+#tabs.simple-section-nav{display:block!important;position:static!important;margin:12px 0!important;padding:0!important}
+#tabs.simple-section-nav>button{display:block!important;font-size:15px!important;min-height:44px!important}
+#detailContent{scroll-margin-top:10px}#detailContent[hidden]{display:none!important}
+#detailContent h3{font-size:22px!important}
+.simple-reading-table{width:100%;border-collapse:collapse;table-layout:fixed;background:#182225;border:1px solid #40565b;border-radius:8px}
+.simple-reading-table th,.simple-reading-table td{text-align:left;padding:12px 10px;vertical-align:top;border-bottom:1px solid #40565b;overflow-wrap:anywhere;font-size:15px;line-height:1.45}
+.simple-reading-table th{width:47%;color:#b8cbce;font-weight:600}.simple-reading-table td{font-weight:700;color:#f4f8f8}
+.simple-reading-table .references{font-size:11px;font-weight:400;margin-top:5px}.simple-reading-table .references summary{font-size:11px}
+.simple-turn-cues{display:grid;gap:8px;margin:12px 0;padding:10px;border:1px solid #56bcb4;border-radius:8px;background:#073e3c}
+.simple-turn-line{display:flex;gap:10px;align-items:center;font-size:15px}.simple-turn-arrow{font-size:36px;line-height:1}
+.inline-manual{display:block!important;min-width:0;width:100%;margin:14px 0;padding:10px;border:1px solid #40565b;border-radius:10px;background:#182225;box-sizing:border-box}
+.inline-manual canvas{display:block;width:100%;height:auto;background:white}.inline-manual figcaption{font-size:12px;color:#b8cbce;line-height:1.45;margin-top:8px;overflow-wrap:anywhere}.inline-manual button{font-size:14px;min-height:44px;margin:8px 0}.inline-manual p{font-size:14px}
+.inline-manual-dialog{max-width:96vw;width:1000px;max-height:94vh;background:#182225;color:#f4f8f8;border:1px solid #56bcb4;border-radius:10px;padding:10px}.inline-manual-dialog::backdrop{background:#000b}.inline-manual-dialog>button{position:sticky;top:0;z-index:1}.inline-manual-zoom{overflow:auto;max-height:80vh;background:white}.inline-manual-zoom canvas{display:block;width:900px;max-width:none;height:auto}
