@@ -1,0 +1,17 @@
+#offlineBar{position:sticky;top:0;z-index:20;background:#101719;border-bottom:1px solid #40565b;padding:8px max(12px,env(safe-area-inset-left));padding-top:max(8px,env(safe-area-inset-top));font:14px/1.4 system-ui;color:#f4f8f8}
+#offlineBar .app-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+#offlineBar strong{font-size:15px;margin-right:auto;color:#56ddd0}
+#offlineBar button{font-size:13px;min-height:44px;padding:8px 11px}
+#offlineStatus{margin:5px 0 0;color:#b8cbce;font-size:12px}
+#offlineStatus[data-ready=true]{color:#b7fff1}
+#appNotice{margin:6px 0 0;padding:9px;background:#30291c;color:#ffd390;border-radius:7px}
+.online-source-label{display:block;color:#b8cbce;font-size:12px;margin:4px 0 8px}
+.stag-theme-art{width:150px!important;margin-bottom:8px!important}
+main{padding:14px!important;padding-bottom:max(24px,env(safe-area-inset-bottom))!important}
+#installDialog{max-width:min(94vw,620px);max-height:90vh;overflow:auto;background:#182225;color:#f4f8f8;border:1px solid #617d83;border-radius:12px;padding:20px;line-height:1.55}
+#installDialog::backdrop{background:#0009}
+#installDialog button{margin:5px 5px 5px 0}
+#installDialog h2{font-size:22px}
+#installDialog li{margin:8px 0}
+#installDialog .small{font-size:13px;color:#b8cbce}
+@media(max-width:360px){#offlineBar .app-actions{gap:5px}#offlineBar strong{width:100%}#offlineBar button{flex:1}}
