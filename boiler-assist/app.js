@@ -23,7 +23,44 @@ document.addEventListener('visibilitychange',writeSelection);
 window.addEventListener('scroll',()=>{clearTimeout(saveTimer);saveTimer=setTimeout(writeSelection,150);},{passive:true});
 document.addEventListener('click',e=>{const a=e.target.closest?.('a[href]');if(!a)return;let u;try{u=new URL(a.href);}catch{return;}if(u.protocol==='https:'&&u.origin!==location.origin&&navigator.onLine===false){e.preventDefault();notice('This source PDF or website is not downloaded. Reconnect to open the official source, or use a copy you already saved in Files.');}},true);
 $('resumeGuide').onclick=()=>{const v=readSelection();if(!v||!records.some(r=>r.id===v.recordId))return;restore=v;window.dispatchEvent(new CustomEvent('stag-open-standalone-record',{detail:{recordId:v.recordId,section:v.section}}));};
-$('installHelp').onclick=()=>$('installDialog').showModal();
+const standaloneDisplay=window.matchMedia?.('(display-mode: standalone)');
+function showAppMode(){
+  const asApp=standaloneDisplay?.matches===true||navigator.standalone===true;
+  $('appModeStatus').dataset.mode=asApp?'app':'browser';
+  $('appModeStatus').textContent=asApp?'Opened as a Home Screen app.':'Opened in a browser. A Home Screen icon may already exist.';
+}
+if(standaloneDisplay?.addEventListener)standaloneDisplay.addEventListener('change',showAppMode);
+else standaloneDisplay?.addListener?.(showAppMode);
+window.addEventListener('pageshow',showAppMode);
+showAppMode();
+$('installHelp').onclick=()=>{showAppMode();$('installDialog').showModal();};
+function referenceRecord(hash,catalogue){
+  if(typeof hash!=='string'||!hash.startsWith('#reference=')||hash.includes('&')||hash.slice(1).includes('#'))return null;
+  let id;try{id=decodeURIComponent(hash.slice('#reference='.length));}catch{return null;}
+  if(!id||id.length>160)return null;
+  const matches=catalogue.filter(record=>record.id===id);
+  return matches.length===1?matches[0]:null;
+}
+let referenceCatalogueReady=false,pendingReference=null;
+function receiveReference(){
+  if(!referenceCatalogueReady||(!location.hash&&!location.search))return;
+  const record=location.search?null:referenceRecord(location.hash,records);
+  // Drop untrusted link context from this app's current address; never persist or echo it.
+  try{history.replaceState(null,'',location.pathname);}catch{}
+  pendingReference=record;
+  if(!$('detailView').hidden)$('back').click();
+  $('referenceLink').hidden=!record;
+  if(!record){notice('Reference link not recognised. Use manual search and confirm the appliance.');$('boilerSearch').focus();return;}
+  $('referenceIdentity').textContent=[record.manufacturer,record.model,record.gcNumber?'GC '+record.gcNumber:'',record.productNumber?'Product '+record.productNumber:'',record.fuel].filter(Boolean).join(' · ');
+}
+window.addEventListener('hashchange',receiveReference);
+$('openReference').onclick=()=>{
+  const record=pendingReference;if(!record)return;
+  pendingReference=null;$('referenceLink').hidden=true;
+  window.dispatchEvent(new CustomEvent('stag-open-standalone-record',{detail:{recordId:record.id,section:'technicalData'}}));
+};
+$('dismissReference').onclick=()=>{pendingReference=null;$('referenceLink').hidden=true;$('boilerSearch').focus();};
+
 $('closeInstall').onclick=()=>$('installDialog').close();
 async function status(){
   const worker=navigator.serviceWorker?.controller||registration?.active;
@@ -44,7 +81,7 @@ $('checkUpdates').onclick=async()=>{
 };
 async function boot(){
   const r=await fetch('./release-info.json',{credentials:'omit'});if(!r.ok)throw Error('App release information unavailable');info=await r.json();
-  records=[...await dataset('search-index'),...await dataset('gas-fire-index')];updateResume();
+  records=[...await dataset('search-index'),...await dataset('gas-fire-index')];updateResume();referenceCatalogueReady=true;receiveReference();
   $('preparedDate').textContent=info.preparedOn;
   if(!('serviceWorker'in navigator)||!isSecureContext){$('offlineStatus').textContent='Offline installation requires a trusted HTTPS address or this computer’s localhost.';return;}
   registration=await navigator.serviceWorker.register('./sw.js',{scope:'./',updateViaCache:'none'});

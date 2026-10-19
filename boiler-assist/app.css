@@ -15,3 +15,17 @@ main{padding:14px!important;padding-bottom:max(24px,env(safe-area-inset-bottom))
 #installDialog li{margin:8px 0}
 #installDialog .small{font-size:13px;color:#b8cbce}
 @media(max-width:360px){#offlineBar .app-actions{gap:5px}#offlineBar strong{width:100%}#offlineBar button{flex:1}}
+
+/* Narrow-screen sizing: constrain containers and native selects without clipping content or disabling zoom. */
+html,body{min-inline-size:0}
+body{inline-size:100%}
+main{inline-size:100%;min-inline-size:0}
+main>*,#detailView,#tabs,#detailContent,#detailContent>*{min-inline-size:0;max-inline-size:100%}
+.stag-themed-banner,.stag-themed-banner p,#verification,.verification,.meta{min-inline-size:0;max-inline-size:100%;overflow-wrap:anywhere}
+#tabs .section-picker{box-sizing:border-box;inline-size:100%;min-inline-size:0;max-inline-size:100%}
+#appModeStatus{font-size:13px;color:#b8cbce}
+.reference-link{min-inline-size:0;max-inline-size:100%;border:1px solid #4ca49e;border-radius:10px;background:#073e3c;padding:12px;margin:12px 0;overflow-wrap:anywhere}
+.reference-link h2{font-size:19px}.reference-link button{margin:4px 6px 4px 0;white-space:normal;max-inline-size:100%}
+#searchView .appliance-categories{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+#searchView .appliance-categories button{min-inline-size:0;max-inline-size:none}
+@media(max-width:500px){#detailContent .figure-grid{grid-template-columns:minmax(0,1fr)}#searchView .appliance-categories{grid-template-columns:repeat(2,minmax(0,1fr))}}
