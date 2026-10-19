@@ -590,7 +590,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
       if(window.StagInlineDiagram?.taskPage){
         for(const doc of docs.values()){
           if(!doc.applianceIds.includes(selected.id))continue;
-          const page=window.StagInlineDiagram.taskPage(doc,task.refs||[],selected.id);
+          const page=window.StagInlineDiagram.taskPage(doc,task.refs||[],selected.id,task.diagramRef);
           if(page){const preview=window.StagInlineDiagram.create(page);preview.setAttribute('data-engineer-online-page',task.id);card.append(preview);break;}
         }
       }
