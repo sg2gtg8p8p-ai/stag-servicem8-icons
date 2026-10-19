@@ -73,21 +73,56 @@ async function showStatus(){
   $('packDetails').textContent=s.ready?info.boilers+' boilers · '+info.gasFires+' gas fires · '+Math.ceil(s.totalBytes/1024/1024)+' MB verified · version '+info.appVersion+' · pack '+s.buildId:'First online download and verification is required before offline use.';
   if(!s.ready&&s.reason)notice('Offline copy unavailable: '+s.reason+'. Reconnect, check for an update, then close and reopen the app.');
 }
-function showWaiting(){if(registration?.waiting&&registration.active&&navigator.serviceWorker.controller)notice('Update ready. Finish this lookup, close Boiler Assist and reopen.');}
-$('checkUpdates').onclick=async()=>{
-  if(!navigator.onLine){notice('Reconnect before checking for updates. Your verified saved library can still be used.');return;}
-  try{await registration?.update();showWaiting();await showStatus();if(!registration?.waiting)notice('Update check completed. The saved pack date does not certify that every manufacturer source is the latest revision.');}
-  catch{notice('The update could not be checked. Keep using only a verified saved pack and try again when connected.');}
+let checkingUpdate=false,lastUpdateCheck=0,applyingUpdate=false;
+function showWaiting(){
+  const waiting=!!(registration?.waiting&&registration.active&&navigator.serviceWorker.controller);
+  $('updateNotice').hidden=!waiting;
+  if(waiting){$('updateMessage').textContent='Update ready';$('applyAppUpdate').disabled=false;}
+}
+async function checkForUpdates(manual=false){
+  if(!registration||checkingUpdate)return;
+  if(!navigator.onLine){if(manual)notice('Connect to check for an app update.');return;}
+  const now=Date.now();if(!manual&&now-lastUpdateCheck<60000)return;
+  lastUpdateCheck=now;checkingUpdate=true;
+  try{
+    await registration.update();
+    const worker=registration.installing;
+    if(worker)await new Promise((resolve,reject)=>{
+      const timer=setTimeout(()=>reject(Error('The update is still downloading.')),30000);
+      const changed=()=>{if(['installed','redundant'].includes(worker.state)){clearTimeout(timer);worker.state==='installed'?resolve():reject(Error('The new update could not be verified.'));}};
+      worker.addEventListener('statechange',changed);changed();
+    });
+    showWaiting();if(manual&&!registration.waiting)notice('You’re up to date.');
+  }catch(e){if(manual)notice(e.message||'The update could not be checked. Try again when connected.');}
+  finally{checkingUpdate=false;}
+}
+$('checkUpdates').onclick=()=>checkForUpdates(true);
+$('applyAppUpdate').onclick=async()=>{
+  const worker=registration?.waiting;if(!worker)return;
+  if(!confirm('Finish your current lookup before updating. This window will reopen; your selected boiler is saved, but you must confirm the fitted configuration again. Continue?'))return;
+  writeSelection();try{sessionStorage.setItem('stag-boiler-update-resume-v1','1');}catch{}applyingUpdate=true;$('applyAppUpdate').disabled=true;
+  try{
+    const result=await new Promise((resolve,reject)=>{
+      const channel=new MessageChannel(),timer=setTimeout(()=>reject(Error('Close Boiler Assist and reopen to finish this update.')),20000);
+      channel.port1.onmessage=e=>{clearTimeout(timer);resolve(e.data);};
+      worker.postMessage({type:'APPLY_UPDATE'},[channel.port2]);
+    });
+    if(!result?.ok){try{sessionStorage.removeItem('stag-boiler-update-resume-v1');}catch{}applyingUpdate=false;$('applyAppUpdate').disabled=false;$('updateMessage').textContent=result?.reason==='other-windows-open'?'Close the other Boiler Assist windows, then tap Update app.':'The update could not be verified. Keep this version open and try again.';}
+  }catch(e){$('applyAppUpdate').disabled=false;$('updateMessage').textContent=e.message;}
 };
+window.addEventListener('pageshow',()=>checkForUpdates(false));
+window.addEventListener('online',()=>checkForUpdates(false));
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)checkForUpdates(false);});
 async function boot(){
   const r=await fetch('./release-info.json',{credentials:'omit'});if(!r.ok)throw Error('App release information unavailable');info=await r.json();
   records=[...await dataset('search-index'),...await dataset('gas-fire-index')];updateResume();referenceCatalogueReady=true;receiveReference();
+  try{if(sessionStorage.getItem('stag-boiler-update-resume-v1')==='1'){sessionStorage.removeItem('stag-boiler-update-resume-v1');const saved=readSelection();if(saved&&records.some(r=>r.id===saved.recordId)){restore=saved;window.dispatchEvent(new CustomEvent('stag-open-standalone-record',{detail:{recordId:saved.recordId,section:saved.section}}));}}}catch{}
   $('preparedDate').textContent=info.preparedOn;
   if(!('serviceWorker'in navigator)||!isSecureContext){$('offlineStatus').textContent='Offline installation requires a trusted HTTPS address or this computer’s localhost.';return;}
   registration=await navigator.serviceWorker.register('./sw.js',{scope:'./',updateViaCache:'none'});
   registration.addEventListener('updatefound',()=>{const worker=registration.installing;worker?.addEventListener('statechange',()=>{if(worker.state==='installed'){showWaiting();showStatus();}if(worker.state==='redundant')notice('The new offline download failed verification. No incomplete pack is ready; an existing verified pack remains separate.');});});
-  navigator.serviceWorker.addEventListener('controllerchange',()=>{showStatus();});
+  navigator.serviceWorker.addEventListener('controllerchange',()=>{if(applyingUpdate){location.reload();return;}showStatus();});
   navigator.serviceWorker.addEventListener('message',e=>{if(e.data?.type==='PACK_ERROR'){notice('The saved library failed verification. Reconnect and check for updates; do not rely on an incomplete copy.');showStatus();}});
-  await Promise.race([navigator.serviceWorker.ready,new Promise((_,reject)=>setTimeout(()=>reject(Error('Offline download did not complete. Keep connected and reopen to retry.')),45000))]);await showStatus();showWaiting();
+  await Promise.race([navigator.serviceWorker.ready,new Promise((_,reject)=>setTimeout(()=>reject(Error('Offline download did not complete. Keep connected and reopen to retry.')),45000))]);await showStatus();showWaiting();checkForUpdates(false);
 }
 boot().catch(e=>{$('offlineStatus').dataset.ready='false';$('offlineStatus').textContent='Offline library is not ready.';notice(e.message||'Keep connected and reopen the app to complete its verified download.');});

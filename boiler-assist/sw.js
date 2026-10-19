@@ -1,6 +1,6 @@
 'use strict';
-const EXPECTED_BUILD_ID='e52729bffbc2b639';
-const EXPECTED_MANIFEST_SHA256='e6b2d623d6fc56496666e10a38349537bd530619acccd1107f891ad460cf8ffe';
+const EXPECTED_BUILD_ID='90a96bf1eeb9798b';
+const EXPECTED_MANIFEST_SHA256='3967d0963e8a97a4ae39e4cd8d612bece52ccc08e84cb90c66db59f1e804bc46';
 const OWNER='stag-boiler-assist-offline-v1:';
 const digest=async bytes=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(v=>v.toString(16).padStart(2,'0')).join('');
 const base=new URL(self.registration.scope),url=name=>new URL(name,base).href;
@@ -49,9 +49,19 @@ async function health(){
 async function notify(){for(const client of await self.clients.matchAll({includeUncontrolled:true}))client.postMessage({type:'PACK_ERROR'});}
 self.addEventListener('install',event=>event.waitUntil(install()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{await health();await self.clients.claim();})()));
-// No forced activation or reload. Old app windows retain their own pack;
+// No automatic activation or reload. Explicit Apply requires one app window;
 // successfully activated versions never read a different revision's cache.
 self.addEventListener('message',event=>{
+  if(event.data?.type==='APPLY_UPDATE'){
+    event.waitUntil((async()=>{
+      try{
+        const windows=(await self.clients.matchAll({type:'window',includeUncontrolled:true})).filter(client=>{const address=new URL(client.url);return address.origin===base.origin&&address.pathname.startsWith(base.pathname);});
+        if(windows.length!==1||windows[0].id!==event.source?.id){event.ports[0]?.postMessage({ok:false,reason:'other-windows-open'});return;}
+        // Recheck the complete installed revision before an explicitly requested switch.
+        await health();event.ports[0]?.postMessage({ok:true,buildId:EXPECTED_BUILD_ID});await self.skipWaiting();
+      }catch{event.ports[0]?.postMessage({ok:false,reason:'verification-failed'});}
+    })());return;
+  }
   if(event.data?.type!=='STATUS')return;
   event.waitUntil((async()=>{try{const m=await health();event.ports[0]?.postMessage({ready:true,buildId:m.buildId,preparedOn:m.preparedOn,totalBytes:m.totalBytes,files:m.files.length});}catch(e){event.ports[0]?.postMessage({ready:false,reason:e.message});}})());
 });
