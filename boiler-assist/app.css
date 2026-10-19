@@ -29,3 +29,7 @@ main>*,#detailView,#tabs,#detailContent,#detailContent>*{min-inline-size:0;max-i
 #searchView .appliance-categories{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
 #searchView .appliance-categories button{min-inline-size:0;max-inline-size:none}
 @media(max-width:500px){#detailContent .figure-grid{grid-template-columns:minmax(0,1fr)}#searchView .appliance-categories{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Existing practical-guide helper and oil selectors use the current phone theme. */
+.engineer-guide{--stag-surface:#182225;--stag-ink:#f4f8f8;min-inline-size:0;max-inline-size:100%}
+.fga-context-picker{box-sizing:border-box;width:100%;min-width:0;max-width:100%}
