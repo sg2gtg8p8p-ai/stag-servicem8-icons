@@ -78,3 +78,6 @@ main{padding-top:8px!important}
 
 #updateNotice{display:flex;gap:12px;align-items:center;justify-content:space-between;margin-top:12px;padding:12px;border:1px solid #56ddd0;border-radius:9px;background:#073e3c;font-size:14px}
 #updateNotice[hidden]{display:none!important}#updateNotice button{flex-shrink:0;background:#56ddd0;color:#082b2a;font-weight:700}
+
+/* Mobile form text: reduce iPhone focus zoom while retaining larger inherited text and user zoom. */
+@media(max-width:760px){input:not([type="checkbox"]):not([type="radio"]),select,textarea{font-size:max(16px,1em)!important}}
