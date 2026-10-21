@@ -1,0 +1,2 @@
+Tesseract.js 6.0.1 and Tesseract.js-core 6.0.0: Apache-2.0; retained package licences and bundled dependency notices accompany unchanged files.
+English data: @tesseract.js-data/eng 1.0.0, package metadata declares MIT; upstream naptha/tessdata repository includes Apache-2.0 licence retained alongside data. Package wrappers and trained data not authored by Stag. Source: https://github.com/naptha/tesseract.js https://github.com/naptha/tesseract.js-core https://github.com/naptha/tessdata

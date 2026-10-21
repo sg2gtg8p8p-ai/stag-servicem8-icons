@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "0b9958ba8bea0556",
+  "buildId": "1ca52923b6273ec7",
   "preparedOn": "2026-10-21",
-  "appVersion": "2026.10.21-r9",
+  "appVersion": "2026.10.21-r10",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -56,6 +56,41 @@
       "bytes": 79204
     },
     {
+      "url": "./help/engine-config.mjs",
+      "sha256": "80f538700c9b261af7f837f9c642b75388fb232ffee9521caa1470ebea170949",
+      "bytes": 2527
+    },
+    {
+      "url": "./help/help.css",
+      "sha256": "c0e1df5ce170b99dc2ba33ac6644b125c183a60083fb33092635926d4cf9636b",
+      "bytes": 2230
+    },
+    {
+      "url": "./help/host.mjs",
+      "sha256": "7c0923cbf5f4d20ede2c3d5378353b55f260a2a3bd99f20b3ec1b9b6be346a50",
+      "bytes": 3734
+    },
+    {
+      "url": "./help/image.mjs",
+      "sha256": "85abf862f8e691bd20ba969eb5ffe5ec8bcc077bdda467cdd245b830f5ffbaac",
+      "bytes": 4086
+    },
+    {
+      "url": "./help/logic.mjs",
+      "sha256": "1b343dee8fd825279481ade510c5d43d3a29cf7848a7b02799c025b23f58756d",
+      "bytes": 10575
+    },
+    {
+      "url": "./help/ocr.mjs",
+      "sha256": "522edfd741c2e3ba80558283ddc37c194f006e28b75fbcfbcfb64ddc0ce1e9a2",
+      "bytes": 6013
+    },
+    {
+      "url": "./help/ui.mjs",
+      "sha256": "778631795d6b6ba8966605cecf0f6527a574a9c2468228e6dd938c6b502f7510",
+      "bytes": 13388
+    },
+    {
       "url": "./icons/256.png",
       "sha256": "af602beb3adc2e56b53e3210bc2c942ac06d5e5fd18683134c3a76ae3c885e8b",
       "bytes": 33023
@@ -67,8 +102,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "f9d44f2d7a6ce5c27e036f04fdfcb7fd64e7e77fb253e61978308f15cd88742b",
-      "bytes": 1036690
+      "sha256": "f91351440804bf0469d3c320e3f277a4fb8fbd9d52e8af7e5b3e072bb79b042e",
+      "bytes": 1037259
     },
     {
       "url": "./local-bridge.js",
@@ -82,8 +117,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "e9c7ccc89824aa611ff586a5281fb89da06104d70e0bb4ef84383960171e9418",
-      "bytes": 17753
+      "sha256": "78037cb971d5a900d8faa3c91882739991202622629c762c70b5ec5fea227ae6",
+      "bytes": 18919
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -106,5 +141,5 @@
       "bytes": 53106
     }
   ],
-  "totalBytes": 10182023
+  "totalBytes": 10226311
 }

@@ -1,0 +1,24 @@
+#help-root[hidden]{display:none!important}
+#help-root{position:fixed;top:var(--help-top,72px);right:0;bottom:0;left:0;z-index:15;overflow:auto;overscroll-behavior:contain;background:#101719;color:#f4f8f8;scrollbar-gutter:stable;padding:16px max(16px,env(safe-area-inset-right)) max(24px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));font:16px/1.5 system-ui,-apple-system,sans-serif}
+#help-root .help-content{max-width:840px;margin:0 auto}
+#help-root h1{font-size:26px;line-height:1.2;margin:16px 0}
+#help-root h2{font-size:22px;margin:24px 0 12px}
+#help-root p,#help-root a,#help-root strong{overflow-wrap:anywhere}
+#help-root input:not([type=checkbox]),#help-root textarea{display:block;width:100%;min-width:0;background:#182225;color:#f4f8f8;border:1px solid #5d777c;border-radius:9px;padding:12px;font:inherit;font-size:16px;min-height:48px;margin:8px 0 16px}
+#help-root textarea{resize:vertical;min-height:140px}
+#help-root input[type=checkbox]{width:22px;height:22px;vertical-align:middle;flex:0 0 22px}
+#help-root label{display:block;font-weight:650;margin-top:16px}
+#help-root button{font:inherit;min-height:48px;max-width:100%;white-space:normal;touch-action:manipulation;margin:6px 0}
+#help-root button:disabled{opacity:.5;cursor:default}
+#help-root .help-actions{display:flex;flex-wrap:wrap;gap:8px}
+#help-root .help-notice{background:#30291c;border:1px solid #8e783c;border-radius:8px;padding:12px}
+#help-root .help-identity{font-weight:750;font-size:17px}
+#help-root .help-small{font-size:14px;color:#b8cbce}
+#help-root .help-candidate,#help-root .help-reference{padding:16px;border:1px solid #40565b;border-radius:10px;margin:16px 0;background:#182225}
+#help-root .help-reference strong{display:block;margin-top:10px}
+#help-root details{border:1px solid #40565b;border-radius:8px;padding:12px;margin:14px 0}
+#help-root summary{cursor:pointer;min-height:44px;padding:8px 0}
+#help-root a{display:block;min-height:44px;color:#56ddd0;padding:8px 0}
+#help-root :focus-visible{outline:3px solid #ffd390;outline-offset:3px}
+#help-open{display:flex;align-items:flex-start;flex-direction:column;gap:4px;width:100%;text-align:left;margin:10px 0;font-size:18px}
+#help-open small{font-size:14px;color:#b8cbce}
