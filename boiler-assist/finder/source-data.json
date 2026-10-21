@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 2,
+  "status": "private-limited-source-backed-prototype-not-installation-approval",
+  "reviewedBy": "Main;executor does not fetch/revalidate source currentness",
+  "sourceObservedAt": "2026-10-20T22:45:43.675228+00:00",
+  "sources": [
+    {
+      "id": "baxi-800-combi2-current-html",
+      "url": "https://www.baxi.co.uk/professional/products/boilers/combi-boilers/baxi-800-combi-2",
+      "review": "Full manufacturer HTML technical table read via web today. No PDF/manufacturer installation-manual review in this finder batch.",
+      "currentListingObserved": true
+    },
+    {
+      "id": "wb-4000-current-html",
+      "url": "https://www.worcester-bosch.co.uk/professional/products/boilers/greenstar-4000",
+      "review": "Current listing25/30kW and NG25 PN7733600371 observed. HTML generic fullflow1bar is not a per-model dynamic rating.",
+      "currentListingObserved": true
+    },
+    {
+      "id": "wb-4000-installer-brochure",
+      "url": "https://www.worcester-bosch.co.uk/support/literature/download/release/8716121938/47448",
+      "review": "Manufacturer table/variant mapping and back-page edition visually verified; no installation approval.",
+      "sha256": "ad19189f862c34da4357d2c4068196ce89cba364a9f745f45fe43ceef43f2223",
+      "bytes": 1365957,
+      "pageCount": 7,
+      "edition": "8-716-121-938 D11/24,backPDFp7",
+      "visualPages": [
+        6,
+        7
+      ],
+      "printedTablePages": [
+        10,
+        11
+      ]
+    },
+    {
+      "id": "domestic-water-conditions",
+      "url": "https://www.worcester-bosch.co.uk/support/troubleshooting/faqs/all-faqs/how-could-mains-water-pressure-affect-my-combi-boiler",
+      "scope": "Main-reviewed distinction between actual domestic flow/dynamic pressure/simultaneous demand; not Baxi rated-flow inlet pressure"
+    },
+    {
+      "id": "mains-boosting",
+      "url": "https://www.salamanderpumps.co.uk/products/mainsbooster/",
+      "scope": "Main-reviewed mains boosting assessment principles,not exact product selection"
+    },
+    {
+      "id": "gravity-boosting",
+      "url": "https://www.salamanderpumps.co.uk/products/gravitybooster/",
+      "scope": "Main-reviewed gravity boosting principles;not a mains-combi pump recipe"
+    },
+    {
+      "id": "booster-notification",
+      "url": "https://www.waterregsuk.co.uk/topics/all-faqs/when-does-the-installation-of-a-pump-or-booster-have-to-be-notified/",
+      "scope": "Main-reviewed notification principle when a pump induces demand exceeding12L/min directly or indirectly;undertaker process/applicable requirements must still be confirmed"
+    },
+    {
+      "id": "condensate-route",
+      "url": "https://www.worcester-bosch.co.uk/quick-guide-to-condensate",
+      "scope": "Main-reviewed internal discharge/freeze-risk principles,not transferable pipe dimensions"
+    },
+    {
+      "id": "condensate-pump-context",
+      "url": "https://www.worcester-bosch.co.uk/support/literature/download/6721846263?cachedVersion=808334734",
+      "scope": "Main-reviewed example of own boiler condensate/pump context;its numeric installation rules MUST NOT transfer to Baxi"
+    }
+  ],
+  "models": [
+    {
+      "model": "824 Combi 2",
+      "productCode": "7814304",
+      "chKW": {
+        "nonCondensing": {
+          "min": 4.8,
+          "max": 20
+        },
+        "condensing": {
+          "min": 5.2,
+          "max": 21.8
+        },
+        "waterTemperatures": null,
+        "kind": "operating-categories"
+      },
+      "dhwKW": 24,
+      "dhwLMinAt35K": 10.2,
+      "id": "baxi-7814304-ng-combi",
+      "manufacturer": "Baxi",
+      "family": "800 Combi 2",
+      "fuel": "NG",
+      "type": "combi",
+      "sourceId": "baxi-800-combi2-current-html",
+      "shared": {
+        "sourceId": "baxi-800-combi2-current-html",
+        "nominalFuel": "NG",
+        "LPG": "Page says manual conversion possible; no automatic LPG suitability or conversion recipe in prototype",
+        "minimumDhwOperatingPressureBar": 0.5,
+        "minimumDhwFlowLMin": 2,
+        "minimumPressureMeaning": "minimum operation only; does not establish rated flow at0.5bar",
+        "dimensionMM": {
+          "height": 700,
+          "width": 395,
+          "depth": 285
+        },
+        "dimensionMeaning": "body dimensions only; no installation-clearance/fit approval",
+        "guaranteedFullFlowDynamicPressure": null,
+        "minimumStaticMainsPressureForMaximumFlowBar": null
+      },
+      "dhwFlowsLMin": {
+        "35": 10.2
+      },
+      "sourceIds": [
+        "baxi-800-combi2-current-html"
+      ]
+    },
+    {
+      "model": "830 Combi 2",
+      "productCode": "7814305",
+      "chKW": {
+        "nonCondensing": {
+          "min": 5.8,
+          "max": 25
+        },
+        "condensing": {
+          "min": 6.3,
+          "max": 27.1
+        },
+        "waterTemperatures": null,
+        "kind": "operating-categories"
+      },
+      "dhwKW": 30,
+      "dhwLMinAt35K": 12.2,
+      "id": "baxi-7814305-ng-combi",
+      "manufacturer": "Baxi",
+      "family": "800 Combi 2",
+      "fuel": "NG",
+      "type": "combi",
+      "sourceId": "baxi-800-combi2-current-html",
+      "shared": {
+        "sourceId": "baxi-800-combi2-current-html",
+        "nominalFuel": "NG",
+        "LPG": "Page says manual conversion possible; no automatic LPG suitability or conversion recipe in prototype",
+        "minimumDhwOperatingPressureBar": 0.5,
+        "minimumDhwFlowLMin": 2,
+        "minimumPressureMeaning": "minimum operation only; does not establish rated flow at0.5bar",
+        "dimensionMM": {
+          "height": 700,
+          "width": 395,
+          "depth": 285
+        },
+        "dimensionMeaning": "body dimensions only; no installation-clearance/fit approval",
+        "guaranteedFullFlowDynamicPressure": null,
+        "minimumStaticMainsPressureForMaximumFlowBar": null
+      },
+      "dhwFlowsLMin": {
+        "35": 12.2
+      },
+      "sourceIds": [
+        "baxi-800-combi2-current-html"
+      ]
+    },
+    {
+      "model": "836 Combi 2",
+      "productCode": "7814306",
+      "chKW": {
+        "nonCondensing": {
+          "min": 7.2,
+          "max": 25
+        },
+        "condensing": {
+          "min": 7.6,
+          "max": 27.1
+        },
+        "waterTemperatures": null,
+        "kind": "operating-categories"
+      },
+      "dhwKW": 36,
+      "dhwLMinAt35K": 15,
+      "id": "baxi-7814306-ng-combi",
+      "manufacturer": "Baxi",
+      "family": "800 Combi 2",
+      "fuel": "NG",
+      "type": "combi",
+      "sourceId": "baxi-800-combi2-current-html",
+      "shared": {
+        "sourceId": "baxi-800-combi2-current-html",
+        "nominalFuel": "NG",
+        "LPG": "Page says manual conversion possible; no automatic LPG suitability or conversion recipe in prototype",
+        "minimumDhwOperatingPressureBar": 0.5,
+        "minimumDhwFlowLMin": 2,
+        "minimumPressureMeaning": "minimum operation only; does not establish rated flow at0.5bar",
+        "dimensionMM": {
+          "height": 700,
+          "width": 395,
+          "depth": 285
+        },
+        "dimensionMeaning": "body dimensions only; no installation-clearance/fit approval",
+        "guaranteedFullFlowDynamicPressure": null,
+        "minimumStaticMainsPressureForMaximumFlowBar": null
+      },
+      "dhwFlowsLMin": {
+        "35": 15
+      },
+      "sourceIds": [
+        "baxi-800-combi2-current-html"
+      ]
+    },
+    {
+      "id": "wb-7733600371-ng-combi",
+      "manufacturer": "Worcester Bosch",
+      "family": "Greenstar 4000",
+      "model": "Greenstar4000 25kW Combi NG",
+      "productCode": "7733600371",
+      "fuel": "NG",
+      "type": "combi",
+      "sourceId": "wb-4000-current-html",
+      "sourceIds": [
+        "wb-4000-current-html",
+        "wb-4000-installer-brochure"
+      ],
+      "chKW": {
+        "kind": "unqualified",
+        "range": {
+          "min": 3,
+          "max": 24
+        },
+        "waterTemperatures": null,
+        "qualification": "No condensing/non-condensing or exact water-temperature basis published in the reviewed table."
+      },
+      "dhwKW": null,
+      "dhwFlowsLMin": {
+        "35": 10.2,
+        "40": 9
+      },
+      "shared": {
+        "sourceId": "wb-4000-installer-brochure",
+        "nominalFuel": "NG",
+        "minimumDhwOperatingPressureBar": null,
+        "minimumDhwFlowLMin": null,
+        "minimumStaticMainsPressureForMaximumFlowBar": 1.0,
+        "minimumPressureMeaning": "STATIC mains condition for maximum flow only, not operating dynamic pressure; passing static does not establish full-flow dynamic performance.",
+        "dimensionMM": {
+          "height": 724,
+          "width": 400,
+          "depth": 310
+        },
+        "dimensionMeaning": "Overall body724mm height,not710mm sidepanel;clearances/fitunverified.",
+        "guaranteedFullFlowDynamicPressure": null
+      }
+    },
+    {
+      "id": "wb-7733600373-ng-combi",
+      "manufacturer": "Worcester Bosch",
+      "family": "Greenstar 4000",
+      "model": "Greenstar4000 30kW Combi NG",
+      "productCode": "7733600373",
+      "fuel": "NG",
+      "type": "combi",
+      "sourceId": "wb-4000-current-html",
+      "sourceIds": [
+        "wb-4000-current-html",
+        "wb-4000-installer-brochure"
+      ],
+      "chKW": {
+        "kind": "unqualified",
+        "range": {
+          "min": 3,
+          "max": 24
+        },
+        "waterTemperatures": null,
+        "qualification": "No condensing/non-condensing or exact water-temperature basis published in the reviewed table."
+      },
+      "dhwKW": null,
+      "dhwFlowsLMin": {
+        "35": 12.3,
+        "40": 10.8
+      },
+      "shared": {
+        "sourceId": "wb-4000-installer-brochure",
+        "nominalFuel": "NG",
+        "minimumDhwOperatingPressureBar": null,
+        "minimumDhwFlowLMin": null,
+        "minimumStaticMainsPressureForMaximumFlowBar": 1.2,
+        "minimumPressureMeaning": "STATIC mains condition for maximum flow only, not operating dynamic pressure; passing static does not establish full-flow dynamic performance.",
+        "dimensionMM": {
+          "height": 724,
+          "width": 400,
+          "depth": 310
+        },
+        "dimensionMeaning": "Overall body724mm height,not710mm sidepanel;clearances/fitunverified.",
+        "guaranteedFullFlowDynamicPressure": null
+      }
+    }
+  ],
+  "heldManufacturers": [],
+  "guards": [
+    "No heating kW rule from bedrooms/bathrooms",
+    "CH condensing/non-condensing range separate; exact water-temperature basis not given in HTML, so no basis-equivalence assumption",
+    "DHW comparison uses each model’s exact verified35K or40K basis only; no interpolation or scaling",
+    "Minimum operating water pressure is not full rated-flow pressure",
+    "Measured domestic static vs dynamic pressure at declared flow and simultaneous use remain separate",
+    "No active oil/LPG/system/heat-only model pool yet; show explicit evidence gap, not NG substitution",
+    "No price/stock/warranty/compatibility/whole-market/best-boiler claim"
+  ],
+  "noPriceStockWarrantyOrFitData": true,
+  "modelPoolScope": "Five NG combi variants from Baxi and Worcester Bosch only. No Oil/LPG/system/regular or whole-market coverage.",
+  "supplementEvidence": {
+    "path": "/Users/edchetter-parker/.codex/visualizations/2026/10/19/01a15429-fdbd-7ca1-837b-a2ab499dc639/boiler-finder-wb4000-source-supplement-main-review-20261020.json",
+    "sha256": "b9ea98a0f4633c2ace9d3a0d81970a2874ce50ae7328eb0346f2af40f0aa38b9",
+    "sourcePDFSHA256": "ad19189f862c34da4357d2c4068196ce89cba364a9f745f45fe43ceef43f2223",
+    "activeModelsAdded": 2,
+    "sourceReviewReused": true
+  }
+}
