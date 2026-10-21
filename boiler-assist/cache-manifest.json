@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "33bb5d14b61b7d0a",
+  "buildId": "0b9958ba8bea0556",
   "preparedOn": "2026-10-21",
-  "appVersion": "2026.10.21-r8",
+  "appVersion": "2026.10.21-r9",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "sha256": "4d4255f841ca2bfab1f7b0e7dbe5a83076e03a1d15c1232aef5cbd1b467d239f",
-      "bytes": 5592806
+      "sha256": "bd0c096fa4433d1cf28b2d30420ac632619b46677b1a6d563118b08ea8d0e2df",
+      "bytes": 5610130
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -82,8 +82,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "b86b7193eb51ee7131858e239540d201e50038076a7e7f4f73d3a427019a8e01",
-      "bytes": 17168
+      "sha256": "e9c7ccc89824aa611ff586a5281fb89da06104d70e0bb4ef84383960171e9418",
+      "bytes": 17753
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -106,5 +106,5 @@
       "bytes": 53106
     }
   ],
-  "totalBytes": 10164114
+  "totalBytes": 10182023
 }
