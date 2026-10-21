@@ -1,12 +1,12 @@
 // Deterministic self-contained finder runtime. All executed bytes/data covered by HTML SRI.
 (()=>{
 'use strict';
-// Exact local source-data.json module; five limited NG combi variants.
+// Exact local source-data.json module; eight limited NG combi variants across three makes.
 const SOURCE_DATA = {
   "schemaVersion": 2,
-  "status": "private-limited-source-backed-prototype-not-installation-approval",
-  "reviewedBy": "Main;executor does not fetch/revalidate source currentness",
-  "sourceObservedAt": "2026-10-20T22:45:43.675228+00:00",
+  "status": "private-limited-eight-model-three-make-source-backed-prototype-not-installation-approval",
+  "reviewedBy": "Main accepted Ideal current listing, product-code binding and original source pages; executor integrated privately without refetching",
+  "sourceObservedAt": "2026-10-21T08:23:22.565062+00:00",
   "sources": [
     {
       "id": "baxi-800-combi2-current-html",
@@ -66,6 +66,56 @@ const SOURCE_DATA = {
       "id": "condensate-pump-context",
       "url": "https://www.worcester-bosch.co.uk/support/literature/download/6721846263?cachedVersion=808334734",
       "scope": "Main-reviewed example of own boiler condensate/pump context;its numeric installation rules MUST NOT transfer to Baxi"
+    },
+    {
+      "id": "ideal-logic-max-combi2-current-listing",
+      "url": "https://idealheating.com/products/logic-max-combi",
+      "review": "Main current official category/product listing and expanded own table observed in actual browser; current Logic MAX Combi2 C24/C30/C35 literature and labels linked. No price/stock/warranty/fit acceptance.",
+      "currentListingObserved": true,
+      "observedAtUTC": "2026-10-21T08:20:14.500010+00:00"
+    },
+    {
+      "id": "ideal-logic-max-combi2-237660-a05-retained-manual",
+      "url": "https://idealheating.com/_gatsby/file/a8a01c4778b35976b86007a593b9b19f/Logic%20MAX%20Combi%20Installation%20&%20Servicing%20-%20November%202025%20UIN%20237660%20A05.pdf?u=https%3A%2F%2Fdownloads.ctfassets.net%2Fsj902orc9wh4%2F4hw7r7ut3zXch9PphO11t5%2F938123989fcc20e49b0604029c0f0661%2FLogic_MAX_Combi_Installation___Servicing_-_November_2025_UIN_237660_A05.pdf",
+      "review": "Own UIN 237660 A05 retained manual. Main accepted original p6/8/12/14 ratings/supply/body visuals plus prior p1/7 NG/GC identity. No new fetch or source audit in integration; listing currentness is separately bound.",
+      "currentListingObserved": false,
+      "sha256": "9209ceb71a30055734973e4cd6913607250b989ab9a0ce10c5d487c3b711d100",
+      "bytes": 28080619,
+      "pageCount": 72,
+      "edition": "Installation & Servicing, Logic MAX Combi2 C24 C30 C35; 11/2025; UIN 237660 A05 (cover)",
+      "visualPages": [
+        1,
+        6,
+        7,
+        8,
+        12,
+        14
+      ],
+      "printedTablePages": [
+        6
+      ],
+      "observedAtUTC": "2026-10-20T13:52:52.879055+00:00"
+    },
+    {
+      "id": "ideal-technical-brochure-2025-revf",
+      "url": "https://assets.ctfassets.net/sj902orc9wh4/7DZsV4yVT55XaOHyM4ri1F/f3e35314d150e294ae8e79468f6f308f/IHD_Technical_Brochure_RevF_Web_Compressed__1_.pdf",
+      "review": "Main reviewed full original cover1, model/UIN crosswalk37, explicit Product Code table53 and revision98. Manufacturer codes are distinct from conversion-kit numbers; no merchant SKU/price/stock/warranty/fit acceptance.",
+      "currentListingObserved": false,
+      "observedAtUTC": "2026-10-21T08:23:22.565062+00:00",
+      "sha256": "f2f0ed45736583abeb3aa4ba149a7d3d0628eef8497872e4b27ad6c2c076764a",
+      "bytes": 7019189,
+      "pageCount": 98,
+      "edition": "2025; IHD Technical Brochure RevF, back PDF p98",
+      "visualPages": [
+        1,
+        37,
+        53,
+        98
+      ],
+      "printedTablePages": [
+        37,
+        53
+      ]
     }
   ],
   "models": [
@@ -292,26 +342,198 @@ const SOURCE_DATA = {
         "dimensionMeaning": "Overall body724mm height,not710mm sidepanel;clearances/fitunverified.",
         "guaranteedFullFlowDynamicPressure": null
       }
+    },
+    {
+      "id": "ideal-logic-max-combi2-c24-47-387-03-ng-combi",
+      "manufacturer": "Ideal",
+      "family": "Logic MAX Combi2",
+      "model": "Logic MAX Combi2 C24 (GC 47-387-03)",
+      "productCode": "228334",
+      "fuel": "NG",
+      "type": "combi",
+      "sourceId": "ideal-logic-max-combi2-current-listing",
+      "sourceIds": [
+        "ideal-logic-max-combi2-current-listing",
+        "ideal-logic-max-combi2-237660-a05-retained-manual",
+        "ideal-technical-brochure-2025-revf"
+      ],
+      "chKW": {
+        "kind": "operating-categories",
+        "nonCondensing": {
+          "min": 4.8,
+          "max": 24.2
+        },
+        "condensing": {
+          "min": 5.1,
+          "max": 25.6
+        },
+        "waterTemperatures": "Non-condensing: 70°C mean water temperature; condensing: 40°C mean water temperature. Source does not give a flow/return pair for either table rating.",
+        "comparisonPolicy": "source-mean-temperatures-only",
+        "meanWaterTemperaturesC": {
+          "nonCondensing": 70,
+          "condensing": 40
+        }
+      },
+      "dhwKW": 24.2,
+      "dhwFlowsLMin": {
+        "35": 9.9
+      },
+      "shared": {
+        "sourceId": "ideal-logic-max-combi2-237660-a05-retained-manual",
+        "nominalFuel": "NG",
+        "minimumDhwOperatingPressureBar": null,
+        "minimumDhwFlowLMin": 2,
+        "minimumPressureMeaning": "Manual p6: 0.8 bar inlet pressure is required for maximum hot-water flow; the manual does not state whether this is static or dynamic. Separately, the 0.5 bar inlet operating figure applies at 0.6 bar system pressure. The 2 L/min minimum delivery rate does not guarantee full rated flow.",
+        "dimensionMM": {
+          "height": 700,
+          "width": 395,
+          "depth": 278
+        },
+        "dimensionMeaning": "Own p6 casing dimensions, corroborated p12; body only. Installation space, servicing clearances, flue, door opening and filter access remain separate.",
+        "guaranteedFullFlowDynamicPressure": null,
+        "minimumStaticMainsPressureForMaximumFlowBar": null
+      },
+      "gcNumber": "47-387-03"
+    },
+    {
+      "id": "ideal-logic-max-combi2-c30-47-387-04-ng-combi",
+      "manufacturer": "Ideal",
+      "family": "Logic MAX Combi2",
+      "model": "Logic MAX Combi2 C30 (GC 47-387-04)",
+      "productCode": "228335",
+      "fuel": "NG",
+      "type": "combi",
+      "sourceId": "ideal-logic-max-combi2-current-listing",
+      "sourceIds": [
+        "ideal-logic-max-combi2-current-listing",
+        "ideal-logic-max-combi2-237660-a05-retained-manual",
+        "ideal-technical-brochure-2025-revf"
+      ],
+      "chKW": {
+        "kind": "operating-categories",
+        "nonCondensing": {
+          "min": 6.1,
+          "max": 24.2
+        },
+        "condensing": {
+          "min": 6.4,
+          "max": 25.6
+        },
+        "waterTemperatures": "Non-condensing: 70°C mean water temperature; condensing: 40°C mean water temperature. Source does not give a flow/return pair for either table rating.",
+        "comparisonPolicy": "source-mean-temperatures-only",
+        "meanWaterTemperaturesC": {
+          "nonCondensing": 70,
+          "condensing": 40
+        }
+      },
+      "dhwKW": 30.3,
+      "dhwFlowsLMin": {
+        "35": 12.4
+      },
+      "shared": {
+        "sourceId": "ideal-logic-max-combi2-237660-a05-retained-manual",
+        "nominalFuel": "NG",
+        "minimumDhwOperatingPressureBar": null,
+        "minimumDhwFlowLMin": 2,
+        "minimumPressureMeaning": "Manual p6: 1.3 bar inlet pressure is required for maximum hot-water flow; the manual does not state whether this is static or dynamic. Separately, the 0.5 bar inlet operating figure applies at 0.6 bar system pressure. The 2 L/min minimum delivery rate does not guarantee full rated flow.",
+        "dimensionMM": {
+          "height": 700,
+          "width": 395,
+          "depth": 278
+        },
+        "dimensionMeaning": "Own p6 casing dimensions, corroborated p12; body only. Installation space, servicing clearances, flue, door opening and filter access remain separate.",
+        "guaranteedFullFlowDynamicPressure": null,
+        "minimumStaticMainsPressureForMaximumFlowBar": null
+      },
+      "gcNumber": "47-387-04"
+    },
+    {
+      "id": "ideal-logic-max-combi2-c35-47-387-05-ng-combi",
+      "manufacturer": "Ideal",
+      "family": "Logic MAX Combi2",
+      "model": "Logic MAX Combi2 C35 (GC 47-387-05)",
+      "productCode": "228336",
+      "fuel": "NG",
+      "type": "combi",
+      "sourceId": "ideal-logic-max-combi2-current-listing",
+      "sourceIds": [
+        "ideal-logic-max-combi2-current-listing",
+        "ideal-logic-max-combi2-237660-a05-retained-manual",
+        "ideal-technical-brochure-2025-revf"
+      ],
+      "chKW": {
+        "kind": "operating-categories",
+        "nonCondensing": {
+          "min": 7.1,
+          "max": 24.2
+        },
+        "condensing": {
+          "min": 7.5,
+          "max": 25.6
+        },
+        "waterTemperatures": "Non-condensing: 70°C mean water temperature; condensing: 40°C mean water temperature. Source does not give a flow/return pair for either table rating.",
+        "comparisonPolicy": "source-mean-temperatures-only",
+        "meanWaterTemperaturesC": {
+          "nonCondensing": 70,
+          "condensing": 40
+        }
+      },
+      "dhwKW": 35.3,
+      "dhwFlowsLMin": {
+        "35": 14.5
+      },
+      "shared": {
+        "sourceId": "ideal-logic-max-combi2-237660-a05-retained-manual",
+        "nominalFuel": "NG",
+        "minimumDhwOperatingPressureBar": null,
+        "minimumDhwFlowLMin": 2,
+        "minimumPressureMeaning": "Manual p6: 1.3 bar inlet pressure is required for maximum hot-water flow; the manual does not state whether this is static or dynamic. Separately, the 0.5 bar inlet operating figure applies at 0.6 bar system pressure. The 2 L/min minimum delivery rate does not guarantee full rated flow.",
+        "dimensionMM": {
+          "height": 700,
+          "width": 395,
+          "depth": 278
+        },
+        "dimensionMeaning": "Own p6 casing dimensions, corroborated p12; body only. Installation space, servicing clearances, flue, door opening and filter access remain separate.",
+        "guaranteedFullFlowDynamicPressure": null,
+        "minimumStaticMainsPressureForMaximumFlowBar": null
+      },
+      "gcNumber": "47-387-05"
     }
   ],
   "heldManufacturers": [],
   "guards": [
     "No heating kW rule from bedrooms/bathrooms",
-    "CH condensing/non-condensing range separate; exact water-temperature basis not given in HTML, so no basis-equivalence assumption",
+    "Original Baxi operating-category/Worcester unqualified CH bases stay separate. Ideal manual mean70°C/40°C is display-only until the design basis is matched; generic categories/free text do not establish equivalence.",
     "DHW comparison uses each model’s exact verified35K or40K basis only; no interpolation or scaling",
     "Minimum operating water pressure is not full rated-flow pressure",
     "Measured domestic static vs dynamic pressure at declared flow and simultaneous use remain separate",
     "No active oil/LPG/system/heat-only model pool yet; show explicit evidence gap, not NG substitution",
-    "No price/stock/warranty/compatibility/whole-market/best-boiler claim"
+    "No price/stock/warranty/compatibility/whole-market/best-boiler claim",
+    "Ideal conditional0.5bar at0.6bar system and maximum-flow inlet0.8/1.3/1.3bar have no explicit static/dynamic basis; numerical pressure comparison fields remain null."
   ],
   "noPriceStockWarrantyOrFitData": true,
-  "modelPoolScope": "Five NG combi variants from Baxi and Worcester Bosch only. No Oil/LPG/system/regular or whole-market coverage.",
+  "modelPoolScope": "Eight NG combi variants from Baxi, Worcester Bosch and Ideal only. Ideal CH source-mean-temperature browsing is not a design-basis sizing comparison. No Oil/LPG/system/regular or whole-market coverage.",
   "supplementEvidence": {
     "path": "/Users/edchetter-parker/.codex/visualizations/2026/10/19/01a15429-fdbd-7ca1-837b-a2ab499dc639/boiler-finder-wb4000-source-supplement-main-review-20261020.json",
     "sha256": "b9ea98a0f4633c2ace9d3a0d81970a2874ce50ae7328eb0346f2af40f0aa38b9",
     "sourcePDFSHA256": "ad19189f862c34da4357d2c4068196ce89cba364a9f745f45fe43ceef43f2223",
     "activeModelsAdded": 2,
     "sourceReviewReused": true
+  },
+  "priorSourceObservation": {
+    "sourceIds": [
+      "baxi-800-combi2-current-html",
+      "wb-4000-current-html",
+      "wb-4000-installer-brochure",
+      "domestic-water-conditions",
+      "mains-boosting",
+      "gravity-boosting",
+      "booster-notification",
+      "condensate-route",
+      "condensate-pump-context"
+    ],
+    "sourceObservedAt": "2026-10-20T22:45:43.675228+00:00",
+    "meaning": "Retained original five-model/shared-source observation snapshot; these sources were not rechecked in this integration."
   }
 };
 
@@ -321,10 +543,10 @@ function emptySurvey(){return {
  surveyName:'',property:'not-sure',fuel:'unknown',currentType:'not-sure',preference:'not-sure',bedrooms:'',bathrooms:'',
  dhwUse:'unknown',simultaneousDetails:'',dhwFlowLMin:'',dhwRiseK:'',cylinderRetain:'unknown',cylinderSpace:'unknown',location:'',flue:'',space:'',heightMM:'',widthMM:'',depthMM:'',
  supply:'unknown',waterReadingSource:'unknown',measurementPoint:'unknown',flowLMin:'',dynamicBar:'',dynamicAtFlowLMin:'',staticBar:'',measurementScenario:'unknown',measurementDetails:'',pressureConcern:'unknown',restrictions:'unknown',storageSpace:'unknown',gravityHead:'unknown',boostScope:'unknown',
- chKW:'',chBasis:'unknown',chRegime:'unknown',chTemperatures:'',manufacturer:'',
+ chKW:'',chBasis:'unknown',chRegime:'unknown',chTemperatures:'',manufacturer:'all',
  condensateRoute:'unknown',internalCold:'unknown',gravityDrain:'unknown',discharge:'unknown',dischargeDetails:'',routeM:'',externalM:'',liftM:'',existingCondensatePump:'unknown'
 };}
-const enums={property:['not-sure','house','flat','bungalow','other'],fuel:['unknown','NG','LPG','Oil'],currentType:['not-sure','combi','system','regular'],preference:['not-sure','same','combi','system','regular'],dhwUse:['unknown','single','simultaneous','other'],cylinderRetain:['unknown','yes','no','none'],cylinderSpace:['unknown','yes','no'],supply:['unknown','mains','gravity'],waterReadingSource:['unknown','domestic-tool','heating-gauge'],measurementPoint:['unknown','boiler-inlet','incoming','outlet'],measurementScenario:['unknown','required-demand','single-outlet'],pressureConcern:['unknown','domestic','heating-gauge','both','none'],restrictions:['unknown','checked','not-checked'],storageSpace:['unknown','yes','no'],gravityHead:['unknown','positive','negative'],boostScope:['unknown','hot','cold','both'],chBasis:['unknown','design-loss','measured-load','existing-rating'],chRegime:['unknown','condensing','nonCondensing'],manufacturer:['','survey','Baxi','Worcester Bosch'],condensateRoute:['unknown','internal','external','mixed'],internalCold:['unknown','yes','no'],gravityDrain:['unknown','yes','no'],discharge:['unknown','yes','no'],existingCondensatePump:['unknown','yes','no']};
+const enums={property:['not-sure','house','flat','bungalow','other'],fuel:['unknown','NG','LPG','Oil'],currentType:['not-sure','combi','system','regular'],preference:['not-sure','same','combi','system','regular'],dhwUse:['unknown','single','simultaneous','other'],cylinderRetain:['unknown','yes','no','none'],cylinderSpace:['unknown','yes','no'],supply:['unknown','mains','gravity'],waterReadingSource:['unknown','domestic-tool','heating-gauge'],measurementPoint:['unknown','boiler-inlet','incoming','outlet'],measurementScenario:['unknown','required-demand','single-outlet'],pressureConcern:['unknown','domestic','heating-gauge','both','none'],restrictions:['unknown','checked','not-checked'],storageSpace:['unknown','yes','no'],gravityHead:['unknown','positive','negative'],boostScope:['unknown','hot','cold','both'],chBasis:['unknown','design-loss','measured-load','existing-rating'],chRegime:['unknown','condensing','nonCondensing'],manufacturer:['','all','survey','Baxi','Worcester Bosch','Ideal'],condensateRoute:['unknown','internal','external','mixed'],internalCold:['unknown','yes','no'],gravityDrain:['unknown','yes','no'],discharge:['unknown','yes','no'],existingCondensatePump:['unknown','yes','no']};
 const numeric={bedrooms:{integer:true,label:'Bedrooms'},bathrooms:{integer:true,label:'Bathrooms'},dhwFlowLMin:{positive:true,label:'Required hot-water flow'},dhwRiseK:{positive:true,label:'Hot-water temperature rise'},heightMM:{positive:true,label:'Available height'},widthMM:{positive:true,label:'Available width'},depthMM:{positive:true,label:'Available depth'},flowLMin:{label:'Measured domestic flow'},dynamicBar:{label:'Dynamic domestic pressure'},dynamicAtFlowLMin:{positive:true,label:'Flow at the dynamic-pressure test'},staticBar:{label:'Static domestic pressure'},chKW:{label:'Heating demand'},routeM:{label:'Condensate route length'},externalM:{label:'External condensate length'},liftM:{label:'Condensate lift'}};
 const textKeys=['surveyName','simultaneousDetails','location','flue','space','measurementDetails','chTemperatures','dischargeDetails'];
 function validateSurvey(raw){
@@ -382,11 +604,13 @@ function assessSurvey(raw){
  return{state:missing.length?'evidence-missing':'provisional',errors:[],values:n,type,missing,notes,usableCH,requiredCH:{kw:n.chKW,basis:n.chBasis,regime:n.chRegime,temperatures:n.chTemperatures},requiredDHW:{flowLMin:n.dhwFlowLMin,riseK:n.dhwRiseK,use:n.dhwUse,simultaneous:n.simultaneousDetails},supply:{domesticReadingsUsable:domestic,fullRatedFlowEstablished:false,staticSubstitutesForDynamic:false},finalSuitableOrInstallable:false};
 }
 function poolGap(n,type){
- if(n.fuel!=='NG')return n.fuel==='unknown'?'Fuel is not known. The active five-model pool is NG only; confirm the fuel first.':'No source-reviewed '+n.fuel+' replacement models are active. NG is not substituted for another fuel.';
- if(type.type!=='combi')return 'No active '+typeName(type.type).toLowerCase()+' model pool is available. Only five NG combi variants from Baxi and Worcester Bosch are reviewed here; keep the survey and resolve this exact data gap.';
+ if(n.fuel!=='NG')return n.fuel==='unknown'?'Which fuel does the boiler use? Choose Natural gas, LPG or Oil.':'No source-reviewed '+n.fuel+' replacement models are active. NG is not substituted for another fuel.';
+ if(type.type==='not-sure')return 'Which boiler type would you like to compare? Choose Combi, System or Regular / heat-only.';
+ if(type.type!=='combi')return 'No active '+typeName(type.type).toLowerCase()+' model pool is available. Only eight NG combi variants from Baxi, Worcester Bosch and Ideal are reviewed here; keep the survey and resolve this exact data gap.';
  return null;
 }
 function chRatingLines(m){
+ if(m.chKW.comparisonPolicy==='source-mean-temperatures-only')return['Non-condensing '+m.chKW.nonCondensing.min+'–'+m.chKW.nonCondensing.max+' kW at 70°C MEAN water temperature','Condensing '+m.chKW.condensing.min+'–'+m.chKW.condensing.max+' kW at 40°C MEAN water temperature'];
  if(m.chKW.kind==='unqualified')return['Published CH range '+m.chKW.range.min+'–'+m.chKW.range.max+' kW; condensing/non-condensing and water-temperature basis not stated.'];
  return['Non-condensing '+m.chKW.nonCondensing.min+'–'+m.chKW.nonCondensing.max+' kW','Condensing '+m.chKW.condensing.min+'–'+m.chKW.condensing.max+' kW'];
 }
@@ -401,17 +625,18 @@ function matchModels(raw,data,manufacturer){
  if(brand==='survey')return{state:'evidence-missing',gap:'Survey only: no manufacturer or model has been selected.',models:[],assessment:a};
  if(!brand)return{state:'evidence-missing',gap:'Choose a manufacturer after reviewing the type and demand, or choose Survey only.',models:[],assessment:a};
  const held=data.heldManufacturers.find(m=>m.manufacturer===brand);if(held)return{state:'evidence-missing',gap:brand+' source review is pending. '+held.reason,models:[],assessment:a};
- const pool=data.models.filter(m=>m.manufacturer===brand&&m.fuel===n.fuel&&m.type===a.type.type);
+ const pool=data.models.filter(m=>(brand==='all'||m.manufacturer===brand)&&m.fuel===n.fuel&&m.type===a.type.type);
  if(!pool.length)return{state:'evidence-missing',gap:'No exact source-backed model data is active for this manufacturer, fuel and type.',models:[],assessment:a};
  const models=pool.map(m=>{
-  const reasons=[],cautions=[],missing=[...a.missing],unqualified=m.chKW.kind==='unqualified';
-  const requiredChecks=[unqualified?'The manufacturer publishes one CH range without a condensing/non-condensing or water-temperature basis. Do not treat it as equivalent to either Baxi category.':'The manufacturer HTML does not give exact CH water temperatures. Verify its CH basis against the design; do not assume 50/30 or 80/60.',
+  const reasons=[],cautions=[],missing=[...a.missing],unqualified=m.chKW.kind==='unqualified',meanOnly=m.chKW.comparisonPolicy==='source-mean-temperatures-only';
+  const requiredChecks=[...(meanOnly?[]:[unqualified?'The manufacturer publishes one CH range without a condensing/non-condensing or water-temperature basis. Do not treat it as equivalent to either Baxi category.':'The manufacturer HTML does not give exact CH water temperatures. Verify its CH basis against the design; do not assume 50/30 or 80/60.']),
    'Full rated-flow dynamic pressure is not supplied by this source. Passing minimum operation or a static-pressure condition does not establish full hot-water delivery.',
    'Confirm installation manual, fuel, flue, gas supply, controls, clearances and condensate arrangement on site.'];
   const source=data.sources.find(s=>s.id===m.sourceId),linked=m.sourceIds.map(id=>data.sources.find(s=>s.id===id));
   if(!source?.currentListingObserved||linked.some(s=>!s)||!m.sourceIds.includes(m.shared.sourceId))return{...m,state:'evidence-missing',reasons:[],cautions:['Current model source binding is unavailable.'],requiredChecks,sourceURL:null,sourceURLs:[],supplyFullRatedFlowEstablished:false,finalSuitableOrInstallable:false};
   if(unqualified)missing.push('This model has an unqualified CH range; its operating/water-temperature basis needs verification against the design.');
-  if(a.usableCH){
+  if(meanOnly){missing.push('CH sizing comparison withheld: match the design basis to the source 70°C MEAN non-condensing / 40°C MEAN condensing water temperatures. A generic category or free-text flow/return entry does not verify equivalence.');requiredChecks.push(m.shared.minimumPressureMeaning);}
+  if(a.usableCH&&!meanOnly){
    const range=unqualified?m.chKW.range:n.chRegime==='unknown'?null:m.chKW[n.chRegime];
    const maximum=range?.max??Math.max(m.chKW.condensing.max,m.chKW.nonCondensing.max);
    if(n.chKW>maximum)reasons.push(unqualified?'Stated heating demand '+n.chKW+' kW exceeds the published unqualified CH maximum '+maximum+' kW. No condensing equivalence is assumed.':'Stated heating demand '+n.chKW+' kW exceeds '+(range?'the listed '+(n.chRegime==='condensing'?'condensing':'non-condensing')+' CH maximum ':'both listed CH maxima (highest ')+maximum+' kW'+(range?'':')')+'.');
@@ -423,7 +648,7 @@ function matchModels(raw,data,manufacturer){
   const relevant=a.supply.domesticReadingsUsable&&n.measurementPoint==='boiler-inlet'&&n.measurementScenario==='required-demand';
   if(relevant&&n.flowLMin!==null&&n.dhwFlowLMin!==null&&n.flowLMin<n.dhwFlowLMin)reasons.push('Measured available domestic flow '+n.flowLMin+' L/min under the stated demand is below the required '+n.dhwFlowLMin+' L/min. A pump is not assumed to fix it.');
   const opFlow=m.shared.minimumDhwFlowLMin,opPressure=m.shared.minimumDhwOperatingPressureBar;
-  if(opFlow!==null&&relevant&&n.flowLMin!==null&&n.flowLMin<opFlow)reasons.push('Measured domestic flow is below the source minimum operation '+opFlow+' L/min; that minimum is not a full-flow guarantee.');
+  if(opFlow!==null&&relevant&&n.flowLMin!==null&&n.flowLMin<opFlow)reasons.push(meanOnly?'Measured domestic flow is below the source minimum DHW delivery '+opFlow+' L/min; this is not a full-flow guarantee.':'Measured domestic flow is below the source minimum operation '+opFlow+' L/min; that minimum is not a full-flow guarantee.');
   const pressureComparable=relevant&&n.dynamicBar!==null&&n.dynamicAtFlowLMin!==null&&n.dhwFlowLMin!==null&&n.dynamicAtFlowLMin===n.dhwFlowLMin;
   if(opPressure!==null&&pressureComparable&&n.dynamicBar<opPressure)reasons.push('Dynamic pressure '+n.dynamicBar+' bar at the stated demand is below the source minimum operating '+opPressure+' bar. Full-rated pressure requirements remain unverified.');
   if(opPressure===null||opFlow===null)missing.push('Minimum OPERATING dynamic pressure/flow is not separately verified for this model; Baxi 0.5 bar / 2 L/min is not transferred.');
@@ -479,16 +704,16 @@ function installationChecks(raw,data){
 }
 
 const FIELD_LABELS={surveyName:'Survey name',property:'Property',fuel:'Fuel',currentType:'Current type',preference:'Type preference',bedrooms:'Bedrooms',bathrooms:'Bathrooms',dhwUse:'Hot-water use',simultaneousDetails:'Outlets running together / demand basis',dhwFlowLMin:'Required hot water (L/min)',dhwRiseK:'Required temperature rise (K)',cylinderRetain:'Keep cylinder',cylinderSpace:'Cylinder space',location:'Location constraints',flue:'Flue constraints',space:'Space / access constraints',heightMM:'Available height (mm)',widthMM:'Available width (mm)',depthMM:'Available depth (mm)',supply:'Domestic supply',waterReadingSource:'Water reading source',measurementPoint:'Water measurement point',flowLMin:'Measured domestic flow (L/min)',dynamicBar:'Dynamic domestic pressure (bar)',dynamicAtFlowLMin:'Flow at dynamic-pressure test (L/min)',staticBar:'Static domestic pressure (bar)',measurementScenario:'Measurement scenario',measurementDetails:'Measurement location / concurrent use',pressureConcern:'Reported pressure concern',restrictions:'Restrictions / faults checked',storageSpace:'Domestic storage space',gravityHead:'Gravity supply head',boostScope:'Gravity boosting need',chKW:'Heating demand (kW)',chBasis:'Heating demand basis',chRegime:'CH operating category',chTemperatures:'CH design water temperatures / basis',manufacturer:'Manufacturer choice',condensateRoute:'Condensate route',internalCold:'Internal unheated section',gravityDrain:'Gravity drainage feasible',discharge:'Suitable discharge established',dischargeDetails:'Discharge notes',routeM:'Condensate route length (m)',externalM:'External condensate length (m)',liftM:'Condensate lift (m)',existingCondensatePump:'Existing condensate pump'};
-const optionText={'not-sure':'Not sure',unknown:'Unknown',NG:'Natural gas',LPG:'LPG',Oil:'Oil',combi:'Combi',system:'System',regular:'Regular / heat-only',same:'Keep current type',none:'None / not applicable',single:'Single outlet',simultaneous:'Simultaneous outlets',other:'Other',mains:'Mains-fed',gravity:'Gravity-fed','domestic-tool':'Domestic flow/pressure tool','heating-gauge':'Sealed heating gauge','boiler-inlet':'Proposed boiler inlet',incoming:'Incoming supply (inlet performance not yet verified)',outlet:'Outlet only (inlet performance not yet verified)','required-demand':'Representative stated simultaneous demand','single-outlet':'Single-outlet test','not-checked':'Not checked','design-loss':'Calculated design heat loss','measured-load':'Measured delivered heating demand','existing-rating':'Existing boiler rating (not a design load)',nonCondensing:'Non-condensing',condensing:'Condensing',survey:'Survey only',internal:'Internal',external:'External',mixed:'Mixed',positive:'Positive head',negative:'Negative / unsuitable positive head',hot:'Hot water',cold:'Cold water',both:'Both',yes:'Yes',no:'No',checked:'Checked'};
+const optionText={all:'All available makes','not-sure':'Not sure',unknown:'Unknown',NG:'Natural gas',LPG:'LPG',Oil:'Oil',combi:'Combi',system:'System',regular:'Regular / heat-only',same:'Keep current type',none:'None / not applicable',single:'Single outlet',simultaneous:'Simultaneous outlets',other:'Other',mains:'Mains-fed',gravity:'Gravity-fed','domestic-tool':'Domestic flow/pressure tool','heating-gauge':'Sealed heating gauge','boiler-inlet':'Proposed boiler inlet',incoming:'Incoming supply (inlet performance not yet verified)',outlet:'Outlet only (inlet performance not yet verified)','required-demand':'Representative stated simultaneous demand','single-outlet':'Single-outlet test','not-checked':'Not checked','design-loss':'Calculated design heat loss','measured-load':'Measured delivered heating demand','existing-rating':'Existing boiler rating (not a design load)',nonCondensing:'Non-condensing',condensing:'Condensing',survey:'Survey only',internal:'Internal',external:'External',mixed:'Mixed',positive:'Positive head',negative:'Negative / unsuitable positive head',hot:'Hot water',cold:'Cold water',both:'Both',yes:'Yes',no:'No',checked:'Checked'};
 function surveySummary(raw,result,data){
  const v=validateSurvey(raw);if(!v.ok)throw new SurveyError(v.errors);if(!result||result.assessment.state==='invalid')throw new SurveyError(['Review the current survey before copying.']);
  if(JSON.stringify(v.values)!==JSON.stringify(result.assessment.values))throw new SurveyError(['Inputs changed. Review the current survey before copying.']);
  const n=v.values,lines=['BOILER FINDER — PROVISIONAL SURVEY','Temporary in-page information; no model is approved for installation.',''];
  for(const key of Object.keys(FIELD_LABELS)){const value=n[key];lines.push(FIELD_LABELS[key]+': '+(value===null||value===''?'Not recorded':optionText[value]??String(value)));}
- const a=result.assessment;lines.push('','TYPE / DEMAND',a.type.label,...a.type.notes,'CH requirement: '+(a.requiredCH.kw===null?'unknown':a.requiredCH.kw+' kW')+'; basis '+(optionText[a.requiredCH.basis]??a.requiredCH.basis)+'.','DHW requirement: '+(a.requiredDHW.flowLMin===null?'unknown':a.requiredDHW.flowLMin+' L/min')+' at '+(a.requiredDHW.riseK===null?'unknown rise':a.requiredDHW.riseK+' K')+'.',...a.missing.map(x=>'Evidence missing: '+x),'','CURRENT MODEL COMPARISON (five NG combi variants)');
+ const a=result.assessment;lines.push('','TYPE / DEMAND',a.type.label,...a.type.notes,'CH requirement: '+(a.requiredCH.kw===null?'unknown':a.requiredCH.kw+' kW')+'; basis '+(optionText[a.requiredCH.basis]??a.requiredCH.basis)+'.','DHW requirement: '+(a.requiredDHW.flowLMin===null?'unknown':a.requiredDHW.flowLMin+' L/min')+' at '+(a.requiredDHW.riseK===null?'unknown rise':a.requiredDHW.riseK+' K')+'.',...a.missing.map(x=>'Evidence missing: '+x),'','CURRENT MODEL COMPARISON (eight NG combi variants across three makes)');
  if(result.matches.gap)lines.push(result.matches.gap);
  for(const m of result.matches.models)lines.push(m.manufacturer+' '+m.model+' / '+m.productCode+' — '+m.state,...chRatingLines(m),dhwRatingLine(m),...m.reasons,...m.cautions,...(m.evidenceMissing??[]).map(x=>'Evidence missing: '+x),...m.requiredChecks,...m.sourceURLs.map(s=>'Source: '+s.url));
- lines.push('','CONDITIONAL INSTALLATION CHECKS',...result.installation.water.items,...result.installation.condensate.items,...result.installation.site,'','SOURCES / LIMITS','Manufacturer pages checked on '+data.sourceObservedAt.slice(0,10)+'. No live price, stock, warranty or full-market coverage.');
+ lines.push('','CONDITIONAL INSTALLATION CHECKS',...result.installation.water.items,...result.installation.condensate.items,...result.installation.site,'','SOURCES / LIMITS','Original Baxi/Worcester source observation: '+data.priorSourceObservation.sourceObservedAt.slice(0,10)+'. Ideal listing observation: '+data.sources.find(s=>s.id==='ideal-logic-max-combi2-current-listing').observedAtUTC.slice(0,10)+'. No live price, stock, warranty or full-market coverage.');
  const sourceIds=new Set([...result.matches.models.flatMap(m=>m.sourceIds),...result.installation.water.sourceIds,...result.installation.condensate.sourceIds]);
  for(const s of data.sources)if(sourceIds.has(s.id))lines.push(s.id+': '+s.url);
  return lines.join('\n');
@@ -520,8 +745,7 @@ async function copyCurrentSurvey(store,clipboard){
 }
 function mount(root,doc=root?.ownerDocument,data=SOURCE_DATA){
  if(!root||!doc)throw Error('Finder root unavailable');if(uiMounts.has(root))return uiMounts.get(root);
- const get=id=>root.querySelector('#baf-'+id),store=createSurveyStore(data),form=get('survey');let step=0;
- const steps=[...root.querySelectorAll('[data-baf-step]')],titles=['Property','Hot water & space','Measurements','Assessment & models','Condensate & additions','Survey summary'];
+ const get=id=>root.querySelector('#baf-'+id),store=createSurveyStore(data),form=get('survey');
  const make=(tag,text,cls)=>{const n=doc.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls.split(/\s+/).filter(Boolean).map(c=>'baf-'+c).join(' ');return n;};
  const list=items=>{const ul=make('ul');for(const text of items)ul.append(make('li',text));return ul;};
  const status=text=>{get('status').textContent=text??'';};
@@ -538,19 +762,25 @@ function mount(root,doc=root?.ownerDocument,data=SOURCE_DATA){
   const box=get('modelsArea');box.replaceChildren();if(result.gap)box.append(make('p',result.gap,'notice'));
   if(result.models.length)box.append(make('p','Capacity comparison only. Full-flow supply, exact design basis and installation fit remain unverified.','hint'));
   for(const m of result.models){
-   const card=make('article',undefined,'card');card.append(make('span',m.state==='excluded'?'Excluded for these inputs':m.state==='evidence-missing'?'Evidence missing':'Provisional candidate','badge '+m.state),make('h3',m.manufacturer+' '+m.model),make('p','Product '+m.productCode+' · Natural gas combi','hint'));
+   const meanOnly=m.chKW.comparisonPolicy==='source-mean-temperatures-only';
+   const card=make('article',undefined,'card');card.append(make('span',m.state==='excluded'?'Excluded for these inputs':m.state==='evidence-missing'?(m.sourceURL?'Size checks needed':'Source checks needed'):'Provisional candidate','badge '+m.state),make('h3',m.manufacturer+' '+m.model),make('p','Product '+m.productCode+' · Natural gas combi','hint'));
    const ch=make('p',undefined,'rating');ch.append(make('strong','Central heating'));for(const line of chRatingLines(m)){ch.append(make('span',line),make('br'));}card.append(ch);
    const dhw=make('p',undefined,'rating');dhw.append(make('strong','Domestic hot water'),make('span',dhwRatingLine(m)));card.append(dhw);
+   if(meanOnly)card.append(make('p',m.shared.minimumPressureMeaning,'hint'));
    if(m.reasons.length)card.append(list(m.reasons));
    if(m.cautions.length)card.append(details('Comparison qualifications',m.cautions));
    if(m.state==='evidence-missing'&&m.evidenceMissing?.length)card.append(details('Input evidence missing',m.evidenceMissing));
    card.append(details('Supply, source & installation checks',m.requiredChecks));
    const sourceDetails=make('details');sourceDetails.append(make('summary','Manufacturer data'),make('p','Body '+m.shared.dimensionMM.height+' × '+m.shared.dimensionMM.width+' × '+m.shared.dimensionMM.depth+' mm; clearances and fit are separate.'));
+   if(meanOnly){
+    sourceDetails.append(make('p','Minimum DHW delivery: '+m.shared.minimumDhwFlowLMin+' L/min only. No unconditional operating dynamic pressure or full-flow dynamic/static threshold is established.'),make('p',m.chKW.waterTemperatures),make('p','Ideal listing observed 21 October 2026. Ratings: own manual 11/2025 UIN 237660 A05. Manufacturer product codes: 2025 RevF brochure.'));
+   }else{
    if(m.shared.minimumDhwOperatingPressureBar!==null&&m.shared.minimumDhwFlowLMin!==null)sourceDetails.append(make('p','Minimum operation: '+m.shared.minimumDhwOperatingPressureBar+' bar and '+m.shared.minimumDhwFlowLMin+' L/min. These do not guarantee full rated flow.'));
    else sourceDetails.append(make('p','Minimum OPERATING dynamic pressure and flow are not separately verified. Baxi minimums are not transferred.'));
    if(m.shared.minimumStaticMainsPressureForMaximumFlowBar!==null)sourceDetails.append(make('p','Minimum STATIC mains pressure for maximum flow: '+m.shared.minimumStaticMainsPressureForMaximumFlowBar+' bar for this exact model. This is not a dynamic minimum; passing it does not establish dynamic/full-flow delivery.'));
    sourceDetails.append(make('p',m.chKW.kind==='unqualified'?'One published CH range; condensing/non-condensing and water temperatures are not stated. DHW kW is not separately verified from the model name.':'The HTML gives no exact CH water-temperature basis and no guaranteed full-flow dynamic pressure.'),make('p','Manufacturer pages checked on 20 October 2026.'));
-   for(const sourceId of m.sourceIds){const source=data.sources.find(s=>s.id===sourceId);if(source)sourceDetails.append(link(source,sourceId==='wb-4000-installer-brochure'?'Official table · PDF page 6, printed 10–11':'Official manufacturer listing'));}card.append(sourceDetails);
+   }
+   for(const sourceId of m.sourceIds){const source=data.sources.find(s=>s.id===sourceId);if(source)sourceDetails.append(link(source,sourceId==='ideal-logic-max-combi2-237660-a05-retained-manual'?'Ideal own manual · PDF/printed pages 6, 7, 8, 12, 14':sourceId==='ideal-technical-brochure-2025-revf'?'Ideal own brochure · PDF pages 37, 53; RevF page 98':sourceId==='wb-4000-installer-brochure'?'Official table · PDF page 6, printed 10–11':'Official manufacturer listing'));}card.append(sourceDetails);
    box.append(card);
   }
   if(result.models.length)box.append(make('p',result.ranking,'hint'));
@@ -560,38 +790,48 @@ function mount(root,doc=root?.ownerDocument,data=SOURCE_DATA){
   for(const[title,items]of [['Domestic water supply',result.water.items],['Condensate route / pump',result.condensate.items],['Flue, controls & site',result.site]]){const d=make('details');d.append(make('summary',title),list(items));box.append(d);}
  }
  function renderCalculated(){
-  const state=store.getState();get('copyFallback').hidden=true;get('fallbackText').value='';get('summaryText').value='';get('copy').disabled=!state.result;
+  const state=store.getState();get('results').hidden=!state.result;get('copyFallback').hidden=true;get('fallbackText').value='';get('summaryText').value='';get('copy').disabled=!state.result;
   if(!state.result){for(const id of ['assessmentArea','modelsArea','additionsArea'])get(id).replaceChildren();return;}
   renderAssessment(state.result.assessment);renderModels(state.result.matches);renderAdditions(state.result.installation);get('summaryText').value=surveySummary(state.survey,state.result,data);
  }
  function assess(){const result=store.assess();if(!result.ok){status(result.errors.join(' '));renderCalculated();return false;}renderCalculated();status('');return true;}
- function showStep(next){step=next;for(const panel of steps)panel.hidden=Number(panel.dataset.bafStep)!==step;get('progress').textContent=(step+1)+' of '+steps.length+' · '+titles[step];get('back').disabled=step===0;get('next').hidden=step===steps.length-1;get('next').textContent=step===4?'Review summary':'Next';const heading=steps[step].querySelector('h2');heading.tabIndex=-1;heading.focus({preventScroll:true});root.scrollTop=0;}
+
  function inputChanged(event){
   const control=event.target;if(!control?.name?.startsWith('baf-'))return;const key=control.name.slice(4),state=store.getState(),value=controlInputValue(control);if(!Object.hasOwn(state.survey,key)||state.survey[key]===value)return;
-  store.update({[key]:value});renderCalculated();if(state.result)status('Inputs changed. Review again to refresh the assessment and copy summary.');else status('');
+  store.update({[key]:value});renderCalculated();if(state.result)status('Inputs changed. Tap Show model choices to refresh the shortlist and copy summary.');else status('');
  }
- form.addEventListener('input',inputChanged);form.addEventListener('change',inputChanged);form.addEventListener('submit',e=>e.preventDefault());
- get('next').addEventListener('click',()=>{const state=store.getState(),valid=validateSurvey(state.survey);if(!valid.ok){status(valid.errors.join(' '));return;}if(step===3&&!state.survey.manufacturer){status('Choose a manufacturer or Keep survey only before continuing.');return;}if(step>=2&&!assess())return;status('');showStep(Math.min(step+1,steps.length-1));});
- get('back').addEventListener('click',()=>{status('');showStep(Math.max(0,step-1));});
- get('compare').addEventListener('click',()=>assess());get('reviewAdditions').addEventListener('click',()=>assess());
+ form.addEventListener('input',inputChanged);form.addEventListener('change',inputChanged);form.addEventListener('submit',e=>{e.preventDefault();assess();});
+ get('compare').addEventListener('click',()=>assess());
  get('copy').addEventListener('click',async()=>{get('copy').disabled=true;get('copyFallback').hidden=true;const result=await copyCurrentSurvey(store,globalThis.navigator?.clipboard);status(result.message);get('copy').disabled=!store.getState().result;if(!result.copied&&!result.stale){get('fallbackText').value=result.text;get('copyFallback').hidden=false;get('fallbackText').focus();get('fallbackText').select();}});
  get('selectFallback').addEventListener('click',()=>{get('fallbackText').focus();get('fallbackText').select();});
- const sourceNames={'baxi-800-combi2-current-html':'Baxi current technical table','wb-4000-current-html':'Worcester current listing','wb-4000-installer-brochure':'Worcester verified model table · D11/24','domestic-water-conditions':'Domestic flow and dynamic pressure','mains-boosting':'Mains boosting assessment','gravity-boosting':'Gravity boosting assessment','booster-notification':'Booster notification requirements','condensate-route':'Condensate route and freeze risk','condensate-pump-context':'Condensate example · no transferred dimensions'};
+ const sourceNames={'ideal-logic-max-combi2-current-listing':'Ideal current listing · observed 21 October 2026','ideal-logic-max-combi2-237660-a05-retained-manual':'Ideal own manual · 11/2025 UIN237660 A05','ideal-technical-brochure-2025-revf':'Ideal product codes · 2025 RevF brochure','baxi-800-combi2-current-html':'Baxi current technical table','wb-4000-current-html':'Worcester current listing','wb-4000-installer-brochure':'Worcester verified model table · D11/24','domestic-water-conditions':'Domestic flow and dynamic pressure','mains-boosting':'Mains boosting assessment','gravity-boosting':'Gravity boosting assessment','booster-notification':'Booster notification requirements','condensate-route':'Condensate route and freeze risk','condensate-pump-context':'Condensate example · no transferred dimensions'};
  for(const source of data.sources){const p=make('p');p.append(link(source,sourceNames[source.id]??source.id));get('sourceLinks').append(p);}
- get('surveyFields').disabled=false;get('next').disabled=false;status('');renderCalculated();
- const controller={store,getStep:()=>step};uiMounts.set(root,controller);return controller;
+ get('surveyFields').disabled=false;status('');renderCalculated();
+ const controller={store};uiMounts.set(root,controller);return controller;
 }
 
 
 const hostMounts=new WeakMap();
 function validateFinderData(data){
- const codes=['7814304','7814305','7814306','7733600371','7733600373'];
- if(data?.schemaVersion!==2||!Array.isArray(data.models)||data.models.length!==5||new Set(data.models.map(m=>m.productCode)).size!==5||codes.some(c=>!data.models.some(m=>m.productCode===c)))throw Error('Finder model data unavailable');
+ const codes=['7814304','7814305','7814306','7733600371','7733600373','228334','228335','228336'];
+ if(data?.schemaVersion!==2||!Array.isArray(data.models)||data.models.length!==8||new Set(data.models.map(m=>m.productCode)).size!==8||codes.some(c=>!data.models.some(m=>m.productCode===c)))throw Error('Finder model data unavailable');
  const source=new Map(data.sources.map(s=>[s.id,s]));
  for(const m of data.models){
   if(m.fuel!=='NG'||m.type!=='combi'||!source.get(m.sourceId)?.currentListingObserved||!m.sourceIds?.includes(m.shared.sourceId)||m.sourceIds.some(id=>!source.has(id)))throw Error('Finder source binding unavailable');
   const ranges=m.chKW.kind==='unqualified'?[m.chKW.range]:m.chKW.kind==='operating-categories'?[m.chKW.condensing,m.chKW.nonCondensing]:[];
   if(!ranges.length||ranges.some(r=>!Number.isFinite(r?.min)||!Number.isFinite(r?.max)||r.min<=0||r.max<r.min)||Object.entries(m.dhwFlowsLMin).some(([k,v])=>!['35','40'].includes(k)||!Number.isFinite(v)||v<=0))throw Error('Finder ratings unavailable');
+  const idealBindings={
+   '228334':['ideal-logic-max-combi2-c24-47-387-03-ng-combi','Logic MAX Combi2 C24 (GC 47-387-03)','47-387-03',4.8,5.1,24.2,9.9,0.8],
+   '228335':['ideal-logic-max-combi2-c30-47-387-04-ng-combi','Logic MAX Combi2 C30 (GC 47-387-04)','47-387-04',6.1,6.4,30.3,12.4,1.3],
+   '228336':['ideal-logic-max-combi2-c35-47-387-05-ng-combi','Logic MAX Combi2 C35 (GC 47-387-05)','47-387-05',7.1,7.5,35.3,14.5,1.3]
+  };
+  if(m.manufacturer==='Ideal'||Object.hasOwn(idealBindings,m.productCode)||m.chKW.comparisonPolicy!==undefined){
+   const b=idealBindings[m.productCode],manual=source.get('ideal-logic-max-combi2-237660-a05-retained-manual'),brochure=source.get('ideal-technical-brochure-2025-revf'),listing=source.get('ideal-logic-max-combi2-current-listing');
+   if(!b||m.manufacturer!=='Ideal'||m.id!==b[0]||m.model!==b[1]||m.gcNumber!==b[2]||m.family!=='Logic MAX Combi2'||m.sourceId!=='ideal-logic-max-combi2-current-listing'||listing?.url!=='https://idealheating.com/products/logic-max-combi'||listing.currentListingObserved!==true||JSON.stringify(m.sourceIds)!==JSON.stringify(['ideal-logic-max-combi2-current-listing','ideal-logic-max-combi2-237660-a05-retained-manual','ideal-technical-brochure-2025-revf'])||m.shared.sourceId!=='ideal-logic-max-combi2-237660-a05-retained-manual')throw Error('Finder Ideal identity/source binding unavailable');
+   if(['ideal-logic-max-combi2-current-listing','ideal-logic-max-combi2-237660-a05-retained-manual','ideal-technical-brochure-2025-revf'].some(id=>data.sources.filter(s=>s.id===id).length!==1)||manual?.sha256!=='9209ceb71a30055734973e4cd6913607250b989ab9a0ce10c5d487c3b711d100'||manual.pageCount!==72||manual.bytes!==28080619||manual.url!=="https://idealheating.com/_gatsby/file/a8a01c4778b35976b86007a593b9b19f/Logic%20MAX%20Combi%20Installation%20&%20Servicing%20-%20November%202025%20UIN%20237660%20A05.pdf?u=https%3A%2F%2Fdownloads.ctfassets.net%2Fsj902orc9wh4%2F4hw7r7ut3zXch9PphO11t5%2F938123989fcc20e49b0604029c0f0661%2FLogic_MAX_Combi_Installation___Servicing_-_November_2025_UIN_237660_A05.pdf"||manual.currentListingObserved!==false||brochure?.sha256!=='f2f0ed45736583abeb3aa4ba149a7d3d0628eef8497872e4b27ad6c2c076764a'||brochure.pageCount!==98||brochure.bytes!==7019189||brochure.currentListingObserved!==false||JSON.stringify(brochure.printedTablePages)!=='[37,53]'||brochure.url!=='https://assets.ctfassets.net/sj902orc9wh4/7DZsV4yVT55XaOHyM4ri1F/f3e35314d150e294ae8e79468f6f308f/IHD_Technical_Brochure_RevF_Web_Compressed__1_.pdf')throw Error('Finder Ideal pinned source unavailable');
+   if(m.chKW.kind!=='operating-categories'||m.chKW.comparisonPolicy!=='source-mean-temperatures-only'||JSON.stringify(m.chKW.meanWaterTemperaturesC)!=='{"nonCondensing":70,"condensing":40}'||m.chKW.waterTemperatures!=='Non-condensing: 70°C mean water temperature; condensing: 40°C mean water temperature. Source does not give a flow/return pair for either table rating.'||m.chKW.nonCondensing.min!==b[3]||m.chKW.nonCondensing.max!==24.2||m.chKW.condensing.min!==b[4]||m.chKW.condensing.max!==25.6||m.dhwKW!==b[5]||JSON.stringify(m.dhwFlowsLMin)!==JSON.stringify({'35':b[6]}))throw Error('Finder Ideal rating/basis unavailable');
+   if(m.shared.minimumDhwOperatingPressureBar!==null||m.shared.minimumStaticMainsPressureForMaximumFlowBar!==null||m.shared.guaranteedFullFlowDynamicPressure!==null||m.shared.minimumDhwFlowLMin!==2||m.shared.nominalFuel!=='NG'||JSON.stringify(m.shared.dimensionMM)!=='{"height":700,"width":395,"depth":278}'||m.shared.minimumPressureMeaning!==`Manual p6: ${b[7]} bar inlet pressure is required for maximum hot-water flow; the manual does not state whether this is static or dynamic. Separately, the 0.5 bar inlet operating figure applies at 0.6 bar system pressure. The 2 L/min minimum delivery rate does not guarantee full rated flow.`)throw Error('Finder Ideal supply qualification unavailable');
+  }
   if(m.manufacturer==='Worcester Bosch'){
    const pdf=source.get('wb-4000-installer-brochure');
    if(pdf?.sha256!=='ad19189f862c34da4357d2c4068196ce89cba364a9f745f45fe43ceef43f2223'||pdf.pageCount!==7||m.chKW.kind!=='unqualified'||m.dhwKW!==null||m.shared.minimumDhwOperatingPressureBar!==null||m.shared.minimumDhwFlowLMin!==null)throw Error('Finder Worcester source qualification unavailable');

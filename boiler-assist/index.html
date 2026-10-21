@@ -7,6 +7,7 @@
 .service-workflow{display:grid;gap:10px;min-width:0}.workflow-intro{font-size:13px;margin:0 0 12px;color:#b8cbce}.workflow-card{background:#182225;border:1px solid #40565b;border-radius:11px;min-width:0;overflow-wrap:anywhere}.workflow-card>summary{list-style:none;display:flex;gap:10px;align-items:center;min-height:58px;padding:12px;cursor:pointer;font-weight:750;line-height:1.25}.workflow-card>summary::-webkit-details-marker{display:none}.workflow-number{background:#073e3c;color:#f4f8f8;border-radius:7px;min-width:30px;height:30px;display:grid;place-items:center}.workflow-card>summary::after{content:'+';margin-left:auto;font-size:24px;color:#56ddd0}.workflow-card[open]>summary::after{content:'−'}.workflow-body{padding:0 12px 12px}.workflow-condition{margin:0 0 10px;font-size:13px;color:#b8cbce}.workflow-safety{padding:8px 10px;background:#30291c;border-left:3px solid #ffd390;border-radius:5px;font-size:13px;line-height:1.4;margin:0 0 10px}.workflow-source{display:block;font-size:11px;line-height:1.4;color:#b8cbce;margin-top:10px}.workflow-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:9px}.workflow-links .manual-button{min-height:44px;font-size:13px;padding:10px 12px;margin:0}.workflow-links button{min-height:44px;font-size:13px}.workflow-body .steps{margin:0}.workflow-body .steps li{padding:8px 0}.workflow-body .step-reading{font-size:15px}.workflow-body img{max-width:100%;height:auto}.procedure-reference{display:block;font-size:11px;color:#b8cbce;margin-top:10px}.workflow-coverage{font-size:13px;color:#b8cbce;margin-top:10px}
 /* Phase 8 on-site presentation */
 .references summary,.coverage summary,.verification summary,.references a{min-height:44px}
+.danesmoor-output-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0}.danesmoor-output-choices .danesmoor-output-choice{min-height:56px;font-size:18px;padding:12px 6px}.danesmoor-output-choice[aria-pressed="true"]{outline:3px solid #56ddd0;outline-offset:1px}.danesmoor-output-choice:focus-visible{outline:3px solid #f3cb75;outline-offset:3px}
 .oil-setup-value{display:block}.oil-setup-value+strong{margin-top:3px}.oil-setup small{font-size:12px;font-weight:500}
 .info-card>summary,.fitted-variant>summary{font-weight:750;min-height:48px;padding:8px 0}.info-card[open]>summary{margin-bottom:10px}.fitted-variant[open]>summary{margin-bottom:8px}
 .onsite-visual{margin:0 0 12px;min-width:0}.onsite-visual img{display:block;width:100%;height:auto;max-height:350px;object-fit:contain}.onsite-visual figcaption{font-size:11px;color:#b8cbce}.onsite-visual figcaption small{display:block}.onsite-visual button{font-size:12px;min-height:48px;margin-top:6px;padding:8px 12px}.visual-dialog{width:min(96vw,900px);max-height:95vh;border:1px solid #4ca49e;border-radius:12px;padding:14px}.visual-dialog img{width:100%;height:auto}.visual-dialog::backdrop{background:#0009}.fitted-variant{border:1px solid #4ca49e;border-radius:9px;padding:12px;margin-top:12px}.fga-sources{display:block}.fga-table .fga-applicability{font-size:11px;font-weight:500}.fga-table .fga-qualification{font-weight:500}.fga-manual{min-height:48px}.fga-table td strong{font-size:20px}.fga-table th:first-child{width:36%}.fga-table .fga-kind{font-size:10px}.procedure-grid .steps li{padding:10px 0}@media(max-width:500px){.fga-table th:first-child{width:38%}.fga-table td strong{font-size:18px}.fga-table th,.fga-table td{padding:8px 4px}}
@@ -58,63 +59,76 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
 <p class="swr-footer">Selections stay on this page. Exact device, boiler, topology, isolation/prove-dead and load conditions still need a competent-person match.</p><noscript>JavaScript is required to select a source reference. Use the manufacturers’ original manuals.</noscript>
 </div>
 <dialog id="swr-largePage" aria-labelledby="swr-largeTitle"><div class="swr-dialog-bar"><h2 id="swr-largeTitle">Original full page</h2><button id="swr-closeLarge" type="button">Close</button></div><p class="swr-dialog-help">Scroll across and down to read the complete original page.</p><div id="swr-largeCanvas" class="swr-large-scroll"></div></dialog>
-</section><section id="baf-root" hidden aria-label="Replacement boiler finder"><div class="baf-shell"><div class="baf-hostbar"><button id="baf-exit" type="button">Back to Library</button><p id="baf-progress" class="baf-muted" aria-live="polite">1 of 6 · Property</p></div>
+</section><section id="baf-root" hidden aria-label="Replacement boiler finder"><div class="baf-shell"><div class="baf-hostbar"><button id="baf-exit" type="button">Back to Library</button><p id="baf-progress" class="baf-muted">Choose fuel and type</p></div>
+<h2>Find model choices</h2><p class="baf-hint">Start with the fuel and type. Measurements can be added later to refine the choices; unknown readings stay unknown.</p>
 <p id="baf-status" class="baf-status" role="status" aria-live="polite"></p>
 <form id="baf-survey" novalidate><fieldset id="baf-surveyFields" disabled><legend class="baf-sr-only">Boiler replacement survey</legend>
-<section class="baf-step" data-baf-step="0" aria-labelledby="baf-propertyTitle"><h2 id="baf-propertyTitle">The property</h2>
-<label>Survey name <span class="baf-muted">(optional)</span><input name="baf-surveyName" maxlength="80" autocomplete="off" placeholder="Your reference"></label>
-<label>Property<select name="baf-property"><option value="not-sure">Not sure</option><option value="house">House</option><option value="flat">Flat</option><option value="bungalow">Bungalow</option><option value="other">Other</option></select></label>
 <label>Fuel<select name="baf-fuel"><option value="unknown">Not sure</option><option value="NG">Natural gas</option><option value="LPG">LPG</option><option value="Oil">Oil</option></select></label>
-<div class="baf-two"><label>Current boiler<select name="baf-currentType"><option value="not-sure">Not sure</option><option value="combi">Combi</option><option value="system">System</option><option value="regular">Regular / heat-only</option></select></label><label>Preferred type<select name="baf-preference"><option value="not-sure">Not sure</option><option value="same">Keep current type</option><option value="combi">Combi</option><option value="system">System</option><option value="regular">Regular / heat-only</option></select></label></div>
-<div class="baf-two"><label>Bedrooms<input name="baf-bedrooms" type="number" inputmode="numeric" min="0" step="1" placeholder="Not known"></label><label>Bathrooms<input name="baf-bathrooms" type="number" inputmode="numeric" min="0" step="1" placeholder="Not known"></label></div>
-</section>
-<section class="baf-step" data-baf-step="1" hidden aria-labelledby="baf-hotTitle"><h2 id="baf-hotTitle">Hot water &amp; space</h2>
+<label>Boiler type to compare<select name="baf-preference"><option value="not-sure">Not sure</option><option value="same">Keep current type</option><option value="combi">Combi</option><option value="system">System</option><option value="regular">Regular / heat-only</option></select></label>
+<label>Filter by manufacturer (optional)<select name="baf-manufacturer"><option value="all">All available makes</option><option value="">Choose a make</option><option value="Baxi">Baxi · 3 NG combi variants</option><option value="Worcester Bosch">Worcester Bosch · 2 NG combi variants</option><option value="Ideal">Ideal · 3 NG combi variants</option><option value="survey">Keep survey only</option></select></label>
+<button id="baf-compare" type="button" class="baf-primary baf-wide">Show model choices</button>
+<p class="baf-scope">Eight source-backed NG combi variants from Baxi, Worcester Bosch and Ideal. Other fuels and types remain evidence gaps. Ideal CH ratings retain their exact mean-temperature basis; browsing is not a size recommendation or installation approval.</p>
+<h3>Refine shortlist <span class="baf-muted">(optional)</span></h3>
+<details id="baf-refine-demand"><summary>Heating &amp; hot-water demand</summary>
+<label>Heating demand · kW<input name="baf-chKW" type="number" inputmode="decimal" min="0" step="any" placeholder="Not known"></label>
+<label>Demand basis<select name="baf-chBasis"><option value="unknown">Not known</option><option value="design-loss">Calculated design heat loss</option><option value="measured-load">Measured delivered heat demand</option><option value="existing-rating">Existing boiler rating only</option></select></label>
+<label>CH operating category<select name="baf-chRegime"><option value="unknown">Not sure</option><option value="condensing">Condensing</option><option value="nonCondensing">Non-condensing</option></select></label>
+<label>Heating design temperatures / basis<input name="baf-chTemperatures" maxlength="300" placeholder="Record design flow / return temperatures, or leave unknown"></label>
 <label>Hot-water use<select name="baf-dhwUse"><option value="unknown">Not sure</option><option value="single">One outlet at a time</option><option value="simultaneous">Outlets at the same time</option><option value="other">Other requirement</option></select></label>
 <label>Which outlets must run together?<textarea name="baf-simultaneousDetails" rows="2" maxlength="400" placeholder="For example, two showers; record the actual demand basis"></textarea></label>
-<div class="baf-two"><label>Required flow · L/min<input name="baf-dhwFlowLMin" type="number" inputmode="decimal" min="0" step="any" placeholder="Not known"></label><label>Temperature rise · K<input name="baf-dhwRiseK" type="number" inputmode="decimal" min="0" step="any" placeholder="Not known"></label></div>
-<p class="baf-hint">Use the actual combined hot-water requirement. Model flow ratings use their exact verified 35 K or 40 K basis; other rises are not scaled.</p>
-<div class="baf-two"><label>Keep the cylinder?<select name="baf-cylinderRetain"><option value="unknown">Not sure</option><option value="yes">Yes</option><option value="no">No</option><option value="none">No cylinder</option></select></label><label>Cylinder space?<select name="baf-cylinderSpace"><option value="unknown">Not sure</option><option value="yes">Available</option><option value="no">Not available</option></select></label></div>
-<label>Boiler location<input name="baf-location" maxlength="300" placeholder="Location and any restrictions"></label>
-<label>Flue constraints<input name="baf-flue" maxlength="300" placeholder="Route, terminal, nearby openings; or not known"></label>
-<label>Space &amp; service access<input name="baf-space" maxlength="300" placeholder="Cupboard, access or other constraints"></label>
-<details><summary>Available body space <span class="baf-muted">(optional)</span></summary><p class="baf-hint">Body dimensions alone do not establish installation clearances.</p><div class="baf-three"><label>Height · mm<input name="baf-heightMM" type="number" inputmode="decimal" min="0" step="any" placeholder="Unknown"></label><label>Width · mm<input name="baf-widthMM" type="number" inputmode="decimal" min="0" step="any" placeholder="Unknown"></label><label>Depth · mm<input name="baf-depthMM" type="number" inputmode="decimal" min="0" step="any" placeholder="Unknown"></label></div></details>
-</section>
-<section class="baf-step" data-baf-step="2" hidden aria-labelledby="baf-waterTitle"><h2 id="baf-waterTitle">Measured supply &amp; heat load</h2>
+<label>Required flow · L/min<input name="baf-dhwFlowLMin" type="number" inputmode="decimal" min="0" step="any" placeholder="Not known"></label>
+<label>Temperature rise · K<input name="baf-dhwRiseK" type="number" inputmode="decimal" min="0" step="any" placeholder="Not known"></label>
+<p class="baf-hint">Use the actual combined hot-water requirement. Model flow ratings use their exact verified 35 K or 40 K basis; other rises are not scaled. Bedrooms and bathrooms do not determine kW.</p></details>
+<details id="baf-refine-water"><summary>Water supply readings</summary>
 <label>Domestic water supply<select name="baf-supply"><option value="unknown">Not sure</option><option value="mains">Mains-fed</option><option value="gravity">Gravity-fed</option></select></label>
 <label>These water readings are from<select name="baf-waterReadingSource"><option value="unknown">Not sure / not measured</option><option value="domestic-tool">My domestic flow / pressure tool</option><option value="heating-gauge">The sealed heating pressure gauge</option></select></label>
 <label>Where were the readings taken?<select name="baf-measurementPoint"><option value="unknown">Not known</option><option value="boiler-inlet">At the proposed boiler inlet</option><option value="incoming">Incoming supply only</option><option value="outlet">An outlet only</option></select></label>
-<div class="baf-two"><label>Measured flow · L/min<input name="baf-flowLMin" type="number" inputmode="decimal" min="0" step="any" placeholder="Not measured"></label><label>Dynamic pressure · bar<input name="baf-dynamicBar" type="number" inputmode="decimal" min="0" step="any" placeholder="Not measured"></label></div>
-<div class="baf-two"><label>Pressure measured at · L/min<input name="baf-dynamicAtFlowLMin" type="number" inputmode="decimal" min="0" step="any" placeholder="Not measured"></label><label>Static pressure · bar <span class="baf-muted">(optional)</span><input name="baf-staticBar" type="number" inputmode="decimal" min="0" step="any" placeholder="Not measured"></label></div>
-<p class="baf-hint">Use your existing test tool. Static pressure and the heating gauge do not establish domestic pressure under flow.</p>
+<label>Measured flow · L/min<input name="baf-flowLMin" type="number" inputmode="decimal" min="0" step="any" placeholder="Not measured"></label>
+<label>Dynamic pressure · bar<input name="baf-dynamicBar" type="number" inputmode="decimal" min="0" step="any" placeholder="Not measured"></label>
+<label>Pressure measured at · L/min<input name="baf-dynamicAtFlowLMin" type="number" inputmode="decimal" min="0" step="any" placeholder="Not measured"></label>
+<label>Static pressure · bar <span class="baf-muted">(optional)</span><input name="baf-staticBar" type="number" inputmode="decimal" min="0" step="any" placeholder="Not measured"></label>
 <label>Test conditions<select name="baf-measurementScenario"><option value="unknown">Not known</option><option value="required-demand">The stated simultaneous demand was tested</option><option value="single-outlet">Single outlet only</option></select></label>
 <label>Test location &amp; other outlets running<textarea name="baf-measurementDetails" rows="2" maxlength="400" placeholder="Include concurrent hot / cold use"></textarea></label>
-<div class="baf-two"><label>Heating demand · kW<input name="baf-chKW" type="number" inputmode="decimal" min="0" step="any" placeholder="Not known"></label><label>Demand basis<select name="baf-chBasis"><option value="unknown">Not known</option><option value="design-loss">Calculated design heat loss</option><option value="measured-load">Measured delivered heat demand</option><option value="existing-rating">Existing boiler rating only</option></select></label></div>
-<label>CH operating category<select name="baf-chRegime"><option value="unknown">Not sure</option><option value="condensing">Condensing</option><option value="nonCondensing">Non-condensing</option></select></label>
-<label>Heating design temperatures / basis<input name="baf-chTemperatures" maxlength="300" placeholder="Record design flow / return temperatures, or leave unknown"></label>
-<details><summary>Supply concerns &amp; boosting survey</summary>
 <label>Pressure concern<select name="baf-pressureConcern"><option value="unknown">Not sure</option><option value="domestic">Domestic water supply</option><option value="heating-gauge">Low sealed-heating gauge only</option><option value="both">Both</option><option value="none">None reported</option></select></label>
-<div class="baf-two"><label>Restrictions / faults checked?<select name="baf-restrictions"><option value="unknown">Not sure</option><option value="checked">Checked</option><option value="not-checked">Not yet</option></select></label><label>Storage space?<select name="baf-storageSpace"><option value="unknown">Not sure</option><option value="yes">Available</option><option value="no">Not available</option></select></label></div>
-<div class="baf-two"><label>Gravity supply head<select name="baf-gravityHead"><option value="unknown">Not sure / not applicable</option><option value="positive">Positive</option><option value="negative">Negative / unsuitable positive head</option></select></label><label>Gravity boosting need<select name="baf-boostScope"><option value="unknown">Not sure / not applicable</option><option value="hot">Hot only</option><option value="cold">Cold only</option><option value="both">Hot and cold</option></select></label></div>
-</details>
-</section>
-<section class="baf-step" data-baf-step="3" hidden aria-labelledby="baf-resultTitle"><h2 id="baf-resultTitle">Type, demand &amp; models</h2>
-<p class="baf-scope">Provisional survey only. Five NG combi variants from Baxi and Worcester Bosch are active; this is not a full-market finder or installation approval.</p>
-<div id="baf-assessmentArea"></div>
-<label>Choose a manufacturer<select name="baf-manufacturer"><option value="">Choose after reviewing the assessment</option><option value="Baxi">Baxi · 3 NG combi variants</option><option value="Worcester Bosch">Worcester Bosch · 2 NG combi variants</option><option value="survey">Keep survey only</option></select></label>
-<button id="baf-compare" type="button" class="baf-primary baf-wide">Compare models</button><div id="baf-modelsArea" aria-live="polite"></div>
-</section>
-<section class="baf-step" data-baf-step="4" hidden aria-labelledby="baf-addTitle"><h2 id="baf-addTitle">Condensate &amp; additions</h2>
-<div class="baf-two"><label>Condensate route<select name="baf-condensateRoute"><option value="unknown">Not sure</option><option value="internal">Internal</option><option value="external">External</option><option value="mixed">Mixed</option></select></label><label>Internal unheated section?<select name="baf-internalCold"><option value="unknown">Not sure</option><option value="yes">Yes · loft / garage / cold space</option><option value="no">No</option></select></label></div>
-<div class="baf-two"><label>Gravity drainage feasible?<select name="baf-gravityDrain"><option value="unknown">Not sure</option><option value="yes">Yes, subject to exact instructions</option><option value="no">No</option></select></label><label>Suitable discharge?<select name="baf-discharge"><option value="unknown">Not established</option><option value="yes">Yes, connection assessed</option><option value="no">Not available</option></select></label></div>
+<label>Restrictions / faults checked?<select name="baf-restrictions"><option value="unknown">Not sure</option><option value="checked">Checked</option><option value="not-checked">Not yet</option></select></label>
+<label>Storage space?<select name="baf-storageSpace"><option value="unknown">Not sure</option><option value="yes">Available</option><option value="no">Not available</option></select></label>
+<label>Gravity supply head<select name="baf-gravityHead"><option value="unknown">Not sure / not applicable</option><option value="positive">Positive</option><option value="negative">Negative / unsuitable positive head</option></select></label>
+<label>Gravity boosting need<select name="baf-boostScope"><option value="unknown">Not sure / not applicable</option><option value="hot">Hot only</option><option value="cold">Cold only</option><option value="both">Hot and cold</option></select></label>
+<p class="baf-hint">Use your existing test tool. Static pressure and the heating gauge do not establish domestic pressure under flow.</p></details>
+<details id="baf-refine-space"><summary>Cylinder, location &amp; dimensions</summary>
+<label>Survey name <span class="baf-muted">(optional)</span><input name="baf-surveyName" maxlength="80" autocomplete="off" placeholder="Your reference"></label>
+<label>Property<select name="baf-property"><option value="not-sure">Not sure</option><option value="house">House</option><option value="flat">Flat</option><option value="bungalow">Bungalow</option><option value="other">Other</option></select></label>
+<label>Current boiler<select name="baf-currentType"><option value="not-sure">Not sure</option><option value="combi">Combi</option><option value="system">System</option><option value="regular">Regular / heat-only</option></select></label>
+<label>Bedrooms<input name="baf-bedrooms" type="number" inputmode="numeric" min="0" step="1" placeholder="Not known"></label>
+<label>Bathrooms<input name="baf-bathrooms" type="number" inputmode="numeric" min="0" step="1" placeholder="Not known"></label>
+<label>Keep the cylinder?<select name="baf-cylinderRetain"><option value="unknown">Not sure</option><option value="yes">Yes</option><option value="no">No</option><option value="none">No cylinder</option></select></label>
+<label>Cylinder space?<select name="baf-cylinderSpace"><option value="unknown">Not sure</option><option value="yes">Available</option><option value="no">Not available</option></select></label>
+<label>Boiler location<input name="baf-location" maxlength="300" placeholder="Location and any restrictions"></label>
+<label>Flue constraints<input name="baf-flue" maxlength="300" placeholder="Route, terminal, nearby openings; or not known"></label>
+<label>Space &amp; service access<input name="baf-space" maxlength="300" placeholder="Cupboard, access or other constraints"></label>
+<label>Height · mm<input name="baf-heightMM" type="number" inputmode="decimal" min="0" step="any" placeholder="Unknown"></label>
+<label>Width · mm<input name="baf-widthMM" type="number" inputmode="decimal" min="0" step="any" placeholder="Unknown"></label>
+<label>Depth · mm<input name="baf-depthMM" type="number" inputmode="decimal" min="0" step="any" placeholder="Unknown"></label>
+<p class="baf-hint">Body dimensions alone do not establish installation or servicing clearances.</p></details>
+<details id="baf-refine-site"><summary>Condensate &amp; site notes</summary>
+<label>Condensate route<select name="baf-condensateRoute"><option value="unknown">Not sure</option><option value="internal">Internal</option><option value="external">External</option><option value="mixed">Mixed</option></select></label>
+<label>Internal unheated section?<select name="baf-internalCold"><option value="unknown">Not sure</option><option value="yes">Yes · loft / garage / cold space</option><option value="no">No</option></select></label>
+<label>Gravity drainage feasible?<select name="baf-gravityDrain"><option value="unknown">Not sure</option><option value="yes">Yes, subject to exact instructions</option><option value="no">No</option></select></label>
+<label>Suitable discharge?<select name="baf-discharge"><option value="unknown">Not established</option><option value="yes">Yes, connection assessed</option><option value="no">Not available</option></select></label>
 <label>Discharge / route notes<textarea name="baf-dischargeDetails" rows="2" maxlength="400" placeholder="Proposed connection and any restrictions"></textarea></label>
-<div class="baf-three"><label>Whole run · m<input name="baf-routeM" type="number" inputmode="decimal" min="0" step="any" placeholder="Unknown"></label><label>External run · m<input name="baf-externalM" type="number" inputmode="decimal" min="0" step="any" placeholder="Unknown"></label><label>Lift if pumped · m<input name="baf-liftM" type="number" inputmode="decimal" min="0" step="any" placeholder="Unknown"></label></div>
+<label>Whole run · m<input name="baf-routeM" type="number" inputmode="decimal" min="0" step="any" placeholder="Unknown"></label>
+<label>External run · m<input name="baf-externalM" type="number" inputmode="decimal" min="0" step="any" placeholder="Unknown"></label>
+<label>Lift if pumped · m<input name="baf-liftM" type="number" inputmode="decimal" min="0" step="any" placeholder="Unknown"></label>
 <label>Existing condensate pump?<select name="baf-existingCondensatePump"><option value="unknown">Not sure</option><option value="yes">Yes</option><option value="no">No</option></select></label>
-<button id="baf-reviewAdditions" type="button" class="baf-wide">Review conditional checks</button><div id="baf-additionsArea"></div>
-</section>
-<section class="baf-step" data-baf-step="5" hidden aria-labelledby="baf-summaryTitle"><h2 id="baf-summaryTitle">Survey summary</h2><p class="baf-hint">No model or pump has been approved. Copy the survey for the next design and site checks.</p><textarea id="baf-summaryText" rows="17" readonly aria-label="Current provisional survey summary"></textarea><button id="baf-copy" type="button" class="baf-primary baf-wide">Copy survey</button><div id="baf-copyFallback" hidden><p class="baf-notice">Automatic copy was unavailable. Select the text below and copy it manually.</p><textarea id="baf-fallbackText" rows="10" readonly aria-label="Manual copy fallback"></textarea><button id="baf-selectFallback" type="button" class="baf-wide">Select summary text</button></div><details><summary>Scope &amp; sources</summary><p>Temporary in-page survey. Refreshing or closing clears it. Copied text remains in your clipboard. No account, job or customer system is connected.</p><p>Manufacturer pages checked on 20 October 2026 provide the limited current-model evidence. No price, stock, warranty, parts compatibility or final installation acceptance is provided.</p><div id="baf-sourceLinks"></div></details></section>
-</fieldset></form>
-<nav class="baf-navigation" aria-label="Survey steps"><button id="baf-back" type="button" disabled>Back</button><button id="baf-next" type="button" class="baf-primary" disabled>Next</button></nav><p class="baf-footer">Temporary on this page · unknown readings stay unknown</p><noscript>JavaScript is required for this replacement survey.</noscript>
-</div></section><script>(function client(boilerData, manufacturers3, presentation2 = { boilers: {} }, formatFga = null, searchFactory = createBoilerSearch, serialFactory = createWorcesterSerialService, serialReference = worcester_serial_default, assetContext = { status: "standalone", appliances: [] }, deferred = null, partsSearchClient = null, returnNavigationFactory = createReturnNavigation, returnClient = null) {
+</details></fieldset></form>
+<section id="baf-results" hidden aria-label="Model search results"><h3>Model choices</h3><div id="baf-modelsArea" aria-live="polite"></div>
+<button id="baf-copy" type="button" class="baf-primary baf-wide" disabled>Copy survey</button>
+<details><summary>Demand &amp; missing size checks</summary><div id="baf-assessmentArea"></div></details>
+<details><summary>Conditional site checks</summary><div id="baf-additionsArea"></div></details>
+<details><summary>Current survey summary</summary><p class="baf-hint">No model or pump has been approved. Detailed missing checks are retained in this summary and copied text.</p><textarea id="baf-summaryText" rows="17" readonly aria-label="Current provisional survey summary"></textarea></details>
+<div id="baf-copyFallback" hidden><p class="baf-notice">Automatic copy was unavailable. Select the text below and copy it manually.</p><textarea id="baf-fallbackText" rows="10" readonly aria-label="Manual copy fallback"></textarea><button id="baf-selectFallback" type="button" class="baf-wide">Select summary text</button></div>
+</section><details><summary>Scope &amp; sources</summary><p>Temporary in-page survey. Refreshing or closing clears it. Copied text remains in your clipboard. No account, job or customer system is connected.</p><p>Baxi/Worcester source observations remain 20 October 2026; Ideal listing observed 21 October 2026 with own manual and manufacturer product-code references. Eight variants across three makes are a limited pool. No price, stock, warranty, parts compatibility or final installation acceptance is provided.</p><div id="baf-sourceLinks"></div></details>
+<p class="baf-footer">Temporary on this page · unknown readings stay unknown</p><noscript>JavaScript is required for this replacement survey.</noscript></div></section><script>(function client(boilerData, manufacturers3, presentation2 = { boilers: {} }, formatFga = null, searchFactory = createBoilerSearch, serialFactory = createWorcesterSerialService, serialReference = worcester_serial_default, assetContext = { status: "standalone", appliances: [] }, deferred = null, partsSearchClient = null, returnNavigationFactory = createReturnNavigation, returnClient = null) {
   const $ = (id) => document.getElementById(id);
   const boilerSections = { technicalData: "Technical data", fullService: "Full Service Procedure", serviceMode: "Modes & controls", serviceProcedure: "Additional service notes", combustion: "Combustion / FGA", adjustments: "Gas valve / fan", spareParts: "Spare Parts", parts: "Components & test points", faultCodes: "Fault codes", manuals: "Official manuals", notes: "Manufacturer notes", sources: "Sources & applicability" };
   let sections = { ...boilerSections };
@@ -1549,6 +1563,32 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
         return;
       }
       if (scope.contexts.length && !(activeSection === "adjustments" && compactView() && !scope.required && scope.contexts.length === 1)) {
+        const quickOilSetup = selected.fuel === "Oil" &&
+          ["worcester-danesmoor-20-25-system-7716100081", "worcester-danesmoor-20-25-system-7716100079"].includes(selected.id) &&
+          ["7716100081", "7716100079"].includes(selected.productNumber) && scope.kind === "oil-setup" && scope.required &&
+          JSON.stringify(scope.contexts.map(c => [c.id, c.label])) === JSON.stringify([
+            ["setup-20", "20 kW · kerosene · Inter B11C"], ["setup-22.5", "22.5 kW · kerosene · Inter B11C"], ["setup-25", "25 kW · kerosene · Inter B11C"]
+          ]);
+        if (quickOilSetup) {
+          content.append(node("h4", "Confirm configured output"), node("p", "Electro Oil Inter B11C · 28-second kerosene. Check the fitted burner and configured output before choosing. No setup is assumed.", "fga-note"));
+          const choices = node("div", void 0, "danesmoor-output-choices");
+          choices.setAttribute("role", "group");
+          choices.setAttribute("aria-label", "Confirmed Electro Oil Inter B11C configured output");
+          for (const c of scope.contexts) {
+            const choice = button(c.id.slice(6) + " kW", () => { testContext = c.id; render(); content.querySelector('[data-danesmoor-output="' + c.id + '"]')?.focus({ preventScroll: true }); }, "danesmoor-output-choice");
+            choice.type = "button";
+            choice.setAttribute("data-danesmoor-output", c.id);
+            choice.setAttribute("aria-pressed", String(testContext === c.id));
+            choices.append(choice);
+          }
+          content.append(choices);
+          const clear = button("Clear setup", () => { testContext = ""; render(); content.querySelector('[data-danesmoor-output="setup-20"]')?.focus({ preventScroll: true }); });
+          clear.type = "button";
+          clear.disabled = !testContext;
+          const other = button("Not this burner / setup — view applicability", () => { testContext = ""; activeSection = "sources"; render(); });
+          other.type = "button";
+          content.append(clear, other);
+        } else {
         const label = node("label", scope.kind === "oil-setup" ? "Confirm oil setup" : "Confirm fitted gas");
         const picker2 = node("select", void 0, "fga-context-picker");
         picker2.setAttribute("aria-label", scope.kind === "oil-setup" ? "Confirmed oil setup" : "Confirmed fitted gas");
@@ -1567,6 +1607,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
         });
         label.append(picker2);
         content.append(label);
+        }
         if (!testContext) {
           content.append(node("p", scope.note, "fga-note"));
           const link = manualButton({ sourceIds: scope.contexts.flatMap((c) => c.sourceIds) }, "View official applicability / test procedure \u2197");
@@ -2190,7 +2231,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
     }
   } };
 })({}));</script><script>
-(()=>{const button=document.getElementById('baf-open'),status=document.getElementById('baf-host-status');const fail=()=>{button.disabled=true;status.hidden=false;status.textContent='Finder unavailable. Continue using the Library.';};try{const script=document.createElement('script');if(!('integrity'in script)){fail();return;}script.src='./finder/runtime.js';script.integrity='sha256-xzJTX0db97j7iPW8twPOotTqkz8/ySzBExdkU3/vO9g=';script.crossOrigin='anonymous';script.onerror=fail;document.head.appendChild(script);}catch{fail();}})();
+(()=>{const button=document.getElementById('baf-open'),status=document.getElementById('baf-host-status');const fail=()=>{button.disabled=true;status.hidden=false;status.textContent='Finder unavailable. Continue using the Library.';};try{const script=document.createElement('script');if(!('integrity'in script)){fail();return;}script.src='./finder/runtime.js';script.integrity='sha256-+G3mq43TpfiNJpvkBBfQ+h+aVhyZL4DmQ2zt9JFP+Mw=';script.crossOrigin='anonymous';script.onerror=fail;document.head.appendChild(script);}catch{fail();}})();
 </script><script>
 (()=>{const button=document.getElementById('swr-open'),status=document.getElementById('swr-host-status');const fail=()=>{if(button)button.disabled=true;if(status){status.hidden=false;status.textContent='Wiring reference unavailable. Continue using the library or finder.';}};try{const script=document.createElement('script');if(!('integrity'in script)){fail();return;}script.src='./wiring/runtime.js';script.integrity='sha256-NL0Pb7vuVxlYJjdBFj5Hd5Aai/RHQaJyK87ZCFNu8pw=';script.crossOrigin='anonymous';script.onerror=fail;document.head.appendChild(script);}catch{fail();}})();
 </script></body></html>

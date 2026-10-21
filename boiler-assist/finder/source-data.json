@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "status": "private-limited-source-backed-prototype-not-installation-approval",
-  "reviewedBy": "Main;executor does not fetch/revalidate source currentness",
-  "sourceObservedAt": "2026-10-20T22:45:43.675228+00:00",
+  "status": "private-limited-eight-model-three-make-source-backed-prototype-not-installation-approval",
+  "reviewedBy": "Main accepted Ideal current listing, product-code binding and original source pages; executor integrated privately without refetching",
+  "sourceObservedAt": "2026-10-21T08:23:22.565062+00:00",
   "sources": [
     {
       "id": "baxi-800-combi2-current-html",
@@ -62,6 +62,56 @@
       "id": "condensate-pump-context",
       "url": "https://www.worcester-bosch.co.uk/support/literature/download/6721846263?cachedVersion=808334734",
       "scope": "Main-reviewed example of own boiler condensate/pump context;its numeric installation rules MUST NOT transfer to Baxi"
+    },
+    {
+      "id": "ideal-logic-max-combi2-current-listing",
+      "url": "https://idealheating.com/products/logic-max-combi",
+      "review": "Main current official category/product listing and expanded own table observed in actual browser; current Logic MAX Combi2 C24/C30/C35 literature and labels linked. No price/stock/warranty/fit acceptance.",
+      "currentListingObserved": true,
+      "observedAtUTC": "2026-10-21T08:20:14.500010+00:00"
+    },
+    {
+      "id": "ideal-logic-max-combi2-237660-a05-retained-manual",
+      "url": "https://idealheating.com/_gatsby/file/a8a01c4778b35976b86007a593b9b19f/Logic%20MAX%20Combi%20Installation%20&%20Servicing%20-%20November%202025%20UIN%20237660%20A05.pdf?u=https%3A%2F%2Fdownloads.ctfassets.net%2Fsj902orc9wh4%2F4hw7r7ut3zXch9PphO11t5%2F938123989fcc20e49b0604029c0f0661%2FLogic_MAX_Combi_Installation___Servicing_-_November_2025_UIN_237660_A05.pdf",
+      "review": "Own UIN 237660 A05 retained manual. Main accepted original p6/8/12/14 ratings/supply/body visuals plus prior p1/7 NG/GC identity. No new fetch or source audit in integration; listing currentness is separately bound.",
+      "currentListingObserved": false,
+      "sha256": "9209ceb71a30055734973e4cd6913607250b989ab9a0ce10c5d487c3b711d100",
+      "bytes": 28080619,
+      "pageCount": 72,
+      "edition": "Installation & Servicing, Logic MAX Combi2 C24 C30 C35; 11/2025; UIN 237660 A05 (cover)",
+      "visualPages": [
+        1,
+        6,
+        7,
+        8,
+        12,
+        14
+      ],
+      "printedTablePages": [
+        6
+      ],
+      "observedAtUTC": "2026-10-20T13:52:52.879055+00:00"
+    },
+    {
+      "id": "ideal-technical-brochure-2025-revf",
+      "url": "https://assets.ctfassets.net/sj902orc9wh4/7DZsV4yVT55XaOHyM4ri1F/f3e35314d150e294ae8e79468f6f308f/IHD_Technical_Brochure_RevF_Web_Compressed__1_.pdf",
+      "review": "Main reviewed full original cover1, model/UIN crosswalk37, explicit Product Code table53 and revision98. Manufacturer codes are distinct from conversion-kit numbers; no merchant SKU/price/stock/warranty/fit acceptance.",
+      "currentListingObserved": false,
+      "observedAtUTC": "2026-10-21T08:23:22.565062+00:00",
+      "sha256": "f2f0ed45736583abeb3aa4ba149a7d3d0628eef8497872e4b27ad6c2c076764a",
+      "bytes": 7019189,
+      "pageCount": 98,
+      "edition": "2025; IHD Technical Brochure RevF, back PDF p98",
+      "visualPages": [
+        1,
+        37,
+        53,
+        98
+      ],
+      "printedTablePages": [
+        37,
+        53
+      ]
     }
   ],
   "models": [
@@ -288,25 +338,197 @@
         "dimensionMeaning": "Overall body724mm height,not710mm sidepanel;clearances/fitunverified.",
         "guaranteedFullFlowDynamicPressure": null
       }
+    },
+    {
+      "id": "ideal-logic-max-combi2-c24-47-387-03-ng-combi",
+      "manufacturer": "Ideal",
+      "family": "Logic MAX Combi2",
+      "model": "Logic MAX Combi2 C24 (GC 47-387-03)",
+      "productCode": "228334",
+      "fuel": "NG",
+      "type": "combi",
+      "sourceId": "ideal-logic-max-combi2-current-listing",
+      "sourceIds": [
+        "ideal-logic-max-combi2-current-listing",
+        "ideal-logic-max-combi2-237660-a05-retained-manual",
+        "ideal-technical-brochure-2025-revf"
+      ],
+      "chKW": {
+        "kind": "operating-categories",
+        "nonCondensing": {
+          "min": 4.8,
+          "max": 24.2
+        },
+        "condensing": {
+          "min": 5.1,
+          "max": 25.6
+        },
+        "waterTemperatures": "Non-condensing: 70°C mean water temperature; condensing: 40°C mean water temperature. Source does not give a flow/return pair for either table rating.",
+        "comparisonPolicy": "source-mean-temperatures-only",
+        "meanWaterTemperaturesC": {
+          "nonCondensing": 70,
+          "condensing": 40
+        }
+      },
+      "dhwKW": 24.2,
+      "dhwFlowsLMin": {
+        "35": 9.9
+      },
+      "shared": {
+        "sourceId": "ideal-logic-max-combi2-237660-a05-retained-manual",
+        "nominalFuel": "NG",
+        "minimumDhwOperatingPressureBar": null,
+        "minimumDhwFlowLMin": 2,
+        "minimumPressureMeaning": "Manual p6: 0.8 bar inlet pressure is required for maximum hot-water flow; the manual does not state whether this is static or dynamic. Separately, the 0.5 bar inlet operating figure applies at 0.6 bar system pressure. The 2 L/min minimum delivery rate does not guarantee full rated flow.",
+        "dimensionMM": {
+          "height": 700,
+          "width": 395,
+          "depth": 278
+        },
+        "dimensionMeaning": "Own p6 casing dimensions, corroborated p12; body only. Installation space, servicing clearances, flue, door opening and filter access remain separate.",
+        "guaranteedFullFlowDynamicPressure": null,
+        "minimumStaticMainsPressureForMaximumFlowBar": null
+      },
+      "gcNumber": "47-387-03"
+    },
+    {
+      "id": "ideal-logic-max-combi2-c30-47-387-04-ng-combi",
+      "manufacturer": "Ideal",
+      "family": "Logic MAX Combi2",
+      "model": "Logic MAX Combi2 C30 (GC 47-387-04)",
+      "productCode": "228335",
+      "fuel": "NG",
+      "type": "combi",
+      "sourceId": "ideal-logic-max-combi2-current-listing",
+      "sourceIds": [
+        "ideal-logic-max-combi2-current-listing",
+        "ideal-logic-max-combi2-237660-a05-retained-manual",
+        "ideal-technical-brochure-2025-revf"
+      ],
+      "chKW": {
+        "kind": "operating-categories",
+        "nonCondensing": {
+          "min": 6.1,
+          "max": 24.2
+        },
+        "condensing": {
+          "min": 6.4,
+          "max": 25.6
+        },
+        "waterTemperatures": "Non-condensing: 70°C mean water temperature; condensing: 40°C mean water temperature. Source does not give a flow/return pair for either table rating.",
+        "comparisonPolicy": "source-mean-temperatures-only",
+        "meanWaterTemperaturesC": {
+          "nonCondensing": 70,
+          "condensing": 40
+        }
+      },
+      "dhwKW": 30.3,
+      "dhwFlowsLMin": {
+        "35": 12.4
+      },
+      "shared": {
+        "sourceId": "ideal-logic-max-combi2-237660-a05-retained-manual",
+        "nominalFuel": "NG",
+        "minimumDhwOperatingPressureBar": null,
+        "minimumDhwFlowLMin": 2,
+        "minimumPressureMeaning": "Manual p6: 1.3 bar inlet pressure is required for maximum hot-water flow; the manual does not state whether this is static or dynamic. Separately, the 0.5 bar inlet operating figure applies at 0.6 bar system pressure. The 2 L/min minimum delivery rate does not guarantee full rated flow.",
+        "dimensionMM": {
+          "height": 700,
+          "width": 395,
+          "depth": 278
+        },
+        "dimensionMeaning": "Own p6 casing dimensions, corroborated p12; body only. Installation space, servicing clearances, flue, door opening and filter access remain separate.",
+        "guaranteedFullFlowDynamicPressure": null,
+        "minimumStaticMainsPressureForMaximumFlowBar": null
+      },
+      "gcNumber": "47-387-04"
+    },
+    {
+      "id": "ideal-logic-max-combi2-c35-47-387-05-ng-combi",
+      "manufacturer": "Ideal",
+      "family": "Logic MAX Combi2",
+      "model": "Logic MAX Combi2 C35 (GC 47-387-05)",
+      "productCode": "228336",
+      "fuel": "NG",
+      "type": "combi",
+      "sourceId": "ideal-logic-max-combi2-current-listing",
+      "sourceIds": [
+        "ideal-logic-max-combi2-current-listing",
+        "ideal-logic-max-combi2-237660-a05-retained-manual",
+        "ideal-technical-brochure-2025-revf"
+      ],
+      "chKW": {
+        "kind": "operating-categories",
+        "nonCondensing": {
+          "min": 7.1,
+          "max": 24.2
+        },
+        "condensing": {
+          "min": 7.5,
+          "max": 25.6
+        },
+        "waterTemperatures": "Non-condensing: 70°C mean water temperature; condensing: 40°C mean water temperature. Source does not give a flow/return pair for either table rating.",
+        "comparisonPolicy": "source-mean-temperatures-only",
+        "meanWaterTemperaturesC": {
+          "nonCondensing": 70,
+          "condensing": 40
+        }
+      },
+      "dhwKW": 35.3,
+      "dhwFlowsLMin": {
+        "35": 14.5
+      },
+      "shared": {
+        "sourceId": "ideal-logic-max-combi2-237660-a05-retained-manual",
+        "nominalFuel": "NG",
+        "minimumDhwOperatingPressureBar": null,
+        "minimumDhwFlowLMin": 2,
+        "minimumPressureMeaning": "Manual p6: 1.3 bar inlet pressure is required for maximum hot-water flow; the manual does not state whether this is static or dynamic. Separately, the 0.5 bar inlet operating figure applies at 0.6 bar system pressure. The 2 L/min minimum delivery rate does not guarantee full rated flow.",
+        "dimensionMM": {
+          "height": 700,
+          "width": 395,
+          "depth": 278
+        },
+        "dimensionMeaning": "Own p6 casing dimensions, corroborated p12; body only. Installation space, servicing clearances, flue, door opening and filter access remain separate.",
+        "guaranteedFullFlowDynamicPressure": null,
+        "minimumStaticMainsPressureForMaximumFlowBar": null
+      },
+      "gcNumber": "47-387-05"
     }
   ],
   "heldManufacturers": [],
   "guards": [
     "No heating kW rule from bedrooms/bathrooms",
-    "CH condensing/non-condensing range separate; exact water-temperature basis not given in HTML, so no basis-equivalence assumption",
+    "Original Baxi operating-category/Worcester unqualified CH bases stay separate. Ideal manual mean70°C/40°C is display-only until the design basis is matched; generic categories/free text do not establish equivalence.",
     "DHW comparison uses each model’s exact verified35K or40K basis only; no interpolation or scaling",
     "Minimum operating water pressure is not full rated-flow pressure",
     "Measured domestic static vs dynamic pressure at declared flow and simultaneous use remain separate",
     "No active oil/LPG/system/heat-only model pool yet; show explicit evidence gap, not NG substitution",
-    "No price/stock/warranty/compatibility/whole-market/best-boiler claim"
+    "No price/stock/warranty/compatibility/whole-market/best-boiler claim",
+    "Ideal conditional0.5bar at0.6bar system and maximum-flow inlet0.8/1.3/1.3bar have no explicit static/dynamic basis; numerical pressure comparison fields remain null."
   ],
   "noPriceStockWarrantyOrFitData": true,
-  "modelPoolScope": "Five NG combi variants from Baxi and Worcester Bosch only. No Oil/LPG/system/regular or whole-market coverage.",
+  "modelPoolScope": "Eight NG combi variants from Baxi, Worcester Bosch and Ideal only. Ideal CH source-mean-temperature browsing is not a design-basis sizing comparison. No Oil/LPG/system/regular or whole-market coverage.",
   "supplementEvidence": {
     "path": "/Users/edchetter-parker/.codex/visualizations/2026/10/19/01a15429-fdbd-7ca1-837b-a2ab499dc639/boiler-finder-wb4000-source-supplement-main-review-20261020.json",
     "sha256": "b9ea98a0f4633c2ace9d3a0d81970a2874ce50ae7328eb0346f2af40f0aa38b9",
     "sourcePDFSHA256": "ad19189f862c34da4357d2c4068196ce89cba364a9f745f45fe43ceef43f2223",
     "activeModelsAdded": 2,
     "sourceReviewReused": true
+  },
+  "priorSourceObservation": {
+    "sourceIds": [
+      "baxi-800-combi2-current-html",
+      "wb-4000-current-html",
+      "wb-4000-installer-brochure",
+      "domestic-water-conditions",
+      "mains-boosting",
+      "gravity-boosting",
+      "booster-notification",
+      "condensate-route",
+      "condensate-pump-context"
+    ],
+    "sourceObservedAt": "2026-10-20T22:45:43.675228+00:00",
+    "meaning": "Retained original five-model/shared-source observation snapshot; these sources were not rechecked in this integration."
   }
 }
