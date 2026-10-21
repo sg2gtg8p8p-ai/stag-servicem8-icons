@@ -540,14 +540,14 @@ const SOURCE_DATA = {
 // Pure private finder assessment. No browser, storage, SDK, network or catalogue imports.
 class SurveyError extends Error {constructor(errors){super(errors.join(' '));this.errors=errors;}}
 function emptySurvey(){return {
- surveyName:'',property:'not-sure',fuel:'unknown',currentType:'not-sure',preference:'not-sure',bedrooms:'',bathrooms:'',
+ surveyName:'',property:'not-sure',fuel:'unknown',currentType:'not-sure',preference:'not-sure',bedrooms:'',bathrooms:'',radiators:'',
  dhwUse:'unknown',simultaneousDetails:'',dhwFlowLMin:'',dhwRiseK:'',cylinderRetain:'unknown',cylinderSpace:'unknown',location:'',flue:'',space:'',heightMM:'',widthMM:'',depthMM:'',
  supply:'unknown',waterReadingSource:'unknown',measurementPoint:'unknown',flowLMin:'',dynamicBar:'',dynamicAtFlowLMin:'',staticBar:'',measurementScenario:'unknown',measurementDetails:'',pressureConcern:'unknown',restrictions:'unknown',storageSpace:'unknown',gravityHead:'unknown',boostScope:'unknown',
  chKW:'',chBasis:'unknown',chRegime:'unknown',chTemperatures:'',manufacturer:'all',
  condensateRoute:'unknown',internalCold:'unknown',gravityDrain:'unknown',discharge:'unknown',dischargeDetails:'',routeM:'',externalM:'',liftM:'',existingCondensatePump:'unknown'
 };}
 const enums={property:['not-sure','house','flat','bungalow','other'],fuel:['unknown','NG','LPG','Oil'],currentType:['not-sure','combi','system','regular'],preference:['not-sure','same','combi','system','regular'],dhwUse:['unknown','single','simultaneous','other'],cylinderRetain:['unknown','yes','no','none'],cylinderSpace:['unknown','yes','no'],supply:['unknown','mains','gravity'],waterReadingSource:['unknown','domestic-tool','heating-gauge'],measurementPoint:['unknown','boiler-inlet','incoming','outlet'],measurementScenario:['unknown','required-demand','single-outlet'],pressureConcern:['unknown','domestic','heating-gauge','both','none'],restrictions:['unknown','checked','not-checked'],storageSpace:['unknown','yes','no'],gravityHead:['unknown','positive','negative'],boostScope:['unknown','hot','cold','both'],chBasis:['unknown','design-loss','measured-load','existing-rating'],chRegime:['unknown','condensing','nonCondensing'],manufacturer:['','all','survey','Baxi','Worcester Bosch','Ideal'],condensateRoute:['unknown','internal','external','mixed'],internalCold:['unknown','yes','no'],gravityDrain:['unknown','yes','no'],discharge:['unknown','yes','no'],existingCondensatePump:['unknown','yes','no']};
-const numeric={bedrooms:{integer:true,label:'Bedrooms'},bathrooms:{integer:true,label:'Bathrooms'},dhwFlowLMin:{positive:true,label:'Required hot-water flow'},dhwRiseK:{positive:true,label:'Hot-water temperature rise'},heightMM:{positive:true,label:'Available height'},widthMM:{positive:true,label:'Available width'},depthMM:{positive:true,label:'Available depth'},flowLMin:{label:'Measured domestic flow'},dynamicBar:{label:'Dynamic domestic pressure'},dynamicAtFlowLMin:{positive:true,label:'Flow at the dynamic-pressure test'},staticBar:{label:'Static domestic pressure'},chKW:{label:'Heating demand'},routeM:{label:'Condensate route length'},externalM:{label:'External condensate length'},liftM:{label:'Condensate lift'}};
+const numeric={bedrooms:{integer:true,label:'Bedrooms'},bathrooms:{integer:true,label:'Bathrooms'},radiators:{integer:true,label:'Radiators'},dhwFlowLMin:{positive:true,label:'Required hot-water flow'},dhwRiseK:{positive:true,label:'Hot-water temperature rise'},heightMM:{positive:true,label:'Available height'},widthMM:{positive:true,label:'Available width'},depthMM:{positive:true,label:'Available depth'},flowLMin:{label:'Measured domestic flow'},dynamicBar:{label:'Dynamic domestic pressure'},dynamicAtFlowLMin:{positive:true,label:'Flow at the dynamic-pressure test'},staticBar:{label:'Static domestic pressure'},chKW:{label:'Heating demand'},routeM:{label:'Condensate route length'},externalM:{label:'External condensate length'},liftM:{label:'Condensate lift'}};
 const textKeys=['surveyName','simultaneousDetails','location','flue','space','measurementDetails','chTemperatures','dischargeDetails'];
 function validateSurvey(raw){
  const values=emptySurvey(),errors=[];
@@ -576,6 +576,25 @@ function chooseType(n){
  if(type==='combi')notes.push('Combi comparison depends on actual simultaneous hot-water demand and boiler inlet flow/pressure. Bathroom count alone does not decide the type or size.');
  if(type==='not-sure')notes.push('Choose a preferred type or complete the cylinder and water-supply survey. Bedrooms and bathrooms cannot decide the boiler type or kW alone.');
  return{type,label:typeName(type),state:type==='not-sure'?'evidence-missing':'provisional',notes};
+}
+// General examples are separate from the verified model-capacity assessment.
+const PRELIMINARY_SIZE_GUIDE=Object.freeze({
+ id:'vaillant-general-ng-combi-two-examples',reviewedOn:'2026-10-21',
+ sourceURLs:Object.freeze(['https://www.vaillant.co.uk/advice/understanding-heating-technology/boilers/what-size-boiler-do-i-need/','https://www.vaillant.co.uk/advice/understanding-heating-technology/boilers/what-is-a-condensing-boiler/']),
+ qualification:'General manufacturer guide; confirm heating heat loss and simultaneous hot-water demand.',
+ rows:Object.freeze([Object.freeze({bedroomsMin:1,bedroomsMax:2,radiatorsMin:0,radiatorsMax:10,bathroomsMin:1,bathroomsMax:1,minKW:24,maxKW:27}),Object.freeze({bedroomsMin:3,bedroomsMax:4,radiatorsMin:10,radiatorsMax:null,bathroomsMin:2,bathroomsMax:3,minKW:28,maxKW:34})]),
+ largerPropertyBandsWithheld:true
+});
+function preliminarySizeGuide(raw){
+ const v=validateSurvey(raw),base={bandKW:null,qualification:PRELIMINARY_SIZE_GUIDE.qualification,sourceURLs:[...PRELIMINARY_SIZE_GUIDE.sourceURLs],setsHeatingDemand:false,selectsOrExcludesModels:false,finalSuitableOrInstallable:false};
+ if(!v.ok)return{...base,state:'invalid',reason:'Correct the invalid entries before updating the guide.'};
+ const n=v.values,type=chooseType(n);
+ if(n.cylinderRetain==='yes')return{...base,state:'detailed-sizing-needed',reason:'Keeping a hot-water cylinder needs its own sizing assessment; no combi band is shown.'};
+ if(n.fuel!=='NG'||type.type!=='combi')return{...base,state:'detailed-sizing-needed',reason:'These examples cover natural-gas combis only. Confirm the fuel and type; other arrangements need detailed sizing.'};
+ if([n.bedrooms,n.bathrooms,n.radiators].some(x=>x===null))return{...base,state:'detailed-sizing-needed',reason:'Add bedrooms, bathrooms and radiators to check the two general examples, or continue with detailed sizing.'};
+ const row=PRELIMINARY_SIZE_GUIDE.rows.find(r=>n.bedrooms>=r.bedroomsMin&&n.bedrooms<=r.bedroomsMax&&n.bathrooms>=r.bathroomsMin&&n.bathrooms<=r.bathroomsMax&&n.radiators>=r.radiatorsMin&&(r.radiatorsMax===null||n.radiators<=r.radiatorsMax));
+ if(!row)return{...base,state:'detailed-sizing-needed',reason:'These counts do not match either reviewed example. Detailed sizing is needed; no range is estimated.'};
+ return{...base,state:'preliminary-band',bandKW:{min:row.minKW,max:row.maxKW},reason:'A general catalogue-size range, not a calculated heating load or a model recommendation.'};
 }
 function assessSurvey(raw){
  const valid=validateSurvey(raw);if(!valid.ok)return{state:'invalid',errors:valid.errors};
@@ -703,13 +722,14 @@ function installationChecks(raw,data){
  return{state:'conditional-survey-checks',water:{boostAssessment,items:water,sourceIds:[...new Set(waterSources)],guaranteedBoost:false,pumpModel:null},condensate:{pumpAssessment:condensatePumpAssessment,freezeReview,items:condensate,sourceIds:[...new Set(condensateSources)],pumpModel:null},site:['Verify exact flue route, terminal, kit and clearance compatibility using the selected boiler installation instructions.','Confirm the recorded location/body space, service access, gas supply and exact controls/interface; body dimensions alone are not installation fit.','No parts compatibility, merchant pricing, stock, warranty or installation approval is established.'],finalSuitableOrInstallable:false};
 }
 
-const FIELD_LABELS={surveyName:'Survey name',property:'Property',fuel:'Fuel',currentType:'Current type',preference:'Type preference',bedrooms:'Bedrooms',bathrooms:'Bathrooms',dhwUse:'Hot-water use',simultaneousDetails:'Outlets running together / demand basis',dhwFlowLMin:'Required hot water (L/min)',dhwRiseK:'Required temperature rise (K)',cylinderRetain:'Keep cylinder',cylinderSpace:'Cylinder space',location:'Location constraints',flue:'Flue constraints',space:'Space / access constraints',heightMM:'Available height (mm)',widthMM:'Available width (mm)',depthMM:'Available depth (mm)',supply:'Domestic supply',waterReadingSource:'Water reading source',measurementPoint:'Water measurement point',flowLMin:'Measured domestic flow (L/min)',dynamicBar:'Dynamic domestic pressure (bar)',dynamicAtFlowLMin:'Flow at dynamic-pressure test (L/min)',staticBar:'Static domestic pressure (bar)',measurementScenario:'Measurement scenario',measurementDetails:'Measurement location / concurrent use',pressureConcern:'Reported pressure concern',restrictions:'Restrictions / faults checked',storageSpace:'Domestic storage space',gravityHead:'Gravity supply head',boostScope:'Gravity boosting need',chKW:'Heating demand (kW)',chBasis:'Heating demand basis',chRegime:'CH operating category',chTemperatures:'CH design water temperatures / basis',manufacturer:'Manufacturer choice',condensateRoute:'Condensate route',internalCold:'Internal unheated section',gravityDrain:'Gravity drainage feasible',discharge:'Suitable discharge established',dischargeDetails:'Discharge notes',routeM:'Condensate route length (m)',externalM:'External condensate length (m)',liftM:'Condensate lift (m)',existingCondensatePump:'Existing condensate pump'};
+const FIELD_LABELS={surveyName:'Survey name',property:'Property',fuel:'Fuel',currentType:'Current type',preference:'Type preference',bedrooms:'Bedrooms',bathrooms:'Bathrooms',radiators:'Radiators',dhwUse:'Hot-water use',simultaneousDetails:'Outlets running together / demand basis',dhwFlowLMin:'Required hot water (L/min)',dhwRiseK:'Required temperature rise (K)',cylinderRetain:'Keep cylinder',cylinderSpace:'Cylinder space',location:'Location constraints',flue:'Flue constraints',space:'Space / access constraints',heightMM:'Available height (mm)',widthMM:'Available width (mm)',depthMM:'Available depth (mm)',supply:'Domestic supply',waterReadingSource:'Water reading source',measurementPoint:'Water measurement point',flowLMin:'Measured domestic flow (L/min)',dynamicBar:'Dynamic domestic pressure (bar)',dynamicAtFlowLMin:'Flow at dynamic-pressure test (L/min)',staticBar:'Static domestic pressure (bar)',measurementScenario:'Measurement scenario',measurementDetails:'Measurement location / concurrent use',pressureConcern:'Reported pressure concern',restrictions:'Restrictions / faults checked',storageSpace:'Domestic storage space',gravityHead:'Gravity supply head',boostScope:'Gravity boosting need',chKW:'Heating demand (kW)',chBasis:'Heating demand basis',chRegime:'CH operating category',chTemperatures:'CH design water temperatures / basis',manufacturer:'Manufacturer choice',condensateRoute:'Condensate route',internalCold:'Internal unheated section',gravityDrain:'Gravity drainage feasible',discharge:'Suitable discharge established',dischargeDetails:'Discharge notes',routeM:'Condensate route length (m)',externalM:'External condensate length (m)',liftM:'Condensate lift (m)',existingCondensatePump:'Existing condensate pump'};
 const optionText={all:'All available makes','not-sure':'Not sure',unknown:'Unknown',NG:'Natural gas',LPG:'LPG',Oil:'Oil',combi:'Combi',system:'System',regular:'Regular / heat-only',same:'Keep current type',none:'None / not applicable',single:'Single outlet',simultaneous:'Simultaneous outlets',other:'Other',mains:'Mains-fed',gravity:'Gravity-fed','domestic-tool':'Domestic flow/pressure tool','heating-gauge':'Sealed heating gauge','boiler-inlet':'Proposed boiler inlet',incoming:'Incoming supply (inlet performance not yet verified)',outlet:'Outlet only (inlet performance not yet verified)','required-demand':'Representative stated simultaneous demand','single-outlet':'Single-outlet test','not-checked':'Not checked','design-loss':'Calculated design heat loss','measured-load':'Measured delivered heating demand','existing-rating':'Existing boiler rating (not a design load)',nonCondensing:'Non-condensing',condensing:'Condensing',survey:'Survey only',internal:'Internal',external:'External',mixed:'Mixed',positive:'Positive head',negative:'Negative / unsuitable positive head',hot:'Hot water',cold:'Cold water',both:'Both',yes:'Yes',no:'No',checked:'Checked'};
 function surveySummary(raw,result,data){
  const v=validateSurvey(raw);if(!v.ok)throw new SurveyError(v.errors);if(!result||result.assessment.state==='invalid')throw new SurveyError(['Review the current survey before copying.']);
  if(JSON.stringify(v.values)!==JSON.stringify(result.assessment.values))throw new SurveyError(['Inputs changed. Review the current survey before copying.']);
  const n=v.values,lines=['BOILER FINDER — PROVISIONAL SURVEY','Temporary in-page information; no model is approved for installation.',''];
  for(const key of Object.keys(FIELD_LABELS)){const value=n[key];lines.push(FIELD_LABELS[key]+': '+(value===null||value===''?'Not recorded':optionText[value]??String(value)));}
+ const g=result.sizeGuide??preliminarySizeGuide(raw);lines.push('','PRELIMINARY SIZE GUIDE',g.bandKW?g.bandKW.min+'–'+g.bandKW.max+' kW general catalogue-size band':'No preliminary band',g.reason,g.qualification,'Room counts do not set the heating load or select/exclude a model.',...g.sourceURLs.map(url=>'Guide source: '+url));
  const a=result.assessment;lines.push('','TYPE / DEMAND',a.type.label,...a.type.notes,'CH requirement: '+(a.requiredCH.kw===null?'unknown':a.requiredCH.kw+' kW')+'; basis '+(optionText[a.requiredCH.basis]??a.requiredCH.basis)+'.','DHW requirement: '+(a.requiredDHW.flowLMin===null?'unknown':a.requiredDHW.flowLMin+' L/min')+' at '+(a.requiredDHW.riseK===null?'unknown rise':a.requiredDHW.riseK+' K')+'.',...a.missing.map(x=>'Evidence missing: '+x),'','CURRENT MODEL COMPARISON (eight NG combi variants across three makes)');
  if(result.matches.gap)lines.push(result.matches.gap);
  for(const m of result.matches.models)lines.push(m.manufacturer+' '+m.model+' / '+m.productCode+' — '+m.state,...chRatingLines(m),dhwRatingLine(m),...m.reasons,...m.cautions,...(m.evidenceMissing??[]).map(x=>'Evidence missing: '+x),...m.requiredChecks,...m.sourceURLs.map(s=>'Source: '+s.url));
@@ -721,7 +741,7 @@ function surveySummary(raw,result,data){
 function createSurveyStore(data){
  let survey=emptySurvey(),revision=0,result=null,copy=null;
  const snapshot=()=>structuredClone({survey,revision,result,copy});
- return{getState:snapshot,update(patch){for(const key of Object.keys(patch))if(!Object.hasOwn(survey,key))throw new SurveyError(['Unknown survey field: '+key]);survey={...survey,...patch};revision++;result=null;copy=null;return snapshot();},assess(){const assessment=assessSurvey(survey);if(assessment.state==='invalid'){result=null;copy=null;return{ok:false,errors:assessment.errors};}result={revision,assessment,matches:matchModels(survey,data),installation:installationChecks(survey,data)};copy=null;return{ok:true,result:structuredClone(result)};},prepareCopy(){if(!result||result.revision!==revision)throw new SurveyError(['Inputs changed. Review the current survey before copying.']);copy={revision,text:surveySummary(survey,result,data)};return structuredClone(copy);},isCurrentCopy(rev){return !!copy&&copy.revision===revision&&rev===revision;}};
+ return{getState:snapshot,reset(){survey=emptySurvey();revision++;result=null;copy=null;return snapshot();},update(patch){for(const key of Object.keys(patch))if(!Object.hasOwn(survey,key))throw new SurveyError(['Unknown survey field: '+key]);survey={...survey,...patch};revision++;result=null;copy=null;return snapshot();},assess(){const assessment=assessSurvey(survey);if(assessment.state==='invalid'){result=null;copy=null;return{ok:false,errors:assessment.errors};}result={revision,assessment,matches:matchModels(survey,data),installation:installationChecks(survey,data),sizeGuide:preliminarySizeGuide(survey)};copy=null;return{ok:true,result:structuredClone(result)};},prepareCopy(){if(!result||result.revision!==revision)throw new SurveyError(['Inputs changed. Review the current survey before copying.']);copy={revision,text:surveySummary(survey,result,data)};return structuredClone(copy);},isCurrentCopy(rev){return !!copy&&copy.revision===revision&&rev===revision;}};
 }
 
 const uiMounts=new WeakMap();
@@ -745,7 +765,8 @@ async function copyCurrentSurvey(store,clipboard){
 }
 function mount(root,doc=root?.ownerDocument,data=SOURCE_DATA){
  if(!root||!doc)throw Error('Finder root unavailable');if(uiMounts.has(root))return uiMounts.get(root);
- const get=id=>root.querySelector('#baf-'+id),store=createSurveyStore(data),form=get('survey');
+ const get=id=>root.querySelector('#baf-'+id),store=createSurveyStore(data),form=get('survey');let stage=0;
+ const stages=[...root.querySelectorAll('[data-baf-stage]')],choiceButtons=[...root.querySelectorAll('[data-baf-choice]')],controls=[...form.querySelectorAll('input[name],select[name],textarea[name]')];
  const make=(tag,text,cls)=>{const n=doc.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls.split(/\s+/).filter(Boolean).map(c=>'baf-'+c).join(' ');return n;};
  const list=items=>{const ul=make('ul');for(const text of items)ul.append(make('li',text));return ul;};
  const status=text=>{get('status').textContent=text??'';};
@@ -789,27 +810,44 @@ function mount(root,doc=root?.ownerDocument,data=SOURCE_DATA){
   const box=get('additionsArea');box.replaceChildren();
   for(const[title,items]of [['Domestic water supply',result.water.items],['Condensate route / pump',result.condensate.items],['Flue, controls & site',result.site]]){const d=make('details');d.append(make('summary',title),list(items));box.append(d);}
  }
+ function syncChoices(){const raw=store.getState().survey;for(const b of choiceButtons)b.setAttribute('aria-pressed',String(raw[b.dataset.bafChoice]===b.dataset.bafValue));}
+ function currentInputs(){
+  const n=store.getState().survey,fuels={NG:'Natural gas',LPG:'LPG',Oil:'Oil',unknown:'Fuel not sure'},types={combi:'Combi',system:'System',regular:'Regular / heat-only','not-sure':'Type not sure',same:'Keep current type'};
+  const count=(key,label)=>n[key]===''||n[key]===null?label+' unknown':n[key]==='__invalid_number__'?label+' needs checking':n[key]+' '+label;
+  get('currentInputs').textContent=[fuels[n.fuel],types[n.preference],count('bedrooms','bedrooms'),count('bathrooms','bathrooms'),count('radiators','radiators')].join(' · ');
+  const brand=n.manufacturer,pool=data.models.filter(m=>brand==='all'||m.manufacturer===brand);
+  get('coverage').textContent=brand==='survey'?'Survey only: no model filter applied.':(brand==='all'?'All available makes':brand||'Choose a make')+': '+pool.length+' reviewed natural-gas combi variants. This is a limited model pool, not the whole market.';
+ }
+ function renderSizeGuide(g){
+  const box=get('sizeGuideArea');box.replaceChildren();const card=make('article',undefined,'card');card.append(make('h3','Preliminary size guide'));
+  if(g.bandKW)card.append(make('p',g.bandKW.min+'–'+g.bandKW.max+' kW general catalogue range','size-band'));
+  card.append(make('p',g.reason),make('p',g.qualification,'hint'),make('p','This guide does not select or rule out any model.','hint'));box.append(card);
+ }
  function renderCalculated(){
-  const state=store.getState();get('results').hidden=!state.result;get('copyFallback').hidden=true;get('fallbackText').value='';get('summaryText').value='';get('copy').disabled=!state.result;
-  if(!state.result){for(const id of ['assessmentArea','modelsArea','additionsArea'])get(id).replaceChildren();return;}
-  renderAssessment(state.result.assessment);renderModels(state.result.matches);renderAdditions(state.result.installation);get('summaryText').value=surveySummary(state.survey,state.result,data);
+  const state=store.getState();currentInputs();syncChoices();get('results').hidden=!state.result;get('copyFallback').hidden=true;get('fallbackText').value='';get('summaryText').value='';get('copy').disabled=!state.result;
+  if(!state.result){for(const id of ['assessmentArea','modelsArea','additionsArea','sizeGuideArea'])get(id).replaceChildren();return;}
+  renderSizeGuide(state.result.sizeGuide);renderAssessment(state.result.assessment);renderModels(state.result.matches);renderAdditions(state.result.installation);get('summaryText').value=surveySummary(state.survey,state.result,data);
  }
- function assess(){const result=store.assess();if(!result.ok){status(result.errors.join(' '));renderCalculated();return false;}renderCalculated();status('');return true;}
-
- function inputChanged(event){
-  const control=event.target;if(!control?.name?.startsWith('baf-'))return;const key=control.name.slice(4),state=store.getState(),value=controlInputValue(control);if(!Object.hasOwn(state.survey,key)||state.survey[key]===value)return;
-  store.update({[key]:value});renderCalculated();if(state.result)status('Inputs changed. Tap Show model choices to refresh the shortlist and copy summary.');else status('');
- }
+ function showStage(next,focus=true){stage=next;for(const panel of stages)panel.hidden=Number(panel.dataset.bafStage)!==stage;get('progress').textContent=(stage+1)+' of 3 · '+['Your boiler','Your home','Size guide & models'][stage];if(focus){const heading=get('stageTitle'+stage);heading.tabIndex=-1;heading.focus({preventScroll:true});root.scrollTop=0;}}
+ function assess(){const result=store.assess();renderCalculated();if(!result.ok){status(result.errors.join(' '));return false;}status('');showStage(2);return true;}
+ function changed(key,value){const state=store.getState();if(!Object.hasOwn(state.survey,key)||state.survey[key]===value)return;store.update({[key]:value});renderCalculated();status(state.result?'Inputs changed. Update model choices to refresh the guide and copy summary.':'');}
+ function inputChanged(event){const control=event.target;if(!control?.name?.startsWith('baf-'))return;changed(control.name.slice(4),controlInputValue(control));}
+ for(const b of choiceButtons)b.addEventListener('click',()=>{const key=b.dataset.bafChoice,value=b.dataset.bafValue;const control=controls.find(c=>c.name==='baf-'+key);if(control)control.value=value;changed(key,value);});
  form.addEventListener('input',inputChanged);form.addEventListener('change',inputChanged);form.addEventListener('submit',e=>{e.preventDefault();assess();});
- get('compare').addEventListener('click',()=>assess());
+ for(const b of root.querySelectorAll('[data-baf-search]'))b.addEventListener('click',e=>{e.preventDefault();assess();});
+ get('toHome').addEventListener('click',()=>{status('');showStage(1);});get('editHome').addEventListener('click',()=>{status('');showStage(1);});
+ for(const b of root.querySelectorAll('[data-baf-back]'))b.addEventListener('click',()=>{status('');showStage(Math.max(0,stage-1));});
+ get('allMakes').addEventListener('click',()=>{const c=controls.find(c=>c.name==='baf-manufacturer');c.value='all';changed('manufacturer','all');assess();});
+ get('restart').addEventListener('click',()=>{const state=store.reset();for(const c of controls)c.value=state.survey[c.name.slice(4)];for(const d of root.querySelectorAll('details'))d.open=false;renderCalculated();status('');showStage(0);});
  get('copy').addEventListener('click',async()=>{get('copy').disabled=true;get('copyFallback').hidden=true;const result=await copyCurrentSurvey(store,globalThis.navigator?.clipboard);status(result.message);get('copy').disabled=!store.getState().result;if(!result.copied&&!result.stale){get('fallbackText').value=result.text;get('copyFallback').hidden=false;get('fallbackText').focus();get('fallbackText').select();}});
  get('selectFallback').addEventListener('click',()=>{get('fallbackText').focus();get('fallbackText').select();});
  const sourceNames={'ideal-logic-max-combi2-current-listing':'Ideal current listing · observed 21 October 2026','ideal-logic-max-combi2-237660-a05-retained-manual':'Ideal own manual · 11/2025 UIN237660 A05','ideal-technical-brochure-2025-revf':'Ideal product codes · 2025 RevF brochure','baxi-800-combi2-current-html':'Baxi current technical table','wb-4000-current-html':'Worcester current listing','wb-4000-installer-brochure':'Worcester verified model table · D11/24','domestic-water-conditions':'Domestic flow and dynamic pressure','mains-boosting':'Mains boosting assessment','gravity-boosting':'Gravity boosting assessment','booster-notification':'Booster notification requirements','condensate-route':'Condensate route and freeze risk','condensate-pump-context':'Condensate example · no transferred dimensions'};
  for(const source of data.sources){const p=make('p');p.append(link(source,sourceNames[source.id]??source.id));get('sourceLinks').append(p);}
- get('surveyFields').disabled=false;status('');renderCalculated();
- const controller={store};uiMounts.set(root,controller);return controller;
+ // Source links are local metadata only; they are opened solely by the user.
+ for(const [url,label]of [['https://www.vaillant.co.uk/advice/understanding-heating-technology/boilers/what-size-boiler-do-i-need/','Vaillant boiler sizing guide'],['https://www.vaillant.co.uk/advice/understanding-heating-technology/boilers/what-is-a-condensing-boiler/','Vaillant condensing-boiler guide']]){const p=make('p');p.append(link({url},label));get('guideSourceLinks').append(p);}
+ get('surveyFields').disabled=false;status('');renderCalculated();showStage(0,false);
+ const controller={store,getStage:()=>stage};uiMounts.set(root,controller);return controller;
 }
-
 
 const hostMounts=new WeakMap();
 function validateFinderData(data){

@@ -21,7 +21,8 @@ export async function copyCurrentSurvey(store,clipboard){
 }
 export function mount(root,doc=root?.ownerDocument,data=SOURCE_DATA){
  if(!root||!doc)throw Error('Finder root unavailable');if(uiMounts.has(root))return uiMounts.get(root);
- const get=id=>root.querySelector('#baf-'+id),store=createSurveyStore(data),form=get('survey');
+ const get=id=>root.querySelector('#baf-'+id),store=createSurveyStore(data),form=get('survey');let stage=0;
+ const stages=[...root.querySelectorAll('[data-baf-stage]')],choiceButtons=[...root.querySelectorAll('[data-baf-choice]')],controls=[...form.querySelectorAll('input[name],select[name],textarea[name]')];
  const make=(tag,text,cls)=>{const n=doc.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls.split(/\s+/).filter(Boolean).map(c=>'baf-'+c).join(' ');return n;};
  const list=items=>{const ul=make('ul');for(const text of items)ul.append(make('li',text));return ul;};
  const status=text=>{get('status').textContent=text??'';};
@@ -65,24 +66,41 @@ export function mount(root,doc=root?.ownerDocument,data=SOURCE_DATA){
   const box=get('additionsArea');box.replaceChildren();
   for(const[title,items]of [['Domestic water supply',result.water.items],['Condensate route / pump',result.condensate.items],['Flue, controls & site',result.site]]){const d=make('details');d.append(make('summary',title),list(items));box.append(d);}
  }
+ function syncChoices(){const raw=store.getState().survey;for(const b of choiceButtons)b.setAttribute('aria-pressed',String(raw[b.dataset.bafChoice]===b.dataset.bafValue));}
+ function currentInputs(){
+  const n=store.getState().survey,fuels={NG:'Natural gas',LPG:'LPG',Oil:'Oil',unknown:'Fuel not sure'},types={combi:'Combi',system:'System',regular:'Regular / heat-only','not-sure':'Type not sure',same:'Keep current type'};
+  const count=(key,label)=>n[key]===''||n[key]===null?label+' unknown':n[key]==='__invalid_number__'?label+' needs checking':n[key]+' '+label;
+  get('currentInputs').textContent=[fuels[n.fuel],types[n.preference],count('bedrooms','bedrooms'),count('bathrooms','bathrooms'),count('radiators','radiators')].join(' · ');
+  const brand=n.manufacturer,pool=data.models.filter(m=>brand==='all'||m.manufacturer===brand);
+  get('coverage').textContent=brand==='survey'?'Survey only: no model filter applied.':(brand==='all'?'All available makes':brand||'Choose a make')+': '+pool.length+' reviewed natural-gas combi variants. This is a limited model pool, not the whole market.';
+ }
+ function renderSizeGuide(g){
+  const box=get('sizeGuideArea');box.replaceChildren();const card=make('article',undefined,'card');card.append(make('h3','Preliminary size guide'));
+  if(g.bandKW)card.append(make('p',g.bandKW.min+'–'+g.bandKW.max+' kW general catalogue range','size-band'));
+  card.append(make('p',g.reason),make('p',g.qualification,'hint'),make('p','This guide does not select or rule out any model.','hint'));box.append(card);
+ }
  function renderCalculated(){
-  const state=store.getState();get('results').hidden=!state.result;get('copyFallback').hidden=true;get('fallbackText').value='';get('summaryText').value='';get('copy').disabled=!state.result;
-  if(!state.result){for(const id of ['assessmentArea','modelsArea','additionsArea'])get(id).replaceChildren();return;}
-  renderAssessment(state.result.assessment);renderModels(state.result.matches);renderAdditions(state.result.installation);get('summaryText').value=surveySummary(state.survey,state.result,data);
+  const state=store.getState();currentInputs();syncChoices();get('results').hidden=!state.result;get('copyFallback').hidden=true;get('fallbackText').value='';get('summaryText').value='';get('copy').disabled=!state.result;
+  if(!state.result){for(const id of ['assessmentArea','modelsArea','additionsArea','sizeGuideArea'])get(id).replaceChildren();return;}
+  renderSizeGuide(state.result.sizeGuide);renderAssessment(state.result.assessment);renderModels(state.result.matches);renderAdditions(state.result.installation);get('summaryText').value=surveySummary(state.survey,state.result,data);
  }
- function assess(){const result=store.assess();if(!result.ok){status(result.errors.join(' '));renderCalculated();return false;}renderCalculated();status('');return true;}
-
- function inputChanged(event){
-  const control=event.target;if(!control?.name?.startsWith('baf-'))return;const key=control.name.slice(4),state=store.getState(),value=controlInputValue(control);if(!Object.hasOwn(state.survey,key)||state.survey[key]===value)return;
-  store.update({[key]:value});renderCalculated();if(state.result)status('Inputs changed. Tap Show model choices to refresh the shortlist and copy summary.');else status('');
- }
+ function showStage(next,focus=true){stage=next;for(const panel of stages)panel.hidden=Number(panel.dataset.bafStage)!==stage;get('progress').textContent=(stage+1)+' of 3 · '+['Your boiler','Your home','Size guide & models'][stage];if(focus){const heading=get('stageTitle'+stage);heading.tabIndex=-1;heading.focus({preventScroll:true});root.scrollTop=0;}}
+ function assess(){const result=store.assess();renderCalculated();if(!result.ok){status(result.errors.join(' '));return false;}status('');showStage(2);return true;}
+ function changed(key,value){const state=store.getState();if(!Object.hasOwn(state.survey,key)||state.survey[key]===value)return;store.update({[key]:value});renderCalculated();status(state.result?'Inputs changed. Update model choices to refresh the guide and copy summary.':'');}
+ function inputChanged(event){const control=event.target;if(!control?.name?.startsWith('baf-'))return;changed(control.name.slice(4),controlInputValue(control));}
+ for(const b of choiceButtons)b.addEventListener('click',()=>{const key=b.dataset.bafChoice,value=b.dataset.bafValue;const control=controls.find(c=>c.name==='baf-'+key);if(control)control.value=value;changed(key,value);});
  form.addEventListener('input',inputChanged);form.addEventListener('change',inputChanged);form.addEventListener('submit',e=>{e.preventDefault();assess();});
- get('compare').addEventListener('click',()=>assess());
+ for(const b of root.querySelectorAll('[data-baf-search]'))b.addEventListener('click',e=>{e.preventDefault();assess();});
+ get('toHome').addEventListener('click',()=>{status('');showStage(1);});get('editHome').addEventListener('click',()=>{status('');showStage(1);});
+ for(const b of root.querySelectorAll('[data-baf-back]'))b.addEventListener('click',()=>{status('');showStage(Math.max(0,stage-1));});
+ get('allMakes').addEventListener('click',()=>{const c=controls.find(c=>c.name==='baf-manufacturer');c.value='all';changed('manufacturer','all');assess();});
+ get('restart').addEventListener('click',()=>{const state=store.reset();for(const c of controls)c.value=state.survey[c.name.slice(4)];for(const d of root.querySelectorAll('details'))d.open=false;renderCalculated();status('');showStage(0);});
  get('copy').addEventListener('click',async()=>{get('copy').disabled=true;get('copyFallback').hidden=true;const result=await copyCurrentSurvey(store,globalThis.navigator?.clipboard);status(result.message);get('copy').disabled=!store.getState().result;if(!result.copied&&!result.stale){get('fallbackText').value=result.text;get('copyFallback').hidden=false;get('fallbackText').focus();get('fallbackText').select();}});
  get('selectFallback').addEventListener('click',()=>{get('fallbackText').focus();get('fallbackText').select();});
  const sourceNames={'ideal-logic-max-combi2-current-listing':'Ideal current listing · observed 21 October 2026','ideal-logic-max-combi2-237660-a05-retained-manual':'Ideal own manual · 11/2025 UIN237660 A05','ideal-technical-brochure-2025-revf':'Ideal product codes · 2025 RevF brochure','baxi-800-combi2-current-html':'Baxi current technical table','wb-4000-current-html':'Worcester current listing','wb-4000-installer-brochure':'Worcester verified model table · D11/24','domestic-water-conditions':'Domestic flow and dynamic pressure','mains-boosting':'Mains boosting assessment','gravity-boosting':'Gravity boosting assessment','booster-notification':'Booster notification requirements','condensate-route':'Condensate route and freeze risk','condensate-pump-context':'Condensate example · no transferred dimensions'};
  for(const source of data.sources){const p=make('p');p.append(link(source,sourceNames[source.id]??source.id));get('sourceLinks').append(p);}
- get('surveyFields').disabled=false;status('');renderCalculated();
- const controller={store};uiMounts.set(root,controller);return controller;
+ // Source links are local metadata only; they are opened solely by the user.
+ for(const [url,label]of [['https://www.vaillant.co.uk/advice/understanding-heating-technology/boilers/what-size-boiler-do-i-need/','Vaillant boiler sizing guide'],['https://www.vaillant.co.uk/advice/understanding-heating-technology/boilers/what-is-a-condensing-boiler/','Vaillant condensing-boiler guide']]){const p=make('p');p.append(link({url},label));get('guideSourceLinks').append(p);}
+ get('surveyFields').disabled=false;status('');renderCalculated();showStage(0,false);
+ const controller={store,getStage:()=>stage};uiMounts.set(root,controller);return controller;
 }
-

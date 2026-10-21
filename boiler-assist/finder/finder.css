@@ -52,3 +52,16 @@
 #baf-root #baf-summaryText,#baf-root #baf-fallbackText{font-size:16px!important;min-height:250px;white-space:pre-wrap;overflow-wrap:anywhere}
 #baf-root #baf-modelsArea:empty,#baf-root #baf-additionsArea:empty,#baf-root #baf-assessmentArea:empty{display:none}
 @media(max-width:360px){#baf-root .baf-shell{padding-right:12px;padding-left:12px}#baf-root .baf-three{grid-template-columns:minmax(0,1fr)}#baf-root .baf-three label{margin-bottom:4px}}
+
+/* Three guided Finder stages only; no Library/header geometry changes. */
+#baf-root .baf-progress{font-size:14px;font-weight:700;color:var(--baf-teal);margin:4px 0 18px}
+#baf-root .baf-choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:10px 0 22px}
+#baf-root button.baf-choice{min-height:64px;text-align:center;overflow-wrap:anywhere}
+#baf-root button.baf-choice[aria-pressed="true"]{background:#174844;border:2px solid var(--baf-teal);color:#fff;box-shadow:inset 0 0 0 1px var(--baf-teal)}
+#baf-root .baf-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch;margin:8px 0 16px}
+#baf-root .baf-actions>*{flex:1 1 150px;min-width:0}
+#baf-root .baf-current-inputs{padding:10px 12px;background:var(--baf-surface);border-radius:8px;overflow-wrap:anywhere;font-size:14px}
+#baf-root .baf-size-band{font-size:24px;font-weight:750;color:var(--baf-teal);line-height:1.3}
+#baf-root [data-baf-stage]{min-width:0;padding-bottom:12px}
+#baf-root [data-baf-stage]>h2{margin-top:6px}
+#baf-root [data-baf-search]{scroll-margin-bottom:20px}
