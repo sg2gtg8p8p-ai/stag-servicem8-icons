@@ -99,8 +99,8 @@ async function checkForUpdates(manual=false){
 $('checkUpdates').onclick=()=>checkForUpdates(true);
 $('applyAppUpdate').onclick=async()=>{
   const worker=registration?.waiting;if(!worker)return;
-  if(!confirm('Finish your current lookup before updating. This window will reopen; your selected boiler is saved, but you must confirm the fitted configuration again. Continue?'))return;
-  writeSelection();try{sessionStorage.setItem('stag-boiler-update-resume-v1','1');}catch{}applyingUpdate=true;$('applyAppUpdate').disabled=true;
+  if(!confirm('Finish your current lookup before updating. The app will reopen on the main screen. Continue?'))return;
+  writeSelection();applyingUpdate=true;$('applyAppUpdate').disabled=true;
   try{
     const result=await new Promise((resolve,reject)=>{
       const channel=new MessageChannel(),timer=setTimeout(()=>reject(Error('Close Boiler Assist and reopen to finish this update.')),20000);
@@ -116,7 +116,8 @@ document.addEventListener('visibilitychange',()=>{if(!document.hidden)checkForUp
 async function boot(){
   const r=await fetch('./release-info.json',{credentials:'omit'});if(!r.ok)throw Error('App release information unavailable');info=await r.json();
   records=[...await dataset('search-index'),...await dataset('gas-fire-index')];updateResume();referenceCatalogueReady=true;receiveReference();
-  try{if(sessionStorage.getItem('stag-boiler-update-resume-v1')==='1'){sessionStorage.removeItem('stag-boiler-update-resume-v1');const saved=readSelection();if(saved&&records.some(r=>r.id===saved.recordId)){restore=saved;window.dispatchEvent(new CustomEvent('stag-open-standalone-record',{detail:{recordId:saved.recordId,section:saved.section}}));}}}catch{}
+  // Older versions left this marker when applying an update. Consume it without reopening a saved boiler.
+  try{sessionStorage.removeItem('stag-boiler-update-resume-v1');}catch{}
   $('preparedDate').textContent=info.preparedOn;
   if(!('serviceWorker'in navigator)||!isSecureContext){$('offlineStatus').textContent='Offline installation requires a trusted HTTPS address or this computer’s localhost.';return;}
   registration=await navigator.serviceWorker.register('./sw.js',{scope:'./',updateViaCache:'none'});

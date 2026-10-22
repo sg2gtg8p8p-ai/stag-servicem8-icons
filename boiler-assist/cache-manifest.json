@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "92db5ed08e6b0d06",
+  "buildId": "12c85af3074b64b6",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.22-r1",
+  "appVersion": "2026.10.22-r2",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -12,8 +12,8 @@
     },
     {
       "url": "./app.js",
-      "sha256": "006f5e1b15a735590557553fe56a9d0a2527e4cbe0b8b50daa2fa18632723364",
-      "bytes": 11601
+      "sha256": "ecc54cb7eaad8cba93a0269cbe552cb661c3f68e1f942f18ea8f508121cfa5e8",
+      "bytes": 11283
     },
     {
       "url": "./data/details-packed.json",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "a2105534412a6ec5f6f7d00ae24d5173483e383837e5cfe4b69cc8b46523e323",
-      "bytes": 19670
+      "sha256": "faab3d50e5a22d88fdbf6c84c1775fd69c2a34c605c3b5dd53dcb01bc3c842e5",
+      "bytes": 19994
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -146,5 +146,5 @@
       "bytes": 53106
     }
   ],
-  "totalBytes": 10241361
+  "totalBytes": 10241367
 }
