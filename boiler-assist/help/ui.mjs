@@ -45,8 +45,8 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   const tips=element(doc,'details');tips.append(element(doc,'summary','Photo tips and limits'));
   paragraph(doc,tips,'Read a clear data-plate photo on this device, or type its details. On-device reading uploads nothing. Optional AI sends only the photo or question you explicitly submit through Stag’s server to OpenAI. It does not establish a fitted part or a diagnosis.');
   paragraph(doc,tips,'A code match does not confirm fitted parts or authorise an order. Always check the actual data plate, fuel, generation and installed setup.','help-notice');
-  paragraph(doc,tips,'Crop closely to the label, keep it upright and avoid glare. JPEG/PNG only, up to 12 MB and 24 megapixels. Retake or crop a large/unclear image. Photo reading needs an initial online reader download; its availability offline is not guaranteed.','help-small');
-  intro.append(tips);
+  paragraph(doc,tips,'Crop closely to the label, keep it upright and avoid glare. JPEG/PNG only, up to 12 MB and 25 megapixels. Retake or crop a large/unclear image. Photo reading needs an initial online reader download; its availability offline is not guaranteed.','help-small');
+
   const aiConnection=element(doc,'details');aiConnection.append(element(doc,'summary','Connect optional AI'));
   const aiStatus=element(doc,'p','AI is not connected on this device.','help-small');aiStatus.setAttribute('role','status');
   const pairCode=field('input','help-ai-pair-code','One-time phone connection code');pairCode.input.type='password';pairCode.input.autocomplete='off';pairCode.input.spellcheck=false;pairCode.input.maxLength=256;
@@ -56,10 +56,10 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   aiConnection.append(aiStatus,pairCode.wrap,pairButton,disconnectButton,aiCost);
   paragraph(doc,aiConnection,'AI sends submitted content to OpenAI through Stag’s server. Stag does not save questions, photos or answers. OpenAI’s API retention rules may apply. Do not include customer names, addresses or other private details.','help-small');
   link(doc,aiConnection,{url:'https://developers.openai.com/api/docs/guides/your-data',label:'OpenAI API data controls'});
-  intro.append(aiConnection);
+  const settings=element(doc,'details');settings.append(element(doc,'summary','Help & AI settings'),tips,aiConnection);
 
   const photo=field('input','help-photo','Choose or take a label photo');photo.input.type='file';photo.input.accept='image/jpeg,image/png';
-  const status=element(doc,'p','Loading the saved catalogue…','help-notice');status.setAttribute('role','status');status.setAttribute('aria-live','polite');
+  const status=element(doc,'p','Loading the saved catalogue…','help-notice');status.hidden=true;status.setAttribute('role','status');status.setAttribute('aria-live','polite');
   const controls=element(doc,'div',undefined,'help-actions');
   const read=button(doc,'Read label on this device',readPhoto),cancel=button(doc,'Cancel reading',cancelRead),reset=button(doc,'Clear photo and answers',resetAll);
   const aiRead=button(doc,'Read label with AI',prepareAIPhoto);
@@ -80,7 +80,7 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   const shortcuts=element(doc,'div',undefined,'help-actions');for(const [label,section]of [['FGA readings','combustion'],['Service procedure','fullService'],['Technical data','technicalData'],['Manual','manuals']])shortcuts.append(button(doc,label,()=>{const id=session.confirmed()?.id;if(id&&selection&&!busy)onSection(id,section);}));questionBox.append(shortcuts);
   const answer=element(doc,'div');questionBox.append(answer);
   const intake=element(doc,'section');intake.append(photo.wrap,controls,aiPhotoReview,textDetails,candidates);
-  root.append(intro,status,intake,confirmed,questionBox);
+  root.append(intro,status,intake,confirmed,questionBox,settings);
   function updateBusy(value){busy=!!(value||aiInFlight);updateAIButtons();question.input.disabled=busy;ask.disabled=busy;read.disabled=busy||!file||!records.length;find.disabled=busy||!records.length;for(const control of shortcuts.querySelectorAll('button'))control.disabled=busy;cancel.hidden=!busy;cancel.textContent=aiInFlight?'Clear pending AI result':'Cancel reading';photo.input.disabled=busy;detected.input.disabled=busy;}
   function forgetConfirmation(){discardAIPhoto();session.invalidate();selection=null;questionBox.hidden=true;intake.hidden=false;status.hidden=false;tips.hidden=false;aiConnection.hidden=false;question.input.value='';clear(answer);clear(confirmed);}
   async function cancelRead(){operation++;forgetConfirmation();await reader.cancel();updateBusy(false);status.textContent=aiInFlight?'The displayed AI result is cleared. The request already sent may still use credit; wait for it to finish. No retry has been made.':'Reading cancelled. Choose another photo or type the plate details.';}
@@ -110,7 +110,7 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   }
   async function confirm(record){
     const current=++operation;forgetConfirmation();const token=session.confirm(record);status.textContent='Opening this exact saved catalogue entry…';
-    try{const row=await loadDetail(record.id);if(current!==operation||!session.valid(token))return;if(!identityEqual(row?.boiler,record))throw Error('The saved entry does not match. Return to the library and confirm the exact boiler.');selection=row;clear(candidates);paragraph(doc,confirmed,identityLabel(record),'help-identity');paragraph(doc,confirmed,'Check the fitted configuration and source conditions in the guide before using any setting.','help-small');confirmed.append(button(doc,'Change boiler',()=>{operation++;forgetConfirmation();findCandidates();}));intake.hidden=true;status.hidden=true;tips.hidden=true;aiConnection.hidden=true;questionBox.hidden=false;updateAIButtons();root.closest('#help-root')?.scrollTo({top:0});}
+    try{const row=await loadDetail(record.id);if(current!==operation||!session.valid(token))return;if(!identityEqual(row?.boiler,record))throw Error('The saved entry does not match. Return to the library and confirm the exact boiler.');selection=row;clear(candidates);paragraph(doc,confirmed,identityLabel(record),'help-identity');paragraph(doc,confirmed,'Check the fitted configuration and source conditions in the guide before using any setting.','help-small');confirmed.append(button(doc,'Change boiler',()=>{operation++;forgetConfirmation();findCandidates();}));intake.hidden=true;status.hidden=true;settings.open=false;questionBox.hidden=false;updateAIButtons();root.closest('#help-root')?.scrollTo({top:0});}
     catch(error){if(current===operation){forgetConfirmation();status.textContent='The saved entry could not be opened. Reconnect or use the library search.';}}
   }
   async function submitQuestion(){if(busy||!selection||!question.input.value.trim())return;if(aiState.ready)return answerWithAI();return answerQuestion();}
@@ -158,7 +158,7 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
       status.textContent='Read the complete saved conditions and sources below. AI wording does not confirm fit, a measurement or completed work.';
     }catch(error){if(current===operation)status.textContent=error.message;}finally{aiInFlight=false;updateBusy(false);await syncAI();}
   }
-  const ready=Promise.resolve().then(loadCatalogue).then(value=>{records=Array.isArray(value)?value:[];if(!records.length)throw Error('empty');status.textContent='Choose a clear label photo, or type an exact GC/product code.';updateBusy(false);syncAI();}).catch(()=>{status.textContent='The saved catalogue is unavailable. Reconnect and verify the library download.';read.disabled=true;find.disabled=true;});
+  const ready=Promise.resolve().then(loadCatalogue).then(value=>{records=Array.isArray(value)?value:[];if(!records.length)throw Error('empty');status.textContent='Choose a clear label photo, or type an exact GC/product code.';updateBusy(false);syncAI();}).catch(()=>{status.hidden=false;status.textContent='The saved catalogue is unavailable. Reconnect and verify the library download.';read.disabled=true;find.disabled=true;});
   return {ready,reset:resetAll,cancel:cancelRead,dispose(){operation++;reader.cancel();file=null;detected.input.value='';forgetConfirmation();},
     // Elements are exposed for finite DOM tests, not persisted or sent anywhere.
     elements:{photo:photo.input,detected:detected.input,read,cancel,find,candidates,confirmed,question:question.input,ask,answer,status,questionBox}};

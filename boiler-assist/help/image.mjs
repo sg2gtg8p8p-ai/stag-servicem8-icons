@@ -1,5 +1,5 @@
 // Read bounded metadata before decoding or allocating a canvas. JPEG/PNG only.
-export const IMAGE_LIMITS=Object.freeze({bytes:12*1024*1024,pixels:24000000,edge:8000,outputEdge:2000,headerBytes:512*1024});
+export const IMAGE_LIMITS=Object.freeze({bytes:12*1024*1024,pixels:25000000,edge:8000,outputEdge:2000,headerBytes:512*1024});
 export function dimensions(bytes){
   const b=bytes instanceof Uint8Array?bytes:new Uint8Array(bytes),v=new DataView(b.buffer,b.byteOffset,b.byteLength);
   if(b.length>=24&&[137,80,78,71,13,10,26,10].every((x,i)=>b[i]===x)&&String.fromCharCode(...b.slice(12,16))==='IHDR')return {type:'image/png',width:v.getUint32(16),height:v.getUint32(20)};
