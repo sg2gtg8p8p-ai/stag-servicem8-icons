@@ -84,8 +84,9 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   const questionBox=element(doc,'section');questionBox.hidden=true;
   questionBox.append(element(doc,'h2','What do you need?'));
   paragraph(doc,questionBox,'Ask a question or open a section below. Service and FGA questions go straight to the full guide.');
-  const question=field('input','help-question','What information do you need?');question.input.type='text';question.input.maxLength=240;question.input.autocomplete='off';
+  const question=field('input','help-question','Type or dictate a question');question.input.type='text';question.input.maxLength=240;question.input.autocomplete='off';
   const ask=button(doc,'Search guide',submitQuestion);question.input.maxLength=400;questionBox.append(question.wrap,ask);
+  paragraph(doc,questionBox,'To speak, tap the question box, then the microphone on your iPhone keyboard. Check the words before sending.','help-small');
   const shortcuts=element(doc,'div',undefined,'help-actions');for(const [label,section]of [['FGA readings','combustion'],['Service procedure','fullService'],['Technical data','technicalData'],['Manual','manuals']])shortcuts.append(button(doc,label,()=>{const id=session.confirmed()?.id;if(id&&selection&&!busy)onSection(id,section);}));questionBox.append(shortcuts);
   const answer=element(doc,'div');questionBox.append(answer);
   const intake=element(doc,'section');intake.append(photo.wrap,aiPhotoNotice,controls,textDetails,candidates);
@@ -174,7 +175,9 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
     }catch(error){if(current===operation)status.textContent=error.message;}finally{aiInFlight=false;updateBusy(false);await syncAI();}
   }
   const ready=Promise.resolve().then(loadCatalogue).then(value=>{records=Array.isArray(value)?value:[];if(!records.length)throw Error('empty');status.textContent='Choose a clear label photo, or type an exact GC/product code.';updateBusy(false);syncAI();}).catch(()=>{status.hidden=false;status.textContent='The saved catalogue is unavailable. Reconnect and verify the library download.';read.disabled=true;find.disabled=true;});
-  return {ready,reset:resetAll,cancel:cancelRead,dispose(){operation++;reader.cancel();file=null;detected.input.value='';forgetConfirmation();},
+  function suspendForGuide(){operation++;reader.cancel();file=null;photo.input.value='';detected.input.value='';clear(candidates);discardAIPhoto();clear(answer);question.input.value='';updateBusy(false);}
+  function returnToQuestions(){if(!selection||!identityEqual(session.confirmed(),selection.boiler))return false;clear(answer);question.input.value='';intake.hidden=true;questionBox.hidden=false;status.hidden=true;settings.open=false;root.closest('#help-root')?.scrollTo({top:0});return true;}
+  return {ready,reset:resetAll,cancel:cancelRead,suspendForGuide,returnToQuestions,dispose(){operation++;reader.cancel();file=null;detected.input.value='';forgetConfirmation();},
     // Elements are exposed for finite DOM tests, not persisted or sent anywhere.
     elements:{photo:photo.input,detected:detected.input,read,cancel,find,candidates,confirmed,question:question.input,ask,answer,status,questionBox}};
 }

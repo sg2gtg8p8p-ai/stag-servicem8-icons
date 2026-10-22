@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "5d2621b3f7ab8710",
+  "buildId": "b4b3764e26960cb4",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.22-r7",
+  "appVersion": "2026.10.22-r8",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -72,8 +72,8 @@
     },
     {
       "url": "./help/host.mjs",
-      "sha256": "546b221e73f7e9d1f14885d0bdf78aeb79fa03335b80a8865d04758a699c2de2",
-      "bytes": 4705
+      "sha256": "414bd1fad08b0948182d16c620a4fa7eb6c1cbc7c8799a31aad4f488a9f02714",
+      "bytes": 6144
     },
     {
       "url": "./help/image.mjs",
@@ -92,8 +92,8 @@
     },
     {
       "url": "./help/ui.mjs",
-      "sha256": "1a116ca809b2675c32b6f9852105589832094d47cec9121b8f0fbccecdda8762",
-      "bytes": 23695
+      "sha256": "b0fd15b073603206bc96b97d04c85a0579c5d90d9dc50d70d71fec4d167b4e93",
+      "bytes": 24378
     },
     {
       "url": "./icons/256.png",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "e7a6cd57f693f691aa8d63ff907127cdc326f242ed4e7cb3eb9816ce655e67b4",
-      "bytes": 23555
+      "sha256": "19abaf6ad138b431f740f69de283f2fae97855758098affe7b7a8bcb98ffdd33",
+      "bytes": 24171
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -146,5 +146,5 @@
       "bytes": 53106
     }
   ],
-  "totalBytes": 10252941
+  "totalBytes": 10255679
 }
