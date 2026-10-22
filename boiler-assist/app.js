@@ -33,7 +33,7 @@ if(standaloneDisplay?.addEventListener)standaloneDisplay.addEventListener('chang
 else standaloneDisplay?.addListener?.(showAppMode);
 window.addEventListener('pageshow',showAppMode);
 showAppMode();
-$('installHelp').onclick=()=>{showAppMode();$('installDialog').showModal();};
+$('installHelp').onclick=()=>{showAppMode();showWaiting();$('installDialog').showModal();};
 function referenceRecord(hash,catalogue){
   if(typeof hash!=='string'||!hash.startsWith('#reference=')||hash.includes('&')||hash.slice(1).includes('#'))return null;
   let id;try{id=decodeURIComponent(hash.slice('#reference='.length));}catch{return null;}
@@ -76,14 +76,17 @@ async function showStatus(){
 let checkingUpdate=false,lastUpdateCheck=0,applyingUpdate=false;
 function showWaiting(){
   const waiting=!!(registration?.waiting&&registration.active&&navigator.serviceWorker.controller);
-  $('updateNotice').hidden=!waiting;
-  if(waiting){$('updateMessage').textContent='Update ready';$('applyAppUpdate').disabled=false;}
+  $('updateNotice').hidden=!waiting;$('dialogApplyUpdate').hidden=!waiting;
+  if(waiting)$('dialogUpdateStatus').textContent='Update available. Finish your lookup, then choose Update app.';
+  if(waiting&&!applyingUpdate){$('updateMessage').textContent='Update ready';$('applyAppUpdate').disabled=false;$('dialogApplyUpdate').disabled=false;}
 }
 async function checkForUpdates(manual=false){
-  if(!registration||checkingUpdate)return;
-  if(!navigator.onLine){if(manual)notice('Connect to check for an app update.');return;}
+  if(checkingUpdate){if(manual)$('dialogUpdateStatus').textContent='An update check is already in progress…';return;}
+  if(!registration){if(manual)$('dialogUpdateStatus').textContent='The app is still starting. Please try again shortly.';return;}
+  if(!navigator.onLine){if(manual)$('dialogUpdateStatus').textContent='You are offline. Connect to check for updates.';return;}
   const now=Date.now();if(!manual&&now-lastUpdateCheck<60000)return;
   lastUpdateCheck=now;checkingUpdate=true;
+  if(manual){$('checkUpdates').disabled=true;$('checkUpdates').textContent='Checking…';$('dialogUpdateStatus').textContent='Checking for updates…';}
   try{
     await registration.update();
     const worker=registration.installing;
@@ -92,15 +95,15 @@ async function checkForUpdates(manual=false){
       const changed=()=>{if(['installed','redundant'].includes(worker.state)){clearTimeout(timer);worker.state==='installed'?resolve():reject(Error('The new update could not be verified.'));}};
       worker.addEventListener('statechange',changed);changed();
     });
-    showWaiting();if(manual&&!registration.waiting)notice('You’re up to date.');
-  }catch(e){if(manual)notice(e.message||'The update could not be checked. Try again when connected.');}
-  finally{checkingUpdate=false;}
+    showWaiting();if(manual&&!registration.waiting)$('dialogUpdateStatus').textContent='You’re up to date.';
+  }catch(e){if(manual)$('dialogUpdateStatus').textContent=e.message||'The update could not be checked. Try again when connected.';}
+  finally{checkingUpdate=false;if(manual){$('checkUpdates').disabled=false;$('checkUpdates').textContent='Check for updates';}}
 }
 $('checkUpdates').onclick=()=>checkForUpdates(true);
-$('applyAppUpdate').onclick=async()=>{
+async function applyUpdate(){
   const worker=registration?.waiting;if(!worker)return;
   if(!confirm('Finish your current lookup before updating. The app will reopen on the main screen. Continue?'))return;
-  writeSelection();applyingUpdate=true;$('applyAppUpdate').disabled=true;
+  writeSelection();applyingUpdate=true;$('applyAppUpdate').disabled=true;$('dialogApplyUpdate').disabled=true;$('dialogUpdateStatus').textContent='Applying update… The app will reopen on the main screen.';
   try{
     const result=await new Promise((resolve,reject)=>{
       const channel=new MessageChannel(),timer=setTimeout(()=>reject(Error('Close Boiler Assist and reopen to finish this update.')),20000);
@@ -109,7 +112,9 @@ $('applyAppUpdate').onclick=async()=>{
     });
     if(!result?.ok){try{sessionStorage.removeItem('stag-boiler-update-resume-v1');}catch{}applyingUpdate=false;$('applyAppUpdate').disabled=false;$('updateMessage').textContent=result?.reason==='other-windows-open'?'Close the other Boiler Assist windows, then tap Update app.':'The update could not be verified. Keep this version open and try again.';}
   }catch(e){$('applyAppUpdate').disabled=false;$('updateMessage').textContent=e.message;}
-};
+  if(!applyingUpdate||!$('applyAppUpdate').disabled){$('dialogApplyUpdate').disabled=false;$('dialogUpdateStatus').textContent=$('updateMessage').textContent;}
+}
+$('applyAppUpdate').onclick=applyUpdate;$('dialogApplyUpdate').onclick=applyUpdate;
 window.addEventListener('pageshow',()=>checkForUpdates(false));
 window.addEventListener('online',()=>checkForUpdates(false));
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)checkForUpdates(false);});

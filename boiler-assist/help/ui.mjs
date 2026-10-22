@@ -40,8 +40,8 @@ export function renderAnswer(doc,parent,result,{onSection=()=>{}}={}){
 export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,reader,onSection=()=>{},aiClient=createAIClient()}){
   const session=createSession();let records=[],file=null,operation=0,busy=false,selection=null,aiInFlight=false,aiState={connected:false,ready:false},pendingAIPhoto=null;
   const field=(tag,id,label)=>{const wrap=element(doc,'div');const l=element(doc,'label',label);l.htmlFor=id;const input=element(doc,tag);input.id=id;wrap.append(l,input);return {wrap,input};};
-  const intro=element(doc,'div');intro.append(element(doc,'h1','Photo & boiler help'));
-  paragraph(doc,intro,'Read a boiler label or type its GC/product number. On-device reading is free; AI is optional.');
+  const intro=element(doc,'div');intro.append(element(doc,'h1','Identify a boiler'));
+  paragraph(doc,intro,'Use a label photo or enter a GC/product code.');
   const tips=element(doc,'details');tips.append(element(doc,'summary','Photo tips and limits'));
   paragraph(doc,tips,'Read a clear data-plate photo on this device, or type its details. On-device reading uploads nothing. Optional AI sends only the photo or question you explicitly submit through Stag’s server to OpenAI. It does not establish a fitted part or a diagnosis.');
   paragraph(doc,tips,'A code match does not confirm fitted parts or authorise an order. Always check the actual data plate, fuel, generation and installed setup.','help-notice');
@@ -58,7 +58,7 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   link(doc,aiConnection,{url:'https://developers.openai.com/api/docs/guides/your-data',label:'OpenAI API data controls'});
   intro.append(aiConnection);
 
-  const photo=field('input','help-photo','Choose or take a label photo');photo.input.type='file';photo.input.accept='image/jpeg,image/png';photo.input.setAttribute('capture','environment');
+  const photo=field('input','help-photo','Choose or take a label photo');photo.input.type='file';photo.input.accept='image/jpeg,image/png';
   const status=element(doc,'p','Loading the saved catalogue…','help-notice');status.setAttribute('role','status');status.setAttribute('aria-live','polite');
   const controls=element(doc,'div',undefined,'help-actions');
   const read=button(doc,'Read label on this device',readPhoto),cancel=button(doc,'Cancel reading',cancelRead),reset=button(doc,'Clear photo and answers',resetAll);
@@ -67,29 +67,32 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   const aiPhotoReview=element(doc,'div',undefined,'help-notice');aiPhotoReview.hidden=true;
   paragraph(doc,aiPhotoReview,'Send the selected, resized label photo to OpenAI through Stag’s server? Check that it contains no customer or personal information. A code transcript is not a verified part match.');
   aiPhotoReview.append(button(doc,'Send this label photo',sendAIPhoto),button(doc,'Cancel AI photo',discardAIPhoto));
-  const detected=field('textarea','help-label-text','Label text — check and correct before matching');detected.input.maxLength=MAX_TEXT;detected.input.rows=5;detected.input.autocomplete='off';detected.input.spellcheck=false;
-  const find=button(doc,'Find catalogue candidates',findCandidates);find.disabled=true;
+  const detected=field('textarea','help-label-text','GC/product code or label text');detected.input.maxLength=MAX_TEXT;detected.input.rows=2;detected.input.autocomplete='off';detected.input.spellcheck=false;
+  const find=button(doc,'Find boiler',findCandidates);find.disabled=true;
+  const textDetails=element(doc,'details');textDetails.append(element(doc,'summary','Enter or correct label text'),detected.wrap,find);
   const candidates=element(doc,'div');candidates.setAttribute('aria-live','polite');
-  const confirmed=element(doc,'div');
+  const confirmed=element(doc,'div');confirmed.setAttribute('aria-live','polite');
   const questionBox=element(doc,'section');questionBox.hidden=true;
-  questionBox.append(element(doc,'h2','Find information in this boiler’s saved guide'));
-  paragraph(doc,questionBox,'Search the confirmed boiler’s saved references, or ask AI to explain supported information. Adjustment and repair questions open the complete existing guide.');
+  questionBox.append(element(doc,'h2','What do you need?'));
+  paragraph(doc,questionBox,'Ask a question or open a section below. Service and FGA questions go straight to the full guide.');
   const question=field('input','help-question','What information do you need?');question.input.type='text';question.input.maxLength=240;question.input.autocomplete='off';
-  const ask=button(doc,'Find saved information',answerQuestion),askAI=button(doc,'Ask AI about saved information',answerWithAI);askAI.disabled=true;question.input.maxLength=400;questionBox.append(question.wrap,ask,askAI);
+  const ask=button(doc,'Search guide',submitQuestion);question.input.maxLength=400;questionBox.append(question.wrap,ask);
+  const shortcuts=element(doc,'div',undefined,'help-actions');for(const [label,section]of [['FGA readings','combustion'],['Service procedure','fullService'],['Technical data','technicalData'],['Manual','manuals']])shortcuts.append(button(doc,label,()=>{const id=session.confirmed()?.id;if(id&&selection&&!busy)onSection(id,section);}));questionBox.append(shortcuts);
   const answer=element(doc,'div');questionBox.append(answer);
-  root.append(intro,photo.wrap,controls,aiPhotoReview,status,detected.wrap,find,candidates,confirmed,questionBox);
-  function updateBusy(value){busy=!!(value||aiInFlight);updateAIButtons();question.input.disabled=busy;ask.disabled=busy;read.disabled=busy||!file||!records.length;find.disabled=busy||!records.length;cancel.hidden=!busy;cancel.textContent=aiInFlight?'Clear pending AI result':'Cancel reading';photo.input.disabled=busy;detected.input.disabled=busy;}
-  function forgetConfirmation(){discardAIPhoto();session.invalidate();selection=null;questionBox.hidden=true;question.input.value='';clear(answer);clear(confirmed);}
+  const intake=element(doc,'section');intake.append(photo.wrap,controls,aiPhotoReview,textDetails,candidates);
+  root.append(intro,status,intake,confirmed,questionBox);
+  function updateBusy(value){busy=!!(value||aiInFlight);updateAIButtons();question.input.disabled=busy;ask.disabled=busy;read.disabled=busy||!file||!records.length;find.disabled=busy||!records.length;for(const control of shortcuts.querySelectorAll('button'))control.disabled=busy;cancel.hidden=!busy;cancel.textContent=aiInFlight?'Clear pending AI result':'Cancel reading';photo.input.disabled=busy;detected.input.disabled=busy;}
+  function forgetConfirmation(){discardAIPhoto();session.invalidate();selection=null;questionBox.hidden=true;intake.hidden=false;status.hidden=false;tips.hidden=false;aiConnection.hidden=false;question.input.value='';clear(answer);clear(confirmed);}
   async function cancelRead(){operation++;forgetConfirmation();await reader.cancel();updateBusy(false);status.textContent=aiInFlight?'The displayed AI result is cleared. The request already sent may still use credit; wait for it to finish. No retry has been made.':'Reading cancelled. Choose another photo or type the plate details.';}
   function resetAll(){operation++;reader.cancel();file=null;photo.input.value='';detected.input.value='';clear(candidates);forgetConfirmation();updateBusy(false);status.textContent='Photo, detected text and answers cleared from this screen.';}
   photo.input.addEventListener('change',()=>{operation++;reader.cancel();file=photo.input.files?.[0]||null;detected.input.value='';clear(candidates);forgetConfirmation();updateBusy(false);status.textContent=file?'Photo selected. Tap Read label, or type the details below.':'Choose a label photo or type its details.';});
   detected.input.addEventListener('input',()=>{operation++;forgetConfirmation();clear(candidates);status.textContent='Text changed. Find candidates and confirm the exact entry again.';});
   question.input.addEventListener('input',()=>{operation++;clear(answer);});
-  question.input.addEventListener('keydown',event=>{if(event.key==='Enter'){event.preventDefault();answerQuestion();}});
+  question.input.addEventListener('keydown',event=>{if(event.key==='Enter'){event.preventDefault();submitQuestion();}});
   async function readPhoto(){
     if(busy||!file)return;
     const current=++operation;forgetConfirmation();clear(candidates);detected.input.value='';updateBusy(true);
-    try{const text=await reader.read(file,{onStatus:message=>{if(current===operation)status.textContent=message;}});if(current!==operation)return;detected.input.value=text.slice(0,MAX_TEXT);status.textContent=text.trim()?'Check the detected text against the plate, then find candidates. Recognition can misread characters.':'No clear text was read. Retake a closer photo or type the exact code.';}
+    try{const text=await reader.read(file,{onStatus:message=>{if(current===operation)status.textContent=message;}});if(current!==operation)return;detected.input.value=text.slice(0,MAX_TEXT);updateBusy(false);if(text.trim()){findCandidates();textDetails.open=false;}else status.textContent='No clear text was read. Retake a closer photo or type the exact code.';}
     catch(error){if(current===operation)status.textContent=error?.name==='AbortError'?'Reading cancelled.':(error?.message||'Photo reading failed. Type the plate details instead.');}
     finally{if(current===operation)updateBusy(false);}
   }
@@ -100,26 +103,28 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
     if(result.candidates.length>30){paragraph(doc,candidates,'Too many matching entries. Add the exact GC or product code to narrow the list.');return;}
     for(const candidate of result.candidates){
       const card=element(doc,'article',undefined,'help-candidate');paragraph(doc,card,identityLabel(candidate.record),'help-identity');paragraph(doc,card,candidate.reasons.join(' · '),'help-small');
-      const label=element(doc,'label');const check=element(doc,'input');check.type='checkbox';label.append(check,doc.createTextNode(' I checked this exact entry against the data plate, fuel and fitted setup.'));
-      const choose=button(doc,'Confirm this boiler',()=>confirm(candidate.record));choose.disabled=true;check.addEventListener('change',()=>{choose.disabled=!check.checked;});card.append(label,choose);candidates.append(card);
+      paragraph(doc,card,'Check the model, code and fuel against the label before continuing.','help-small');
+      const choose=button(doc,'Use this boiler',()=>confirm(candidate.record));card.append(choose);candidates.append(card);
     }
+    if(result.candidates.length)candidates.scrollIntoView({block:'start'});
   }
   async function confirm(record){
     const current=++operation;forgetConfirmation();const token=session.confirm(record);status.textContent='Opening this exact saved catalogue entry…';
-    try{const row=await loadDetail(record.id);if(current!==operation||!session.valid(token))return;if(!identityEqual(row?.boiler,record))throw Error('The saved entry does not match. Return to the library and confirm the exact boiler.');selection=row;clear(candidates);paragraph(doc,confirmed,'Confirmed catalogue entry: '+identityLabel(record),'help-identity');paragraph(doc,confirmed,'This confirms your catalogue choice, not the installed appliance, serial applicability or safe working conditions.','help-notice');confirmed.append(button(doc,'Choose a different boiler',()=>{operation++;forgetConfirmation();findCandidates();}));questionBox.hidden=false;updateAIButtons();status.textContent='Choose a question topic below. No photo, text or answer is saved by this section.';}
+    try{const row=await loadDetail(record.id);if(current!==operation||!session.valid(token))return;if(!identityEqual(row?.boiler,record))throw Error('The saved entry does not match. Return to the library and confirm the exact boiler.');selection=row;clear(candidates);paragraph(doc,confirmed,identityLabel(record),'help-identity');paragraph(doc,confirmed,'Check the fitted configuration and source conditions in the guide before using any setting.','help-small');confirmed.append(button(doc,'Change boiler',()=>{operation++;forgetConfirmation();findCandidates();}));intake.hidden=true;status.hidden=true;tips.hidden=true;aiConnection.hidden=true;questionBox.hidden=false;updateAIButtons();root.closest('#help-root')?.scrollTo({top:0});}
     catch(error){if(current===operation){forgetConfirmation();status.textContent='The saved entry could not be opened. Reconnect or use the library search.';}}
   }
+  async function submitQuestion(){if(busy||!selection||!question.input.value.trim())return;if(aiState.ready)return answerWithAI();return answerQuestion();}
   async function answerQuestion(){
     const identity=session.confirmed();if(!identity||!selection)return;
     const current=++operation,token=session.token(),query=question.input.value;
-    clear(answer);status.textContent='Finding this entry’s saved references…';
-    try{const row=await loadDetail(identity.id);if(current!==operation||!session.valid(token))return;const result=retrieve(row,identity,query);renderAnswer(doc,answer,result,{onSection:section=>{
+    clear(answer);status.hidden=false;status.textContent='Finding this entry’s saved references…';
+    try{const row=await loadDetail(identity.id);if(current!==operation||!session.valid(token))return;const result=retrieve(row,identity,query);if(result.kind==='section'&&result.section){onSection(identity.id,result.section);return;}renderAnswer(doc,answer,result,{onSection:section=>{
       if(!session.valid(token)||!identityEqual(session.confirmed(),identity))return;
       onSection(identity.id,section);
     }});status.textContent='Saved-guide lookup complete. Read the full conditions and source limits.';}
     catch(error){if(current===operation)status.textContent='The saved guide is unavailable. Reconnect or use the library search; no answer has been inferred.';}
   }
-  function updateAIButtons(){aiRead.disabled=busy||!file||!records.length||!aiState.ready;askAI.disabled=busy||!selection||!aiState.ready;pairButton.disabled=busy;disconnectButton.disabled=busy;pairCode.input.disabled=busy;}
+  function updateAIButtons(){aiRead.disabled=busy||!file||!records.length||!aiState.ready;ask.disabled=busy||!selection;ask.textContent=aiState.ready?'Ask AI':'Search guide';pairButton.disabled=busy;disconnectButton.disabled=busy;pairCode.input.disabled=busy;}
   function applyAIState(next){aiState=next||{connected:false,ready:false};disconnectButton.hidden=!aiState.connected;pairCode.wrap.hidden=!!aiState.connected;pairButton.hidden=!!aiState.connected;
     aiStatus.textContent=!aiState.connected?'AI is not connected on this device.':aiState.ready?'AI is connected. Check all answers against the complete saved references.':'This device is connected, but the AI service is not ready. Use the saved guide.';
     const used=aiState.budget?.upper_accounted_micro_usd,cap=aiState.budget?.cap_micro_usd;aiCost.textContent=Number.isSafeInteger(used)&&Number.isSafeInteger(cap)?'Trial usage counter: US$'+(used/1000000).toFixed(4)+' of US$'+(cap/1000000).toFixed(2)+'. This is conservative accounting, not an invoice.':'';updateAIButtons();}
@@ -138,14 +143,14 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
     const pending=pendingAIPhoto;if(busy||!pending||pending.current!==operation||pending.chosen!==file||!aiState.ready)return;
     discardAIPhoto();aiInFlight=true;updateBusy(true);status.textContent='AI is reading the submitted label. Clearing this screen does not cancel a request already sent.';
     try{const reply=await aiClient.photo(pending.payload);if(pending.current!==operation||pending.chosen!==file)return;
-      detected.input.value=reply.visible_identifiers.join('\n');status.textContent=reply.visible_identifiers.length?'Check every AI-read code against the original label, then find candidates and confirm the exact entry.':'No supported identifier was read. Retake a closer photo or type the exact code.';
-      if(reply.uncertain)status.textContent+=' The transcript is uncertain; do not accept guessed characters.';
+      detected.input.value=reply.visible_identifiers.join('\n');if(reply.visible_identifiers.length){findCandidates();textDetails.open=false;}else status.textContent='No supported identifier was read. Retake a closer photo or type the exact code.';
+      if(reply.uncertain){status.textContent+=' AI text is uncertain: check the original label; do not accept guessed characters.';textDetails.open=true;}
     }catch(error){if(pending.current===operation)status.textContent=error.message;}finally{aiInFlight=false;updateBusy(false);await syncAI();}
   }
   async function answerWithAI(){
     const identity=session.confirmed();if(busy||!identity||!selection||!aiState.ready||!question.input.value.trim())return;
     if(questionTopic(question.input.value)?.routeOnly){await answerQuestion();return;}
-    const current=++operation,token=session.token(),query=question.input.value;clear(answer);aiInFlight=true;updateBusy(true);status.textContent='AI is checking this entry’s saved references…';
+    const current=++operation,token=session.token(),query=question.input.value;clear(answer);status.hidden=false;aiInFlight=true;updateBusy(true);status.textContent='AI is checking this entry’s saved references…';
     try{const reply=await aiClient.ask(identity.id,query);if(current!==operation||!session.valid(token)||query!==question.input.value)return;
       const row=await loadDetail(identity.id);if(current!==operation||!session.valid(token)||!identityEqual(row?.boiler,identity))return;
       const result=retrieve(row,identity,REFERENCE_QUESTIONS[reply.reference_key]);renderAnswer(doc,answer,result,{onSection:section=>{if(session.valid(token)&&identityEqual(session.confirmed(),identity))onSection(identity.id,section);}});
