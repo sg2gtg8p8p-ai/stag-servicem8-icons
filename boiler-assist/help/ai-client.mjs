@@ -61,8 +61,27 @@ export function createAIClient({fetcher=globalThis.fetch,storage,now=()=>Date.no
   };
 }
 export async function canvasPhotoPayload(canvas){
-  const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/jpeg',0.82));
-  if(!blob||blob.type!=='image/jpeg'||blob.size>300*1024)fail('Crop closely to the label so the prepared photo is no more than 300 KB.');
-  const bytes=new Uint8Array(await blob.arrayBuffer());let binary='';for(let i=0;i<bytes.length;i+=8192)binary+=String.fromCharCode(...bytes.subarray(i,i+8192));
-  return {mime:'image/jpeg',image_base64:btoa(binary)};
+  // Prepare locally under the existing server cap; no upload or AI request here.
+  const cap=300*1024,edge=Math.max(canvas.width,canvas.height);
+  if(!Number.isInteger(edge)||edge<1||edge>2000||canvas.width*canvas.height>4000000)fail('Choose a clear JPEG or PNG label photo.');
+  const steps=[[edge,0.82],[edge,0.68],[Math.min(edge,1600),0.72],[Math.min(edge,1280),0.68],[Math.min(edge,1024),0.60],[Math.min(edge,800),0.60]];
+  const tried=new Set();let scratch=null,blob=null;
+  try{
+    for(const [target,quality] of steps){
+      const key=target+':'+quality;if(tried.has(key))continue;tried.add(key);
+      let image=canvas;
+      if(target<edge){
+        scratch??=canvas.ownerDocument.createElement('canvas');
+        const scale=target/edge;scratch.width=Math.max(1,Math.round(canvas.width*scale));scratch.height=Math.max(1,Math.round(canvas.height*scale));
+        const context=scratch.getContext('2d',{alpha:false});if(!context)fail('Photo preparation is unavailable. Retake a clear label photo or type the code.');
+        context.fillStyle='white';context.fillRect(0,0,scratch.width,scratch.height);context.drawImage(canvas,0,0,scratch.width,scratch.height);image=scratch;
+      }
+      blob=await new Promise(resolve=>image.toBlob(resolve,'image/jpeg',quality));
+      if(!blob||blob.type!=='image/jpeg')fail('Photo could not be prepared. Retake a clear label photo or type the code.');
+      if(blob.size>0&&blob.size<=cap)break;blob=null;
+    }
+    if(!blob)fail('This photo could not be reduced clearly enough. Take a closer photo showing just the boiler label, or type its code.');
+    const bytes=new Uint8Array(await blob.arrayBuffer());let binary='';for(let i=0;i<bytes.length;i+=8192)binary+=String.fromCharCode(...bytes.subarray(i,i+8192));
+    return {mime:'image/jpeg',image_base64:btoa(binary)};
+  }finally{if(scratch)scratch.width=scratch.height=1;}
 }
