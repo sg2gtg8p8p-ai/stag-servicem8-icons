@@ -70,14 +70,12 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   const status=element(doc,'p','Loading the saved catalogue…','help-notice');status.hidden=true;status.setAttribute('role','status');status.setAttribute('aria-live','polite');
   const controls=element(doc,'div',undefined,'help-actions');
   const read=button(doc,'Read label on this device',readPhoto),cancel=button(doc,'Cancel reading',cancelRead),reset=button(doc,'Clear photo and answers',resetAll);
-  const aiRead=button(doc,'Read label with AI',prepareAIPhoto);
+  const aiRead=button(doc,'Send photo to AI',prepareAIPhoto);
   const changePhoto=button(doc,'Change photo',()=>photo.input.click());changePhoto.hidden=true;
   const freeReading=element(doc,'details');freeReading.append(element(doc,'summary','Free photo reading'),read);
   paragraph(doc,freeReading,'Reads text on this device without sending the photo to OpenAI. It may miss text that AI can read.');settings.append(freeReading);
   cancel.hidden=true;read.disabled=true;aiRead.disabled=true;controls.append(aiRead,changePhoto,cancel,reset);
-  const aiPhotoReview=element(doc,'div',undefined,'help-notice');aiPhotoReview.hidden=true;
-  paragraph(doc,aiPhotoReview,'Send the selected, resized label photo to OpenAI through Stag’s server? Check that it contains no customer or personal information. A code transcript is not a verified part match.');
-  aiPhotoReview.append(button(doc,'Send this label photo',sendAIPhoto),button(doc,'Cancel AI photo',discardAIPhoto));
+  const aiPhotoNotice=element(doc,'p','Send photo to AI sends the selected label photo to OpenAI through Stag’s server and uses API credit. Leave out customer or personal details.','help-small');
   const detected=field('textarea','help-label-text','GC/product code or label text');detected.input.maxLength=MAX_TEXT;detected.input.rows=2;detected.input.autocomplete='off';detected.input.spellcheck=false;
   const find=button(doc,'Find boiler',findCandidates);find.disabled=true;
   const textDetails=element(doc,'details');textDetails.append(element(doc,'summary','Enter or correct label text'),detected.wrap,find);
@@ -90,7 +88,7 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   const ask=button(doc,'Search guide',submitQuestion);question.input.maxLength=400;questionBox.append(question.wrap,ask);
   const shortcuts=element(doc,'div',undefined,'help-actions');for(const [label,section]of [['FGA readings','combustion'],['Service procedure','fullService'],['Technical data','technicalData'],['Manual','manuals']])shortcuts.append(button(doc,label,()=>{const id=session.confirmed()?.id;if(id&&selection&&!busy)onSection(id,section);}));questionBox.append(shortcuts);
   const answer=element(doc,'div');questionBox.append(answer);
-  const intake=element(doc,'section');intake.append(photo.wrap,controls,aiPhotoReview,textDetails,candidates);
+  const intake=element(doc,'section');intake.append(photo.wrap,aiPhotoNotice,controls,textDetails,candidates);
   root.append(intro,status,intake,confirmed,questionBox,settings);
   function updateBusy(value){busy=!!(value||aiInFlight);updateAIButtons();question.input.disabled=busy;ask.disabled=busy;read.disabled=busy||!file||!records.length;find.disabled=busy||!records.length;for(const control of shortcuts.querySelectorAll('button'))control.disabled=busy;cancel.hidden=!busy;cancel.textContent=aiInFlight?'Clear pending AI result':'Cancel reading';photo.input.disabled=busy;changePhoto.disabled=busy;changePhoto.hidden=!file;detected.input.disabled=busy;}
   function forgetConfirmation(){discardAIPhoto();session.invalidate();selection=null;questionBox.hidden=true;intake.hidden=false;status.hidden=false;tips.hidden=false;aiConnection.hidden=false;question.input.value='';clear(answer);clear(confirmed);}
@@ -98,21 +96,24 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   function resetAll(){operation++;reader.cancel();file=null;photo.input.value='';detected.input.value='';clear(candidates);forgetConfirmation();updateBusy(false);status.textContent='Photo, detected text and answers cleared from this screen.';}
   photo.input.addEventListener('click',()=>{if(busy)return;resetAll();status.textContent='Choose a label photo. If you cancel, no photo will remain selected.';});
   photo.input.addEventListener('cancel',()=>{if(!file)status.textContent='No photo selected. Choose a photo to try again.';});
-  photo.input.addEventListener('change',()=>{operation++;reader.cancel();file=photo.input.files?.[0]||null;detected.input.value='';clear(candidates);forgetConfirmation();updateBusy(false);status.textContent=file?'Photo selected. Tap Read label with AI, or enter the code below.':'Choose a label photo or type its details.';});
+  photo.input.addEventListener('change',()=>{operation++;reader.cancel();file=photo.input.files?.[0]||null;detected.input.value='';clear(candidates);forgetConfirmation();updateBusy(false);status.textContent=file?'Photo selected. Tap Send photo to AI, or enter the code below.':'Choose a label photo or type its details.';});
   detected.input.addEventListener('input',()=>{operation++;forgetConfirmation();clear(candidates);status.textContent='Text changed. Find candidates and confirm the exact entry again.';});
   question.input.addEventListener('input',()=>{operation++;clear(answer);});
   question.input.addEventListener('keydown',event=>{if(event.key==='Enter'){event.preventDefault();submitQuestion();}});
   async function readPhoto(){
     if(busy||!file)return;
     const current=++operation;forgetConfirmation();clear(candidates);detected.input.value='';updateBusy(true);
-    try{const text=await reader.read(file,{onStatus:message=>{if(current===operation)status.textContent=message;}});if(current!==operation)return;detected.input.value=text.slice(0,MAX_TEXT);updateBusy(false);if(text.trim()){const matched=findCandidates();textDetails.open=!matched;if(!matched)status.textContent='The free reader did not find a boiler match. Try Read label with AI, or check and correct the code below.';}else{ textDetails.open=true;status.textContent='The free reader could not read this label. Try Read label with AI, or enter the exact code below.';}}
+    try{const text=await reader.read(file,{onStatus:message=>{if(current===operation)status.textContent=message;}});if(current!==operation)return;detected.input.value=text.slice(0,MAX_TEXT);updateBusy(false);if(text.trim()){const matched=findCandidates();textDetails.open=!matched;if(!matched)status.textContent='The free reader did not find a boiler match. Try Send photo to AI, or check and correct the code below.';}else{ textDetails.open=true;status.textContent='The free reader could not read this label. Try Send photo to AI, or enter the exact code below.';}}
     catch(error){if(current===operation)status.textContent=error?.name==='AbortError'?'Reading cancelled.':(error?.message||'Photo reading failed. Type the plate details instead.');}
     finally{if(current===operation)updateBusy(false);}
   }
   function findCandidates(){
     operation++;forgetConfirmation();clear(candidates);
     const result=identify(detected.input.value,records);status.textContent=result.message;
-    if(result.conflict)paragraph(doc,candidates,'Multiple or unrecognised codes were found. Resolve the discrepancy against the actual data plate; nothing has been selected automatically.','help-notice');
+    const exact=result.candidates.filter(candidate=>candidate.exactCode);
+    if(exact.length===1&&exact[0].reasons.includes('Exact GC digits')&&exact[0].reasons.includes('Exact product code'))status.textContent='GC and product code match the catalogue entry below. Check the model and fuel, then choose Use this boiler.';
+    if(exact.length>1)paragraph(doc,candidates,'More than one catalogue entry matches the read codes. Compare the model, GC/product code and fuel before choosing. Nothing has been selected automatically.','help-notice');
+    if(result.unmatchedGc.length)paragraph(doc,candidates,exact.length?'Other number sequences were read as possible GC codes but did not match the catalogue. Check the label text before choosing.':'A possible GC code was read but is not in the saved catalogue. Check and correct the label text; no boiler has been confirmed.',exact.length?'help-small':'help-notice');
     if(result.candidates.length>30){paragraph(doc,candidates,'Too many matching entries. Add the exact GC or product code to narrow the list.');return false;}
     for(const candidate of result.candidates){
       const card=element(doc,'article',undefined,'help-candidate');paragraph(doc,card,identityLabel(candidate.record),'help-identity');paragraph(doc,card,candidate.reasons.join(' · '),'help-small');
@@ -145,12 +146,12 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   async function syncAI(){try{applyAIState(await aiClient.status());}catch(error){applyAIState({connected:aiClient.hasSession(),ready:false});aiStatus.textContent=error.message;}}
   async function connectAI(){if(busy)return;const code=pairCode.input.value;pairCode.input.value='';pairButton.disabled=true;try{await aiClient.pair(code);await syncAI();}catch(error){aiStatus.textContent=error.message;}finally{pairCode.input.value='';updateAIButtons();}}
   async function disconnectAI(){if(busy)return;try{await aiClient.disconnect();}catch{}finally{applyAIState({connected:false,ready:false});discardAIPhoto();}}
-  function discardAIPhoto(){pendingAIPhoto=null;aiPhotoReview.hidden=true;}
+  function discardAIPhoto(){pendingAIPhoto=null;}
   async function prepareAIPhoto(){
     if(busy||!file||!aiState.ready)return;
     const chosen=file,current=++operation;forgetConfirmation();clear(candidates);detected.input.value='';updateBusy(true);status.textContent='Preparing this label photo on your device. Nothing has been sent yet.';
     try{const canvas=await prepareImage(chosen,{doc});let payload;try{payload=await canvasPhotoPayload(canvas);}finally{canvas.width=canvas.height=1;}
-      if(current!==operation||chosen!==file)return;pendingAIPhoto={chosen,current,payload};aiPhotoReview.hidden=false;status.textContent='Photo prepared. Review the notice, then choose Send this label photo.';
+      if(current!==operation||chosen!==file)return;pendingAIPhoto={chosen,current,payload};updateBusy(false);await sendAIPhoto();
     }catch(error){if(current===operation)status.textContent=error.message;}finally{if(current===operation)updateBusy(false);}
   }
   async function sendAIPhoto(){
