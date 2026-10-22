@@ -1,13 +1,26 @@
 import {dataset,detail} from '../decoder.js';
-import {mountHelp} from './ui.mjs';
+import {mountHelp,pilotUsageText} from './ui.mjs';
+import {createAIClient} from './ai-client.mjs';
 import {createReader} from './ocr.mjs';
 const mounts=new WeakMap();
-export function mountHelpHost(doc,{mountUI=mountHelp,readerFactory=createReader,loadCatalogue=()=>dataset('search-index'),loadDetail=detail,observe=globalThis.ResizeObserver}={}){
+export function mountHelpHost(doc,{mountUI=mountHelp,readerFactory=createReader,loadCatalogue=()=>dataset('search-index'),loadDetail=detail,observe=globalThis.ResizeObserver,aiClient=createAIClient()}={}){
   const root=doc.getElementById('help-root'),entry=doc.getElementById('help-open'),status=doc.getElementById('help-host-status');
   const library=doc.getElementById('baf-library'),bar=doc.getElementById('offlineBar'),exit=doc.getElementById('help-exit'),body=doc.getElementById('help-body');
   if(!root||!entry||!library||!bar||!exit||!body){if(status){status.hidden=false;status.textContent='Photo & boiler help is unavailable. Continue using the library.';}return null;}
   if(mounts.has(root))return mounts.get(root);
   let active=false,saved=null,spacer=null,ui=null;
+  const usage=doc.getElementById('aiPilotUsage'),refresh=doc.getElementById('refreshAIUsage');let refreshing=null;
+  const displayUsage=value=>{if(usage)usage.textContent=pilotUsageText(value);};
+  const sharedAI={...aiClient,async status(){const next=await aiClient.status();displayUsage(next);return next;}};
+  async function refreshUsage(){
+    if(refreshing)return refreshing;
+    if(refresh)refresh.disabled=true;if(usage)usage.textContent='Checking AI pilot allowance…';
+    refreshing=sharedAI.status().catch(()=>{if(usage)usage.textContent='AI usage could not be checked. Last balance is not assumed. Try again when connected.';}).finally(()=>{refreshing=null;if(refresh)refresh.disabled=false;});
+    return refreshing;
+  }
+  refresh?.addEventListener('click',refreshUsage);
+  doc.getElementById('installHelp')?.addEventListener('click',refreshUsage);
+
   const properties=['position','top','left','right','z-index'];
   function geometry(){root.style.setProperty('--help-top',Math.max(0,bar.getBoundingClientRect().bottom)+'px');if(spacer)spacer.style.height=bar.getBoundingClientRect().height+'px';}
   function close(){
@@ -20,7 +33,7 @@ export function mountHelpHost(doc,{mountUI=mountHelp,readerFactory=createReader,
   }
   function open(){
     if(active)return;
-    if(!ui)try{ui=mountUI(body,{doc,loadCatalogue,loadDetail,reader:readerFactory({doc}),onSection:(recordId,section)=>{
+    if(!ui)try{ui=mountUI(body,{doc,loadCatalogue,loadDetail,reader:readerFactory({doc}),aiClient:sharedAI,onSection:(recordId,section)=>{
       close();doc.defaultView.dispatchEvent(new CustomEvent('stag-open-standalone-record',{detail:{recordId,section}}));
     }});}catch{if(status){status.hidden=false;status.textContent='Photo & boiler help is unavailable. Continue using the library.';}return;}
     saved={visibility:library.style.visibility,visibilityPriority:library.style.getPropertyPriority('visibility'),inert:library.inert,aria:library.getAttribute('aria-hidden'),focus:doc.activeElement,headerStyle:properties.map(name=>[name,bar.style.getPropertyValue(name),bar.style.getPropertyPriority(name)])};

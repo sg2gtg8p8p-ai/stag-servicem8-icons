@@ -37,6 +37,14 @@ export function renderAnswer(doc,parent,result,{onSection=()=>{}}={}){
   if(!(result.links||[]).length)paragraph(doc,sources,'No supported source link is stored for this entry.');
   parent.append(sources);
 }
+// Display-only estimate: ECB 22 October 2026, GBP0.83770 / USD1.1205 per EUR.
+// The authoritative pilot ledger and cap stay in micro-USD on the server.
+export function pilotUsageText(state){
+  const used=state?.budget?.upper_accounted_micro_usd,cap=state?.budget?.cap_micro_usd;
+  if(!Number.isSafeInteger(used)||used<0||!Number.isSafeInteger(cap)||cap<=0)return state?.connected?'AI usage is unavailable. Reconnect and refresh; no balance is assumed.':'Connect AI on this device to see the pilot allowance.';
+  const gbp=n=>'£'+(n/1000000*(0.83770/1.1205)).toFixed(4);
+  return 'Estimated used: '+gbp(used)+' · Pilot allowance left: '+gbp(Math.max(0,cap-used))+' · Pilot limit: '+gbp(cap)+'.';
+}
 export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,reader,onSection=()=>{},aiClient=createAIClient()}){
   const session=createSession();let records=[],file=null,operation=0,busy=false,selection=null,aiInFlight=false,aiState={connected:false,ready:false},pendingAIPhoto=null;
   const field=(tag,id,label)=>{const wrap=element(doc,'div');const l=element(doc,'label',label);l.htmlFor=id;const input=element(doc,tag);input.id=id;wrap.append(l,input);return {wrap,input};};
@@ -63,7 +71,10 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   const controls=element(doc,'div',undefined,'help-actions');
   const read=button(doc,'Read label on this device',readPhoto),cancel=button(doc,'Cancel reading',cancelRead),reset=button(doc,'Clear photo and answers',resetAll);
   const aiRead=button(doc,'Read label with AI',prepareAIPhoto);
-  cancel.hidden=true;read.disabled=true;aiRead.disabled=true;controls.append(read,aiRead,cancel,reset);
+  const changePhoto=button(doc,'Change photo',()=>photo.input.click());changePhoto.hidden=true;
+  const freeReading=element(doc,'details');freeReading.append(element(doc,'summary','Free photo reading'),read);
+  paragraph(doc,freeReading,'Reads text on this device without sending the photo to OpenAI. It may miss text that AI can read.');settings.append(freeReading);
+  cancel.hidden=true;read.disabled=true;aiRead.disabled=true;controls.append(aiRead,changePhoto,cancel,reset);
   const aiPhotoReview=element(doc,'div',undefined,'help-notice');aiPhotoReview.hidden=true;
   paragraph(doc,aiPhotoReview,'Send the selected, resized label photo to OpenAI through Stag’s server? Check that it contains no customer or personal information. A code transcript is not a verified part match.');
   aiPhotoReview.append(button(doc,'Send this label photo',sendAIPhoto),button(doc,'Cancel AI photo',discardAIPhoto));
@@ -81,18 +92,20 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   const answer=element(doc,'div');questionBox.append(answer);
   const intake=element(doc,'section');intake.append(photo.wrap,controls,aiPhotoReview,textDetails,candidates);
   root.append(intro,status,intake,confirmed,questionBox,settings);
-  function updateBusy(value){busy=!!(value||aiInFlight);updateAIButtons();question.input.disabled=busy;ask.disabled=busy;read.disabled=busy||!file||!records.length;find.disabled=busy||!records.length;for(const control of shortcuts.querySelectorAll('button'))control.disabled=busy;cancel.hidden=!busy;cancel.textContent=aiInFlight?'Clear pending AI result':'Cancel reading';photo.input.disabled=busy;detected.input.disabled=busy;}
+  function updateBusy(value){busy=!!(value||aiInFlight);updateAIButtons();question.input.disabled=busy;ask.disabled=busy;read.disabled=busy||!file||!records.length;find.disabled=busy||!records.length;for(const control of shortcuts.querySelectorAll('button'))control.disabled=busy;cancel.hidden=!busy;cancel.textContent=aiInFlight?'Clear pending AI result':'Cancel reading';photo.input.disabled=busy;changePhoto.disabled=busy;changePhoto.hidden=!file;detected.input.disabled=busy;}
   function forgetConfirmation(){discardAIPhoto();session.invalidate();selection=null;questionBox.hidden=true;intake.hidden=false;status.hidden=false;tips.hidden=false;aiConnection.hidden=false;question.input.value='';clear(answer);clear(confirmed);}
   async function cancelRead(){operation++;forgetConfirmation();await reader.cancel();updateBusy(false);status.textContent=aiInFlight?'The displayed AI result is cleared. The request already sent may still use credit; wait for it to finish. No retry has been made.':'Reading cancelled. Choose another photo or type the plate details.';}
   function resetAll(){operation++;reader.cancel();file=null;photo.input.value='';detected.input.value='';clear(candidates);forgetConfirmation();updateBusy(false);status.textContent='Photo, detected text and answers cleared from this screen.';}
-  photo.input.addEventListener('change',()=>{operation++;reader.cancel();file=photo.input.files?.[0]||null;detected.input.value='';clear(candidates);forgetConfirmation();updateBusy(false);status.textContent=file?'Photo selected. Tap Read label, or type the details below.':'Choose a label photo or type its details.';});
+  photo.input.addEventListener('click',()=>{if(busy)return;resetAll();status.textContent='Choose a label photo. If you cancel, no photo will remain selected.';});
+  photo.input.addEventListener('cancel',()=>{if(!file)status.textContent='No photo selected. Choose a photo to try again.';});
+  photo.input.addEventListener('change',()=>{operation++;reader.cancel();file=photo.input.files?.[0]||null;detected.input.value='';clear(candidates);forgetConfirmation();updateBusy(false);status.textContent=file?'Photo selected. Tap Read label with AI, or enter the code below.':'Choose a label photo or type its details.';});
   detected.input.addEventListener('input',()=>{operation++;forgetConfirmation();clear(candidates);status.textContent='Text changed. Find candidates and confirm the exact entry again.';});
   question.input.addEventListener('input',()=>{operation++;clear(answer);});
   question.input.addEventListener('keydown',event=>{if(event.key==='Enter'){event.preventDefault();submitQuestion();}});
   async function readPhoto(){
     if(busy||!file)return;
     const current=++operation;forgetConfirmation();clear(candidates);detected.input.value='';updateBusy(true);
-    try{const text=await reader.read(file,{onStatus:message=>{if(current===operation)status.textContent=message;}});if(current!==operation)return;detected.input.value=text.slice(0,MAX_TEXT);updateBusy(false);if(text.trim()){findCandidates();textDetails.open=false;}else status.textContent='No clear text was read. Retake a closer photo or type the exact code.';}
+    try{const text=await reader.read(file,{onStatus:message=>{if(current===operation)status.textContent=message;}});if(current!==operation)return;detected.input.value=text.slice(0,MAX_TEXT);updateBusy(false);if(text.trim()){const matched=findCandidates();textDetails.open=!matched;if(!matched)status.textContent='The free reader did not find a boiler match. Try Read label with AI, or check and correct the code below.';}else{ textDetails.open=true;status.textContent='The free reader could not read this label. Try Read label with AI, or enter the exact code below.';}}
     catch(error){if(current===operation)status.textContent=error?.name==='AbortError'?'Reading cancelled.':(error?.message||'Photo reading failed. Type the plate details instead.');}
     finally{if(current===operation)updateBusy(false);}
   }
@@ -100,13 +113,14 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
     operation++;forgetConfirmation();clear(candidates);
     const result=identify(detected.input.value,records);status.textContent=result.message;
     if(result.conflict)paragraph(doc,candidates,'Multiple or unrecognised codes were found. Resolve the discrepancy against the actual data plate; nothing has been selected automatically.','help-notice');
-    if(result.candidates.length>30){paragraph(doc,candidates,'Too many matching entries. Add the exact GC or product code to narrow the list.');return;}
+    if(result.candidates.length>30){paragraph(doc,candidates,'Too many matching entries. Add the exact GC or product code to narrow the list.');return false;}
     for(const candidate of result.candidates){
       const card=element(doc,'article',undefined,'help-candidate');paragraph(doc,card,identityLabel(candidate.record),'help-identity');paragraph(doc,card,candidate.reasons.join(' · '),'help-small');
       paragraph(doc,card,'Check the model, code and fuel against the label before continuing.','help-small');
       const choose=button(doc,'Use this boiler',()=>confirm(candidate.record));card.append(choose);candidates.append(card);
     }
     if(result.candidates.length)candidates.scrollIntoView({block:'start'});
+    return result.candidates.length>0;
   }
   async function confirm(record){
     const current=++operation;forgetConfirmation();const token=session.confirm(record);status.textContent='Opening this exact saved catalogue entry…';
@@ -127,7 +141,7 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   function updateAIButtons(){aiRead.disabled=busy||!file||!records.length||!aiState.ready;ask.disabled=busy||!selection;ask.textContent=aiState.ready?'Ask AI':'Search guide';pairButton.disabled=busy;disconnectButton.disabled=busy;pairCode.input.disabled=busy;}
   function applyAIState(next){aiState=next||{connected:false,ready:false};disconnectButton.hidden=!aiState.connected;pairCode.wrap.hidden=!!aiState.connected;pairButton.hidden=!!aiState.connected;
     aiStatus.textContent=!aiState.connected?'AI is not connected on this device.':aiState.ready?'AI is connected. Check all answers against the complete saved references.':'This device is connected, but the AI service is not ready. Use the saved guide.';
-    const used=aiState.budget?.upper_accounted_micro_usd,cap=aiState.budget?.cap_micro_usd;aiCost.textContent=Number.isSafeInteger(used)&&Number.isSafeInteger(cap)?'Trial usage counter: US$'+(used/1000000).toFixed(4)+' of US$'+(cap/1000000).toFixed(2)+'. This is conservative accounting, not an invoice.':'';updateAIButtons();}
+    aiCost.textContent=pilotUsageText(aiState)+' Conservative pilot counter, not your OpenAI account balance or invoice. GBP estimate uses the fixed ECB rate from 22 October 2026; payment-provider conversion and fees may differ. The original US$1 cap is unchanged.';updateAIButtons();}
   async function syncAI(){try{applyAIState(await aiClient.status());}catch(error){applyAIState({connected:aiClient.hasSession(),ready:false});aiStatus.textContent=error.message;}}
   async function connectAI(){if(busy)return;const code=pairCode.input.value;pairCode.input.value='';pairButton.disabled=true;try{await aiClient.pair(code);await syncAI();}catch(error){aiStatus.textContent=error.message;}finally{pairCode.input.value='';updateAIButtons();}}
   async function disconnectAI(){if(busy)return;try{await aiClient.disconnect();}catch{}finally{applyAIState({connected:false,ready:false});discardAIPhoto();}}
