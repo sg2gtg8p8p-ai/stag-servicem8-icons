@@ -1638,8 +1638,17 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
     if(activeSection === "technicalData") {
       const table=node("table",undefined,"simple-reading-table"), body=node("tbody");
       table.setAttribute("aria-label","Technical data for the selected boiler");
-      for(const v of entries){const row=node("tr"), label=node("th",v.label), value=node("td",String(v.value));label.scope="row";value.append(reference(v));row.append(label,value);body.append(row);}
-      table.append(body);content.append(table);return;
+      const historical=entries.filter(v=>v.referenceScope==="historical-conditional");
+      for(const v of entries.filter(v=>v.referenceScope!=="historical-conditional")){const row=node("tr"), label=node("th",v.label), value=node("td",String(v.value));label.scope="row";value.append(reference(v));row.append(label,value);body.append(row);}
+      table.append(body);content.append(table);
+      if(historical.length){
+        const section=node("section",undefined,"historical-technical-references");
+        section.setAttribute("aria-label","Historical installation references");
+        section.append(node("h3","Historical installation references"),node("p","These values are from the 2005 manual. They do not establish current installation requirements or approval. Check the conditions with each reference.","section-hint"));
+        for(const v of historical){const card=node("article",undefined,"info-card");card.append(node("h4",v.label),node("p",String(v.value)),node("p",v.qualification,"reference-conditions"));for(const source of sourcesFor(v)){const link=safeLink("Open manufacturer manual ↗",source.url,"manual-button");if(link)card.append(link);}section.append(card);}
+        content.append(section);
+      }
+      return;
     }
     visualAssets(content, onsite().sectionAssets?.[activeSection]);
     const grid = node("div", void 0, activeSection === "technicalData" ? "figure-grid" : "procedure-grid");
