@@ -7,7 +7,12 @@ export function mount(root,doc=root?.ownerDocument){
  const get=id=>root.querySelector('#swr-'+id),store=createReferenceStore(),titles={home:'Wiring reference',plans:'System plans',hive:'Hive receivers',cylinder:'Cylinder controls',fault:'Fault-finding reference'},sections={home:'homeSection',plans:'plansSection',hive:'hiveSection',cylinder:'cylinderSection',fault:'faultSection'};
  const make=(tag,text,cls)=>{const e=doc.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls.split(/\s+/).filter(Boolean).map(c=>'swr-'+c).join(' ');return e;};
  const viewer=mountPageViewer({root:get('pageViewer'),scopeRoot:root,dialog:get('largePage'),isSelectionCurrent:rev=>{const s=store.getState();return !root.hidden&&s.revision===rev&&s.result!==null;}});
- function populate(id,key){for(const[v,t]of Object.entries(LABELS[key])){const option=make('option',t);option.value=v;get(id).append(option);}}
+ const displayLabels={
+  generation:{unknown:'Not sure / not confirmed','slt3-current':'Hive installation guide (©2025)','active-heating2-legacy':'Active Heating 2 guide (©2017)'},
+  channel:{unknown:'Choose what it controls',single:'Heating only (single channel)',dual:'Heating and hot water (dual channel)'},
+  mode:{unknown:'Choose the fitted connection',relay:'Relay (on/off) — single channel',ot:'OpenTherm — single channel',dual:'Relay — heating and hot water'}
+ };
+ function populate(id,key){for(const[v,t]of Object.entries(LABELS[key])){const option=make('option',displayLabels[key]?.[v]??t);option.value=v;get(id).append(option);}}
  for(const key of ['plan','generation','channel','mode','zones','interface','demand'])populate(key,key);populate('cylinderPlan','plan');
  function clearResult(){viewer.clear();get('result').replaceChildren();get('result').hidden=true;get('summarySection').hidden=true;get('summaryText').value='';get('copySummary').disabled=true;get('copyStatus').textContent='';get('editStatus').textContent='Choices changed. Show the current reference before copying.';}
  function sync(){const s=store.getState().selection;for(const[key,id]of Object.entries(sections))get(id).hidden=s.section!==key;get('sectionTitle').textContent=titles[s.section];get('actionRow').hidden=s.section==='home';get('plan').value=s.plan;get('cylinderPlan').value=s.plan;get('confirmed').checked=s.confirmed;get('contextBadge').textContent=s.boiler?'· '+s.boiler+' (unverified)':'· unverified';}
@@ -25,7 +30,7 @@ export function mount(root,doc=root?.ownerDocument){
  }
  function renderResult(state){
   const {result,revision,summary}=state,box=get('result');box.replaceChildren();box.hidden=false;box.append(make('h2',result.title));
-  if(result.held)box.append(make('p',result.section==='hive'?'Terminal-specific information is withheld until this exact source, receiver and mode are confirmed.':result.section==='plans'?'A matching circuit design is not established.':'Reference selection is incomplete.','hold'));
+  if(result.held)box.append(make('p',result.section==='hive'?'Choose the matching receiver details and confirm them to show its terminal information.':result.section==='plans'?'A matching circuit design is not established.':'Reference selection is incomplete.','hold'));
   for(const note of result.notes)box.append(make('p',note));
   if(result.terminalLabels){box.append(make('h3','Labels in this exact source'),make('p','Source labels only. No boiler compatibility, links or load ratings are established.','help'));const labels=make('dl',undefined,'reference-labels');for(const[k,v]of Object.entries(result.terminalLabels))labels.append(make('dt',k),make('dd',v));box.append(labels);}
   if(result.issues.length){const section=make('section',undefined,'issues');section.append(make('h3','Unresolved source qualifications'));for(const issue of result.issues)section.append(make('p',issue.text,'hold'));box.append(section);}
