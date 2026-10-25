@@ -28,7 +28,7 @@ export function identify(text,records){
     const products=[record.productNumber,...(Array.isArray(record.productNumbers)?record.productNumbers:[])];
     if(products.some(code=>productMatch(text,code)))reasons.push('Exact product code');
     const brand=words(record.manufacturer),model=words(record.model),designation=words(record.designation);
-    if(brand&&normalized.includes(' '+brand+' ')&&[model,designation].some(name=>name.length>=5&&normalized.includes(' '+name+' ')))reasons.push('Name match — check exact code');
+    if(brand&&normalized.includes(' '+brand+' ')&&[model,designation].some(name=>name.length>=5&&normalized.includes(' '+name+' '))&&(!tokens.length||gc&&tokens.includes(gc)))reasons.push('Name match — check exact code');
     if(reasons.length)candidates.push({record,reasons,exactCode:reasons.some(r=>r.startsWith('Exact'))});
   }
   const unmatchedGc=tokens.filter(token=>!matchedGc.has(token));
@@ -37,7 +37,7 @@ export function identify(text,records){
   return {candidates:[...exact,...names],gcTokens:tokens,unmatchedGc,
     conflict:exact.length>1||unmatchedGc.length>0,
     abstained:candidates.length===0,
-    message:candidates.length?'Choose the exact catalogue entry only after checking the data plate, fuel and installed setup.':'No supported match. Retake a close, clear label photo or type the exact GC/product code. A photo of the casing alone cannot confirm a boiler or part.'};
+    message:candidates.length?'Choose the exact catalogue entry only after checking the data plate, fuel and installed setup.':unmatchedGc.length?'GC '+unmatchedGc.map(gc=>gc.slice(0,2)+'-'+gc.slice(2,5)+'-'+gc.slice(5)).join(', ')+' was read, but is not in the saved catalogue. If it matches your label, this is a catalogue gap; you do not need to retake the photo.':'No saved boiler matched the label text. Review the text below or enter the exact GC/product code; the model may be missing from the catalogue.'};
 }
 export function identityLabel(record){return [record.manufacturer,record.model,record.gcNumber?'GC '+record.gcNumber:'',record.productNumber?'Product '+record.productNumber:'',record.fuel||'Fuel not specified',record.generation].filter(Boolean).join(' · ');}
 export function identityEqual(a,b){return !!a&&!!b&&['id','manufacturer','model','gcNumber','productNumber','fuel','generation'].every(key=>(a[key]??null)===(b[key]??null));}

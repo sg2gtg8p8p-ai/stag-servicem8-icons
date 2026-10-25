@@ -115,7 +115,7 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
     const exact=result.candidates.filter(candidate=>candidate.exactCode);
     if(exact.length===1&&exact[0].reasons.includes('Exact GC digits')&&exact[0].reasons.includes('Exact product code'))status.textContent='GC and product code match the catalogue entry below. Check the model and fuel, then choose Use this boiler.';
     if(exact.length>1)paragraph(doc,candidates,'More than one catalogue entry matches the read codes. Compare the model, GC/product code and fuel before choosing. Nothing has been selected automatically.','help-notice');
-    if(result.unmatchedGc.length)paragraph(doc,candidates,exact.length?'Other number sequences were read as possible GC codes but did not match the catalogue. Check the label text before choosing.':'A possible GC code was read but is not in the saved catalogue. Check and correct the label text; no boiler has been confirmed.',exact.length?'help-small':'help-notice');
+    if(result.unmatchedGc.length)paragraph(doc,candidates,exact.length?'Other number sequences were read as possible GC codes but did not match the catalogue. Check the label text before choosing.':'The read code is shown above and in the label text below. Check it against the sticker. If it is correct, the model needs adding to the catalogue; no boiler has been substituted.',exact.length?'help-small':'help-notice');
     if(result.candidates.length>30){paragraph(doc,candidates,'Too many matching entries. Add the exact GC or product code to narrow the list.');return false;}
     for(const candidate of result.candidates){
       const card=element(doc,'article',undefined,'help-candidate');paragraph(doc,card,identityLabel(candidate.record),'help-identity');paragraph(doc,card,candidate.reasons.join(' · '),'help-small');
@@ -168,7 +168,7 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
     const pending=pendingAIPhoto;if(busy||!pending||pending.current!==operation||pending.chosen!==file||!aiState.ready)return;
     discardAIPhoto();aiInFlight=true;updateBusy(true);status.textContent='AI is reading the submitted label. Clearing this screen does not cancel a request already sent.';
     try{const reply=await aiClient.photo(pending.payload);if(pending.current!==operation||pending.chosen!==file)return;
-      detected.input.value=reply.visible_identifiers.join('\n');if(reply.visible_identifiers.length){findCandidates();textDetails.open=false;}else status.textContent='No supported identifier was read. Retake a closer photo or type the exact code.';
+      detected.input.value=reply.visible_identifiers.join('\n');if(reply.visible_identifiers.length){textDetails.open=!findCandidates();}else status.textContent='No supported identifier was read. Retake a closer photo or type the exact code.';
       if(reply.uncertain){status.textContent+=' AI text is uncertain: check the original label; do not accept guessed characters.';textDetails.open=true;}
     }catch(error){if(pending.current===operation)status.textContent=error.message;}finally{aiInFlight=false;updateBusy(false);await syncAI();}
   }
