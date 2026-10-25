@@ -61,7 +61,7 @@ export function createReader({doc=globalThis.document,fetcher=globalThis.fetch,d
     const current=worker;worker=null;
     if(current)try{await current.terminate();}catch{}
   }
-  async function read(file,{onStatus=()=>{}}={}){
+  async function read(file,{onStatus=()=>{},quarterTurns=0}={}){
     if(loading)throw Error('Finish or cancel the current photo reading first.');
     const controller=new AbortController();active=controller;
     const job=(async()=>{
@@ -74,7 +74,7 @@ export function createReader({doc=globalThis.document,fetcher=globalThis.fetch,d
         await verifyAssets(controller.signal);
         if(controller.signal.aborted)throw abortError();
         onStatus('Preparing the label photo on this device…');
-        canvas=await prepare(file,{signal:controller.signal,doc});
+        canvas=await prepare(file,{signal:controller.signal,doc,quarterTurns});
         if(controller.signal.aborted)throw abortError();
         onStatus('Reading label text on this device…');
         const created=await boundedJob(engine().createWorker('eng',1,workerOptions(base)),controller.signal,late=>{Promise.resolve(late?.terminate?.()).catch(()=>{});});

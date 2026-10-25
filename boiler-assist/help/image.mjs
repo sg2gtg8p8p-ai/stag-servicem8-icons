@@ -26,7 +26,11 @@ export function boundedSize(size,limits=IMAGE_LIMITS){
   return {width:Math.max(1,Math.round(size.width*scale)),height:Math.max(1,Math.round(size.height*scale))};
 }
 function abort(){return new DOMException('Reading cancelled.','AbortError');}
-export async function prepareImage(file,{signal,doc=globalThis.document,bitmap=globalThis.createImageBitmap,Reader=globalThis.FileReader,ImageType=globalThis.Image}={}){
+export function rotationLayout(width,height,quarterTurns=0){
+  if(!Number.isInteger(quarterTurns)||quarterTurns<0||quarterTurns>3)throw Error('Photo rotation is not supported. Choose the photo again.');
+  return {width:quarterTurns%2?height:width,height:quarterTurns%2?width:height,radians:quarterTurns*Math.PI/2};
+}
+export async function prepareImage(file,{signal,quarterTurns=0,doc=globalThis.document,bitmap=globalThis.createImageBitmap,Reader=globalThis.FileReader,ImageType=globalThis.Image}={}){
   if(!file||!Number.isSafeInteger(file.size)||file.size<24||file.size>IMAGE_LIMITS.bytes)throw Error('Choose a JPEG or PNG up to 12 MB. Crop closely to the data plate first.');
   if(signal?.aborted)throw abort();
   const header=await file.slice(0,IMAGE_LIMITS.headerBytes).arrayBuffer();
@@ -52,10 +56,12 @@ export async function prepareImage(file,{signal,doc=globalThis.document,bitmap=g
   try{
     if(signal?.aborted)throw abort();
     const actual={width:image.width||image.naturalWidth,height:image.height||image.naturalHeight};
-    const output=boundedSize(actual);
-    const canvas=doc.createElement('canvas');canvas.width=output.width;canvas.height=output.height;
+    const output=boundedSize(actual),layout=rotationLayout(output.width,output.height,quarterTurns);
+    const canvas=doc.createElement('canvas');canvas.width=layout.width;canvas.height=layout.height;
     const context=canvas.getContext('2d',{alpha:false});if(!context)throw Error('Photo reading is unavailable in this browser. Type the plate details instead.');
-    context.fillStyle='white';context.fillRect(0,0,output.width,output.height);context.drawImage(image,0,0,output.width,output.height);
+    context.fillStyle='white';context.fillRect(0,0,layout.width,layout.height);
+    context.translate(layout.width/2,layout.height/2);context.rotate(layout.radians);
+    context.drawImage(image,-output.width/2,-output.height/2,output.width,output.height);
     return canvas;
   }finally{image?.close?.();if(image&&'src'in image)image.src='';}
 }

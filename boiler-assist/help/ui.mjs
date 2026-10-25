@@ -63,7 +63,7 @@ export function aiReadinessMessage(state){
   return 'AI is not ready. Tap Check AI connection, or enter the code below. No photo has been sent.';
 }
 export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,reader,onSection=()=>{},aiClient=createAIClient()}){
-  let activeFault=null;const session=createSession();let records=[],file=null,operation=0,busy=false,selection=null,aiInFlight=false,aiState={connected:false,ready:false},pendingAIPhoto=null;
+  let activeFault=null;const session=createSession();let records=[],file=null,operation=0,busy=false,selection=null,aiInFlight=false,aiState={connected:false,ready:false},pendingAIPhoto=null;let photoTurns=0,photoReady=false,previewCanvas=null;
   const field=(tag,id,label)=>{const wrap=element(doc,'div');const l=element(doc,'label',label);l.htmlFor=id;const input=element(doc,tag);input.id=id;wrap.append(l,input);return {wrap,input};};
   const intro=element(doc,'div');intro.append(element(doc,'h1','Identify a boiler'));
   paragraph(doc,intro,'Search by make, model or GC number, or use a label photo.');
@@ -84,6 +84,11 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   const settings=element(doc,'details');settings.append(element(doc,'summary','Help & AI settings'),tips,aiConnection);
 
   const photo=field('input','help-photo','Choose or take a label photo');photo.input.type='file';photo.input.accept='image/jpeg,image/png';
+  const photoPreview=element(doc,'section');photoPreview.hidden=true;photoPreview.setAttribute('aria-label','Selected label photo');
+  const previewFrame=element(doc,'div',undefined,'help-photo-preview');
+  const rotatePhoto=button(doc,'Rotate photo',rotateSelectedPhoto);
+  paragraph(doc,photoPreview,'Check the label is upright. Rotate it here if needed; nothing is sent until you tap Send photo to AI.','help-small');
+  photoPreview.append(previewFrame,rotatePhoto);
   const status=element(doc,'p','Loading the saved catalogue…','help-notice');status.hidden=true;status.setAttribute('role','status');status.setAttribute('aria-live','polite');
   const controls=element(doc,'div',undefined,'help-actions');
   const read=button(doc,'Read label on this device',readPhoto),cancel=button(doc,'Cancel reading',cancelRead),reset=button(doc,'Clear photo and answers',resetAll);
@@ -111,15 +116,27 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   paragraph(doc,questionBox,'To speak, tap the question box, then the microphone on your iPhone keyboard. Check the words before sending.','help-small');
   const shortcuts=element(doc,'div',undefined,'help-actions');for(const [label,section]of [['FGA readings','combustion'],['Service procedure','fullService'],['Technical data','technicalData'],['Manual','manuals']])shortcuts.append(button(doc,label,()=>{const id=session.confirmed()?.id;if(id&&selection&&!busy)onSection(id,section);}));questionBox.append(shortcuts);
   const answer=element(doc,'div');questionBox.append(answer);
-  const intake=element(doc,'section');intake.append(manualBox,candidates,photo.wrap,aiPhotoNotice,aiAvailability,refreshAI,controls,textDetails);
+  const intake=element(doc,'section');intake.append(manualBox,candidates,photo.wrap,photoPreview,aiPhotoNotice,aiAvailability,refreshAI,controls,textDetails);
   root.append(intro,status,intake,confirmed,questionBox,settings);
-  function updateBusy(value){busy=!!(value||aiInFlight);updateAIButtons();question.input.disabled=busy;ask.disabled=busy;read.disabled=busy||!file||!records.length;find.disabled=busy||!records.length;manual.input.disabled=busy;manualSearch.disabled=busy||!records.length;for(const control of shortcuts.querySelectorAll('button'))control.disabled=busy;cancel.hidden=!busy;cancel.textContent=aiInFlight?'Clear pending AI result':'Cancel reading';photo.input.disabled=busy;changePhoto.disabled=busy;changePhoto.hidden=!file;detected.input.disabled=busy;}
+  function updateBusy(value){busy=!!(value||aiInFlight);updateAIButtons();question.input.disabled=busy;ask.disabled=busy;read.disabled=busy||!file||!records.length;find.disabled=busy||!records.length;manual.input.disabled=busy;manualSearch.disabled=busy||!records.length;for(const control of shortcuts.querySelectorAll('button'))control.disabled=busy;cancel.hidden=!busy;cancel.textContent=aiInFlight?'Clear pending AI result':'Cancel reading';photo.input.disabled=busy;changePhoto.disabled=busy;changePhoto.hidden=!file;rotatePhoto.disabled=busy||!photoReady;detected.input.disabled=busy;}
   function forgetConfirmation(){intro.querySelector('h1').textContent='Identify a boiler';intro.querySelector('p').textContent='Search by make, model or GC number, or use a label photo.';activeFault=null;discardAIPhoto();session.invalidate();selection=null;questionBox.hidden=true;intake.hidden=false;status.hidden=false;tips.hidden=false;aiConnection.hidden=false;question.input.value='';clear(answer);clear(confirmed);}
   async function cancelRead(){operation++;forgetConfirmation();await reader.cancel();updateBusy(false);status.textContent=aiInFlight?'The displayed AI result is cleared. The request already sent may still use credit; wait for it to finish. No retry has been made.':'Reading cancelled. Choose another photo or type the plate details.';}
-  function resetAll(){operation++;reader.cancel();file=null;photo.input.value='';detected.input.value='';manual.input.value='';clear(candidates);forgetConfirmation();updateBusy(false);status.textContent='Photo, detected text and answers cleared from this screen.';}
+  function clearPhotoPreview(){photoReady=false;photoTurns=0;if(previewCanvas)previewCanvas.width=previewCanvas.height=1;previewCanvas=null;clear(previewFrame);photoPreview.hidden=true;}
+  function resetAll(){operation++;reader.cancel();clearPhotoPreview();file=null;photo.input.value='';detected.input.value='';manual.input.value='';clear(candidates);forgetConfirmation();updateBusy(false);status.textContent='Photo, detected text and answers cleared from this screen.';}
   photo.input.addEventListener('click',()=>{if(busy)return;resetAll();status.textContent='Choose a label photo. If you cancel, no photo will remain selected.';});
   photo.input.addEventListener('cancel',()=>{if(!file)status.textContent='No photo selected. Choose a photo to try again.';});
-  photo.input.addEventListener('change',()=>{operation++;reader.cancel();file=photo.input.files?.[0]||null;detected.input.value='';clear(candidates);forgetConfirmation();updateBusy(false);status.hidden=!!file&&!aiState.ready;status.textContent=file?'Photo selected. Tap Send photo to AI, or enter the code below.':'Choose a label photo or type its details.';});
+  async function preparePreview(current,chosen){
+    let canvas;
+    try{canvas=await prepareImage(chosen,{doc,quarterTurns:photoTurns});
+      if(current!==operation||chosen!==file){canvas.width=canvas.height=1;return;}
+      if(previewCanvas)previewCanvas.width=previewCanvas.height=1;
+      previewCanvas=canvas;canvas.setAttribute('role','img');canvas.setAttribute('aria-label','Selected label photo, rotated '+(photoTurns*90)+' degrees');
+      previewFrame.replaceChildren(canvas);photoPreview.hidden=false;photoReady=true;updateBusy(false);
+      status.hidden=!aiState.ready;status.textContent='Photo ready. Check the label is upright, then tap Send photo to AI, or enter the code below.';
+    }catch(error){if(canvas&&canvas!==previewCanvas)canvas.width=canvas.height=1;if(current===operation){photoReady=false;updateBusy(false);status.hidden=false;status.textContent=error.message;}}
+  }
+  async function rotateSelectedPhoto(){if(busy||!file||!photoReady)return;const chosen=file,current=++operation;photoTurns=(photoTurns+1)%4;photoReady=false;reader.cancel();forgetConfirmation();clear(candidates);detected.input.value='';updateBusy(true);status.textContent='Rotating this photo on your device. Nothing has been sent.';await preparePreview(current,chosen);}
+  photo.input.addEventListener('change',()=>{operation++;reader.cancel();clearPhotoPreview();file=photo.input.files?.[0]||null;detected.input.value='';clear(candidates);forgetConfirmation();updateBusy(!!file);status.hidden=false;status.textContent=file?'Preparing the photo preview on your device. Nothing has been sent.':'Choose a label photo or type its details.';if(file)preparePreview(operation,file);});
   detected.input.addEventListener('input',()=>{operation++;forgetConfirmation();clear(candidates);status.textContent='Text changed. Find candidates and confirm the exact entry again.';});
   manual.input.addEventListener('input',()=>{operation++;forgetConfirmation();clear(candidates);status.textContent='Search changed. Choose the exact boiler again.';});
   manual.input.addEventListener('keydown',event=>{if(event.key==='Enter'){event.preventDefault();searchManually();}});
@@ -128,7 +145,7 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   async function readPhoto(){
     if(busy||!file)return;
     const current=++operation;forgetConfirmation();clear(candidates);detected.input.value='';updateBusy(true);
-    try{const text=await reader.read(file,{onStatus:message=>{if(current===operation)status.textContent=message;}});if(current!==operation)return;detected.input.value=text.slice(0,MAX_TEXT);updateBusy(false);if(text.trim()){const matched=findCandidates();textDetails.open=!matched;if(!matched)status.textContent='The free reader did not find a boiler match. Try Send photo to AI, or check and correct the code below.';}else{ textDetails.open=true;status.textContent='The free reader could not read this label. Try Send photo to AI, or enter the exact code below.';}}
+    try{const text=await reader.read(file,{quarterTurns:photoTurns,onStatus:message=>{if(current===operation)status.textContent=message;}});if(current!==operation)return;detected.input.value=text.slice(0,MAX_TEXT);updateBusy(false);if(text.trim()){const matched=findCandidates();textDetails.open=!matched;if(!matched)status.textContent='The free reader did not find a boiler match. Try Send photo to AI, or check and correct the code below.';}else{ textDetails.open=true;status.textContent='The free reader could not read this label. Try Send photo to AI, or enter the exact code below.';}}
     catch(error){if(current===operation)status.textContent=error?.name==='AbortError'?'Reading cancelled.':(error?.message||'Photo reading failed. Type the plate details instead.');}
     finally{if(current===operation)updateBusy(false);}
   }
@@ -174,7 +191,7 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
     }});status.textContent='Saved-guide lookup complete. Read the full conditions and source limits.';}
     catch(error){if(current===operation)status.textContent='The saved guide is unavailable. Reconnect or use the library search; no answer has been inferred.';}
   }
-  function updateAIButtons(){aiRead.disabled=busy||!file||!records.length||!aiState.ready;ask.disabled=busy||!selection;ask.textContent=aiState.ready?'Ask AI':'Search guide';pairButton.disabled=busy;disconnectButton.disabled=busy;pairCode.input.disabled=busy;aiAvailability.hidden=!file||!!aiState.ready;aiAvailability.textContent=aiReadinessMessage(aiState);refreshAI.hidden=!file||!!aiState.ready;refreshAI.disabled=busy;}
+  function updateAIButtons(){aiRead.disabled=busy||!file||!photoReady||!records.length||!aiState.ready;ask.disabled=busy||!selection;ask.textContent=aiState.ready?'Ask AI':'Search guide';pairButton.disabled=busy;disconnectButton.disabled=busy;pairCode.input.disabled=busy;aiAvailability.hidden=!file||!!aiState.ready;aiAvailability.textContent=aiReadinessMessage(aiState);refreshAI.hidden=!file||!!aiState.ready;refreshAI.disabled=busy;}
   function applyAIState(next){aiState=next||{connected:false,ready:false};disconnectButton.hidden=!aiState.connected;pairCode.wrap.hidden=!!aiState.connected;pairButton.hidden=!!aiState.connected;
     aiStatus.textContent=!aiState.connected?'AI is not connected on this device.':aiState.ready?'AI is connected. Check all answers against the complete saved references.':'This device is connected, but the AI service is not ready. Use the saved guide.';
     aiCost.textContent=pilotUsageText(aiState)+' Conservative pilot counter, not your OpenAI account balance or invoice. GBP estimate uses the fixed ECB rate from 22 October 2026; payment-provider conversion and fees may differ. The original US$1 cap is unchanged.';updateAIButtons();}
@@ -185,7 +202,7 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   async function prepareAIPhoto(){
     if(busy||!file||!aiState.ready)return;
     const chosen=file,current=++operation;forgetConfirmation();clear(candidates);detected.input.value='';updateBusy(true);status.textContent='Preparing this label photo on your device. Nothing has been sent yet.';
-    try{const canvas=await prepareImage(chosen,{doc});let payload;try{payload=await canvasPhotoPayload(canvas);}finally{canvas.width=canvas.height=1;}
+    try{const canvas=await prepareImage(chosen,{doc,quarterTurns:photoTurns});let payload;try{payload=await canvasPhotoPayload(canvas);}finally{canvas.width=canvas.height=1;}
       if(current!==operation||chosen!==file)return;pendingAIPhoto={chosen,current,payload};updateBusy(false);await sendAIPhoto();
     }catch(error){if(current===operation)status.textContent=error.message;}finally{if(current===operation)updateBusy(false);}
   }
@@ -209,9 +226,9 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
     }catch(error){if(current===operation)status.textContent=error.message;}finally{aiInFlight=false;updateBusy(false);await syncAI();}
   }
   const ready=Promise.resolve().then(loadCatalogue).then(value=>{records=Array.isArray(value)?value:[];if(!records.length)throw Error('empty');status.textContent='Choose a clear label photo, or type an exact GC/product code.';updateBusy(false);syncAI();}).catch(()=>{status.hidden=false;status.textContent='The saved catalogue is unavailable. Reconnect and verify the library download.';read.disabled=true;find.disabled=true;});
-  function suspendForGuide(){activeFault=null;operation++;reader.cancel();file=null;photo.input.value='';detected.input.value='';manual.input.value='';clear(candidates);discardAIPhoto();clear(answer);question.input.value='';updateBusy(false);}
+  function suspendForGuide(){activeFault=null;operation++;reader.cancel();clearPhotoPreview();file=null;photo.input.value='';detected.input.value='';manual.input.value='';clear(candidates);discardAIPhoto();clear(answer);question.input.value='';updateBusy(false);}
   function returnToQuestions(){if(!selection||!identityEqual(session.confirmed(),selection.boiler))return false;clear(answer);question.input.value='';intake.hidden=true;questionBox.hidden=false;status.hidden=true;settings.open=false;root.closest('#help-root')?.scrollTo({top:0});return true;}
-  return {ready,useSelectedRecord:async (record,query='')=>{await ready;resetAll();await confirm(record);if(query&&selection){question.input.value=query;await answerQuestion();}},reset:resetAll,cancel:cancelRead,suspendForGuide,returnToQuestions,dispose(){operation++;reader.cancel();file=null;detected.input.value='';forgetConfirmation();},
+  return {ready,useSelectedRecord:async (record,query='')=>{await ready;resetAll();await confirm(record);if(query&&selection){question.input.value=query;await answerQuestion();}},reset:resetAll,cancel:cancelRead,suspendForGuide,returnToQuestions,dispose(){operation++;reader.cancel();clearPhotoPreview();file=null;detected.input.value='';forgetConfirmation();},
     // Elements are exposed for finite DOM tests, not persisted or sent anywhere.
-    elements:{photo:photo.input,manual:manual.input,manualSearch,detected:detected.input,read,cancel,find,candidates,confirmed,question:question.input,ask,answer,status,questionBox}};
+    elements:{photo:photo.input,photoPreview,rotatePhoto,manual:manual.input,manualSearch,detected:detected.input,read,cancel,find,candidates,confirmed,question:question.input,ask,answer,status,questionBox}};
 }

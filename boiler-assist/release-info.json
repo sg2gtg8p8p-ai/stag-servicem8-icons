@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.10.25-r6",
+  "appVersion": "2026.10.25-r7",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1384,
@@ -336,6 +336,7 @@
     "Adds the coordinated identity/manual expansion: five original Ideal Logic MAX Heat H12/H15/H18/H24/H30 plus original MAX System S15/S18/S24/S30 and MAX Combi C24/C30/C35. Exact original GC groups verified on manufacturer-authored archived manual covers/model tables; author and archive host distinguished. All 1364 live records unchanged. No service/FGA/fault/parts settings copied from later 2 models. Requires matching protected 1376-record AI source package, with original auth, spent budget, cap and expiry unchanged; source installation must be verified before publication.",
     "Explain why Send photo to AI is unavailable beside the selected photo, including the original trial request ceiling, service/library version mismatch, expired connection and unconfirmed request. Add an explicit no-cost connection-status refresh. Do not tell a user to tap Send while it is disabled. No image/model/accounting/credential/catalogue changes and no automatic paid retries.",
     "Adds visible manual make/model/GC/product search to the identification screen, requiring no photo or AI connection. Reuses the existing ranked library search for names, preserves exact-code conflicts and manual model/fuel confirmation, and shows up to30 variants for narrowing. No paid requests, catalogue changes, guessed parts, financial changes or altered image handling.",
-    "Adds original Greenstar Ri12/15/18/24 identities, separately for Natural Gas and LPG, with exact GC and manufacturer manual cover evidence. Eight model/fuel entries; no later ErP servicing, FGA, faults or fitted-part data copied. Coordinates the matching1384-record AI source while retaining all spending history, the approved100-request ceiling, total cap, device grants and expiry."
+    "Adds original Greenstar Ri12/15/18/24 identities, separately for Natural Gas and LPG, with exact GC and manufacturer manual cover evidence. Eight model/fuel entries; no later ErP servicing, FGA, faults or fitted-part data copied. Coordinates the matching1384-record AI source while retaining all spending history, the approved100-request ceiling, total cap, device grants and expiry.",
+    "Show a local label-photo preview and an explicit Rotate photo control before sending. Preserve EXIF handling, input limits, exact read identifiers, original image, authentication, allowance and single explicit send. Retain the selected fault for supported follow-up wording. No claim of improved real-AI transcription accuracy; that acceptance remains separate."
   ]
 }

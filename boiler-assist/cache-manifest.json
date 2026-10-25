@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "2bec667df177af1b",
+  "buildId": "c2085be5d5008f19",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.25-r6",
+  "appVersion": "2026.10.25-r7",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -67,8 +67,8 @@
     },
     {
       "url": "./help/help.css",
-      "sha256": "e30a793c3d9f77e303215b756141db8b1009e431a451e63dbd57c8d53a7fe029",
-      "bytes": 2894
+      "sha256": "6061c41de352df2053d1b793c4e8e2e9e42925103b0eabf674ec40ba1e925ba4",
+      "bytes": 3136
     },
     {
       "url": "./help/host.mjs",
@@ -77,8 +77,8 @@
     },
     {
       "url": "./help/image.mjs",
-      "sha256": "4fa28e1b4bf6e21ab3339e0cea68397d886c439d82e357a57b8cc8dc959c10af",
-      "bytes": 4086
+      "sha256": "f9c8ddd686a7c570f9a8dadd07c4d8d3d7bf68aca73a5f9e94888ed63b304a01",
+      "bytes": 4601
     },
     {
       "url": "./help/logic.mjs",
@@ -87,13 +87,13 @@
     },
     {
       "url": "./help/ocr.mjs",
-      "sha256": "522edfd741c2e3ba80558283ddc37c194f006e28b75fbcfbcfb64ddc0ce1e9a2",
-      "bytes": 6013
+      "sha256": "a7343e64a084cff0a854a0ffc6e279184110fa67f965878cb1765e584fcc2f0d",
+      "bytes": 6041
     },
     {
       "url": "./help/ui.mjs",
-      "sha256": "4af9c046f66bc2c90492489082918097417f7498a16028e69856281a1d28db1a",
-      "bytes": 30789
+      "sha256": "8a7c2f634f92a2af67f016c30c355695122ebda1320290e7649c14ae4f8a45c2",
+      "bytes": 33014
     },
     {
       "url": "./icons/256.png",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "42467fdedb1c86cfb4defffc559ce2a9944a325cfe87c893a55ae51e9e1d2130",
-      "bytes": 27827
+      "sha256": "71378c7ffc8a34cc67bff86dfd5be135cc55692445f28dc35ffc99dd1ed69543",
+      "bytes": 28196
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -147,8 +147,8 @@
     },
     {
       "url": "./help/fault-answer.mjs",
-      "sha256": "d7a26999cfa004690ee51c15c86efc08f76ac2d6ea480f38826365221fe41897",
-      "bytes": 4261
+      "sha256": "a0fa70f2656fb8a05512066496331d5b706f82cd1912fc72f4836640da3d2259",
+      "bytes": 4630
     },
     {
       "url": "./help/manual-search.mjs",
@@ -156,5 +156,5 @@
       "bytes": 5676
     }
   ],
-  "totalBytes": 10304880
+  "totalBytes": 10308628
 }
