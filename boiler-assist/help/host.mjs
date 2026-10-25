@@ -8,7 +8,14 @@ export function mountHelpHost(doc,{mountUI=mountHelp,readerFactory=createReader,
   const library=doc.getElementById('baf-library'),bar=doc.getElementById('offlineBar'),exit=doc.getElementById('help-exit'),body=doc.getElementById('help-body');
   if(!root||!entry||!library||!bar||!exit||!body){if(status){status.hidden=false;status.textContent='Photo & boiler help is unavailable. Continue using the library.';}return null;}
   if(mounts.has(root))return mounts.get(root);
-  let active=false,saved=null,spacer=null,ui=null,returnRecordId=null,openingGuide=false;
+  let selectedLibraryRecord=null;let active=false,saved=null,spacer=null,ui=null,returnRecordId=null,openingGuide=false;
+  const faultEntry=doc.createElement('button');faultEntry.type='button';faultEntry.id='help-selected-fault';faultEntry.textContent='Ask about a fault';faultEntry.className='manual-button';faultEntry.hidden=true;doc.getElementById('detailTitle')?.after(faultEntry);
+  const detailView=doc.getElementById('detailView');
+  const updateFaultEntry=()=>{selectedLibraryRecord=doc.documentElement.dataset.stagQuestionBoiler||selectedLibraryRecord;faultEntry.hidden=!selectedLibraryRecord||detailView?.hidden!==false;};
+  if(doc.defaultView?.MutationObserver)new doc.defaultView.MutationObserver(updateFaultEntry).observe(doc.documentElement,{attributes:true,attributeFilter:['data-stag-question-boiler']});
+  if(detailView&&doc.defaultView?.MutationObserver)new doc.defaultView.MutationObserver(updateFaultEntry).observe(detailView,{attributes:true,attributeFilter:['hidden']});
+  faultEntry.addEventListener('click',async()=>{const id=selectedLibraryRecord;if(!id)return;clearReturn();open();const records=await loadCatalogue();const record=records.find(r=>r.id===id);if(record&&active&&selectedLibraryRecord===id)await ui?.useSelectedRecord(record,'fault');});
+
   const guideBack=doc.getElementById('back'),guideBackLabel=guideBack?.textContent;
   function clearReturn(){returnRecordId=null;if(guideBack)guideBack.textContent=guideBackLabel;const inner=doc.querySelector('#tabs .simple-menu-back');if(inner)inner.textContent='← Boiler menu';}
   const usage=doc.getElementById('aiPilotUsage'),refresh=doc.getElementById('refreshAIUsage');let refreshing=null;
@@ -45,10 +52,11 @@ export function mountHelpHost(doc,{mountUI=mountHelp,readerFactory=createReader,
     for(const [name,value]of [['position','fixed'],['top','0'],['left','0'],['right','0'],['z-index','20']])bar.style.setProperty(name,value,'important');
     geometry();library.style.setProperty('visibility','hidden','important');library.inert=true;library.setAttribute('aria-hidden','true');root.hidden=false;active=true;exit.focus({preventScroll:true});
   }
-  entry.addEventListener('click',()=>{if(returnRecordId){clearReturn();ui?.reset();}open();});exit.addEventListener('click',()=>{close();if(doc.getElementById('detailView')?.hidden===false)guideBack?.click();});
+  entry.addEventListener('click',async()=>{if(returnRecordId){clearReturn();ui?.reset();}open();if(selectedLibraryRecord&&doc.getElementById('detailView')?.hidden===false){const records=await loadCatalogue();const record=records.find(r=>r.id===selectedLibraryRecord);if(record&&active)await ui?.useSelectedRecord(record);}});exit.addEventListener('click',()=>{close();if(doc.getElementById('detailView')?.hidden===false)guideBack?.click();});
   doc.defaultView?.addEventListener('resize',()=>{if(active)geometry();});
   doc.defaultView?.addEventListener('stag-open-standalone-record',()=>{if(!openingGuide)close();});
   doc.defaultView?.addEventListener('stag-standalone-selection',event=>{
+    selectedLibraryRecord=event.detail?.recordId||null;updateFaultEntry();
     if(!returnRecordId)return;
     if(event.detail?.recordId!==returnRecordId){clearReturn();ui?.reset();return;}
     if(guideBack)guideBack.textContent='← Back to AI questions';

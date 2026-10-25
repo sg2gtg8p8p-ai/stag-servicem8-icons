@@ -1,3 +1,4 @@
+import {faultAnswer} from './fault-answer.mjs';
 import {MAX_TEXT,identify,identityLabel,identityEqual,retrieve,safeURL,createSession,SECTIONS,questionTopic} from './logic.mjs';
 import {createAIClient,REFERENCE_QUESTIONS,canvasPhotoPayload} from './ai-client.mjs';
 import {prepareImage} from './image.mjs';
@@ -46,7 +47,7 @@ export function pilotUsageText(state){
   return 'Estimated used: '+gbp(used)+' · Pilot allowance left: '+gbp(Math.max(0,cap-used))+' · Pilot limit: '+gbp(cap)+'.';
 }
 export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,reader,onSection=()=>{},aiClient=createAIClient()}){
-  const session=createSession();let records=[],file=null,operation=0,busy=false,selection=null,aiInFlight=false,aiState={connected:false,ready:false},pendingAIPhoto=null;
+  let activeFault=null;const session=createSession();let records=[],file=null,operation=0,busy=false,selection=null,aiInFlight=false,aiState={connected:false,ready:false},pendingAIPhoto=null;
   const field=(tag,id,label)=>{const wrap=element(doc,'div');const l=element(doc,'label',label);l.htmlFor=id;const input=element(doc,tag);input.id=id;wrap.append(l,input);return {wrap,input};};
   const intro=element(doc,'div');intro.append(element(doc,'h1','Identify a boiler'));
   paragraph(doc,intro,'Use a label photo or enter a GC/product code.');
@@ -92,7 +93,7 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   const intake=element(doc,'section');intake.append(photo.wrap,aiPhotoNotice,controls,textDetails,candidates);
   root.append(intro,status,intake,confirmed,questionBox,settings);
   function updateBusy(value){busy=!!(value||aiInFlight);updateAIButtons();question.input.disabled=busy;ask.disabled=busy;read.disabled=busy||!file||!records.length;find.disabled=busy||!records.length;for(const control of shortcuts.querySelectorAll('button'))control.disabled=busy;cancel.hidden=!busy;cancel.textContent=aiInFlight?'Clear pending AI result':'Cancel reading';photo.input.disabled=busy;changePhoto.disabled=busy;changePhoto.hidden=!file;detected.input.disabled=busy;}
-  function forgetConfirmation(){discardAIPhoto();session.invalidate();selection=null;questionBox.hidden=true;intake.hidden=false;status.hidden=false;tips.hidden=false;aiConnection.hidden=false;question.input.value='';clear(answer);clear(confirmed);}
+  function forgetConfirmation(){intro.querySelector('h1').textContent='Identify a boiler';intro.querySelector('p').textContent='Use a label photo or enter a GC/product code.';activeFault=null;discardAIPhoto();session.invalidate();selection=null;questionBox.hidden=true;intake.hidden=false;status.hidden=false;tips.hidden=false;aiConnection.hidden=false;question.input.value='';clear(answer);clear(confirmed);}
   async function cancelRead(){operation++;forgetConfirmation();await reader.cancel();updateBusy(false);status.textContent=aiInFlight?'The displayed AI result is cleared. The request already sent may still use credit; wait for it to finish. No retry has been made.':'Reading cancelled. Choose another photo or type the plate details.';}
   function resetAll(){operation++;reader.cancel();file=null;photo.input.value='';detected.input.value='';clear(candidates);forgetConfirmation();updateBusy(false);status.textContent='Photo, detected text and answers cleared from this screen.';}
   photo.input.addEventListener('click',()=>{if(busy)return;resetAll();status.textContent='Choose a label photo. If you cancel, no photo will remain selected.';});
@@ -126,15 +127,23 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   }
   async function confirm(record){
     const current=++operation;forgetConfirmation();const token=session.confirm(record);status.textContent='Opening this exact saved catalogue entry…';
-    try{const row=await loadDetail(record.id);if(current!==operation||!session.valid(token))return;if(!identityEqual(row?.boiler,record))throw Error('The saved entry does not match. Return to the library and confirm the exact boiler.');selection=row;clear(candidates);paragraph(doc,confirmed,identityLabel(record),'help-identity');paragraph(doc,confirmed,'Check the fitted configuration and source conditions in the guide before using any setting.','help-small');confirmed.append(button(doc,'Change boiler',()=>{operation++;forgetConfirmation();findCandidates();}));intake.hidden=true;status.hidden=true;settings.open=false;questionBox.hidden=false;updateAIButtons();root.closest('#help-root')?.scrollTo({top:0});}
+    try{const row=await loadDetail(record.id);if(current!==operation||!session.valid(token))return;if(!identityEqual(row?.boiler,record))throw Error('The saved entry does not match. Return to the library and confirm the exact boiler.');selection=row;intro.querySelector('h1').textContent='Boiler questions';intro.querySelector('p').textContent='Ask about the boiler shown below.';clear(candidates);paragraph(doc,confirmed,identityLabel(record),'help-identity');paragraph(doc,confirmed,'Check the fitted configuration and source conditions in the guide before using any setting.','help-small');confirmed.append(button(doc,'Change boiler',()=>{operation++;forgetConfirmation();findCandidates();}));intake.hidden=true;status.hidden=true;settings.open=false;questionBox.hidden=false;updateAIButtons();root.closest('#help-root')?.scrollTo({top:0});}
     catch(error){if(current===operation){forgetConfirmation();status.textContent='The saved entry could not be opened. Reconnect or use the library search.';}}
   }
-  async function submitQuestion(){if(busy||!selection||!question.input.value.trim())return;if(aiState.ready)return answerWithAI();return answerQuestion();}
+  function isFaultQuestion(value){return selection?.boiler?.faultCodes?.some(f=>f.label?.trim().toLowerCase()===value.trim().toLowerCase())||/\b(fault|error|lockout|code|overheat)\b/i.test(value)||/\b[A-Za-z]{1,2}[. -]?\d{1,4}\b/.test(value)||!!activeFault&&/^(what (next|now|else|should i check)|next|checked|done|still)/i.test(value);}
+  async function submitQuestion(){if(busy||!selection||!question.input.value.trim())return;if(isFaultQuestion(question.input.value))return answerQuestion();activeFault=null;if(aiState.ready)return answerWithAI();return answerQuestion();}
+  function renderFault(result,identity,token){
+    clear(answer);paragraph(doc,answer,result.message,'help-notice');activeFault=result.activeLabel;if(result.applicability||result.notes?.length||result.completePresentation){const limits=element(doc,'details');limits.append(element(doc,'summary','Saved applicability and source limits'));renderStored(doc,limits,{applicability:result.applicability,notes:result.notes,presentation:result.completePresentation});answer.append(limits);}
+    for(const e of result.entries){const card=element(doc,'article',undefined,'help-reference');card.append(element(doc,'h2',e.label));paragraph(doc,card,e.codeKind==='status'?'Operating status — this is not a fault diagnosis.':e.codeKind==='diagnostic'?'Diagnostic information — this is not a confirmed component failure.':'Meaning and manufacturer checks');paragraph(doc,card,e.text);renderStored(doc,card,e.conditions);for(const source of e.sources)link(doc,card,{...source,label:source.title});answer.append(card);}
+    if(!result.entries.length)for(const wording of result.availableLabels){answer.append(button(doc,wording,()=>{question.input.value=wording;answerQuestion();}));}
+    answer.append(button(doc,'Open complete fault guide',()=>{if(session.valid(token)&&identityEqual(session.confirmed(),identity))onSection(identity.id,'faultCodes');}));
+    for(const source of result.links)link(doc,answer,{...source,label:source.title});
+  }
   async function answerQuestion(){
     const identity=session.confirmed();if(!identity||!selection)return;
     const current=++operation,token=session.token(),query=question.input.value;
     clear(answer);status.hidden=false;status.textContent='Finding this entry’s saved references…';
-    try{const row=await loadDetail(identity.id);if(current!==operation||!session.valid(token))return;const result=retrieve(row,identity,query);if(result.kind==='section'&&result.section){onSection(identity.id,result.section);return;}renderAnswer(doc,answer,result,{onSection:section=>{
+    try{const row=await loadDetail(identity.id);if(current!==operation||!session.valid(token)||query!==question.input.value)return;if(isFaultQuestion(query)){const fault=faultAnswer(row,identity.id,query,activeFault);renderFault(fault,identity,token);status.textContent='Fault guide for this selected boiler. No paid AI request or part order was made.';return;}const result=retrieve(row,identity,query);if(result.kind==='section'&&result.section){onSection(identity.id,result.section);return;}renderAnswer(doc,answer,result,{onSection:section=>{
       if(!session.valid(token)||!identityEqual(session.confirmed(),identity))return;
       onSection(identity.id,section);
     }});status.textContent='Saved-guide lookup complete. Read the full conditions and source limits.';}
@@ -175,9 +184,9 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
     }catch(error){if(current===operation)status.textContent=error.message;}finally{aiInFlight=false;updateBusy(false);await syncAI();}
   }
   const ready=Promise.resolve().then(loadCatalogue).then(value=>{records=Array.isArray(value)?value:[];if(!records.length)throw Error('empty');status.textContent='Choose a clear label photo, or type an exact GC/product code.';updateBusy(false);syncAI();}).catch(()=>{status.hidden=false;status.textContent='The saved catalogue is unavailable. Reconnect and verify the library download.';read.disabled=true;find.disabled=true;});
-  function suspendForGuide(){operation++;reader.cancel();file=null;photo.input.value='';detected.input.value='';clear(candidates);discardAIPhoto();clear(answer);question.input.value='';updateBusy(false);}
+  function suspendForGuide(){activeFault=null;operation++;reader.cancel();file=null;photo.input.value='';detected.input.value='';clear(candidates);discardAIPhoto();clear(answer);question.input.value='';updateBusy(false);}
   function returnToQuestions(){if(!selection||!identityEqual(session.confirmed(),selection.boiler))return false;clear(answer);question.input.value='';intake.hidden=true;questionBox.hidden=false;status.hidden=true;settings.open=false;root.closest('#help-root')?.scrollTo({top:0});return true;}
-  return {ready,reset:resetAll,cancel:cancelRead,suspendForGuide,returnToQuestions,dispose(){operation++;reader.cancel();file=null;detected.input.value='';forgetConfirmation();},
+  return {ready,useSelectedRecord:async (record,query='')=>{await ready;resetAll();await confirm(record);if(query&&selection){question.input.value=query;await answerQuestion();}},reset:resetAll,cancel:cancelRead,suspendForGuide,returnToQuestions,dispose(){operation++;reader.cancel();file=null;detected.input.value='';forgetConfirmation();},
     // Elements are exposed for finite DOM tests, not persisted or sent anywhere.
     elements:{photo:photo.input,detected:detected.input,read,cancel,find,candidates,confirmed,question:question.input,ask,answer,status,questionBox}};
 }

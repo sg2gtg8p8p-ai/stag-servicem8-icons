@@ -196,7 +196,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
   }
   function manualSearch(value = "") {
     clearAsset();
-    selected = null;
+    selected = null;delete document.documentElement.dataset.stagQuestionBoiler;
     $("detailView").hidden = true;
     $("searchView").hidden = false;
     manufacturer = "";
@@ -369,7 +369,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
   function showSerialTool(value = "", assetFuel = "") {
     standaloneSerialFuel = assetFuel;
     clearAsset();
-    selected = null;
+    selected = null;delete document.documentElement.dataset.stagQuestionBoiler;
     serialDrafts.standalone = value;
     $("searchView").hidden = true;
     $("detailView").hidden = false;
@@ -732,7 +732,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
     }
     clearAsset();
     const ticket = openSequence;
-    selected = null;
+    selected = null;delete document.documentElement.dataset.stagQuestionBoiler;
     $("searchView").hidden = true;
     $("detailView").hidden = false;
     $("detailTitle").textContent = b.model;
@@ -842,7 +842,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
     if (previous >= 0) recent.splice(previous, 1);
     recent.unshift(b);
     recent.splice(3);
-    selected = b;
+    selected = b;document.documentElement.dataset.stagQuestionBoiler=b.id;
     testContext = b.fga?.selection?.required ? "" : b.fga?.selection?.contexts[0]?.id || "";
     activeSection = section;
     sectionMenu = section === "technicalData";
@@ -1764,7 +1764,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
       category = next;
       boilerFuelScope = fuelScope;
       manufacturer = "";
-      selected = null;
+      selected = null;delete document.documentElement.dataset.stagQuestionBoiler;
       $("detailView").hidden = true;
       $("searchView").hidden = false;
       $("boilerSearch").value = "";

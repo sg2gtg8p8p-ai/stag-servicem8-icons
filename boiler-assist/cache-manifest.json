@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "1df2119d575d6fe6",
+  "buildId": "b69d03adf1d94620",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.23-r2",
+  "appVersion": "2026.10.25-r1",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -72,8 +72,8 @@
     },
     {
       "url": "./help/host.mjs",
-      "sha256": "414bd1fad08b0948182d16c620a4fa7eb6c1cbc7c8799a31aad4f488a9f02714",
-      "bytes": 6144
+      "sha256": "3eef4359dcfc7a474c726f753212cf0c9b8db736445a7da391058e02f246f4d9",
+      "bytes": 7638
     },
     {
       "url": "./help/image.mjs",
@@ -92,8 +92,8 @@
     },
     {
       "url": "./help/ui.mjs",
-      "sha256": "b0fd15b073603206bc96b97d04c85a0579c5d90d9dc50d70d71fec4d167b4e93",
-      "bytes": 24378
+      "sha256": "22df57eb0e67b4ccf9b43011802bfe2fa18ad3661d7d35123ee77c46c0b0c286",
+      "bytes": 27031
     },
     {
       "url": "./icons/256.png",
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "22f55fdfd8ce198ac48401027e05365e6a72daed0d874e97259feff4bc9651df",
-      "bytes": 1039847
+      "sha256": "cfebddd220b170fa83bf3cff7af2b6cb6e1d41ab2fbd34dba65403f0861230ea",
+      "bytes": 1040140
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "aef5b070740738dd6fc05324cc5885b5a360f0e2a84aef89ae1458cd5a231d63",
-      "bytes": 24906
+      "sha256": "e7b32c237bbf5ac70ba9fe15f46044c5727dd2dc8c802a8f5e23b9d8570addf5",
+      "bytes": 25519
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -144,7 +144,12 @@
       "url": "./wiring/runtime.js",
       "sha256": "21650c7686bb967357825a006f9de7254d5fbbd7adf49da2d6207544b9da5360",
       "bytes": 53599
+    },
+    {
+      "url": "./help/fault-answer.mjs",
+      "sha256": "d7a26999cfa004690ee51c15c86efc08f76ac2d6ea480f38826365221fe41897",
+      "bytes": 4261
     }
   ],
-  "totalBytes": 10260644
+  "totalBytes": 10269958
 }
