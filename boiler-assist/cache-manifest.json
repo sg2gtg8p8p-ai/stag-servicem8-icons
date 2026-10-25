@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "1db38e553597ee28",
+  "buildId": "2bec667df177af1b",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.25-r5",
+  "appVersion": "2026.10.25-r6",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "sha256": "3dfcdb816296d2dba745ac7d6904d32f4632e6c3b18f1760c768a1d1743eb486",
-      "bytes": 5617423
+      "sha256": "d04c6899d02d9ce6a02c73210969e20543195130cab75862320077e88108de1e",
+      "bytes": 5620106
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -37,8 +37,8 @@
     },
     {
       "url": "./data/search-index.json",
-      "sha256": "92907418cd95079cf6d66eab85c991f039694a6783c3c6c7a48fcd88365b2e73",
-      "bytes": 682472
+      "sha256": "8562549ba8ea33aa1644cf53451342c46349337bc8f3e8a55463ce63a222b5f7",
+      "bytes": 685596
     },
     {
       "url": "./decoder.js",
@@ -57,7 +57,7 @@
     },
     {
       "url": "./help/ai-client.mjs",
-      "sha256": "2f441ce038fbd1fccb72ba3da641b82e22593c54274dcc42261a17f9a0d1f2c1",
+      "sha256": "224888b2265e2bb2ecc2e2c7ad2806bdfad85b8e28d08d315400ad5072a21242",
       "bytes": 8047
     },
     {
@@ -92,8 +92,8 @@
     },
     {
       "url": "./help/ui.mjs",
-      "sha256": "a9db2c6e9d3bd1a27566ae4a84b2cf0e2d94c7c77e1c151b16c44d03604c8978",
-      "bytes": 29544
+      "sha256": "4af9c046f66bc2c90492489082918097417f7498a16028e69856281a1d28db1a",
+      "bytes": 30789
     },
     {
       "url": "./icons/256.png",
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "d880fd71ee383a781f47cb067e518906239ce17dcb68baa90bf18983ab29dc60",
-      "bytes": 1044690
+      "sha256": "f7d2dcd2bf9c220242263d28507e2d93e6fdd5814b40a6fec51d78d30bae924c",
+      "bytes": 1047903
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "94257e8a00aef8c4f355ff7df29711c890256442ff8aed5932426ebbbc8f5139",
-      "bytes": 27054
+      "sha256": "42467fdedb1c86cfb4defffc559ce2a9944a325cfe87c893a55ae51e9e1d2130",
+      "bytes": 27827
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -149,7 +149,12 @@
       "url": "./help/fault-answer.mjs",
       "sha256": "d7a26999cfa004690ee51c15c86efc08f76ac2d6ea480f38826365221fe41897",
       "bytes": 4261
+    },
+    {
+      "url": "./help/manual-search.mjs",
+      "sha256": "25f0d912bf8adc80116765ef1eb7d7d2a204974780ca3fdec11fad331b6711c3",
+      "bytes": 5676
     }
   ],
-  "totalBytes": 10288166
+  "totalBytes": 10304880
 }

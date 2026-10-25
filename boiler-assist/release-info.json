@@ -1,8 +1,8 @@
 {
-  "appVersion": "2026.10.25-r5",
+  "appVersion": "2026.10.25-r6",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
-  "boilers": 1376,
+  "boilers": 1384,
   "gasFires": 43,
   "contentChanges": [
     {
@@ -334,6 +334,8 @@
     "Connects fault questions to the exact selected library boiler. Matching manufacturer fault meanings/checks appear directly with complete original conditions and manual sources; no model-generated diagnostic procedure, automatic part recommendation or new paid AI call. Unknown codes and ambiguous wording ask for the exact display and manual. Explicit follow-up retains only the current fault label, without marking any test passed. Changing the boiler clears the old conversation. Existing photo, AI transport/catalogue digest, spending cap and expiry, wiring, finder and technical data remain unchanged.",
     "Clarifies photo identification when a read GC code has no saved model: displays the actual code, keeps the editable transcript visible and describes a catalogue gap instead of blaming the photo. A name-only match cannot substitute a different GC/generation when an explicit GC code conflicts. Catalogue contents and the paired AI catalogue hash, server transport, budget/expiry, fault guidance, wiring and quote features remain unchanged. The original Logic MAX Heat family is being sourced separately; this release does not claim it has been added.",
     "Adds the coordinated identity/manual expansion: five original Ideal Logic MAX Heat H12/H15/H18/H24/H30 plus original MAX System S15/S18/S24/S30 and MAX Combi C24/C30/C35. Exact original GC groups verified on manufacturer-authored archived manual covers/model tables; author and archive host distinguished. All 1364 live records unchanged. No service/FGA/fault/parts settings copied from later 2 models. Requires matching protected 1376-record AI source package, with original auth, spent budget, cap and expiry unchanged; source installation must be verified before publication.",
-    "Explain why Send photo to AI is unavailable beside the selected photo, including the original trial request ceiling, service/library version mismatch, expired connection and unconfirmed request. Add an explicit no-cost connection-status refresh. Do not tell a user to tap Send while it is disabled. No image/model/accounting/credential/catalogue changes and no automatic paid retries."
+    "Explain why Send photo to AI is unavailable beside the selected photo, including the original trial request ceiling, service/library version mismatch, expired connection and unconfirmed request. Add an explicit no-cost connection-status refresh. Do not tell a user to tap Send while it is disabled. No image/model/accounting/credential/catalogue changes and no automatic paid retries.",
+    "Adds visible manual make/model/GC/product search to the identification screen, requiring no photo or AI connection. Reuses the existing ranked library search for names, preserves exact-code conflicts and manual model/fuel confirmation, and shows up to30 variants for narrowing. No paid requests, catalogue changes, guessed parts, financial changes or altered image handling.",
+    "Adds original Greenstar Ri12/15/18/24 identities, separately for Natural Gas and LPG, with exact GC and manufacturer manual cover evidence. Eight model/fuel entries; no later ErP servicing, FGA, faults or fitted-part data copied. Coordinates the matching1384-record AI source while retaining all spending history, the approved100-request ceiling, total cap, device grants and expiry."
   ]
 }
