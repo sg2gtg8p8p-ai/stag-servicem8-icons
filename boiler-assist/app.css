@@ -147,3 +147,21 @@ main{padding-top:8px!important}
 #swr-open small{display:block;font:400 13px/1.5 system-ui;color:#123d3b}
 #swr-open:disabled{opacity:.5}
 #swr-host-status{font-size:14px;color:#ffd390}
+
+/* Diagram-first library and one selectable conductor at a time. */
+#swr-root .swr-diagram-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#swr-root .swr-diagram-card{display:flex;flex-direction:column;gap:7px;text-align:left;min-width:0;padding:10px}
+#swr-root .swr-diagram-card img{width:100%;height:160px;object-fit:contain;background:#fff}
+#swr-root .swr-diagram-card strong{font-size:18px}#swr-root .swr-diagram-card span{font-size:13px;font-weight:400}
+#swr-root .swr-diagram-page{display:block;width:100%;padding:0;background:white;margin:14px 0;overflow:hidden}
+#swr-root .swr-diagram-page img{display:block;width:100%;height:auto}
+#swr-root .swr-original{margin:22px 0}#swr-root .swr-original>button:not(.swr-diagram-page){width:100%}
+#swr-root .swr-wire-picker{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
+#swr-root .swr-wire-picker button{font-size:14px;padding:8px 12px;min-height:44px}
+#swr-root .swr-wire-picker button[aria-pressed=true]{background:#006e70;border-color:#006e70;color:white}
+#swr-root .swr-wire-diagram{display:block;width:100%;max-width:470px;margin:0 auto;background:#f7faf9;border:1px solid #ccd8d5;border-radius:12px}
+#swr-root .swr-trace-panel{max-width:680px;margin:auto}#swr-root .swr-large-scroll img{display:block;width:1551px;max-width:none;height:auto;background:white}
+#swr-root .swr-trace-panel h3{font-size:1.1rem}#swr-root details{padding:12px 0}#swr-root summary{cursor:pointer;min-height:44px}
+@media(min-width:720px){#swr-root .swr-diagram-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+
+#swr-root .swr-wire-picker{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}#swr-root .swr-wire-picker button{padding:7px 5px;font-size:14px;line-height:1.25}#swr-root .swr-trace-panel details{padding:0}#swr-root .swr-trace-panel summary{border:1px solid #a7bdb9;border-radius:8px;padding:9px 12px;background:white;font-size:14px;font-weight:650}

@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "buildId": "c2085be5d5008f19",
+  "buildId": "70157f029130f18d",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.25-r7",
+  "appVersion": "2026.10.26-r1",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
       "url": "./app.css",
-      "sha256": "d6c96dbefc8d94f6f0ea9122287754858c4ee56277319c3e05e477b95a678cbd",
-      "bytes": 20602
+      "sha256": "f5db9f7a5c16e9c20480e272520adc10f1ab6507f9add9c373c4566b350865bb",
+      "bytes": 22542
     },
     {
       "url": "./app.js",
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "f7d2dcd2bf9c220242263d28507e2d93e6fdd5814b40a6fec51d78d30bae924c",
-      "bytes": 1047903
+      "sha256": "1f414c8de4f2b61c5c3faa19ab49b7b0ed7a7bc870fc887d530b21be60ea88c5",
+      "bytes": 1047902
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "71378c7ffc8a34cc67bff86dfd5be135cc55692445f28dc35ffc99dd1ed69543",
-      "bytes": 28196
+      "sha256": "9aec3597572f429f25231a525d291fffff7962631e354b4ff0b8891b3b8e88f7",
+      "bytes": 28540
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -142,8 +142,8 @@
     },
     {
       "url": "./wiring/runtime.js",
-      "sha256": "21650c7686bb967357825a006f9de7254d5fbbd7adf49da2d6207544b9da5360",
-      "bytes": 53599
+      "sha256": "d7450228ffeb6d62fc29581248ba89469e4d0c61a69d5778f1194fff3da882a9",
+      "bytes": 43421
     },
     {
       "url": "./help/fault-answer.mjs",
@@ -154,7 +154,47 @@
       "url": "./help/manual-search.mjs",
       "sha256": "25f0d912bf8adc80116765ef1eb7d7d2a204974780ca3fdec11fad331b6711c3",
       "bytes": 5676
+    },
+    {
+      "url": "./wiring/diagrams/hive-current-10-bcfd98a9f0.png",
+      "sha256": "bcfd98a9f046d968b99087c5590fd03d9cf0337bea20a83786d611fb96cd422d",
+      "bytes": 308519
+    },
+    {
+      "url": "./wiring/diagrams/hive-current-9-fdd865a958.png",
+      "sha256": "fdd865a95873f80ac90c47244acf974a4837fc210b4d5b57a363ede418ac0f00",
+      "bytes": 387338
+    },
+    {
+      "url": "./wiring/diagrams/hive-legacy-13-3b6755aaab.png",
+      "sha256": "3b6755aaabdff7868cfcfd1ddce01f2a24c080fce10872e47eea3b68db9cf871",
+      "bytes": 246347
+    },
+    {
+      "url": "./wiring/diagrams/resideo-11-eabd69bfa7.png",
+      "sha256": "eabd69bfa7e84acdcf8134e688ffcd9715be5f6a28468f801d28d33fd53ab90d",
+      "bytes": 394221
+    },
+    {
+      "url": "./wiring/diagrams/resideo-12-68e87d3c03.png",
+      "sha256": "68e87d3c032fcf2180807a8457e145ed991afcb58c5590300fa5e84b99adeec3",
+      "bytes": 412284
+    },
+    {
+      "url": "./wiring/diagrams/resideo-15-2e78d35074.png",
+      "sha256": "2e78d3507491cf54e22aa4b01ec459296cbcd675b30300745d296acd64ff309a",
+      "bytes": 368549
+    },
+    {
+      "url": "./wiring/diagrams/resideo-22-bba777691d.png",
+      "sha256": "bba777691d146ed2120de681fd2828ae089c449104f628d92f50d0d774464fdc",
+      "bytes": 440647
+    },
+    {
+      "url": "./wiring/diagrams/resideo-6-fee1ef7cb5.png",
+      "sha256": "fee1ef7cb531ac42f6c4e718f1c764449ec8e71b75061b3a36e736993dbad059",
+      "bytes": 477539
     }
   ],
-  "totalBytes": 10308628
+  "totalBytes": 13336177
 }

@@ -1,50 +1,69 @@
 import {DATA} from './source-data.mjs';
-import {LABELS,createReferenceStore} from './logic.mjs';
-import {mountPageViewer,originalManualURL} from './viewer.mjs';
-const wiringUIMounts=new WeakMap();
-export function mount(root,doc=root?.ownerDocument){
- if(!root||!doc)throw Error('Wiring reference root unavailable');if(wiringUIMounts.has(root))return wiringUIMounts.get(root);
- const get=id=>root.querySelector('#swr-'+id),store=createReferenceStore(),titles={home:'Wiring reference',plans:'System plans',hive:'Hive receivers',cylinder:'Cylinder controls',fault:'Fault-finding reference'},sections={home:'homeSection',plans:'plansSection',hive:'hiveSection',cylinder:'cylinderSection',fault:'faultSection'};
- const make=(tag,text,cls)=>{const e=doc.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls.split(/\s+/).filter(Boolean).map(c=>'swr-'+c).join(' ');return e;};
- const viewer=mountPageViewer({root:get('pageViewer'),scopeRoot:root,dialog:get('largePage'),isSelectionCurrent:rev=>{const s=store.getState();return !root.hidden&&s.revision===rev&&s.result!==null;}});
- const displayLabels={
-  generation:{unknown:'Not sure / not confirmed','slt3-current':'Hive installation guide (©2025)','active-heating2-legacy':'Active Heating 2 guide (©2017)'},
-  channel:{unknown:'Choose what it controls',single:'Heating only (single channel)',dual:'Heating and hot water (dual channel)'},
-  mode:{unknown:'Choose the fitted connection',relay:'Relay (on/off) — single channel',ot:'OpenTherm — single channel',dual:'Relay — heating and hot water'}
- };
- function populate(id,key){for(const[v,t]of Object.entries(LABELS[key])){const option=make('option',displayLabels[key]?.[v]??t);option.value=v;get(id).append(option);}}
- for(const key of ['plan','generation','channel','mode','zones','interface','demand'])populate(key,key);populate('cylinderPlan','plan');
- function clearResult(){viewer.clear();get('result').replaceChildren();get('result').hidden=true;get('summarySection').hidden=true;get('summaryText').value='';get('copySummary').disabled=true;get('copyStatus').textContent='';get('editStatus').textContent='Choices changed. Show the current reference before copying.';}
- function sync(){const s=store.getState().selection;for(const[key,id]of Object.entries(sections))get(id).hidden=s.section!==key;get('sectionTitle').textContent=titles[s.section];get('actionRow').hidden=s.section==='home';get('plan').value=s.plan;get('cylinderPlan').value=s.plan;get('confirmed').checked=s.confirmed;get('contextBadge').textContent=s.boiler?'· '+s.boiler+' (unverified)':'· unverified';}
- function update(patch){if(store.update(patch)){clearResult();sync();}}
- function navigate(section){update({section});get('sectionTitle').focus({preventScroll:true});root.scrollTop=0;}
- get('homeButton').addEventListener('click',()=>navigate('home'));
- for(const button of root.querySelectorAll('[data-swr-section]'))button.addEventListener('click',()=>navigate(button.dataset.swrSection));
- get('selectionForm').addEventListener('input',e=>{const field=e.target;if(field?.type!=='text')return;if(field.name?.startsWith('swr-'))update({[field.name.slice(4)]:field.value});});
- get('selectionForm').addEventListener('change',e=>{const field=e.target,key=field?.dataset?.swrField||(field?.name?.startsWith('swr-')?field.name.slice(4):'');if(!key||field.type==='text')return;update({[key]:field.type==='checkbox'?field.checked:field.value});});
- function sourceCard(reference,revision){
-  const source=DATA.sources[reference.source],info=source.pages[String(reference.page)],card=make('article',undefined,'source-card');card.append(make('p',source.title,'source-title'),make('p',source.edition+' · PDF '+reference.page+' / printed '+(info?.printed??reference.page),'help'),make('p',reference.purpose,'help'));
-  const link=make('a','Open original manual · page '+reference.page);link.href=originalManualURL(reference);link.target='_blank';link.rel='noopener noreferrer';card.append(link);
-  if(reference.kind==='figure'&&source.inline){const button=make('button','View whole original page');button.type='button';button.addEventListener('click',()=>{if(store.getState().revision===revision&&store.getState().result)viewer.show(reference,revision);});card.append(button);}
-  else card.append(make('p',reference.kind==='index'?'Manual index only; no live-test procedure is adapted.':source.accessNote,'help'));return card;
- }
- function renderResult(state){
-  const {result,revision,summary}=state,box=get('result');box.replaceChildren();box.hidden=false;box.append(make('h2',result.title));
-  if(result.held)box.append(make('p',result.section==='hive'?'Choose the matching receiver details and confirm them to show its terminal information.':result.section==='plans'?'A matching circuit design is not established.':'Reference selection is incomplete.','hold'));
-  for(const note of result.notes)box.append(make('p',note));
-  if(result.terminalLabels){box.append(make('h3','Labels in this exact source'),make('p','Source labels only. No boiler compatibility, links or load ratings are established.','help'));const labels=make('dl',undefined,'reference-labels');for(const[k,v]of Object.entries(result.terminalLabels))labels.append(make('dt',k),make('dd',v));box.append(labels);}
-  if(result.issues.length){const section=make('section',undefined,'issues');section.append(make('h3','Unresolved source qualifications'));for(const issue of result.issues)section.append(make('p',issue.text,'hold'));box.append(section);}
-  const missing=make('details');missing.open=true;missing.append(make('summary','Evidence still needed'));const list=make('ul');for(const text of result.missing)list.append(make('li',text));missing.append(list);box.append(missing);
-  if(result.references.length){box.append(make('h3',result.section==='plans'&&store.getState().selection.plan==='three'?'Related source references':'Original source references'));for(const reference of result.references)box.append(sourceCard(reference,revision));}
-  get('summarySection').hidden=false;get('summaryText').value=summary;get('copySummary').disabled=false;get('editStatus').textContent='Current reference shown. It does not approve an installation.';
-  if(result.references.length)viewer.show(result.references[0],revision);
- }
- get('selectionForm').addEventListener('submit',e=>{e.preventDefault();if(store.getState().selection.section==='home')return;try{renderResult(store.review());}catch(error){clearResult();get('editStatus').textContent=error.message;}});
- get('copySummary').addEventListener('click',async()=>{
-  const revision=store.getState().revision;let text;try{text=store.copyText(revision);}catch(error){get('copyStatus').textContent=error.message;return;}
-  try{if(!doc.defaultView?.navigator?.clipboard?.writeText)throw Error('Clipboard unavailable');await doc.defaultView.navigator.clipboard.writeText(text);get('copyStatus').textContent=store.getState().revision===revision?'Reference summary copied.':'Choices changed while copying. The clipboard may contain the earlier reference; review and copy again.';}
-  catch{if(store.getState().revision!==revision){get('copyStatus').textContent='Choices changed. Review the current reference before copying.';return;}get('summaryText').focus();get('summaryText').select();get('copyStatus').textContent='Text selected. Touch and hold, then choose Copy.';}
- });
- doc.defaultView?.addEventListener('pagehide',event=>{if(event.persisted)viewer.clear();else viewer.dispose();});sync();const controller={store,viewer};wiringUIMounts.set(root,controller);return controller;
+import {DIAGRAMS} from './diagram-data.mjs';
+import {TRACE_PLANS,getTrace} from './trace-data.mjs';
+const mounts=new WeakMap();
+export function diagramManualURL(diagram){
+ const d=DIAGRAMS.find(x=>x.id===diagram?.id);
+ if(!d||d.source!==diagram.source||d.page!==diagram.page||!DATA.sources[d.source]?.pages[String(d.page)])throw Error('Unknown diagram');
+ return DATA.sources[d.source].url+'#page='+d.page;
 }
-
+export function mount(root,doc=root?.ownerDocument){
+ if(!root||!doc)throw Error('Wiring diagrams unavailable');if(mounts.has(root))return mounts.get(root);
+ const win=doc.defaultView,make=(tag,text,cls)=>{const el=doc.createElement(tag);if(text!==undefined)el.textContent=text;if(cls)el.className=cls;return el;};
+ const button=(label,fn)=>{const b=make('button',label);b.type='button';b.addEventListener('click',fn);return b;};
+ const back=root.querySelector('#swr-exit')||button('Back to library',()=>{});back.id='swr-exit';
+ const bar=make('div',undefined,'swr-hostbar');bar.append(back);
+ const main=make('main',undefined,'swr-main'),heading=make('h1','Wiring diagrams');heading.tabIndex=-1;
+ const intro=make('p','Choose a system. Open its diagram or tap a wire to follow its connections.','swr-intro');
+ const grid=make('div',undefined,'swr-diagram-grid'),detail=make('section');detail.hidden=true;
+ const dialog=make('dialog');dialog.id='swr-largePage';const closeZoom=button('Back to diagram',()=>hideZoom());
+ const zoomBar=make('div',undefined,'swr-dialog-bar'),zoomTitle=make('h2');zoomBar.append(zoomTitle,closeZoom);
+ const zoomBody=make('div',undefined,'swr-large-scroll');dialog.append(zoomBar,make('p','Scroll across and down to follow the full-size diagram.','swr-dialog-help'),zoomBody);
+ main.append(heading,intro,grid,detail);root.replaceChildren(bar,main,dialog);
+ const token='stag-wiring-'+Date.now().toString(36);let selected=null,active=false,onExit=()=>{},wire='1',arrangement='switched';
+ function hideZoom(){if(dialog.open)dialog.close();zoomBody.replaceChildren();}
+ function enlarge(d){zoomTitle.textContent=d.title;zoomBody.replaceChildren(image(d));dialog.showModal();}
+ function image(d){const img=make('img');img.src=new URL('./wiring/'+d.asset.replace(/^\.\//,''),doc.baseURI).href;img.alt=d.title+' · complete manufacturer diagram, page '+d.page;img.decoding='async';return img;}
+ function home(){hideZoom();selected=null;heading.textContent='Wiring diagrams';intro.hidden=false;grid.hidden=false;detail.hidden=true;detail.replaceChildren();back.textContent='Back to library';root.scrollTop=0;}
+ function follow(d,box){
+  const plan=TRACE_PLANS[d.id];if(!plan)return;
+  const label=make('label','Pump connection');const select=make('select');select.setAttribute('aria-label','Pump connection');
+  for(const[value,text]of [['switched','Pump switched with boiler — main drawing'],['overrun','Boiler controls pump — overrun inset']]){const option=make('option',text);option.value=value;select.append(option);}select.value=arrangement;
+  const note=make('p','Match the exact controls below. Use the boiler’s instructions to choose its pump connection.','swr-help');
+  const controls=make('p',plan.controls,'swr-help'),picker=make('div',undefined,'swr-wire-picker'),route=make('div');route.setAttribute('aria-live','polite');
+  const draw=()=>{
+   picker.replaceChildren();
+   const rows=[...plan.rows];if(arrangement==='overrun')rows.push({id:'pump-output',label:'Pump output'});
+   for(const r of rows){const b=button(r.label,()=>{wire=r.id;draw();});b.dataset.wire=r.id;b.setAttribute('aria-pressed',String(wire===r.id));picker.append(b);}
+   const trace=getTrace(d.id,wire,arrangement);if(!trace)return;
+   const title=make('h3',trace.label+(trace.id==='pump-output'?'':' · wiring centre '+trace.id));
+   const svg=doc.createElementNS('http://www.w3.org/2000/svg','svg'),height=94+trace.ends.length*78;svg.setAttribute('viewBox','0 0 380 '+height);svg.setAttribute('role','img');svg.setAttribute('aria-label',trace.label+' connections for '+d.title);svg.classList.add('swr-wire-diagram');
+   const ns=(tag,attrs,text)=>{const el=doc.createElementNS(svg.namespaceURI,tag);for(const[k,v]of Object.entries(attrs))el.setAttribute(k,String(v));if(text)el.textContent=text;svg.append(el);return el;};
+   ns('title',{},trace.label+' — '+trace.ends.map(e=>e.device+': '+e.terminal).join('; '));
+   ns('path',{d:`M42 47 V${height-49}`,stroke:trace.colour,'stroke-width':5,fill:'none'});
+   if(wire==='3')ns('path',{d:`M42 47 V${height-49}`,stroke:'#ffdf00','stroke-width':2,'stroke-dasharray':'9 7',fill:'none'});
+   ns('circle',{cx:42,cy:35,r:24,fill:trace.colour});ns('text',{x:42,y:42,'text-anchor':'middle',fill:'#fff','font-size':wire==='pump-output'?12:20,'font-weight':700},wire==='pump-output'?'PL':wire);
+   ns('text',{x:82,y:35,fill:'#173b38','font-size':15,'font-weight':700},wire==='pump-output'?'Separate pump circuit':'Wiring-centre terminal '+wire);
+   trace.ends.forEach((end,i)=>{const y=80+i*78;ns('path',{d:`M42 ${y+26} H92`,stroke:trace.colour,'stroke-width':5,fill:'none'});ns('circle',{cx:42,cy:y+26,r:5,fill:trace.colour});ns('rect',{x:92,y,width:276,height:59,rx:9,fill:'#fff',stroke:trace.colour,'stroke-width':2});ns('text',{x:105,y:y+23,fill:'#173b38','font-size':18,'font-weight':700},end.device);ns('text',{x:105,y:y+44,fill:'#264c48','font-size':18},end.terminal);});
+   route.replaceChildren(title,svg,make('p',trace.note||'Every branch shown connects to this same wiring-centre terminal.','swr-help'));
+  };
+  const setup=make('details'),setupTitle=make('summary');const pumpLabel=()=>{setupTitle.textContent=arrangement==='overrun'?'Pump: boiler-controlled (overrun)':'Pump: switched with boiler';};pumpLabel();setup.append(setupTitle,label,select,note);
+  select.addEventListener('change',()=>{arrangement=select.value;if(wire==='pump-output'&&arrangement==='switched')wire='1';pumpLabel();draw();});
+  box.append(controls,setup,make('p','Tap a wire to follow its connections.','swr-help'),picker,route,make('p','Follow the terminal and wire labels; colour highlights the route. Switching contacts and the complete circuit are shown in the manufacturer drawing below.','swr-help'));draw();
+ }
+ function show(id,push=false,initial={}){
+  const d=DIAGRAMS.find(x=>x.id===id);if(!d){home();return;}
+  hideZoom();selected=d.id;arrangement=initial.arrangement==='overrun'?'overrun':'switched';wire=getTrace(d.id,initial.wire,arrangement)?initial.wire:'1';heading.textContent=d.title;intro.hidden=true;grid.hidden=true;detail.hidden=false;detail.replaceChildren();back.textContent='Back to diagrams';
+  if(TRACE_PLANS[d.id]){const panel=make('section',undefined,'swr-trace-panel');follow(d,panel);detail.append(panel);}
+  const original=make('section',undefined,'swr-original');original.append(make('h2','Complete manufacturer drawing'),make('p',d.note,'swr-help'),button('Enlarge diagram',()=>enlarge(d)));
+  const page=button('',()=>enlarge(d));page.className='swr-diagram-page';page.setAttribute('aria-label','Enlarge '+d.title+' manufacturer diagram');page.append(image(d));original.append(page);detail.append(original);
+  const refs=make('details');refs.append(make('summary','Manufacturer guide and notes'));const source=DATA.sources[d.source];refs.append(make('p',source.title+' · '+source.edition+' · page '+d.page,'swr-help'),make('p','Match the component models and boiler requirements shown. The full page retains its alternatives and notes.','swr-help'));const link=make('a','Open original manufacturer guide');link.href=diagramManualURL(d);link.target='_blank';link.rel='noopener noreferrer';refs.append(link);detail.append(refs);
+  root.scrollTop=0;heading.focus({preventScroll:true});if(push&&active)win.history.pushState({stagWiring:token,diagram:id},'');
+ }
+ for(const d of DIAGRAMS){const b=button('',()=>show(d.id,true));b.className='swr-diagram-card';const img=image(d);img.loading='lazy';b.append(img,make('strong',d.title),make('span',d.subtitle));grid.append(b);}
+ const owns=()=>win.history.state?.stagWiring===token;
+ const pop=()=>{if(!active)return;if(owns()){const id=win.history.state.diagram;if(id)show(id);else home();}else{active=false;home();onExit();}};win.addEventListener('popstate',pop);
+ dialog.addEventListener('cancel',()=>zoomBody.replaceChildren());
+ const api={start(exit){onExit=exit||(()=>{});active=true;home();win.history.pushState({stagWiring:token,diagram:null},'');},stop(){if(!active)return;active=false;home();if(owns())win.history.back();},back(){if(dialog.open){hideZoom();return true;}if(selected){if(owns())win.history.back();else home();return true;}return false;},viewer:{clear:hideZoom},openDiagram(id,options){show(id,true,options);},get selectedDiagram(){return selected;},dispose(){win.removeEventListener('popstate',pop);hideZoom();}};
+ mounts.set(root,api);home();return api;
+}

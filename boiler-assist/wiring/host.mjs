@@ -16,11 +16,11 @@ export function mountWiringHost(doc,{mountUI=mount,data=DATA,observe=globalThis.
  if(!root){unavailable();return null;}if(wiringMounts.has(root))return wiringMounts.get(root);
  const library=doc.getElementById('baf-library'),bar=doc.getElementById('offlineBar'),exit=root.querySelector('#swr-exit'),finderRoot=doc.getElementById('baf-root'),finderEntry=doc.getElementById('baf-open');
  if(!entry||!message||!library||!bar||!exit){unavailable();return null;}
- let ui,active=false,saved=null,wiringY=0,spacer=null;const headerProperties=['position','top','left','right','z-index'];
+ let ui,active=false,saved=null,spacer=null;const headerProperties=['position','top','left','right','z-index'];
  try{validateWiringData(data);ui=mountUI(root,doc);}catch{unavailable();return null;}
  function geometry(){const rect=bar.getBoundingClientRect();root.style.setProperty('--swr-top',Math.max(0,rect.bottom)+'px');if(spacer)spacer.style.height=rect.height+'px';}
  function close(){
-  if(!active)return;wiringY=root.scrollTop;ui.viewer?.clear();root.hidden=true;
+  if(!active)return;ui.stop?.();ui.viewer?.clear();root.hidden=true;
   if(saved.visibility)library.style.setProperty('visibility',saved.visibility,saved.visibilityPriority);else library.style.removeProperty('visibility');library.inert=saved.inert;if(saved.aria===null)library.removeAttribute('aria-hidden');else library.setAttribute('aria-hidden',saved.aria);
   for(const[name,value,priority]of saved.headerStyle){if(value)bar.style.setProperty(name,value,priority);else bar.style.removeProperty(name);}spacer?.remove();spacer=null;active=false;saved.focus?.focus?.({preventScroll:true});
  }
@@ -31,13 +31,13 @@ export function mountWiringHost(doc,{mountUI=mount,data=DATA,observe=globalThis.
   saved={visibility:library.style.visibility,visibilityPriority:library.style.getPropertyPriority('visibility'),inert:library.inert,aria:library.getAttribute('aria-hidden'),focus:doc.activeElement,headerStyle:headerProperties.map(name=>[name,bar.style.getPropertyValue(name),bar.style.getPropertyPriority(name)])};
   spacer=doc.createElement('div');spacer.id='swr-header-spacer';spacer.setAttribute('aria-hidden','true');spacer.style.height=bar.getBoundingClientRect().height+'px';bar.before(spacer);
   for(const[name,value]of [['position','fixed'],['top','0'],['left','0'],['right','0'],['z-index','20']])bar.style.setProperty(name,value,'important');
-  geometry();library.style.setProperty('visibility','hidden','important');library.inert=true;library.setAttribute('aria-hidden','true');root.hidden=false;root.scrollTop=wiringY;active=true;exit.focus({preventScroll:true});
+  geometry();library.style.setProperty('visibility','hidden','important');library.inert=true;library.setAttribute('aria-hidden','true');root.hidden=false;root.scrollTop=0;active=true;ui.start?.(close);exit.focus({preventScroll:true});
  }
- entry.addEventListener('click',open);exit.addEventListener('click',close);
+ entry.addEventListener('click',open);exit.addEventListener('click',()=>{if(!ui.back?.())close();});
  // Capture runs before the existing finder entry handler and restores the shared host.
  finderEntry?.addEventListener('click',close,true);
  doc.defaultView?.addEventListener('resize',()=>{if(active)geometry();});doc.defaultView?.addEventListener('stag-open-standalone-record',close);
  if(observe){const observer=new observe(()=>{if(active)geometry();});observer.observe(bar);}
- const controller={open,close,ui,isOpen:()=>active};wiringMounts.set(root,controller);entry.disabled=false;message.hidden=true;return controller;
+ const controller={open,close,ui,isOpen:()=>active};wiringMounts.set(root,controller);entry.disabled=false;entry.replaceChildren(doc.createTextNode('Wiring diagrams'));message.hidden=true;return controller;
 }
 if(typeof document!=='undefined')mountWiringHost(document);
