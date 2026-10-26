@@ -1513,6 +1513,32 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
     nav.append(button("← Boiler menu",()=>{sectionMenu=true;render();$("detailTitle").scrollIntoView({block:"start"});},"simple-menu-back"));
     content.replaceChildren(node("h3", sections[activeSection]));
     renderEngineerGuide(content);
+    (function renderManualPages(parent,selected,section,node,safeLink,identities,basePath){
+ const expected=identities.find(b=>b.id===selected?.id);
+ if(!expected||['manufacturer','model','gcNumber','productNumber','fuel'].some(k=>(expected[k]??null)!==(selected[k]??null)))return;
+ const manual='https://www.worcester-bosch.co.uk/support/literature/download/release/6720891162/45212';
+ if(!selected.sources?.some(s=>s.url?.split('#')[0]===manual))return;
+ const sets={parts:[10,11],adjustments:[59,60,64],combustion:[59,60],fullService:[58,59,60,61,62,63,64],serviceProcedure:[58,59,60,61,62,63],technicalData:[10,11]};
+ const pages=sets[section];if(!pages)return;
+ const titles={10:'Component overview — Figure 3',11:'Component key and accessories',58:'Inspection, isolation and annual checks',59:'Casing access, FPT test point and exact fuel/output tables',60:'FPT follow-up, inlet pressure and combustion checks',61:'Fan, burner cover, electrodes and seals',62:'Heat-exchanger baffles and cleaning',63:'Condensate trap cleaning and reinstatement',64:'Gas-valve procedure and manufacturer adjustment policy'};
+ const group=node('details',undefined,'manufacturer-source-pages');
+ group.append(node('summary','Original manufacturer diagrams and pages'));
+ if(section==='parts')group.open=true;
+ group.append(node('p','Worcester Bosch 6720891162 (2020/09) · '+selected.model+' · '+selected.fuel+'. Select a page, then enlarge it for the original detail. Confirm the fitted appliance and manual revision.','fga-note'));
+ if(selected.fuel==='Natural Gas'&&pages.includes(60))group.append(node('p','The original NG CO₂ table on page 60 is superseded by TB 0157 (02/2022): MAX 8.4–10.4%; MIN 8.0–10.2% AND at least 0.2 percentage points below measured MAX; CO <250 ppm. Take combustion readings with the case fitted.','fga-note'));
+ const choices=pages.flatMap(page=>selected.fuel==='Natural Gas'&&page===60?[{page:'tb0157-p2',title:'Revised NG combustion limits — TB 0157, page 2',file:'tb0157-p2.png',url:'https://www.worcester-bosch.co.uk/support/literature/download/TB%200157#page=2'},{page,title:titles[page],file:'page-'+page+'.png',url:manual+'#page='+page}]:[{page,title:titles[page],file:'page-'+page+'.png',url:manual+'#page='+page}]);
+ for(const p of choices){
+  const details=node('details',undefined,'manufacturer-source-page');details.append(node('summary',(typeof p.page==='number'?'Page '+p.page+' — ':'')+p.title));
+  if(section==='parts'&&p.page===10)details.open=true;
+  const url=basePath+p.file,image=node('img');image.src=url;image.alt='Manufacturer original: '+p.title;image.loading='lazy';image.style.width='100%';image.style.height='auto';image.style.background='#fff';image.style.display='block';
+  const viewport=node('div');viewport.style.overflow='auto';viewport.style.maxHeight='75vh';viewport.append(image);
+  const enlarge=node('button','Enlarge original page');enlarge.type='button';let zoomed=false;enlarge.addEventListener('click',()=>{zoomed=!zoomed;image.style.width=zoomed?String(image.naturalWidth||1600)+'px':'100%';image.style.maxWidth=zoomed?'none':'100%';enlarge.textContent=zoomed?'Fit page to screen':'Enlarge original page';});
+  details.append(enlarge,viewport);
+  const source=safeLink('Manufacturer PDF source ↗',p.url,'manual-button');if(source)details.append(source);
+  group.append(details);
+ }
+ parent.append(group);
+})(content,selected,activeSection,node,safeLink,[{"id":"worcester-gr4700iw-12-s-ng","manufacturer":"Worcester Bosch","model":"Greenstar 4000 12 System","gcNumber":"41-800-07","productNumber":"7733600377","fuel":"Natural Gas"},{"id":"worcester-gr4700iw-15-s-ng","manufacturer":"Worcester Bosch","model":"Greenstar 4000 15 System","gcNumber":"41-800-09","productNumber":"7733600379","fuel":"Natural Gas"},{"id":"worcester-gr4700iw-18-s-ng","manufacturer":"Worcester Bosch","model":"Greenstar 4000 18 System","gcNumber":"41-800-11","productNumber":"7733600381","fuel":"Natural Gas"},{"id":"worcester-gr4700iw-21-s-ng","manufacturer":"Worcester Bosch","model":"Greenstar 4000 21 System","gcNumber":"41-800-13","productNumber":"7733600383","fuel":"Natural Gas"},{"id":"worcester-gr4700iw-24-s-ng","manufacturer":"Worcester Bosch","model":"Greenstar 4000 24 System","gcNumber":"41-800-15","productNumber":"7733600385","fuel":"Natural Gas"},{"id":"worcester-greenstar-4000-12kw-system-lpg-7733600378","manufacturer":"Worcester Bosch","model":"Greenstar 4000 12kW system LPG","gcNumber":"41-800-08","productNumber":"7733600378","fuel":"LPG"},{"id":"worcester-greenstar-4000-15kw-system-lpg-7733600380","manufacturer":"Worcester Bosch","model":"Greenstar 4000 15kW system LPG","gcNumber":"41-800-10","productNumber":"7733600380","fuel":"LPG"},{"id":"worcester-greenstar-4000-18kw-system-lpg-7733600382","manufacturer":"Worcester Bosch","model":"Greenstar 4000 18kW system LPG","gcNumber":"41-800-12","productNumber":"7733600382","fuel":"LPG"},{"id":"worcester-greenstar-4000-21kw-system-lpg-7733600384","manufacturer":"Worcester Bosch","model":"Greenstar 4000 21kW system LPG","gcNumber":"41-800-14","productNumber":"7733600384","fuel":"LPG"},{"id":"worcester-greenstar-4000-24kw-system-lpg-7733600386","manufacturer":"Worcester Bosch","model":"Greenstar 4000 24kW system LPG","gcNumber":"41-800-16","productNumber":"7733600386","fuel":"LPG"}],"./manual-pages/wb-6720891162-202009/");
     window.dispatchEvent(new CustomEvent("stag-standalone-selection", {detail:{recordId:selected.id,section:activeSection}}));
     if (activeSection === "spareParts") {
       renderSpareParts(content);
@@ -1562,6 +1588,13 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
  const checked=choose(selected,view,context);if(!checked)return;
  const card=node('section',undefined,'fga-group fan-pressure-test');
  card.append(node('h4','Fan pressure test (FPT)'));
+ const setupNotice=(function fptSetupFor4000System(selected,status,identities){
+ const expected=identities.find(b=>b.id===selected?.id);
+ if(status!=='reviewed'||!expected||['manufacturer','model','gcNumber','productNumber','fuel'].some(k=>(expected[k]??null)!==(selected[k]??null)))return null;
+ if(!selected.sources?.some(s=>s.url?.split('#')[0]==='https://www.worcester-bosch.co.uk/support/literature/download/release/6720891162/45212'))return null;
+ return 'FPT setup: front casing removed; manometer connected to the mixing-device test nipple; maximum output in chimney-sweep mode (manual page 59). For FGA readings, the combustion casing must be fitted.';
+})(selected,checked.status,[{"id":"worcester-gr4700iw-12-s-ng","manufacturer":"Worcester Bosch","model":"Greenstar 4000 12 System","gcNumber":"41-800-07","productNumber":"7733600377","fuel":"Natural Gas"},{"id":"worcester-gr4700iw-15-s-ng","manufacturer":"Worcester Bosch","model":"Greenstar 4000 15 System","gcNumber":"41-800-09","productNumber":"7733600379","fuel":"Natural Gas"},{"id":"worcester-gr4700iw-18-s-ng","manufacturer":"Worcester Bosch","model":"Greenstar 4000 18 System","gcNumber":"41-800-11","productNumber":"7733600381","fuel":"Natural Gas"},{"id":"worcester-gr4700iw-21-s-ng","manufacturer":"Worcester Bosch","model":"Greenstar 4000 21 System","gcNumber":"41-800-13","productNumber":"7733600383","fuel":"Natural Gas"},{"id":"worcester-gr4700iw-24-s-ng","manufacturer":"Worcester Bosch","model":"Greenstar 4000 24 System","gcNumber":"41-800-15","productNumber":"7733600385","fuel":"Natural Gas"},{"id":"worcester-greenstar-4000-12kw-system-lpg-7733600378","manufacturer":"Worcester Bosch","model":"Greenstar 4000 12kW system LPG","gcNumber":"41-800-08","productNumber":"7733600378","fuel":"LPG"},{"id":"worcester-greenstar-4000-15kw-system-lpg-7733600380","manufacturer":"Worcester Bosch","model":"Greenstar 4000 15kW system LPG","gcNumber":"41-800-10","productNumber":"7733600380","fuel":"LPG"},{"id":"worcester-greenstar-4000-18kw-system-lpg-7733600382","manufacturer":"Worcester Bosch","model":"Greenstar 4000 18kW system LPG","gcNumber":"41-800-12","productNumber":"7733600382","fuel":"LPG"},{"id":"worcester-greenstar-4000-21kw-system-lpg-7733600384","manufacturer":"Worcester Bosch","model":"Greenstar 4000 21kW system LPG","gcNumber":"41-800-14","productNumber":"7733600384","fuel":"LPG"},{"id":"worcester-greenstar-4000-24kw-system-lpg-7733600386","manufacturer":"Worcester Bosch","model":"Greenstar 4000 24kW system LPG","gcNumber":"41-800-16","productNumber":"7733600386","fuel":"LPG"}]);if(setupNotice)card.append(node('p',setupNotice,'fga-note fpt-test-setup'));
+
  if(checked.status==='confirm-setup')card.append(node('p','Confirm the exact fuel/setup below to show the applicable FPT information.','fga-note'));
  else if(checked.status==='unreviewed')card.append(node('p',selected.fuel==='Oil'?'FPT applicability and procedure have not yet been reviewed for this exact oil burner/setup. Use the applicable manufacturer instructions.':'FPT values and procedure have not yet been reviewed for this exact boiler and fuel. Open the applicable manufacturer manual.','fga-note'));
  else{

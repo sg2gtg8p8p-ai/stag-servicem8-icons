@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "90c391732b2ed4b8",
+  "buildId": "cd601ae49253c644",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.26-r7",
+  "appVersion": "2026.10.26-r8",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "sha256": "f41df7311b0033aaed8329631114f777d2547acc90e14f76e4919f95045d2e5a",
-      "bytes": 5664153
+      "sha256": "92f1afb494702edae6e1c003face06a4b3e13d7b4c603b712099e85ae4888a94",
+      "bytes": 5870324
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -57,7 +57,7 @@
     },
     {
       "url": "./help/ai-client.mjs",
-      "sha256": "ddd818313877dda242170e18bdc72818de55a670fb8ff53a378f3ace7dd7bc27",
+      "sha256": "090dea505e3fb07d2e12759acda22ba2c50d692e6da096776db4f58df5137a2b",
       "bytes": 8047
     },
     {
@@ -92,8 +92,8 @@
     },
     {
       "url": "./help/ui.mjs",
-      "sha256": "f7661a6cda09cfe45b17d170b7ac029271e188aa70f005f147ee477855b57f7a",
-      "bytes": 33263
+      "sha256": "0a166b284c03b149be14ee4bc1eea7cd52b1d93fde300723a38e2b3c3d3532a0",
+      "bytes": 33499
     },
     {
       "url": "./icons/256.png",
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "3a28e2e07012632ce75b98d6aa766e76bb7188caebb5289a7279aa7e5a056bff",
-      "bytes": 1078095
+      "sha256": "27fbd245c2da681cf553a29eb073e1b02aa77b7e68b3392664df369605c6cbfc",
+      "bytes": 1086108
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "4e3c23d9888d0cb811c2cae27ff92c9474e8fbd943fd5971926f59f8132899e1",
-      "bytes": 31360
+      "sha256": "a0d5fe86cc9f589ee6f78b663b1231684acb1b8e5dad13be548b3a7b35a7228e",
+      "bytes": 32027
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -147,8 +147,8 @@
     },
     {
       "url": "./help/fault-answer.mjs",
-      "sha256": "2cf08a5a75128caeb643a8513fbb510e394ae51572fb1e1f286ed4050bf52a28",
-      "bytes": 7546
+      "sha256": "a72748cd11d99b77b16f9083c4203b8f42bb5df7bae327b1d220a7de2bd544f6",
+      "bytes": 9738
     },
     {
       "url": "./help/manual-search.mjs",
@@ -194,7 +194,57 @@
       "url": "./wiring/diagrams/resideo-6-fee1ef7cb5.png",
       "sha256": "fee1ef7cb531ac42f6c4e718f1c764449ec8e71b75061b3a36e736993dbad059",
       "bytes": 477539
+    },
+    {
+      "url": "./manual-pages/wb-6720891162-202009/page-10.png",
+      "sha256": "dc57d0db5143b3d89f3c77761521128d3afb1117537f67f86d0647f547964c4d",
+      "bytes": 510732
+    },
+    {
+      "url": "./manual-pages/wb-6720891162-202009/page-11.png",
+      "sha256": "6795c4c1c866be27232ee6fba33bf14ad713051995db61e96b2309647f6a0e64",
+      "bytes": 523900
+    },
+    {
+      "url": "./manual-pages/wb-6720891162-202009/page-58.png",
+      "sha256": "4cc787de8d3cfaddde30e791e40cbaed474e9d9a986cf5da379a9dad45bd47ed",
+      "bytes": 594045
+    },
+    {
+      "url": "./manual-pages/wb-6720891162-202009/page-59.png",
+      "sha256": "0e1baa1f44d84504309074f82109f014f8aba72bd0cdb42b4cf6b02df29f82d8",
+      "bytes": 522319
+    },
+    {
+      "url": "./manual-pages/wb-6720891162-202009/page-60.png",
+      "sha256": "af202630aa1557448e5522fc1a52e8208254d88e22d53e7f12138212e547e47b",
+      "bytes": 580155
+    },
+    {
+      "url": "./manual-pages/wb-6720891162-202009/page-61.png",
+      "sha256": "c292c9efc2025c69bfcecdeb1befc6aea5b2d2b0b67db3b371de3d725e0bca6a",
+      "bytes": 590851
+    },
+    {
+      "url": "./manual-pages/wb-6720891162-202009/page-62.png",
+      "sha256": "5e283c5e8656bde71c5e104fac194b400371285f00bfdf2d1f71e1e0564da876",
+      "bytes": 473970
+    },
+    {
+      "url": "./manual-pages/wb-6720891162-202009/page-63.png",
+      "sha256": "5373c746aec0eecdc2082249b89964fcfedc9b5055dd762ece9ce9e95f8d5ac4",
+      "bytes": 588195
+    },
+    {
+      "url": "./manual-pages/wb-6720891162-202009/page-64.png",
+      "sha256": "b3087fa8c4ceda566600a04781b507358ac3c6f7c6280a7642932209d00f939d",
+      "bytes": 488779
+    },
+    {
+      "url": "./manual-pages/wb-6720891162-202009/tb0157-p2.png",
+      "sha256": "c6ecc2fe434775ddd4888fcf31ddc80ccbc12729693eb9c7d7d7b01aa6fa2a64",
+      "bytes": 654706
     }
   ],
-  "totalBytes": 13470828
+  "totalBytes": 19215759
 }

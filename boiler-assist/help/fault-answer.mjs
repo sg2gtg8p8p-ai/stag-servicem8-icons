@@ -6,11 +6,31 @@ export function faultAnswer(row,recordId,question,previousLabel=null){
  if(!b||b.id!==recordId||!q||clean(question).length>400)return{kind:'unavailable',message:'Select the exact boiler and enter a fault code or the words on its display.',entries:[]};
  const identity=[b.manufacturer,b.model,b.gcNumber?'GC '+b.gcNumber:'',b.productNumber?'Product '+b.productNumber:'',b.fuel,b.generation].filter(Boolean).join(' · ');
  const sources=Array.isArray(b.sources)?b.sources:[],rows=Array.isArray(b.faultCodes)?b.faultCodes:[];
- const available=rows.flatMap((f,index)=>{const ids=Array.isArray(f.sourceIds)?f.sourceIds:[];const links=ids.map(id=>sources.find(s=>s.id===id&&safe(s.url)));return ids.length&&links.every(Boolean)&&typeof f.label==='string'&&typeof f.value==='string'?[{index,label:f.label,text:f.value,code:f.code||null,codeKind:f.codeKind||null,...(b.faultCodeFormat==='worcester-paired'?{faultCode:f.faultCode||null,causeCode:f.causeCode,causeCodes:f.causeCodes||[f.causeCode]}:{}),conditions:[f.conditions,f.condition,f.applicability,f.notes,f.note].filter(Boolean),sources:links.map(s=>({url:safe(s.url),title:s.title||'Manufacturer fault guide',reference:s.reference||s.documentReference||''}))}]:[];});
+ const available=rows.flatMap((f,index)=>{const ids=Array.isArray(f.sourceIds)?f.sourceIds:[];const links=ids.map(id=>sources.find(s=>s.id===id&&safe(s.url)));return ids.length&&links.every(Boolean)&&typeof f.label==='string'&&typeof f.value==='string'?[{index,label:f.label,text:f.value,code:f.code||null,codeKind:f.codeKind||null,...(b.faultCodeFormat==='worcester-numeric'?{manufacturerCategories:f.manufacturerCategories||[]}:{}),...(b.faultCodeFormat==='worcester-paired'?{faultCode:f.faultCode||null,causeCode:f.causeCode,causeCodes:f.causeCodes||[f.causeCode]}:{}),conditions:[f.conditions,f.condition,f.applicability,f.notes,f.note].filter(Boolean),sources:links.map(s=>({url:safe(s.url),title:s.title||'Manufacturer fault guide',reference:s.reference||s.documentReference||''}))}]:[];});
  const links=(b.manuals||[]).filter(s=>safe(s.url)).map(s=>({url:safe(s.url),title:s.label||'Manufacturer manual',reference:s.value||''}));
  const noteSourceIds=new Set((Array.isArray(b.notes)?b.notes:[]).flatMap(n=>Array.isArray(n?.sourceIds)?n.sourceIds:[]));
  const contextSources=sources.filter(s=>noteSourceIds.has(s.id)&&safe(s.url)).map(s=>({url:safe(s.url),title:s.title||'Manufacturer note',reference:s.reference||s.documentReference||''}));
  const base={kind:'fault-answer',recordId,identity,availableLabels:available.map(e=>e.label),entries:[],links,activeLabel:null,contextSources,applicability:clean(b.applicability),notes:Array.isArray(b.notes)?b.notes:[],completePresentation:row.presentation?.boilers?.[b.id]?.faultCodes||null,confirmedDiagnosis:false,partsRecommended:false};
+
+ if(b.faultCodeFormat==='worcester-numeric'){
+  const exact=available.filter(e=>norm(e.label)===q);
+  if(exact.length===1)return{...base,entries:exact,activeLabel:exact[0].label,message:'Manufacturer information for this exact display entry. Follow the checks in order; a code alone does not confirm a failed part.'};
+  let rest=clean(question).toUpperCase().replace(/\b(FAULT|ERROR|CODE|STATUS|DIAGNOSTIC|MAINTENANCE)(?=\d)/g,'$1 ');
+  rest=rest.replace(/\b([OBVWAR])\s*(\d{3,4})\b/g,'$2 $1');
+  const foreignPair=[...rest.matchAll(/\b([A-Z][A-Z0-9]|[0-9][A-Z])[ .\/-]*\d{3,4}\b/g)].some(m=>!['IS','AT','IN','ON','OF','TO','OR','IT','DO','MY','NO','AS','IF','AN','BY','BE'].includes(m[1]));
+  const requested=[];
+  rest=rest.replace(/\b(\d{3,4})(?:\s*(?:\(([OBVWAR](?:\/[OBVWAR])*)\)|([OBVWAR])\b))?(?=$|[^A-Z0-9])/g,(_all,code,group,category)=>{requested.push({code,categories:(group||category||'').split('/').filter(Boolean)});return' ';});
+  const unknown=foreignPair||/\d/.test(rest);
+  if(requested.length||unknown){
+   const groups=requested.map(p=>available.filter(e=>e.code===p.code&&p.categories.every(c=>e.manufacturerCategories?.includes(c))));
+   if(unknown||!groups.length||groups.some(g=>g.length!==1))return{...base,message:'That exact code and category are not in this boiler’s saved manufacturer table. Check the display; no nearby code, category or boiler has been substituted.'};
+   const entries=[...new Set(groups.flat())];
+   if(entries.length!==1)return{...base,availableLabels:entries.map(e=>e.label),message:'More than one display code was entered. Choose the exact entry before following its checks.'};
+   const e=entries[0],kind=e.codeKind==='status'?'Operating status — the manufacturer identifies this as an operating message, not a fault.':e.codeKind==='maintenance'?'Manufacturer maintenance notification and checks.':e.codeKind==='diagnostic'?'Manufacturer diagnostic information.':'Manufacturer fault meaning and checks.';
+   return{...base,entries,activeLabel:e.label,message:kind+' No component failure or test result has been confirmed.'};
+  }
+ }
+
  // This exact Worcester family displays a fault group AND a three-digit cause.
  // Keep an unsupported cause, mismatched pair or missing cause from selecting
  // another row that happens to share a group. Other manufacturers are unchanged.
