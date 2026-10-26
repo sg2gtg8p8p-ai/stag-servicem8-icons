@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "cd601ae49253c644",
+  "buildId": "76d162f8eb4d5e1a",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.26-r8",
+  "appVersion": "2026.10.26-r9",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "sha256": "92f1afb494702edae6e1c003face06a4b3e13d7b4c603b712099e85ae4888a94",
-      "bytes": 5870324
+      "sha256": "62faec9ed831528c84b2b8b7db36ec1d2053520a255f6ce03449c60634735930",
+      "bytes": 5902679
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -57,7 +57,7 @@
     },
     {
       "url": "./help/ai-client.mjs",
-      "sha256": "090dea505e3fb07d2e12759acda22ba2c50d692e6da096776db4f58df5137a2b",
+      "sha256": "46cbbc38eddf970cbebac9766f40eeddf2483c8ca31ba9028e904f388e240124",
       "bytes": 8047
     },
     {
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "27fbd245c2da681cf553a29eb073e1b02aa77b7e68b3392664df369605c6cbfc",
-      "bytes": 1086108
+      "sha256": "f3d7672d9562114964f3b22d761b68029de01188bff937398ecdc68e8e6c105c",
+      "bytes": 1093238
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "a0d5fe86cc9f589ee6f78b663b1231684acb1b8e5dad13be548b3a7b35a7228e",
-      "bytes": 32027
+      "sha256": "13ff870964db3c54037e18febf3cf9a1e055a43830b213afe946cf00bf16225a",
+      "bytes": 32578
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -244,7 +244,102 @@
       "url": "./manual-pages/wb-6720891162-202009/tb0157-p2.png",
       "sha256": "c6ecc2fe434775ddd4888fcf31ddc80ccbc12729693eb9c7d7d7b01aa6fa2a64",
       "bytes": 654706
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-10.png",
+      "sha256": "2dafc1e49d39ed7b025bf0d1f9e1a2972a7ba0cb76abab7695082753407d2d42",
+      "bytes": 830433
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-11.png",
+      "sha256": "e1c5af38a8e93ef3a705f15a0c119f640f6ac2f4afb75a8d8764950aba13c6a8",
+      "bytes": 582381
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-58.png",
+      "sha256": "a4bb4dbdb32724ed3e3479a32c5316b6059bd961856adacc823bd099fc5db663",
+      "bytes": 709361
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-59.png",
+      "sha256": "a0d40b006217b986524056a61508866d29bf52691b207e4544b25e7cc575ace5",
+      "bytes": 653385
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-60.png",
+      "sha256": "fe3ac8311832a6ccdca18a65ec00b600c5d11dfd7d69662b71fe4943aaf6bdfa",
+      "bytes": 703391
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-61.png",
+      "sha256": "efa0075e3e5100336700d2d1214a9700d85862cf1aadff3deb724526693d6fdc",
+      "bytes": 751218
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-62.png",
+      "sha256": "f58855bf9a16ac5868791cea3a83cc95d22ff950e8e9fa2dfb8ab86deac38343",
+      "bytes": 597647
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-63.png",
+      "sha256": "f03b9105836bf3dd038c48bb5ccc0f8c5bf64917b00f72fd5cbe9d72054e784f",
+      "bytes": 767506
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-64.png",
+      "sha256": "9947d00625a445ff4b92ba0591852c9e3239fc21293b2744a788fb29bcabef0a",
+      "bytes": 622438
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-72.png",
+      "sha256": "6548887b3586d7e1e9353bc9520ee91d27a8c04753ecb604a2a98d15ee35e6a5",
+      "bytes": 288124
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-73.png",
+      "sha256": "cf049aeb9f6b1b0ba36c65f485d01e44c3f6f846ace6bf2a845b17d48456a5f4",
+      "bytes": 274159
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-74.png",
+      "sha256": "9a18f2a47f01821fb9d490b2c6c34f29f25807ef222e0cee0890625e5744cf10",
+      "bytes": 284358
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-75.png",
+      "sha256": "674fcf0c0ed2671484b57980aa7cbb645df043a87e912a8b4f75b826b94ce9d8",
+      "bytes": 293324
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-76.png",
+      "sha256": "c89eb9098093c5e45389530336769d2f8867539d26356d69f9dcbb9c2179a922",
+      "bytes": 275372
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-77.png",
+      "sha256": "51d33bab82912e1e43310fa8f1ddd5141ae37ab80ec97454048a167def40ce0d",
+      "bytes": 253349
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-78.png",
+      "sha256": "3d372d73f619e1007a9a9a01fdf603c80c9ce09b146b76406b0dc102515a9f5c",
+      "bytes": 272186
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-79.png",
+      "sha256": "9e85ba4ca95fe21772f6c9bb4130631a6e88dc6c6e1340f636e537d5d1dd26b6",
+      "bytes": 220794
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-80.png",
+      "sha256": "04b7c50dd02d40784d021df9af14d8ce5c06c839d58b1db9ccc11c83aef0ce3e",
+      "bytes": 159169
+    },
+    {
+      "url": "./manual-pages/wb-6720891161-202110/page-94.png",
+      "sha256": "769c7b328d52817a39d8a52a74e509c8daef894f424acbab713359025eeb556e",
+      "bytes": 385014
     }
   ],
-  "totalBytes": 19215759
+  "totalBytes": 28179404
 }

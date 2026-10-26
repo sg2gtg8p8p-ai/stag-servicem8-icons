@@ -1513,6 +1513,47 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
     nav.append(button("← Boiler menu",()=>{sectionMenu=true;render();$("detailTitle").scrollIntoView({block:"start"});},"simple-menu-back"));
     content.replaceChildren(node("h3", sections[activeSection]));
     renderEngineerGuide(content);
+    (function renderCombiManualPages(parent,selected,section,node,safeLink,identities,basePath){
+ const expected=identities.find(b=>b.id===selected?.id);
+ if(!expected||['manufacturer','model','gcNumber','productNumber','fuel'].some(k=>(expected[k]??null)!==(selected[k]??null)))return;
+ const manual='https://www.worcester-bosch.co.uk/support/literature/download/release/6720891161/46841';
+ if(selected.fuel!=='Natural Gas'||!selected.sources?.some(s=>s.url?.split('#')[0]===manual))return;
+ const sets={parts:[10,11],technicalData:[10,11],adjustments:[59,60,64],combustion:[59,60],fullService:[58,59,60,61,62,63,64,94],serviceProcedure:[58,59,60,61,62,63,64,94],faultCodes:[72,73,74,75,76,77,78,79,80]};
+ const pages=sets[section];if(!pages)return;
+ const titles={10:'Combi component overview - Figure 3',11:'Combi component key',58:'Inspection, isolation and annual checks',59:'Casing, FPT test point and exact Combi output tables',60:'FPT follow-up, inlet pressure and combustion checks',61:'Fan, burner cover, electrodes and seals',62:'Heat-exchanger baffles and cleaning',63:'Condensate trap cleaning and reinstatement',64:'Gas-valve procedure and adjustment policy',94:'Manufacturer inspection and maintenance checklist'};
+ const group=node('details',undefined,'manufacturer-combi-source-pages');
+ group.append(node('summary','Original manufacturer diagrams and pages'));
+ if(section==='parts')group.open=true;
+ group.append(node('p','Worcester Bosch 6720891161 (2021/10) · '+selected.model+' · Natural Gas. Select a page and enlarge it for the original detail. Confirm the fitted appliance and manual revision.','fga-note'));
+ if(pages.includes(60))group.append(node('p','The original NG CO₂ table on page 60 is superseded by TB 0157 (02/2022): MAX 8.4–10.4%; MIN 8.0–10.2% AND at least 0.2 percentage points below measured MAX; CO <250 ppm. Take combustion readings with the case fitted.','fga-note'));
+ const choices=pages.flatMap(page=>{
+  const p={page,title:titles[page]||(page===80?'Uncoded symptom guide - Table 32':'Operating and fault codes - Table 31'),file:'page-'+page+'.png',url:manual+'#page='+page};
+  return page===60?[{page:'tb0157',title:'Revised NG combustion limits - TB 0157, page 2',file:'../wb-6720891162-202009/tb0157-p2.png',url:'https://www.worcester-bosch.co.uk/support/literature/download/TB%200157#page=2'},p]:[p];
+ });
+ for(const p of choices){
+  const details=node('details',undefined,'manufacturer-source-page');details.append(node('summary',(typeof p.page==='number'?'Page '+p.page+' - ':'')+p.title));
+  if(section==='parts'&&p.page===10)details.open=true;
+  const image=node('img');image.src=basePath+p.file;image.alt='Manufacturer original: '+p.title;image.loading='lazy';image.style.width='100%';image.style.height='auto';image.style.background='#fff';image.style.display='block';
+  const viewport=node('div');viewport.style.overflow='auto';viewport.style.maxHeight='75vh';
+  let zoomed=false;
+  const enlarge=node('button','Enlarge original page');enlarge.type='button';
+  if(p.page===94){
+   const layout=node('div');layout.style.position='relative';layout.append(image);viewport.append(layout);
+   const position=()=>{const width=zoomed?(image.naturalHeight||2277):(viewport.clientWidth||320),ratio=(image.naturalWidth||1622)/(image.naturalHeight||2277);layout.style.width=width+'px';layout.style.height=width*ratio+'px';image.style.width=width*ratio+'px';image.style.maxWidth='none';image.style.position='absolute';image.style.left='0';image.style.top=width*ratio+'px';image.style.transformOrigin='top left';image.style.transform='rotate(-90deg)';viewport.scrollLeft=zoomed?width*0.10:0;viewport.scrollTop=zoomed?width*ratio*0.16:0;};
+   image.addEventListener('load',position);
+   details.addEventListener('toggle',position);
+   enlarge.addEventListener('click',()=>{zoomed=!zoomed;position();enlarge.textContent=zoomed?'Fit page to screen':'Enlarge original page';});
+   position();
+  }else{
+   viewport.append(image);
+   enlarge.addEventListener('click',()=>{zoomed=!zoomed;image.style.width=zoomed?String(image.naturalWidth||1622)+'px':'100%';image.style.maxWidth=zoomed?'none':'100%';enlarge.textContent=zoomed?'Fit page to screen':'Enlarge original page';});
+  }
+  details.append(enlarge,viewport);
+  const source=safeLink('Manufacturer PDF source ↗',p.url,'manual-button');if(source)details.append(source);
+  group.append(details);
+ }
+ parent.append(group);
+})(content,selected,activeSection,node,safeLink,[{"id":"worcester-gr4700iw-25-c-ng","manufacturer":"Worcester Bosch","model":"Greenstar 4000 25 C","gcNumber":"47-800-30","productNumber":"7733600371","fuel":"Natural Gas"},{"id":"worcester-gr4700iw-30-c-ng","manufacturer":"Worcester Bosch","model":"Greenstar 4000 30 C","gcNumber":"47-800-32","productNumber":"7733600373","fuel":"Natural Gas"}],"./manual-pages/wb-6720891161-202110/");
     (function renderManualPages(parent,selected,section,node,safeLink,identities,basePath){
  const expected=identities.find(b=>b.id===selected?.id);
  if(!expected||['manufacturer','model','gcNumber','productNumber','fuel'].some(k=>(expected[k]??null)!==(selected[k]??null)))return;
@@ -1588,6 +1629,13 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
  const checked=choose(selected,view,context);if(!checked)return;
  const card=node('section',undefined,'fga-group fan-pressure-test');
  card.append(node('h4','Fan pressure test (FPT)'));
+ const combiSetup=(function fptSetupFor4000Combi(selected,status,identities){
+ const expected=identities.find(b=>b.id===selected?.id);
+ if(status!=='reviewed'||!expected||['manufacturer','model','gcNumber','productNumber','fuel'].some(k=>(expected[k]??null)!==(selected[k]??null)))return null;
+ if(selected.fuel!=='Natural Gas'||!selected.sources?.some(s=>s.url?.split('#')[0]==='https://www.worcester-bosch.co.uk/support/literature/download/release/6720891161/46841'))return null;
+ return 'FPT setup: front casing removed; manometer connected to the mixing-device test nipple; maximum output in chimney-sweep mode (Combi manual page 59). For FGA readings, the combustion casing must be fitted.';
+})(selected,checked.status,[{"id":"worcester-gr4700iw-25-c-ng","manufacturer":"Worcester Bosch","model":"Greenstar 4000 25 C","gcNumber":"47-800-30","productNumber":"7733600371","fuel":"Natural Gas"},{"id":"worcester-gr4700iw-30-c-ng","manufacturer":"Worcester Bosch","model":"Greenstar 4000 30 C","gcNumber":"47-800-32","productNumber":"7733600373","fuel":"Natural Gas"}]);if(combiSetup)card.append(node('p',combiSetup,'fga-note fpt-combi-setup'));
+
  const setupNotice=(function fptSetupFor4000System(selected,status,identities){
  const expected=identities.find(b=>b.id===selected?.id);
  if(status!=='reviewed'||!expected||['manufacturer','model','gcNumber','productNumber','fuel'].some(k=>(expected[k]??null)!==(selected[k]??null)))return null;
@@ -1818,7 +1866,17 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
         const link = manualButton(v, "View official readings / test procedure \u2197");
         if (link) card.append(link);
       } else {
-        readingText(card, v.value);
+        if(!(function renderCombiFaultChecks(card,selected,entry,section,node,identities){
+ if(section!=='faultCodes')return false;
+ const expected=identities.find(b=>b.id===selected?.id);
+ if(!expected||['manufacturer','model','gcNumber','productNumber','fuel'].some(k=>(expected[k]??null)!==(selected[k]??null)))return false;
+ if(!entry.sourceIds?.some(id=>/^wb-4000-combi-fault-p(?:7[2-9]|80)$/.test(id)))return false;
+ const checks=Array.isArray(entry.checks)?entry.checks:String(entry.value).split(/▶\s*/).map(s=>s.trim()).filter(Boolean);
+ if(!checks.length)return false;
+ const list=node(Array.isArray(entry.checks)?'ol':'ul',undefined,'facts');
+ for(const check of checks)list.append(node('li',check));
+ card.append(list);return true;
+})(card,selected,v,activeSection,node,[{"id":"worcester-gr4700iw-25-c-ng","manufacturer":"Worcester Bosch","model":"Greenstar 4000 25 C","gcNumber":"47-800-30","productNumber":"7733600371","fuel":"Natural Gas"},{"id":"worcester-gr4700iw-30-c-ng","manufacturer":"Worcester Bosch","model":"Greenstar 4000 30 C","gcNumber":"47-800-32","productNumber":"7733600373","fuel":"Natural Gas"}])) readingText(card, v.value);
         if (["serviceProcedure", "adjustments", "parts", "serviceMode"].includes(activeSection)) {
           const link = manualButton(v, activeSection === "parts" ? "View official component / parts reference \u2197" : "View official diagram / procedure \u2197");
           if (link) card.append(link);
