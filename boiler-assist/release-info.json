@@ -1,8 +1,8 @@
 {
-  "appVersion": "2026.10.26-r2",
+  "appVersion": "2026.10.26-r3",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
-  "boilers": 1384,
+  "boilers": 1389,
   "gasFires": 43,
   "contentChanges": [
     {
@@ -339,6 +339,7 @@
     "Adds original Greenstar Ri12/15/18/24 identities, separately for Natural Gas and LPG, with exact GC and manufacturer manual cover evidence. Eight model/fuel entries; no later ErP servicing, FGA, faults or fitted-part data copied. Coordinates the matching1384-record AI source while retaining all spending history, the approved100-request ceiling, total cap, device grants and expiry.",
     "Show a local label-photo preview and an explicit Rotate photo control before sending. Preserve EXIF handling, input limits, exact read identifiers, original image, authentication, allowance and single explicit send. Retain the selected fault for supported follow-up wording. No claim of improved real-AI transcription accuracy; that acceptance remains separate.",
     "Diagram-first wiring gallery: eight included complete manufacturer pages, enlarge view and proper back navigation. S-plan and Y-plan have individually selectable junction connections for the exact listed controls, with separate pump-overrun arrangement. No generic boiler compatibility or continuity through switching contacts inferred.",
-    "Complete the S-plan and Y-plan operating paths beyond individual wires, including supply, programmer, thermostat, valve movement, separate end-switch feed, boiler demand, pump supply and neutral return. Cover heating, hot water, both and the Y-plan satisfied-cylinder alternative. Preserve separate pump-overrun circuits, exact control identities, source drawings, catalogue and AI behaviour."
+    "Complete the S-plan and Y-plan operating paths beyond individual wires, including supply, programmer, thermostat, valve movement, separate end-switch feed, boiler demand, pump supply and neutral return. Cover heating, hot water, both and the Y-plan satisfied-cylinder alternative. Preserve separate pump-overrun circuits, exact control identities, source drawings, catalogue and AI behaviour.",
+    "Adds the original Ideal Logic Heat 12/15/18/24/30 Natural Gas GC family, including owner-reported41-409-94, with exact model/fuel identity and archived Ideal-authored UIN205862A06 manual evidence. Previous1384 records are unchanged. No newer-generation service/FGA/fault/part data is copied. Coordinates the matching1389-record AI source without changing authorisation, model, spending history, allowance, cap or expiry. All complete S/Y wiring-path fixes remain intact."
   ]
 }
