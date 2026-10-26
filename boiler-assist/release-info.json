@@ -1,8 +1,8 @@
 {
-  "appVersion": "2026.10.26-r4",
+  "appVersion": "2026.10.26-r5",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
-  "boilers": 1389,
+  "boilers": 1393,
   "gasFires": 43,
   "contentChanges": [
     {
@@ -341,6 +341,7 @@
     "Diagram-first wiring gallery: eight included complete manufacturer pages, enlarge view and proper back navigation. S-plan and Y-plan have individually selectable junction connections for the exact listed controls, with separate pump-overrun arrangement. No generic boiler compatibility or continuity through switching contacts inferred.",
     "Complete the S-plan and Y-plan operating paths beyond individual wires, including supply, programmer, thermostat, valve movement, separate end-switch feed, boiler demand, pump supply and neutral return. Cover heating, hot water, both and the Y-plan satisfied-cylinder alternative. Preserve separate pump-overrun circuits, exact control identities, source drawings, catalogue and AI behaviour.",
     "Adds the original Ideal Logic Heat 12/15/18/24/30 Natural Gas GC family, including owner-reported41-409-94, with exact model/fuel identity and archived Ideal-authored UIN205862A06 manual evidence. Previous1384 records are unchanged. No newer-generation service/FGA/fault/part data is copied. Coordinates the matching1389-record AI source without changing authorisation, model, spending history, allowance, cap or expiry. All complete S/Y wiring-path fixes remain intact.",
-    "Adds the original Logic Heat12/15/18/24/30 NG fault index and short initial-check summaries with exact UIN205862A06 manual pages. Adds14 current manufacturer references only for Logic Heat18 UIN205839, retaining serial conditions and no automatic fit, prices, stock or ordering. Recognises exact FA/FD and coded-description fault questions while preserving unknown/mixed-code holds. Full servicing and combustion coverage remain unreviewed. Existing1384rows and complete S/Y wiring routes remain unchanged; matching1389-record source update is paired."
+    "Adds the original Logic Heat12/15/18/24/30 NG fault index and short initial-check summaries with exact UIN205862A06 manual pages. Adds14 current manufacturer references only for Logic Heat18 UIN205839, retaining serial conditions and no automatic fit, prices, stock or ordering. Recognises exact FA/FD and coded-description fault questions while preserving unknown/mixed-code holds. Full servicing and combustion coverage remain unreviewed. Existing1384rows and complete S/Y wiring routes remain unchanged; matching1389-record source update is paired.",
+    "Adds exact Worcester Bosch Greenstar25i/30i ErP combi NG/LPG variants GC47-406-60/61/62/63 from the official6720806944(2016/07) cover. Fixes the owner-reported4740660 catalogue gap for manual GC and name lookup. Existing1389 identities, LogicHeat faults/parts and all wiring remain intact. Identity and full manufacturer manual access only; extracted service/FGA/fault/parts coverage unreviewed. Paired1393-record AI source preserves authentication, usage, cap and expiry."
   ]
 }
