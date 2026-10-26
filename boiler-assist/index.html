@@ -1533,7 +1533,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
  for(const p of choices){
   const details=node('details',undefined,'manufacturer-source-page');details.append(node('summary',(typeof p.page==='number'?'Page '+p.page+' - ':'')+p.title));
   if(section==='parts'&&p.page===10)details.open=true;
-  const image=node('img');image.src=basePath+p.file;image.alt='Manufacturer original: '+p.title;image.loading='lazy';image.style.width='100%';image.style.height='auto';image.style.background='#fff';image.style.display='block';
+  const image=node('img');image.src=basePath+p.file;image.alt='Manufacturer original: '+p.title;image.loading=p.page===94?'eager':'lazy';image.style.width='100%';image.style.height='auto';image.style.background='#fff';image.style.display='block';
   const viewport=node('div');viewport.style.overflow='auto';viewport.style.maxHeight='75vh';
   let zoomed=false;
   const enlarge=node('button','Enlarge original page');enlarge.type='button';
