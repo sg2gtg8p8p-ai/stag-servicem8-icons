@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "ad424faf4c053662",
+  "buildId": "964bb15880032e14",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.26-r10",
+  "appVersion": "2026.10.26-r11",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "291178ce7c13cd2a20429bc373fefcc0cbf06ac8784db31afc27135f8becf941",
-      "bytes": 1093258
+      "sha256": "6da62da5b213b7b5b50ab7280f966cf136a97c458099aba3e13a84f6595db8fd",
+      "bytes": 1111954
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "54329e8aa07431bc40619564621426215bb542a044eb6c9e2ff5a9176fdafc0c",
-      "bytes": 32821
+      "sha256": "7700e4b05a5fcfc48a6316652a873a675687c8f248c71b51a15cc211edc8fb0d",
+      "bytes": 33157
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -339,7 +339,142 @@
       "url": "./manual-pages/wb-6720891161-202110/page-94.png",
       "sha256": "769c7b328d52817a39d8a52a74e509c8daef894f424acbab713359025eeb556e",
       "bytes": 385014
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-10.png",
+      "sha256": "15640cffe840e796c2b6e96fb5ec3ccf8f91ca1e018cda77dcba4acda71a0d6e",
+      "bytes": 406323
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-11.png",
+      "sha256": "adb6187644c738229859cf6526caaa28b447dcde5e0c82c80eed1afea7eaa5f0",
+      "bytes": 316946
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-37.png",
+      "sha256": "d52636febc9efb0d5266b0392b001e0d7a7db1a6a09ec5ac4deca92894c73d6e",
+      "bytes": 333372
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-38.png",
+      "sha256": "8cb404c2e576f91c5eb1dda089ac9b6c8223aaf9cdb0dc1f7d2a9b2fb1657ec2",
+      "bytes": 471629
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-39.png",
+      "sha256": "1eb396b8688b9b509f0f235c31d4c1d25665ad9aa96e58aa33c6bc430a6ee43a",
+      "bytes": 248473
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-41.png",
+      "sha256": "9dd23e6e993186f6530cd45b07ad74fb0fd93a8f7a52f64ecd0f1c87c911cd70",
+      "bytes": 460964
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-46.png",
+      "sha256": "df922d98c045776f17e432681fe6917148866e84ad8750d84cdae60c2926535e",
+      "bytes": 485221
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-47.png",
+      "sha256": "f5808238d18948d2f4db8cb2848c4eca23b80c7943140784ff17bcbef47363c1",
+      "bytes": 386699
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-48.png",
+      "sha256": "b6afaf85bf914b198d98566e2345e2b3f56cc3650ba729458f2c29fc4c96b78f",
+      "bytes": 374846
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-49.png",
+      "sha256": "99ea7057047bf614f86f2442b1cb0edd2d8cbf1fdf65565ebf318a1650e1511d",
+      "bytes": 343921
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-50.png",
+      "sha256": "7b19794adb817825e4dfb7b6da5ced50dacad3ce75e449520fe7c5e7038d34d3",
+      "bytes": 371407
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-51.png",
+      "sha256": "4fba6b8dd44a2020e88c35f31f8208b287c0bda38d0d969d07ffaf94246eff75",
+      "bytes": 418234
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-52.png",
+      "sha256": "fa51418e5c058becbfae988745da4147bf8e0f94d2c85194a8bfc78be5506d5b",
+      "bytes": 426009
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-53.png",
+      "sha256": "8b8231857c7100736f5a748f75fa17ed09100436f952bb881e138b534adef4da",
+      "bytes": 525135
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-54.png",
+      "sha256": "0a6b89510a32a6f88f2c518f27bb6e87499eaf804826e8eae51f41323647a495",
+      "bytes": 506133
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-55.png",
+      "sha256": "2c9ee2a7dc2c681e6194dff5b6692fb9c17384b4710d1fa0d4bd2d4693570fa5",
+      "bytes": 325671
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-56.png",
+      "sha256": "e863b65d2f4fdbe3dad0e0a6f63a1bd24b2ddc254f8cda0dbf33746cc6baf156",
+      "bytes": 552890
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-57.png",
+      "sha256": "9652fd670cbdd835918d7450553cca25c7cd5acd35c16614ac11cbf8e9fa4cae",
+      "bytes": 380662
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-58.png",
+      "sha256": "bc7d1f355351c084317eaa972ca93fb71fa35e5397152f594bcf76fb8689657c",
+      "bytes": 460547
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-63.png",
+      "sha256": "b623afe5c61f9ddf2dd8dfb0f52010177470c94c241bec5f7228095e232b8466",
+      "bytes": 311970
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-64.png",
+      "sha256": "991cc39dc56e51bf033e1704f0f9180bb1ef42d49b4f8b9d8268cc6d89051b85",
+      "bytes": 375428
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-65.png",
+      "sha256": "ec7ea360f152968a326365c89d4689a89bbd3c471260b726cb4ba3a61d36eb0d",
+      "bytes": 347764
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-66.png",
+      "sha256": "20350df04ba77311148801770487dfed0f6eaf6dad93b33cf1499e5b50becc96",
+      "bytes": 314604
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-67.png",
+      "sha256": "94852d439615953e009b708fb937a5d674db746094dcb354c1be74e8ad70a612",
+      "bytes": 346556
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-68.png",
+      "sha256": "af77409b814f066e7f1128f457de0ba2be1ad2c5f7c032e1944d2fe5dfb762f9",
+      "bytes": 221928
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-69.png",
+      "sha256": "f64993bf2dd0420440d451176d0f29a60af9ee209c8f05864bd1e4ed403361ad",
+      "bytes": 310472
+    },
+    {
+      "url": "./manual-pages/wb-6720806944-201607/page-8.png",
+      "sha256": "ea8bfa283ac5a7481bc59e80220d986263fa0ed23de511370365047a6a16ae63",
+      "bytes": 361354
     }
   ],
-  "totalBytes": 28179667
+  "totalBytes": 38583857
 }
