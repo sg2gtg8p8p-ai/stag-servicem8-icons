@@ -1086,6 +1086,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
         }
         table.append(body);
         block.append(table);
+        if(!g.title){const fpt=content.querySelector(".fan-pressure-test");if(fpt)block.append(fpt);}
         for (const r of g.rows) if (r.max?.qualification && r.max.qualification === r.min?.qualification) block.append(node("p", r.test + ": " + (onsite().fgaQualifications?.find((q) => q.original.value === r.max.target && q.original.qualification === r.max.qualification)?.value || r.max.qualification), "fga-note"));
       }
       for (const condition of g.conditions) {
@@ -1557,6 +1558,52 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
       }
       return;
     }
+    if(activeSection === "combustion") (function renderFanPressure(parent,selected,view,context,node,procedureSteps,safeLink,choose){
+ const checked=choose(selected,view,context);if(!checked)return;
+ const card=node('section',undefined,'fga-group fan-pressure-test');
+ card.append(node('h4','Fan pressure test (FPT)'));
+ if(checked.status==='confirm-setup')card.append(node('p','Confirm the exact fuel/setup below to show the applicable FPT information.','fga-note'));
+ else if(checked.status==='unreviewed')card.append(node('p',selected.fuel==='Oil'?'FPT applicability and procedure have not yet been reviewed for this exact oil burner/setup. Use the applicable manufacturer instructions.':'FPT values and procedure have not yet been reviewed for this exact boiler and fuel. Open the applicable manufacturer manual.','fga-note'));
+ else{
+  if(checked.status==='source-only')card.append(node('p','Manufacturer procedure reference available; numerical FPT limits are not yet reviewed for this exact appliance.','fga-note'));
+  for(const task of checked.tasks)if(task.readings.length){const table=node('table',undefined,'full-service-readings');table.setAttribute('aria-label',task.title+' — exact-model FPT references');const body=node('tbody');for(const r of task.readings){const row=node('tr'),th=node('th',r.label),td=node('td');th.setAttribute('scope','row');td.append(node('strong',r.value),node('small',r.conditions||''));row.append(th,td);body.append(row);}table.append(body);card.append(table);}
+  const details=node('details',undefined,'references');details.append(node('summary','FPT procedure and source pages'));
+  for(const task of checked.tasks){details.append(node('strong',task.title));if(task.trigger)details.append(node('p',task.trigger,'fga-note'));details.append(procedureSteps(task.steps));}
+  if(!checked.tasks.length)for(const e of checked.entries)card.append(node('strong',e.label),node('p',String(e.value),'fga-note'));
+  details.append(node('p','Use the stated test output, test point and casing arrangement. Keep the pressure sign and the manufacturer chart bands when comparing readings. FPT assesses cleaning/restrictions; the chart values do not set fan speed.','fga-note'));
+  for(const l of checked.links){const a=safeLink(l.label+' ↗',l.url,'manual-button fga-manual');if(a)details.append(a);}
+  card.append(details);parent.append(card);return;
+ }
+ for(const l of checked.links){const a=safeLink(l.label+' ↗',l.url,'manual-button fga-manual');if(a)card.append(a);}
+ parent.append(card);
+})(content,selected,fullServiceView(),testContext,node,procedureSteps,safeLink,function fanPressureView(selected,view,context){
+ if(selected?.manufacturer!=='Worcester Bosch')return null;
+ const result={status:'unreviewed',tasks:[],entries:[],links:[]};
+ const scope=selected.fga?.selection,expected=selected.fuel==='Natural Gas'?'ng':selected.fuel==='LPG'?'lpg':null;
+ const active=context||(!scope?.required?(scope?.identityFuel||expected):null);
+ const manual=(selected.manuals||[]).find(m=>m.url);
+ if(manual)result.links.push({label:'Open applicable manufacturer manual',url:manual.url});
+ if(!expected||active!==expected||(scope?.required&&!scope.contexts?.some(c=>c.id===context))){result.status=expected?'confirm-setup':'unreviewed';return result;}
+ const sourceById=new Map((selected.sources||[]).map(s=>[s.id,s]));
+ const explicit=e=>/fan[ -]?pressure/i.test(e.label||'')&&e.sourceIds?.length&&e.sourceIds.every(id=>sourceById.has(id));
+ result.entries=[...(selected.adjustments||[]),...(selected.serviceProcedure||[])].filter(explicit);
+ for(const e of result.entries)for(const id of e.sourceIds){const s=sourceById.get(id);if(s.url)result.links.push({label:s.reference||s.title,url:s.url});}
+ if(view?.model===selected.model&&view?.fuel===selected.fuel){
+  const docs=new Map((view.documents||[]).map(d=>[d.id,d]));
+  const validRef=r=>docs.has(r.documentId)&&Number.isInteger(r.page)&&r.page>0&&r.page<=(docs.get(r.documentId).pageCount||999);
+  const candidates=(view.phases||[]).flatMap(p=>p.tasks||[]).filter(t=>t.topics?.includes('fan-pressure'));
+  for(const task of candidates){
+   const readings=(task.readings||[]).filter(r=>(!r.contextId||r.contextId===active)&&r.refs?.length&&r.refs.every(validRef));
+   if(!task.steps?.length||task.steps.some(s=>!s.refs?.length||!s.refs.every(validRef)))continue;
+   result.tasks.push({...task,readings});
+   for(const ref of [...task.steps.flatMap(s=>s.refs),...readings.flatMap(r=>r.refs)]){const d=docs.get(ref.documentId);result.links.push({label:d.reference+' · p. '+ref.page,url:d.url.split('#')[0]+'#page='+ref.page});}
+  }
+ }
+ result.status=result.tasks.some(t=>t.readings.length)?'reviewed':result.tasks.length||result.entries.length?'source-only':'unreviewed';
+ result.links=[...new Map(result.links.map(l=>[l.url,l])).values()];
+ if(result.links.length>1&&result.status!=='unreviewed')result.links=result.links.filter(l=>l.label!=='Open applicable manufacturer manual');
+ return result;
+});
     if (["combustion", "adjustments", "serviceMode"].includes(activeSection) && selected.fga.selection) {
       const scope = selected.fga.selection;
       if (scope.required && !scope.contexts.length) {
@@ -1625,6 +1672,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
         }
       }
     }
+    if(activeSection === "adjustments" && selected.manufacturer === "Worcester Bosch") content.append(button("Fan pressure test — open FGA readings", () => { activeSection = "combustion"; render(); }));
     if (activeSection === "adjustments") {
       const v = compactView();
       if (v) {
@@ -1660,6 +1708,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
     visualAssets(content, onsite().sectionAssets?.[activeSection]);
     const grid = node("div", void 0, activeSection === "technicalData" ? "figure-grid" : "procedure-grid");
     for (const v of entries) {
+      if(activeSection === "adjustments" && selected.manufacturer === "Worcester Bosch" && /fan[ -]?pressure/i.test(v.label)) continue;
       const binding = selected.fga.selection?.sections?.[activeSection]?.find((x) => x.label === v.label);
       if (binding && !binding.contextIds.includes(testContext)) continue;
       const task = ["serviceMode", "adjustments", "serviceProcedure"].includes(activeSection);
