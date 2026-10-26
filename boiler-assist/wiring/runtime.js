@@ -1,5 +1,5 @@
 (() => {
-  // prepared/wiring-diagrams-20261025/boiler-assist/wiring/source-data.mjs
+  // prepared/wiring-full-paths-20261026/boiler-assist/wiring/source-data.mjs
   var freeze = (x) => {
     if (x && typeof x === "object") {
       Object.values(x).forEach(freeze);
@@ -450,7 +450,7 @@
     "installationApproval": false
   });
 
-  // prepared/wiring-diagrams-20261025/boiler-assist/wiring/diagram-data.mjs
+  // prepared/wiring-full-paths-20261026/boiler-assist/wiring/diagram-data.mjs
   var DIAGRAMS = Object.freeze([
     {
       "id": "s-plan",
@@ -542,7 +542,7 @@
     }
   ]);
 
-  // prepared/wiring-diagrams-20261025/boiler-assist/wiring/trace-data.mjs
+  // prepared/wiring-full-paths-20261026/boiler-assist/wiring/trace-data.mjs
   var common = {
     1: { label: "Permanent live", colour: "#9a4b16" },
     2: { label: "Neutral", colour: "#006fc0" },
@@ -611,7 +611,53 @@
     return { ...result, plan: planId, page: plan.page, arrangement };
   }
 
-  // prepared/wiring-diagrams-20261025/boiler-assist/wiring/ui.mjs
+  // prepared/wiring-full-paths-20261026/boiler-assist/wiring/flow-data.mjs
+  var FLOW_SOURCE = Object.freeze({ source: "resideo", sha256: "ec0b205ad90b01bdb7177c0f757d0e356a2b7c06cf99a891ef5b10e61472bc2b", pages: [6, 12, 24, 26] });
+  var MODES = Object.freeze({ heating: "Heating only", hotwater: "Hot water only", both: "Heating and hot water", "heating-satisfied": "Heating \u2014 cylinder already hot" });
+  function availableModes(planId, wire) {
+    if (!TRACE_PLANS[planId] || ["2", "3"].includes(wire)) return [];
+    const heating = ["heating", ...planId === "y-plan" ? ["heating-satisfied"] : [], "both"];
+    if (["4", "5"].includes(wire)) return heating;
+    if (wire === "6" || planId === "s-plan" && wire === "8") return ["hotwater", "both"];
+    if (wire === "7") return planId === "y-plan" ? ["heating", "heating-satisfied"] : [];
+    if (["1", TRACE_PLANS[planId].demand, "pump-output"].includes(wire)) return ["heating", ...planId === "y-plan" ? ["heating-satisfied"] : [], "hotwater", "both"];
+    return [];
+  }
+  var step = (id, title, connections, condition, wires, kind = "wire") => ({ id, title, connections, condition, wires, kind });
+  function getFlow(planId, wire, arrangement = "switched", requestedMode = "heating") {
+    if (!getTrace(planId, wire, arrangement)) return null;
+    const options = availableModes(planId, wire);
+    if (!options.length) return null;
+    const mode = options.includes(requestedMode) ? requestedMode : options[0], heating = mode !== "hotwater", water = mode === "hotwater" || mode === "both", both = mode === "both", s = planId === "s-plan", call = s ? "10" : "8";
+    const steps = [step("supply", "Start at the mains", "Mains L \u2192 wiring centre 1 \u2192 ST9400C L", s ? "Centre 1 also feeds the grey leads of both V4043H valves." : "The white and grey valve leads use separate switched feeds below.", ["1"], "supply")];
+    if (heating) {
+      steps.push(step("heating-clock", "Programmer calls for heating", "ST9400C CH ON 4 \u2192 centre 4 \u2192 T6360B terminal 1", "The heating programme or manual ON enables this path.", ["4"], "contact"));
+      steps.push(step("room-stat", "Room thermostat calls", "T6360B 1 \u2192 closed contact \u2192 3 \u2192 centre 5", s ? "Centre 5 \u2192 heating valve brown." : "Centre 5 \u2192 V4073A white.", ["4", "5"], "contact"));
+    }
+    if (water || mode === "heating-satisfied") {
+      steps.push(step("water-clock", "Programmer enables hot water", "ST9400C HW ON 3 \u2192 centre 6 \u2192 L641A C", "This supplies the cylinder thermostat common terminal.", ["6"], "contact"));
+      if (water) steps.push(step("cylinder-call", "Cylinder thermostat calls", "L641A C \u2192 closed contact \u2192 1 \u2192 centre 8", s ? "Centre 8 \u2192 hot-water valve brown." : "Centre 8 supplies the boiler demand and is also joined to the valve orange lead.", ["6", "8"], "contact"));
+    }
+    if (s) {
+      const names = both ? "heating and hot-water valves" : heating ? "heating valve" : "hot-water valve";
+      steps.push(step("valve-motor", "Valve motor opens the " + (both ? "valves" : "valve"), (both ? "Centre 5 \u2192 heating brown; centre 8 \u2192 hot-water brown." : heating ? "Centre 5 \u2192 heating valve brown." : "Centre 8 \u2192 hot-water valve brown.") + " Blue motor returns \u2192 centre 2 \u2192 mains N.", "V4043H " + names + " must travel open. The motor circuit is separate from the grey/orange end switch.", both ? ["5", "8"] : heating ? ["5"] : ["8"], "motor"));
+      steps.push(step("end-switch", "Opened valve closes its end switch", "Separate feed: mains L \u2192 centre 1 \u2192 valve grey \u2192 end switch \u2192 orange \u2192 centre 10", both ? "The end switches are in parallel: either open valve can call the boiler. They are not wired in series." : "The " + names + " end switch supplies the demand after the valve opens.", ["1", "10"], "mechanical"));
+    } else if (mode === "heating" || mode === "heating-satisfied") {
+      steps.push(mode === "heating" ? step("grey-feed", "Hot-water OFF feed", "ST9400C HW OFF 1 \u2192 centre 7 \u2192 V4073A grey", "Heating-only example with hot water OFF at the programmer. The white feed above also calls for heating.", ["7"], "contact") : step("grey-feed", "Satisfied cylinder feed", "L641A C \u2192 satisfied contact 2 \u2192 centre 7 \u2192 V4073A grey", "Alternative heating-only example: hot water is enabled but the cylinder thermostat is satisfied. The white heating feed is also present.", ["6", "7"], "contact"));
+      steps.push(step("mid-position-valve", "Valve reaches heating-only position", "V4073A white from centre 5 + grey from centre 7. Blue \u2192 centre 2 \u2192 mains N.", "The valve opens heating port A. Its internal switching makes orange live only at the heating-only position. No direct grey-to-orange wire link is implied.", ["5", "7"], "motor"));
+      steps.push(step("valve-output", "Valve sends the boiler call", "V4073A orange \u2192 centre 8", "This is the heating-only demand output, after the valve reaches the required position.", ["8"], "mechanical"));
+    } else {
+      steps.push(step("mid-position-valve", both ? "Valve serves heating and hot water" : "Valve rests at hot water", both ? "Centre 5 \u2192 V4073A white; blue \u2192 centre 2 \u2192 mains N." : "No white or grey drive in this hot-water-only example.", both ? "White holds the valve at mid position, opening ports A and B. The calling cylinder thermostat supplies centre 8." : "The spring-return position opens hot-water port B. The cylinder thermostat supplies the boiler call directly; valve movement is not required first.", both ? ["5", "8"] : ["8"], "motor"));
+      steps.push(step("water-output", "Cylinder call continues to the boiler", "L641A 1 \u2192 centre 8 \u2192 boiler demand", "The orange valve lead shares centre 8 and may be powered from the cylinder thermostat in this condition. Orange being live alone does not prove valve position.", ["8"], "wire"));
+    }
+    steps.push(step("boiler", "Demand reaches the boiler", "Centre " + call + " \u2192 boiler " + (arrangement === "overrun" ? "SL (switched demand)" : "L (switched supply)"), arrangement === "overrun" ? "Separate permanent feed: mains L \u2192 centre 1 \u2192 boiler L. Use the boiler\u2019s own terminal requirements." : "This is the switched-supply boiler arrangement in the main drawing. Match the actual boiler requirements.", [call, ...arrangement === "overrun" ? ["1"] : []], "load"));
+    steps.push(step("pump", arrangement === "overrun" ? "Boiler controls the pump" : "Pump runs with the demand", arrangement === "overrun" ? "Boiler PL / pump-live output \u2192 pump L" : "Centre " + call + " \u2192 pump L", arrangement === "overrun" ? "The pump has a separate boiler-controlled feed and may continue for overrun. It is not linked directly to the SL demand." : "The pump live shares this demand junction with the boiler in the main drawing.", arrangement === "overrun" ? ["pump-output"] : [call], "load"));
+    const neutral = getTrace(planId, "2", arrangement).ends.filter((e2) => e2.device !== "Mains supply").map((e2) => e2.device + " " + e2.terminal).join("; ");
+    steps.push(step("neutral-return", "Return to mains neutral", "All shown N / blue returns \u2192 centre 2 \u2192 mains N", neutral, ["2"], "return"));
+    return { planId, wire, arrangement, mode, label: MODES[mode], sourcePages: s ? [6, 26] : [12, 24], steps: steps.map((x) => ({ ...x, highlight: x.wires.includes(wire) })), scope: "Normal operating example for the exact listed controls; not a claim that the installed circuit is currently energised." };
+  }
+
+  // prepared/wiring-full-paths-20261026/boiler-assist/wiring/ui.mjs
   var mounts = /* @__PURE__ */ new WeakMap();
   function diagramManualURL(diagram) {
     const d = DIAGRAMS.find((x) => x.id === diagram?.id);
@@ -620,6 +666,7 @@
   }
   function mount(root, doc = root?.ownerDocument) {
     if (!root || !doc) throw Error("Wiring diagrams unavailable");
+    if (DATA.sources.resideo.sha256 !== FLOW_SOURCE.sha256) throw Error("Flow source binding unavailable");
     if (mounts.has(root)) return mounts.get(root);
     const win = doc.defaultView, make = (tag, text, cls) => {
       const el = doc.createElement(tag);
@@ -682,9 +729,53 @@
       back.textContent = "Back to library";
       root.scrollTop = 0;
     }
+    function flowDiagram(flow) {
+      const svg = doc.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.classList.add("swr-flow-diagram");
+      svg.setAttribute("font-family", "system-ui,sans-serif");
+      svg.setAttribute("role", "img");
+      svg.setAttribute("aria-label", flow.label + " full path from mains through controls to boiler and pump");
+      const ns = (tag, attrs, text, parent = svg) => {
+        const el = doc.createElementNS(svg.namespaceURI, tag);
+        for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, String(v));
+        if (text) el.textContent = text;
+        parent.append(el);
+        return el;
+      };
+      const wrap = (text, max = 27) => {
+        const lines = [];
+        let line = "";
+        for (const word of text.split(/\s+/)) {
+          if (line && line.length + word.length + 1 > max) {
+            lines.push(line);
+            line = word;
+          } else line += (line ? " " : "") + word;
+        }
+        if (line) lines.push(line);
+        return lines;
+      };
+      ns("title", {}, flow.label + " \u2014 " + flow.steps.map((x) => x.title + ": " + x.connections).join("; "));
+      let y = 16, lastBottom = null;
+      for (const [at, st] of flow.steps.entries()) {
+        const titleLines = wrap(st.title, 28), lines = wrap(st.connections, 28), height = 30 + titleLines.length * 22 + lines.length * 23;
+        if (lastBottom !== null) ns("path", { d: `M32 ${lastBottom} V${y + 20}`, stroke: "#527670", "stroke-width": 3, "stroke-dasharray": "5 5", fill: "none" });
+        const group = ns("g", { "data-step": st.id, "data-highlight": String(st.highlight) });
+        ns("circle", { cx: 32, cy: y + 20, r: 18, fill: st.highlight ? "#006e70" : "#527670" }, void 0, group);
+        ns("text", { x: 32, y: y + 26, "text-anchor": "middle", fill: "#fff", "font-size": 17, "font-weight": 700 }, String(at + 1), group);
+        ns("rect", { x: 62, y, width: 306, height, rx: 10, fill: st.highlight ? "#e6f5f1" : "#fff", stroke: st.highlight ? "#006e70" : "#b5cac5", "stroke-width": st.highlight ? 3 : 1.5 }, void 0, group);
+        titleLines.forEach((line, i) => ns("text", { x: 75, y: y + 26 + i * 22, fill: "#173b38", "font-size": 17, "font-weight": 700 }, line, group));
+        const start = y + 35 + titleLines.length * 22;
+        lines.forEach((line, i) => ns("text", { x: 75, y: start + i * 23, fill: "#173b38", "font-size": 18 }, line, group));
+        lastBottom = y + 20;
+        y += height + 22;
+      }
+      svg.setAttribute("viewBox", "0 0 380 " + y);
+      return svg;
+    }
     function follow(d, box) {
       const plan = TRACE_PLANS[d.id];
       if (!plan) return;
+      let flowMode = "heating";
       const label = make("label", "Pump connection");
       const select = make("select");
       select.setAttribute("aria-label", "Pump connection");
@@ -739,7 +830,28 @@
           ns("text", { x: 105, y: y + 23, fill: "#173b38", "font-size": 18, "font-weight": 700 }, end.device);
           ns("text", { x: 105, y: y + 44, fill: "#264c48", "font-size": 18 }, end.terminal);
         });
-        route.replaceChildren(title, svg, make("p", trace.note || "Every branch shown connects to this same wiring-centre terminal.", "swr-help"));
+        const flow = getFlow(d.id, wire, arrangement, flowMode);
+        if (flow) {
+          flowMode = flow.mode;
+          const modeLabel = make("label", "Condition shown"), modes = make("select");
+          modes.setAttribute("aria-label", "Condition shown");
+          for (const id of availableModes(d.id, wire)) {
+            const option = make("option", MODES[id]);
+            option.value = id;
+            modes.append(option);
+          }
+          modes.value = flow.mode;
+          modes.addEventListener("change", () => {
+            flowMode = modes.value;
+            draw();
+          });
+          const exact = make("details");
+          exact.append(make("summary", "Exact connections for this wire"), svg, make("p", trace.note || "Every branch here joins the same wiring-centre terminal.", "swr-help"));
+          const notes = make("details");
+          notes.append(make("summary", "What each switching step means"));
+          for (const st of flow.steps) notes.append(make("h3", st.title), make("p", st.condition, "swr-help"));
+          route.replaceChildren(title, modeLabel, modes, make("p", flow.label + ": start to finish", "swr-path-heading"), make("p", "Follow the numbered path. Dotted lines show the operating sequence; they are not extra cable links.", "swr-help"), flowDiagram(flow), exact, notes);
+        } else route.replaceChildren(title, svg, make("p", trace.note || "Every branch shown connects to this same wiring-centre terminal.", "swr-help"));
       };
       const setup = make("details"), setupTitle = make("summary");
       const pumpLabel = () => {
@@ -753,7 +865,7 @@
         pumpLabel();
         draw();
       });
-      box.append(controls, setup, make("p", "Tap a wire to follow its connections.", "swr-help"), picker, route, make("p", "Follow the terminal and wire labels; colour highlights the route. Switching contacts and the complete circuit are shown in the manufacturer drawing below.", "swr-help"));
+      box.append(controls, setup, make("p", "Tap a wire to follow its connections.", "swr-help"), picker, route, make("p", "Follow the terminal and wire labels. The complete manufacturer circuit is below; earth and neutral have their own full branch views.", "swr-help"));
       draw();
     }
     function show(id, push = false, initial = {}) {
@@ -794,6 +906,14 @@
       link.target = "_blank";
       link.rel = "noopener noreferrer";
       refs.append(link);
+      if (TRACE_PLANS[d.id]) {
+        const page2 = d.id === "s-plan" ? 26 : 24;
+        const operation = make("a", "Normal operating sequence \xB7 page " + page2);
+        operation.href = source.url + "#page=" + page2;
+        operation.target = "_blank";
+        operation.rel = "noopener noreferrer";
+        refs.append(operation);
+      }
       detail.append(refs);
       root.scrollTop = 0;
       heading.focus({ preventScroll: true });
@@ -857,7 +977,7 @@
     return api;
   }
 
-  // prepared/wiring-diagrams-20261025/boiler-assist/wiring/host.mjs
+  // prepared/wiring-full-paths-20261026/boiler-assist/wiring/host.mjs
   var wiringMounts = /* @__PURE__ */ new WeakMap();
   var wiringContracts = { "resideo": { "url": "https://www.resideo.com/gb/en/-/media/EMEA%20Site%20Cluster/Mastersite/Documents/Sales%20Literature/Resideo_HWHome_Wiring%20Guide_May24.pdf/?rv=4a17ca0fc4ee4e588b93905ce95b5d89", "sha256": "ec0b205ad90b01bdb7177c0f757d0e356a2b7c06cf99a891ef5b10e61472bc2b", "bytes": 3033263, "pageCount": 36, "inline": false, "pages": [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 32] }, "slt3-current": { "url": "https://assets.ctfassets.net/mijf9lz5yt3u/4LFy5x5QRqycyxGKT3HXYA/92716ffff1c680323bd9397f298920f2/Hive_Thermostat_SLT3_Installation_Guide_LR__1_.pdf", "sha256": "9d06f70e5c586c5071b8962e88517141752fa275148d5d7f0da1e09eb6e5df2d", "bytes": 737078, "pageCount": 20, "inline": true, "pages": [7, 9, 10] }, "active-heating2-legacy": { "url": "https://assets.ctfassets.net/mijf9lz5yt3u/3PJRO1bvewa2mAgYzKJGAV/94f24a8e62f743eb354560e30186c07f/Hive_Active_Heating_2_Wireless_Thermostat_User_Guide_Installation_Guide.pdf", "sha256": "d5cf9bf693e5ad8f4d01a9e6edbaa46c9c2cbfbfbea01f61b7cc8a85a67a4337", "bytes": 876329, "pageCount": 36, "inline": true, "pages": [9, 13, 17] } };
   function validateWiringData(data) {

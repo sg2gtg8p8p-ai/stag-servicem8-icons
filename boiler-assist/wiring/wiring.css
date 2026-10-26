@@ -26,3 +26,5 @@
 @media(min-width:720px){#swr-root .swr-diagram-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 
 #swr-root .swr-wire-picker{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}#swr-root .swr-wire-picker button{padding:7px 5px;font-size:14px;line-height:1.25}#swr-root .swr-trace-panel details{padding:0}#swr-root .swr-trace-panel summary{border:1px solid #a7bdb9;border-radius:8px;padding:9px 12px;background:white;font-size:14px;font-weight:650}
+
+#swr-root .swr-flow-diagram{display:block;width:100%;max-width:520px;margin:14px auto;background:#f7faf9;border:1px solid #ccd8d5;border-radius:12px}#swr-root .swr-path-heading{font-weight:750;color:#006e70;margin-bottom:4px}#swr-root .swr-trace-panel>div>label{font-size:14px}#swr-root .swr-trace-panel>div>select{font-size:16px}
