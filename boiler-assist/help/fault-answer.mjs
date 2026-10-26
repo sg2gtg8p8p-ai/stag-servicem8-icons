@@ -12,12 +12,12 @@ export function faultAnswer(row,recordId,question,previousLabel=null){
  const contextSources=sources.filter(s=>noteSourceIds.has(s.id)&&safe(s.url)).map(s=>({url:safe(s.url),title:s.title||'Manufacturer note',reference:s.reference||s.documentReference||''}));
  const base={kind:'fault-answer',recordId,identity,availableLabels:available.map(e=>e.label),entries:[],links,activeLabel:null,contextSources,applicability:clean(b.applicability),notes:Array.isArray(b.notes)?b.notes:[],completePresentation:row.presentation?.boilers?.[b.id]?.faultCodes||null,confirmedDiagnosis:false,partsRecommended:false};
  // Only bounded exact code matches. F.28 must never match F.280, or another model's table.
- const codes=[...clean(question).toUpperCase().matchAll(/\b(?:[A-Z]{1,2}[. -]?\d{1,4}(?:[. -]\d{1,3})?|\d{3})\b/g)].map(m=>m[0].replace(/[^A-Z0-9]/g,''));
- const codeOf=e=>clean(e.code||e.label.match(/^\s*(?:(?:FAULT|STATUS|DIAGNOSTIC|MAINTENANCE)\s*[—:-]\s*)?([A-Za-z]{1,2}[. -]?\d{1,4}(?:[. -]\d{1,3})?|\d{3})(?=\s|[—:–-]|$)/)?.[1]).toUpperCase().replace(/[^A-Z0-9]/g,'');
+ const codes=[...clean(question).toUpperCase().matchAll(/\b(?:F[. -]?[AD]|[A-Z]{1,2}[. -]?\d{1,4}(?:[. -]\d{1,3})?|\d{3})\b/g)].map(m=>m[0].replace(/[^A-Z0-9]/g,''));
+ const codeOf=e=>clean(e.code||e.label.match(/^\s*(?:(?:FAULT|STATUS|DIAGNOSTIC|MAINTENANCE)\s*[—:-]\s*)?(F[. -]?[AD]|[A-Za-z]{1,2}[. -]?\d{1,4}(?:[. -]\d{1,3})?|\d{3})(?=\s|[—:–-]|$)/i)?.[1]).toUpperCase().replace(/[^A-Z0-9]/g,'');
  let selected=[];
  if(codes.length){selected=available.filter(e=>codes.includes(codeOf(e)));if(!selected.length||codes.some(c=>!available.some(e=>codeOf(e)===c)))return{...base,message:'That exact code is not in the saved fault information for this boiler. Check the code and any subcode on the display; use this model’s manufacturer manual. No meaning or checks have been guessed.'};}
  else{
-  selected=available.filter(e=>{const label=norm(e.label.replace(/^(FAULT|STATUS|DIAGNOSTIC|MAINTENANCE)\s*[—:-]\s*/i,'').split(/[—–]/)[0]);return label.length>3&&(q===label||(' '+q+' ').includes(' '+label+' '));});
+  selected=available.filter(e=>{const parts=e.label.replace(/^(FAULT|STATUS|DIAGNOSTIC|MAINTENANCE)\s*[—:-]\s*/i,'').split(/[—–]/);const label=norm(codeOf(e)&&parts.length>1?parts.slice(1).join(' '):parts[0]);return label.length>3&&(q===label||(' '+q+' ').includes(' '+label+' '));});
   if(!selected.length&&previousLabel&&/^(what (next|now|else|should i (check|do)( next| now)?|else should i check)|what do i check( next| now)?|next|still (the same|not working)|that (is|s) (ok|fine)|checked( that)?|done)$/.test(q))selected=available.filter(e=>e.label===previousLabel);
  }
  if(selected.length===1)return{...base,entries:selected,activeLabel:selected[0].label,message:'Manufacturer fault information and checks for this exact boiler. Follow the linked decision tree in order; a code alone does not prove a failed part. '+(previousLabel===selected[0].label?'Your previous fault is retained. Report the actual check result; no test has been marked passed automatically.':'')};

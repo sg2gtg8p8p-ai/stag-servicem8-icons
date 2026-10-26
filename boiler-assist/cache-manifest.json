@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "227d7cebda4d21e4",
+  "buildId": "c054651a8c26e1dd",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.26-r3",
+  "appVersion": "2026.10.26-r4",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "sha256": "3fccb80d009ed75c0edee3d6beccebaae4d016c5b182ee8671493fd8f4d60fa3",
-      "bytes": 5622516
+      "sha256": "84db428f1c547937605ce5fb8a456d9a1ca9d8ceb8539117b53fbcff3b06653e",
+      "bytes": 5626448
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -32,13 +32,13 @@
     },
     {
       "url": "./data/parts-search-index.json",
-      "sha256": "6514409fa9a3b6d5725f6e71f097c830929b649134d4376bab5c2fc6a0952de1",
-      "bytes": 759755
+      "sha256": "4f8fff1d390f1a402e0180f26389f16bd33f8b1876a6382a384b9ee48b26c332",
+      "bytes": 764706
     },
     {
       "url": "./data/search-index.json",
-      "sha256": "884207a00ecd9ee3288c13155c0cd727659132d29e95a67ccc1fb7aed21d1d0a",
-      "bytes": 687341
+      "sha256": "2f1039bce3a709fc91e70f693be6f4fbc0ae8553259e52f992640361989c61eb",
+      "bytes": 690738
     },
     {
       "url": "./decoder.js",
@@ -57,7 +57,7 @@
     },
     {
       "url": "./help/ai-client.mjs",
-      "sha256": "65ce915a7e6f6dc95fe5474fadaf3636aa460cb7cf9be24cd814db66db9c710f",
+      "sha256": "179691f3e6ee04ceddf046adf56d34008e4b7b064cbeb3fe0dc44f376d2ce815",
       "bytes": 8047
     },
     {
@@ -92,8 +92,8 @@
     },
     {
       "url": "./help/ui.mjs",
-      "sha256": "8a7c2f634f92a2af67f016c30c355695122ebda1320290e7649c14ae4f8a45c2",
-      "bytes": 33014
+      "sha256": "bfab703e8a776836a5c33e85a2670faadf420219e849ae0f8a273e963a552577",
+      "bytes": 33031
     },
     {
       "url": "./icons/256.png",
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "dc0d9793fcd0871c812443c4146ee9e886b741777301a0e126ebf1676f79d7ee",
-      "bytes": 1049736
+      "sha256": "0233b944bb9d42c065db6c76cdaa23019ffd3a7842a1badd5bf6880293761eb1",
+      "bytes": 1054991
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "28fa33f49f6ba2e8bba08d33e062473588e0456386c6352e425867dbb94a5038",
-      "bytes": 29418
+      "sha256": "b3e2551c5fd108046fd10107bdcbf215d3cf52c691ca2a179dad40c236d890dd",
+      "bytes": 29977
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -147,8 +147,8 @@
     },
     {
       "url": "./help/fault-answer.mjs",
-      "sha256": "a0fa70f2656fb8a05512066496331d5b706f82cd1912fc72f4836640da3d2259",
-      "bytes": 4630
+      "sha256": "6e9d515249035b176f921df0704068b812a0c8d58fc4f04da9495566d87553d3",
+      "bytes": 4724
     },
     {
       "url": "./help/manual-search.mjs",
@@ -196,5 +196,5 @@
       "bytes": 477539
     }
   ],
-  "totalBytes": 13355376
+  "totalBytes": 13373581
 }
