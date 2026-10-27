@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "4369c46a62c2c7ce",
+  "buildId": "2324805bad7fd2c8",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.27-r2",
+  "appVersion": "2026.10.27-r3",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "sha256": "9787d532905487f5711083d0f758317cd7817bac468bc9e339301146f3181c15",
-      "bytes": 5905911
+      "sha256": "2ac6ac8d09ec5b167003d7011a21579ad62ce30fd505015b045b6214d58a3f83",
+      "bytes": 5918424
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -37,8 +37,8 @@
     },
     {
       "url": "./data/search-index.json",
-      "sha256": "aebbea76504e76f9a2b736384a80f379c94d8ae71f3f8b0a74b1076853fe693d",
-      "bytes": 706583
+      "sha256": "f00902d3e15949cab7455440f9bc2db16166645cfa7d4a89cd80ccb83f021461",
+      "bytes": 984194
     },
     {
       "url": "./decoder.js",
@@ -57,7 +57,7 @@
     },
     {
       "url": "./help/ai-client.mjs",
-      "sha256": "4111be7b13a67102d075ae4278dcb1b64fef4b6880434b61a3bc4d2f4577be6b",
+      "sha256": "c076459f633219ba4d4fbed5df514a9f2ad69bb5f3439bb26b080c3ea4032753",
       "bytes": 8047
     },
     {
@@ -92,8 +92,8 @@
     },
     {
       "url": "./help/ui.mjs",
-      "sha256": "5ec3bafb00167dee15ad5b81c1222767a99ca88f4eaa1cbfd2ce5c605e46f7a0",
-      "bytes": 33662
+      "sha256": "e42f5e40c8718e448c0d0f6d6ffa2a76adccf76746223e45242b33e570987d6b",
+      "bytes": 33720
     },
     {
       "url": "./icons/256.png",
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "d4d9773b8dd724b487d82a31315cb45a9b6bc487841a156e7bfd847b6efc29c7",
-      "bytes": 1123674
+      "sha256": "3b559c7d011d80ce2016f6578977dda4d6e9f9df6a282e639042268ec1767190",
+      "bytes": 1133458
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "cc61890bfab62e846c5cfc906192fff21de78177c3fef9e2cee3c048df92bb1b",
-      "bytes": 33800
+      "sha256": "35b66d2d55687d960b5e37605e73b9180e3e6b920da041948084791739927d1e",
+      "bytes": 34105
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -614,7 +614,122 @@
       "url": "./help/ideal-fault-chart.mjs",
       "sha256": "8b9fe13bda18d102f56e663a50ee0a5500c0d87d4cdd3417a7bdae1baddc6ce6",
       "bytes": 4394
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-07.jpg",
+      "sha256": "22e03dac94064fdb576a0426040ccec2467040f951ad65bfb1cfec0bbecea69e",
+      "bytes": 280248
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-08.jpg",
+      "sha256": "c41b0fa67a87c7f9b839cd5cec138f32f068e12cec5d645592813765393d6d53",
+      "bytes": 278254
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-10.jpg",
+      "sha256": "7647ec05d478405badc2132994a4243eb6b951248d303b2b5bf2c5fc567ac062",
+      "bytes": 245441
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-14.jpg",
+      "sha256": "51aa31305a64f4c6eab3b80e54d3038ebe3797ec22c30c9ea2cb4c66bc2cc419",
+      "bytes": 276325
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-15.jpg",
+      "sha256": "72da73f0f51da8bcbae204aaaa803d9a53a13010bcba64a45feed552706fe3d5",
+      "bytes": 327749
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-17.jpg",
+      "sha256": "fcc80d1ea88a482e699274f5608ea8a87126b00bebcaf3bbfeee357796cf00f4",
+      "bytes": 267223
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-18.jpg",
+      "sha256": "624f2d4d2efa08d5269c383517b848375df3455054c3f66bd9729e609b9cbb7b",
+      "bytes": 330127
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-19.jpg",
+      "sha256": "a6e0179bf7222e1a72a918325d95d1430b62e5b90de26b798934f24aca95e5da",
+      "bytes": 310343
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-22.jpg",
+      "sha256": "eb824f46b41ed1d99e6c9cff86808bd5066d55a6bf8d27677573b3d2b361a5c5",
+      "bytes": 275341
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-23.jpg",
+      "sha256": "b8ed0a1b7dac4cc81fba70630408fe17cdde24c9b3753eeffaf3217d78dca476",
+      "bytes": 254112
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-24.jpg",
+      "sha256": "95b1f2769da383696a21eb1c4ea4db8cb2bf97217ff54bd833f5e493f426231b",
+      "bytes": 257180
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-25.jpg",
+      "sha256": "c46a96cdda399a6009e81853ad1ba84b5461539c4abe511edc3343b0f9ffe5ac",
+      "bytes": 257300
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-26.jpg",
+      "sha256": "fe073d66c25e0bba7cfee17bc95e2d0e6a049a7e73cea5cdb2b2b9c3a2216a32",
+      "bytes": 285277
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-30.jpg",
+      "sha256": "9d287fd6420ea264141ed1294006b424b47b0abba02d4dfb04146622d858cb77",
+      "bytes": 259112
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-34.jpg",
+      "sha256": "5b9b3eeec9d1bae6ed898020d2c234e55910640ab8280b5518abefe72c500f64",
+      "bytes": 253202
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-35.jpg",
+      "sha256": "ad22cd798c4aa83980f57fce5003d556ed23f8ae181f1ca3e0d8f674ef438700",
+      "bytes": 345669
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-36.jpg",
+      "sha256": "7ce30d17c6c1eb5db9c65db219a2c53287dbbb8f5b07f0bd50f28ed34e9d41dd",
+      "bytes": 322077
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-38.jpg",
+      "sha256": "5ff763ac8196cb090ec9cda61e98878e8ddee286589871ba5f4f3b76d0e31646",
+      "bytes": 199110
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-39.jpg",
+      "sha256": "34c1b4791b44c685ad39d64fcd5af5b286a722f735c237aa3ab38b707b7f00bf",
+      "bytes": 309587
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-45.jpg",
+      "sha256": "3cfeacafe11c6e92936262d76775ca38e2b9eecdda99e67ac4f89cf27a128d99",
+      "bytes": 259568
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-46.jpg",
+      "sha256": "c34c30fa7051d523bc121282c536c6e106c2409998a247dd841fb60afddd6adf",
+      "bytes": 217710
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-47.jpg",
+      "sha256": "57be9060c0d83489bc5f05fbb48476ba98aa35baba4c7356301ff17d0ab6080f",
+      "bytes": 253596
+    },
+    {
+      "url": "./manual-pages/vaillant-home-0020224355-01/page-48.jpg",
+      "sha256": "8859be84b9d2aec678ad25b09e39b81d566bb71679d127728b2af555e05d7885",
+      "bytes": 86801
     }
   ],
-  "totalBytes": 47215168
+  "totalBytes": 53666791
 }

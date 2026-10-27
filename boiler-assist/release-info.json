@@ -1,8 +1,8 @@
 {
-  "appVersion": "2026.10.27-r2",
+  "appVersion": "2026.10.27-r3",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
-  "boilers": 1393,
+  "boilers": 1394,
   "gasFires": 43,
   "contentChanges": [
     {
@@ -350,6 +350,7 @@
     "Loads the rotated Combi manufacturer checklist eagerly so a first immediate Enlarge cannot leave its image waiting outside the lazy-load viewport. All source catalogue, boiler records, wiring and paired backend pins remain byte-exact.",
     "Adds27original manufacturer pages inside both exact NaturalGas25i/30iErP guides: component diagram and key, FPT chart, service FGA tables, servicing preparation/cleaning/reassembly, diagnostic menus and fault tables. Preserves partial workflow status and every source catalogue/data/wiring byte. No backend update or paid calls.",
     "Adds27original manufacturer pages within the exact NG Ideal Logic MAX Combi2 C24/C30/C35 guides, including an index to all13 Section4 diagnostic charts with original Yes/No branches, components, service and combustion pages. Saved fault-answer index remains limited. Catalogue, parts, wiring and paired backend remain unchanged. No paid calls.",
-    "Completes question lookup for all13diagnostic chart descriptions plusRestart on exact NG IdealMAXCombi2 C24/C30/C35, with originalYes/Nochart visible directly in each matching answer. Updates only3source records; requiresmatchingpairedAIcatalogue. No numericcodesinferred or paidcalls."
+    "Completes question lookup for all13diagnostic chart descriptions plusRestart on exact NG IdealMAXCombi2 C24/C30/C35, with originalYes/Nochart visible directly in each matching answer. Updates only3source records; requiresmatchingpairedAIcatalogue. No numericcodesinferred or paidcalls.",
+    "Adds exact Natural Gas Vaillant HOME COMBI35-A GC47-044-64/article0010019932,16technical fields,all37AppendixDfaults,partial16-task service reference and23originalmanual pages. Existing1393records preserved. Missing-photo-match warning now shows actualGCdigits. Requiresmatching1394-recordbackend."
   ]
 }
