@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "964bb15880032e14",
+  "buildId": "4b6146e3a15ec35b",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.26-r11",
+  "appVersion": "2026.10.27-r1",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "6da62da5b213b7b5b50ab7280f966cf136a97c458099aba3e13a84f6595db8fd",
-      "bytes": 1111954
+      "sha256": "d4d9773b8dd724b487d82a31315cb45a9b6bc487841a156e7bfd847b6efc29c7",
+      "bytes": 1123674
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "7700e4b05a5fcfc48a6316652a873a675687c8f248c71b51a15cc211edc8fb0d",
-      "bytes": 33157
+      "sha256": "98babb699d0b5170ebccb01a38a2333c4f49a871f35402634d2722f382767101",
+      "bytes": 33507
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -474,7 +474,142 @@
       "url": "./manual-pages/wb-6720806944-201607/page-8.png",
       "sha256": "ea8bfa283ac5a7481bc59e80220d986263fa0ed23de511370365047a6a16ae63",
       "bytes": 361354
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-15.png",
+      "sha256": "68f7125f97f1fed7f7e2e700aa2e1be5ddf1f162ea53ecd8c0d8992b56d1d1d5",
+      "bytes": 563908
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-31.png",
+      "sha256": "543c64a82b4e2243b714f699c9289f5b0df88b8e77991e1cbbbd10c44a9767ee",
+      "bytes": 414532
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-32.png",
+      "sha256": "a0caa085ad47ebcba5db294203c2ebfded52b92dd266ecd3aa2ef45caa7e9535",
+      "bytes": 127767
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-34.png",
+      "sha256": "ae20e5003d8179ef76dc234b3f869fe1c5e604ae5fe94820caa00c58c194f67c",
+      "bytes": 531653
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-35.png",
+      "sha256": "abbceed41acba1b28bb9a53ec63c9a0eecb70af2b2ee97bf3467e531a44210a1",
+      "bytes": 243213
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-36.png",
+      "sha256": "df4a48ba433dff60e8959ae78f292c8b463f95cf6441099dea8d8ea35bad5f59",
+      "bytes": 183091
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-37.png",
+      "sha256": "5703763ac3d5a0be14d7a58aa03730e6e33dfe9a6b3dec0cae442eb916c0bc84",
+      "bytes": 464996
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-38.png",
+      "sha256": "8496485ab4ac48284dcdd44114913470ed34c3240aff9672606bb7c42d66e097",
+      "bytes": 361121
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-39.png",
+      "sha256": "b633565f29169c8f9e081837a80a37847622287f225149dfdb46822af520d7c3",
+      "bytes": 487968
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-40.png",
+      "sha256": "deb67545689bf6c331caf21310aa46b782074ba12784a9b371c75acd5af7280e",
+      "bytes": 319036
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-41.png",
+      "sha256": "10e668a3ee43f888e3067021618a8c03ae54e177d777b8fb95e751db8e866b00",
+      "bytes": 315400
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-42.png",
+      "sha256": "b477027de389d1fb3e602a7f48ca8f1124732992152a8336abc7a21422d7584a",
+      "bytes": 386283
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-43.png",
+      "sha256": "1985c9c89e05e40b6148a84560e371a61fb83c179106542cf39a83321d745fdd",
+      "bytes": 387648
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-44.png",
+      "sha256": "dbb1a9272e6e827f083f681e4cae5ea31f0a9459b8fe93bd7d913a858e2dcbea",
+      "bytes": 410414
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-47.png",
+      "sha256": "443a734144073bd8fc0198af84b51d3ee0ceae86c54e0ed72aca80a59bf3a5ed",
+      "bytes": 421941
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-57.png",
+      "sha256": "79cdc616e1f2059a294a2088fee31bdda76ffb3c21ddeb64e81d85afb2cfaac3",
+      "bytes": 222635
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-58.png",
+      "sha256": "dc7f47cd71df6e57ed3488e558a8ad5be21bcdf7a4869c868f889dda2f595526",
+      "bytes": 288911
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-59.png",
+      "sha256": "8f93033c6145c3358c920f71caa6de1cf8bdb286758ab189c50b983923156275",
+      "bytes": 237967
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-6.png",
+      "sha256": "5264d3ae59a91b5f9b6ee40cd604e73a47691b521b57258aca006aa41bdd1502",
+      "bytes": 404028
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-60.png",
+      "sha256": "aa8da622d1cbc00cbf5569a6b7567e8d04ff313f0ff26b837eebe7247d141dbe",
+      "bytes": 169084
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-61.png",
+      "sha256": "f82846d67778d69232ac031266cea960c7cb8c0e575fa7432aa4bef79cf595ee",
+      "bytes": 225444
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-62.png",
+      "sha256": "a9a234b4187dc8ca4b89a8ad3bcb00e8c91db7f52a55f2c60f8406e548217507",
+      "bytes": 187287
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-63.png",
+      "sha256": "1664a74f4f5789cc52255e80917abb0ef5129d371ec4e62ec097002f4a7c4048",
+      "bytes": 156905
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-64.png",
+      "sha256": "5e9a252890851f6591754126806a33ab83577bd51f593ee66915a9a98f3f5b08",
+      "bytes": 108463
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-69.png",
+      "sha256": "f638e48693a55156ba647cb3d08b74871c113508f6ac3ca2343c8c7f7bd2e10c",
+      "bytes": 249006
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-7.png",
+      "sha256": "a06a984b3f5a4b787e56e2655d2142382b4d00cd088b4864036070be9a55693c",
+      "bytes": 285483
+    },
+    {
+      "url": "./manual-pages/ideal-237660-a05-202511/page-70.png",
+      "sha256": "a79823203e6e29d40061425f594de4ac974ecb86f2ff4942896d015569f32947",
+      "bytes": 456975
     }
   ],
-  "totalBytes": 38583857
+  "totalBytes": 47207086
 }
