@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "4b6146e3a15ec35b",
+  "buildId": "4369c46a62c2c7ce",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.27-r1",
+  "appVersion": "2026.10.27-r2",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "sha256": "62faec9ed831528c84b2b8b7db36ec1d2053520a255f6ce03449c60634735930",
-      "bytes": 5902679
+      "sha256": "9787d532905487f5711083d0f758317cd7817bac468bc9e339301146f3181c15",
+      "bytes": 5905911
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -57,7 +57,7 @@
     },
     {
       "url": "./help/ai-client.mjs",
-      "sha256": "46cbbc38eddf970cbebac9766f40eeddf2483c8ca31ba9028e904f388e240124",
+      "sha256": "4111be7b13a67102d075ae4278dcb1b64fef4b6880434b61a3bc4d2f4577be6b",
       "bytes": 8047
     },
     {
@@ -92,8 +92,8 @@
     },
     {
       "url": "./help/ui.mjs",
-      "sha256": "0a166b284c03b149be14ee4bc1eea7cd52b1d93fde300723a38e2b3c3d3532a0",
-      "bytes": 33499
+      "sha256": "5ec3bafb00167dee15ad5b81c1222767a99ca88f4eaa1cbfd2ce5c605e46f7a0",
+      "bytes": 33662
     },
     {
       "url": "./icons/256.png",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "98babb699d0b5170ebccb01a38a2333c4f49a871f35402634d2722f382767101",
-      "bytes": 33507
+      "sha256": "cc61890bfab62e846c5cfc906192fff21de78177c3fef9e2cee3c048df92bb1b",
+      "bytes": 33800
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -609,7 +609,12 @@
       "url": "./manual-pages/ideal-237660-a05-202511/page-70.png",
       "sha256": "a79823203e6e29d40061425f594de4ac974ecb86f2ff4942896d015569f32947",
       "bytes": 456975
+    },
+    {
+      "url": "./help/ideal-fault-chart.mjs",
+      "sha256": "8b9fe13bda18d102f56e663a50ee0a5500c0d87d4cdd3417a7bdae1baddc6ce6",
+      "bytes": 4394
     }
   ],
-  "totalBytes": 47207086
+  "totalBytes": 47215168
 }

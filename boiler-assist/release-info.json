@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.10.27-r1",
+  "appVersion": "2026.10.27-r2",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1393,
@@ -349,6 +349,7 @@
     "Adds all 94 numeric code/status/maintenance/diagnostic rows and nine uncoded symptoms from 6720891161 (2021/10), Tables 31–32, for the two exact 4000 25/30 Combi Natural Gas records. Includes 19 original Combi component, service, fault-table and checklist pages with enlargement, an upright checklist and revised TB0157 combustion notice. Preserves all 1393 identities and 1391 other complete record payloads. Three unchanged records only move packing pointers to retain the 1MiB decoder bound. No paid requests, ordering or billing changes.",
     "Loads the rotated Combi manufacturer checklist eagerly so a first immediate Enlarge cannot leave its image waiting outside the lazy-load viewport. All source catalogue, boiler records, wiring and paired backend pins remain byte-exact.",
     "Adds27original manufacturer pages inside both exact NaturalGas25i/30iErP guides: component diagram and key, FPT chart, service FGA tables, servicing preparation/cleaning/reassembly, diagnostic menus and fault tables. Preserves partial workflow status and every source catalogue/data/wiring byte. No backend update or paid calls.",
-    "Adds27original manufacturer pages within the exact NG Ideal Logic MAX Combi2 C24/C30/C35 guides, including an index to all13 Section4 diagnostic charts with original Yes/No branches, components, service and combustion pages. Saved fault-answer index remains limited. Catalogue, parts, wiring and paired backend remain unchanged. No paid calls."
+    "Adds27original manufacturer pages within the exact NG Ideal Logic MAX Combi2 C24/C30/C35 guides, including an index to all13 Section4 diagnostic charts with original Yes/No branches, components, service and combustion pages. Saved fault-answer index remains limited. Catalogue, parts, wiring and paired backend remain unchanged. No paid calls.",
+    "Completes question lookup for all13diagnostic chart descriptions plusRestart on exact NG IdealMAXCombi2 C24/C30/C35, with originalYes/Nochart visible directly in each matching answer. Updates only3source records; requiresmatchingpairedAIcatalogue. No numericcodesinferred or paidcalls."
   ]
 }
