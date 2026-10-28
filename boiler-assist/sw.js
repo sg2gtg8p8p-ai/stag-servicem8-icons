@@ -1,6 +1,6 @@
 'use strict';
-const EXPECTED_BUILD_ID='6ede31299590b9db';
-const EXPECTED_MANIFEST_SHA256='ecc3203221caa7859116c3e6c3741c40f55962f48ec35d4697f4f834b022f683';
+const EXPECTED_BUILD_ID='bc88c11e190c2080';
+const EXPECTED_MANIFEST_SHA256='4bd29291b154f65844e23970e3a2aa222a2619dd5e4ee35edf05f0caa2be5bff';
 const OWNER='stag-boiler-assist-offline-v1:';
 const digest=async bytes=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(v=>v.toString(16).padStart(2,'0')).join('');
 const base=new URL(self.registration.scope),url=name=>new URL(name,base).href;

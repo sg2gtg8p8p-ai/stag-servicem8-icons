@@ -1,6 +1,6 @@
 // Shared, deterministic lookup over the exact selected manufacturer's record.
 // No generated diagnostic steps, part recommendation, supplier call or user data storage.
-export function faultAnswer(row,recordId,question,previousLabel=null){
+function savedFaultAnswer(row,recordId,question,previousLabel=null){
  const b=row?.boiler,clean=v=>typeof v==='string'?v:'',norm=v=>clean(v).toLowerCase().replace(/[\u2010-\u2015]/g,'-').replace(/[^a-z0-9]+/g,' ').trim().replace(/\s+/g,' '),q=norm(question);
  const safe=u=>{try{const v=new URL(u);return v.protocol==='https:'&&!v.username&&!v.password?v.href:null;}catch{return null;}};
  if(!b||b.id!==recordId||!q||clean(question).length>400)return{kind:'unavailable',message:'Select the exact boiler and enter a fault code or the words on its display.',entries:[]};
@@ -80,4 +80,14 @@ export function faultAnswer(row,recordId,question,previousLabel=null){
  if(selected.length===1)return{...base,entries:selected,activeLabel:selected[0].label,message:'Manufacturer fault information and checks for this exact boiler. Follow the linked decision tree in order; a code alone does not prove a failed part. '+(previousLabel===selected[0].label?'Your previous fault is retained. Report the actual check result; no test has been marked passed automatically.':'')};
  if(selected.length>1)return{...base,entries:selected,message:'More than one saved entry matches. Choose the exact code, subcode or display wording before deciding which checks apply.'};
  return{...base,message:available.length?'Tell me the exact fault code and subcode, or choose the display wording below. A symptom alone does not establish the cause.':'No source-linked fault information is saved for this exact entry. Open its manufacturer manual; no checks have been invented.'};
+}
+
+const compactIds=new Set(['worcester-greenstar-i-system-compact-27kw-ng-7733600060','worcester-greenstar-i-system-compact-30kw-ng-7733600062']);
+export function faultAnswer(row,recordId,question,previousLabel=null){
+ const result=savedFaultAnswer(row,recordId,question,previousLabel);
+ if(!compactIds.has(recordId)||result.entries?.length!==1)return result;
+ const kind=result.entries[0].codeKind;
+ if(kind==='status')return{...result,message:'Operating status — this entry describes an operating or protective state, not a confirmed failed component. Check the exact meaning and fitted configuration.'};
+ if(kind==='diagnostic')return{...result,message:'Manufacturer diagnostic/status information for this exact number. It may describe a protective condition or a fault; use the original table. No component failure has been confirmed.'};
+ return result;
 }

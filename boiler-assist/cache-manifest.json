@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "6ede31299590b9db",
+  "buildId": "bc88c11e190c2080",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.28-r4",
+  "appVersion": "2026.10.28-r5",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "sha256": "7fefec819073ca70cc7250078a7d60812ba209d231986a5b2acefaf339c39df4",
-      "bytes": 6258143
+      "sha256": "212a4ee59fb4b9426a3a196f0a285012259ad5150fe98af98058db500e326150",
+      "bytes": 6292795
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -57,7 +57,7 @@
     },
     {
       "url": "./help/ai-client.mjs",
-      "sha256": "a76f6c841ded88910494adb6d420f1de76d39ba8674bce2c66b2c40bb8d6572b",
+      "sha256": "8108d3a4eacec01c11a432df1b784ba5ab7513b99f88c6f8215651c1fa136659",
       "bytes": 8047
     },
     {
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "b50a824be75732c406ed1c31849688baab299af942dd89914b8f90839c922eb4",
-      "bytes": 1195250
+      "sha256": "933211d58ba21c4e6a7ed78f4db7e6b320e6b5779de53418f0fb42669b2ad346",
+      "bytes": 1200850
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "5aeb8625630fe657c5f096965e3a865f3a7c2e1e5479ed094ed1fe9e37536c79",
-      "bytes": 35535
+      "sha256": "d968b78e96955d28bff808cbba6c2db61046c1caea3f9595f956ca6faebbf0b3",
+      "bytes": 35866
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -147,8 +147,8 @@
     },
     {
       "url": "./help/fault-answer.mjs",
-      "sha256": "658edabb21cf989d99ad037be3297192a2d7a04a1276a9ea3a3cd538a71e08e6",
-      "bytes": 11015
+      "sha256": "8b3f9f0542cb05a0871a6fbd64df56b73a0d6ba17f3ca61359eb06ef191b3ab2",
+      "bytes": 11874
     },
     {
       "url": "./help/manual-search.mjs",
@@ -1104,7 +1104,17 @@
       "url": "./manual-pages/ng-modern-fpt-20261028/6720813280/page-44.png",
       "sha256": "6eafc5e4a6423d5966c235cb60ef7fc3b78837e2a9e7ec43bb04d863d0d96d28",
       "bytes": 588427
+    },
+    {
+      "url": "./manual-pages/isystem-faults-20261028/6720813280/page-63.png",
+      "sha256": "e77f16215b2ec51cc7948b7dbfe6805843efec7b363092151d47a8a789b25b9f",
+      "bytes": 507356
+    },
+    {
+      "url": "./manual-pages/isystem-faults-20261028/6720813280/page-64.png",
+      "sha256": "d41871c5299ef8268eed2a29f25add1e8a964b8fe4a27c17de2aed83be0f86e3",
+      "bytes": 390788
     }
   ],
-  "totalBytes": 78404402
+  "totalBytes": 79343988
 }
