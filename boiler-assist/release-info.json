@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.10.28-r2",
+  "appVersion": "2026.10.28-r3",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1397,
@@ -354,6 +354,7 @@
     "Adds exact Natural Gas Vaillant HOME COMBI35-A GC47-044-64/article0010019932,16technical fields,all37AppendixDfaults,partial16-task service reference and23originalmanual pages. Existing1393records preserved. Missing-photo-match warning now shows actualGCdigits. Requiresmatching1394-recordbackend.",
     "Adds exact NG IdealMiniC24 GC47-348-18, BritishGas/Worcester430i GC41-311-80 and Greenstar15iSystemMkIV GC41-311-84;41technical fields,29fault/indicator entries,24practical service tasks and54original pages. Exact-model FPT shown on FGA for both Worcester models. Existing1394records preserved.",
     "Adds exact NG fan-pressure chart boundaries, test points and procedures for24iJunior/28iJunior,25Si/30Si and original12/15/18/24Ri. Makes existing30Si FPT visible on FGA. Four original manufacturer chart/mode pages; partial service coverage retained. No LPG or existing combustion/fault data changed.",
-    "Adds exact NG FPT bands/procedures to21 Worcester8000+/8000F/27–30RiCompact/27–30iSystemCompact records, including32kW V2 distinction and17 original manufacturer pages. Floorstanding35R source-table conflict and1000 numeric FPT remain held. Guides remain partial. No LPG or prior FGA/fault/parts/identity changes."
+    "Adds exact NG FPT bands/procedures to21 Worcester8000+/8000F/27–30RiCompact/27–30iSystemCompact records, including32kW V2 distinction and17 original manufacturer pages. Floorstanding35R source-table conflict and1000 numeric FPT remain held. Guides remain partial. No LPG or prior FGA/fault/parts/identity changes.",
+    "Adds exact NG Greenstar25iErP/30iErP FPT chart boundaries and test steps from6720806944(2016/07)p49, reusing embedded original pages. Compact source panels show the known product code when no GC is recorded; four repeated-NG labels tidied. All identities and other readings preserved; guides remain partial."
   ]
 }

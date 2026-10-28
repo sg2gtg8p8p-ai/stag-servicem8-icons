@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "43f02d7d60e6bd05",
+  "buildId": "c40feb84eeeecda1",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.28-r2",
+  "appVersion": "2026.10.28-r3",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "sha256": "cd513474a3e639f9f0489d72f80aa569f036941ef7804b1702ce520112669e06",
-      "bytes": 6199317
+      "sha256": "7fefec819073ca70cc7250078a7d60812ba209d231986a5b2acefaf339c39df4",
+      "bytes": 6258143
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -57,7 +57,7 @@
     },
     {
       "url": "./help/ai-client.mjs",
-      "sha256": "2678696f2891177559785ca55aa9a8431521a5b9f6dc3a447597bdbb0db13688",
+      "sha256": "a76f6c841ded88910494adb6d420f1de76d39ba8674bce2c66b2c40bb8d6572b",
       "bytes": 8047
     },
     {
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "2cd3cd6fb59e1932ac2f73570e930df81f02c857a73b4c5d772d750cd260664f",
-      "bytes": 1194992
+      "sha256": "ccf44b635a4657d615fecb70d90b29b40cc1d9f0b2491c61eef09d944be73850",
+      "bytes": 1195244
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "463b25b0f85d9d1b2620bac4bce4b1653e2835472febe5f51df63d072c3ba083",
-      "bytes": 35040
+      "sha256": "ee1e6559ffcc9d37c0b385903310b3e029630e075b3df072f1aa6cc7512cf557",
+      "bytes": 35355
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -1106,5 +1106,5 @@
       "bytes": 588427
     }
   ],
-  "totalBytes": 78344823
+  "totalBytes": 78404216
 }

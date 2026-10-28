@@ -1524,7 +1524,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
  const group=node('details',undefined,'manufacturer-ng-modern-fpt-pages');
  group.append(node('summary','Original manufacturer diagrams and procedures'));
  group.open=section==='parts';
- group.append(node('p',selected.model+' · GC '+selected.gcNumber+' · Natural Gas G20. '+source.documentReference+' ('+source.revision+'). '+(source.hosting==='manufacturer-hosted'?'Manufacturer-hosted source.':'Manufacturer-authored manual, preserved by an independent archive.'),'fga-note'));
+ group.append(node('p',selected.model+(selected.gcNumber?' · GC '+selected.gcNumber:selected.productNumber?' · Product '+selected.productNumber:'')+' · Natural Gas G20. '+source.documentReference+' ('+source.revision+'). '+(source.hosting==='manufacturer-hosted'?'Manufacturer-hosted source.':'Manufacturer-authored manual, preserved by an independent archive.'),'fga-note'));
  if(bundle.notes?.[section])group.append(node('p',bundle.notes[section],'fga-note'));
  for(const page of pages){
   const asset=bundle.assets.find(a=>a.page===page);if(!asset)throw Error('Exact-model original page missing');
@@ -1555,7 +1555,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
  const group=node('details',undefined,'manufacturer-ng-fpt-pages');
  group.append(node('summary','Original manufacturer diagrams and procedures'));
  group.open=section==='parts';
- group.append(node('p',selected.model+' · GC '+selected.gcNumber+' · Natural Gas G20. '+source.documentReference+' ('+source.revision+'). '+(source.hosting==='manufacturer-hosted'?'Manufacturer-hosted source.':'Manufacturer-authored manual, preserved by an independent archive.'),'fga-note'));
+ group.append(node('p',selected.model+(selected.gcNumber?' · GC '+selected.gcNumber:selected.productNumber?' · Product '+selected.productNumber:'')+' · Natural Gas G20. '+source.documentReference+' ('+source.revision+'). '+(source.hosting==='manufacturer-hosted'?'Manufacturer-hosted source.':'Manufacturer-authored manual, preserved by an independent archive.'),'fga-note'));
  if(bundle.notes?.[section])group.append(node('p',bundle.notes[section],'fga-note'));
  for(const page of pages){
   const asset=bundle.assets.find(a=>a.page===page);if(!asset)throw Error('Exact-model original page missing');
@@ -1586,7 +1586,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
  const group=node('details',undefined,'manufacturer-label-gap-pages');
  group.append(node('summary','Original manufacturer diagrams and procedures'));
  group.open=section==='parts';
- group.append(node('p',selected.model+' · GC '+selected.gcNumber+' · Natural Gas G20. '+source.documentReference+' ('+source.revision+'). '+(source.hosting==='manufacturer-hosted'?'Manufacturer-hosted source.':'Manufacturer-authored manual, preserved by an independent archive.'),'fga-note'));
+ group.append(node('p',selected.model+(selected.gcNumber?' · GC '+selected.gcNumber:selected.productNumber?' · Product '+selected.productNumber:'')+' · Natural Gas G20. '+source.documentReference+' ('+source.revision+'). '+(source.hosting==='manufacturer-hosted'?'Manufacturer-hosted source.':'Manufacturer-authored manual, preserved by an independent archive.'),'fga-note'));
  if(bundle.notes?.[section])group.append(node('p',bundle.notes[section],'fga-note'));
  for(const page of pages){
   const asset=bundle.assets.find(a=>a.page===page);if(!asset)throw Error('Exact-model original page missing');
