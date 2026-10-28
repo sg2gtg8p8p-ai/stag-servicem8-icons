@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "95f87816ae0e5ff9",
+  "buildId": "43f02d7d60e6bd05",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.28-r1",
+  "appVersion": "2026.10.28-r2",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "sha256": "d62207a96317b1234e75957df13f8d64729e871fb8835866b3c11ccef727fedc",
-      "bytes": 5991714
+      "sha256": "cd513474a3e639f9f0489d72f80aa569f036941ef7804b1702ce520112669e06",
+      "bytes": 6199317
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -57,7 +57,7 @@
     },
     {
       "url": "./help/ai-client.mjs",
-      "sha256": "37cd6b4139a1a1f3724fac86fc4f9f9a2ae1b8a6077321b56b131bb3bd45d490",
+      "sha256": "2678696f2891177559785ca55aa9a8431521a5b9f6dc3a447597bdbb0db13688",
       "bytes": 8047
     },
     {
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "8a1e6c12f70f08a058fe3be8b2318e4ec91550b5479d4af5ba9aad3074933564",
-      "bytes": 1164902
+      "sha256": "2cd3cd6fb59e1932ac2f73570e930df81f02c857a73b4c5d772d750cd260664f",
+      "bytes": 1194992
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "e6e66ecde808168fe409f0a856e4f61b25c0d5cb9a44456d39b796079a278044",
-      "bytes": 34715
+      "sha256": "463b25b0f85d9d1b2620bac4bce4b1653e2835472febe5f51df63d072c3ba083",
+      "bytes": 35040
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -1019,7 +1019,92 @@
       "url": "./manual-pages/ng-fpt-20261028/6720804541/page-32.png",
       "sha256": "d41525a360516f40ca6028ce0530155df33bd6b7c528ddb4bc9fda636a94873c",
       "bytes": 422048
+    },
+    {
+      "url": "./manual-pages/ng-modern-fpt-20261028/6721108973/page-45.png",
+      "sha256": "37026d52d0402e0788f26265ce1abb0a9003a7cbe2002af12fc66c055b8bde40",
+      "bytes": 419190
+    },
+    {
+      "url": "./manual-pages/ng-modern-fpt-20261028/6721108973/page-62.png",
+      "sha256": "fd50da31b6860679369b5f7c4210e24b327fff9e5c84f26ae2604b150f54706e",
+      "bytes": 349982
+    },
+    {
+      "url": "./manual-pages/ng-modern-fpt-20261028/6721108973/page-63.png",
+      "sha256": "b48dc478554be8d0171644b5fe94df5c8acd9482cf66731ba4ca361fe835a1cf",
+      "bytes": 500060
+    },
+    {
+      "url": "./manual-pages/ng-modern-fpt-20261028/6721891100/page-46.png",
+      "sha256": "b4d85d48cece3516b4ff83e21508c099ac7f85823babdf34c2e573f499b47792",
+      "bytes": 412149
+    },
+    {
+      "url": "./manual-pages/ng-modern-fpt-20261028/6721891100/page-64.png",
+      "sha256": "9e67a20fce0750b69d63c0bece3a9677d48f1df9f2251b98922027fdf434206c",
+      "bytes": 453562
+    },
+    {
+      "url": "./manual-pages/ng-modern-fpt-20261028/6721891104/page-44.png",
+      "sha256": "9f06b5eba772fbee427f4a6cbe4947e9b70f92cf3912db4878946b557605d576",
+      "bytes": 282625
+    },
+    {
+      "url": "./manual-pages/ng-modern-fpt-20261028/6721891104/page-60.png",
+      "sha256": "83390e9f16950c4a0fe966e231f49f5f72e27e11291285fad867748b67d3e450",
+      "bytes": 353103
+    },
+    {
+      "url": "./manual-pages/ng-modern-fpt-20261028/6721891104/page-61.png",
+      "sha256": "5058c7d5eea8dd0a23a67bb6b78bf8b1fb8208c4ce70c9f8a8aa5213eccd8fd7",
+      "bytes": 474305
+    },
+    {
+      "url": "./manual-pages/ng-modern-fpt-20261028/6721106419/page-49.png",
+      "sha256": "bd4f57ed603c1cb9288d1953ed9787d0dc5454054e9ac82235139b31ade6a7fd",
+      "bytes": 499808
+    },
+    {
+      "url": "./manual-pages/ng-modern-fpt-20261028/6721106419/page-67.png",
+      "sha256": "5a113486e1955f526288ee18067ff5c29a42743ab339a9a24a28c9ebf07bd0cc",
+      "bytes": 366749
+    },
+    {
+      "url": "./manual-pages/ng-modern-fpt-20261028/6721106420/page-47.png",
+      "sha256": "2ceb43444c2217711fe3ffbe2666be6118e3054a2fd0aee3e3a93e0646404bc9",
+      "bytes": 485421
+    },
+    {
+      "url": "./manual-pages/ng-modern-fpt-20261028/6721106420/page-64.png",
+      "sha256": "bd22e291d0fb24fa4ce9b3e45d9e05965ccaa017e6dc25ca2a132925743fc2fc",
+      "bytes": 370975
+    },
+    {
+      "url": "./manual-pages/ng-modern-fpt-20261028/6721106420/page-65.png",
+      "sha256": "861631bdd560f460a9975635155ac9be9d737d9771a13cb65d3d4b55c16e7006",
+      "bytes": 432647
+    },
+    {
+      "url": "./manual-pages/ng-modern-fpt-20261028/6720813282/page-38.png",
+      "sha256": "a811deee268120ade3ec868dad878d32d846e73b75058627974a7e9fba9ed83e",
+      "bytes": 482777
+    },
+    {
+      "url": "./manual-pages/ng-modern-fpt-20261028/6720813282/page-39.png",
+      "sha256": "8ec3beabc227a3c6d8fec2119eb21e0896c648e97d7a88497ff13b247bda56ec",
+      "bytes": 538549
+    },
+    {
+      "url": "./manual-pages/ng-modern-fpt-20261028/6720813280/page-43.png",
+      "sha256": "b89c0dcb58b0456dc0fe837961d526aa13faef4c3782dd7a236cc11cbcf27ff4",
+      "bytes": 378352
+    },
+    {
+      "url": "./manual-pages/ng-modern-fpt-20261028/6720813280/page-44.png",
+      "sha256": "6eafc5e4a6423d5966c235cb60ef7fc3b78837e2a9e7ec43bb04d863d0d96d28",
+      "bytes": 588427
     }
   ],
-  "totalBytes": 70718124
+  "totalBytes": 78344823
 }
