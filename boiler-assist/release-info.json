@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.10.27-r4",
+  "appVersion": "2026.10.28-r1",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1397,
@@ -352,6 +352,7 @@
     "Adds27original manufacturer pages within the exact NG Ideal Logic MAX Combi2 C24/C30/C35 guides, including an index to all13 Section4 diagnostic charts with original Yes/No branches, components, service and combustion pages. Saved fault-answer index remains limited. Catalogue, parts, wiring and paired backend remain unchanged. No paid calls.",
     "Completes question lookup for all13diagnostic chart descriptions plusRestart on exact NG IdealMAXCombi2 C24/C30/C35, with originalYes/Nochart visible directly in each matching answer. Updates only3source records; requiresmatchingpairedAIcatalogue. No numericcodesinferred or paidcalls.",
     "Adds exact Natural Gas Vaillant HOME COMBI35-A GC47-044-64/article0010019932,16technical fields,all37AppendixDfaults,partial16-task service reference and23originalmanual pages. Existing1393records preserved. Missing-photo-match warning now shows actualGCdigits. Requiresmatching1394-recordbackend.",
-    "Adds exact NG IdealMiniC24 GC47-348-18, BritishGas/Worcester430i GC41-311-80 and Greenstar15iSystemMkIV GC41-311-84;41technical fields,29fault/indicator entries,24practical service tasks and54original pages. Exact-model FPT shown on FGA for both Worcester models. Existing1394records preserved."
+    "Adds exact NG IdealMiniC24 GC47-348-18, BritishGas/Worcester430i GC41-311-80 and Greenstar15iSystemMkIV GC41-311-84;41technical fields,29fault/indicator entries,24practical service tasks and54original pages. Exact-model FPT shown on FGA for both Worcester models. Existing1394records preserved.",
+    "Adds exact NG fan-pressure chart boundaries, test points and procedures for24iJunior/28iJunior,25Si/30Si and original12/15/18/24Ri. Makes existing30Si FPT visible on FGA. Four original manufacturer chart/mode pages; partial service coverage retained. No LPG or existing combustion/fault data changed."
   ]
 }

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "1658111cf22e91e5",
+  "buildId": "95f87816ae0e5ff9",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.27-r4",
+  "appVersion": "2026.10.28-r1",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "sha256": "88c0e28b434303ef5ee871d1d4cb625f8df8d7b43897a02aa028320608e03e0e",
-      "bytes": 5940663
+      "sha256": "d62207a96317b1234e75957df13f8d64729e871fb8835866b3c11ccef727fedc",
+      "bytes": 5991714
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -57,7 +57,7 @@
     },
     {
       "url": "./help/ai-client.mjs",
-      "sha256": "fff4df94db8552595df4ec9e1e3d6369058143841d05c85799fc82f67b2f3c9f",
+      "sha256": "37cd6b4139a1a1f3724fac86fc4f9f9a2ae1b8a6077321b56b131bb3bd45d490",
       "bytes": 8047
     },
     {
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "0dd7570e066ae4b736b84d2ab51f0d69e6a04f2b2be0288306e7eef919106d07",
-      "bytes": 1153963
+      "sha256": "8a1e6c12f70f08a058fe3be8b2318e4ec91550b5479d4af5ba9aad3074933564",
+      "bytes": 1164902
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "4efdbe97d8114a436520f8782acdcaa6addfed66db7c185448e88b8cc00e20eb",
-      "bytes": 34407
+      "sha256": "e6e66ecde808168fe409f0a856e4f61b25c0d5cb9a44456d39b796079a278044",
+      "bytes": 34715
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -999,7 +999,27 @@
       "url": "./manual-pages/label-gaps-20261027/6720804532/page-53.jpg",
       "sha256": "fa61d2953e4d9f7ab335b75542fa4ad98c758c6d0f4424e01f82171ca21276b0",
       "bytes": 232319
+    },
+    {
+      "url": "./manual-pages/ng-fpt-20261028/6720802047/page-36.png",
+      "sha256": "7e7200cd8dd62e0ff2f6e148bfd11886c3d49c60991ecc21e6f3b08f5d75e10d",
+      "bytes": 426032
+    },
+    {
+      "url": "./manual-pages/ng-fpt-20261028/6720802047/page-37.png",
+      "sha256": "2d39c6d5889889597a8b1c39ec041c2f625f0f7db508d94354e9f523103eccdc",
+      "bytes": 536384
+    },
+    {
+      "url": "./manual-pages/ng-fpt-20261028/6720643895/page-45.png",
+      "sha256": "0039a353457310fd556b5a18b0b2fc37ff8efe9ec703291b79e14c9ba993c1c0",
+      "bytes": 416074
+    },
+    {
+      "url": "./manual-pages/ng-fpt-20261028/6720804541/page-32.png",
+      "sha256": "d41525a360516f40ca6028ce0530155df33bd6b7c528ddb4bc9fda636a94873c",
+      "bytes": 422048
     }
   ],
-  "totalBytes": 68855288
+  "totalBytes": 70718124
 }
