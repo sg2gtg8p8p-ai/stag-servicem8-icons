@@ -40709,5 +40709,305 @@
         "value": "Use the original component diagrams and historical parts pages below. Confirm current part fit against the exact model/product and actual unit serial before ordering; no live stock or price is asserted."
       }
     ]
+  },
+  {
+    "id": "worcester-greenstar-29cdi-classic-ng-47-406-34",
+    "manufacturer": "Worcester Bosch",
+    "model": "Greenstar 29CDi Classic",
+    "designation": "Greenstar 29CDi Classic",
+    "range": "Greenstar CDi Classic",
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "fuelFamily": "gas",
+    "gcNumber": "47-406-34",
+    "productNumber": null,
+    "modelVariant": "Greenstar 29CDi Classic",
+    "generation": "CDi Classic — 2012/08 manual",
+    "aliases": [
+      "Worcester 29 CDi Classic",
+      "Greenstar 29 CDi Classic",
+      "29CDi Classic",
+      "4740634"
+    ],
+    "technicalData": {
+      "0": {
+        "value": "8.0 / 30.9 kW"
+      },
+      "1": {
+        "value": "7.7 / 30.0 kW"
+      },
+      "2": {
+        "value": "31.8 kW"
+      },
+      "3": {
+        "value": "32.1 kW"
+      },
+      "4": {
+        "value": "30.9 kW"
+      },
+      "5": {
+        "value": "3.3 m³/h"
+      },
+      "6": {
+        "value": "11 l/min"
+      },
+      "7": {
+        "value": "1.4 bar"
+      },
+      "8": {
+        "value": "0.2 / 10 bar"
+      },
+      "9": {
+        "value": "40–60°C"
+      },
+      "10": {
+        "value": "90°C"
+      },
+      "11": {
+        "value": "3.0 bar"
+      },
+      "12": {
+        "value": "230 V, 50 Hz / 150 W"
+      },
+      "13": {
+        "value": "3.75 litres"
+      },
+      "14": {
+        "value": "47.5 / 56 kg"
+      },
+      "15": {
+        "value": "76 / 58°C; technical data, not a service pass band"
+      }
+    },
+    "parts": [
+      {
+        "value": "Original component layout/legend and manufacturer short parts list are included. This is a historical reference, not confirmation of a current spare part, serial applicability, price or stock. Confirm fitted component and current supplier/manufacturer fit before ordering."
+      }
+    ]
+  },
+  {
+    "id": "worcester-greenstar-34cdi-classic-ng-47-406-36",
+    "manufacturer": "Worcester Bosch",
+    "model": "Greenstar 34CDi Classic",
+    "designation": "Greenstar 34CDi Classic",
+    "range": "Greenstar CDi Classic",
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "fuelFamily": "gas",
+    "gcNumber": "47-406-36",
+    "productNumber": null,
+    "modelVariant": "Greenstar 34CDi Classic",
+    "generation": "CDi Classic — 2012/08 manual",
+    "aliases": [
+      "Worcester 34 CDi Classic",
+      "Greenstar 34 CDi Classic",
+      "34CDi Classic",
+      "4740636"
+    ],
+    "technicalData": {
+      "0": {
+        "value": "8.0 / 30.9 kW"
+      },
+      "1": {
+        "value": "7.7 / 30.0 kW"
+      },
+      "2": {
+        "value": "31.8 kW"
+      },
+      "3": {
+        "value": "32.1 kW"
+      },
+      "4": {
+        "value": "35.0 kW"
+      },
+      "5": {
+        "value": "3.7 m³/h"
+      },
+      "6": {
+        "value": "12 l/min"
+      },
+      "7": {
+        "value": "1.5 bar"
+      },
+      "8": {
+        "value": "0.2 / 10 bar"
+      },
+      "9": {
+        "value": "40–60°C"
+      },
+      "10": {
+        "value": "90°C"
+      },
+      "11": {
+        "value": "3.0 bar"
+      },
+      "12": {
+        "value": "230 V, 50 Hz / 160 W"
+      },
+      "13": {
+        "value": "3.75 litres"
+      },
+      "14": {
+        "value": "47.5 / 56 kg"
+      },
+      "15": {
+        "value": "81 / 58°C; technical data, not a service pass band"
+      }
+    },
+    "parts": [
+      {
+        "value": "Original component layout/legend and manufacturer short parts list are included. This is a historical reference, not confirmation of a current spare part, serial applicability, price or stock. Confirm fitted component and current supplier/manufacturer fit before ordering."
+      }
+    ]
+  },
+  {
+    "id": "worcester-greenstar-38cdi-classic-ng-47-406-38",
+    "manufacturer": "Worcester Bosch",
+    "model": "Greenstar 38CDi Classic",
+    "designation": "Greenstar 38CDi Classic",
+    "range": "Greenstar CDi Classic",
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "fuelFamily": "gas",
+    "gcNumber": "47-406-38",
+    "productNumber": null,
+    "modelVariant": "Greenstar 38CDi Classic",
+    "generation": "CDi Classic — 2012/08 manual",
+    "aliases": [
+      "Worcester 38 CDi Classic",
+      "Greenstar 38 CDi Classic",
+      "38CDi Classic",
+      "4740638"
+    ],
+    "technicalData": {
+      "0": {
+        "value": "9.8 / 30.9 kW"
+      },
+      "1": {
+        "value": "9.4 / 30.0 kW"
+      },
+      "2": {
+        "value": "31.8 kW"
+      },
+      "3": {
+        "value": "32.1 kW"
+      },
+      "4": {
+        "value": "40.0 kW"
+      },
+      "5": {
+        "value": "4.2 m³/h"
+      },
+      "6": {
+        "value": "14 l/min"
+      },
+      "7": {
+        "value": "1.7 bar"
+      },
+      "8": {
+        "value": "0.2 / 10 bar"
+      },
+      "9": {
+        "value": "40–60°C"
+      },
+      "10": {
+        "value": "90°C"
+      },
+      "11": {
+        "value": "3.0 bar"
+      },
+      "12": {
+        "value": "230 V, 50 Hz / 170 W"
+      },
+      "13": {
+        "value": "3.75 litres"
+      },
+      "14": {
+        "value": "47.5 / 56 kg"
+      },
+      "15": {
+        "value": "83 / 58°C; technical data, not a service pass band"
+      }
+    },
+    "parts": [
+      {
+        "value": "Original component layout/legend and manufacturer short parts list are included. This is a historical reference, not confirmation of a current spare part, serial applicability, price or stock. Confirm fitted component and current supplier/manufacturer fit before ordering."
+      }
+    ]
+  },
+  {
+    "id": "worcester-greenstar-42cdi-classic-ng-47-406-10",
+    "manufacturer": "Worcester Bosch",
+    "model": "Greenstar 42CDi Classic",
+    "designation": "Greenstar 42CDi Classic",
+    "range": "Greenstar CDi Classic",
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "fuelFamily": "gas",
+    "gcNumber": "47-406-10",
+    "productNumber": null,
+    "modelVariant": "Greenstar 42CDi Classic",
+    "generation": "CDi Classic — 2012/08 manual",
+    "aliases": [
+      "Worcester 42 CDi Classic",
+      "Greenstar 42 CDi Classic",
+      "42CDi Classic",
+      "4740610"
+    ],
+    "technicalData": {
+      "0": {
+        "value": "9.8 / 30.9 kW"
+      },
+      "1": {
+        "value": "9.4 / 30.0 kW"
+      },
+      "2": {
+        "value": "31.8 kW"
+      },
+      "3": {
+        "value": "32.1 kW"
+      },
+      "4": {
+        "value": "42.0 kW"
+      },
+      "5": {
+        "value": "4.4 m³/h"
+      },
+      "6": {
+        "value": "15 l/min"
+      },
+      "7": {
+        "value": "1.9 bar"
+      },
+      "8": {
+        "value": "0.2 / 10 bar"
+      },
+      "9": {
+        "value": "40–60°C"
+      },
+      "10": {
+        "value": "90°C"
+      },
+      "11": {
+        "value": "3.0 bar"
+      },
+      "12": {
+        "value": "230 V, 50 Hz / 175 W"
+      },
+      "13": {
+        "value": "3.75 litres"
+      },
+      "14": {
+        "value": "47.5 / 56 kg"
+      },
+      "15": {
+        "value": "86 / 58°C; technical data, not a service pass band"
+      }
+    },
+    "parts": [
+      {
+        "value": "Original component layout/legend and manufacturer short parts list are included. This is a historical reference, not confirmation of a current spare part, serial applicability, price or stock. Confirm fitted component and current supplier/manufacturer fit before ordering."
+      }
+    ]
   }
 ]

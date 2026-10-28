@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "2e51ebb5eff87354",
+  "buildId": "e9c5bac98d44e117",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.28-r6",
+  "appVersion": "2026.10.28-r7",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "sha256": "feabda6d0a1ec013687563d7b0d6c574fe648a695a7d9c59d0c8fd0e756bbea1",
-      "bytes": 6313367
+      "sha256": "642be8a9497423ce30afac2ec894f8bd556f38cc4801b9371b328763aaf1f280",
+      "bytes": 6353431
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -37,8 +37,8 @@
     },
     {
       "url": "./data/search-index.json",
-      "sha256": "bc51f7600e75e5bf54cf66ed7ae516081da3cbf0643e0ea4434807bbb9c4337c",
-      "bytes": 989205
+      "sha256": "5df2affb8db13d8e5e4dc7084bda11afa90f8e78e1c2135e4be3a104c662e823",
+      "bytes": 996533
     },
     {
       "url": "./decoder.js",
@@ -57,7 +57,7 @@
     },
     {
       "url": "./help/ai-client.mjs",
-      "sha256": "7117d0c29b0d9ca470250e3a07734a079f5008d6f24740c328c94bb0c470615d",
+      "sha256": "b6c9c2408b081d9eef5dcba9178580df1c93ff55b66411b965bf4a52e1fdd5d9",
       "bytes": 8047
     },
     {
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "9c957a60ed0575ae7fddd39a89c1e1231450bef3fecc22cd0ac952d1d1c36f93",
-      "bytes": 1207319
+      "sha256": "df9fe32b72c8070571631992f15c1703e9024cd7b6fae4b53911337e6bd29295",
+      "bytes": 1235129
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "935d961c06d8cb6215f18b808677ffcd6bd9637adf62b87154f8a29d5c566f40",
-      "bytes": 36140
+      "sha256": "cca16957bd1b0d17bf3dc4da4ca699fb6409d0630272ae5eb808f01c1fc31ae0",
+      "bytes": 36473
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -1134,7 +1134,112 @@
       "url": "./manual-pages/ri-compact-faults-20261028/6720813282/page-55.png",
       "sha256": "17dd4c752d69f4e0cf8fca9ce08003e68705f941e4bce9955ba4899dc2e48bf3",
       "bytes": 269103
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-1.png",
+      "sha256": "70ea98bea7453fa13befc1e9cf90eec8ca395d82ba8bdf07c01990d613b9fad7",
+      "bytes": 277803
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-6.png",
+      "sha256": "47f1f3e8082df6eb2e81d5344695f9bacd5c741d6e31978a9a40a423acb5988e",
+      "bytes": 403376
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-7.png",
+      "sha256": "e718eff93aa0a0ba5ea1bc990ddd7074b5e834f137e7654804e7dca379087197",
+      "bytes": 451228
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-8.png",
+      "sha256": "b9b3c65b774bc3e3039d59f1e5ae2694ca49d2fbf3d9896269b07ed0255ee919",
+      "bytes": 385175
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-27.png",
+      "sha256": "baa5b93fcbfec88414f8e485825b97841afdc19e487dcd165a1610e5c40fd142",
+      "bytes": 464874
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-28.png",
+      "sha256": "1184d4ba5c6e30dbbd50a499235f2a7ba28a0ea68a956aac6f0eb1532f9ff8c8",
+      "bytes": 198852
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-30.png",
+      "sha256": "74419ed2bf9d00ba6ef38da3389216b6c5ba2acea7c631faa7ced753272340f9",
+      "bytes": 420149
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-31.png",
+      "sha256": "c1989e096611abf59e0d5d6e6fdcb37440960d9310c8d9d24f4fafe2dd551e79",
+      "bytes": 386518
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-32.png",
+      "sha256": "57e3ba34725f0cd677f063bb9e46893c38910e572dc3856fe4202dce67c9e1a9",
+      "bytes": 466878
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-33.png",
+      "sha256": "570e2322faf27d122f3bf039ebadc95cb85f5d2ba87bc659167c97495e34f717",
+      "bytes": 279379
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-34.png",
+      "sha256": "e2538aa67f98f8de8e040455be0314aed61e69c57efaf924653a3ecdff6c9fe3",
+      "bytes": 501711
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-35.png",
+      "sha256": "5b8b9f79c8c5b7256fd90cb8d669347edf10c97f2146ef5a7626904bb4830fb0",
+      "bytes": 409901
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-36.png",
+      "sha256": "2fee73d29b073d4b3efb84c45619c50bc577fc362cd642afe6c0135235da9ac6",
+      "bytes": 492093
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-37.png",
+      "sha256": "26205c370751523a9e62a284c05c3e5dc2bd41a0ce99b48bd3e224e54f06c31c",
+      "bytes": 620314
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-38.png",
+      "sha256": "8a10e10bb10c20011e3d8981fb9fb3297c4c8b578139fb223c36e2a477e13db9",
+      "bytes": 440846
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-43.png",
+      "sha256": "8ce4ded36a1aeee959f96efefabc8d12e59f036a61682441aca42432bc141567",
+      "bytes": 416413
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-47.png",
+      "sha256": "88cfb127a5c493e54c32e362778dd1993b06cbeb31a252febe171c5f657cb740",
+      "bytes": 483118
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-48.png",
+      "sha256": "019ae715ce01a4c3d2db59e3bcc7dde40bf3ec84f3b58139eee5c3e1da3309ab",
+      "bytes": 307504
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-49.png",
+      "sha256": "34f384c1e56ba33291f96c23998f9866b88a5460cc8d1e3fb3134dce7905ae8c",
+      "bytes": 185752
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-50.png",
+      "sha256": "74197677e232a2abe43d26f717f9b6d9623a798029f02f132a3a99e7ee73ed88",
+      "bytes": 188118
+    },
+    {
+      "url": "./manual-pages/classic-cdi-20261028/6720803599/page-51.png",
+      "sha256": "cda1909fe5029f6baf9ba5e8e5af5ad931c498fa6f6fda8b3e7ffc266d5ab281",
+      "bytes": 62727
     }
   ],
-  "totalBytes": 80383354
+  "totalBytes": 88301618
 }

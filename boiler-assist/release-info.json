@@ -1,8 +1,8 @@
 {
-  "appVersion": "2026.10.28-r6",
+  "appVersion": "2026.10.28-r7",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
-  "boilers": 1397,
+  "boilers": 1401,
   "gasFires": 43,
   "contentChanges": [
     {
@@ -358,6 +358,7 @@
     "Adds exact NG Greenstar25iErP/30iErP FPT chart boundaries and test steps from6720806944(2016/07)p49, reusing embedded original pages. Compact source panels show the known product code when no GC is recorded; four repeated-NG labels tidied. All identities and other readings preserved; guides remain partial.",
     "Displays the already included original 25i/30i ErP fan-pressure chart (page49) directly in the FGA source panel. Values, identities, assets and backend catalogue unchanged.",
     "Adds every numeric status/fault-table entry for the exact27/30iSystemCompactNG products in6720813280(2015/07)pp63–64, including original pages and case-aware group/cause lookup. Operating statuses and diagnostic conditions are distinguished. No inferredrepairguide orcomplete-serviceclaim; identities/FGA/parts preserved.",
-    "Adds all15 RiCompact27/30NG flash-sequence rows and2normalindicator states from6720813282(2015/07)pp52–55, with original timing charts and exact group/slow-flash lookup. Fast-burst order is explicit. No guessed replacement decision; identities/FGA/parts preserved."
+    "Adds all15 RiCompact27/30NG flash-sequence rows and2normalindicator states from6720813282(2015/07)pp52–55, with original timing charts and exact group/slow-flash lookup. Fast-burst order is explicit. No guessed replacement decision; identities/FGA/parts preserved.",
+    "Adds exact Natural Gas Greenstar 29/34/38/42CDi Classic combis, with model-specific FPT on FGA, distinct routine and post-work CO2 tolerances, all12 linked manual fault codes per model,9 practical service tasks each and21 shared original manual pages. Existing1397 records preserved; no LPG or current spare-part fit claimed."
   ]
 }
