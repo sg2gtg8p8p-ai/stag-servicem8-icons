@@ -12,6 +12,21 @@ export function faultAnswer(row,recordId,question,previousLabel=null){
  const contextSources=sources.filter(s=>noteSourceIds.has(s.id)&&safe(s.url)).map(s=>({url:safe(s.url),title:s.title||'Manufacturer note',reference:s.reference||s.documentReference||''}));
  const base={kind:'fault-answer',recordId,identity,availableLabels:available.map(e=>e.label),entries:[],links,activeLabel:null,contextSources,applicability:clean(b.applicability),notes:Array.isArray(b.notes)?b.notes:[],completePresentation:row.presentation?.boilers?.[b.id]?.faultCodes||null,confirmedDiagnosis:false,partsRecommended:false};
 
+ // This legacy family has a complete two-character code, including EA.
+ // A suffix/cause from a later generation must never select the short code.
+ if(b.faultCodeFormat==='worcester-short'){
+  const exact=available.filter(e=>norm(e.label)===q);
+  const match=clean(question).trim().match(/^(?:(?:fault|error)(?:\s+code)?|code)?\s*([A-Z0-9]{2})[?.]?$/i);
+  const requested=match?.[1].toUpperCase();
+  const chosen=exact.length===1?exact:requested?available.filter(e=>e.code?.toUpperCase()===requested):[];
+  if(chosen.length===1)return{...base,entries:chosen,activeLabel:chosen[0].label,message:'Manufacturer information for this exact two-character display code. Follow the linked checks; no failed component is confirmed.'};
+  if(previousLabel&&/^(what (next|now|else)|next|still (the same|not working)|checked( that)?|done)$/.test(q)){
+   const previous=available.filter(e=>e.label===previousLabel);
+   if(previous.length===1)return{...base,entries:previous,activeLabel:previous[0].label,message:'The previous exact fault is retained. Report the actual check result; no test has been marked passed.'};
+  }
+  return{...base,message:'Enter the exact two-character code shown by this boiler. An added cause number, unknown code or multiple codes cannot be substituted.'};
+ }
+
  if(b.faultCodeFormat==='worcester-numeric'){
   const exact=available.filter(e=>norm(e.label)===q);
   if(exact.length===1)return{...base,entries:exact,activeLabel:exact[0].label,message:'Manufacturer information for this exact display entry. Follow the checks in order; a code alone does not confirm a failed part.'};

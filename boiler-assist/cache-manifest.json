@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "2324805bad7fd2c8",
+  "buildId": "1658111cf22e91e5",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.27-r3",
+  "appVersion": "2026.10.27-r4",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "sha256": "2ac6ac8d09ec5b167003d7011a21579ad62ce30fd505015b045b6214d58a3f83",
-      "bytes": 5918424
+      "sha256": "88c0e28b434303ef5ee871d1d4cb625f8df8d7b43897a02aa028320608e03e0e",
+      "bytes": 5940663
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -37,8 +37,8 @@
     },
     {
       "url": "./data/search-index.json",
-      "sha256": "f00902d3e15949cab7455440f9bc2db16166645cfa7d4a89cd80ccb83f021461",
-      "bytes": 984194
+      "sha256": "bc51f7600e75e5bf54cf66ed7ae516081da3cbf0643e0ea4434807bbb9c4337c",
+      "bytes": 989205
     },
     {
       "url": "./decoder.js",
@@ -57,7 +57,7 @@
     },
     {
       "url": "./help/ai-client.mjs",
-      "sha256": "c076459f633219ba4d4fbed5df514a9f2ad69bb5f3439bb26b080c3ea4032753",
+      "sha256": "fff4df94db8552595df4ec9e1e3d6369058143841d05c85799fc82f67b2f3c9f",
       "bytes": 8047
     },
     {
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "3b559c7d011d80ce2016f6578977dda4d6e9f9df6a282e639042268ec1767190",
-      "bytes": 1133458
+      "sha256": "0dd7570e066ae4b736b84d2ab51f0d69e6a04f2b2be0288306e7eef919106d07",
+      "bytes": 1153963
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "35b66d2d55687d960b5e37605e73b9180e3e6b920da041948084791739927d1e",
-      "bytes": 34105
+      "sha256": "4efdbe97d8114a436520f8782acdcaa6addfed66db7c185448e88b8cc00e20eb",
+      "bytes": 34407
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -147,8 +147,8 @@
     },
     {
       "url": "./help/fault-answer.mjs",
-      "sha256": "a72748cd11d99b77b16f9083c4203b8f42bb5df7bae327b1d220a7de2bd544f6",
-      "bytes": 9738
+      "sha256": "658edabb21cf989d99ad037be3297192a2d7a04a1276a9ea3a3cd538a71e08e6",
+      "bytes": 11015
     },
     {
       "url": "./help/manual-search.mjs",
@@ -729,7 +729,277 @@
       "url": "./manual-pages/vaillant-home-0020224355-01/page-48.jpg",
       "sha256": "8859be84b9d2aec678ad25b09e39b81d566bb71679d127728b2af555e05d7885",
       "bytes": 86801
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-04.jpg",
+      "sha256": "d71026ab314dcbc34ec0fc0ea837dbdb3ac45bd35f493d610e9d805da81159ee",
+      "bytes": 479919
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-05.jpg",
+      "sha256": "d3f83608cbd27f469c25ae1d331c9a14343ec9ff06243ebc3e3354d1e149b798",
+      "bytes": 329548
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-12.jpg",
+      "sha256": "438acc05b3109f3d75f55567b4cd8932be5c11d5d08d9fb9be468625000e2e85",
+      "bytes": 229667
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-13.jpg",
+      "sha256": "a56c7145a5f5ed609c28284b9cd872384f5d9835dafad59619a06ee8499bfd1d",
+      "bytes": 348503
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-20.jpg",
+      "sha256": "1e7716732857bb4976d19588f3cddaca82c5055c745cb7bdc2f02e6a9a9a04eb",
+      "bytes": 270168
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-21.jpg",
+      "sha256": "abe9e1a50e35f4b6629f662948ac84678bda378706b3eac0eea2b2616ce7735d",
+      "bytes": 242212
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-22.jpg",
+      "sha256": "0dababc88f40bedf6a85f31f8286bc2dad6b94487a817dda9aa45a28665de6fc",
+      "bytes": 137502
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-30.jpg",
+      "sha256": "08a6f9048083ee07b77f6b8d7d7943472c9bb9456f9f3e7202c71e3161861467",
+      "bytes": 297161
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-31.jpg",
+      "sha256": "17ec846ea867b128a44f4f7b1138fd560b6e79ac560ca42f40d3376d4b2ea21a",
+      "bytes": 171582
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-32.jpg",
+      "sha256": "7e8510cdbbebddc656eba2f85654a967206a9327747ac4a3ee9f677a66e0925d",
+      "bytes": 363375
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-33.jpg",
+      "sha256": "d892f95a944a1c1081d7e1ef933e52e4d856ed2da3fc6a5430ebe593ba1a0900",
+      "bytes": 346912
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-47.jpg",
+      "sha256": "4fc64caa42bd6a221dbafe4a480dcd10c4f9f2a52e4249ca97d74400cca72d57",
+      "bytes": 360402
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-48.jpg",
+      "sha256": "7613e54effea3ba34317d3dac02261fcb2b50f02e71e6a854175771e8a76ef0f",
+      "bytes": 361120
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-49.jpg",
+      "sha256": "256af40a5f868608c8fadae8d1367d7c814fae0693b69d1555fa040f72def31c",
+      "bytes": 220894
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-50.jpg",
+      "sha256": "ab88948f9c09f0fd3522e87746c19175eb1c550ee22b02852abb8dfd66f7fee1",
+      "bytes": 173432
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-51.jpg",
+      "sha256": "db1ea303ea6ceb3730e27a35ef552d6d5f84b251be965be21ec87a4d580caa7b",
+      "bytes": 209054
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-52.jpg",
+      "sha256": "6d63d630e896dc3b373b2b70afca6aa282e2d9f9cdd1b4427afcd1e1abf67506",
+      "bytes": 152083
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-53.jpg",
+      "sha256": "a5393862fb586c1cad8079a49aa1a15556070fd2a0b416a0361104fc35592102",
+      "bytes": 179868
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-54.jpg",
+      "sha256": "64e95d7fe4647b20333e49e24ebf86e7d901eac241abcba6dc60ddaf7bd5e442",
+      "bytes": 175627
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-55.jpg",
+      "sha256": "ffb07a144367d12255cf02387e07e4812f5f2bcc1969614a80249676971d4d20",
+      "bytes": 442863
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-56.jpg",
+      "sha256": "d02b3e4d24a0e366943611f206d057f6318362854d994ce3774043420b6d558e",
+      "bytes": 291669
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/17962.1062.4/page-57.jpg",
+      "sha256": "e3e78447fdbc2686e2dd071cba34da15e873b7775a7bf49f3b7455c12c2c87bb",
+      "bytes": 226129
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720614560/page-01.jpg",
+      "sha256": "2131918ab526e310ddfd14c1a60bfa7f906b4054e042df0a8628d88394c6cc41",
+      "bytes": 140644
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720614560/page-05.jpg",
+      "sha256": "7992812cd15b8f74277e9b8bb19814e298e8739420a0b2226452367ab9864c90",
+      "bytes": 180576
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720614560/page-06.jpg",
+      "sha256": "4d2a324f58e3ed877e71fb9fa2782222f53967f16c80549ead0f85f06c23217d",
+      "bytes": 323357
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720614560/page-07.jpg",
+      "sha256": "3651298d2fdde08f9cc2dd0ab14348f78136aabb179889289ad7956ef5dca8db",
+      "bytes": 313801
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720614560/page-08.jpg",
+      "sha256": "00abbc9e5a148e51410d2b38381e1caaa4b7d21915cd50019abdcbaeee1bc2a2",
+      "bytes": 357100
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720614560/page-35.jpg",
+      "sha256": "bbbcfc8eddf336969dc48a2a4b67d03ed1ba457d6f14e75ab399ab0b045bd23b",
+      "bytes": 254597
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720614560/page-36.jpg",
+      "sha256": "a95faaec62a5c0bdc9cd5817a7216d584f2e0c4c8de6450a3883f9cf3f8eeb18",
+      "bytes": 298634
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720614560/page-37.jpg",
+      "sha256": "d967dc7ae43462b9ee313a68683bdb766463d558a223118cd06ae12d06b1d0e5",
+      "bytes": 299152
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720614560/page-38.jpg",
+      "sha256": "ef51780ccf8cf54c8a6c91ff0043f7414e253bd35e3ae9dc6fb21be4a33f1569",
+      "bytes": 326001
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720614560/page-39.jpg",
+      "sha256": "e12ebf5a8b9ca3bb0065eb88ed1982d31b34048f06db8d7d66e6dd703b0de043",
+      "bytes": 395552
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720614560/page-49.jpg",
+      "sha256": "ad18bb422b462b84a279e3a48bac03fdea8abd907265c4c929987ad446a88cd1",
+      "bytes": 389751
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720614560/page-50.jpg",
+      "sha256": "06a75fdf3472ffc42a3a65b3ec0ae99da4869bcd71dd5b7653c3f25ed5de51d4",
+      "bytes": 187918
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720614560/page-52.jpg",
+      "sha256": "41c9fa05d191a7b05e61212949d8748de168f66f2c0aa3eae53a41669e0c3cd9",
+      "bytes": 279151
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720614560/page-53.jpg",
+      "sha256": "d5d2e21b47e04cf038eebbf569e708fe7715ab4f6958ba2f460db68acc5741bb",
+      "bytes": 160421
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720614560/page-54.jpg",
+      "sha256": "bf2f22f51e8d5cedb7334a6deb65e3cb688b9bb834aaba19dce5ee0bbc52d873",
+      "bytes": 156581
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720614560/page-55.jpg",
+      "sha256": "791398343f3a22c288bafba5c1185dee8cc0aa4c5c896043f99d19dfe4be11e3",
+      "bytes": 95459
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720804532/page-01.jpg",
+      "sha256": "80dcb74ec85f56a60ec5ab590609d60874924ee4cef9a98c565a607888dcdd7c",
+      "bytes": 173814
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720804532/page-05.jpg",
+      "sha256": "db57c78a48be94dd195ce55622596fc4070ac0285b52ac407925351e0bef03f3",
+      "bytes": 228071
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720804532/page-06.jpg",
+      "sha256": "32692876ddb6dbbe6e7f0b94c1ed9ddbcd68ddf30b2daf77b2d96e61986f7097",
+      "bytes": 361539
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720804532/page-07.jpg",
+      "sha256": "ec4ee4850a44df28a8a4215837d571137071f0d997598ba501d2f5e9b7510eac",
+      "bytes": 232841
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720804532/page-08.jpg",
+      "sha256": "064514dd96e07483a7a6f45b96e37150361dacc85da07b559cc93ff4942e00c6",
+      "bytes": 290168
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720804532/page-34.jpg",
+      "sha256": "65b9965fc4db12524cde21a72b1010a4a68da7c0a27c5fdf627739856ca87a83",
+      "bytes": 283667
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720804532/page-35.jpg",
+      "sha256": "fc1034b81de88093ee8685a16eb4483d383c24598805a69f7a63d92c8d797b19",
+      "bytes": 375934
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720804532/page-36.jpg",
+      "sha256": "2203a98ca1c881fd6720d684f45f4a4d764cbc6a7440b87b420ce2c7530b7dc8",
+      "bytes": 347700
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720804532/page-37.jpg",
+      "sha256": "efb17e1522b16063e8bb263f16412fdbebae4db731c4f09f93e95bdea5d0fdf1",
+      "bytes": 382557
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720804532/page-38.jpg",
+      "sha256": "e174693ec34783402153ea4a5a704a8352619d5f42a38641775a002017113bbd",
+      "bytes": 398342
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720804532/page-39.jpg",
+      "sha256": "7b9a0a04c896ae2cf7efda7679bd9125e8df9e97de36f18ce373da1494a6256b",
+      "bytes": 271744
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720804532/page-40.jpg",
+      "sha256": "dfb47c4313ad1a646573643038e273675896eac1e70a7bb592c1870873e698a8",
+      "bytes": 397841
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720804532/page-50.jpg",
+      "sha256": "70ab2c2cc7b6727b72f33d5e17e43d2ad3592d1169e9dbd662db1eca5e806e7e",
+      "bytes": 293529
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720804532/page-51.jpg",
+      "sha256": "221bdf91f16e5705c68a5515ea7f21e5ec223d71efadfec926a3a5d8df56c8ab",
+      "bytes": 326632
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720804532/page-52.jpg",
+      "sha256": "f636f1b580f363ce580a18a6c3f2c7ba94e348aca1d98f6bbaed5b9c7a27ba2e",
+      "bytes": 374080
+    },
+    {
+      "url": "./manual-pages/label-gaps-20261027/6720804532/page-53.jpg",
+      "sha256": "fa61d2953e4d9f7ab335b75542fa4ad98c758c6d0f4424e01f82171ca21276b0",
+      "bytes": 232319
     }
   ],
-  "totalBytes": 53666791
+  "totalBytes": 68855288
 }

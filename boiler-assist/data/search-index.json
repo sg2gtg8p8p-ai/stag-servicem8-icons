@@ -40501,5 +40501,213 @@
         "value": "Use HOME COMBI 35-A, article 0010019932 and the actual unit serial when confirming manufacturer spare parts. No fit-confirmed replacement numbers, stock or prices are asserted."
       }
     ]
+  },
+  {
+    "id": "ideal-mini-c24-47-348-18",
+    "manufacturer": "Ideal",
+    "model": "Mini C24",
+    "designation": "Mini C24",
+    "range": "Mini",
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "fuelFamily": "gas",
+    "gcNumber": "47-348-18",
+    "productNumber": null,
+    "modelVariant": "Mini C24",
+    "generation": "Original non-condensing Mini",
+    "aliases": [
+      "Ideal Mini C24",
+      "Caradon Ideal Mini C24",
+      "Mini C24",
+      "47 348 18"
+    ],
+    "technicalData": {
+      "0": {
+        "value": "G20, 20 mbar"
+      },
+      "1": {
+        "value": "11.00 / 26.60 kW"
+      },
+      "2": {
+        "value": "9.10 / 24.30 kW"
+      },
+      "3": {
+        "value": "1.8 / 11.7 mbar"
+      },
+      "4": {
+        "value": "26.60 kW"
+      },
+      "5": {
+        "value": "24.30 kW"
+      },
+      "6": {
+        "value": "10.0 l/min"
+      },
+      "7": {
+        "value": "11.6 l/min"
+      },
+      "8": {
+        "value": "2.5 bar"
+      },
+      "9": {
+        "value": "0.3 / 10 bar"
+      },
+      "10": {
+        "value": "230 V, 50 Hz, maximum 150 W; external3 A fuse"
+      },
+      "11": {
+        "value": "703 × 400 × 310 mm"
+      },
+      "12": {
+        "value": "37 kg"
+      },
+      "13": {
+        "value": "100 mm"
+      },
+      "14": {
+        "value": "0694BM3420"
+      }
+    },
+    "parts": [
+      {
+        "value": "Use the original component diagrams and historical parts pages below. Confirm current part fit against the exact model/product and actual unit serial before ordering; no live stock or price is asserted."
+      }
+    ]
+  },
+  {
+    "id": "worcester-british-gas-430i-ng-41-311-80",
+    "manufacturer": "Worcester Bosch",
+    "model": "British Gas 430/i",
+    "designation": "British Gas 430/i",
+    "range": "British Gas 430/i",
+    "boilerType": "system",
+    "fuel": "Natural Gas",
+    "fuelFamily": "gas",
+    "gcNumber": "41-311-80",
+    "productNumber": "7712331892",
+    "modelVariant": "British Gas 430/i",
+    "generation": "Pre-ErP",
+    "aliases": [
+      "Worcester 430i",
+      "Worcester 430/i",
+      "British Gas 430i",
+      "British Gas 430/i",
+      "Scottish Gas 430/i",
+      "430 i",
+      "7712331892"
+    ],
+    "technicalData": {
+      "0": {
+        "value": "8.0 / 30.9 kW"
+      },
+      "1": {
+        "value": "7.7 / 30.0 kW"
+      },
+      "2": {
+        "value": "8.6 / 31.8 kW"
+      },
+      "3": {
+        "value": "32.1 kW"
+      },
+      "4": {
+        "value": "Nominal90°C"
+      },
+      "5": {
+        "value": "3.0 bar"
+      },
+      "6": {
+        "value": "3.2 m³/h"
+      },
+      "7": {
+        "value": "230 V,50 Hz; maximum 150 W"
+      },
+      "8": {
+        "value": "3.75 litres"
+      },
+      "9": {
+        "value": "46.5 kg; packaged54 kg"
+      },
+      "10": {
+        "value": "760 × 440 mm"
+      },
+      "11": {
+        "value": "40–70°C; system boiler, not instantaneous combi flow"
+      },
+      "12": {
+        "value": "76 /58°C (nominal technical figures)"
+      }
+    },
+    "parts": [
+      {
+        "value": "Use the original component diagrams and historical parts pages below. Confirm current part fit against the exact model/product and actual unit serial before ordering; no live stock or price is asserted."
+      }
+    ]
+  },
+  {
+    "id": "worcester-greenstar-15i-system-mk4-ng-41-311-84",
+    "manufacturer": "Worcester Bosch",
+    "model": "Greenstar 15i System Mk IV",
+    "designation": "Greenstar 15i System Mk IV",
+    "range": "Greenstar i System",
+    "boilerType": "system",
+    "fuel": "Natural Gas",
+    "fuelFamily": "gas",
+    "gcNumber": "41-311-84",
+    "productNumber": null,
+    "modelVariant": "Greenstar 15i System Mk IV",
+    "generation": "Mk IV / pre-ErP",
+    "aliases": [
+      "Worcester Greenstar 15i System Mk IV",
+      "Greenstar 15i System Mk4",
+      "15i System Mk IV",
+      "15i System pre ErP",
+      "41 311 84"
+    ],
+    "technicalData": {
+      "0": {
+        "value": "4.62 /15.40 kW"
+      },
+      "1": {
+        "value": "15.0 kW"
+      },
+      "2": {
+        "value": "15.92 kW"
+      },
+      "3": {
+        "value": "16.06 kW"
+      },
+      "4": {
+        "value": "1.63 m³/h"
+      },
+      "5": {
+        "value": "82°C; cylinder75°C with optional integral diverter"
+      },
+      "6": {
+        "value": "2.5 bar"
+      },
+      "7": {
+        "value": "230 V,50 Hz; maximum 140 W"
+      },
+      "8": {
+        "value": "3.9 litres"
+      },
+      "9": {
+        "value": "37.5 /27.1 kg"
+      },
+      "10": {
+        "value": "700 ×400 ×330 mm;710 mm to top of case front"
+      },
+      "11": {
+        "value": "66 /58°C (nominal technical figures)"
+      },
+      "12": {
+        "value": "1.2 l/h"
+      }
+    },
+    "parts": [
+      {
+        "value": "Use the original component diagrams and historical parts pages below. Confirm current part fit against the exact model/product and actual unit serial before ordering; no live stock or price is asserted."
+      }
+    ]
   }
 ]
