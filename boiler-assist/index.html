@@ -1515,6 +1515,38 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,su
     nav.append(button("← Boiler menu",()=>{sectionMenu=true;render();$("detailTitle").scrollIntoView({block:"start"});},"simple-menu-back"));
     content.replaceChildren(node("h3", sections[activeSection]));
     renderEngineerGuide(content);
+    (function renderRiFaultPages(parent,selected,section,node,safeLink,bundles,assetBase){
+ const bundle=bundles.find(b=>b.identity.id===selected?.id);
+ if(!bundle||['manufacturer','model','gcNumber','productNumber','fuel'].some(k=>(selected[k]??null)!==(bundle.identity[k]??null)))return;
+ const source=bundle.source;
+ if(!selected.sources?.some(s=>s.documentReference===source.documentReference&&s.revision===source.revision&&s.url?.split('#')[0]===source.url))return;
+ const pages=bundle.sections[section];if(!pages?.length)return;
+ parent.append(node('p','15 manufacturer flash-sequence entries and 2 normal indicator states. Count the slow flashes and check whether the four fast flashes come before or after them. A table row number is not the number of physical flashes. Meanings do not confirm a failed part.','fga-note'));
+ const group=node('details',undefined,'manufacturer-ri-compact-fault-pages');
+ group.append(node('summary','Original manufacturer diagrams and procedures'));
+ group.open=section==='parts';
+ group.append(node('p',selected.model+(selected.gcNumber?' · GC '+selected.gcNumber:selected.productNumber?' · Product '+selected.productNumber:'')+' · Natural Gas G20. '+source.documentReference+' ('+source.revision+'). '+(source.hosting==='manufacturer-hosted'?'Manufacturer-hosted source.':'Manufacturer-authored manual, preserved by an independent archive.'),'fga-note'));
+ if(bundle.notes?.[section])group.append(node('p',bundle.notes[section],'fga-note'));
+ for(const page of pages){
+  const asset=bundle.assets.find(a=>a.page===page);if(!asset)throw Error('Exact-model original page missing');
+  const title=bundle.titles[String(page)]||'Manufacturer original';
+  const details=node('details',undefined,'manufacturer-source-page');
+  details.append(node('summary','Page '+page+' — '+title));
+  details.open=section==='parts'&&page===pages[0];
+  const image=node('img');image.src=assetBase+source.documentReference+'/'+asset.file;
+  image.alt=selected.model+': '+title;image.loading='lazy';image.width=asset.width;image.height=asset.height;
+  Object.assign(image.style,{width:'100%',maxWidth:'100%',height:'auto',display:'block',background:'#fff'});
+  const viewport=node('div');Object.assign(viewport.style,{overflow:'auto',maxHeight:'75vh'});viewport.append(image);
+  const enlarge=node('button','Loading original page…');enlarge.type='button';enlarge.disabled=true;let zoom=false;
+  image.addEventListener('load',()=>{enlarge.disabled=false;enlarge.textContent='Enlarge original page';});
+  image.addEventListener('error',()=>{enlarge.disabled=true;enlarge.textContent='Page unavailable — open the source PDF';});
+  enlarge.addEventListener('click',()=>{if(enlarge.disabled)return;zoom=!zoom;image.style.width=zoom?String(image.naturalWidth||asset.width)+'px':'100%';image.style.maxWidth=zoom?'none':'100%';enlarge.textContent=zoom?'Fit page to screen':'Enlarge original page';});
+  details.append(enlarge,viewport);
+  const link=safeLink(source.hosting==='manufacturer-hosted'?'Manufacturer PDF source ↗':'Archived manufacturer PDF ↗',source.url+'#page='+page,'manual-button');
+  if(link)details.append(link);group.append(details);
+ }
+ parent.append(group);return true;
+})(content,selected,activeSection,node,safeLink,[{"identity":{"id":"worcester-greenstar-ri-compact-27kw-ng-7733600064","manufacturer":"Worcester Bosch","model":"Greenstar Ri Compact 27kW NG","gcNumber":null,"productNumber":"7733600064","fuel":"Natural Gas"},"source":{"documentReference":"6720813282","revision":"2015/07","url":"https://www.worcester-bosch.co.uk/support/literature/download/release/6720813282/12456","hosting":"manufacturer-hosted"},"sections":{"faultCodes":[52,53,54,55]},"titles":{"52":"Blue-light timing and preliminary fault-finding checks","53":"Group 1 — 1 to 5 slow flashes, without a fast burst","54":"Group 2 — four fast flashes BEFORE 1 to 5 slow flashes","55":"Group 3 — 1 to 5 slow flashes BEFORE four fast flashes"},"notes":{"faultCodes":"Use the full flash sequence, including the position of the fast burst. Table numbers6–15 are not6–15 ordinary flashes. The original tables give possible conditions and checks; a light pattern does not establish a failed component."},"assets":[{"page":52,"file":"page-52.png","width":1283,"height":1800,"bytes":238851,"sha256":"66f8b147757a459f47506834b905226bc153ea0f54b7a34ea12bcde4deb61f43"},{"page":53,"file":"page-53.png","width":1283,"height":1800,"bytes":239981,"sha256":"36c0fec079d9aeecdd433c71df344be78f9d1d61cae391f9c29b6ad37f8fd37c"},{"page":54,"file":"page-54.png","width":1283,"height":1800,"bytes":261210,"sha256":"f61f56a7b46030577ec6c14fb958f7467d3a8611a72a53a2f5738c92b94c3492"},{"page":55,"file":"page-55.png","width":1283,"height":1800,"bytes":269103,"sha256":"17dd4c752d69f4e0cf8fca9ce08003e68705f941e4bce9955ba4899dc2e48bf3"}]},{"identity":{"id":"worcester-greenstar-ri-compact-30kw-ng-7733600066","manufacturer":"Worcester Bosch","model":"Greenstar Ri Compact 30kW NG","gcNumber":null,"productNumber":"7733600066","fuel":"Natural Gas"},"source":{"documentReference":"6720813282","revision":"2015/07","url":"https://www.worcester-bosch.co.uk/support/literature/download/release/6720813282/12456","hosting":"manufacturer-hosted"},"sections":{"faultCodes":[52,53,54,55]},"titles":{"52":"Blue-light timing and preliminary fault-finding checks","53":"Group 1 — 1 to 5 slow flashes, without a fast burst","54":"Group 2 — four fast flashes BEFORE 1 to 5 slow flashes","55":"Group 3 — 1 to 5 slow flashes BEFORE four fast flashes"},"notes":{"faultCodes":"Use the full flash sequence, including the position of the fast burst. Table numbers6–15 are not6–15 ordinary flashes. The original tables give possible conditions and checks; a light pattern does not establish a failed component."},"assets":[{"page":52,"file":"page-52.png","width":1283,"height":1800,"bytes":238851,"sha256":"66f8b147757a459f47506834b905226bc153ea0f54b7a34ea12bcde4deb61f43"},{"page":53,"file":"page-53.png","width":1283,"height":1800,"bytes":239981,"sha256":"36c0fec079d9aeecdd433c71df344be78f9d1d61cae391f9c29b6ad37f8fd37c"},{"page":54,"file":"page-54.png","width":1283,"height":1800,"bytes":261210,"sha256":"f61f56a7b46030577ec6c14fb958f7467d3a8611a72a53a2f5738c92b94c3492"},{"page":55,"file":"page-55.png","width":1283,"height":1800,"bytes":269103,"sha256":"17dd4c752d69f4e0cf8fca9ce08003e68705f941e4bce9955ba4899dc2e48bf3"}]}],"./manual-pages/ri-compact-faults-20261028/");
     (function renderCompactFaultPages(parent,selected,section,node,safeLink,bundles,assetBase){
  const bundle=bundles.find(b=>b.identity.id===selected?.id);
  if(!bundle||['manufacturer','model','gcNumber','productNumber','fuel'].some(k=>(selected[k]??null)!==(bundle.identity[k]??null)))return;

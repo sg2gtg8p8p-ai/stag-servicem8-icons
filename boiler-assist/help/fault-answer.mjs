@@ -83,11 +83,37 @@ function savedFaultAnswer(row,recordId,question,previousLabel=null){
 }
 
 const compactIds=new Set(['worcester-greenstar-i-system-compact-27kw-ng-7733600060','worcester-greenstar-i-system-compact-30kw-ng-7733600062']);
-export function faultAnswer(row,recordId,question,previousLabel=null){
+function previousFaultAnswer(row,recordId,question,previousLabel=null){
  const result=savedFaultAnswer(row,recordId,question,previousLabel);
  if(!compactIds.has(recordId)||result.entries?.length!==1)return result;
  const kind=result.entries[0].codeKind;
  if(kind==='status')return{...result,message:'Operating status — this entry describes an operating or protective state, not a confirmed failed component. Check the exact meaning and fitted configuration.'};
  if(kind==='diagnostic')return{...result,message:'Manufacturer diagnostic/status information for this exact number. It may describe a protective condition or a fault; use the original table. No component failure has been confirmed.'};
  return result;
+}
+
+const riProducts=new Map([['worcester-greenstar-ri-compact-27kw-ng-7733600064','7733600064'],['worcester-greenstar-ri-compact-30kw-ng-7733600066','7733600066']]);
+export function faultAnswer(row,recordId,question,previousLabel=null){
+ if(!riProducts.has(recordId))return previousFaultAnswer(row,recordId,question,previousLabel);
+ const base=previousFaultAnswer(row,recordId,'__ri_sequence_unmatched__'),b=row?.boiler;
+ const norm=v=>typeof v==='string'?v.toLowerCase().trim().replace(/\s+/g,' '):'';
+ const q=norm(question),deny={...base,entries:[],activeLabel:null,message:'Choose the full blue-light sequence: group1 has no fast burst, group2 has four fast flashes BEFORE the slow flashes, group3 has them AFTER. Give the group and1–5 slow flashes. A table row number alone is not a physical flash count.'};
+ if(!b||b.id!==recordId||b.productNumber!==riProducts.get(recordId)||b.fuel!=='Natural Gas'||b.faultCodeFormat!=='worcester-ri-flash'||typeof question!=='string'||question.length>400)return deny;
+ const entries=(b.faultCodes||[]).filter(e=>Array.isArray(e.sourceIds)&&e.sourceIds.length&&e.sourceIds.every(id=>b.sources?.some(s=>s.id===id&&s.documentReference==='6720813282'&&s.revision==='2015/07'&&s.url?.split('#')[0]==='https://www.worcester-bosch.co.uk/support/literature/download/release/6720813282/12456')));
+ let chosen=entries.filter(e=>norm(e.label)===q);
+ if(!chosen.length){
+  const direct=q.match(/^(?:(?:fault|sequence)\s+)?group\s*([123])\s*[:,;-]?\s*([1-5])\s*(?:slow\s+)?flashes?$/);
+  const before=q.match(/^4 fast flashes (?:before|then) ([1-5]) slow flashes?$/);
+  const after=q.match(/^([1-5]) slow flashes? (?:then|before) 4 fast flashes$/);
+  const without=q.match(/^([1-5]) slow flashes?[;,]? (?:with )?no fast (?:burst|flashes)$/);
+  const g=direct?Number(direct[1]):before?2:after?3:without?1:null;
+  const n=direct?Number(direct[2]):Number((before||after||without)?.[1]);
+  if(g)chosen=entries.filter(e=>e.flashGroup===g&&e.slowFlashes===n);
+  else if(/^(?:blue )?light off$/.test(q))chosen=entries.filter(e=>e.indicatorState==='off');
+  else if(/^(?:blue )?light (?:steady on|on steady|on)$/.test(q))chosen=entries.filter(e=>e.indicatorState==='steady on');
+  else if(previousLabel&&/^(what next|next|still the same|checked that|done)$/.test(q))chosen=entries.filter(e=>e.label===previousLabel);
+ }
+ if(chosen.length!==1)return deny;
+ const e=chosen[0];
+ return{...base,entries:[{label:e.label,text:e.value,code:e.code,codeKind:e.codeKind,conditions:[e.conditions],sources:e.sourceIds.map(id=>{const s=b.sources.find(s=>s.id===id);return{url:s.url,title:s.title,reference:s.reference}})}],activeLabel:e.label,message:e.codeKind==='status'?'Operating status — this is a normal blue-light demand indication, not a fault diagnosis.':'Manufacturer meaning for this full flash sequence. Use the original checks; no failed part or passed test has been confirmed.'};
 }

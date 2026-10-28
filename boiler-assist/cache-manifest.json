@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "bc88c11e190c2080",
+  "buildId": "2e51ebb5eff87354",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.28-r5",
+  "appVersion": "2026.10.28-r6",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "sha256": "212a4ee59fb4b9426a3a196f0a285012259ad5150fe98af98058db500e326150",
-      "bytes": 6292795
+      "sha256": "feabda6d0a1ec013687563d7b0d6c574fe648a695a7d9c59d0c8fd0e756bbea1",
+      "bytes": 6313367
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -57,7 +57,7 @@
     },
     {
       "url": "./help/ai-client.mjs",
-      "sha256": "8108d3a4eacec01c11a432df1b784ba5ab7513b99f88c6f8215651c1fa136659",
+      "sha256": "7117d0c29b0d9ca470250e3a07734a079f5008d6f24740c328c94bb0c470615d",
       "bytes": 8047
     },
     {
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "933211d58ba21c4e6a7ed78f4db7e6b320e6b5779de53418f0fb42669b2ad346",
-      "bytes": 1200850
+      "sha256": "9c957a60ed0575ae7fddd39a89c1e1231450bef3fecc22cd0ac952d1d1c36f93",
+      "bytes": 1207319
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "d968b78e96955d28bff808cbba6c2db61046c1caea3f9595f956ca6faebbf0b3",
-      "bytes": 35866
+      "sha256": "935d961c06d8cb6215f18b808677ffcd6bd9637adf62b87154f8a29d5c566f40",
+      "bytes": 36140
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -147,8 +147,8 @@
     },
     {
       "url": "./help/fault-answer.mjs",
-      "sha256": "8b3f9f0542cb05a0871a6fbd64df56b73a0d6ba17f3ca61359eb06ef191b3ab2",
-      "bytes": 11874
+      "sha256": "c8c28438b29edbb26449b53d075f4672ad5e1d714095338324d46c113058ddaf",
+      "bytes": 14780
     },
     {
       "url": "./help/manual-search.mjs",
@@ -1114,7 +1114,27 @@
       "url": "./manual-pages/isystem-faults-20261028/6720813280/page-64.png",
       "sha256": "d41871c5299ef8268eed2a29f25add1e8a964b8fe4a27c17de2aed83be0f86e3",
       "bytes": 390788
+    },
+    {
+      "url": "./manual-pages/ri-compact-faults-20261028/6720813282/page-52.png",
+      "sha256": "66f8b147757a459f47506834b905226bc153ea0f54b7a34ea12bcde4deb61f43",
+      "bytes": 238851
+    },
+    {
+      "url": "./manual-pages/ri-compact-faults-20261028/6720813282/page-53.png",
+      "sha256": "36c0fec079d9aeecdd433c71df344be78f9d1d61cae391f9c29b6ad37f8fd37c",
+      "bytes": 239981
+    },
+    {
+      "url": "./manual-pages/ri-compact-faults-20261028/6720813282/page-54.png",
+      "sha256": "f61f56a7b46030577ec6c14fb958f7467d3a8611a72a53a2f5738c92b94c3492",
+      "bytes": 261210
+    },
+    {
+      "url": "./manual-pages/ri-compact-faults-20261028/6720813282/page-55.png",
+      "sha256": "17dd4c752d69f4e0cf8fca9ce08003e68705f941e4bce9955ba4899dc2e48bf3",
+      "bytes": 269103
     }
   ],
-  "totalBytes": 79343988
+  "totalBytes": 80383354
 }
