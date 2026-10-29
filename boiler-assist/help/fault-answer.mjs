@@ -1,3 +1,9 @@
+import {greenstar1000FaultAnswer} from './greenstar1000-fault-guard.mjs';
+import {heat2FaultAnswer} from './heat2-fault-guard.mjs';
+import {originalLogicHeatFaultAnswer} from './original-logic-heat-fault-guard.mjs';
+import {originalCombiFaultAnswer} from './original-combi-fault-guard.mjs';
+import {originalSystemFaultAnswer} from './original-system-fault-guard.mjs';
+import {originalHeatFaultAnswer} from './original-heat-fault-guard.mjs';
 // Shared, deterministic lookup over the exact selected manufacturer's record.
 // No generated diagnostic steps, part recommendation, supplier call or user data storage.
 function savedFaultAnswer(row,recordId,question,previousLabel=null){
@@ -93,7 +99,7 @@ function previousFaultAnswer(row,recordId,question,previousLabel=null){
 }
 
 const riProducts=new Map([['worcester-greenstar-ri-compact-27kw-ng-7733600064','7733600064'],['worcester-greenstar-ri-compact-30kw-ng-7733600066','7733600066']]);
-export function faultAnswer(row,recordId,question,previousLabel=null){
+function beforeOriginalHeatFaultAnswer(row,recordId,question,previousLabel=null){
  if(!riProducts.has(recordId))return previousFaultAnswer(row,recordId,question,previousLabel);
  const base=previousFaultAnswer(row,recordId,'__ri_sequence_unmatched__'),b=row?.boiler;
  const norm=v=>typeof v==='string'?v.toLowerCase().trim().replace(/\s+/g,' '):'';
@@ -117,3 +123,15 @@ export function faultAnswer(row,recordId,question,previousLabel=null){
  const e=chosen[0];
  return{...base,entries:[{label:e.label,text:e.value,code:e.code,codeKind:e.codeKind,conditions:[e.conditions],sources:e.sourceIds.map(id=>{const s=b.sources.find(s=>s.id===id);return{url:s.url,title:s.title,reference:s.reference}})}],activeLabel:e.label,message:e.codeKind==='status'?'Operating status — this is a normal blue-light demand indication, not a fault diagnosis.':'Manufacturer meaning for this full flash sequence. Use the original checks; no failed part or passed test has been confirmed.'};
 }
+
+function beforeOriginalSystemFaultAnswer(row,id,question,last=null){return originalHeatFaultAnswer(row,id,question,last,beforeOriginalHeatFaultAnswer);}
+
+function beforeOriginalCombiFaultAnswer(row,id,question,last=null){return originalSystemFaultAnswer(row,id,question,last,beforeOriginalSystemFaultAnswer);}
+
+function beforeOriginalLogicHeatFaultAnswer(row,id,question,last=null){return originalCombiFaultAnswer(row,id,question,last,beforeOriginalCombiFaultAnswer);}
+
+function beforeHeat2FaultAnswer(row,id,question,last=null){return originalLogicHeatFaultAnswer(row,id,question,last,beforeOriginalLogicHeatFaultAnswer);}
+
+function before1000FaultAnswer(row,id,question,last=null){return heat2FaultAnswer(row,id,question,last,beforeHeat2FaultAnswer);}
+
+export function faultAnswer(row,id,question,last=null){return greenstar1000FaultAnswer(row,id,question,last,before1000FaultAnswer);}

@@ -39727,8 +39727,49 @@
     "generation": "Original Logic MAX Heat H; exact GC group in UIN 219010 A04",
     "gcNumber": "41-796-17",
     "productNumber": null,
-    "technicalData": {},
-    "parts": []
+    "technicalData": {
+      "0": {
+        "value": "Natural Gas G20; nominal 20 mbar"
+      },
+      "1": {
+        "value": "4.9 / 12.1 kW"
+      },
+      "2": {
+        "value": "4.8 / 12.0 kW at 70°C mean water temperature"
+      },
+      "3": {
+        "value": "5.1 / 13.0 kW at 40°C mean water temperature"
+      },
+      "4": {
+        "value": "0.500 / 1.246 m³/h; source calculation uses 38.7 MJ/m³ gross / 34.9 MJ/m³ net"
+      },
+      "5": {
+        "value": "9.1 / 8.5%; table 1 prints ±0.7 percentage points"
+      },
+      "6": {
+        "value": "2.5 bar"
+      },
+      "7": {
+        "value": "0.45 / 30.5 m"
+      },
+      "8": {
+        "value": "230 V, 50 Hz / 16 W"
+      },
+      "9": {
+        "value": "1.2 litres"
+      },
+      "10": {
+        "value": "700 × 395 × 278 mm"
+      },
+      "11": {
+        "value": "22.7 / 28.7 kg"
+      }
+    },
+    "parts": [
+      {
+        "value": "The exploded view and legend are included on page 19. Supply model, GC and serial number when checking current spare-part applicability. The manual does not provide a current orderable catalogue, stock or price; no later model’s parts have been substituted."
+      }
+    ]
   },
   {
     "id": "ideal-logic-max-heat-h15-41-796-18",
@@ -39743,8 +39784,49 @@
     "generation": "Original Logic MAX Heat H; exact GC group in UIN 219010 A04",
     "gcNumber": "41-796-18",
     "productNumber": null,
-    "technicalData": {},
-    "parts": []
+    "technicalData": {
+      "0": {
+        "value": "Natural Gas G20; nominal 20 mbar"
+      },
+      "1": {
+        "value": "4.9 / 15.1 kW"
+      },
+      "2": {
+        "value": "4.8 / 15.0 kW at 70°C mean water temperature"
+      },
+      "3": {
+        "value": "5.1 / 15.9 kW at 40°C mean water temperature"
+      },
+      "4": {
+        "value": "0.500 / 1.537 m³/h; source calculation uses 38.7 MJ/m³ gross / 34.9 MJ/m³ net"
+      },
+      "5": {
+        "value": "9.3 / 8.8%; table 1 prints ±0.7 percentage points"
+      },
+      "6": {
+        "value": "2.5 bar"
+      },
+      "7": {
+        "value": "0.45 / 30.5 m"
+      },
+      "8": {
+        "value": "230 V, 50 Hz / 20 W"
+      },
+      "9": {
+        "value": "1.2 litres"
+      },
+      "10": {
+        "value": "700 × 395 × 278 mm"
+      },
+      "11": {
+        "value": "22.7 / 28.7 kg"
+      }
+    },
+    "parts": [
+      {
+        "value": "The exploded view and legend are included on page 19. Supply model, GC and serial number when checking current spare-part applicability. The manual does not provide a current orderable catalogue, stock or price; no later model’s parts have been substituted."
+      }
+    ]
   },
   {
     "id": "ideal-logic-max-heat-h18-41-796-19",
@@ -39759,8 +39841,49 @@
     "generation": "Original Logic MAX Heat H; exact GC group in UIN 219010 A04",
     "gcNumber": "41-796-19",
     "productNumber": null,
-    "technicalData": {},
-    "parts": []
+    "technicalData": {
+      "0": {
+        "value": "Natural Gas G20; nominal 20 mbar"
+      },
+      "1": {
+        "value": "4.9 / 18.1 kW"
+      },
+      "2": {
+        "value": "4.8 / 18.0 kW at 70°C mean water temperature"
+      },
+      "3": {
+        "value": "5.1 / 19.1 kW at 40°C mean water temperature"
+      },
+      "4": {
+        "value": "0.500 / 1.872 m³/h; source calculation uses 38.7 MJ/m³ gross / 34.9 MJ/m³ net"
+      },
+      "5": {
+        "value": "9.5 / 8.9%; table 1 prints ±0.7 percentage points"
+      },
+      "6": {
+        "value": "2.5 bar"
+      },
+      "7": {
+        "value": "0.45 / 30.5 m"
+      },
+      "8": {
+        "value": "230 V, 50 Hz / 24 W"
+      },
+      "9": {
+        "value": "1.2 litres"
+      },
+      "10": {
+        "value": "700 × 395 × 278 mm"
+      },
+      "11": {
+        "value": "22.7 / 28.7 kg"
+      }
+    },
+    "parts": [
+      {
+        "value": "The exploded view and legend are included on page 19. Supply model, GC and serial number when checking current spare-part applicability. The manual does not provide a current orderable catalogue, stock or price; no later model’s parts have been substituted."
+      }
+    ]
   },
   {
     "id": "ideal-logic-max-heat-h24-41-796-20",
@@ -39775,8 +39898,49 @@
     "generation": "Original Logic MAX Heat H; exact GC group in UIN 219010 A04",
     "gcNumber": "41-796-20",
     "productNumber": null,
-    "technicalData": {},
-    "parts": []
+    "technicalData": {
+      "0": {
+        "value": "Natural Gas G20; nominal 20 mbar"
+      },
+      "1": {
+        "value": "4.9 / 24.3 kW"
+      },
+      "2": {
+        "value": "4.8 / 24.2 kW at 70°C mean water temperature"
+      },
+      "3": {
+        "value": "5.1 / 25.6 kW at 40°C mean water temperature"
+      },
+      "4": {
+        "value": "0.500 / 2.512 m³/h; source calculation uses 38.7 MJ/m³ gross / 34.9 MJ/m³ net"
+      },
+      "5": {
+        "value": "9.5 / 8.8%; table 1 prints ±0.7 percentage points"
+      },
+      "6": {
+        "value": "2.5 bar"
+      },
+      "7": {
+        "value": "0.45 / 30.5 m"
+      },
+      "8": {
+        "value": "230 V, 50 Hz / 39 W"
+      },
+      "9": {
+        "value": "1.2 litres"
+      },
+      "10": {
+        "value": "700 × 395 × 278 mm"
+      },
+      "11": {
+        "value": "22.7 / 28.7 kg"
+      }
+    },
+    "parts": [
+      {
+        "value": "The exploded view and legend are included on page 19. Supply model, GC and serial number when checking current spare-part applicability. The manual does not provide a current orderable catalogue, stock or price; no later model’s parts have been substituted."
+      }
+    ]
   },
   {
     "id": "ideal-logic-max-heat-h30-41-796-21",
@@ -39791,8 +39955,49 @@
     "generation": "Original Logic MAX Heat H; exact GC group in UIN 219010 A04",
     "gcNumber": "41-796-21",
     "productNumber": null,
-    "technicalData": {},
-    "parts": []
+    "technicalData": {
+      "0": {
+        "value": "Natural Gas G20; nominal 20 mbar"
+      },
+      "1": {
+        "value": "6.1 / 30.4 kW"
+      },
+      "2": {
+        "value": "6.1 / 30.3 kW at 70°C mean water temperature"
+      },
+      "3": {
+        "value": "6.4 / 31.0 kW at 40°C mean water temperature"
+      },
+      "4": {
+        "value": "0.623 / 3.135 m³/h; source calculation uses 38.7 MJ/m³ gross / 34.9 MJ/m³ net"
+      },
+      "5": {
+        "value": "9.3 / 8.8%; table 1 prints ±0.7 percentage points"
+      },
+      "6": {
+        "value": "2.5 bar"
+      },
+      "7": {
+        "value": "0.45 / 30.5 m"
+      },
+      "8": {
+        "value": "230 V, 50 Hz / 47 W"
+      },
+      "9": {
+        "value": "1.2 litres"
+      },
+      "10": {
+        "value": "700 × 395 × 278 mm"
+      },
+      "11": {
+        "value": "22.7 / 28.7 kg"
+      }
+    },
+    "parts": [
+      {
+        "value": "The exploded view and legend are included on page 19. Supply model, GC and serial number when checking current spare-part applicability. The manual does not provide a current orderable catalogue, stock or price; no later model’s parts have been substituted."
+      }
+    ]
   },
   {
     "id": "ideal-logic-max-system-s15-41-796-13",
@@ -39808,8 +40013,49 @@
     "generation": "Original Logic MAX System S; exact GC group in UIN 219009 A04",
     "gcNumber": "41-796-13",
     "productNumber": null,
-    "technicalData": {},
-    "parts": []
+    "technicalData": {
+      "0": {
+        "value": "Natural Gas G20; nominal 20 mbar"
+      },
+      "1": {
+        "value": "4.9 / 15.1 kW"
+      },
+      "2": {
+        "value": "4.8 / 15.0 kW at 70°C mean water temperature"
+      },
+      "3": {
+        "value": "5.1 / 15.9 kW at 40°C mean water temperature"
+      },
+      "4": {
+        "value": "0.500 / 1.537 m³/h; source calculation uses 38.7 MJ/m³ gross / 34.9 MJ/m³ net"
+      },
+      "5": {
+        "value": "9.3 / 8.8%; table 1 prints ±0.7 percentage points"
+      },
+      "6": {
+        "value": "2.5 bar"
+      },
+      "7": {
+        "value": "230 V, 50 Hz / 73 W"
+      },
+      "8": {
+        "value": "1.2 litres"
+      },
+      "9": {
+        "value": "700 × 395 × 278 mm"
+      },
+      "10": {
+        "value": "26.1 / 34.0 kg"
+      },
+      "11": {
+        "value": "30 / 80°C"
+      }
+    },
+    "parts": [
+      {
+        "value": "The original exploded view and legend are included on page 17. Use model, GC and serial number to confirm current spare-part applicability. These pages do not establish a current orderable catalogue, stock or prices. No part from System 2, Heat H or Combi has been substituted."
+      }
+    ]
   },
   {
     "id": "ideal-logic-max-system-s18-41-796-14",
@@ -39825,8 +40071,49 @@
     "generation": "Original Logic MAX System S; exact GC group in UIN 219009 A04",
     "gcNumber": "41-796-14",
     "productNumber": null,
-    "technicalData": {},
-    "parts": []
+    "technicalData": {
+      "0": {
+        "value": "Natural Gas G20; nominal 20 mbar"
+      },
+      "1": {
+        "value": "4.9 / 18.1 kW"
+      },
+      "2": {
+        "value": "4.8 / 18.0 kW at 70°C mean water temperature"
+      },
+      "3": {
+        "value": "5.1 / 19.1 kW at 40°C mean water temperature"
+      },
+      "4": {
+        "value": "0.500 / 1.872 m³/h; source calculation uses 38.7 MJ/m³ gross / 34.9 MJ/m³ net"
+      },
+      "5": {
+        "value": "9.5 / 8.9%; table 1 prints ±0.7 percentage points"
+      },
+      "6": {
+        "value": "2.5 bar"
+      },
+      "7": {
+        "value": "230 V, 50 Hz / 78 W"
+      },
+      "8": {
+        "value": "1.2 litres"
+      },
+      "9": {
+        "value": "700 × 395 × 278 mm"
+      },
+      "10": {
+        "value": "26.1 / 34.0 kg"
+      },
+      "11": {
+        "value": "30 / 80°C"
+      }
+    },
+    "parts": [
+      {
+        "value": "The original exploded view and legend are included on page 17. Use model, GC and serial number to confirm current spare-part applicability. These pages do not establish a current orderable catalogue, stock or prices. No part from System 2, Heat H or Combi has been substituted."
+      }
+    ]
   },
   {
     "id": "ideal-logic-max-system-s24-41-796-15",
@@ -39842,8 +40129,49 @@
     "generation": "Original Logic MAX System S; exact GC group in UIN 219009 A04",
     "gcNumber": "41-796-15",
     "productNumber": null,
-    "technicalData": {},
-    "parts": []
+    "technicalData": {
+      "0": {
+        "value": "Natural Gas G20; nominal 20 mbar"
+      },
+      "1": {
+        "value": "4.9 / 24.3 kW"
+      },
+      "2": {
+        "value": "4.8 / 24.2 kW at 70°C mean water temperature"
+      },
+      "3": {
+        "value": "5.1 / 25.6 kW at 40°C mean water temperature"
+      },
+      "4": {
+        "value": "0.500 / 2.512 m³/h; source calculation uses 38.7 MJ/m³ gross / 34.9 MJ/m³ net"
+      },
+      "5": {
+        "value": "9.5 / 8.8%; table 1 prints ±0.7 percentage points"
+      },
+      "6": {
+        "value": "2.5 bar"
+      },
+      "7": {
+        "value": "230 V, 50 Hz / 94 W"
+      },
+      "8": {
+        "value": "1.2 litres"
+      },
+      "9": {
+        "value": "700 × 395 × 278 mm"
+      },
+      "10": {
+        "value": "26.1 / 34.0 kg"
+      },
+      "11": {
+        "value": "30 / 80°C"
+      }
+    },
+    "parts": [
+      {
+        "value": "The original exploded view and legend are included on page 17. Use model, GC and serial number to confirm current spare-part applicability. These pages do not establish a current orderable catalogue, stock or prices. No part from System 2, Heat H or Combi has been substituted."
+      }
+    ]
   },
   {
     "id": "ideal-logic-max-system-s30-41-796-16",
@@ -39859,8 +40187,49 @@
     "generation": "Original Logic MAX System S; exact GC group in UIN 219009 A04",
     "gcNumber": "41-796-16",
     "productNumber": null,
-    "technicalData": {},
-    "parts": []
+    "technicalData": {
+      "0": {
+        "value": "Natural Gas G20; nominal 20 mbar"
+      },
+      "1": {
+        "value": "6.1 / 30.4 kW"
+      },
+      "2": {
+        "value": "6.1 / 30.3 kW at 70°C mean water temperature"
+      },
+      "3": {
+        "value": "6.4 / 31.0 kW at 40°C mean water temperature"
+      },
+      "4": {
+        "value": "0.622 / 3.135 m³/h; source calculation uses 38.7 MJ/m³ gross / 34.9 MJ/m³ net"
+      },
+      "5": {
+        "value": "9.3 / 8.8%; table 1 prints ±0.7 percentage points"
+      },
+      "6": {
+        "value": "2.5 bar"
+      },
+      "7": {
+        "value": "230 V, 50 Hz / 100 W"
+      },
+      "8": {
+        "value": "1.2 litres"
+      },
+      "9": {
+        "value": "700 × 395 × 278 mm"
+      },
+      "10": {
+        "value": "26.1 / 34.0 kg"
+      },
+      "11": {
+        "value": "30 / 80°C"
+      }
+    },
+    "parts": [
+      {
+        "value": "The original exploded view and legend are included on page 17. Use model, GC and serial number to confirm current spare-part applicability. These pages do not establish a current orderable catalogue, stock or prices. No part from System 2, Heat H or Combi has been substituted."
+      }
+    ]
   },
   {
     "id": "ideal-logic-max-combi-c24-47-349-56",
@@ -39876,8 +40245,67 @@
     "generation": "Original Logic MAX Combi C; exact GC group in UIN 223262 A01",
     "gcNumber": "47-349-56",
     "productNumber": null,
-    "technicalData": {},
-    "parts": []
+    "technicalData": {
+      "0": {
+        "value": "Natural Gas G20; nominal 20 mbar"
+      },
+      "1": {
+        "value": "4.9 / 24.3 kW"
+      },
+      "2": {
+        "value": "24.3 kW"
+      },
+      "3": {
+        "value": "4.8 / 24.2 kW at 70°C mean water temperature"
+      },
+      "4": {
+        "value": "5.1 / 25.6 kW at 40°C mean water temperature"
+      },
+      "5": {
+        "value": "24.2 kW"
+      },
+      "6": {
+        "value": "0.500 / 2.512 m³/h"
+      },
+      "7": {
+        "value": "2.512 m³/h"
+      },
+      "8": {
+        "value": "9.9 litres/min"
+      },
+      "9": {
+        "value": "9.5 / 8.8%; each ±0.7 percentage points"
+      },
+      "10": {
+        "value": "2.5 bar"
+      },
+      "11": {
+        "value": "10 bar"
+      },
+      "12": {
+        "value": "0.8 bar; source maximum-flow condition. See table notes for operating minimum and model-specific low-pressure conditions."
+      },
+      "13": {
+        "value": "230 V, 50 Hz / 94 W"
+      },
+      "14": {
+        "value": "1.2 / 0.5 litres"
+      },
+      "15": {
+        "value": "700 × 395 × 278 mm"
+      },
+      "16": {
+        "value": "29.2 / 36.5 kg"
+      },
+      "17": {
+        "value": "CH 30–80°C; DHW 40–65°C"
+      }
+    },
+    "parts": [
+      {
+        "value": "Original exploded layout and legend are included on page 17. Use exact model, GC and serial number to confirm current spare-part applicability. These source pages do not verify current SKU fit, stock or prices."
+      }
+    ]
   },
   {
     "id": "ideal-logic-max-combi-c30-47-349-57",
@@ -39893,8 +40321,67 @@
     "generation": "Original Logic MAX Combi C; exact GC group in UIN 223262 A01",
     "gcNumber": "47-349-57",
     "productNumber": null,
-    "technicalData": {},
-    "parts": []
+    "technicalData": {
+      "0": {
+        "value": "Natural Gas G20; nominal 20 mbar"
+      },
+      "1": {
+        "value": "6.1 / 24.3 kW"
+      },
+      "2": {
+        "value": "30.4 kW"
+      },
+      "3": {
+        "value": "6.1 / 24.2 kW at 70°C mean water temperature"
+      },
+      "4": {
+        "value": "6.4 / 25.6 kW at 40°C mean water temperature"
+      },
+      "5": {
+        "value": "30.3 kW"
+      },
+      "6": {
+        "value": "0.627 / 2.512 m³/h"
+      },
+      "7": {
+        "value": "3.135 m³/h"
+      },
+      "8": {
+        "value": "12.4 litres/min"
+      },
+      "9": {
+        "value": "9.3 / 8.8%; each ±0.7 percentage points"
+      },
+      "10": {
+        "value": "2.5 bar"
+      },
+      "11": {
+        "value": "10 bar"
+      },
+      "12": {
+        "value": "1.3 bar; source maximum-flow condition. See table notes for operating minimum and model-specific low-pressure conditions."
+      },
+      "13": {
+        "value": "230 V, 50 Hz / 101 W"
+      },
+      "14": {
+        "value": "1.2 / 0.5 litres"
+      },
+      "15": {
+        "value": "700 × 395 × 278 mm"
+      },
+      "16": {
+        "value": "29.3 / 36.6 kg"
+      },
+      "17": {
+        "value": "CH 30–80°C; DHW 40–65°C"
+      }
+    },
+    "parts": [
+      {
+        "value": "Original exploded layout and legend are included on page 17. Use exact model, GC and serial number to confirm current spare-part applicability. These source pages do not verify current SKU fit, stock or prices."
+      }
+    ]
   },
   {
     "id": "ideal-logic-max-combi-c35-47-349-58",
@@ -39910,8 +40397,67 @@
     "generation": "Original Logic MAX Combi C; exact GC group in UIN 223262 A01",
     "gcNumber": "47-349-58",
     "productNumber": null,
-    "technicalData": {},
-    "parts": []
+    "technicalData": {
+      "0": {
+        "value": "Natural Gas G20; nominal 20 mbar"
+      },
+      "1": {
+        "value": "7.1 / 24.3 kW"
+      },
+      "2": {
+        "value": "35.4 kW"
+      },
+      "3": {
+        "value": "7.1 / 24.2 kW at 70°C mean water temperature"
+      },
+      "4": {
+        "value": "7.5 / 25.6 kW at 40°C mean water temperature"
+      },
+      "5": {
+        "value": "35.3 kW"
+      },
+      "6": {
+        "value": "0.734 / 2.512 m³/h"
+      },
+      "7": {
+        "value": "3.657 m³/h"
+      },
+      "8": {
+        "value": "14.5 litres/min"
+      },
+      "9": {
+        "value": "9.5 / 8.9%; each ±0.7 percentage points"
+      },
+      "10": {
+        "value": "2.5 bar"
+      },
+      "11": {
+        "value": "10 bar"
+      },
+      "12": {
+        "value": "1.3 bar; source maximum-flow condition. See table notes for operating minimum and model-specific low-pressure conditions."
+      },
+      "13": {
+        "value": "230 V, 50 Hz / 114 W"
+      },
+      "14": {
+        "value": "1.2 / 0.5 litres"
+      },
+      "15": {
+        "value": "700 × 395 × 278 mm"
+      },
+      "16": {
+        "value": "29.4 / 36.7 kg"
+      },
+      "17": {
+        "value": "CH 30–80°C; DHW 40–65°C"
+      }
+    },
+    "parts": [
+      {
+        "value": "Original exploded layout and legend are included on page 17. Use exact model, GC and serial number to confirm current spare-part applicability. These source pages do not verify current SKU fit, stock or prices."
+      }
+    ]
   },
   {
     "id": "worcester-greenstar-12ri-original-ng-41-311-63",
@@ -40071,7 +40617,44 @@
     "generation": "Original Logic Heat; GC group in UIN 205862 A06",
     "gcNumber": "41-399-99",
     "productNumber": null,
-    "technicalData": {},
+    "technicalData": {
+      "0": {
+        "value": "Natural Gas G20; nominal 20 mbar"
+      },
+      "1": {
+        "value": "4.9 / 12.1 kW"
+      },
+      "2": {
+        "value": "5.4 / 13.4 kW"
+      },
+      "3": {
+        "value": "4.8 / 12.0 kW at 70°C mean water temperature"
+      },
+      "4": {
+        "value": "5.1 / 13.0 kW at 40°C mean water temperature"
+      },
+      "5": {
+        "value": "0.500 / 1.246 m³/h; table basis 38.7 MJ/m³ gross / 34.9 MJ/m³ net"
+      },
+      "6": {
+        "value": "2.5 bar"
+      },
+      "7": {
+        "value": "0.45 / 30.5 m"
+      },
+      "8": {
+        "value": "230 V, 50 Hz / 23 W"
+      },
+      "9": {
+        "value": "1.2 litres"
+      },
+      "10": {
+        "value": "700 × 395 × 278 mm"
+      },
+      "11": {
+        "value": "23 / 28.7 kg"
+      }
+    },
     "parts": []
   },
   {
@@ -40088,7 +40671,44 @@
     "generation": "Original Logic Heat; GC group in UIN 205862 A06",
     "gcNumber": "41-409-93",
     "productNumber": null,
-    "technicalData": {},
+    "technicalData": {
+      "0": {
+        "value": "Natural Gas G20; nominal 20 mbar"
+      },
+      "1": {
+        "value": "4.9 / 15.1 kW"
+      },
+      "2": {
+        "value": "5.4 / 16.6 kW"
+      },
+      "3": {
+        "value": "4.8 / 15.0 kW at 70°C mean water temperature"
+      },
+      "4": {
+        "value": "5.1 / 15.9 kW at 40°C mean water temperature"
+      },
+      "5": {
+        "value": "0.500 / 1.537 m³/h; table basis 38.7 MJ/m³ gross / 34.9 MJ/m³ net"
+      },
+      "6": {
+        "value": "2.5 bar"
+      },
+      "7": {
+        "value": "0.45 / 30.5 m"
+      },
+      "8": {
+        "value": "230 V, 50 Hz / 26 W"
+      },
+      "9": {
+        "value": "1.2 litres"
+      },
+      "10": {
+        "value": "700 × 395 × 278 mm"
+      },
+      "11": {
+        "value": "23 / 28.7 kg"
+      }
+    },
     "parts": []
   },
   {
@@ -40105,7 +40725,44 @@
     "generation": "Original Logic Heat; GC group in UIN 205862 A06",
     "gcNumber": "41-409-94",
     "productNumber": null,
-    "technicalData": {},
+    "technicalData": {
+      "0": {
+        "value": "Natural Gas G20; nominal 20 mbar"
+      },
+      "1": {
+        "value": "4.9 / 18.1 kW"
+      },
+      "2": {
+        "value": "5.4 / 20.1 kW"
+      },
+      "3": {
+        "value": "4.8 / 18.0 kW at 70°C mean water temperature"
+      },
+      "4": {
+        "value": "5.1 / 19.1 kW at 40°C mean water temperature"
+      },
+      "5": {
+        "value": "0.500 / 1.872 m³/h; table basis 38.7 MJ/m³ gross / 34.9 MJ/m³ net"
+      },
+      "6": {
+        "value": "2.5 bar"
+      },
+      "7": {
+        "value": "0.45 / 30.5 m"
+      },
+      "8": {
+        "value": "230 V, 50 Hz / 31 W"
+      },
+      "9": {
+        "value": "1.2 litres"
+      },
+      "10": {
+        "value": "700 × 395 × 278 mm"
+      },
+      "11": {
+        "value": "23 / 28.7 kg"
+      }
+    },
     "parts": [
       {
         "value": "176046 — PIPEWORK SEAL AND GASKET KIT. Original Logic Heat 18, GC41-409-94, manufacturer UIN205839 only. Confirm current supersession and the exact fitted revision/serial before quoting. A fault code does not confirm part failure."
@@ -40165,7 +40822,44 @@
     "generation": "Original Logic Heat; GC group in UIN 205862 A06",
     "gcNumber": "41-409-95",
     "productNumber": null,
-    "technicalData": {},
+    "technicalData": {
+      "0": {
+        "value": "Natural Gas G20; nominal 20 mbar"
+      },
+      "1": {
+        "value": "4.9 / 24.3 kW"
+      },
+      "2": {
+        "value": "5.4 / 27.0 kW"
+      },
+      "3": {
+        "value": "4.8 / 24.2 kW at 70°C mean water temperature"
+      },
+      "4": {
+        "value": "5.1 / 25.6 kW at 40°C mean water temperature"
+      },
+      "5": {
+        "value": "0.500 / 2.512 m³/h; table basis 38.7 MJ/m³ gross / 34.9 MJ/m³ net"
+      },
+      "6": {
+        "value": "2.5 bar"
+      },
+      "7": {
+        "value": "0.45 / 30.5 m"
+      },
+      "8": {
+        "value": "230 V, 50 Hz / 46 W"
+      },
+      "9": {
+        "value": "1.2 litres"
+      },
+      "10": {
+        "value": "700 × 395 × 278 mm"
+      },
+      "11": {
+        "value": "23 / 28.7 kg"
+      }
+    },
     "parts": []
   },
   {
@@ -40182,7 +40876,44 @@
     "generation": "Original Logic Heat; GC group in UIN 205862 A06",
     "gcNumber": "41-409-96",
     "productNumber": null,
-    "technicalData": {},
+    "technicalData": {
+      "0": {
+        "value": "Natural Gas G20; nominal 20 mbar"
+      },
+      "1": {
+        "value": "6.1 / 30.4 kW"
+      },
+      "2": {
+        "value": "6.7 / 33.7 kW"
+      },
+      "3": {
+        "value": "6.1 / 30.3 kW at 70°C mean water temperature"
+      },
+      "4": {
+        "value": "6.4 / 31.0 kW at 40°C mean water temperature"
+      },
+      "5": {
+        "value": "0.623 / 3.135 m³/h; table basis 38.7 MJ/m³ gross / 34.9 MJ/m³ net"
+      },
+      "6": {
+        "value": "2.5 bar"
+      },
+      "7": {
+        "value": "0.45 / 30.5 m"
+      },
+      "8": {
+        "value": "230 V, 50 Hz / 48 W"
+      },
+      "9": {
+        "value": "1.2 litres"
+      },
+      "10": {
+        "value": "700 × 395 × 278 mm"
+      },
+      "11": {
+        "value": "23 / 28.7 kg"
+      }
+    },
     "parts": []
   },
   {

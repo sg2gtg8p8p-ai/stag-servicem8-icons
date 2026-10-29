@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "e9c5bac98d44e117",
+  "buildId": "705354f7abf2f327",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.28-r7",
+  "appVersion": "2026.10.29-r1",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "sha256": "642be8a9497423ce30afac2ec894f8bd556f38cc4801b9371b328763aaf1f280",
-      "bytes": 6353431
+      "sha256": "e2e45cddfabca966b26720e6c050f1e4cfafb9c6ef0f2feb9d2e7a14f0e12ab6",
+      "bytes": 6907435
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -37,8 +37,8 @@
     },
     {
       "url": "./data/search-index.json",
-      "sha256": "5df2affb8db13d8e5e4dc7084bda11afa90f8e78e1c2135e4be3a104c662e823",
-      "bytes": 996533
+      "sha256": "2050057b56b66c065422ea0510758db0a72ed7bf6657f6817c5bfe86a920f88f",
+      "bytes": 1015507
     },
     {
       "url": "./decoder.js",
@@ -57,7 +57,7 @@
     },
     {
       "url": "./help/ai-client.mjs",
-      "sha256": "b6c9c2408b081d9eef5dcba9178580df1c93ff55b66411b965bf4a52e1fdd5d9",
+      "sha256": "63d22b139239574afc349cc0983f4493743c4330a17356cc084140e141707b47",
       "bytes": 8047
     },
     {
@@ -92,8 +92,8 @@
     },
     {
       "url": "./help/ui.mjs",
-      "sha256": "e42f5e40c8718e448c0d0f6d6ffa2a76adccf76746223e45242b33e570987d6b",
-      "bytes": 33720
+      "sha256": "641025feb2b243798542894172423d757c52dba81868b8b01c3f80c36867e98d",
+      "bytes": 36070
     },
     {
       "url": "./icons/256.png",
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "df9fe32b72c8070571631992f15c1703e9024cd7b6fae4b53911337e6bd29295",
-      "bytes": 1235129
+      "sha256": "f0ba6815b97d18ec5a0dfd869b5342fe3590f6f1021cd790c8ca19dcf5d18ed2",
+      "bytes": 1454441
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "cca16957bd1b0d17bf3dc4da4ca699fb6409d0630272ae5eb808f01c1fc31ae0",
-      "bytes": 36473
+      "sha256": "0101b7010dcc9addfd383c3ab605dbfdbd95ec9c0bd24d77e8d8170478002360",
+      "bytes": 39736
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -147,8 +147,8 @@
     },
     {
       "url": "./help/fault-answer.mjs",
-      "sha256": "c8c28438b29edbb26449b53d075f4672ad5e1d714095338324d46c113058ddaf",
-      "bytes": 14780
+      "sha256": "72ecf34048252e7a17201c4b2a5136e0fa16c0d1a5f88b1bcfcd607cf7d23ad9",
+      "bytes": 16121
     },
     {
       "url": "./help/manual-search.mjs",
@@ -1239,7 +1239,1027 @@
       "url": "./manual-pages/classic-cdi-20261028/6720803599/page-51.png",
       "sha256": "cda1909fe5029f6baf9ba5e8e5af5ad931c498fa6f6fda8b3e7ffc266d5ab281",
       "bytes": 62727
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-1.png",
+      "sha256": "3ec3b314702c2c0759a18c9bd4f642461c582212edc06c511fb5a814db7f324f",
+      "bytes": 1062070
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-8.png",
+      "sha256": "42a7065cf0ec58f7c066256265523956d04d86c2b28cda29c15725e673be8e8e",
+      "bytes": 319272
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-9.png",
+      "sha256": "64afa4b97d1d5bce71db058fd2cada1c0ea92072fcfc409b3b8832c2387fcb2b",
+      "bytes": 274383
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-12.png",
+      "sha256": "45049c3b1bbb6c8ed64d9b06953c20e4c62d52bb02b0011c1723a077af41dcc0",
+      "bytes": 537165
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-19.png",
+      "sha256": "fc91948cf266f04e2cd4023d6c9d6d582415f6fbda80381ccc8014636242b102",
+      "bytes": 474362
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-38.png",
+      "sha256": "465fcf9d326eabe5e6251abbbf20c429bac279837267f862c14e7ac8bb7f6125",
+      "bytes": 162744
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-39.png",
+      "sha256": "83f120d62d692c344053a24cd18d8fecb281ebcaec55b0b5a01822bb636799af",
+      "bytes": 293407
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-40.png",
+      "sha256": "ec52d242720f9d2039f3a2d834c9ce5a270d126fbeb50e24bf9908fa68e7e734",
+      "bytes": 398059
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-41.png",
+      "sha256": "06862ee403b82ff0e57c5bd2250ebd768eea24c679e043793d687ef74f6be51a",
+      "bytes": 274923
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-42.png",
+      "sha256": "bde73c8d0fc814f1ca7138e6f7e73d0e2d81c9e9161c9a54b313d658d71bebbe",
+      "bytes": 286757
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-43.png",
+      "sha256": "04698fcc6fd719ebfa77526a32520e43e9c121373c189ae3bf24a44b73d6b494",
+      "bytes": 501199
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-44.png",
+      "sha256": "c9b7e4482ff943cb9a77e115587f18d6153fa81da85b1eace8568412ffd1ff4b",
+      "bytes": 593345
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-45.png",
+      "sha256": "7f719f41e7fc8bcb02423a9c9811a45e39d7b531a9b39a2b47eae06715a7821a",
+      "bytes": 544805
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-46.png",
+      "sha256": "83c43bb0bdc2d8c69e08dfcc742bfbd448304c487f2ce18960f76e42ee00b79f",
+      "bytes": 701319
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-47.png",
+      "sha256": "8d200b677cd5ba95d9bac935d86ece7f62d9a243be35e3e9cbb21d0283c4b40e",
+      "bytes": 632574
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-49.png",
+      "sha256": "df1237aeac7426f25c37bf92d8281891aaf1b51e5e074eb50cd466d767528211",
+      "bytes": 750732
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-50.png",
+      "sha256": "0fef99a74aaa4ef38bf8b121044df557ed0fb70beaf70c4650b6c48ad54f4e4d",
+      "bytes": 687601
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-52.png",
+      "sha256": "e3e10ae7899b35273c959067af13d745b9a4868f063667ede668ed6ef0c1620e",
+      "bytes": 765336
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-54.png",
+      "sha256": "1db85a8a80f8d78cbc74772a1a0242819137d06d484270feafd4370904fd23b7",
+      "bytes": 140427
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-55.png",
+      "sha256": "66cb71250174c544ceda4f5dedadc4a6ef07e31a408a2a810e98fcb0ac7e1664",
+      "bytes": 221850
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-56.png",
+      "sha256": "f4d96fae171d66b9446ce5eabc2ea3969013857d13ad4200b38e23bc3fbb0b09",
+      "bytes": 276714
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-57.png",
+      "sha256": "3bfe1dc99aae3ac7971acd63c276cfd808030f2800450dc27e8bfc9c87608cf4",
+      "bytes": 301140
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-58.png",
+      "sha256": "ecaa7bc25de0f1c500ba2b3a217498d20e429c81de7c1257c69bd0486d8f92f6",
+      "bytes": 283479
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-59.png",
+      "sha256": "b75839ddccd5d74d6d07f45dc7d76db768094de028c6d5c7bfbec73ba14c155d",
+      "bytes": 265403
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-60.png",
+      "sha256": "a2081ffee6d31f993b4b760b67b4ccfb947ec5994fbb14e190559f80b90bf1ec",
+      "bytes": 112007
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-66.png",
+      "sha256": "6afcf07fee9072029a6f23c42b784cf31f0f70f2551ed76c6e8678d57ffa51db",
+      "bytes": 291476
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-heat-20261028/UIN%20219010%20A04/page-67.png",
+      "sha256": "588fa59e63a1e492253e57aa3f65f193cd4b4a11eac89aa0cff150c195b2f462",
+      "bytes": 393495
+    },
+    {
+      "url": "./help/original-heat-source-panels.mjs",
+      "sha256": "f25c31f2b3d977185755b35625292cb82c11600cb3ab0524aedcb4caa02d7a45",
+      "bytes": 12873
+    },
+    {
+      "url": "./help/original-heat-fault-guard.mjs",
+      "sha256": "78f5a4d9e3b61c8d4a6da44b95fdca503df96f14f8c461b324ae9c42bd8b8566",
+      "bytes": 2857
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-1.png",
+      "sha256": "2435f7c95c86cc9d8305c50cd4c92af447e25ba45828bc4e292bc6e5d548b368",
+      "bytes": 1109420
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-8.png",
+      "sha256": "fa8476928a3b614a4891b3d11e9e4eee5e54a09811997b1527c1d39cd5c56eb4",
+      "bytes": 337559
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-9.png",
+      "sha256": "3a4caffd5af742873ed34845c07f3d669d0981ee7ffffda6105159bf1822d3e4",
+      "bytes": 273490
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-12.png",
+      "sha256": "79b2b67285dd4046f709d52c1d4e5f863c3b25561e2471aecee97f62b6691e49",
+      "bytes": 540360
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-17.png",
+      "sha256": "bbce4626fabc70feb63174eb1976e3adb42f41f7ab8af5d2ebca2017492c9c60",
+      "bytes": 395860
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-30.png",
+      "sha256": "3ec5fe9dd619f73b8769aadd9481488edb2ec2bb76d7f5361422da6a9a51065f",
+      "bytes": 378083
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-34.png",
+      "sha256": "afd978342795bccbf537968ec90ad3ade2516194db458c513766f4dc064b6eff",
+      "bytes": 181358
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-35.png",
+      "sha256": "413030f99d3d88acf5451a1107564238a570047a9fec1b96155dd4090083df8d",
+      "bytes": 293354
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-36.png",
+      "sha256": "e854a17238084755a620985d301464eb9b96e05a61a8d605e793766898182a66",
+      "bytes": 454497
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-37.png",
+      "sha256": "a965907ca96a2365028ce32c5a84d8b61a6edea7853cab55e1fb38635256bced",
+      "bytes": 303817
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-38.png",
+      "sha256": "8cf5938cdbb60dafd3ac2cf4a28ede76c8e802d0140d7dafaae689e5c2aaa75a",
+      "bytes": 350264
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-39.png",
+      "sha256": "583728a22039fddfb8fadf41418dca39d065557560f24e156d17408cb0e8634a",
+      "bytes": 507956
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-40.png",
+      "sha256": "eb0b4b8424b28388e9948c4a721ddee4ad855b5c04caccef930835c1530190f7",
+      "bytes": 578080
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-41.png",
+      "sha256": "0307d6926f73d540fa8b479ddbd1879db6da28ef3d9d49e24f5223b4a359140b",
+      "bytes": 564430
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-42.png",
+      "sha256": "0b280d3f065fd13154b088a12d0838717076749c689c617ed0b8a1240a74f196",
+      "bytes": 720806
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-43.png",
+      "sha256": "81db65c1e5877b10c926c9e5c1e3402491e985e9021c91cfe8a939a054e96ee6",
+      "bytes": 615061
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-45.png",
+      "sha256": "03154708c1c8646b9c19c3a5e9f3a871da3f49b9665673ce438afdc257910dee",
+      "bytes": 905993
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-46.png",
+      "sha256": "3421f8ea760256b3d34d60bbd5acff0f24215025a33bf0eb55b4031f4eb13abb",
+      "bytes": 864368
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-48.png",
+      "sha256": "3ec925244841589eb5ecc82c7e82fbf9e148c2f059e0965c9a797d373d247cef",
+      "bytes": 552471
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-51.png",
+      "sha256": "6d01da6d8e5d8b77db31d8d41860d15286f9fc22000cd4f8fbf5e327b642dc3c",
+      "bytes": 690028
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-53.png",
+      "sha256": "161ba875b230f174d2e4e8fee915d579a812e7972b80567cf4435bd0df16bf2f",
+      "bytes": 550270
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-54.png",
+      "sha256": "9c01b5e0cdf93d09987b9b8b0cad04da637ffc0118cbdfad414c94e63c2c6f8b",
+      "bytes": 193561
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-55.png",
+      "sha256": "f55a77ede052a5121a6fb7411fdaf2ee9a0afd411557eb06a12d5a0851cc2b4a",
+      "bytes": 291129
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-56.png",
+      "sha256": "b25be7b962b9a93b8feb06c490461b6459aab470ecb59f0ad8649ca8934b0ebc",
+      "bytes": 312157
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-57.png",
+      "sha256": "33ce1846e3142f58debe394c50aa4234920cbbbd5ffa4136e114c0e5e78675b8",
+      "bytes": 249336
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-58.png",
+      "sha256": "587f6d8a433254aa6b3d35213b241491598baa9eff14087dbd5fdf63d79e7e52",
+      "bytes": 265618
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-59.png",
+      "sha256": "b215302e456e522f3356b179ff6b83f089206696862d8c64ae51fbb0897835d5",
+      "bytes": 112756
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-64.png",
+      "sha256": "a2d21d1b82763b9394c1de8aa398c3d90017ff8e8516eba882c9c9e9252d84f0",
+      "bytes": 291712
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-system-20261029/UIN%20219009%20A04/page-65.png",
+      "sha256": "4902af3b12f4f5523365ce7e4cb1b97df945e96e82c179eac0590a84deee1284",
+      "bytes": 393636
+    },
+    {
+      "url": "./help/original-system-source-panels.mjs",
+      "sha256": "d43cecf68a48f049252605845fc8a5a57f1c338385291cc7d863239b116e8009",
+      "bytes": 12807
+    },
+    {
+      "url": "./help/original-system-fault-guard.mjs",
+      "sha256": "6db122fc24f4e38d7f4cad6560d51752dfacdd0aef332c577955a497043243ed",
+      "bytes": 2752
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-1.png",
+      "sha256": "f90ddf46efd7119d3aafa7f2ea4f2d57dcaa245427d6256182614b6360079f3e",
+      "bytes": 1161616
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-8.png",
+      "sha256": "7377eb4b1b17787e5b92d2b2cd0cebea2a5b65d81266a98b30d70a74dd7481a5",
+      "bytes": 409803
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-9.png",
+      "sha256": "5dce186f5b545cae080360861d4433830f876d06251ffa6a4a5a40dae9f6d2ff",
+      "bytes": 270964
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-12.png",
+      "sha256": "c71a44c70f91310f4254d4390e878f20f90796b210df38d5d008fffc22f1160b",
+      "bytes": 525758
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-17.png",
+      "sha256": "f212bc0b1bb5e1647084c81b806ca63784fb4129d0b47fdda2e5c3f2aa1653c7",
+      "bytes": 535840
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-30.png",
+      "sha256": "77581cfa5e4c03e23436e99f4bce284d773738c706995eec157e5ad6b6b89cd5",
+      "bytes": 356465
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-34.png",
+      "sha256": "b6e5ee505ad4c6dfb31d59d264e29748f0370f1ba7e58a443a431e96e8936737",
+      "bytes": 185583
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-35.png",
+      "sha256": "4575ca7e0c128443497887e30359ab8dfbee835988b6631a86d11e1862236f7a",
+      "bytes": 309893
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-36.png",
+      "sha256": "f3bddc75605ad93f60403e1bdac60593191e5a7a42e9542cb6cf5cc48309621a",
+      "bytes": 432728
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-37.png",
+      "sha256": "0066b9411bc4f33f3cf3ba4727cca6ac3999d7f354fdee4734f00991ef507c02",
+      "bytes": 265478
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-38.png",
+      "sha256": "36b4d71b6fa7cf750b57609cd4aa744f20ba33045e5bd0b0654df74e0aaff197",
+      "bytes": 383466
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-39.png",
+      "sha256": "c056eff9754ebb2d8137b7d12177e164f4a427defaaf6e769c165a89edf4d57e",
+      "bytes": 427072
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-40.png",
+      "sha256": "ab9af3185fded7d9ba260359719d8be78735a27d2296e5bdfa4abe0d6a487729",
+      "bytes": 220144
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-41.png",
+      "sha256": "0aab458c5f918878a8740c9fdc6134b58450babe3c7b2df61900344e52ed90d3",
+      "bytes": 412481
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-43.png",
+      "sha256": "44e763674f940498b36c5a81550211501e9dddf92df8d56f1fcef5a4de80acf5",
+      "bytes": 517566
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-44.png",
+      "sha256": "2ab7023753b269c423f6a043d0b8fd94c5086b9cc0ef5dd459458e8ff0c08295",
+      "bytes": 577467
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-45.png",
+      "sha256": "3e2d66f1b1b87e8ccf4edb10dd3e481eb874d39fa0b288731a20daea9086a35f",
+      "bytes": 603453
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-46.png",
+      "sha256": "480b8220a30c608e0428b217cd4c1ffefe1d53ab59be25f05f977a596634fd0f",
+      "bytes": 707587
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-47.png",
+      "sha256": "8d406a3960bbe2ac6914b32e0773c495dea34ff1a1a172ce6ac8609761338e87",
+      "bytes": 674073
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-49.png",
+      "sha256": "f4959bdd26b06f9befa39fd0e5c0cb5b60730ef2fba9127eeb28f38fa32778ce",
+      "bytes": 716466
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-50.png",
+      "sha256": "76143cd2ec246f3864f8c398796729ddf00b61de4bf1c34d5d2fa7afb9fb77b2",
+      "bytes": 779583
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-51.png",
+      "sha256": "7f8f492d5442d0476df1f88c1605af0d8551b43a011974d6141c96f47b05e1de",
+      "bytes": 562409
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-52.png",
+      "sha256": "323cda0669d152251ff06178d44e1e29ff2dc10ee5b3914f710fa071a984c885",
+      "bytes": 458536
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-53.png",
+      "sha256": "b59ea53d34aa3676645b75f8802b9e43f0034bd009fa84d713a7e131aa370be6",
+      "bytes": 547186
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-54.png",
+      "sha256": "9e094be2efd7a013c384570487a8c6b1f2d809642f7abc5039846127f88fd06a",
+      "bytes": 652229
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-55.png",
+      "sha256": "bb306d85963904b2a515e5867da557ece4991a5ee720d032d1f4acb389a60739",
+      "bytes": 600765
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-56.png",
+      "sha256": "16c27fe66979f8814613f7b507f96a6a164458b37c4c730a5bdd9eed7e93a112",
+      "bytes": 512556
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-58.png",
+      "sha256": "95234bf096329df70ea6ee66c07f71596299fa2c7492b45aad0850e3adfa12c9",
+      "bytes": 512193
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-59.png",
+      "sha256": "8f987423d14a0ec1920b444abe84f2fb1bb11b4ce8a254789fd596471253ca7a",
+      "bytes": 214290
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-60.png",
+      "sha256": "ae8936feacc4d3b16e2bb3f72f8ffe75281a63e0cb7036d67d1ec32a23e6f618",
+      "bytes": 119325
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-61.png",
+      "sha256": "d880309997e42de1e43b3317758c70301c7adf38056ef8e18293e13ffdf8e19b",
+      "bytes": 271679
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-62.png",
+      "sha256": "c80af21f72461655cebf97b6cfc8a2149e9360a76f357df8f42af38b9a2d9cbb",
+      "bytes": 266909
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-63.png",
+      "sha256": "65adfb6526c00523d74302b492c5be1e2beb7ee26fa6df9b07bec4325a025bd2",
+      "bytes": 216460
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-64.png",
+      "sha256": "48e3652bf8092e5bccc7d5db2bcde63118b726229b286a25915b70b711b829dc",
+      "bytes": 121759
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-65.png",
+      "sha256": "220444f60c754413a6e330f1ba208ec45b049824f9b19e73012429aa2ec80482",
+      "bytes": 213655
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-66.png",
+      "sha256": "7286936cd91f918971bf08589ffaca7aa8fd50b392ca7ee0de5aa4ae27dd5b11",
+      "bytes": 301113
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-67.png",
+      "sha256": "a7b6407144f1af937f0e92eaecd2b375a8448309ad44a913d236e2470683f9c4",
+      "bytes": 112591
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-72.png",
+      "sha256": "065fb5026cf41d0256b635b9bb6d34cfcad8edfa4af0c0d34742a4b3c5f952bb",
+      "bytes": 209215
+    },
+    {
+      "url": "./manual-pages/ideal-original-max-combi-20261029/UIN%20222362%20A01/page-73.png",
+      "sha256": "35ff5d6bffd6d2cc483e3e2e0583edc7f9861c68856ee86dc83e10117a8858fe",
+      "bytes": 392743
+    },
+    {
+      "url": "./help/original-combi-source-panels.mjs",
+      "sha256": "c19c0ed87dc0efbe97cbc2e019ecdb35eb60ad8c44491a1615276cf19c04d9cb",
+      "bytes": 13655
+    },
+    {
+      "url": "./help/original-combi-fault-guard.mjs",
+      "sha256": "18be7350630dbb184c63f5746f8335690e725013868138e4c166b250fdb32237",
+      "bytes": 2976
+    },
+    {
+      "url": "./help/original-combi-fault-routes.mjs",
+      "sha256": "615c6467f2b22a62cb4e7605c887d4c2593b3dd869a7d6d249cb867cb180f0cd",
+      "bytes": 9161
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-1.png",
+      "sha256": "d6f9dc3de5d440a5266c7e7ef67b75b1b7cd9a53d70e30d2f64139d25b534f17",
+      "bytes": 95085
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-4.png",
+      "sha256": "53cbf5d606d6cb7c407d80b31b484edf9bbe5864debe853ddc9d003e94cdad98",
+      "bytes": 286849
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-5.png",
+      "sha256": "bb4d94aadb78fbb7b159bf5be78ade5d1de902f3cf94f4aaee8aeadc31e30ced",
+      "bytes": 284210
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-8.png",
+      "sha256": "7062e4222432420c5f42e659889325317709e2c31a9a6429f80a98c7233db510",
+      "bytes": 453359
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-15.png",
+      "sha256": "6442790fbc1e4be1b4200ad0866d1ce14bbabb9511b5ef6f55fb1f44ab080efc",
+      "bytes": 317755
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-35.png",
+      "sha256": "5daf89cd068f87054acf2de4246a03e97312a79303e95269696c8e00489c1afb",
+      "bytes": 229601
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-36.png",
+      "sha256": "24a0891282ba449c7b19a88cee74e962fa467365209d087261ed99435b318869",
+      "bytes": 304774
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-37.png",
+      "sha256": "086c694b7277ce87bc79f25d34de1c58e237f1293f8386006bff027774207295",
+      "bytes": 359758
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-38.png",
+      "sha256": "942d7a36049227be295da6439cd19a3c2accfc00b69a81d864114d9a7c2f3c5a",
+      "bytes": 383949
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-39.png",
+      "sha256": "c5157fccfac339a38133993478ef2f01e1aa053292317f39b76b541888b2817c",
+      "bytes": 366103
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-40.png",
+      "sha256": "14d98bc1ca30e2ff9caad2b28b10bc26683c1df0a022e681f242ea1f9ca1b576",
+      "bytes": 471626
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-41.png",
+      "sha256": "6c68116e2219d468c4a9b223d862cd313cf347a5130d37649e20f2be9b5b2a89",
+      "bytes": 542765
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-42.png",
+      "sha256": "fb9163cb1ed673e04626b07192c457852de944685fbb44e4ce2696b6b8d83e22",
+      "bytes": 485457
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-44.png",
+      "sha256": "483f1a6cefb16c81f2afae04e31fcbfab66b602adf5046d6f50a825abfa33bd1",
+      "bytes": 638507
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-45.png",
+      "sha256": "7be01fdf83ee0dc1d803042584984442d4449f414a0d1277eb92dccb1593cbbd",
+      "bytes": 577691
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-46.png",
+      "sha256": "8308ee594f2be14d89cb68b1bf56b341a41331268f8c9cf7a8391946d819be60",
+      "bytes": 401136
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-49.png",
+      "sha256": "c08dde3384b40406172723caccfd68d2248ca89f84c94975789a9e1708dfe1e2",
+      "bytes": 643802
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-60.png",
+      "sha256": "7b25a6de64ed86a546174d4664c7a3c530c7cf3c9024ac8ca97fd38ef2e98562",
+      "bytes": 215913
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-20261029/UIN%20205862%20A06/page-61.png",
+      "sha256": "46d285a937910878c25b85d4589532a4e9e8072e56769e4a238f870a44c75fc9",
+      "bytes": 319271
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-faults-20261029/UIN%20205862%20A06/page-47.png",
+      "sha256": "3b2528beacdd0d4dd6a4535abc14f4ffc0509b4a3595b7a3548adf192f091209",
+      "bytes": 498564
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-faults-20261029/UIN%20205862%20A06/page-50.png",
+      "sha256": "db388d82939c6ad4ce7d9f44bc50fb0f5596f700fc44ec2976717d7add913d60",
+      "bytes": 206248
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-faults-20261029/UIN%20205862%20A06/page-51.png",
+      "sha256": "279e896047acbe1b78395afcdbfea4afba4c588c02b34952aa09c9099fafe2b0",
+      "bytes": 308156
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-faults-20261029/UIN%20205862%20A06/page-52.png",
+      "sha256": "0493643f3af1694ab95256528d9448f2ec6578eb625f6aa3dd87f93b46e7f3df",
+      "bytes": 299048
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-faults-20261029/UIN%20205862%20A06/page-53.png",
+      "sha256": "c644cb98658e2489c21ec20bdbafa61d3553a40ba977b9ab393f2fa176dd940e",
+      "bytes": 223730
+    },
+    {
+      "url": "./manual-pages/ideal-original-logic-heat-faults-20261029/UIN%20205862%20A06/page-54.png",
+      "sha256": "6a4ef2113b003fe2f3185c13f727055caf84f9964819c4077bf4397ebca48e3a",
+      "bytes": 342771
+    },
+    {
+      "url": "./help/original-logic-heat-fault-guard.mjs",
+      "sha256": "8d185bbda73c789342a899f78d3c6fa50b17d4860477c9308b05bc7877a360b7",
+      "bytes": 2663
+    },
+    {
+      "url": "./help/original-logic-heat-fault-data.mjs",
+      "sha256": "3409b5c58933f7063d33890eb6e9855269611985afa46508ff6f2ecb1147a02b",
+      "bytes": 8303
+    },
+    {
+      "url": "./help/original-logic-heat-fault-panels.mjs",
+      "sha256": "58a2073f01ffeed88ae0ddd878d585cfac91d794e2a1b1cff16300ba6e8dfa3d",
+      "bytes": 9094
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-1.png",
+      "sha256": "b729b85a32870a2ffbb32a717d5975bc2e23188929f5ff476bbea18482423eb9",
+      "bytes": 59823
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-6.png",
+      "sha256": "88b448ff68f0d19c5e5389a4783ed75d50c133057e7548d46f4de79017f64538",
+      "bytes": 213172
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-7.png",
+      "sha256": "7c60bf50cab543d0eca3e147afbf1b53e793b4396ed5bb71cc7429830b4fa86a",
+      "bytes": 207924
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-10.png",
+      "sha256": "69f314d48395b6a08563f6ee9f922f2cfc73e96f1339634aef9a59a54b99bfdd",
+      "bytes": 385016
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-17.png",
+      "sha256": "808fc2bd34b9e577cc2fc562919cf7dc18ef11af62cc6145133eb53544fccc4e",
+      "bytes": 247882
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-34.png",
+      "sha256": "b61ae5953cd9c6a22b40701fc9dfc79d2b6b8517c7be49929925533ab2807a1c",
+      "bytes": 86100
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-35.png",
+      "sha256": "d4d80bf655aa4ea9f0547339a61b078c27b6796ee6b3d0399db4aacc176c6c81",
+      "bytes": 288491
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-36.png",
+      "sha256": "d90d247b0686cd9c8850976b4ab5f330e3e9648951a4ad3e2f21400645505fef",
+      "bytes": 132434
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-37.png",
+      "sha256": "542c2ea62b28310f40a47b08f432df62416f398e4d938975525e9f17409f559f",
+      "bytes": 230199
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-38.png",
+      "sha256": "07797a020d7863a04013a0b58e289c62e3a6d94db2886d2d89a55279e7dd5fb4",
+      "bytes": 251496
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-39.png",
+      "sha256": "c26a55e3b610bede95a77522932a08b8a4a0eb5ff1c736b9753276db4dee7dfe",
+      "bytes": 115347
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-40.png",
+      "sha256": "3c7c45ec4baffbbdae0d54f4fefc8e567c10ddaa15dee7f5203476e1b1966266",
+      "bytes": 119305
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-41.png",
+      "sha256": "6618832178a500f92f61a8bab1fbde80c1e537c0c1eec668e5a4f666271e621d",
+      "bytes": 239331
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-42.png",
+      "sha256": "2cf1195a190da51f0dbd1c05a4b68a8c5d89d07c62c06cb9f1fe05a454e5894e",
+      "bytes": 173448
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-43.png",
+      "sha256": "8f81d42c2ea27c9753bf3bde293bc398651780bb70f17e67d70cb77ae03643a2",
+      "bytes": 308870
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-44.png",
+      "sha256": "c896472d123771d072d80a909adaa216da8304e028eb280a17a9032bb66432da",
+      "bytes": 160445
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-45.png",
+      "sha256": "eb9821cc9a2ffb301828357bf28f0f76ea07e35ba29314bafbd8279cd2c497f8",
+      "bytes": 189840
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-46.png",
+      "sha256": "bea523fc72fe0638b903b9ca6444c36b48b5506d16413adee1f4112437839d73",
+      "bytes": 233964
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-47.png",
+      "sha256": "c6c568556c04593b0dbe6124b4e72e4a93c5b83115db265247bbd534afdd555b",
+      "bytes": 243993
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-48.png",
+      "sha256": "f93d9106ecdea11358692c074e50f4e45955d722e0895f815499c5529fa57d75",
+      "bytes": 228816
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-49.png",
+      "sha256": "4187220b32f206813ec32791843876a2581e1a1dcaf0ab67e27eb8ac178c3930",
+      "bytes": 142617
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-50.png",
+      "sha256": "3a8a6d94509aa33cd5f5311176c9cc38de1a369dfc1e15bf5df1b532f7e3c2c7",
+      "bytes": 253377
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-51.png",
+      "sha256": "fc8aecf79bbf71f68203b3c385e93b8f6101632aa8bd38354039547b6124c427",
+      "bytes": 176889
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-52.png",
+      "sha256": "0fbeb8021e3166c5ce7b4609261dc30ea77a551b9f0e97c605b7a29f6e062ed8",
+      "bytes": 173830
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-54.png",
+      "sha256": "462289c6bf1f81693602f82dad361eb0426e2e0905c44fdc3e07e69a1ac4538e",
+      "bytes": 156292
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-55.png",
+      "sha256": "efee7b2b7e3046ff9b1dc16bf4327a23f97247e3915e8f44e678209c9daeb24c",
+      "bytes": 173100
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-56.png",
+      "sha256": "124476121dc23d464f348251fadb60bafd166301350c7a8282303d463264c1d2",
+      "bytes": 173821
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-57.png",
+      "sha256": "6161a5603340dbdc10ef7d309952400734180653e4939e6f2dd98b4da39a70d6",
+      "bytes": 118813
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-58.png",
+      "sha256": "bd6c47268ec07d848c2cb4a65e1ede062e0817262c7295d52c8fc3de5954fc79",
+      "bytes": 139851
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-59.png",
+      "sha256": "f3b2636b5932c3acc37c4decbc1799c18c248a3dc2827dffbba0c331ba58e8ae",
+      "bytes": 123717
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-65.png",
+      "sha256": "9dddf0760bb6b6f861999f080bd4ce3e6129e41c2f1db3fa483eb1735d902f2d",
+      "bytes": 162549
+    },
+    {
+      "url": "./manual-pages/ideal-max-heat2-20261029/UIN%20228292%20A11/page-66.png",
+      "sha256": "f77f6dbae5d87207aa065e859cf45799907a9bc17abd4f06622a95b6630f1597",
+      "bytes": 283155
+    },
+    {
+      "url": "./help/heat2-fault-guard.mjs",
+      "sha256": "1402641f9aa85eb432b849a8e19ff37104dc37cd309db9fa36f10d37284b5a65",
+      "bytes": 2590
+    },
+    {
+      "url": "./help/heat2-fault-routes.mjs",
+      "sha256": "bd49b7b6df030372dfeb9a3f030a5cde1d265e1c01912c745b0ae72ecf842d63",
+      "bytes": 7772
+    },
+    {
+      "url": "./help/heat2-source-panels.mjs",
+      "sha256": "5869525465b149a3cfb927ceb219c1cd3a76b1ec687e199424b6f34380621142",
+      "bytes": 13492
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-1.png",
+      "sha256": "b68c4c29aacaf9f06a45153a4592477137c264cd8b4a092f4e78b40202f04fd7",
+      "bytes": 115007
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-7.png",
+      "sha256": "ad9944d1a56cbbb56a34799c529b7a18a8bbbea6a282f3d4a7a0e53c17def12c",
+      "bytes": 274637
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-9.png",
+      "sha256": "dc00130fecbf01c706f8447bd51aa15136b046aaebf40464ac3990056d5e667c",
+      "bytes": 473234
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-10.png",
+      "sha256": "2c3a478d9bf1a75ae0d3918831e75510281c9e7fad9061ac2bef73404ae07ee8",
+      "bytes": 302418
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-42.png",
+      "sha256": "3914fb8b4208c008023c7e666ab881b3b814db080a396107a27d4aaecdc1cede",
+      "bytes": 244234
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-43.png",
+      "sha256": "c4eff4332cc51e952c24d29fbef0ca4171ef1a7c9d1e9509d8b434b04111d676",
+      "bytes": 349348
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-44.png",
+      "sha256": "30609e091c59e2ccbbfcb821ce8abffb04b216ac64c910357145928b16c91e56",
+      "bytes": 265400
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-45.png",
+      "sha256": "6e01636666c5344b8685ec15e0540ce16f44991c8a7dc717d7dc6ae7f4750752",
+      "bytes": 342563
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-46.png",
+      "sha256": "b2e4d63120134fd17a6738a7925966ffc1b8f50860bcc39fae7181ee94524caa",
+      "bytes": 242074
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-47.png",
+      "sha256": "feb4fd75fc5c2c5d41b90e6e7c01c14e6e83ff6b0707ccb1af4efa6614fbd807",
+      "bytes": 349573
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-49.png",
+      "sha256": "471e8968d29a61832b9cc899e8700ffde7f78873f4304bf14708db2dbee2b400",
+      "bytes": 241028
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-50.png",
+      "sha256": "026fd46b61aa77c38f019561b1e1611615d2cf85eb73cee4fb6bcf5d266d15f8",
+      "bytes": 200874
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-51.png",
+      "sha256": "b0a03c7f25ef6d9386a3365fa12d02f65c3a385c4f0d06e787593ff5032b80ad",
+      "bytes": 267103
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-52.png",
+      "sha256": "6b54dbedb29d241c7a78685d2b7246909c50b81ddae4aef67579097b5eb97a0a",
+      "bytes": 228744
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-53.png",
+      "sha256": "b338a789f1106be67e1ff65ad1c0bd027f39e73a2f2bc08e363f49ba8eea8631",
+      "bytes": 334285
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-54.png",
+      "sha256": "2739a1a6cd12f266a17735b2b098ec82dc309fb56b32e193102421abce4b034d",
+      "bytes": 322884
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-55.png",
+      "sha256": "60a9a94eee426c22c2fccffe352209ccb37b795da1bdbcaf90bddf2e5bf199a0",
+      "bytes": 399423
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-56.png",
+      "sha256": "e74f61eba5463bd9c46e0fc94ba08398b113fd41697160dccf17c39611927a1b",
+      "bytes": 347832
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-57.png",
+      "sha256": "7afb698015f9590540cb2e5355138b84a44ce1716838a1be1099bb751d6cbfce",
+      "bytes": 311653
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-58.png",
+      "sha256": "e08f3c66cfcdb76eb5ca880f18fedeb4c266c7bbd88e0b245ae0df2eb7ad7525",
+      "bytes": 400867
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-59.png",
+      "sha256": "2efad081cd9c3cdfa958e3cd6a5fc701511a78c4f4a99b5406308a7e07907220",
+      "bytes": 366944
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-60.png",
+      "sha256": "fd4b9acea757cb535555a9666478380909c69c3e6318987807be7f8e80ba2253",
+      "bytes": 329513
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-61.png",
+      "sha256": "13c6cfa61cbb9607ba13af5b1c0167a7a3f99d35f840df934a83b6881ff23094",
+      "bytes": 256905
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-62.png",
+      "sha256": "5bf86dbd7279f8e0db51f6e7600a3010f26a0bb90d11319c66912870306225b5",
+      "bytes": 305144
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-63.png",
+      "sha256": "0f9220f9093a264289dd332bffd2a1bc3c0b53e681feedc3e79662f61399d7eb",
+      "bytes": 360646
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-64.png",
+      "sha256": "a716cac485bb78a1804682f4a4b960ee3b274dacc8dde321eaf34dc1f6fffeaa",
+      "bytes": 390505
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-87.png",
+      "sha256": "3bce3f7a7b8cae451531485ce3e331a242195c746a206bf6c48f97a1f2db0e4f",
+      "bytes": 320324
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-88.png",
+      "sha256": "fc3f75418075bfadba45200ef525b36d481fa09dd63ba092244f9fe915e58b73",
+      "bytes": 243639
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-89.png",
+      "sha256": "3fa30f9315c0b6ef73fa6f94910316084e1a73080ba05f4c8434c02d29c36002",
+      "bytes": 278042
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-90.png",
+      "sha256": "daa28d0b18ed3ecebf540b560ef714f25de6048e3eeb22009c81e4151863f67f",
+      "bytes": 275365
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-91.png",
+      "sha256": "04de7b977d8456245192f37036e570125b2057801b50505edf8df0895c6eead2",
+      "bytes": 273627
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-92.png",
+      "sha256": "4a7cde31378dfdc5cd486d0c9821bcfda2ffa3256f0e981910adf54352f788ae",
+      "bytes": 292360
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-93.png",
+      "sha256": "932cb40302366dc98d1880a30f680f6038b3844d503cd5459688dee717e63ed4",
+      "bytes": 282953
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-94.png",
+      "sha256": "4317f0f7024751ba73d61019cb0ad6b089086003e195f80b0efd2e443f4b1480",
+      "bytes": 282715
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-95.png",
+      "sha256": "38f76dc2538094cc6d4cec1bc58b29b538d1a88887046aa27e56114c92225a8c",
+      "bytes": 232230
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-96.png",
+      "sha256": "c78aeb28b7c58c42229d57cd48c721006da14236f4a9254e7400c826157c4d15",
+      "bytes": 69423
+    },
+    {
+      "url": "./manual-pages/worcester-1000-20261029/6721835943/page-98.png",
+      "sha256": "ebf2c1aad77100e76068a4704f79a2eedc22c89e57a30dac776e824327d7f628",
+      "bytes": 233046
+    },
+    {
+      "url": "./help/greenstar1000-fault-guard.mjs",
+      "sha256": "fcff912fd0e992064a3da76548d21fedd413da64317b47a3971b6eca61128bf2",
+      "bytes": 1790
+    },
+    {
+      "url": "./help/greenstar1000-source-panels.mjs",
+      "sha256": "005ea48fbd97afb3c0a5de760bc4afd1d0f29a35fc331bcca5a609bf20b1fd6d",
+      "bytes": 21769
     }
   ],
-  "totalBytes": 88301618
+  "totalBytes": 157064586
 }
