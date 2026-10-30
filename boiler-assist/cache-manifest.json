@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "705354f7abf2f327",
+  "buildId": "cbd1d12e303af5b9",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.29-r1",
+  "appVersion": "2026.10.30-r1",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "sha256": "e2e45cddfabca966b26720e6c050f1e4cfafb9c6ef0f2feb9d2e7a14f0e12ab6",
-      "bytes": 6907435
+      "sha256": "eb1d56ec518dd883703c5d40cca64b1d2e0e21ce4d89443ff58f3db10851a2b5",
+      "bytes": 6969757
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -37,8 +37,8 @@
     },
     {
       "url": "./data/search-index.json",
-      "sha256": "2050057b56b66c065422ea0510758db0a72ed7bf6657f6817c5bfe86a920f88f",
-      "bytes": 1015507
+      "sha256": "b261b1756296f44d945d7608a5671ee28bff166b9731542df0098aee56276eb2",
+      "bytes": 1021562
     },
     {
       "url": "./decoder.js",
@@ -57,7 +57,7 @@
     },
     {
       "url": "./help/ai-client.mjs",
-      "sha256": "63d22b139239574afc349cc0983f4493743c4330a17356cc084140e141707b47",
+      "sha256": "e78e9732d7d6b76b39f508fdcc4b2cd3fddc4388cd9f3662daf02df6a4c26e3f",
       "bytes": 8047
     },
     {
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "f0ba6815b97d18ec5a0dfd869b5342fe3590f6f1021cd790c8ca19dcf5d18ed2",
-      "bytes": 1454441
+      "sha256": "5c475f5f80a9642599c96a5a1a2f78a81e3db10915d9d71310061e2bb22c73a9",
+      "bytes": 1466566
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "0101b7010dcc9addfd383c3ab605dbfdbd95ec9c0bd24d77e8d8170478002360",
-      "bytes": 39736
+      "sha256": "5255f495620804563ab8a6d93702266cc775c9fb707feb068dc54bb714fdc35e",
+      "bytes": 40627
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -2259,7 +2259,47 @@
       "url": "./help/greenstar1000-source-panels.mjs",
       "sha256": "005ea48fbd97afb3c0a5de760bc4afd1d0f29a35fc331bcca5a609bf20b1fd6d",
       "bytes": 21769
+    },
+    {
+      "url": "./manual-pages/original-30cdi-20261030/6720613700a/page-1.png",
+      "sha256": "a6475b020c8bce590161e911bb9b058a93558cce56fce87f90e8ae0d194fc86a",
+      "bytes": 414100
+    },
+    {
+      "url": "./manual-pages/original-30cdi-20261030/6720613700a/page-38.png",
+      "sha256": "3af5872523df00692f0d21438e385a56ee90a1a8372c003dfc135344b6258b94",
+      "bytes": 484602
+    },
+    {
+      "url": "./manual-pages/original-30cdi-20261030/6720613700a/page-39.png",
+      "sha256": "7a98960e9338a0dc71960bfc5a045f20209c2e6bc333c249b40669dbeb18b8a1",
+      "bytes": 624457
+    },
+    {
+      "url": "./manual-pages/original-30cdi-20261030/6720613700a/page-40.png",
+      "sha256": "df31e5403bf2838df0d5dc398860cdf69dae048285a67300b1757337443f96e3",
+      "bytes": 576999
+    },
+    {
+      "url": "./manual-pages/original-30cdi-20261030/6720613700a/page-41.png",
+      "sha256": "fb6604e0d7ef0f8bab05cb86863092b388fc12db39a48c66c0e7f2d09f3ae487",
+      "bytes": 679021
+    },
+    {
+      "url": "./manual-pages/original-30cdi-20261030/6720613700a/page-42.png",
+      "sha256": "7882d4d579ec0e094acaa6f681d2b89e514d3b7ecaf2c83c41c3384d115e45b5",
+      "bytes": 872579
+    },
+    {
+      "url": "./manual-pages/original-30cdi-20261030/6720613700a/page-53.png",
+      "sha256": "91951cb30a669e39b7265f63101afa17ceb284dd4ef3c136bb57099230bfbe59",
+      "bytes": 979845
+    },
+    {
+      "url": "./manual-pages/original-30cdi-20261030/6720613700a/page-56.png",
+      "sha256": "cfc00590dfa4312079541d379e524dcd5cfe4b80fa2d461c324d31ce52d210e4",
+      "bytes": 494266
     }
   ],
-  "totalBytes": 157064586
+  "totalBytes": 162271848
 }

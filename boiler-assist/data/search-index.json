@@ -41740,5 +41740,205 @@
         "value": "Original component layout/legend and manufacturer short parts list are included. This is a historical reference, not confirmation of a current spare part, serial applicability, price or stock. Confirm fitted component and current supplier/manufacturer fit before ordering."
       }
     ]
+  },
+  {
+    "id": "worcester-greenstar-30cdi-original-ng-47-311-93",
+    "manufacturer": "Worcester Bosch",
+    "range": "Greenstar CDi Combi",
+    "model": "Greenstar 30CDi Combi (original NG)",
+    "aliases": [
+      "30CDi",
+      "Greenstar 30CDi",
+      "Worcester 30CDi original NG"
+    ],
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "generation": "Original Greenstar CDi Combi; reviewed manual 6720613700a (2006/11)",
+    "gcNumber": "47-311-93",
+    "productNumber": null,
+    "technicalData": {},
+    "parts": []
+  },
+  {
+    "id": "worcester-gr8700iw-30-c-ng-7738100795",
+    "manufacturer": "Worcester Bosch",
+    "range": "Greenstar 8000 Style",
+    "model": "Greenstar 8000 Style 30 C NG",
+    "designation": "GR8700iW 30 C NG",
+    "aliases": [
+      "GR8700iW 30 C NG",
+      "Greenstar 8000 Style 30 C NG"
+    ],
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
+    "gcNumber": "47-800-03",
+    "productNumber": "7738100795",
+    "technicalData": {},
+    "parts": []
+  },
+  {
+    "id": "worcester-gr8700iw-35-c-ng-7738100796",
+    "manufacturer": "Worcester Bosch",
+    "range": "Greenstar 8000 Style",
+    "model": "Greenstar 8000 Style 35 C NG",
+    "designation": "GR8700iW 35 C NG",
+    "aliases": [
+      "GR8700iW 35 C NG",
+      "GR8700iW 35 C",
+      "Greenstar 8000 Style 35",
+      "Worcester 8000 Style 35kW"
+    ],
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
+    "gcNumber": "47-800-02",
+    "productNumber": "7738100796",
+    "technicalData": {},
+    "parts": []
+  },
+  {
+    "id": "worcester-gr8700iw-40-c-ng-7738100797",
+    "manufacturer": "Worcester Bosch",
+    "range": "Greenstar 8000 Style",
+    "model": "Greenstar 8000 Style 40 C NG",
+    "designation": "GR8700iW 40 C NG",
+    "aliases": [
+      "GR8700iW 40 C NG",
+      "Greenstar 8000 Style 40 C NG"
+    ],
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
+    "gcNumber": "47-800-01",
+    "productNumber": "7738100797",
+    "technicalData": {},
+    "parts": []
+  },
+  {
+    "id": "worcester-gr8700iw-45-c-ng-7738100798",
+    "manufacturer": "Worcester Bosch",
+    "range": "Greenstar 8000 Style",
+    "model": "Greenstar 8000 Style 45 C NG",
+    "designation": "GR8700iW 45 C NG",
+    "aliases": [
+      "GR8700iW 45 C NG",
+      "Greenstar 8000 Style 45 C NG"
+    ],
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
+    "gcNumber": "47-406-99",
+    "productNumber": "7738100798",
+    "technicalData": {},
+    "parts": []
+  },
+  {
+    "id": "worcester-gr8700iw-50-c-ng-7738100799",
+    "manufacturer": "Worcester Bosch",
+    "range": "Greenstar 8000 Style",
+    "model": "Greenstar 8000 Style 50 C NG",
+    "designation": "GR8700iW 50 C NG",
+    "aliases": [
+      "GR8700iW 50 C NG",
+      "Greenstar 8000 Style 50 C NG"
+    ],
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
+    "gcNumber": "47-406-98",
+    "productNumber": "7738100799",
+    "technicalData": {},
+    "parts": []
+  },
+  {
+    "id": "worcester-gr8700iw-30-cb-ng-7738100832",
+    "manufacturer": "Worcester Bosch",
+    "range": "Greenstar 8000 Style",
+    "model": "Greenstar 8000 Style 30 CB NG",
+    "designation": "GR8700iW 30 CB NG",
+    "aliases": [
+      "GR8700iW 30 CB NG",
+      "Greenstar 8000 Style 30 CB NG"
+    ],
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
+    "gcNumber": "47-406-97",
+    "productNumber": "7738100832",
+    "technicalData": {},
+    "parts": []
+  },
+  {
+    "id": "worcester-gr8700iw-35-cb-ng-7738100833",
+    "manufacturer": "Worcester Bosch",
+    "range": "Greenstar 8000 Style",
+    "model": "Greenstar 8000 Style 35 CB NG",
+    "designation": "GR8700iW 35 CB NG",
+    "aliases": [
+      "GR8700iW 35 CB NG",
+      "Greenstar 8000 Style 35 CB NG"
+    ],
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
+    "gcNumber": "47-406-96",
+    "productNumber": "7738100833",
+    "technicalData": {},
+    "parts": []
+  },
+  {
+    "id": "worcester-gr8700iw-40-cb-ng-7738100834",
+    "manufacturer": "Worcester Bosch",
+    "range": "Greenstar 8000 Style",
+    "model": "Greenstar 8000 Style 40 CB NG",
+    "designation": "GR8700iW 40 CB NG",
+    "aliases": [
+      "GR8700iW 40 CB NG",
+      "Greenstar 8000 Style 40 CB NG"
+    ],
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
+    "gcNumber": "47-406-95",
+    "productNumber": "7738100834",
+    "technicalData": {},
+    "parts": []
+  },
+  {
+    "id": "worcester-gr8700iw-45-cb-ng-7738100835",
+    "manufacturer": "Worcester Bosch",
+    "range": "Greenstar 8000 Style",
+    "model": "Greenstar 8000 Style 45 CB NG",
+    "designation": "GR8700iW 45 CB NG",
+    "aliases": [
+      "GR8700iW 45 CB NG",
+      "Greenstar 8000 Style 45 CB NG"
+    ],
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
+    "gcNumber": "47-406-94",
+    "productNumber": "7738100835",
+    "technicalData": {},
+    "parts": []
+  },
+  {
+    "id": "worcester-gr8700iw-50-cb-ng-7738100836",
+    "manufacturer": "Worcester Bosch",
+    "range": "Greenstar 8000 Style",
+    "model": "Greenstar 8000 Style 50 CB NG",
+    "designation": "GR8700iW 50 CB NG",
+    "aliases": [
+      "GR8700iW 50 CB NG",
+      "Greenstar 8000 Style 50 CB NG"
+    ],
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
+    "gcNumber": "47-406-93",
+    "productNumber": "7738100836",
+    "technicalData": {},
+    "parts": []
   }
 ]

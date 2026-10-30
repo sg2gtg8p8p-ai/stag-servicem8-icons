@@ -1,8 +1,8 @@
 {
-  "appVersion": "2026.10.29-r1",
+  "appVersion": "2026.10.30-r1",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
-  "boilers": 1401,
+  "boilers": 1412,
   "gasFires": 43,
   "contentChanges": [
     {
@@ -366,6 +366,8 @@
     "Also adds source-backed original Logic Heat12/15/18/24/30 Natural Gas service guides:11 tasks/model,19 original UIN205862A06 January2014 pages, original five-minute S minimum mode and distinct service/commissioning conditions. No unsupported CO2/FPT target; original19fault entries and parts references unchanged. Combined17existing records,all1401identities and1384unrelated rows preserved. Later bulletins/current parts fit unverified.",
     "Completes the original Logic Heat UIN205862A06 frame67 fault menu and original decision trees for the five existing12/15/18/24/30 Natural Gas models:16alternating code/display references plus3symptoms,6additional original pages, exact BCC/pump/ribbon branches and automatic selected-entry source charts. No ambiguous valve-resistance tolerance guessed. All prior service/FGA/parts and1401 identities retained;17models updated in combined packet,1384unrelated records unchanged.",
     "Adds original manufacturer source pages, exact-model FGA, twelve practical service tasks and all twelve written diagnostic sections plus separately documented Too Many Restarts for five existing Logic MAX Heat2 H12/H15/H18/H24/H30 Natural Gas models, UIN228292A11. Source ambiguities disclosed and missing LCD messages not invented. All identities/parts and1379unrelated records preserved;22existing models updated in this combined packet.",
-    "Adds exact-source manufacturer pages,14practical service tasks,110numeric table entries and9symptoms for the two existing Greenstar1000 NG24/30models,6721835943(2024/01). Corrects chimney-sweep BACK exit; gas-valve offset explicitly not FPT. Source ambiguities disclosed. All1401identities and1377unrelated records preserved;24existing models updated in combined packet."
+    "Adds exact-source manufacturer pages,14practical service tasks,110numeric table entries and9symptoms for the two existing Greenstar1000 NG24/30models,6721835943(2024/01). Corrects chimney-sweep BACK exit; gas-valve offset explicitly not FPT. Source ambiguities disclosed. All1401identities and1377unrelated records preserved;24existing models updated in combined packet.",
+    "Adds all ten original Greenstar8000Style NaturalGas C/CB combi identities with exact manufacturer GC/product/manual mapping, including owner-reported47-800-02. Each has a partial eight-task shared-manual reference, NG MAX/MIN readings and independently selected output-specific FPT boundary;45/50gasket distinction retained. Adds separately reviewed original30CDiNG47-311-93 identity/manual. All1401 existing records unchanged; no other-generation/fuel service data inherited. Faults/current parts/later bulletins remain unreviewed for these additions.",
+    "Original30CDi NG47-311-93: original2006/11manufacturer pages, FGA settings, applicable FPT beside FGA, six practical service phases and all11basic-table faults with checks. Separate detailed fault booklet/current bulletins/current parts remain unreviewed. Preserves ten original8000Style variants and every prior1401record."
   ]
 }
