@@ -1,3 +1,6 @@
+import {baxi400HeatFaultAnswer} from './baxi400-heat-fault-guard.mjs';
+import {baxi600HeatFaultAnswer} from './baxi600-heat-fault-guard.mjs';
+import {baxi800HeatFaultAnswer} from './baxi800-heat-fault-guard.mjs';
 import {greenstar1000FaultAnswer} from './greenstar1000-fault-guard.mjs';
 import {heat2FaultAnswer} from './heat2-fault-guard.mjs';
 import {originalLogicHeatFaultAnswer} from './original-logic-heat-fault-guard.mjs';
@@ -134,4 +137,7 @@ function beforeHeat2FaultAnswer(row,id,question,last=null){return originalLogicH
 
 function before1000FaultAnswer(row,id,question,last=null){return heat2FaultAnswer(row,id,question,last,beforeHeat2FaultAnswer);}
 
-export function faultAnswer(row,id,question,last=null){return greenstar1000FaultAnswer(row,id,question,last,before1000FaultAnswer);}
+function beforeHeat4(row,id,question,last=null){return greenstar1000FaultAnswer(row,id,question,last,before1000FaultAnswer);}
+function beforeHeat6(row,id,question,last=null){return baxi400HeatFaultAnswer(row,id,question,last,beforeHeat4);}
+function beforeHeat8(row,id,question,last=null){return baxi600HeatFaultAnswer(row,id,question,last,beforeHeat6);}
+export function faultAnswer(row,id,question,last=null){return baxi800HeatFaultAnswer(row,id,question,last,beforeHeat8);}

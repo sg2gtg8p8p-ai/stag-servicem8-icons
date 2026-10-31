@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "9927a9bc7a3f7d6c",
+  "buildId": "89353596befff161",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.31-r3",
+  "appVersion": "2026.10.31-r4",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "sha256": "1b75c9e2312cc7f1ad1a7c0c49407a49a726aa1f30567fb954648763f5de90c4",
-      "bytes": 7117086
+      "sha256": "e2281d0b9cb04173b6da44029b26cd3365857fc52d935851ffcfb4e0cef4c903",
+      "bytes": 7419965
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -37,8 +37,8 @@
     },
     {
       "url": "./data/search-index.json",
-      "sha256": "9bcd21d293475b5503f72efde21b2636733e024e7fd901170df9ea5d45b39dbc",
-      "bytes": 1042273
+      "sha256": "0e6905523ad14effc25f444befa3d33195aa570274393393f5327d00890731b6",
+      "bytes": 1058114
     },
     {
       "url": "./decoder.js",
@@ -57,7 +57,7 @@
     },
     {
       "url": "./help/ai-client.mjs",
-      "sha256": "22919bb3a5065d045eba20bf072aed448fe3f88aff931b863c0568f4f25b97f7",
+      "sha256": "ab0e5fb5891b3eb3dc3a0ecf9b88f401d7eb1c763d83397f166d073922526e57",
       "bytes": 8047
     },
     {
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "98fe00845066b185994692d472dcf4e735a0f0abe0327648e5bbe0ae8520ff64",
-      "bytes": 1483122
+      "sha256": "0a0b68ff5a34444995767cc80cf7ade5a3f2be2efaaad32bf7fcc4eb3b9d5c19",
+      "bytes": 1496077
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "f776c3e8eaca558617f22453ef5301973b8623b06635943611c64b05c14a3e30",
-      "bytes": 41488
+      "sha256": "78a358fda7c555e49d6b26737af0765e17bb76c66bf308c932d46e20d86cfa5b",
+      "bytes": 41785
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -147,8 +147,8 @@
     },
     {
       "url": "./help/fault-answer.mjs",
-      "sha256": "72ecf34048252e7a17201c4b2a5136e0fa16c0d1a5f88b1bcfcd607cf7d23ad9",
-      "bytes": 16121
+      "sha256": "79c69114ca9108074105913e7373d15cde7a66addbe580901d42795782771e9a",
+      "bytes": 16676
     },
     {
       "url": "./help/manual-search.mjs",
@@ -2299,7 +2299,22 @@
       "url": "./manual-pages/original-30cdi-20261030/6720613700a/page-56.png",
       "sha256": "cfc00590dfa4312079541d379e524dcd5cfe4b80fa2d461c324d31ce52d210e4",
       "bytes": 494266
+    },
+    {
+      "url": "./help/baxi400-heat-fault-guard.mjs",
+      "sha256": "282f9a3c2d1ddbd32a99b491da59d84247574565a99e933f7a7b6a2dc60a195b",
+      "bytes": 3897
+    },
+    {
+      "url": "./help/baxi600-heat-fault-guard.mjs",
+      "sha256": "57745f21ea92ba8c02d2dd2302e6bf607dce666a4d31affa8d323e5e9586733a",
+      "bytes": 3894
+    },
+    {
+      "url": "./help/baxi800-heat-fault-guard.mjs",
+      "sha256": "30bae68c4765442a5d24712f165924a1b4bba974d8b3e523ac254937da940c8d",
+      "bytes": 3791
     }
   ],
-  "totalBytes": 162457305
+  "totalBytes": 162801414
 }
