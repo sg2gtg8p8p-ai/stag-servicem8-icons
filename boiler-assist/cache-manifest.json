@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "32d7f1db458cc6da",
+  "buildId": "9927a9bc7a3f7d6c",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.10.31-r2",
+  "appVersion": "2026.10.31-r3",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "sha256": "c85ad5652114f8aa2975fbc384669f8fd4e93b6b1b46357a2b1b6af5f2318402",
-      "bytes": 7107913
+      "sha256": "1b75c9e2312cc7f1ad1a7c0c49407a49a726aa1f30567fb954648763f5de90c4",
+      "bytes": 7117086
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -37,8 +37,8 @@
     },
     {
       "url": "./data/search-index.json",
-      "sha256": "44ba9322ae009494ff5a425ca3f9d3a6f3373f7d05c90e9ae83aef7ff85bccc4",
-      "bytes": 1030742
+      "sha256": "9bcd21d293475b5503f72efde21b2636733e024e7fd901170df9ea5d45b39dbc",
+      "bytes": 1042273
     },
     {
       "url": "./decoder.js",
@@ -57,7 +57,7 @@
     },
     {
       "url": "./help/ai-client.mjs",
-      "sha256": "1e7a5ea88e624a3b2b67b670f3fdc6d1c8cb0650e563d78cad1b06c4aaa010db",
+      "sha256": "22919bb3a5065d045eba20bf072aed448fe3f88aff931b863c0568f4f25b97f7",
       "bytes": 8047
     },
     {
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "sha256": "507b5a093cd2515df1e1cb384e3b0a63875c5e98eeb49f17990f9e45d9275441",
-      "bytes": 1473667
+      "sha256": "98fe00845066b185994692d472dcf4e735a0f0abe0327648e5bbe0ae8520ff64",
+      "bytes": 1483122
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "sha256": "a53576b70cf79a2498e64aa3e6a6614fbeffba72ca7d780beacce18d6fb35888",
-      "bytes": 41247
+      "sha256": "f776c3e8eaca558617f22453ef5301973b8623b06635943611c64b05c14a3e30",
+      "bytes": 41488
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -2301,5 +2301,5 @@
       "bytes": 494266
     }
   ],
-  "totalBytes": 162426905
+  "totalBytes": 162457305
 }
