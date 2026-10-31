@@ -41774,7 +41774,11 @@
     "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
     "gcNumber": "47-800-03",
     "productNumber": "7738100795",
-    "technicalData": {},
+    "technicalData": {
+      "applianceType": {
+        "value": "Gas fired condensing combi boiler"
+      }
+    },
     "parts": []
   },
   {
@@ -41794,7 +41798,11 @@
     "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
     "gcNumber": "47-800-02",
     "productNumber": "7738100796",
-    "technicalData": {},
+    "technicalData": {
+      "applianceType": {
+        "value": "Gas fired condensing combi boiler"
+      }
+    },
     "parts": []
   },
   {
@@ -41812,7 +41820,11 @@
     "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
     "gcNumber": "47-800-01",
     "productNumber": "7738100797",
-    "technicalData": {},
+    "technicalData": {
+      "applianceType": {
+        "value": "Gas fired condensing combi boiler"
+      }
+    },
     "parts": []
   },
   {
@@ -41830,7 +41842,11 @@
     "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
     "gcNumber": "47-406-99",
     "productNumber": "7738100798",
-    "technicalData": {},
+    "technicalData": {
+      "applianceType": {
+        "value": "Gas fired condensing combi boiler"
+      }
+    },
     "parts": []
   },
   {
@@ -41848,7 +41864,11 @@
     "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
     "gcNumber": "47-406-98",
     "productNumber": "7738100799",
-    "technicalData": {},
+    "technicalData": {
+      "applianceType": {
+        "value": "Gas fired condensing combi boiler"
+      }
+    },
     "parts": []
   },
   {
@@ -41866,7 +41886,11 @@
     "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
     "gcNumber": "47-406-97",
     "productNumber": "7738100832",
-    "technicalData": {},
+    "technicalData": {
+      "applianceType": {
+        "value": "Gas fired condensing combi boiler"
+      }
+    },
     "parts": []
   },
   {
@@ -41884,7 +41908,11 @@
     "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
     "gcNumber": "47-406-96",
     "productNumber": "7738100833",
-    "technicalData": {},
+    "technicalData": {
+      "applianceType": {
+        "value": "Gas fired condensing combi boiler"
+      }
+    },
     "parts": []
   },
   {
@@ -41902,7 +41930,11 @@
     "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
     "gcNumber": "47-406-95",
     "productNumber": "7738100834",
-    "technicalData": {},
+    "technicalData": {
+      "applianceType": {
+        "value": "Gas fired condensing combi boiler"
+      }
+    },
     "parts": []
   },
   {
@@ -41920,7 +41952,11 @@
     "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
     "gcNumber": "47-406-94",
     "productNumber": "7738100835",
-    "technicalData": {},
+    "technicalData": {
+      "applianceType": {
+        "value": "Gas fired condensing combi boiler"
+      }
+    },
     "parts": []
   },
   {
@@ -41938,7 +41974,11 @@
     "generation": "Original GR8700iW 8000 Style; manual6720883864 (2021/09)",
     "gcNumber": "47-406-93",
     "productNumber": "7738100836",
-    "technicalData": {},
+    "technicalData": {
+      "applianceType": {
+        "value": "Gas fired condensing combi boiler"
+      }
+    },
     "parts": []
   },
   {

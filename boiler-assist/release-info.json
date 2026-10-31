@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.10.31-r1",
+  "appVersion": "2026.10.31-r2",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1435,
@@ -369,6 +369,7 @@
     "Adds exact-source manufacturer pages,14practical service tasks,110numeric table entries and9symptoms for the two existing Greenstar1000 NG24/30models,6721835943(2024/01). Corrects chimney-sweep BACK exit; gas-valve offset explicitly not FPT. Source ambiguities disclosed. All1401identities and1377unrelated records preserved;24existing models updated in combined packet.",
     "Adds all ten original Greenstar8000Style NaturalGas C/CB combi identities with exact manufacturer GC/product/manual mapping, including owner-reported47-800-02. Each has a partial eight-task shared-manual reference, NG MAX/MIN readings and independently selected output-specific FPT boundary;45/50gasket distinction retained. Adds separately reviewed original30CDiNG47-311-93 identity/manual. All1401 existing records unchanged; no other-generation/fuel service data inherited. Faults/current parts/later bulletins remain unreviewed for these additions.",
     "Original30CDi NG47-311-93: original2006/11manufacturer pages, FGA settings, applicable FPT beside FGA, six practical service phases and all11basic-table faults with checks. Separate detailed fault booklet/current bulletins/current parts remain unreviewed. Preserves ten original8000Style variants and every prior1401record.",
-    "23 exact Baxi Natural Gas identities and applicable archived manufacturer manual links: Megaflo HE A, Megaflo2 Compact GA, original EcoBlue System and EcoBlue System ErP. Numerical service criteria and complete procedures remain unavailable for these added records. All previous1412records preserved."
+    "23 exact Baxi Natural Gas identities and applicable archived manufacturer manual links: Megaflo HE A, Megaflo2 Compact GA, original EcoBlue System and EcoBlue System ErP. Numerical service criteria and complete procedures remain unavailable for these added records. All previous1412records preserved.",
+    "Expanded source-bound partial service procedures and 15 selected status/fault entries for ten exact original Greenstar 8000 Style Natural Gas models. FPT table visibility corrected; existing numerical limits unchanged. Full fault coverage and several service methods remain unreviewed. No new identities."
   ]
 }
