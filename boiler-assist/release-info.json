@@ -1,8 +1,8 @@
 {
-  "appVersion": "2026.10.31-r4",
+  "appVersion": "2026.10.31-r5",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
-  "boilers": 1498,
+  "boilers": 1526,
   "gasFires": 43,
   "contentChanges": [
     {
@@ -372,6 +372,7 @@
     "23 exact Baxi Natural Gas identities and applicable archived manufacturer manual links: Megaflo HE A, Megaflo2 Compact GA, original EcoBlue System and EcoBlue System ErP. Numerical service criteria and complete procedures remain unavailable for these added records. All previous1412records preserved.",
     "Expanded source-bound partial service procedures and 15 selected status/fault entries for ten exact original Greenstar 8000 Style Natural Gas models. FPT table visibility corrected; existing numerical limits unchanged. Full fault coverage and several service methods remain unreviewed. No new identities.",
     "Added 26 exact Baxi Natural Gas model/GC identities and seven archived manufacturer manual assignments. Identity/manual coverage only; numerical readings, practical service procedures and faults for these additions remain unreviewed.",
-    "Added37exactIdealNaturalGas model/manual identities; expanded partial service guides for13existingBaxi400/600/800HeatNG models and exact-colour/count flash lookups. Existing numericalFGA, parts, identities and signatures unchanged; no overall servicePASS or complete manufacturer coverage."
+    "Added37exactIdealNaturalGas model/manual identities; expanded partial service guides for13existingBaxi400/600/800HeatNG models and exact-colour/count flash lookups. Existing numericalFGA, parts, identities and signatures unchanged; no overall servicePASS or complete manufacturer coverage.",
+    "Added28exactBaxiNaturalGas identities and archived manufacturer manual assignments for Solo3PF/PFL, their System variants, Barcelona/System and System35/60+60/100. Identity/manual coverage only; no new technical service limits or certificate rules."
   ]
 }
