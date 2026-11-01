@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "417bdfcc3c9aa5b1",
+  "buildId": "cbd4bfade23c58e2",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.11.01-r2",
+  "appVersion": "2026.11.01-r3",
   "workerTemplateSHA256": "29019205e41cd2fd424a443b8359f477f556d14ff23dcf0ce0302bafbb5a9a8a",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "bytes": 8004582,
-      "sha256": "33fa679a0af41280b611602a5eb7dcb5f0a1f6ec0e924dcb1ef3e3cad6d224d7"
+      "bytes": 8040562,
+      "sha256": "cb73831f7b8b4ccae2403a0ab4f3bc3313366f7836104cce716877bd00459f46"
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -37,8 +37,8 @@
     },
     {
       "url": "./data/search-index.json",
-      "bytes": 1140490,
-      "sha256": "e2ab8e9d91e2c52da9ab35dbde5b5582757c0c2a3e107163b8bb111a7e19c768"
+      "bytes": 1143376,
+      "sha256": "7c8b09f4d8e672def02d3a75aed4069caece4aaff255353dfbca0bc0a2b6a163"
     },
     {
       "url": "./decoder.js",
@@ -58,7 +58,7 @@
     {
       "url": "./help/ai-client.mjs",
       "bytes": 8047,
-      "sha256": "1ba05f8999192ba9c393b447cc26f2195b730147d9c4e12d05891a1ef24ca490"
+      "sha256": "53f6a5c18c832ec99e5db178d7edcb4107e5d8f352ea97074559992e7739b343"
     },
     {
       "url": "./help/engine-config.mjs",
@@ -107,8 +107,8 @@
     },
     {
       "url": "./index.html",
-      "bytes": 1563732,
-      "sha256": "c1df50e6941fe7916e59bd58d2aee5a1a2579266d43a0586a67d32258ddabbbf"
+      "bytes": 1566150,
+      "sha256": "e8961395ba57fb3c06775e4d0aa1bf29fff863f54818ed62d6d6447ca1a14f63"
     },
     {
       "url": "./local-bridge.js",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 42662,
-      "sha256": "a1e1c674697151cbc25aa75b7184ac7b84bb07855773878a7a479d18262b71e9"
+      "bytes": 43007,
+      "sha256": "378af02c5044ba4b83dcd7f8ffbb2da6a7eb7f6263fa9327c2c8969fec87b91b"
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -2316,5 +2316,5 @@
       "sha256": "30bae68c4765442a5d24712f165924a1b4bba974d8b3e523ac254937da940c8d"
     }
   ],
-  "totalBytes": 163536939
+  "totalBytes": 163578568
 }
