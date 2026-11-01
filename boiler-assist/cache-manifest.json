@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "0a4067ff003835fd",
+  "buildId": "27adbc6f893f4d0f",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.11.01-r4",
+  "appVersion": "2026.11.01-r5",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "bytes": 8040562,
-      "sha256": "cb73831f7b8b4ccae2403a0ab4f3bc3313366f7836104cce716877bd00459f46"
+      "bytes": 8082782,
+      "sha256": "c4e0bb66870b442458f1d1f53a444e270a3849d7af4c6bf765e64d7dcf05db1f"
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -58,7 +58,7 @@
     {
       "url": "./help/ai-client.mjs",
       "bytes": 8047,
-      "sha256": "53f6a5c18c832ec99e5db178d7edcb4107e5d8f352ea97074559992e7739b343"
+      "sha256": "179fa73615de0b9538386c5cf5daf81d7bb9ba0325db394c87a81f178ecfe2f0"
     },
     {
       "url": "./help/engine-config.mjs",
@@ -122,8 +122,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 43331,
-      "sha256": "1179d582ab6a94efe808d59110906e06f4f5cebb28b03186a4022efedf71ff2a"
+      "bytes": 43685,
+      "sha256": "a4a7a045d5fc8a48ae47ecf3102059f3cfdd2a40b96e8815fb95f3bb345fcf4a"
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -2316,5 +2316,5 @@
       "sha256": "30bae68c4765442a5d24712f165924a1b4bba974d8b3e523ac254937da940c8d"
     }
   ],
-  "totalBytes": 163581180
+  "totalBytes": 163623754
 }
