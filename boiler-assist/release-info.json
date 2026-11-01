@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.01-r3",
+  "appVersion": "2026.11.01-r4",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1687,
@@ -376,6 +376,7 @@
     "Added28exactBaxiNaturalGas identities and archived manufacturer manual assignments for Solo3PF/PFL, their System variants, Barcelona/System and System35/60+60/100. Identity/manual coverage only; no new technical service limits or certificate rules.",
     "Added140exactNaturalGas model/manual identities from retained reviewed Worcester, Ideal and Baxi sources; expanded six existing Baxi Duo-tec/Platinum Compact partial service guides. New identities remain identity/manual-only. No new certificate rules or numerical service limits; existing readings/signatures and all unaffected records preserved.",
     "Added fifteen exact Natural Gas Boston2 OF/RS and Solo HE A identities with reviewed manufacturer manual applicability. Identity/manual coverage only; no new service, FGA, FPT, safety or certificate rules. All1666 existing model rows and signatures preserved.",
-    "Added six exact EcoBlue Advance Heat ErP Natural Gas identities/manual assignments and source-cited partial service guides for Mexico Super CF495/CF4120/CF4140 NG. Archived manufacturer edition and missing coverage remain explicit; no numerical FGA/FPT or certificate criteria added. All prior identities and unrelated records preserved."
+    "Added six exact EcoBlue Advance Heat ErP Natural Gas identities/manual assignments and source-cited partial service guides for Mexico Super CF495/CF4120/CF4140 NG. Archived manufacturer edition and missing coverage remain explicit; no numerical FGA/FPT or certificate criteria added. All prior identities and unrelated records preserved.",
+    "Improved offline updates: reuse only byte/hash-verified saved files, resume interrupted downloads, retry failed transfers, start recovery before catalogue loading and show clearer progress/failure messages. Existing verified library and saved selections retained. Boiler content and ServiceM8 certificates unchanged."
   ]
 }

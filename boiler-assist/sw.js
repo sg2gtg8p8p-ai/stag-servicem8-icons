@@ -1,6 +1,6 @@
 'use strict';
-const EXPECTED_BUILD_ID='cbd4bfade23c58e2';
-const EXPECTED_MANIFEST_SHA256='be980be313c464c5b455b89d3218a8a395db864835513bcbea9feef0b31a46e4';
+const EXPECTED_BUILD_ID='0a4067ff003835fd';
+const EXPECTED_MANIFEST_SHA256='2058ba0ad986e380f82d430b549982040840d902a27d20e167188928e6ea9d11';
 const OWNER='stag-boiler-assist-offline-v1:';
 const digest=async bytes=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(v=>v.toString(16).padStart(2,'0')).join('');
 const base=new URL(self.registration.scope),url=name=>new URL(name,base).href;
@@ -26,19 +26,70 @@ async function manifest(){
 }
 async function valid(response,file){if(!response?.ok)return false;const raw=await response.clone().arrayBuffer();return raw.byteLength===file.bytes&&await digest(raw)===file.sha256;}
 async function network(address){
-  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),12000);
-  try{const response=await fetch(address,{cache:'no-store',credentials:'omit',redirect:'error',signal:controller.signal});if(!response.ok)throw Error('Resource download failed');return response;}
+  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),120000);
+  try{
+    const response=await fetch(address,{cache:'no-store',credentials:'omit',redirect:'error',signal:controller.signal});
+    if(!response.ok)throw Error('Resource download failed');
+    // Keep the timeout active until the BODY has arrived, not just its headers.
+    // Buffer one resource at a time and do not retain transfer encodings for an
+    // already decoded body when storing the verified bytes in CacheStorage.
+    const raw=await response.arrayBuffer();
+    return new Response(raw,{headers:{'Content-Type':response.headers.get('Content-Type')||'application/octet-stream'}});
+  }
   finally{clearTimeout(timer);}
 }
-async function install(){
-  const response=await network(url('./cache-manifest.json'));
-  const raw=await response.clone().arrayBuffer(),m=await validManifest(new Response(raw));
-  const name=await cacheName(),cache=await caches.open(name);
+async function updateNotice(message){
   try{
-    for(const file of m.files){const r=await network(url(file.url));if(!await valid(r,file))throw Error('Resource integrity failed');await cache.put(url(file.url),r);}
+    const windows=await self.clients.matchAll({type:'window',includeUncontrolled:true});
+    for(const client of windows){const address=new URL(client.url);if(address.origin===base.origin&&address.pathname.startsWith(base.pathname))client.postMessage(message);}
+  }catch{} // Progress delivery must not interrupt an otherwise valid download.
+}
+async function reusable(file,cache,names){
+  const own=await cache.match(url(file.url));if(await valid(own,file))return {response:own,current:true};
+  for(const name of names){const previous=await caches.open(name),response=await previous.match(url(file.url));if(await valid(response,file))return {response,current:false};}
+  return null;
+}
+async function download(file){
+  let failure;
+  for(let attempt=0;attempt<3;attempt++){
+    try{const response=await network(url(file.url));if(!await valid(response,file))throw Error('Resource integrity failed');return response;}
+    catch(error){failure=error;}
+  }
+  throw failure;
+}
+async function install(){
+  let raw,m,metadataFailure;
+  for(let attempt=0;attempt<3;attempt++){
+    try{const response=await network(url('./cache-manifest.json'));raw=await response.arrayBuffer();m=await validManifest(new Response(raw));break;}
+    catch(error){metadataFailure=error;}
+  }
+  if(!m){await updateNotice({type:'PACK_DOWNLOAD_FAILED',reason:'download',completed:0,total:0});throw metadataFailure;}
+  const name=await cacheName(),cache=await caches.open(name),owned=await prefix();
+  const previous=(await caches.keys()).filter(key=>key!==name&&key.startsWith(owned));
+  // A failed candidate can resume, but cannot announce readiness or activate.
+  // Never delete the active version, another app's cache, or user selections.
+  await cache.delete(url('./__verified_pack'));
+  let completed=0,reused=0;
+  try{
+    for(const file of m.files){
+      const saved=await reusable(file,cache,previous),response=saved?.response||await download(file);
+      // Reuse requires the NEW manifest's exact byte length and SHA-256,
+      // including when the resource came from a partially saved candidate.
+      // Both reusable() and download() return only after that exact check.
+      if(!saved?.current)await cache.put(url(file.url),response);
+      completed++;if(saved)reused++;
+      if(completed===1||completed%20===0||completed===m.files.length)await updateNotice({type:'PACK_DOWNLOAD_PROGRESS',completed,total:m.files.length,reused});
+    }
     // Write the ready metadata only after the whole immutable pack is verified.
     await cache.put(url('./__verified_pack'),new Response(raw,{headers:{'Content-Type':'application/json'}}));
-  }catch(e){await caches.delete(name);throw e;}
+  }catch(e){
+    await cache.delete(url('./__verified_pack'));
+    const reason=e?.name==='QuotaExceededError'?'storage-full':e?.message==='Resource integrity failed'?'verification':'download';
+    await updateNotice({type:'PACK_DOWNLOAD_FAILED',reason,completed,total:m.files.length});
+    // Retain individually verified files for the next ordinary update attempt.
+    // The current verified library remains separate and usable.
+    throw e;
+  }
 }
 async function health(){
   const m=await manifest(),cache=await caches.open(await cacheName()),keys=await cache.keys();
