@@ -1,3 +1,4 @@
+import {ecoBlueHeatFaultAnswer} from './ecoblue-heat-fault-guard.mjs';
 import {baxi400HeatFaultAnswer} from './baxi400-heat-fault-guard.mjs';
 import {baxi600HeatFaultAnswer} from './baxi600-heat-fault-guard.mjs';
 import {baxi800HeatFaultAnswer} from './baxi800-heat-fault-guard.mjs';
@@ -140,4 +141,5 @@ function before1000FaultAnswer(row,id,question,last=null){return heat2FaultAnswe
 function beforeHeat4(row,id,question,last=null){return greenstar1000FaultAnswer(row,id,question,last,before1000FaultAnswer);}
 function beforeHeat6(row,id,question,last=null){return baxi400HeatFaultAnswer(row,id,question,last,beforeHeat4);}
 function beforeHeat8(row,id,question,last=null){return baxi600HeatFaultAnswer(row,id,question,last,beforeHeat6);}
-export function faultAnswer(row,id,question,last=null){return baxi800HeatFaultAnswer(row,id,question,last,beforeHeat8);}
+function beforeEcoBlueHeat(row,id,question,last=null){return baxi800HeatFaultAnswer(row,id,question,last,beforeHeat8);}
+export function faultAnswer(row,id,question,last=null){return ecoBlueHeatFaultAnswer(row,id,question,last,beforeEcoBlueHeat);}

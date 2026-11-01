@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.01-r5",
+  "appVersion": "2026.11.01-r6",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1687,
@@ -378,6 +378,7 @@
     "Added fifteen exact Natural Gas Boston2 OF/RS and Solo HE A identities with reviewed manufacturer manual applicability. Identity/manual coverage only; no new service, FGA, FPT, safety or certificate rules. All1666 existing model rows and signatures preserved.",
     "Added six exact EcoBlue Advance Heat ErP Natural Gas identities/manual assignments and source-cited partial service guides for Mexico Super CF495/CF4120/CF4140 NG. Archived manufacturer edition and missing coverage remain explicit; no numerical FGA/FPT or certificate criteria added. All prior identities and unrelated records preserved.",
     "Improved offline updates: reuse only byte/hash-verified saved files, resume interrupted downloads, retry failed transfers, start recovery before catalogue loading and show clearer progress/failure messages. Existing verified library and saved selections retained. Boiler content and ServiceM8 certificates unchanged.",
-    "Added13 source-linked partial service tasks for each of six exact EcoBlue Advance Heat ErP NG models, including illustrated access/cleaning references, test mode and colour/count indication guidance. Archived page48 numerical criteria held for revision ambiguity. Current r4 updater repair retained; no new numerical FGA/FPT or certificate rules."
+    "Added13 source-linked partial service tasks for each of six exact EcoBlue Advance Heat ErP NG models, including illustrated access/cleaning references, test mode and colour/count indication guidance. Archived page48 numerical criteria held for revision ambiguity. Current r4 updater repair retained; no new numerical FGA/FPT or certificate rules.",
+    "Added12 exact green/red colour-count fault entries for each of six EcoBlue Advance Heat ErP NG models. Lookup requires the actual observed colour and count; orange demand flashes are not treated as faults. Existing13-task guides and numerical criteria unchanged."
   ]
 }
