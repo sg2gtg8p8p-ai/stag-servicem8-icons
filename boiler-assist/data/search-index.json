@@ -45909,5 +45909,23 @@
     "productNumber": null,
     "technicalData": {},
     "parts": []
+  },
+  {
+    "id": "firebird-enviromax-combi-c20-1764124b",
+    "manufacturer": "Firebird",
+    "range": "Enviromax Combi C",
+    "model": "Enviromax Combi C20",
+    "aliases": [
+      "Firebird Enviromax Combi C20",
+      "Enviromax Combi C 20",
+      "Enviro Max Combi C20"
+    ],
+    "boilerType": "combi",
+    "fuel": "Oil",
+    "generation": null,
+    "gcNumber": null,
+    "productNumber": null,
+    "technicalData": {},
+    "parts": []
   }
 ]
