@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "2813f2cb12a7d842",
+  "buildId": "84fc6f348e2ab9a0",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.11.02-r13",
+  "appVersion": "2026.11.02-r14",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "bytes": 9090389,
-      "sha256": "b529372fa4ee2b37b62372d90ba49e224bfba6e17acc82da6f241bbb30afec16"
+      "bytes": 9179433,
+      "sha256": "bb74cf4b500027c29167016c21251115366f3c607aab15cceb08ed99ddd631ef"
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -58,7 +58,7 @@
     {
       "url": "./help/ai-client.mjs",
       "bytes": 8047,
-      "sha256": "353351a12b19305a77f4d99780903762f5c70c44a389afa5a2464da74e9e5a79"
+      "sha256": "1ec665bdfef3206f1ea2229b004baf637a7f4d853e971dee8f405280f0874045"
     },
     {
       "url": "./help/baxi400-heat-fault-guard.mjs",
@@ -87,8 +87,8 @@
     },
     {
       "url": "./help/fault-answer.mjs",
-      "bytes": 17089,
-      "sha256": "983b7c0e97bf831b94ca6525016c5ad3fd5d9db19303ffc27e786d3cd6414356"
+      "bytes": 17313,
+      "sha256": "fa777d81befb0e70d33e00a5a6beb36f6dbdc9e24b7f57111c044c8115c0a54e"
     },
     {
       "url": "./help/greenstar1000-fault-guard.mjs",
@@ -202,8 +202,8 @@
     },
     {
       "url": "./help/ui.mjs",
-      "bytes": 36184,
-      "sha256": "89114bf36f2b8d0f8af2c550a3147b64b858ab709da15faa1fe0dbcb8e56e9bf"
+      "bytes": 36534,
+      "sha256": "083c1d2e757f2f199673a63c91a0a65e66ccd158280108b79227b5bb479cdaa8"
     },
     {
       "url": "./icons/256.png",
@@ -2257,8 +2257,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 48678,
-      "sha256": "2c75daf710a3b93edec7d2f35dac696ee06e4038633641b36b7aa6ab24b47807"
+      "bytes": 49252,
+      "sha256": "5eef624cb613efe2ec4f233cf06f6d9013d186878060a64df7b39862f703ac35"
     },
     {
       "url": "./vendor/pdf.min.mjs",
@@ -2324,7 +2324,12 @@
       "url": "./help/i-system-erp-fault-guard.mjs",
       "bytes": 2540,
       "sha256": "ae066b8848fc9767fcf6556b35efc5cf25f38e48378ce44f37a87bac3ffdaaed"
+    },
+    {
+      "url": "./help/minimiser-fault-guard.mjs",
+      "bytes": 2715,
+      "sha256": "3218234b3b878d25b7cf29d6d8f639f76c2d56324d8396b2e3783510186ca5a0"
     }
   ],
-  "totalBytes": 164648599
+  "totalBytes": 164741506
 }

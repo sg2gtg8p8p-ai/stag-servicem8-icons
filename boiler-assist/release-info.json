@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.02-r13",
+  "appVersion": "2026.11.02-r14",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1694,
@@ -392,6 +392,7 @@
     "Filled six existing exact NG Megaflo2SystemCompactGA models with18-task partial guides,16technical entries and20original fault meanings each. Net-input/NG RDS and two-part manual page references retained. Three-speed CO2/calibration remains separate from MAX-only routine ratio; blank32burner part cell preserved. No certificate, FPT, rate tolerance or parts-fit inferred. All unrelated rows preserved.",
     "Filled seven existing exact NG British Gas RD1 models with 18-task partial service guides, exact technical settings, eight LED3/LED4 indications and three symptom summaries each. The source cleaning assessment pairs ratio ≤0.004 with actual input ≥90% nominal. Conditional dismantling and 3100 flue/system/parts differences retained. Historical Product No. references remain separate from current fit or ordering. No certificate rules added; unrelated records preserved.",
     "Filled seven existing exact NG Optia FF models with 18-task partial guides, exact technical tables, I3/SG1 operating indications, seven symptom summaries and 16 historical Product No. references each. Source spark ignition, 100 W/F1A ratings, FF100 parts/system differences and conditional input/ratio cleaning procedure retained. No automatic certificate verdict or part-fit claim. All unrelated rows preserved.",
-    "Filled six existing exact NG Solo 3 PF System models with reviewed technical data, seven symptom summaries each and 117 historical manufacturer parts references. The archived manual has missing service text and conflicting model 70/80 minimum settings: full service execution and disputed settings remain explicitly withheld. No numerical analyser targets, certificate verdict or part-fit claim. All unrelated rows preserved."
+    "Filled six existing exact NG Solo 3 PF System models with reviewed technical data, seven symptom summaries each and 117 historical manufacturer parts references. The archived manual has missing service text and conflicting model 70/80 minimum settings: full service execution and disputed settings remain explicitly withheld. No numerical analyser targets, certificate verdict or part-fit claim. All unrelated rows preserved.",
+    "Filled six existing exact NG Ideal Minimiser FF models with 18-task partial guides, technical/service references, original PCB indicators and seven symptom summaries, plus 24 historical Product No. references each. Preserved the twenty-minute stabilisation, paired input/ratio cleaning decision, clockwise-reduces adjustment and 300mm-flue-only fan diagnostic conditions. Exact six-model LED2/3/4 lookup added; shared matcher grammar unchanged. No overall certificate verdict or current part-fit claim. All unrelated records and prior source-quality holds preserved."
   ]
 }

@@ -1,3 +1,4 @@
+import {minimiserIndicatorAnswer} from './minimiser-fault-guard.mjs';
 import {iSystemErPFaultAnswer} from './i-system-erp-fault-guard.mjs';
 import {ecoBlueHeatFaultAnswer} from './ecoblue-heat-fault-guard.mjs';
 import {baxi400HeatFaultAnswer} from './baxi400-heat-fault-guard.mjs';
@@ -145,4 +146,5 @@ function beforeHeat8(row,id,question,last=null){return baxi600HeatFaultAnswer(ro
 function beforeEcoBlueHeat(row,id,question,last=null){return baxi800HeatFaultAnswer(row,id,question,last,beforeHeat8);}
 function beforeISystemErPFaultAnswer(row,id,question,last=null){return ecoBlueHeatFaultAnswer(row,id,question,last,beforeEcoBlueHeat);}
 
-export function faultAnswer(row,id,question,last=null){return iSystemErPFaultAnswer(row,id,question,last,beforeISystemErPFaultAnswer);}
+function beforeMinimiserIndicatorAnswer(row,id,question,last=null){return iSystemErPFaultAnswer(row,id,question,last,beforeISystemErPFaultAnswer);}
+export function faultAnswer(row,id,question,last=null){return minimiserIndicatorAnswer(row,id,question,last,beforeMinimiserIndicatorAnswer);}
