@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.02-r10",
+  "appVersion": "2026.11.02-r11",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1694,
@@ -389,6 +389,7 @@
     "Filled thirteen existing Ideal Classic LXFF/FF NG models with17-task partial guides,16technical entries, seven symptom summaries/two operating indications and14historical parts references each. Exact UIN111497 A0 range-rating, casing and100-size differences retained; no numerical analyser criteria or certificate rules inferred. All unrelated rows preserved.",
     "Filled eight existing Ideal Classic LX RS/RS NG models with17-task partial guides,16technical entries,three symptom summaries and15historical parts references each. Exact UIN111499 A0 manual-pilot/range-rating/pressure-point conditions retained; RS260 has no flue baffles, and differing source spark-gap figures remain explicit. No analyser limits or certificate rules inferred. All unrelated rows preserved.",
     "Filled six existing exact Baxi EcoBlue System ErP NG models with18-task partial service guides,16technical entries,15fault meanings and16historical parts references each. Exact7219708-03(03/17) gross inputs, ErP power/PCB/pump references and MAX-only routine service ratio retained. Commissioning CO and gas-valve-setting CO2 remain separate; no certificate, MIN service ratio, FPT or rate tolerance inferred. All unrelated records preserved.",
-    "Filled six existing exact NG Megaflo2SystemCompactGA models with18-task partial guides,16technical entries and20original fault meanings each. Net-input/NG RDS and two-part manual page references retained. Three-speed CO2/calibration remains separate from MAX-only routine ratio; blank32burner part cell preserved. No certificate, FPT, rate tolerance or parts-fit inferred. All unrelated rows preserved."
+    "Filled six existing exact NG Megaflo2SystemCompactGA models with18-task partial guides,16technical entries and20original fault meanings each. Net-input/NG RDS and two-part manual page references retained. Three-speed CO2/calibration remains separate from MAX-only routine ratio; blank32burner part cell preserved. No certificate, FPT, rate tolerance or parts-fit inferred. All unrelated rows preserved.",
+    "Filled seven existing exact NG British Gas RD1 models with 18-task partial service guides, exact technical settings, eight LED3/LED4 indications and three symptom summaries each. The source cleaning assessment pairs ratio ≤0.004 with actual input ≥90% nominal. Conditional dismantling and 3100 flue/system/parts differences retained. Historical Product No. references remain separate from current fit or ordering. No certificate rules added; unrelated records preserved."
   ]
 }
