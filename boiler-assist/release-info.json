@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.02-r19",
+  "appVersion": "2026.11.02-r20",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1694,
@@ -398,6 +398,8 @@
     "Filled five existing exact NG Megaflo System HE Issue3 models with18-task partial guides and an original CO2-plus-visual assessment before ten conditional strip-down tasks. Added exact earlier technical weights, nine fault meanings each and65 historical parts references. No later HE A ratio/CO criterion, parts or diagnostic voltages transferred. All unrelated records, UI/LED routing and prior source holds preserved. No certificate verdict or current parts-fit claim.",
     "Filled six existing exact NG Solo2PF models with18-task partial guides, technical/range/operating references, five original neon indications plus seven fault-chart symptoms each, and103 historical parts references with the80 fan serial split. No numerical analyser targets or certificate rules. Source70/80 minimum-setting conflicts remain withheld; all prior rows, UI/routing and source holds preserved.",
     "Filled six existing exact NG Solo3PFL models with18-task partial service guides, single factory-input technical references, five original neon indications plus seven fault-chart symptoms each and102 historical parts references. Exact-output fan/APS, baffle retention clip, two fan venturi tubes and conditional outlet restrictor preserved. No numerical analyser targets or certificate rules. All prior rows, UI/routing and source holds retained.",
-    "Filled six existing exact NG Solo3PFL System models with18-task partial service guides,17 technical references,8 adjustment contexts,5 original neon indications plus7 symptom summaries and120 historical parts references. Sealed integral pump/vessel, System-specific injectors/lead, isolated-and-drained vessel recharge and disconnected filling loop conditions preserved. No numerical analyser targets or certificate rules; all prior records, source holds and UI retained."
+    "Filled six existing exact NG Solo3PFL System models with18-task partial service guides,17 technical references,8 adjustment contexts,5 original neon indications plus7 symptom summaries and120 historical parts references. Sealed integral pump/vessel, System-specific injectors/lead, isolated-and-drained vessel recharge and disconnected filling loop conditions preserved. No numerical analyser targets or certificate rules; all prior records, source holds and UI retained.",
+    "Filled five existing exact NG Ideal Mexico Super40/50/60/70/80FF models with18-task partial service guides,17 technical references,6 adjustment contexts,2 original neon indications plus7 symptoms and70 historical Product references. Inclusive source service ratio retained with unresolved within95% input wording, source sealed-kit conflict, exact range-rating tables and3–4mm spark gap. No inferred input comparator or certificate rules; all prior records/source holds/UI retained.",
+    "Corrected the adjustment section and menu caption to Burner settings across all boiler fuels, including every405 Oil-labelled entry and445 unspecified-fuel entry. Applies in the public/HomeScreen app and native add-on. No fuel inferred, technical values altered or new coverage claimed by this caption fix."
   ]
 }
