@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "90a468ea30379fea",
+  "buildId": "db5b93b63f5ad4f4",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.11.02-r2",
+  "appVersion": "2026.11.02-r3",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "bytes": 8147019,
-      "sha256": "c481cee30eb539a16a7a6482a0dd6787aae6a091f5343083047575a7fe5c368f"
+      "bytes": 8222826,
+      "sha256": "d66c350d2b15814aca2e743e5f854c6e7b225972893c1727f5bce47594f929cb"
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -37,8 +37,8 @@
     },
     {
       "url": "./data/search-index.json",
-      "bytes": 1143819,
-      "sha256": "279a158c1aa3bb3257b7cc76671aeba65aa4662e66ffeff86735625a6ec02bb7"
+      "bytes": 1146103,
+      "sha256": "70b9a1158a030448ba2ef221c901e616798eb0d426b9559de9eb2578ca904724"
     },
     {
       "url": "./decoder.js",
@@ -58,7 +58,7 @@
     {
       "url": "./help/ai-client.mjs",
       "bytes": 8047,
-      "sha256": "144959a1ca73c0602f1836ea33603eef1da2bad985989a0435c7cb999e86fb53"
+      "sha256": "74fd2bc4a7244da354d43babe52c92d9b2db0e0cf9ad0667d1fa798296246642"
     },
     {
       "url": "./help/baxi400-heat-fault-guard.mjs",
@@ -87,8 +87,8 @@
     },
     {
       "url": "./help/fault-answer.mjs",
-      "bytes": 16873,
-      "sha256": "726ca9e41f710b0a6542b8e4c8da0bbb1367efd94b924ded40f4e4f5be2c2b8f"
+      "bytes": 17089,
+      "sha256": "983b7c0e97bf831b94ca6525016c5ad3fd5d9db19303ffc27e786d3cd6414356"
     },
     {
       "url": "./help/greenstar1000-fault-guard.mjs",
@@ -202,8 +202,8 @@
     },
     {
       "url": "./help/ui.mjs",
-      "bytes": 36070,
-      "sha256": "641025feb2b243798542894172423d757c52dba81868b8b01c3f80c36867e98d"
+      "bytes": 36184,
+      "sha256": "89114bf36f2b8d0f8af2c550a3147b64b858ab709da15faa1fe0dbcb8e56e9bf"
     },
     {
       "url": "./icons/256.png",
@@ -217,8 +217,8 @@
     },
     {
       "url": "./index.html",
-      "bytes": 1566489,
-      "sha256": "a86fb4c44d368d85072e2176fed43d2c32d635ceb42e08f055def366936ce191"
+      "bytes": 1568305,
+      "sha256": "5ae7cdbbf44079841f1427b5116324f674a5d4e93a986259db0bd886fefea7ec"
     },
     {
       "url": "./local-bridge.js",
@@ -2257,8 +2257,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 44479,
-      "sha256": "1749b8cf3c8bbdbcd1a97cef7367b7016a7c24972c1ff1f09eb3fb16028a062c"
+      "bytes": 44749,
+      "sha256": "9b0fdd293c635f3d7e18ba8d86cdbb9af3e50bd17f789917b817771da9d86cdc"
     },
     {
       "url": "./vendor/pdf.min.mjs",
@@ -2319,7 +2319,12 @@
       "url": "./wiring/runtime.js",
       "bytes": 55421,
       "sha256": "996c17e2358ee7f06948366e6a7a76f94ff315949fdcb425a73109ea710ca1ec"
+    },
+    {
+      "url": "./help/i-system-erp-fault-guard.mjs",
+      "bytes": 2540,
+      "sha256": "ae066b8848fc9767fcf6556b35efc5cf25f38e48378ce44f37a87bac3ffdaaed"
     }
   ],
-  "totalBytes": 163694060
+  "totalBytes": 163777107
 }

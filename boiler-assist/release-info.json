@@ -1,8 +1,8 @@
 {
-  "appVersion": "2026.11.02-r2",
+  "appVersion": "2026.11.02-r3",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
-  "boilers": 1688,
+  "boilers": 1694,
   "gasFires": 43,
   "contentChanges": [
     {
@@ -381,6 +381,7 @@
     "Added13 source-linked partial service tasks for each of six exact EcoBlue Advance Heat ErP NG models, including illustrated access/cleaning references, test mode and colour/count indication guidance. Archived page48 numerical criteria held for revision ambiguity. Current r4 updater repair retained; no new numerical FGA/FPT or certificate rules.",
     "Added12 exact green/red colour-count fault entries for each of six EcoBlue Advance Heat ErP NG models. Lookup requires the actual observed colour and count; orange demand flashes are not treated as faults. Existing13-task guides and numerical criteria unchanged.",
     "Added Firebird Enviromax Combi C20 (Oil) with the exact Revision2/22February2006 manual supplied by Ed, verified byte-identical to its public archived copy. No numerical settings or automatic service verdicts inferred.",
-    "Expanded Firebird Enviromax Combi C20 with twelve manufacturer-referenced partial service tasks and three confirmed Riello RDB2.2 kerosene output reference sets. Numerical figures require burner/output selection; Ecoflam settings are withheld. No inferred tolerances or certificate verdict."
+    "Expanded Firebird Enviromax Combi C20 with twelve manufacturer-referenced partial service tasks and three confirmed Riello RDB2.2 kerosene output reference sets. Numerical figures require burner/output selection; Ecoflam settings are withheld. No inferred tolerances or certificate verdict.",
+    "Added six exact Natural Gas Greenstar i System ErP models with manufacturer-referenced partial service guides and 42 fault/cause entries per model. EcoBlue Heat flash questions now route to their exact colour/count guard. No numerical/certificate criteria added."
   ]
 }

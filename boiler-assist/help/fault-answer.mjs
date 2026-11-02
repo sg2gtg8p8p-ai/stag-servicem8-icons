@@ -1,3 +1,4 @@
+import {iSystemErPFaultAnswer} from './i-system-erp-fault-guard.mjs';
 import {ecoBlueHeatFaultAnswer} from './ecoblue-heat-fault-guard.mjs';
 import {baxi400HeatFaultAnswer} from './baxi400-heat-fault-guard.mjs';
 import {baxi600HeatFaultAnswer} from './baxi600-heat-fault-guard.mjs';
@@ -142,4 +143,6 @@ function beforeHeat4(row,id,question,last=null){return greenstar1000FaultAnswer(
 function beforeHeat6(row,id,question,last=null){return baxi400HeatFaultAnswer(row,id,question,last,beforeHeat4);}
 function beforeHeat8(row,id,question,last=null){return baxi600HeatFaultAnswer(row,id,question,last,beforeHeat6);}
 function beforeEcoBlueHeat(row,id,question,last=null){return baxi800HeatFaultAnswer(row,id,question,last,beforeHeat8);}
-export function faultAnswer(row,id,question,last=null){return ecoBlueHeatFaultAnswer(row,id,question,last,beforeEcoBlueHeat);}
+function beforeISystemErPFaultAnswer(row,id,question,last=null){return ecoBlueHeatFaultAnswer(row,id,question,last,beforeEcoBlueHeat);}
+
+export function faultAnswer(row,id,question,last=null){return iSystemErPFaultAnswer(row,id,question,last,beforeISystemErPFaultAnswer);}
