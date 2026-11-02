@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.02-r6",
+  "appVersion": "2026.11.02-r7",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1694,
@@ -385,6 +385,7 @@
     "Added six exact Natural Gas Greenstar i System ErP models with manufacturer-referenced partial service guides and 42 fault/cause entries per model. EcoBlue Heat flash questions now route to their exact colour/count guard. No numerical/certificate criteria added.",
     "Filled Firebird Combi C20 technical, listed reference-parts and conditional Riello5352SE/LD/RDB symptom tables from the supplied Revision2 manual. Existing C20 service/FGA and all six new NG guides retained. No part-fit, price, diagnosis or acceptance criteria inferred.",
     "Filled existing six NG Worcester i System ErP technical, mode, service combustion, fan/pressure-reference and historical components panels from exact 6720806945 (2015/07). Paired MIN/MAX CO2 conditions retained; no certificate rules or FPT equality inferred. C20 and all unrelated rows preserved.",
-    "Filled six existing original Baxi EcoBlue System NG models with18-task partial guides,16technical entries,15fault meanings, service maximum-ratio reference and16historical parts references each. Exact7212140-04(09/14) contexts retained; valve-setting CO2 and commissioning CO remain separate. All unrelated rows including24native parity restorations preserved."
+    "Filled six existing original Baxi EcoBlue System NG models with18-task partial guides,16technical entries,15fault meanings, service maximum-ratio reference and16historical parts references each. Exact7212140-04(09/14) contexts retained; valve-setting CO2 and commissioning CO remain separate. All unrelated rows including24native parity restorations preserved.",
+    "Filled thirteen existing Ideal Classic LXFF/FF NG models with17-task partial guides,16technical entries, seven symptom summaries/two operating indications and14historical parts references each. Exact UIN111497 A0 range-rating, casing and100-size differences retained; no numerical analyser criteria or certificate rules inferred. All unrelated rows preserved."
   ]
 }
