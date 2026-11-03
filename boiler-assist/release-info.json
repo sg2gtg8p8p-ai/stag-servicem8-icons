@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.02-r23",
+  "appVersion": "2026.11.02-r24",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1694,
@@ -403,6 +403,7 @@
     "Corrected the adjustment section and menu caption to Burner settings across all boiler fuels, including every405 Oil-labelled entry and445 unspecified-fuel entry. Applies in the public/HomeScreen app and native add-on. No fuel inferred, technical values altered or new coverage claimed by this caption fix.",
     "Filled five existing exact NG Ideal Mexico Super RS3/40/50/60/70/80 models with18-task partial service guides,17 technical references,6 adjustment contexts,3 original fault-chart symptoms and62 historical Product references. Natural-draught C11 balanced flue/manual piezo/thermocouple; at-most60second FFD test and conditional6–10mV CLOSED CIRCUIT diagnosis retained, not certificate criteria. No numerical analyser limits or electronic neon/digital codes invented. All prior FF input and sealed-kit holds, all-boiler Burner settings captions and other records preserved.",
     "Filled three exact existing legacy Oil Greenstar Heatslave Internal12/18,18/25,25/32 models for6720802432issueA04/2012 with24-task partial service guides,6 operating-mode contexts,5 additional adjustment/service references,13 original symptom summaries each and71 historical model/burner/output-specific Part Number references. All original selected burner/output FGA, technical tables, prior source conditions and all-boiler Burner settings captions preserved. No digital faults, new analyser tolerance, current-fit inference or certificate PASS added.",
-    "Filled three exact existing HeatslaveII internal2022+ Oil models with24-task partial service guides,30 exact cause/warning entries each retaining7original meanings,5new operatingcontexts and5newadjustment references. Exact6721843978(2022/01) only. Faultgroup/cause pairing guarded;normalstatusesnotfaults;printedFO259 retainedwithoutO-zero inference. Originaltechnical/FGA/burner-outputselection/parts preserved; no partsnumbers,newanalyserlimits orcertificatePASS added."
+    "Filled three exact existing HeatslaveII internal2022+ Oil models with24-task partial service guides,30 exact cause/warning entries each retaining7original meanings,5new operatingcontexts and5newadjustment references. Exact6721843978(2022/01) only. Faultgroup/cause pairing guarded;normalstatusesnotfaults;printedFO259 retainedwithoutO-zero inference. Originaltechnical/FGA/burner-outputselection/parts preserved; no partsnumbers,newanalyserlimits orcertificatePASS added.",
+    "Filled three exact existing HeatslaveII External2022+ Oil models with25-task partial service guides,30 scoped cause/warning entries each retaining7original meanings,7newmodecontexts and5newadjustment refs. Separate6721843980(2022/01): keyedsealedcabinet/weather/serviceB/PRV-vessel conditions,blankfaultcells retained,external0–3i19notinternal24–27. All originaltechnical/FGA/setup/parts andall-boilerBurnersettings retained. Existingserviceadapterpreservedwithoutduplicate;no newpartsnumber/analyserlimits/certificatePASS."
   ]
 }

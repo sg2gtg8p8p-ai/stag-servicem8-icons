@@ -1,6 +1,6 @@
 // The phone holds only a revocable, budget-limited device token. Never an API key.
 export const AI_ENDPOINT='https://18.170.128.213';
-export const CATALOGUE_SHA256='9d81a64c73586df5401fb71d2bc1aa784c17329a84e3527b8faa49c6e54c27e1';
+export const CATALOGUE_SHA256='c22e2d1243abee3c2fbec8321d23829e886953ddf105dc49b71c8ddf101b11a9';
 export const REFERENCE_QUESTIONS=Object.freeze({dimensions:'dimensions weight',output:'output',notes:'notes',manuals:'manuals',fullService:'service',serviceMode:'mode',adjustments:'gas valve',combustion:'combustion',parts:'parts',faultCodes:'fault codes'});
 const STORAGE_KEY='stag-ai-device-v1',MAX_REPLY=160*1024;
 function fail(message){throw Error(message);}
