@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.03-r1",
+  "appVersion": "2026.11.03-r2",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1694,
@@ -405,6 +405,7 @@
     "Filled three exact existing legacy Oil Greenstar Heatslave Internal12/18,18/25,25/32 models for6720802432issueA04/2012 with24-task partial service guides,6 operating-mode contexts,5 additional adjustment/service references,13 original symptom summaries each and71 historical model/burner/output-specific Part Number references. All original selected burner/output FGA, technical tables, prior source conditions and all-boiler Burner settings captions preserved. No digital faults, new analyser tolerance, current-fit inference or certificate PASS added.",
     "Filled three exact existing HeatslaveII internal2022+ Oil models with24-task partial service guides,30 exact cause/warning entries each retaining7original meanings,5new operatingcontexts and5newadjustment references. Exact6721843978(2022/01) only. Faultgroup/cause pairing guarded;normalstatusesnotfaults;printedFO259 retainedwithoutO-zero inference. Originaltechnical/FGA/burner-outputselection/parts preserved; no partsnumbers,newanalyserlimits orcertificatePASS added.",
     "Filled three exact existing HeatslaveII External2022+ Oil models with25-task partial service guides,30 scoped cause/warning entries each retaining7original meanings,7newmodecontexts and5newadjustment refs. Separate6721843980(2022/01): keyedsealedcabinet/weather/serviceB/PRV-vessel conditions,blankfaultcells retained,external0–3i19notinternal24–27. All originaltechnical/FGA/setup/parts andall-boilerBurnersettings retained. Existingserviceadapterpreservedwithoutduplicate;no newpartsnumber/analyserlimits/certificatePASS.",
-    "Corrected two copied applicability phrases in the first task on three exact2022+ HeatslaveIIExternal oil guides: External appliance title and no Internal transfer. All technical data,25tasks,selectedFGA,faults,parts and unrelated records retained exactly; no new service or certificate criteria."
+    "Corrected two copied applicability phrases in the first task on three exact2022+ HeatslaveIIExternal oil guides: External appliance title and no Internal transfer. All technical data,25tasks,selectedFGA,faults,parts and unrelated records retained exactly; no new service or certificate criteria.",
+    "Added scoped practical content to six existing Camray Utility and Utility System oil models:144 partial service tasks,13 symptom summaries each,three explicitly selected burner/output reference sets with fully decomposed printed nozzle markings each,variant-specific technical tables and113 historical parts references. Original8716113004b(05.07) source;5 disputed part associations remain withheld. No inferred tolerances,FPT,certificate PASS or current parts fit. All unrelated rows and all-boiler Burner settings captions retained."
   ]
 }
