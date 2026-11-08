@@ -109,8 +109,15 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   paragraph(doc,freeReading,'Reads text on this device without sending the photo to OpenAI. It may miss text that AI can read.');settings.append(freeReading);
   cancel.hidden=true;read.disabled=true;aiRead.disabled=true;controls.append(aiRead,changePhoto,cancel,reset);
   const aiPhotoNotice=element(doc,'p','Send photo to AI sends the selected label photo to OpenAI through Stag’s server and uses API credit. Leave out customer or personal details.','help-small');
-  const aiAvailability=element(doc,'p','','help-notice');aiAvailability.setAttribute('role','status');aiAvailability.hidden=true;
-  const refreshAI=button(doc,'Check AI connection',async()=>{if(busy)return;refreshAI.disabled=true;await syncAI();if(file&&!busy){status.hidden=!aiState.ready;status.textContent=aiState.ready?'AI is ready. Tap Send photo to AI, or enter the code below.':'';}refreshAI.disabled=false;});refreshAI.hidden=true;
+  const aiAvailability=element(doc,'div',undefined,'help-notice');aiAvailability.hidden=true;
+  const aiAvailabilityMessage=element(doc,'p');aiAvailabilityMessage.setAttribute('role','status');aiAvailabilityMessage.setAttribute('aria-live','polite');
+  const openAISettings=button(doc,'Connect AI on this device',()=>{
+    settings.open=true;aiConnection.open=true;
+    aiConnection.scrollIntoView({block:'center',behavior:'smooth'});
+    pairCode.input.focus({preventScroll:true});
+  });
+  aiAvailability.append(aiAvailabilityMessage,openAISettings);
+  const refreshAI=button(doc,'Check AI connection',async()=>{if(busy)return;refreshAI.disabled=true;await syncAI();if(file&&!busy){status.hidden=false;if(aiState.ready)status.textContent='AI is ready. Tap Send photo to AI, or enter the code below.';else{status.textContent=aiReadinessMessage(aiState);settings.open=true;aiConnection.open=true;aiConnection.scrollIntoView({block:'center',behavior:'smooth'});}}refreshAI.disabled=false;});refreshAI.hidden=true;
   const detected=field('textarea','help-label-text','GC/product code or label text');detected.input.maxLength=MAX_TEXT;detected.input.rows=2;detected.input.autocomplete='off';detected.input.spellcheck=false;
   const find=button(doc,'Find boiler',findCandidates);find.disabled=true;
   const manual=field('input','help-manual-search','Make, model or GC number');manual.input.type='search';manual.input.maxLength=240;manual.input.autocomplete='off';manual.input.placeholder='e.g. Worcester 24Ri or 41-311-65';
@@ -153,10 +160,23 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
   manual.input.addEventListener('keydown',event=>{if(event.key==='Enter'){event.preventDefault();searchManually();}});
   question.input.addEventListener('input',()=>{operation++;clear(answer);});
   question.input.addEventListener('keydown',event=>{if(event.key==='Enter'){event.preventDefault();submitQuestion();}});
+  function presentPhotoTranscript(text,{source='AI',uncertain=false}={}){
+    detected.input.value=text.slice(0,MAX_TEXT);
+    if(text.trim()){
+      const result=identify(detected.input.value,records);
+      if(uncertain||result.abstained||result.unmatchedGc.length){
+        // A reader transcript is not evidence of a catalogue gap until checked.
+        // Keep the original photo and editable text; never guess or auto-retry.
+        textDetails.open=true;status.hidden=false;
+        status.textContent='Check the '+(source==='AI'?'AI-read':'on-device-read')+' code against the label photo. Correct any wrong characters in the text below, then tap Find boiler. Photo reading can misread a clear badge.';
+        detected.input.focus({preventScroll:true});
+      }else textDetails.open=!findCandidates();
+    }else{status.hidden=false;textDetails.open=true;status.textContent='No supported identifier was read. Enter the exact GC/product code from the label below, then tap Find boiler.';}
+  }
   async function readPhoto(){
     if(busy||!file)return;
     const current=++operation;forgetConfirmation();clear(candidates);detected.input.value='';updateBusy(true);
-    try{const text=await reader.read(file,{quarterTurns:photoTurns,onStatus:message=>{if(current===operation)status.textContent=message;}});if(current!==operation)return;detected.input.value=text.slice(0,MAX_TEXT);updateBusy(false);if(text.trim()){const matched=findCandidates();textDetails.open=!matched;if(!matched)status.textContent='The free reader did not find a boiler match. Try Send photo to AI, or check and correct the code below.';}else{ textDetails.open=true;status.textContent='The free reader could not read this label. Try Send photo to AI, or enter the exact code below.';}}
+    try{const text=await reader.read(file,{quarterTurns:photoTurns,onStatus:message=>{if(current===operation)status.textContent=message;}});if(current!==operation)return;updateBusy(false);presentPhotoTranscript(text,{source:'on-device'});}
     catch(error){if(current===operation)status.textContent=error?.name==='AbortError'?'Reading cancelled.':(error?.message||'Photo reading failed. Type the plate details instead.');}
     finally{if(current===operation)updateBusy(false);}
   }
@@ -202,7 +222,7 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
     }});status.textContent='Saved-guide lookup complete. Read the full conditions and source limits.';}
     catch(error){if(current===operation)status.textContent='The saved guide is unavailable. Reconnect or use the library search; no answer has been inferred.';}
   }
-  function updateAIButtons(){aiRead.disabled=busy||!file||!photoReady||!records.length||!aiState.ready;ask.disabled=busy||!selection;ask.textContent=aiState.ready?'Ask AI':'Search guide';pairButton.disabled=busy;disconnectButton.disabled=busy;pairCode.input.disabled=busy;aiAvailability.hidden=!file||!!aiState.ready;aiAvailability.textContent=aiReadinessMessage(aiState);refreshAI.hidden=!file||!!aiState.ready;refreshAI.disabled=busy;}
+  function updateAIButtons(){aiRead.disabled=busy||!file||!photoReady||!records.length||!aiState.ready;ask.disabled=busy||!selection;ask.textContent=aiState.ready?'Ask AI':'Search guide';pairButton.disabled=busy;disconnectButton.disabled=busy;pairCode.input.disabled=busy;aiAvailability.hidden=!file||!!aiState.ready;aiAvailabilityMessage.textContent=aiReadinessMessage(aiState);openAISettings.hidden=!file||!!aiState.ready;openAISettings.disabled=busy;refreshAI.hidden=!file||!!aiState.ready;refreshAI.disabled=busy;}
   function applyAIState(next){aiState=next||{connected:false,ready:false};disconnectButton.hidden=!aiState.connected;pairCode.wrap.hidden=!!aiState.connected;pairButton.hidden=!!aiState.connected;
     aiStatus.textContent=!aiState.connected?'AI is not connected on this device.':aiState.ready?'AI is connected. Check all answers against the complete saved references.':'This device is connected, but the AI service is not ready. Use the saved guide.';
     aiCost.textContent=pilotUsageText(aiState)+' Conservative pilot counter, not your OpenAI account balance or invoice. GBP estimate uses the fixed ECB rate from 22 October 2026; payment-provider conversion and fees may differ. The original US$1 cap is unchanged.';updateAIButtons();}
@@ -221,8 +241,7 @@ export function mountHelp(root,{doc=root.ownerDocument,loadCatalogue,loadDetail,
     const pending=pendingAIPhoto;if(busy||!pending||pending.current!==operation||pending.chosen!==file||!aiState.ready)return;
     discardAIPhoto();aiInFlight=true;updateBusy(true);status.textContent='AI is reading the submitted label. Clearing this screen does not cancel a request already sent.';
     try{const reply=await aiClient.photo(pending.payload);if(pending.current!==operation||pending.chosen!==file)return;
-      detected.input.value=reply.visible_identifiers.join('\n');if(reply.visible_identifiers.length){textDetails.open=!findCandidates();}else status.textContent='No supported identifier was read. Retake a closer photo or type the exact code.';
-      if(reply.uncertain){status.textContent+=' AI text is uncertain: check the original label; do not accept guessed characters.';textDetails.open=true;}
+      presentPhotoTranscript(reply.visible_identifiers.join('\n'),{source:'AI',uncertain:reply.uncertain});
     }catch(error){if(pending.current===operation)status.textContent=error.message;}finally{aiInFlight=false;updateBusy(false);await syncAI();}
   }
   async function answerWithAI(){
