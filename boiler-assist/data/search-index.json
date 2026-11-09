@@ -46014,5 +46014,126 @@
     "productNumber": null,
     "technicalData": {},
     "parts": []
+  },
+  {
+    "id": "worcester-greenstar-30si-compact-erp-ng-7733600052",
+    "manufacturer": "Worcester Bosch",
+    "range": "Greenstar Si Compact ErP",
+    "model": "Greenstar 30Si Compact ErP",
+    "aliases": [
+      "Greenstar 30 Si Compact ErP",
+      "30Si Compact ErP",
+      "Greenstar 30Si Compact"
+    ],
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "generation": "Compact ErP",
+    "gcNumber": "47-406-75",
+    "productNumber": "7733600052",
+    "technicalData": {
+      "dhwOutput": {
+        "label": "Maximum DHW output",
+        "value": "30 kW",
+        "classification": "manufacturer-specification",
+        "sourceIds": [
+          "si-compact-erp2015-10"
+        ]
+      },
+      "dhwInput": {
+        "label": "Maximum DHW heat input",
+        "value": "30.61 kW",
+        "classification": "manufacturer-specification",
+        "sourceIds": [
+          "si-compact-erp2015-10"
+        ]
+      },
+      "chOutput": {
+        "label": "Maximum CH output at80/60°C",
+        "value": "24 kW",
+        "classification": "manufacturer-specification",
+        "sourceIds": [
+          "si-compact-erp2015-10"
+        ]
+      },
+      "chInput": {
+        "label": "Maximum CH heat input — NET",
+        "value": "24.34 kW",
+        "classification": "manufacturer-specification",
+        "sourceIds": [
+          "si-compact-erp2015-10"
+        ]
+      },
+      "ngGasRate": {
+        "label": "Maximum Natural Gas G20 rate",
+        "value": "3.24 m³/h; maximum output,10minutes from lighting",
+        "classification": "manufacturer-specification",
+        "sourceIds": [
+          "si-compact-erp2015-10"
+        ]
+      },
+      "dhwFlow40": {
+        "label": "DHW flow at40°C rise",
+        "value": "11.0 l/min ±15%; fitted flow regulator",
+        "classification": "manufacturer-specification",
+        "sourceIds": [
+          "si-compact-erp2015-10"
+        ]
+      },
+      "maxMainsPressure": {
+        "label": "Maximum standing mains inlet pressure",
+        "value": "10 bar",
+        "classification": "manufacturer-specification",
+        "sourceIds": [
+          "si-compact-erp2015-10"
+        ]
+      },
+      "maxOperatingPressure": {
+        "label": "Maximum permissible CH operating pressure",
+        "value": "2.5 bar",
+        "classification": "manufacturer-specification",
+        "sourceIds": [
+          "si-compact-erp2015-10"
+        ]
+      },
+      "dhwTemperature": {
+        "label": "DHW temperature range",
+        "value": "40–60°C",
+        "classification": "manufacturer-specification",
+        "sourceIds": [
+          "si-compact-erp2015-10"
+        ]
+      },
+      "totalBoilerWeight": {
+        "label": "Total boiler weight",
+        "value": "39.5 kg",
+        "classification": "manufacturer-specification",
+        "sourceIds": [
+          "si-compact-erp2015-10"
+        ]
+      }
+    },
+    "parts": []
+  },
+  {
+    "id": "ideal-elan-2-rs40-ng-41-415-78",
+    "manufacturer": "Ideal",
+    "range": "Elan 2 RS",
+    "model": "Elan 2 RS40",
+    "boilerType": "unknown",
+    "fuel": "Natural Gas",
+    "fuelFamily": "gas",
+    "gcNumber": "41-415-78",
+    "productNumber": null,
+    "modelVariant": null,
+    "generation": "Original Elan 2 RS; Honeywell/SIT control editions require on-site identification",
+    "productionPeriod": null,
+    "aliases": [
+      "Elan 2 RS40 N",
+      "Elan2 RS40",
+      "Elan 2 RS 40",
+      "Stelrad Ideal Elan 2 RS40"
+    ],
+    "recordKind": "model-catalogue",
+    "verification": "verified"
   }
 ]
