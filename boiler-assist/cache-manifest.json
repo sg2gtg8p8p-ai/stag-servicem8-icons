@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "fa0306f877e6fcfc",
+  "buildId": "938192560d43f832",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.11.09-r7",
+  "appVersion": "2026.11.09-r8",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "bytes": 11141057,
-      "sha256": "aacd3130a17063197b8a2d77d752144cd0134873699f0d3a15c0ea772b776159"
+      "bytes": 11158829,
+      "sha256": "0415c04441b12dac4c8dd2f48e29b3a4146200eb07ea7b94055927df36d023f7"
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -63,7 +63,7 @@
     {
       "url": "./help/ai-client.mjs",
       "bytes": 8047,
-      "sha256": "1d361a2b00af0a27fd186752ea7d9e6d8c736f7f4889803ad405825f043b6e35"
+      "sha256": "c2f74c25ef76eddd8e3eb62cc9805b7f3aba48e4e4ab8a4275efec8571d33bb6"
     },
     {
       "url": "./help/baxi400-heat-fault-guard.mjs",
@@ -2272,8 +2272,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 57735,
-      "sha256": "f5f5556118c1a951cbd4fb69c39c284fb405429cc96d9b21d4bb6784cc1351e0"
+      "bytes": 58180,
+      "sha256": "078fa199a246c10f3a18fc84952f4f21956df813d337b88a33574a0eb1352549"
     },
     {
       "url": "./vendor/pdf.min.mjs",
@@ -2336,5 +2336,5 @@
       "sha256": "996c17e2358ee7f06948366e6a7a76f94ff315949fdcb425a73109ea710ca1ec"
     }
   ],
-  "totalBytes": 166776836
+  "totalBytes": 166795053
 }
