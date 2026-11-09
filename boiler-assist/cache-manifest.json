@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "8ae91005d3161386",
+  "buildId": "297a499d5a76aacf",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.11.09-r5",
+  "appVersion": "2026.11.09-r5-fd1",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -49,6 +49,11 @@
       "url": "./diagram-viewer.mjs",
       "bytes": 34964,
       "sha256": "8aeac6192aa28d6c3b1baa62596d27ffdee24da5067f013341df88a722e45f5a"
+    },
+    {
+      "url": "./fd-matrix.html",
+      "bytes": 55054,
+      "sha256": "be4b80b564f78e274c2819060db63ee203600c6cff52d5e85a63792e8313aad7"
     },
     {
       "url": "./finder/runtime.js",
@@ -126,6 +131,11 @@
       "sha256": "3eef4359dcfc7a474c726f753212cf0c9b8db736445a7da391058e02f246f4d9"
     },
     {
+      "url": "./help/i-system-erp-fault-guard.mjs",
+      "bytes": 2540,
+      "sha256": "ae066b8848fc9767fcf6556b35efc5cf25f38e48378ce44f37a87bac3ffdaaed"
+    },
+    {
       "url": "./help/ideal-fault-chart.mjs",
       "bytes": 4394,
       "sha256": "8b9fe13bda18d102f56e663a50ee0a5500c0d87d4cdd3417a7bdae1baddc6ce6"
@@ -144,6 +154,11 @@
       "url": "./help/manual-search.mjs",
       "bytes": 5676,
       "sha256": "25f0d912bf8adc80116765ef1eb7d7d2a204974780ca3fdec11fad331b6711c3"
+    },
+    {
+      "url": "./help/minimiser-fault-guard.mjs",
+      "bytes": 2715,
+      "sha256": "3218234b3b878d25b7cf29d6d8f639f76c2d56324d8396b2e3783510186ca5a0"
     },
     {
       "url": "./help/ocr.mjs",
@@ -217,8 +232,8 @@
     },
     {
       "url": "./index.html",
-      "bytes": 1569519,
-      "sha256": "bf5bd2cedbd283729f1ac5184f58d539f885ba4fc068ca62cb7859f4fb2dddea"
+      "bytes": 1569750,
+      "sha256": "2a0b9f4badd6e7d76b12a09558941ad915d9b8ff40abd701931d4f226ba43123"
     },
     {
       "url": "./local-bridge.js",
@@ -2257,8 +2272,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 56561,
-      "sha256": "ae8dc9b9d9327730205d087fe48fbd7f9770f850a1fdd512ed6c5020c566b08b"
+      "bytes": 56823,
+      "sha256": "069a8a89effb689137b98910672151cb52394ebaa7f4e803928f7bbd2438933d"
     },
     {
       "url": "./vendor/pdf.min.mjs",
@@ -2319,17 +2334,7 @@
       "url": "./wiring/runtime.js",
       "bytes": 55421,
       "sha256": "996c17e2358ee7f06948366e6a7a76f94ff315949fdcb425a73109ea710ca1ec"
-    },
-    {
-      "url": "./help/i-system-erp-fault-guard.mjs",
-      "bytes": 2540,
-      "sha256": "ae066b8848fc9767fcf6556b35efc5cf25f38e48378ce44f37a87bac3ffdaaed"
-    },
-    {
-      "url": "./help/minimiser-fault-guard.mjs",
-      "bytes": 2715,
-      "sha256": "3218234b3b878d25b7cf29d6d8f639f76c2d56324d8396b2e3783510186ca5a0"
     }
   ],
-  "totalBytes": 166681961
+  "totalBytes": 166737508
 }
