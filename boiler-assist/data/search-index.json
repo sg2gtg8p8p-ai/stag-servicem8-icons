@@ -6117,11 +6117,14 @@
     "manufacturer": "Worcester Bosch",
     "range": "Greenstar i System Compact",
     "model": "Greenstar i System Compact 30kW NG",
-    "aliases": [],
+    "aliases": [
+      "Greenstar 30i System Compact ErP",
+      "30i System Compact ErP"
+    ],
     "boilerType": "system",
     "fuel": "Natural Gas",
     "generation": null,
-    "gcNumber": null,
+    "gcNumber": "41-406-60",
     "productNumber": "7733600062",
     "technicalData": {
       "applianceType": {
