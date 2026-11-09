@@ -46135,5 +46135,28 @@
     ],
     "recordKind": "model-catalogue",
     "verification": "verified"
+  },
+  {
+    "id": "vaillant-ecotec-plus-825-0010021823",
+    "manufacturer": "Vaillant",
+    "range": "ecoTEC plus",
+    "model": "ecoTEC plus 825",
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "fuelFamily": "gas",
+    "gcNumber": "47-044-83",
+    "productNumber": "0010021823",
+    "modelVariant": "VUW 196/5-5 (H-GB)",
+    "generation": "VU/VUW ..6/5-5; manual0020244997_07",
+    "productionPeriod": null,
+    "aliases": [
+      "ecoTEC plus825",
+      "ecoTEC plus 825 VUW196/5-5",
+      "VUW196/5-5 H-GB",
+      "VUW 196/5-5 (H-GB)",
+      "4704483"
+    ],
+    "recordKind": "technical-enriched",
+    "verification": "verified"
   }
 ]

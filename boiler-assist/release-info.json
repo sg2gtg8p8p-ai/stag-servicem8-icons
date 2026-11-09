@@ -1,8 +1,8 @@
 {
-  "appVersion": "2026.11.09-r6",
+  "appVersion": "2026.11.09-r7",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
-  "boilers": 1696,
+  "boilers": 1697,
   "gasFires": 43,
   "contentChanges": [
     {
@@ -411,6 +411,7 @@
     "Added source-bound partial service guides for two existing Natural Gas MainEco Combi 24/28 models (14 tasks) and corrected their legacy pressure/combustion text. Added checked-text review for uncertain or unmatched badge readings and clearer optional AI connection controls. No new catalogue identities, analyser limits or certificate decisions; photo accuracy is not established by this UI change.",
     "Existing Worcester Greenstar 30i System Compact Natural Gas product7733600062: source-verified GC41-406-60 and printed aliases,16 additional source-bound partial service tasks, exact original page bindings retained, and source-supported fault category/provenance metadata. Original FGA/FPT criteria and all139 fault meanings retained. No new catalogue identity, certificate decision or parts-fit claim.",
     "Separate Menu → FD matrix / Boiler age. Offline384-cell1998–2029 checked Worcester/Bosch reference and existing supported full-serial decoder; no boiler catalogue selection needed. Existing library/technical content/native/backend pins unchanged.",
-    "Two owner-reported exact Natural Gas catalogue gaps: Worcester Greenstar30SiCompactErP GC47-406-75/product7733600052,14partial service tasks and50 source-supported locking/blocking/maintenance entries; Ideal Elan2RS40 NG GC41-415-78 with shared nominal specifications and original Honeywell/SIT manual sections, guided service not yet transcribed. Existing1694records, prior technical content and independentFDtool preserved. No new certificate verdict, production-date or parts-fit claims."
+    "Two owner-reported exact Natural Gas catalogue gaps: Worcester Greenstar30SiCompactErP GC47-406-75/product7733600052,14partial service tasks and50 source-supported locking/blocking/maintenance entries; Ideal Elan2RS40 NG GC41-415-78 with shared nominal specifications and original Honeywell/SIT manual sections, guided service not yet transcribed. Existing1694records, prior technical content and independentFDtool preserved. No new certificate verdict, production-date or parts-fit claims.",
+    "New exact Vaillant ecoTEC plus825 NG VUW196/5-5(H-GB), GC47-044-83/article0010021823:15partial service tasks,52shared-manufacturer fault-code meanings with applicability warnings,5MAX FGA references with casing/load/fuel conditions. No MIN/FPT/certificate verdict/parts-fit claim. All1696existing records,355native overlays and separateFDage tool preserved. Elan guided-service archive packet remains withheld."
   ]
 }
