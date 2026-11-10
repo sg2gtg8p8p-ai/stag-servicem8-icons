@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "d18a9d1e2ab6abb2",
+  "buildId": "ea3d3e08e2a2c6f9",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.11.10-r8-age2",
+  "appVersion": "2026.11.10-r10-warranty1",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "bytes": 11158829,
-      "sha256": "0415c04441b12dac4c8dd2f48e29b3a4146200eb07ea7b94055927df36d023f7"
+      "bytes": 11206540,
+      "sha256": "190f113637fac0088adf608ceec35becf55955f82d8091abddc82b4a514a242b"
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -37,8 +37,8 @@
     },
     {
       "url": "./data/search-index.json",
-      "bytes": 1150353,
-      "sha256": "e0b19c653e5a0d073f96ab6e8876b3a54bb88b11d2aec477392461e12ddfc933"
+      "bytes": 1152867,
+      "sha256": "b21548ac050ff2b3a9baeb8271b243e1d25690f458e4dac416a74d0bb194333b"
     },
     {
       "url": "./decoder.js",
@@ -63,7 +63,7 @@
     {
       "url": "./help/ai-client.mjs",
       "bytes": 8047,
-      "sha256": "c2f74c25ef76eddd8e3eb62cc9805b7f3aba48e4e4ab8a4275efec8571d33bb6"
+      "sha256": "d8809ed58eb4a08315c885b7c2b3dd1b630ac215a3dc2a6acdc1f2a47ab11e81"
     },
     {
       "url": "./help/baxi400-heat-fault-guard.mjs",
@@ -217,8 +217,8 @@
     },
     {
       "url": "./help/ui.mjs",
-      "bytes": 37544,
-      "sha256": "119dfb995723db93ac7ed0997c452c2e318a8f4fadc86116581f833c605b93f2"
+      "bytes": 39499,
+      "sha256": "1a4ddfbc104b8b82b9bac61ef4efd97779eaa24d35cea6979c7b5ef94e77cfec"
     },
     {
       "url": "./icons/256.png",
@@ -232,8 +232,8 @@
     },
     {
       "url": "./index.html",
-      "bytes": 1573214,
-      "sha256": "65bc22544e5aad3703bd9414a6f11d18c28c9aa909d831497e03f48254701aa8"
+      "bytes": 1575441,
+      "sha256": "37ad38118ffb0817c2ccc80d015bb6f99e26761142e8ebabc164b9a21f81c4a0"
     },
     {
       "url": "./local-bridge.js",
@@ -2272,8 +2272,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 58526,
-      "sha256": "f51f78964f5e517c787aa1e695b2ef39dc7cfe62ac3d9c18d23d45305e9540d4"
+      "bytes": 59502,
+      "sha256": "358fe26b4ed23260a785170d09063bde83d3a6d7d418e343e22d218b3c113cc9"
     },
     {
       "url": "./vendor/pdf.min.mjs",
@@ -2336,5 +2336,5 @@
       "sha256": "996c17e2358ee7f06948366e6a7a76f94ff315949fdcb425a73109ea710ca1ec"
     }
   ],
-  "totalBytes": 166810476
+  "totalBytes": 166865859
 }

@@ -1,8 +1,8 @@
 {
-  "appVersion": "2026.11.10-r8-age2",
+  "appVersion": "2026.11.10-r10-warranty1",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
-  "boilers": 1697,
+  "boilers": 1701,
   "gasFires": 43,
   "contentChanges": [
     {
@@ -414,6 +414,9 @@
     "Two owner-reported exact Natural Gas catalogue gaps: Worcester Greenstar30SiCompactErP GC47-406-75/product7733600052,14partial service tasks and50 source-supported locking/blocking/maintenance entries; Ideal Elan2RS40 NG GC41-415-78 with shared nominal specifications and original Honeywell/SIT manual sections, guided service not yet transcribed. Existing1694records, prior technical content and independentFDtool preserved. No new certificate verdict, production-date or parts-fit claims.",
     "New exact Vaillant ecoTEC plus825 NG VUW196/5-5(H-GB), GC47-044-83/article0010021823:15partial service tasks,52shared-manufacturer fault-code meanings with applicability warnings,5MAX FGA references with casing/load/fuel conditions. No MIN/FPT/certificate verdict/parts-fit claim. All1696existing records,355native overlays and separateFDage tool preserved. Elan guided-service archive packet remains withheld.",
     "Existing exact Natural Gas Vaillant ecoTEC plus825 GC47-044-83/article0010021823:52 manufacturer-supported fault possible-cause and measure entries added from AppendixE pages60–62, with accessory and companion-code conditions preserved. No new identity, diagnostic/status-table, MIN/FPT/certificate-verdict or parts-fit claim. All other1696records,356overlay order, FGA, partial service guides, FD tool and reviewed photo UI preserved.",
-    "FD matrix / Boiler age: make selector; checked modern Vaillant and scoped Glow-worm year/week decoding; Baxi, Ideal and Viessmann manufacturer age guidance; device-only confirmed manufacture/installation date calculator for any make. Worcester matrix and supported serial decoder unchanged. No new catalogue, native or server change."
+    "Three exact Natural Gas H-GB VUW ..6/5-5 combis: ecoTEC plus832 GC47-044-84/article0010021824;835 GC47-044-82/article0010021822;838 GC47-044-86/article0010021826. Each15PARTIAL service tasks,52shared manufacturer fault cause/measure entries with configuration warnings,5MAX H/G20 FGA references with exact casing/load conditions. No MIN/FPT/certificate/parts-fit/age claim. All1697oldrecords and356overlays/order plus FD tool and reviewed AI UI preserved.",
+    "Owner-reported original Greenstar28CDiCompactNG GC47-406-44: exact identity and original manufacturer USER guide6720803801 only; zero engineer service/FGA/FPT/fault/parts claims, later ErP47-406-77 preserved. Owner-observed product7716130234 retained separately; official digital product mapping held.",
+    "FD matrix / Boiler age: modern Vaillant and scoped Glow-worm year/week; Baxi/Ideal/Viessmann guidance and confirmed-date calculator. Corrected Safari back/forward reset; original Worcester matrix unchanged.",
+    "Warranty/guarantee questions now show registration-based guidance without a paid AI request. Worcester links directly to the official 23-digit serial guarantee checker. Model, GC and manufacturing date never establish expiry; no serial is auto-sent and no manufacturer guarantee lookup has been performed by this app."
   ]
 }

@@ -46158,5 +46158,95 @@
     ],
     "recordKind": "technical-enriched",
     "verification": "verified"
+  },
+  {
+    "id": "vaillant-ecotec-plus-832-0010021824",
+    "manufacturer": "Vaillant",
+    "range": "ecoTEC plus",
+    "model": "ecoTEC plus 832",
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "fuelFamily": "gas",
+    "gcNumber": "47-044-84",
+    "productNumber": "0010021824",
+    "modelVariant": "VUW 246/5-5 (H-GB)",
+    "generation": "VU/VUW ..6/5-5; manual0020244997_07",
+    "productionPeriod": null,
+    "aliases": [
+      "ecoTEC plus832",
+      "ecoTEC plus 832 VUW246/5-5",
+      "VUW246/5-5 H-GB",
+      "VUW 246/5-5 (H-GB)",
+      "4704484"
+    ],
+    "recordKind": "technical-enriched",
+    "verification": "verified"
+  },
+  {
+    "id": "vaillant-ecotec-plus-835-0010021822",
+    "manufacturer": "Vaillant",
+    "range": "ecoTEC plus",
+    "model": "ecoTEC plus 835",
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "fuelFamily": "gas",
+    "gcNumber": "47-044-82",
+    "productNumber": "0010021822",
+    "modelVariant": "VUW 306/5-5 (H-GB)",
+    "generation": "VU/VUW ..6/5-5; manual0020244997_07",
+    "productionPeriod": null,
+    "aliases": [
+      "ecoTEC plus835",
+      "ecoTEC plus 835 VUW306/5-5",
+      "VUW306/5-5 H-GB",
+      "VUW 306/5-5 (H-GB)",
+      "4704482"
+    ],
+    "recordKind": "technical-enriched",
+    "verification": "verified"
+  },
+  {
+    "id": "vaillant-ecotec-plus-838-0010021826",
+    "manufacturer": "Vaillant",
+    "range": "ecoTEC plus",
+    "model": "ecoTEC plus 838",
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "fuelFamily": "gas",
+    "gcNumber": "47-044-86",
+    "productNumber": "0010021826",
+    "modelVariant": "VUW 286/5-5 (H-GB)",
+    "generation": "VU/VUW ..6/5-5; manual0020244997_07",
+    "productionPeriod": null,
+    "aliases": [
+      "ecoTEC plus838",
+      "ecoTEC plus 838 VUW286/5-5",
+      "VUW286/5-5 H-GB",
+      "VUW 286/5-5 (H-GB)",
+      "4704486"
+    ],
+    "recordKind": "technical-enriched",
+    "verification": "verified"
+  },
+  {
+    "id": "worcester-greenstar-28cdi-compact-ng-47-406-44",
+    "manufacturer": "Worcester Bosch",
+    "range": "Greenstar CDi Compact",
+    "model": "Greenstar 28CDi Compact",
+    "boilerType": "combi",
+    "fuel": "Natural Gas",
+    "fuelFamily": "gas",
+    "gcNumber": "47-406-44",
+    "productNumber": null,
+    "modelVariant": null,
+    "generation": null,
+    "productionPeriod": null,
+    "aliases": [
+      "Greenstar 28 CDi Compact",
+      "28CDi Compact NG",
+      "28 CDi Compact"
+    ],
+    "recordKind": "model-catalogue",
+    "verification": "verified"
   }
 ]
