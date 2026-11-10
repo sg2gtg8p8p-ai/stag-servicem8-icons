@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "ea3d3e08e2a2c6f9",
+  "buildId": "c21aa3153c0ab022",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.11.10-r10-warranty1",
+  "appVersion": "2026.11.10-r10-age3",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -52,8 +52,8 @@
     },
     {
       "url": "./fd-matrix.html",
-      "bytes": 70131,
-      "sha256": "9891a44c2cf9db38587e3e57967e96a829c39485b40427c0f41e323181baef91"
+      "bytes": 74140,
+      "sha256": "aa6a3bdcbc8f3d3e3007a11a4804a988e9d78e5583e4ce8cf19fb3e95f405b96"
     },
     {
       "url": "./finder/runtime.js",
@@ -2272,8 +2272,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 59502,
-      "sha256": "358fe26b4ed23260a785170d09063bde83d3a6d7d418e343e22d218b3c113cc9"
+      "bytes": 59943,
+      "sha256": "3da9a00ec1a810a21288ce7d66077ddbcbf615ba8f50aded3c9b10af8e8d5282"
     },
     {
       "url": "./vendor/pdf.min.mjs",
@@ -2334,7 +2334,27 @@
       "url": "./wiring/runtime.js",
       "bytes": 55421,
       "sha256": "996c17e2358ee7f06948366e6a7a76f94ff315949fdcb425a73109ea710ca1ec"
+    },
+    {
+      "url": "./age/ui.mjs",
+      "bytes": 8782,
+      "sha256": "959bd8c46c856c62db041cbc0fe61b33764079282f3c918b9d5310a3d2dc28e3"
+    },
+    {
+      "url": "./age/date-rules.mjs",
+      "bytes": 8606,
+      "sha256": "0f39019c5b26c4bb6aaf0c941c4e1047d8d1f65a8a83c651b0da61f2e92739b5"
+    },
+    {
+      "url": "./age/badge-text-review.mjs",
+      "bytes": 2028,
+      "sha256": "787850d2b4aad2428fa0a522ef68fbfca3588e148793529212681ce9abcff083"
+    },
+    {
+      "url": "./age/photo-serial-correction.mjs",
+      "bytes": 791,
+      "sha256": "be50ec23aca461c4f9fa079d2227102cd044b38c323a19c24c405b426bdaf892"
     }
   ],
-  "totalBytes": 166865859
+  "totalBytes": 166890516
 }

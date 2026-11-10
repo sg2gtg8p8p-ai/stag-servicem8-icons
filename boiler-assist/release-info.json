@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.10-r10-warranty1",
+  "appVersion": "2026.11.10-r10-age3",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1701,
@@ -417,6 +417,7 @@
     "Three exact Natural Gas H-GB VUW ..6/5-5 combis: ecoTEC plus832 GC47-044-84/article0010021824;835 GC47-044-82/article0010021822;838 GC47-044-86/article0010021826. Each15PARTIAL service tasks,52shared manufacturer fault cause/measure entries with configuration warnings,5MAX H/G20 FGA references with exact casing/load conditions. No MIN/FPT/certificate/parts-fit/age claim. All1697oldrecords and356overlays/order plus FD tool and reviewed AI UI preserved.",
     "Owner-reported original Greenstar28CDiCompactNG GC47-406-44: exact identity and original manufacturer USER guide6720803801 only; zero engineer service/FGA/FPT/fault/parts claims, later ErP47-406-77 preserved. Owner-observed product7716130234 retained separately; official digital product mapping held.",
     "FD matrix / Boiler age: modern Vaillant and scoped Glow-worm year/week; Baxi/Ideal/Viessmann guidance and confirmed-date calculator. Corrected Safari back/forward reset; original Worcester matrix unchanged.",
-    "Warranty/guarantee questions now show registration-based guidance without a paid AI request. Worcester links directly to the official 23-digit serial guarantee checker. Model, GC and manufacturing date never establish expiry; no serial is auto-sent and no manufacturer guarantee lookup has been performed by this app."
+    "Warranty/guarantee questions now show registration-based guidance without a paid AI request. Worcester links directly to the official 23-digit serial guarantee checker. Model, GC and manufacturing date never establish expiry; no serial is auto-sent and no manufacturer guarantee lookup has been performed by this app.",
+    "FD matrix / Boiler age: checked Baxi matching post-2003 14-character serial year/week, and Viessmann Vitodens100-W Heat Only B1GA separate seven-digit manufacture-code date. Device-only badge-photo reading requires explicit selection, manual character checks and fresh confirmation after edits. Other serial layouts remain undated; Ideal serial rules pending. No new catalogue/native/server change or installation/warranty-date inference."
   ]
 }
