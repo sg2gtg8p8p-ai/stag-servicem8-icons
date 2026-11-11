@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "c21aa3153c0ab022",
+  "buildId": "ad0f051ad8c38902",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.11.10-r10-age3",
+  "appVersion": "2026.11.11-r10-age4-ideal",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -52,8 +52,8 @@
     },
     {
       "url": "./fd-matrix.html",
-      "bytes": 74140,
-      "sha256": "aa6a3bdcbc8f3d3e3007a11a4804a988e9d78e5583e4ce8cf19fb3e95f405b96"
+      "bytes": 75283,
+      "sha256": "b2d646284f14ff245addea072cf7c403d766c3110ac4baee00ffc96a1f908dd4"
     },
     {
       "url": "./finder/runtime.js",
@@ -2272,8 +2272,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 59943,
-      "sha256": "3da9a00ec1a810a21288ce7d66077ddbcbf615ba8f50aded3c9b10af8e8d5282"
+      "bytes": 60234,
+      "sha256": "877c48065fbfca9587f07c02e0af304ccd61b0b6bb39701808bc8c5d63d758d5"
     },
     {
       "url": "./vendor/pdf.min.mjs",
@@ -2337,13 +2337,13 @@
     },
     {
       "url": "./age/ui.mjs",
-      "bytes": 8782,
-      "sha256": "959bd8c46c856c62db041cbc0fe61b33764079282f3c918b9d5310a3d2dc28e3"
+      "bytes": 10607,
+      "sha256": "b9217109b11a7203c1ff8f81af8d072eb216f84fb0df925750364705e3427bef"
     },
     {
       "url": "./age/date-rules.mjs",
-      "bytes": 8606,
-      "sha256": "0f39019c5b26c4bb6aaf0c941c4e1047d8d1f65a8a83c651b0da61f2e92739b5"
+      "bytes": 8776,
+      "sha256": "bb1fdc4bc6099e0c3a6c9a5b61aac41046f090ba11fcbef168e1e2f7a5c15eb1"
     },
     {
       "url": "./age/badge-text-review.mjs",
@@ -2354,7 +2354,12 @@
       "url": "./age/photo-serial-correction.mjs",
       "bytes": 791,
       "sha256": "be50ec23aca461c4f9fa079d2227102cd044b38c323a19c24c405b426bdaf892"
+    },
+    {
+      "url": "./age/ideal-date-code.mjs",
+      "bytes": 2920,
+      "sha256": "987ac85a70491630aa8bf61325f917a10a388aabaa0fda2f27bcab57a1d892be"
     }
   ],
-  "totalBytes": 166890516
+  "totalBytes": 166896865
 }

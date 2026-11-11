@@ -1,3 +1,4 @@
+import {inspectIdealDateCode} from './ideal-date-code.mjs';
 // Device-only, evidence-bound rules. No network, storage or model calls.
 export function inspectAgeBadge({brand, range='', serial='', manufactureCode='', confirmed=false, asOf}) {
   if (!['ideal','baxi','viessmann'].includes(brand)) return {status:'unsupported',message:'Choose Ideal, Baxi or Viessmann.'};
@@ -5,6 +6,7 @@ export function inspectAgeBadge({brand, range='', serial='', manufactureCode='',
   if (!/^\d{4}-\d{2}-\d{2}$/.test(asOf||'')||!Number.isFinite(+today)||today.toISOString().slice(0,10)!==asOf)
     return {status:'invalid',message:'Check the current date.'};
   if (!confirmed) return {status:'confirmation-required',message:'Check the make, model and complete code against the boiler badge first.'};
+  if(brand==='ideal')return inspectIdealDateCode({range,code:String(manufactureCode).trim(),confirmed,asOf});
   const sn=String(serial).replace(/[\s-]/g,'').toUpperCase();
   if (sn.length>80||sn&&!/^[A-Z0-9/.]+$/.test(sn)) return {status:'invalid',message:'Check every serial letter and digit. No characters have been corrected automatically.'};
   if (brand==='baxi'&&range==='baxi-post2003-14') {

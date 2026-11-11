@@ -1,3 +1,4 @@
+import {reviewIdealDateCodes} from './ideal-date-code.mjs';
 import {inspectAgeBadge,reviewManufactureDates,acceptPrintedDate} from './date-rules.mjs';
 import {reviewBadgeText} from './badge-text-review.mjs';
 import {acceptCheckedPhotoSerial} from './photo-serial-correction.mjs';
@@ -14,18 +15,28 @@ export function mountThreeBrandAge(doc=document,reader=createReader(),now=()=>ne
     stop();review=null;dates=[];codes=[];
     for(const id of ['photo-serial-choice','photo-date-choice','photo-code-choice'])$(id).replaceChildren(make('option','Choose a reading to check'));
     $('age-photo-review').hidden=true;$('photo-reading-confirm').checked=false;
-    $('photo-serial-edit').value='';
+    $('photo-serial-edit').value='';$('ideal-photo-code-edit').value='';
     $('age-photo-camera').value='';$('age-photo-library').value='';
     $('age-photo-text').textContent='';$('age-photo-preview').hidden=true;$('age-photo-preview').removeAttribute('src');
     if(preview){URL.revokeObjectURL(preview);preview=null;}
   }
   function reset(){
     clearPhoto();clearResult();$('three-age-serial').value='';$('three-manufacture-code').value='';$('three-age-confirm').checked=false;
-    const b=brand.value;panel.hidden=!['baxi','viessmann'].includes(b);
+    const b=brand.value;panel.hidden=!['ideal','baxi','viessmann'].includes(b);$('brand-guidance').hidden=b==='ideal';$('three-serial-wrap').hidden=b==='ideal';
     const range=$('three-age-range');range.replaceChildren();
-    const ranges=b==='ideal'?[['','Choose the Ideal range'],['logic','Logic / Logic+ / Logic Max'],['classic','Classic'],['mini','Mini'],['other','Other Ideal range']]:b==='viessmann'?[['','Choose the Viessmann range'],['vitodens100-b1ga','Vitodens 100-W Heat Only — type B1GA'],['other','Other Viessmann range']]:[['','Choose the Baxi serial layout'],['baxi-post2003-14','3 letters + 9 digits + 2 letters (14 characters)'],['baxi-other','Older / different Baxi serial layout']];
+    const ranges=b==='ideal'?[['','Choose the Ideal badge layout / era'],['ideal-barcode-2000','Separate YYWW barcode code — 2000 onwards'],['ideal-other','Older / different / era uncertain — not decoded']]:b==='viessmann'?[['','Choose the Viessmann range'],['vitodens100-b1ga','Vitodens 100-W Heat Only — type B1GA'],['other','Other Viessmann range']]:[['','Choose the Baxi serial layout'],['baxi-post2003-14','3 letters + 9 digits + 2 letters (14 characters)'],['baxi-other','Older / different Baxi serial layout']];
     for(const [value,label] of ranges){const o=make('option',label);o.value=value;range.append(o);}
-    range.value='';$('three-code-wrap').hidden=true;
+    range.value='';configureCode();
+  }
+  function configureCode(){
+    const ideal=brand.value==='ideal',active=ideal&&$('three-age-range').value==='ideal-barcode-2000';
+    $('three-code-wrap').hidden=!(active||brand.value==='viessmann'&&$('three-age-range').value==='vitodens100-b1ga');
+    $('ideal-code-guidance').hidden=!active;
+    $('three-code-title').textContent=ideal?'Separate four-digit Ideal date code (YYWW)':'Separate seven-digit manufacture code';
+    $('three-code-note').textContent=ideal?'After the serial, under the barcode. Example: 2501 means week 01 of 2025. Keep leading zeros.':'B1GA only. Keep leading zeros. This is a separate code on the badge, not part of the 16-digit serial.';
+    $('three-manufacture-code').maxLength=ideal?4:7;
+    $('ideal-photo-code-wrap').hidden=!ideal;
+    $('three-confirm-label').textContent=ideal?'I checked the Ideal badge, the separate date-code position and that this is a 2000-onwards sticker.':'I checked the make, model and complete code against the boiler badge.';
   }
   function show(r){
     clearResult();result.append(make('h2',r.status==='dated'?'Manufacture age':'Age check'));
@@ -38,7 +49,7 @@ export function mountThreeBrandAge(doc=document,reader=createReader(),now=()=>ne
   }
   function lookup(){return show(inspectAgeBadge({brand:brand.value,range:$('three-age-range').value,serial:$('three-age-serial').value,manufactureCode:$('three-manufacture-code').value,confirmed:$('three-age-confirm').checked,asOf:today()}));}
   function reviewText(text){
-    review=reviewBadgeText(text);dates=reviewManufactureDates(text);codes=[];
+    review=reviewBadgeText(text);dates=reviewManufactureDates(text);codes=brand.value==='ideal'?reviewIdealDateCodes(text):[];
     if(brand.value==='viessmann'&&$('three-age-range').value==='vitodens100-b1ga')for(const line of text.split(/\r?\n/)){
       const m=line.match(/^\s*(?:manufacture code|date code)\s*[:#=-]?\s*(\d{7})\s*$/i);
       if(m&&!codes.includes(m[1]))codes.push(m[1]);
@@ -70,12 +81,16 @@ export function mountThreeBrandAge(doc=document,reader=createReader(),now=()=>ne
   }
   function useCode(){
     const i=$('photo-code-choice').value;
+    if(brand.value==='ideal'){
+      if(!$('photo-reading-confirm').checked)return show({status:'confirmation-required',message:'Check the four-digit reading, its position after the serial and the 2000-onwards era against the photo first.'});
+      $('three-manufacture-code').value=$('ideal-photo-code-edit').value.trim();$('three-age-confirm').checked=true;return lookup();
+    }
     if(!$('photo-reading-confirm').checked||i===''||!codes[Number(i)])return show({status:'confirmation-required',message:'Choose and check the separate manufacture code first.'});
     $('three-manufacture-code').value=codes[Number(i)];$('three-age-confirm').checked=true;return lookup();
   }
   function useDate(){const i=$('photo-date-choice').value;return show(acceptPrintedDate(i===''?null:dates[Number(i)],{confirmed:$('photo-reading-confirm').checked,asOf:today()}));}
   brand.addEventListener('change',reset);
-  $('three-age-range').addEventListener('change',()=>{clearPhoto();clearResult();$('three-age-serial').value='';$('three-manufacture-code').value='';$('three-age-confirm').checked=false;$('three-code-wrap').hidden=!(brand.value==='viessmann'&&$('three-age-range').value==='vitodens100-b1ga');});
+  $('three-age-range').addEventListener('change',()=>{clearPhoto();clearResult();$('three-age-serial').value='';$('three-manufacture-code').value='';$('three-age-confirm').checked=false;configureCode();});
   for(const id of ['three-age-serial','three-manufacture-code'])$(id).addEventListener('input',()=>{clearResult();$('three-age-confirm').checked=false;});
   $('three-age-confirm').addEventListener('change',clearResult);
   $('three-age-form').addEventListener('submit',e=>{e.preventDefault();lookup();});
@@ -84,6 +99,8 @@ export function mountThreeBrandAge(doc=document,reader=createReader(),now=()=>ne
   $('age-photo-rotation').addEventListener('change',()=>{clearPhoto();clearResult();$('age-photo-status').textContent='Rotation changed. Choose the photo again.';});
   for(const id of ['photo-serial-choice','photo-date-choice','photo-code-choice'])$(id).addEventListener('change',()=>{clearResult();$('photo-reading-confirm').checked=false;});
   $('photo-serial-choice').addEventListener('change',()=>{const i=$('photo-serial-choice').value;$('photo-serial-edit').value=i===''?'':review?.candidates?.[Number(i)]?.raw||'';});
+  $('photo-code-choice').addEventListener('change',()=>{const i=$('photo-code-choice').value;$('ideal-photo-code-edit').value=i===''?'':codes[Number(i)]||'';});
+  $('ideal-photo-code-edit').addEventListener('input',()=>{clearResult();$('photo-reading-confirm').checked=false;});
   $('photo-serial-edit').addEventListener('input',()=>{clearResult();$('photo-reading-confirm').checked=false;});
   $('photo-reading-confirm').addEventListener('change',clearResult);
   $('photo-use-serial').addEventListener('click',useSerial);$('photo-use-date').addEventListener('click',useDate);$('photo-use-code').addEventListener('click',useCode);
