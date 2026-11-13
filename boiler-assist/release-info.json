@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.13-r11-types1",
+  "appVersion": "2026.11.13-r12-types2",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1701,
@@ -420,6 +420,7 @@
     "Warranty/guarantee questions now show registration-based guidance without a paid AI request. Worcester links directly to the official 23-digit serial guarantee checker. Model, GC and manufacturing date never establish expiry; no serial is auto-sent and no manufacturer guarantee lookup has been performed by this app.",
     "FD matrix / Boiler age: checked Baxi matching post-2003 14-character serial year/week, and Viessmann Vitodens100-W Heat Only B1GA separate seven-digit manufacture-code date. Device-only badge-photo reading requires explicit selection, manual character checks and fresh confirmation after edits. Other serial layouts remain undated; Ideal serial rules pending. No new catalogue/native/server change or installation/warranty-date inference.",
     "Ideal separate YYWW barcode date code: checked 2000-onwards era, manufacturer example 2501=2025 week01. Local typed or explicitly checked photo reading, editable code clears confirmation. Older/different/uncertain-era stickers remain undated. No catalogue/native/server change.",
-    "Five exact existing Ideal Natural Gas appliance-type corrections: Response80/100/120 and isar m30100 are combi; icos System m3080 is system. Explicit retained manufacturer introductions, unchanged archived provenance and identity-only service scope. No new servicing/FGA/FPT/fault/parts/age criteria. All other1696records and355native overlays preserved; separate Ideal YYWW/FD tools retained."
+    "Five exact existing Ideal Natural Gas appliance-type corrections: Response80/100/120 and isar m30100 are combi; icos System m3080 is system. Explicit retained manufacturer introductions, unchanged archived provenance and identity-only service scope. No new servicing/FGA/FPT/fault/parts/age criteria. All other1696records and355native overlays preserved; separate Ideal YYWW/FD tools retained.",
+    "Three exact existing Ideal Excel HE Natural Gas appliance-type corrections: C24/GC47-348-35, C28/GC47-348-36 and C32/GC47-348-37 are combi. Explicit retained manufacturer introduction, unchanged archived provenance and identity-only service scope. No new servicing/FGA/FPT/fault/parts/age criteria. All other1698records and357native overlays preserved, including five R11 corrections; separate Ideal YYWW/FD tools retained."
   ]
 }
