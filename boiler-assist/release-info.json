@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.13-r15-espritrefs",
+  "appVersion": "2026.11.13-r16-espritspecs",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1704,
@@ -457,6 +457,7 @@
     "Three exact existing Ideal Excel HE Natural Gas appliance-type corrections: C24/GC47-348-35, C28/GC47-348-36 and C32/GC47-348-37 are combi. Explicit retained manufacturer introduction, unchanged archived provenance and identity-only service scope. No new servicing/FGA/FPT/fault/parts/age criteria. All other1698records and357native overlays preserved, including five R11 corrections; separate Ideal YYWW/FD tools retained.",
     "Added exact Ideal Esprit ECO²24/GC47-349-65 Natural Gas combi with14partial page-linked service prompts from official UIN220218 A07(June2022). All1701existingrecords/eightIdealtypecorrections/43fires/age4 retained. Unsupported older serial formats explicitly unavailable under currently verified information, rather than awaiting verification. No new age rule, numeric FGA/FPT target, fault repair, part fit or certificate result.",
     "Added exact Ideal Esprit ECO²30/GC47-349-66 and35/GC47-349-67 Natural Gas combis, each14partial page-linked service prompts from official UIN220218 A07(June2022). All1702previousrecords/Esprit24/eightIdealtypefixes/43fires/age4 retained. No new age rule, numeric FGA/FPT target, fault repair, part fit or certificate result.",
-    "Added page-linked control/reference limitations for exact Ideal Esprit ECO²24/30/35 in Manufacturer notes and Official manuals. Conflicting control names/context remain explicit; no operating recipe or numeric combustion/FPT criteria added. All identities, existing partial service tasks, age rules and unrelated data preserved."
+    "Added page-linked control/reference limitations for exact Ideal Esprit ECO²24/30/35 in Manufacturer notes and Official manuals. Conflicting control names/context remain explicit; no operating recipe or numeric combustion/FPT criteria added. All identities, existing partial service tasks, age rules and unrelated data preserved.",
+    "Added23source-linked technical specifications and15fault-indication groups per exact Esprit ECO²24/30/35. Temperature/CV/model-column/nominal-flow conditions retained; fault index does not provide complete diagnostic charts or prove a failed part. Existing14partial service prompts/control limitations/ages and all unrelated records unchanged. No operating sequence, numeric FGA/FPT target, repair instruction, measurement or certificate verdict added."
   ]
 }
