@@ -1,8 +1,8 @@
 {
-  "appVersion": "2026.11.13-r13-esprit1",
+  "appVersion": "2026.11.13-r14-esprit2",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
-  "boilers": 1702,
+  "boilers": 1704,
   "gasFires": 43,
   "contentChanges": [
     {
@@ -305,6 +305,28 @@
       "source": "UIN220218",
       "sourceRevision": "A07 (June2022)",
       "wholeRecordAccuracyComplete": false
+    },
+    {
+      "id": "ideal-esprit-eco2-30-47-349-66",
+      "gcNumber": "47-349-66",
+      "fuel": "Natural Gas",
+      "servicingTasks": 14,
+      "status": "partial",
+      "reviewedOn": "2026-11-13",
+      "source": "UIN220218",
+      "sourceRevision": "A07 (June2022)",
+      "wholeRecordAccuracyComplete": false
+    },
+    {
+      "id": "ideal-esprit-eco2-35-47-349-67",
+      "gcNumber": "47-349-67",
+      "fuel": "Natural Gas",
+      "servicingTasks": 14,
+      "status": "partial",
+      "reviewedOn": "2026-11-13",
+      "source": "UIN220218",
+      "sourceRevision": "A07 (June2022)",
+      "wholeRecordAccuracyComplete": false
     }
   ],
   "sourcePDFsIncluded": [],
@@ -433,6 +455,7 @@
     "Ideal separate YYWW barcode date code: checked 2000-onwards era, manufacturer example 2501=2025 week01. Local typed or explicitly checked photo reading, editable code clears confirmation. Older/different/uncertain-era stickers remain undated. No catalogue/native/server change.",
     "Five exact existing Ideal Natural Gas appliance-type corrections: Response80/100/120 and isar m30100 are combi; icos System m3080 is system. Explicit retained manufacturer introductions, unchanged archived provenance and identity-only service scope. No new servicing/FGA/FPT/fault/parts/age criteria. All other1696records and355native overlays preserved; separate Ideal YYWW/FD tools retained.",
     "Three exact existing Ideal Excel HE Natural Gas appliance-type corrections: C24/GC47-348-35, C28/GC47-348-36 and C32/GC47-348-37 are combi. Explicit retained manufacturer introduction, unchanged archived provenance and identity-only service scope. No new servicing/FGA/FPT/fault/parts/age criteria. All other1698records and357native overlays preserved, including five R11 corrections; separate Ideal YYWW/FD tools retained.",
-    "Added exact Ideal Esprit ECO²24/GC47-349-65 Natural Gas combi with14partial page-linked service prompts from official UIN220218 A07(June2022). All1701existingrecords/eightIdealtypecorrections/43fires/age4 retained. Unsupported older serial formats explicitly unavailable under currently verified information, rather than awaiting verification. No new age rule, numeric FGA/FPT target, fault repair, part fit or certificate result."
+    "Added exact Ideal Esprit ECO²24/GC47-349-65 Natural Gas combi with14partial page-linked service prompts from official UIN220218 A07(June2022). All1701existingrecords/eightIdealtypecorrections/43fires/age4 retained. Unsupported older serial formats explicitly unavailable under currently verified information, rather than awaiting verification. No new age rule, numeric FGA/FPT target, fault repair, part fit or certificate result.",
+    "Added exact Ideal Esprit ECO²30/GC47-349-66 and35/GC47-349-67 Natural Gas combis, each14partial page-linked service prompts from official UIN220218 A07(June2022). All1702previousrecords/Esprit24/eightIdealtypefixes/43fires/age4 retained. No new age rule, numeric FGA/FPT target, fault repair, part fit or certificate result."
   ]
 }

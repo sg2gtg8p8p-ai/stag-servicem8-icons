@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "e99b0ecfd380a4b9",
+  "buildId": "c5fdd29abb4d69fa",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.11.13-r13-esprit1",
+  "appVersion": "2026.11.13-r14-esprit2",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "bytes": 11213180,
-      "sha256": "6b16e04600bb23e2104244890d395497dc2b9c5badd307d81770eadb882da53f"
+      "bytes": 11225040,
+      "sha256": "01fe218b368841803774e42194a7f98230510170f84098be0498deb09564dfbf"
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -37,8 +37,8 @@
     },
     {
       "url": "./data/search-index.json",
-      "bytes": 1153301,
-      "sha256": "1bd1e4732906cd1605ba9f6b3a7a88ddfec99a123da831d91b9f4b5723777d3d"
+      "bytes": 1154199,
+      "sha256": "e1e8f1791b4446878339134227a7dee6c4ec265ffbf7c91723e79bcf123432fd"
     },
     {
       "url": "./decoder.js",
@@ -63,7 +63,7 @@
     {
       "url": "./help/ai-client.mjs",
       "bytes": 8047,
-      "sha256": "84f8e66fa8a7b898ecbfc5e27a5b2380cffbe368307b6529b3b4d81b96d4e14f"
+      "sha256": "e8ef732cb6aec5966711f226fcf8015d4419f6ebbcb45b0cfb2e3b8d1456070a"
     },
     {
       "url": "./help/baxi400-heat-fault-guard.mjs",
@@ -232,8 +232,8 @@
     },
     {
       "url": "./index.html",
-      "bytes": 1576024,
-      "sha256": "9fc49afe1381ddf7f95a7e13f37298504e46fa766ba370d20ba0a25134f799cf"
+      "bytes": 1577056,
+      "sha256": "b29bd882362b4606b02cc099b4bced00b571663b8b2e60c26c03ee1eb803b328"
     },
     {
       "url": "./local-bridge.js",
@@ -2272,8 +2272,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 61824,
-      "sha256": "acbab8defa1f345b85b233b1b23cbfcd57e69b2f163d67329aae71213d2fbf00"
+      "bytes": 62801,
+      "sha256": "6774f38d2d7783ea57035e9495477af92e2d99968c99f476ad7e5de5b504cd6e"
     },
     {
       "url": "./vendor/pdf.min.mjs",
@@ -2361,5 +2361,5 @@
       "sha256": "987ac85a70491630aa8bf61325f917a10a388aabaa0fda2f27bcab57a1d892be"
     }
   ],
-  "totalBytes": 166906152
+  "totalBytes": 166920919
 }
