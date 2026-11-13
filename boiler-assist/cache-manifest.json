@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "af361670c5f91c09",
+  "buildId": "e99b0ecfd380a4b9",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.11.13-r12-types2",
+  "appVersion": "2026.11.13-r13-esprit1",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "bytes": 11207224,
-      "sha256": "f6b8b77aea7c4e26a755b57083ad678318927589ad46a5d823231d4546b51a10"
+      "bytes": 11213180,
+      "sha256": "6b16e04600bb23e2104244890d395497dc2b9c5badd307d81770eadb882da53f"
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -37,8 +37,8 @@
     },
     {
       "url": "./data/search-index.json",
-      "bytes": 1152852,
-      "sha256": "0f0ce4b30a7dbe64988d784a1fdcbc62957e0eaec6830cb2782c60459cc8260c"
+      "bytes": 1153301,
+      "sha256": "1bd1e4732906cd1605ba9f6b3a7a88ddfec99a123da831d91b9f4b5723777d3d"
     },
     {
       "url": "./decoder.js",
@@ -63,7 +63,7 @@
     {
       "url": "./help/ai-client.mjs",
       "bytes": 8047,
-      "sha256": "c2bfad185016e47992f230b7ad474869430105bc013c5a51e0e8b2a97a4ea9f1"
+      "sha256": "84f8e66fa8a7b898ecbfc5e27a5b2380cffbe368307b6529b3b4d81b96d4e14f"
     },
     {
       "url": "./help/baxi400-heat-fault-guard.mjs",
@@ -232,8 +232,8 @@
     },
     {
       "url": "./index.html",
-      "bytes": 1575441,
-      "sha256": "37ad38118ffb0817c2ccc80d015bb6f99e26761142e8ebabc164b9a21f81c4a0"
+      "bytes": 1576024,
+      "sha256": "9fc49afe1381ddf7f95a7e13f37298504e46fa766ba370d20ba0a25134f799cf"
     },
     {
       "url": "./local-bridge.js",
@@ -2272,8 +2272,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 61062,
-      "sha256": "b2eb168c4759d318e98338473ea4fd038e343effb57932d524655db5b4c9c09a"
+      "bytes": 61824,
+      "sha256": "acbab8defa1f345b85b233b1b23cbfcd57e69b2f163d67329aae71213d2fbf00"
     },
     {
       "url": "./vendor/pdf.min.mjs",
@@ -2342,8 +2342,8 @@
     },
     {
       "url": "./age/date-rules.mjs",
-      "bytes": 8776,
-      "sha256": "bb1fdc4bc6099e0c3a6c9a5b61aac41046f090ba11fcbef168e1e2f7a5c15eb1"
+      "bytes": 8816,
+      "sha256": "07ecc0242220ace391e8dfcc97e0afc678aee65d0adbeaf33b49bf67ab9b91e5"
     },
     {
       "url": "./age/badge-text-review.mjs",
@@ -2361,5 +2361,5 @@
       "sha256": "987ac85a70491630aa8bf61325f917a10a388aabaa0fda2f27bcab57a1d892be"
     }
   ],
-  "totalBytes": 166898362
+  "totalBytes": 166906152
 }
