@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.13-r16-espritspecs",
+  "appVersion": "2026.11.14-r17-espritfaults",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1704,
@@ -458,6 +458,7 @@
     "Added exact Ideal Esprit ECO²24/GC47-349-65 Natural Gas combi with14partial page-linked service prompts from official UIN220218 A07(June2022). All1701existingrecords/eightIdealtypecorrections/43fires/age4 retained. Unsupported older serial formats explicitly unavailable under currently verified information, rather than awaiting verification. No new age rule, numeric FGA/FPT target, fault repair, part fit or certificate result.",
     "Added exact Ideal Esprit ECO²30/GC47-349-66 and35/GC47-349-67 Natural Gas combis, each14partial page-linked service prompts from official UIN220218 A07(June2022). All1702previousrecords/Esprit24/eightIdealtypefixes/43fires/age4 retained. No new age rule, numeric FGA/FPT target, fault repair, part fit or certificate result.",
     "Added page-linked control/reference limitations for exact Ideal Esprit ECO²24/30/35 in Manufacturer notes and Official manuals. Conflicting control names/context remain explicit; no operating recipe or numeric combustion/FPT criteria added. All identities, existing partial service tasks, age rules and unrelated data preserved.",
-    "Added23source-linked technical specifications and15fault-indication groups per exact Esprit ECO²24/30/35. Temperature/CV/model-column/nominal-flow conditions retained; fault index does not provide complete diagnostic charts or prove a failed part. Existing14partial service prompts/control limitations/ages and all unrelated records unchanged. No operating sequence, numeric FGA/FPT target, repair instruction, measurement or certificate verdict added."
+    "Added23source-linked technical specifications and15fault-indication groups per exact Esprit ECO²24/30/35. Temperature/CV/model-column/nominal-flow conditions retained; fault index does not provide complete diagnostic charts or prove a failed part. Existing14partial service prompts/control limitations/ages and all unrelated records unchanged. No operating sequence, numeric FGA/FPT target, repair instruction, measurement or certificate verdict added.",
+    "Added qualified descriptive references for16original fault/symptom sections per exact Esprit ECO²24/30/35, retaining FA/FU index entries. Printed polarity, timing/test-point/source-context conditions and tolerance/cross-reference/undrawn-outcome holds remain explicit. No automated diagnostic evaluator, programme, replacement, FGA/FPT criterion, measured result or certificate verdict. Existing23specifications/14partial service prompts/control limitations/age rules and unrelated records preserved."
   ]
 }
