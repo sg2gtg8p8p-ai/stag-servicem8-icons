@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "588edb4608e80b64",
+  "buildId": "1173696646f4af01",
   "preparedOn": "2026-10-22",
-  "appVersion": "2026.11.14-r19-henrad",
+  "appVersion": "2026.11.14-r19-henrad-count1",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -2272,8 +2272,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 64922,
-      "sha256": "2394938e32977317123b9b5709fa9a440eefc49213f0e23a7b0a9ee5678ab7c4"
+      "bytes": 65145,
+      "sha256": "c633c18c8d6c609696c0f386018b622b686611457909a2118bd6076c9ec811bd"
     },
     {
       "url": "./vendor/pdf.min.mjs",
@@ -2361,5 +2361,5 @@
       "sha256": "987ac85a70491630aa8bf61325f917a10a388aabaa0fda2f27bcab57a1d892be"
     }
   ],
-  "totalBytes": 166971848
+  "totalBytes": 166972071
 }
