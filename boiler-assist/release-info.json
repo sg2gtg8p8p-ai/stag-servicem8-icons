@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.14-r20-henradse",
+  "appVersion": "2026.11.15-r21-henradse-service",
   "preparedOn": "2026-10-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1723,
@@ -463,6 +463,7 @@
     "Added source-linked conditional component/electrode and distinct CH/DHW draining supplements for exact Esprit ECO²24/30/35 using original pages41/42/43/47. Existing14service-task identities/order/triggers retained; no routine burner/electrode replacement instruction, autonomous repair/part-fit claim, mode recipe, FGA/FPT decision or completed measurement. R17fault references, technical specifications, other models and age rules preserved.",
     "Added13exact Henrad WH/WHLX Natural Gas model/GC identity and archived manufacturer-manual references. Henrad shown under its printed brand, independent of the archive Ideal folder. Identity-only coverage: service procedures, numerical criteria, parts fit, type and dates remain unavailable. All1704existing models and363existing detail overlays preserved.",
     "Corrected the App information boiler-count label from1704to1717 after adding13Henradidentity-only records. Catalogue, native runtime, source data, handlers, safety rules and offline worker template unchanged.",
-    "Added six exact Henrad SE30/40/50/60/70/80FF Natural Gas model/GC identity and archived manufacturer-manual references from UIN153960A0. Identity-only coverage; unknown edition/type/dates and no service/numerical/parts/age promotion. All1717 existing models and376native transport rows preserved. Information count1723boilers43fires."
+    "Added six exact Henrad SE30/40/50/60/70/80FF Natural Gas model/GC identity and archived manufacturer-manual references from UIN153960A0. Identity-only coverage; unknown edition/type/dates and no service/numerical/parts/age promotion. All1717 existing models and376native transport rows preserved. Information count1723boilers43fires.",
+    "Added partial descriptive servicing guides for exact Henrad SE30/40/50/60/70/80FF Natural Gas models, GC41-387-46..51, from archived manufacturer UIN153960A0:17ordered tasks/model with source-linked access, cleaning, sealing/sensing-pipe reassembly, conditional condensate-siphon references and actual post-service checks. Edition/current applicability unknown; no numeric FGA/FPT/pressure or electrode settings, automatic cleaning exemption, parts-fit, fault, age or certificate verdict added. All1723identities/search and1717other detail records preserved."
   ]
 }
