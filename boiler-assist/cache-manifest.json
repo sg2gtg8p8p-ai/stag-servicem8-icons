@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "8a1d4a1bf54f2665",
-  "preparedOn": "2026-10-22",
-  "appVersion": "2026.11.17-r24-henradwh-references",
+  "buildId": "ca7b9c771bdac341",
+  "preparedOn": "2026-11-20",
+  "appVersion": "2026.11.20-r25-worcester-original-partial",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "bytes": 11355044,
-      "sha256": "862fd9bf7530c4389188bec79c8d65047d1741d486298bc8faaabc8238545287"
+      "bytes": 11361475,
+      "sha256": "c72c44b46d763e8d64947b311b3f18c70bd7bbf6038c5f1f5c6b9d4d49534fd4"
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -63,7 +63,7 @@
     {
       "url": "./help/ai-client.mjs",
       "bytes": 8047,
-      "sha256": "5aa80d1330306f7098efb1764e9004a9dfdf31729c218d9be64a193cff557ea4"
+      "sha256": "bc6cd8cc8620478656843380dfb1d26bdc6a674300bec2614cbdd80156f5154d"
     },
     {
       "url": "./help/baxi400-heat-fault-guard.mjs",
@@ -232,8 +232,8 @@
     },
     {
       "url": "./index.html",
-      "bytes": 1582217,
-      "sha256": "14fef0b9e77b25dd4bae4791f0b2d52ba91d6146d53eb93183259d749d2b001f"
+      "bytes": 1585110,
+      "sha256": "82d9df0926b98a29465f2c87c3c5c1231e00bcc123e5678d80e4164a213ce073"
     },
     {
       "url": "./local-bridge.js",
@@ -2272,8 +2272,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 67905,
-      "sha256": "da36915e33aaad16bc497aefc5d10c9bab96701acb9df8741eb5a9024b87c264"
+      "bytes": 73334,
+      "sha256": "c47e018d8ffc372b54618ed0c7ab29f1a51fdcb34d4f502a8a46ba43d34e5a70"
     },
     {
       "url": "./vendor/pdf.min.mjs",
@@ -2359,7 +2359,82 @@
       "url": "./age/ideal-date-code.mjs",
       "bytes": 2920,
       "sha256": "987ac85a70491630aa8bf61325f917a10a388aabaa0fda2f27bcab57a1d892be"
+    },
+    {
+      "url": "./manual-pages/worcester-original-6720803800-201211/page-13.png",
+      "bytes": 465688,
+      "sha256": "0aa1190e92fbea156e4ad5e37ebd1d387e7a60fea4f66f4d9d44fddd53968ceb"
+    },
+    {
+      "url": "./manual-pages/worcester-original-6720803800-201211/page-31.png",
+      "bytes": 380917,
+      "sha256": "c8f240923a3e818e09d1a1e913c6a48951f9a035311264df808a165e6e2779a7"
+    },
+    {
+      "url": "./manual-pages/worcester-original-6720803800-201211/page-33.png",
+      "bytes": 416217,
+      "sha256": "d0b40154b0b9252d8cb090e529de23997f7cf17a0e7ed1071187df0cdde9cf5e"
+    },
+    {
+      "url": "./manual-pages/worcester-original-6720803800-201211/page-34.png",
+      "bytes": 438354,
+      "sha256": "07ba36e2109b4cfd5bd64ce3ab631df6259ed77870267b6218efec9b1cc93de6"
+    },
+    {
+      "url": "./manual-pages/worcester-original-6720803800-201211/page-35.png",
+      "bytes": 437236,
+      "sha256": "5504592486d555730d3de89db7ed7a79b69e3603cc6305cb55d0bffdd8e3a19c"
+    },
+    {
+      "url": "./manual-pages/worcester-original-6720803800-201211/page-36.png",
+      "bytes": 488004,
+      "sha256": "9a4450c459fc19b3c945b6b1216a6c2e27b553c411b2082c11f41cc0f559e392"
+    },
+    {
+      "url": "./manual-pages/worcester-original-6720803800-201211/page-37.png",
+      "bytes": 478089,
+      "sha256": "632e547e71cb36e678b5d179ba3dd0a63464f1623bc2bd6a2d1a6f503e3ac00c"
+    },
+    {
+      "url": "./manual-pages/worcester-original-6720803800-201211/page-38.png",
+      "bytes": 538721,
+      "sha256": "65a5dca58f952e71643ecb7d289327cfc7d0f13e4123cce8438431be905c01d9"
+    },
+    {
+      "url": "./manual-pages/worcester-original-6720803800-201211/page-39.png",
+      "bytes": 534678,
+      "sha256": "1ffa6e2e7cfa2703e76d93b8c8640d9dfe4c34c1e82510141dce49680554a1a1"
+    },
+    {
+      "url": "./manual-pages/worcester-original-6720803800-201211/page-4.png",
+      "bytes": 617285,
+      "sha256": "4343ade9a9e6670472e0e29f183bc6ac98438f70af8c2865bc6d9e043151a101"
+    },
+    {
+      "url": "./manual-pages/worcester-original-6720803800-201211/page-40.png",
+      "bytes": 651504,
+      "sha256": "efb612fda45ada6c7675d2f6a1a046388d8354b903c55044d036afd95304f7b2"
+    },
+    {
+      "url": "./manual-pages/worcester-original-6720803800-201211/page-41.png",
+      "bytes": 349834,
+      "sha256": "7f63c3f985ecfc40dfdb52ffdb2758ca9ec13c64c618d5d7d427be6df2ead3c0"
+    },
+    {
+      "url": "./manual-pages/worcester-original-6720803800-201211/page-44.png",
+      "bytes": 466671,
+      "sha256": "5d8d0f59391ffd7c387b54cc96be4f39f3cac837d8dbf6d0c88324590b028892"
+    },
+    {
+      "url": "./manual-pages/worcester-original-6720803800-201211/page-45.png",
+      "bytes": 549723,
+      "sha256": "a9ae8f258cb5d8f88f9263201bf8b7153008c311ebb5d7a9897cfc4a62324481"
+    },
+    {
+      "url": "./manual-pages/worcester-original-6720803800-201211/page-46.png",
+      "bytes": 566904,
+      "sha256": "8b66362be6b42b0d2865e434daf133a4ee27fde78b58730585ae7c38b2310da3"
     }
   ],
-  "totalBytes": 167065822
+  "totalBytes": 174460400
 }

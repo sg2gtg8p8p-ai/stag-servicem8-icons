@@ -1,6 +1,6 @@
 {
-  "appVersion": "2026.11.17-r24-henradwh-references",
-  "preparedOn": "2026-10-22",
+  "appVersion": "2026.11.20-r25-worcester-original-partial",
+  "preparedOn": "2026-11-20",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1723,
   "gasFires": 43,
@@ -327,10 +327,134 @@
       "source": "UIN220218",
       "sourceRevision": "A07 (June2022)",
       "wholeRecordAccuracyComplete": false
+    },
+    {
+      "id": "worcester-greenstar-28cdi-compact-ng-47-406-44",
+      "gcNumber": "47-406-44",
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 13,
+      "reviewedPageImages": 15,
+      "sourceReference": "6720803800 (2012/11)",
+      "sourceHosting": "third-party-retailer-archive",
+      "sourceReviewedOn": "2026-11-17",
+      "contentReviewedOn": "2026-11-19",
+      "newNumericRules": false,
+      "fullGuideClaim": false
     }
   ],
   "sourcePDFsIncluded": [],
-  "newManufacturerIllustrationsIncluded": [],
+  "newManufacturerIllustrationsIncluded": [
+    {
+      "modelID": "worcester-greenstar-28cdi-compact-ng-47-406-44",
+      "model": "Greenstar 28CDi Compact",
+      "gcNumber": "47-406-44",
+      "fuel": "Natural Gas",
+      "sourceReference": "6720803800 (2012/11)",
+      "sourceSHA256": "9e3c08d37946bc140fae8425867e047702d1b55266e98b157b36537f88ed863f",
+      "sourceHosting": "third-party-retailer-archive",
+      "publisher": "Worcester Bosch, manufacturer-authored historic instructions",
+      "status": "partial-historic-source-page-reference",
+      "imageCount": 15,
+      "reviewedPages": [
+        4,
+        13,
+        31,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        44,
+        45,
+        46
+      ],
+      "images": [
+        {
+          "page": 4,
+          "asset": "manual-pages/worcester-original-6720803800-201211/page-4.png",
+          "sha256": "4343ade9a9e6670472e0e29f183bc6ac98438f70af8c2865bc6d9e043151a101"
+        },
+        {
+          "page": 13,
+          "asset": "manual-pages/worcester-original-6720803800-201211/page-13.png",
+          "sha256": "0aa1190e92fbea156e4ad5e37ebd1d387e7a60fea4f66f4d9d44fddd53968ceb"
+        },
+        {
+          "page": 31,
+          "asset": "manual-pages/worcester-original-6720803800-201211/page-31.png",
+          "sha256": "c8f240923a3e818e09d1a1e913c6a48951f9a035311264df808a165e6e2779a7"
+        },
+        {
+          "page": 33,
+          "asset": "manual-pages/worcester-original-6720803800-201211/page-33.png",
+          "sha256": "d0b40154b0b9252d8cb090e529de23997f7cf17a0e7ed1071187df0cdde9cf5e"
+        },
+        {
+          "page": 34,
+          "asset": "manual-pages/worcester-original-6720803800-201211/page-34.png",
+          "sha256": "07ba36e2109b4cfd5bd64ce3ab631df6259ed77870267b6218efec9b1cc93de6"
+        },
+        {
+          "page": 35,
+          "asset": "manual-pages/worcester-original-6720803800-201211/page-35.png",
+          "sha256": "5504592486d555730d3de89db7ed7a79b69e3603cc6305cb55d0bffdd8e3a19c"
+        },
+        {
+          "page": 36,
+          "asset": "manual-pages/worcester-original-6720803800-201211/page-36.png",
+          "sha256": "9a4450c459fc19b3c945b6b1216a6c2e27b553c411b2082c11f41cc0f559e392"
+        },
+        {
+          "page": 37,
+          "asset": "manual-pages/worcester-original-6720803800-201211/page-37.png",
+          "sha256": "632e547e71cb36e678b5d179ba3dd0a63464f1623bc2bd6a2d1a6f503e3ac00c"
+        },
+        {
+          "page": 38,
+          "asset": "manual-pages/worcester-original-6720803800-201211/page-38.png",
+          "sha256": "65a5dca58f952e71643ecb7d289327cfc7d0f13e4123cce8438431be905c01d9"
+        },
+        {
+          "page": 39,
+          "asset": "manual-pages/worcester-original-6720803800-201211/page-39.png",
+          "sha256": "1ffa6e2e7cfa2703e76d93b8c8640d9dfe4c34c1e82510141dce49680554a1a1"
+        },
+        {
+          "page": 40,
+          "asset": "manual-pages/worcester-original-6720803800-201211/page-40.png",
+          "sha256": "efb612fda45ada6c7675d2f6a1a046388d8354b903c55044d036afd95304f7b2"
+        },
+        {
+          "page": 41,
+          "asset": "manual-pages/worcester-original-6720803800-201211/page-41.png",
+          "sha256": "7f63c3f985ecfc40dfdb52ffdb2758ca9ec13c64c618d5d7d427be6df2ead3c0"
+        },
+        {
+          "page": 44,
+          "asset": "manual-pages/worcester-original-6720803800-201211/page-44.png",
+          "sha256": "5d8d0f59391ffd7c387b54cc96be4f39f3cac837d8dbf6d0c88324590b028892"
+        },
+        {
+          "page": 45,
+          "asset": "manual-pages/worcester-original-6720803800-201211/page-45.png",
+          "sha256": "a9ae8f258cb5d8f88f9263201bf8b7153008c311ebb5d7a9897cfc4a62324481"
+        },
+        {
+          "page": 46,
+          "asset": "manual-pages/worcester-original-6720803800-201211/page-46.png",
+          "sha256": "8b66362be6b42b0d2865e434daf133a4ee27fde78b58730585ae7c38b2310da3"
+        }
+      ],
+      "scope": "Complete unchanged reviewed source-page images at point of use. Not a complete standalone service/repair guide, current revision or installed-serial proof. Historic numeric tables remain source reference only; no numerical FGA/FPT or certificate rule is added.",
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false
+    }
+  ],
   "liveServiceM8Connection": false,
   "customerDataIncluded": false,
   "simulatedAssetsIncluded": false,
@@ -467,6 +591,8 @@
     "Added partial descriptive servicing guides for exact Henrad SE30/40/50/60/70/80FF Natural Gas models, GC41-387-46..51, from archived manufacturer UIN153960A0:17ordered tasks/model with source-linked access, cleaning, sealing/sensing-pipe reassembly, conditional condensate-siphon references and actual post-service checks. Edition/current applicability unknown; no numeric FGA/FPT/pressure or electrode settings, automatic cleaning exemption, parts-fit, fault, age or certificate verdict added. All1723identities/search and1717other detail records preserved.",
     "Added partial descriptive servicing guides for13exact Henrad WH/LX Natural Gas models using archived UIN153956A0:17ordered tasks/model with distinct Standard/LX casing access, WH100C12-only configuration, rear-versus-side/top outlet context, flue baffles/collector rope seal/three sensing tubes, burner/pilot inspection, reassembly and actual closure checks. Edition/current applicability unknown; full-manual dependencies remain. No numeric FGA/FPT/pressure/electrode settings, parts-fit,fault,type/date/age or certificate verdict added. All1723identities/search,1710other details and369other transport rows preserved.",
     "Added an optional source-linked pilot access, shield and injector sealing/refit reference for13 existing Henrad WH/LX Natural Gas partial guides from archived UIN153956A0 Frame58/page29. Original17 routine tasks and required topics remain; dismantling/replacement is conditional. Original drawings/full-manual dependencies and unknown edition/current applicability remain explicit. No typed pressure/gap, FGA/FPT, parts fit, date/age, fault or certificate criteria added. All1723identities/search,1710other details and369other transport rows preserved.",
-    "Added39 descriptive source-reference paragraphs across13 existing Henrad WH/LX Natural Gas partial guides: Frame2/page6 pelmet-access drawing and variant boundary, Frame34/page21 installation gas-connection context, and Frame36/page21 original electrical-routing/retention drawing. Standard controls-pod instructions are not transferred to LX. Page7GasSupply,Frame56/full wiring and archive edition/current applicability remain explicit dependencies. No standalone gas/electrical procedure, typed numerical criterion, parts fit, age/fault/type or certificate verdict added. All1723identities/search and unrelated1710details/369transport rows preserved."
-  ]
+    "Added39 descriptive source-reference paragraphs across13 existing Henrad WH/LX Natural Gas partial guides: Frame2/page6 pelmet-access drawing and variant boundary, Frame34/page21 installation gas-connection context, and Frame36/page21 original electrical-routing/retention drawing. Standard controls-pod instructions are not transferred to LX. Page7GasSupply,Frame56/full wiring and archive edition/current applicability remain explicit dependencies. No standalone gas/electrical procedure, typed numerical criterion, parts fit, age/fault/type or certificate verdict added. All1723identities/search and unrelated1710details/369transport rows preserved.",
+    "Added a partial descriptive original28CDiCompactNG GC47-406-44 reference: six phases,13tasks and15 unchanged reviewed historic manufacturer-page images at pointofuse. Third-party retailer archive6720803800(2012/11), not currentrevision/installedserial acceptance. Heat-demand/DHW anti-cycling, conditionalaccess/cleaning, sumpseal/gaskets, max-min-max analysis and restoration dependencies retained. No new numericFGA/FPT/certificate verdict, standalone repair, LPG/ErP transfer, parts-fit or identity change. Other1722 catalogue records unchanged."
+  ],
+  "releaseStatus": "release"
 }
