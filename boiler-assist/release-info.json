@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.20-r27-idealrs4-85-125",
+  "appVersion": "2026.11.20-r28-owner-24rierp-615",
   "preparedOn": "2026-11-20",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1725,
@@ -445,6 +445,30 @@
       "scope": "Partial descriptive source-linked guide only; frame-numbering/thermocouple wording and RS4125 baffle applicability holds retained. Complete applicable original instructions and actual checks remain required.",
       "newNumericRules": false,
       "fullGuideClaim": false
+    },
+    {
+      "id": "worcester-greenstar-24ri-erp-7733600068",
+      "gcNumber": "41-406-47",
+      "productNumber": "7733600068",
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 15,
+      "sourceReference": "6 720 813 283 (2015/07)",
+      "scope": "Partial descriptive source-linked guide. Exact installed serial, fitted hardware, current revision and Vaillant R2 technical equivalence remain unproved. Complete applicable original instructions and actual checks remain required.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "vaillant-ecotec-plus-615-0010011678",
+      "gcNumber": "41-044-61",
+      "productNumber": "0010011678",
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 15,
+      "sourceReference": "0020116700_06 GB/IE (01/2014)",
+      "scope": "Partial descriptive source-linked guide. Exact installed serial, fitted hardware, current revision and Vaillant R2 technical equivalence remain unproved. Complete applicable original instructions and actual checks remain required.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
     }
   ],
   "sourcePDFsIncluded": [],
@@ -701,7 +725,8 @@
     "Added exact identity-only Vaillant ecoTEC plus615 VUGB156/5-5 R2/GC41-044-61 and Worcester Greenstar24RiErP7733600068/GC41-406-47 Natural Gas entries. Printed source/generation boundaries and unavailable type/date/technical/service details remain explicit; no serial applicability inferred.",
     "Catalogue/search/App information now contain1725boilers and43gasfires. Existing1723identity order,1719unrelated details, native handlers/UI/auth/budget constraints and source limits preserved.",
     "Corrected standalone public inline search to include the two identity-only records already admitted in R26: Vaillant ecoTEC plus 615 VU GB 156/5-5 R2 GC41-044-61/product0010011678 and Worcester Greenstar24RiErP GC41-406-47/product7733600068. Exact identifier searches and model-name discovery now use those same external search identities. Catalogue, technical/service content, numerical rules, native add-on, backend and AI pins are unchanged.",
-    "Added partial archived-manual service references for exact Ideal Mexico Super RS485/RS4100/RS4125 Natural Gas identities GC41-392-78/79/80, UIN200942 A02 May2004. All1725identities/order and1722otherrecords are unchanged; 15descriptive tasks per model retain explicit source inconsistencies, configuration/serial/revision/optional-kit holds and unavailable numerical criteria. No FGA/FPT thresholds, parts-fit or certificate promotion. R26a public inline-search correction is inherited unchanged."
+    "Added partial archived-manual service references for exact Ideal Mexico Super RS485/RS4100/RS4125 Natural Gas identities GC41-392-78/79/80, UIN200942 A02 May2004. All1725identities/order and1722otherrecords are unchanged; 15descriptive tasks per model retain explicit source inconsistencies, configuration/serial/revision/optional-kit holds and unavailable numerical criteria. No FGA/FPT thresholds, parts-fit or certificate promotion. R26a public inline-search correction is inherited unchanged.",
+    "Added two partial manufacturer-authored archived-manual service references for owner-reported Greenstar24RiErP NG GC41-406-47/product7733600068 and ecoTECplus615 NG GC41-044-61/article0010011678. All1725identities/order and1723otherrecords unchanged;15descriptive tasks per model. Conditional cleaning and source-specific sequence retained. Vaillant R2 equivalence, installedserial/currentrevision, numericFGA/FPT, parts and certificate holds remain. Existing R27 content/search/UI inherited unchanged."
   ],
   "releaseStatus": "release"
 }
