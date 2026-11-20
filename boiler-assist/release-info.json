@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.20-r26a-search-identities",
+  "appVersion": "2026.11.20-r27-idealrs4-85-125",
   "preparedOn": "2026-11-20",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1725,
@@ -409,6 +409,42 @@
       "newNumericRules": false,
       "fullGuideClaim": false,
       "scope": "Exact identity and archived manufacturer-document association only; no technical/service/parts-fit/age/FGA/FPT/certificate promotion."
+    },
+    {
+      "id": "ideal-mexico-super-rs485-41-392-78",
+      "gcNumber": "41-392-78",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 15,
+      "sourceReference": "UIN200942A02 May2004",
+      "scope": "Partial descriptive source-linked guide only; frame-numbering/thermocouple wording and RS4125 baffle applicability holds retained. Complete applicable original instructions and actual checks remain required.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "ideal-mexico-super-rs4100-41-392-79",
+      "gcNumber": "41-392-79",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 15,
+      "sourceReference": "UIN200942A02 May2004",
+      "scope": "Partial descriptive source-linked guide only; frame-numbering/thermocouple wording and RS4125 baffle applicability holds retained. Complete applicable original instructions and actual checks remain required.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "ideal-mexico-super-rs4125-41-392-80",
+      "gcNumber": "41-392-80",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 15,
+      "sourceReference": "UIN200942A02 May2004",
+      "scope": "Partial descriptive source-linked guide only; frame-numbering/thermocouple wording and RS4125 baffle applicability holds retained. Complete applicable original instructions and actual checks remain required.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
     }
   ],
   "sourcePDFsIncluded": [],
@@ -664,7 +700,8 @@
     "Added partial descriptive Ideal Mexico Super RS440/450/460/470 Natural Gas guides from archived UIN200941A02 May2004. Four existing boiler identities and all unrelated sections remain unchanged; conditional component access, reassembly/full-manual dependencies and unavailable numerical criteria remain explicit. No FGA/FPT/certificate verdict or parts-fit promotion.",
     "Added exact identity-only Vaillant ecoTEC plus615 VUGB156/5-5 R2/GC41-044-61 and Worcester Greenstar24RiErP7733600068/GC41-406-47 Natural Gas entries. Printed source/generation boundaries and unavailable type/date/technical/service details remain explicit; no serial applicability inferred.",
     "Catalogue/search/App information now contain1725boilers and43gasfires. Existing1723identity order,1719unrelated details, native handlers/UI/auth/budget constraints and source limits preserved.",
-    "Corrected standalone public inline search to include the two identity-only records already admitted in R26: Vaillant ecoTEC plus 615 VU GB 156/5-5 R2 GC41-044-61/product0010011678 and Worcester Greenstar24RiErP GC41-406-47/product7733600068. Exact identifier searches and model-name discovery now use those same external search identities. Catalogue, technical/service content, numerical rules, native add-on, backend and AI pins are unchanged."
+    "Corrected standalone public inline search to include the two identity-only records already admitted in R26: Vaillant ecoTEC plus 615 VU GB 156/5-5 R2 GC41-044-61/product0010011678 and Worcester Greenstar24RiErP GC41-406-47/product7733600068. Exact identifier searches and model-name discovery now use those same external search identities. Catalogue, technical/service content, numerical rules, native add-on, backend and AI pins are unchanged.",
+    "Added partial archived-manual service references for exact Ideal Mexico Super RS485/RS4100/RS4125 Natural Gas identities GC41-392-78/79/80, UIN200942 A02 May2004. All1725identities/order and1722otherrecords are unchanged; 15descriptive tasks per model retain explicit source inconsistencies, configuration/serial/revision/optional-kit holds and unavailable numerical criteria. No FGA/FPT thresholds, parts-fit or certificate promotion. R26a public inline-search correction is inherited unchanged."
   ],
   "releaseStatus": "release"
 }
