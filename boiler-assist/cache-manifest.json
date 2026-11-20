@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "c9432fe383ed3aa6",
+  "buildId": "126a31762fd2e819",
   "preparedOn": "2026-11-20",
-  "appVersion": "2026.11.20-r26-idealrs4-615r2-24rierp",
+  "appVersion": "2026.11.20-r26a-search-identities",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -232,8 +232,8 @@
     },
     {
       "url": "./index.html",
-      "bytes": 1585138,
-      "sha256": "a78bc1be046351c071c80fd0b349c1e9105e089419c21a1e849b2b5129c468e0"
+      "bytes": 1586192,
+      "sha256": "e8ba25a85995da00bdb7cd76796e608c0f312c014502dfc9aee99d0c5161d29e"
     },
     {
       "url": "./local-bridge.js",
@@ -2272,8 +2272,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 76843,
-      "sha256": "1d0164edb0cb44658681b7ea5adb8e243b622ca0d5cd9b9db041a94845a5bd42"
+      "bytes": 77291,
+      "sha256": "d3b432923b07a460a8b83ef36248f6d85fa8d74c4f57389610c68d70cfda3284"
     },
     {
       "url": "./vendor/pdf.min.mjs",
@@ -2436,5 +2436,5 @@
       "sha256": "8b66362be6b42b0d2865e434daf133a4ee27fde78b58730585ae7c38b2310da3"
     }
   ],
-  "totalBytes": 174486746
+  "totalBytes": 174488248
 }

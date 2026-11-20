@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.20-r26-idealrs4-615r2-24rierp",
+  "appVersion": "2026.11.20-r26a-search-identities",
   "preparedOn": "2026-11-20",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1725,
@@ -663,7 +663,8 @@
     "Added a partial descriptive original28CDiCompactNG GC47-406-44 reference: six phases,13tasks and15 unchanged reviewed historic manufacturer-page images at pointofuse. Third-party retailer archive6720803800(2012/11), not currentrevision/installedserial acceptance. Heat-demand/DHW anti-cycling, conditionalaccess/cleaning, sumpseal/gaskets, max-min-max analysis and restoration dependencies retained. No new numericFGA/FPT/certificate verdict, standalone repair, LPG/ErP transfer, parts-fit or identity change. Other1722 catalogue records unchanged.",
     "Added partial descriptive Ideal Mexico Super RS440/450/460/470 Natural Gas guides from archived UIN200941A02 May2004. Four existing boiler identities and all unrelated sections remain unchanged; conditional component access, reassembly/full-manual dependencies and unavailable numerical criteria remain explicit. No FGA/FPT/certificate verdict or parts-fit promotion.",
     "Added exact identity-only Vaillant ecoTEC plus615 VUGB156/5-5 R2/GC41-044-61 and Worcester Greenstar24RiErP7733600068/GC41-406-47 Natural Gas entries. Printed source/generation boundaries and unavailable type/date/technical/service details remain explicit; no serial applicability inferred.",
-    "Catalogue/search/App information now contain1725boilers and43gasfires. Existing1723identity order,1719unrelated details, native handlers/UI/auth/budget constraints and source limits preserved."
+    "Catalogue/search/App information now contain1725boilers and43gasfires. Existing1723identity order,1719unrelated details, native handlers/UI/auth/budget constraints and source limits preserved.",
+    "Corrected standalone public inline search to include the two identity-only records already admitted in R26: Vaillant ecoTEC plus 615 VU GB 156/5-5 R2 GC41-044-61/product0010011678 and Worcester Greenstar24RiErP GC41-406-47/product7733600068. Exact identifier searches and model-name discovery now use those same external search identities. Catalogue, technical/service content, numerical rules, native add-on, backend and AI pins are unchanged."
   ],
   "releaseStatus": "release"
 }
