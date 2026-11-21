@@ -23,12 +23,13 @@ export function createAIClient({fetcher=globalThis.fetch,storage,now=()=>Date.no
   function version(data){if(data?.catalogue_sha256!==CATALOGUE_SHA256)fail('The AI service and saved library have different versions. Use the saved guide until they are updated together.');}
   async function request(path,body,{anonymous=false}={}){
     if(!anonymous&&!hasSession())fail('Connect this device to AI first.');
+    const requestCredential=anonymous?null:credential;
     const controller=new Abort(),timer=setTimeout(()=>controller.abort(),65000);
     try{
-      const headers={'Accept':'application/json'};if(body!==undefined)headers['Content-Type']='application/json';if(!anonymous)headers.Authorization='Bearer '+credential.device_token;
+      const headers={'Accept':'application/json'};if(body!==undefined)headers['Content-Type']='application/json';if(!anonymous)headers.Authorization='Bearer '+requestCredential.device_token;
       const response=await fetcher(AI_ENDPOINT+path,{method:body===undefined?'GET':'POST',headers,body:body===undefined?undefined:JSON.stringify(body),mode:'cors',credentials:'omit',cache:'no-store',redirect:'error',referrerPolicy:'no-referrer',signal:controller.signal});
       const data=await readJSON(response);
-      if(!response.ok){if(response.status===401)discard();fail(response.status===401?'This device connection has expired. Connect it again.':response.status===429?'The AI usage or request limit has been reached. Use the saved guide.':'The AI service could not complete that request. No retry was made.');}
+      if(!response.ok){if(response.status===401&&credential===requestCredential)discard();fail(response.status===401?'This device connection has expired. Connect it again.':response.status===429?'The AI usage or request limit has been reached. Use the saved guide.':'The AI service could not complete that request. No retry was made.');}
       return data;
     }catch(error){if(error?.name==='AbortError')fail('The AI request timed out. It may already have used credit; no retry was made.');if(error?.message&&/^(The AI|This device|Connect this)/.test(error.message))throw error;fail('The AI connection is unavailable. Use on-device reading or the saved guide; no retry was made.');}
     finally{clearTimeout(timer);}
@@ -44,8 +45,16 @@ export function createAIClient({fetcher=globalThis.fetch,storage,now=()=>Date.no
       try{storage?.setItem(STORAGE_KEY,JSON.stringify(credential));if(!storage)persistent=false;}catch{persistent=false;}
       return {connected:true,persistent,expires_at:credential.expires_at,budget:data.budget};
     },
-    async status(){if(!hasSession())return {connected:false,ready:false,persistent};const data=await request('/v1/status');version(data);return {...data,connected:true,persistent};},
-    async disconnect(){try{if(hasSession())await request('/v1/revoke',{});}finally{discard();}},
+    async status(){
+      if(!hasSession())return {connected:false,ready:false,persistent};
+      const checkedCredential=credential,data=await request('/v1/status');version(data);
+      if(credential!==checkedCredential)fail('The AI connection changed while it was being checked. Check it again.');
+      if(typeof data.expires_at!=='string'||!Number.isFinite(Date.parse(data.expires_at))||!(Date.parse(data.expires_at)>now()))fail('The AI connection expiry could not be checked. No extension has been saved.');
+      checkedCredential.expires_at=data.expires_at;
+      try{storage?.setItem(STORAGE_KEY,JSON.stringify(credential));if(!storage)persistent=false;}catch{persistent=false;}
+      return {...data,connected:true,persistent,expires_at:credential.expires_at};
+    },
+    async disconnect(){const disconnectedCredential=credential;try{if(hasSession())await request('/v1/revoke',{});}finally{if(credential===disconnectedCredential)discard();}},
     async ask(boilerId,question){
       if(!boundedString(boilerId,160)||!boundedString(question,400))fail('Choose the exact boiler and enter a short question.');
       const data=await request('/v1/ask',{boiler_id:boilerId,question,catalogue_sha256:CATALOGUE_SHA256});version(data);

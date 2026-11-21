@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "fed1fbfbc50d9746",
+  "buildId": "2eb5b98523f52cf4",
   "preparedOn": "2026-11-20",
-  "appVersion": "2026.11.21-r31-ideal-icos-ff2",
+  "appVersion": "2026.11.21-r32-ai-remember",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -62,8 +62,8 @@
     },
     {
       "url": "./help/ai-client.mjs",
-      "bytes": 8047,
-      "sha256": "ff0dce1a0926be6245906157dcd481a89c9226ebf9f360c46a32e6d6b4f169b7"
+      "bytes": 8814,
+      "sha256": "d139a0cbec1cb852191d28122715d2a1616aad25e7466f84ffd4b3883c8040a3"
     },
     {
       "url": "./help/baxi400-heat-fault-guard.mjs",
@@ -2272,8 +2272,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 103648,
-      "sha256": "2a9bf38a20a1fc6b8c8266ef2d24475da892b7bbbf302dd60bf374dff4bd4086"
+      "bytes": 104126,
+      "sha256": "8e7250ee61d9009608fada3e6649c16bd9b819f09b7c7f407888647181ec305c"
     },
     {
       "url": "./vendor/pdf.min.mjs",
@@ -2436,5 +2436,5 @@
       "sha256": "8b66362be6b42b0d2865e434daf133a4ee27fde78b58730585ae7c38b2310da3"
     }
   ],
-  "totalBytes": 174686345
+  "totalBytes": 174687590
 }
