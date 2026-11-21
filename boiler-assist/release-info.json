@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.21-r32-ai-remember",
+  "appVersion": "2026.11.21-r33-phone-oil-icos-guides",
   "preparedOn": "2026-11-20",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1725,
@@ -865,6 +865,174 @@
       "scope": "Partial descriptive source-linked guide for the exact listed Natural Gas model and archived edition. Installed serial, optional equipment, later revisions and actual checks require confirmation. Original source dependencies and all numerical, parts and certificate holds remain.",
       "newNumericRules": false,
       "fullGuideClaim": false
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-external-system-12-18-7731600257",
+      "gcNumber": null,
+      "productNumber": "7731600257",
+      "fuel": "Oil",
+      "servicingTasks": 23,
+      "status": "partial",
+      "sourceReference": "6721844014 (2022/01); back cover prints6720821725 (2021/09)",
+      "scope": "Phone saved-guide update only. Exact archived manufacturer descriptive service content; source-specific conditions, installed applicability, numerical/parts/certificate holds remain. No native parity claim.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-external-system-18-25-7731600258",
+      "gcNumber": null,
+      "productNumber": "7731600258",
+      "fuel": "Oil",
+      "servicingTasks": 23,
+      "status": "partial",
+      "sourceReference": "6721844014 (2022/01); back cover prints6720821725 (2021/09)",
+      "scope": "Phone saved-guide update only. Exact archived manufacturer descriptive service content; source-specific conditions, installed applicability, numerical/parts/certificate holds remain. No native parity claim.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-external-system-25-32-7731600259",
+      "gcNumber": null,
+      "productNumber": "7731600259",
+      "fuel": "Oil",
+      "servicingTasks": 23,
+      "status": "partial",
+      "sourceReference": "6721844014 (2022/01); back cover prints6720821725 (2021/09)",
+      "scope": "Phone saved-guide update only. Exact archived manufacturer descriptive service content; source-specific conditions, installed applicability, numerical/parts/certificate holds remain. No native parity claim.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-external-regular-12-18-7731600248",
+      "gcNumber": null,
+      "productNumber": "7731600248",
+      "fuel": "Oil",
+      "servicingTasks": 23,
+      "status": "partial",
+      "sourceReference": "6721844014 (2022/01); back cover prints6720821725 (2021/09)",
+      "scope": "Phone saved-guide update only. Exact archived manufacturer descriptive service content; source-specific conditions, installed applicability, numerical/parts/certificate holds remain. No native parity claim.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-external-regular-18-25-7731600249",
+      "gcNumber": null,
+      "productNumber": "7731600249",
+      "fuel": "Oil",
+      "servicingTasks": 23,
+      "status": "partial",
+      "sourceReference": "6721844014 (2022/01); back cover prints6720821725 (2021/09)",
+      "scope": "Phone saved-guide update only. Exact archived manufacturer descriptive service content; source-specific conditions, installed applicability, numerical/parts/certificate holds remain. No native parity claim.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-external-regular-25-32-7731600250",
+      "gcNumber": null,
+      "productNumber": "7731600250",
+      "fuel": "Oil",
+      "servicingTasks": 23,
+      "status": "partial",
+      "sourceReference": "6721844014 (2022/01); back cover prints6720821725 (2021/09)",
+      "scope": "Phone saved-guide update only. Exact archived manufacturer descriptive service content; source-specific conditions, installed applicability, numerical/parts/certificate holds remain. No native parity claim.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-utility-system-12-18-7731600254",
+      "gcNumber": null,
+      "productNumber": "7731600254",
+      "fuel": "Oil",
+      "servicingTasks": 26,
+      "status": "partial",
+      "sourceReference": "6721846263 (2022/01); retained selector01.01.2024 onwards",
+      "scope": "Phone saved-guide update only. Exact archived manufacturer descriptive service content; source-specific conditions, installed applicability, numerical/parts/certificate holds remain. No native parity claim.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-utility-system-18-25-7731600255",
+      "gcNumber": null,
+      "productNumber": "7731600255",
+      "fuel": "Oil",
+      "servicingTasks": 26,
+      "status": "partial",
+      "sourceReference": "6721846263 (2022/01); retained selector01.01.2024 onwards",
+      "scope": "Phone saved-guide update only. Exact archived manufacturer descriptive service content; source-specific conditions, installed applicability, numerical/parts/certificate holds remain. No native parity claim.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-utility-system-25-32-7731600256",
+      "gcNumber": null,
+      "productNumber": "7731600256",
+      "fuel": "Oil",
+      "servicingTasks": 26,
+      "status": "partial",
+      "sourceReference": "6721846263 (2022/01); retained selector01.01.2024 onwards",
+      "scope": "Phone saved-guide update only. Exact archived manufacturer descriptive service content; source-specific conditions, installed applicability, numerical/parts/certificate holds remain. No native parity claim.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-utility-regular-12-18-7731600245",
+      "gcNumber": null,
+      "productNumber": "7731600245",
+      "fuel": "Oil",
+      "servicingTasks": 24,
+      "status": "partial",
+      "sourceReference": "6721846263 (2022/01); retained selector01.01.2024 onwards",
+      "scope": "Phone saved-guide update only. Exact archived manufacturer descriptive service content; source-specific conditions, installed applicability, numerical/parts/certificate holds remain. No native parity claim.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-utility-regular-18-25-7731600246",
+      "gcNumber": null,
+      "productNumber": "7731600246",
+      "fuel": "Oil",
+      "servicingTasks": 24,
+      "status": "partial",
+      "sourceReference": "6721846263 (2022/01); retained selector01.01.2024 onwards",
+      "scope": "Phone saved-guide update only. Exact archived manufacturer descriptive service content; source-specific conditions, installed applicability, numerical/parts/certificate holds remain. No native parity claim.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-utility-regular-25-32-7731600247",
+      "gcNumber": null,
+      "productNumber": "7731600247",
+      "fuel": "Oil",
+      "servicingTasks": 24,
+      "status": "partial",
+      "sourceReference": "6721846263 (2022/01); retained selector01.01.2024 onwards",
+      "scope": "Phone saved-guide update only. Exact archived manufacturer descriptive service content; source-specific conditions, installed applicability, numerical/parts/certificate holds remain. No native parity claim.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "ideal-icos-he30-41-399-10",
+      "gcNumber": "41-399-10",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 15,
+      "status": "partial",
+      "sourceReference": "UIN202414 A06 January2008",
+      "scope": "Phone saved-guide update only. Exact archived manufacturer descriptive service content; source-specific conditions, installed applicability, numerical/parts/certificate holds remain. No native parity claim.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "ideal-icos-he36-41-399-16",
+      "gcNumber": "41-399-16",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 15,
+      "status": "partial",
+      "sourceReference": "UIN202414 A06 January2008",
+      "scope": "Phone saved-guide update only. Exact archived manufacturer descriptive service content; source-specific conditions, installed applicability, numerical/parts/certificate holds remain. No native parity claim.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
     }
   ],
   "sourcePDFsIncluded": [],
@@ -1126,7 +1294,8 @@
     "Added 13 partial manufacturer-authored archived-manual service references for exact Ideal Mexico Super FF440–FF480, Classic Slimline FF330–FF360 and Mexico Super CF445–CF475 Natural Gas models: 195 descriptive tasks in total. All 1725 identities/order and 1712 other records unchanged; existing 384 overlay membership retained. Source-specific sequence and conditional holds remain, including exact CF baffle arrangement/spark-gap dependencies, installed serial, optional equipment and later revisions. No numerical FGA/FPT rules, parts fitment, certificate verdict or full-guide coverage claimed. Existing R28 handlers/search/UI inherited unchanged.",
     "Added 12 partial manufacturer-authored archived-manual service references for exact Ideal Mexico Super FF4100/FF4125, Classic RS330–RS360, earlier Classic RS30–RS60 and earlier Mexico Super100FF/125FF Natural Gas models: 180 descriptive tasks in total. All 1725 identities/order and 1713 other records unchanged; existing 384 overlay membership retained. Source-specific sequence and conditional holds remain, including source-specific baffle, pilot/spark/thermocouple and range-rating dependencies, installed serial, optional equipment and later revisions. No numerical FGA/FPT rules, parts fitment, certificate verdict or full-guide coverage claimed. Existing R29 handlers/search/UI inherited unchanged.",
     "Added 8 partial manufacturer-authored archived-manual service references for exact Ideal icos HE12/HE15/HE18/HE24 and Classic Slimline FF230/FF240/FF250/FF260 Natural Gas models: 120 descriptive tasks in total. All 1725 identities/order and 1717 other records unchanged; existing 384 overlay membership retained. Source-specific sequence and conditional holds remain, including source-specific ceramic-burner/probe, water-filled trap, three-sensing-tube and misnumbered-reference dependencies, installed serial, optional equipment and later revisions. No numerical FGA/FPT rules, parts fitment, certificate verdict or full-guide coverage claimed. Existing R30 handlers/search/UI inherited unchanged.",
-    "Remembered AI device connections persist only the authenticated server-issued expiry after a successful status check. Invalid, revoked and expired grants still require private pairing. Delayed status, revoke and unauthorized responses cannot overwrite a newer pairing. The approved server session policy remains separate from pilot availability and all existing spending and usage caps. No background AI request, automatic ask/photo retry, boiler guide or catalogue change."
+    "Remembered AI device connections persist only the authenticated server-issued expiry after a successful status check. Invalid, revoked and expired grants still require private pairing. Delayed status, revoke and unauthorized responses cannot overwrite a newer pairing. The approved server session policy remains separate from pilot availability and all existing spending and usage caps. No background AI request, automatic ask/photo retry, boiler guide or catalogue change.",
+    "Phone-only guide update: fourteen exact existing models receive 318 descriptive service tasks, comprising six Worcester Greenstar Danesmoor External/External System Oil, six Danesmoor Utility/Utility System Oil and Ideal icos HE30/HE36 Natural Gas. All 1725 boiler identities/order, unrelated presentations and saved-guide UI remain unchanged. R32 remembered-device session behavior is preserved; only its catalogue pin advances. Native/embedded ServiceM8 runtime is unchanged and no native parity is claimed. All partial-guide, numerical, installed-variant, parts and certificate holds remain."
   ],
   "releaseStatus": "release"
 }
