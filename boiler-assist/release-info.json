@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.20-r29-ideal-three-families",
+  "appVersion": "2026.11.21-r30-ideal-four-families",
   "preparedOn": "2026-11-20",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1725,
@@ -625,6 +625,150 @@
       "scope": "Partial descriptive source-linked guide for the exact listed Natural Gas model and archived edition. Installed serial, optional equipment, later revisions and actual checks require confirmation. Original source dependencies and all numerical, parts and certificate holds remain.",
       "newNumericRules": false,
       "fullGuideClaim": false
+    },
+    {
+      "id": "ideal-mexico-super-ff4100-41-392-31",
+      "gcNumber": "41-392-31",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 15,
+      "sourceReference": "UIN200940 A02 (June2004)",
+      "scope": "Partial descriptive source-linked guide for the exact listed Natural Gas model and archived edition. Installed serial, optional equipment, later revisions and actual checks require confirmation. Original source dependencies and all numerical, parts and certificate holds remain.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "ideal-mexico-super-ff4125-41-392-32",
+      "gcNumber": "41-392-32",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 15,
+      "sourceReference": "UIN200940 A02 (June2004)",
+      "scope": "Partial descriptive source-linked guide for the exact listed Natural Gas model and archived edition. Installed serial, optional equipment, later revisions and actual checks require confirmation. Original source dependencies and all numerical, parts and certificate holds remain.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "ideal-classic-rs-330-41-392-09",
+      "gcNumber": "41-392-09",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 15,
+      "sourceReference": "UIN157757 A04 February2003",
+      "scope": "Partial descriptive source-linked guide for the exact listed Natural Gas model and archived edition. Installed serial, optional equipment, later revisions and actual checks require confirmation. Original source dependencies and all numerical, parts and certificate holds remain.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "ideal-classic-rs-340-41-392-10",
+      "gcNumber": "41-392-10",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 15,
+      "sourceReference": "UIN157757 A04 February2003",
+      "scope": "Partial descriptive source-linked guide for the exact listed Natural Gas model and archived edition. Installed serial, optional equipment, later revisions and actual checks require confirmation. Original source dependencies and all numerical, parts and certificate holds remain.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "ideal-classic-rs-350-41-392-11",
+      "gcNumber": "41-392-11",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 15,
+      "sourceReference": "UIN157757 A04 February2003",
+      "scope": "Partial descriptive source-linked guide for the exact listed Natural Gas model and archived edition. Installed serial, optional equipment, later revisions and actual checks require confirmation. Original source dependencies and all numerical, parts and certificate holds remain.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "ideal-classic-rs-360-41-392-12",
+      "gcNumber": "41-392-12",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 15,
+      "sourceReference": "UIN157757 A04 February2003",
+      "scope": "Partial descriptive source-linked guide for the exact listed Natural Gas model and archived edition. Installed serial, optional equipment, later revisions and actual checks require confirmation. Original source dependencies and all numerical, parts and certificate holds remain.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "ideal-classic-rs-30-41-429-35",
+      "gcNumber": "41-429-35",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 15,
+      "sourceReference": "UIN116771 A06 August1994",
+      "scope": "Partial descriptive source-linked guide for the exact listed Natural Gas model and archived edition. Installed serial, optional equipment, later revisions and actual checks require confirmation. Original source dependencies and all numerical, parts and certificate holds remain.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "ideal-classic-rs-40-41-429-36",
+      "gcNumber": "41-429-36",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 15,
+      "sourceReference": "UIN116771 A06 August1994",
+      "scope": "Partial descriptive source-linked guide for the exact listed Natural Gas model and archived edition. Installed serial, optional equipment, later revisions and actual checks require confirmation. Original source dependencies and all numerical, parts and certificate holds remain.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "ideal-classic-rs-50-41-429-37",
+      "gcNumber": "41-429-37",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 15,
+      "sourceReference": "UIN116771 A06 August1994",
+      "scope": "Partial descriptive source-linked guide for the exact listed Natural Gas model and archived edition. Installed serial, optional equipment, later revisions and actual checks require confirmation. Original source dependencies and all numerical, parts and certificate holds remain.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "ideal-classic-rs-60-41-429-38",
+      "gcNumber": "41-429-38",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 15,
+      "sourceReference": "UIN116771 A06 August1994",
+      "scope": "Partial descriptive source-linked guide for the exact listed Natural Gas model and archived edition. Installed serial, optional equipment, later revisions and actual checks require confirmation. Original source dependencies and all numerical, parts and certificate holds remain.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "ideal-mexico-super-100-ff-41-349-83",
+      "gcNumber": "41-349-83",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 15,
+      "sourceReference": "UIN153420 A0",
+      "scope": "Partial descriptive source-linked guide for the exact listed Natural Gas model and archived edition. Installed serial, optional equipment, later revisions and actual checks require confirmation. Original source dependencies and all numerical, parts and certificate holds remain.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "ideal-mexico-super-125-ff-41-349-84",
+      "gcNumber": "41-349-84",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 15,
+      "sourceReference": "UIN153420 A0",
+      "scope": "Partial descriptive source-linked guide for the exact listed Natural Gas model and archived edition. Installed serial, optional equipment, later revisions and actual checks require confirmation. Original source dependencies and all numerical, parts and certificate holds remain.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
     }
   ],
   "sourcePDFsIncluded": [],
@@ -883,7 +1027,8 @@
     "Corrected standalone public inline search to include the two identity-only records already admitted in R26: Vaillant ecoTEC plus 615 VU GB 156/5-5 R2 GC41-044-61/product0010011678 and Worcester Greenstar24RiErP GC41-406-47/product7733600068. Exact identifier searches and model-name discovery now use those same external search identities. Catalogue, technical/service content, numerical rules, native add-on, backend and AI pins are unchanged.",
     "Added partial archived-manual service references for exact Ideal Mexico Super RS485/RS4100/RS4125 Natural Gas identities GC41-392-78/79/80, UIN200942 A02 May2004. All1725identities/order and1722otherrecords are unchanged; 15descriptive tasks per model retain explicit source inconsistencies, configuration/serial/revision/optional-kit holds and unavailable numerical criteria. No FGA/FPT thresholds, parts-fit or certificate promotion. R26a public inline-search correction is inherited unchanged.",
     "Added two partial manufacturer-authored archived-manual service references for owner-reported Greenstar24RiErP NG GC41-406-47/product7733600068 and ecoTECplus615 NG GC41-044-61/article0010011678. All1725identities/order and1723otherrecords unchanged;15descriptive tasks per model. Conditional cleaning and source-specific sequence retained. Vaillant R2 equivalence, installedserial/currentrevision, numericFGA/FPT, parts and certificate holds remain. Existing R27 content/search/UI inherited unchanged.",
-    "Added 13 partial manufacturer-authored archived-manual service references for exact Ideal Mexico Super FF440–FF480, Classic Slimline FF330–FF360 and Mexico Super CF445–CF475 Natural Gas models: 195 descriptive tasks in total. All 1725 identities/order and 1712 other records unchanged; existing 384 overlay membership retained. Source-specific sequence and conditional holds remain, including exact CF baffle arrangement/spark-gap dependencies, installed serial, optional equipment and later revisions. No numerical FGA/FPT rules, parts fitment, certificate verdict or full-guide coverage claimed. Existing R28 handlers/search/UI inherited unchanged."
+    "Added 13 partial manufacturer-authored archived-manual service references for exact Ideal Mexico Super FF440–FF480, Classic Slimline FF330–FF360 and Mexico Super CF445–CF475 Natural Gas models: 195 descriptive tasks in total. All 1725 identities/order and 1712 other records unchanged; existing 384 overlay membership retained. Source-specific sequence and conditional holds remain, including exact CF baffle arrangement/spark-gap dependencies, installed serial, optional equipment and later revisions. No numerical FGA/FPT rules, parts fitment, certificate verdict or full-guide coverage claimed. Existing R28 handlers/search/UI inherited unchanged.",
+    "Added 12 partial manufacturer-authored archived-manual service references for exact Ideal Mexico Super FF4100/FF4125, Classic RS330–RS360, earlier Classic RS30–RS60 and earlier Mexico Super100FF/125FF Natural Gas models: 180 descriptive tasks in total. All 1725 identities/order and 1713 other records unchanged; existing 384 overlay membership retained. Source-specific sequence and conditional holds remain, including source-specific baffle, pilot/spark/thermocouple and range-rating dependencies, installed serial, optional equipment and later revisions. No numerical FGA/FPT rules, parts fitment, certificate verdict or full-guide coverage claimed. Existing R29 handlers/search/UI inherited unchanged."
   ],
   "releaseStatus": "release"
 }
