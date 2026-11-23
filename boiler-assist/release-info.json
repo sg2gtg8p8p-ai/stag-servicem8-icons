@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.23-r37-phone-wiring-controls",
+  "appVersion": "2026.11.23-r38-viessmann-b0ka30-identity",
   "preparedOn": "2026-11-23",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1725,
@@ -1120,6 +1120,15 @@
       "scope": "Exact Grant Vortex Pro Utility Oil descriptive service guide for the reviewed archived manual. Existing numerical, burner, serial, parts, physical and certificate holds remain. Phone-only update; no native parity claim.",
       "newNumericRules": false,
       "fullGuideClaim": false
+    },
+    {
+      "id": "viessmann-vitodens-050-w-b0ka-25-kw-b0ka",
+      "model": "Vitodens 050-W B0KA-30",
+      "gcNumber": "47-819-57",
+      "fuel": "Natural Gas / LPG",
+      "scope": "Bounded identity-only bridge for the existing opaque record ID. Manufacturer reference6194588 GB12/2022 page8 supports type mapping only. Existing numerical, fuel-selection, serial, current-revision, service, burner, parts and certificate holds remain.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
     }
   ],
   "sourcePDFsIncluded": [],
@@ -1386,7 +1395,8 @@
     "Phone saved-guide update: three exact Grant Vortex Pro External Oil models receive 54 descriptive service tasks. All other 1,722 active records, including the fourteen R33 guides, and all 1,725 identities/order/pointers are preserved. Remembered AI device-session behavior is unchanged; only the catalogue binding advances. No wiring changes are included. Partial-guide, numerical, burner, serial, parts, physical and certificate holds remain.",
     "Exact original Worcester Greenstar 28CDi Compact Natural Gas GC47-406-44: added source-bound original-manual combustion/FPT references and updated its original fan/analysis assessments, retaining partial-guide and fitted-revision holds. All other 1,724 records and public UI are unchanged. No ErP/LPG transfer, gas-valve adjustment authority or automatic certificate verdict is created. Remembered AI session behavior is unchanged; only its catalogue binding advances. Wiring candidate is not included.",
     "Phone saved-guide update: three exact Grant Vortex Pro Utility Oil models receive 54 descriptive service tasks. All other 1,722 active records, including all previous R33/R34 guides and the live original 28CDi combustion/FPT repair, and all 1,725 identities/order/pointers are preserved. Remembered AI device-session behavior is unchanged; only the catalogue binding advances. No wiring changes are included. Partial-guide, numerical, burner, serial, parts, physical and certificate holds remain.",
-    "Phone wiring reference picker: select source-supported S Plan, Y Plan or illustrated S Plan Plus zone arrangements, independently of current/legacy Hive receiver and channel/mode selection. Unsupported pump or receiver combinations remain explicitly withheld; no combined circuit, terminal translation or installation/boiler compatibility approval is generated. Existing source diagrams and online full-document references remain unchanged. Final touch and contrast CSS improves phone reference expansion and diagram scrolling. Boiler catalogue, FPT/FGA/service content, AI remembered-device behavior and backend are unchanged."
+    "Phone wiring reference picker: select source-supported S Plan, Y Plan or illustrated S Plan Plus zone arrangements, independently of current/legacy Hive receiver and channel/mode selection. Unsupported pump or receiver combinations remain explicitly withheld; no combined circuit, terminal translation or installation/boiler compatibility approval is generated. Existing source diagrams and online full-document references remain unchanged. Final touch and contrast CSS improves phone reference expansion and diagram scrolling. Boiler catalogue, FPT/FGA/service content, AI remembered-device behavior and backend are unchanged.",
+    "Correct the existing Viessmann B0KA CH25/DHW30 record label to B0KA-30 with GC47-819-57 across saved details and search. All other1724 records, wiring controls and remembered-device behavior are unchanged. Three FGA reference labels now say source rather than official; no procedure, source URL or numerical rules changed. Matching guarded three-file phone AI identity migration is required before publication."
   ],
   "releaseStatus": "release"
 }

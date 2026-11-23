@@ -22166,12 +22166,20 @@
     "id": "viessmann-vitodens-050-w-b0ka-25-kw-b0ka",
     "manufacturer": "Viessmann",
     "range": "Vitodens 050-W B0KA",
-    "model": "Vitodens 050-W B0KA 25 kW",
-    "aliases": [],
+    "model": "Vitodens 050-W B0KA-30",
+    "aliases": [
+      "B0KA-30",
+      "B0KA 30",
+      "B0KA30",
+      "B0KA-30 (GB, IE)",
+      "Vitodens 050-W 30 kW",
+      "4781957",
+      "47 819 57"
+    ],
     "boilerType": "combi",
     "fuel": "Natural Gas / LPG",
     "generation": "B0KA",
-    "gcNumber": null,
+    "gcNumber": "47-819-57",
     "productNumber": null,
     "technicalData": {
       "generation": {

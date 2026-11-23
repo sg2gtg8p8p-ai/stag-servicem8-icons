@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "0dd22a72a5507eab",
+  "buildId": "c2e7b987752884ff",
   "preparedOn": "2026-11-20",
-  "appVersion": "2026.11.23-r37-phone-wiring-controls",
+  "appVersion": "2026.11.23-r38-viessmann-b0ka30-identity",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "bytes": 11624417,
-      "sha256": "f7ccad6f4cf159a61046f38be756edd5a456d04e71d0bae0a26f6e879c2410c9"
+      "bytes": 11624681,
+      "sha256": "bfebad32a6117ddb66d0af401d56dfc5a1fec3b6980287012b2f324baccb1abc"
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -37,8 +37,8 @@
     },
     {
       "url": "./data/search-index.json",
-      "bytes": 1161776,
-      "sha256": "dcebd3362114d45fe2bfa3cbd40c339d2183954795e51e7f27fb2d67795fafc5"
+      "bytes": 1161926,
+      "sha256": "39fdf2e7577b63eee81cdd478bbdd81581fdd9d12c2d85fee807f0a9832b4852"
     },
     {
       "url": "./decoder.js",
@@ -63,7 +63,7 @@
     {
       "url": "./help/ai-client.mjs",
       "bytes": 8814,
-      "sha256": "a9b5ea43df264192aa0c7c947e730685bf58826cddfe94f7791d6368f1b7d34d"
+      "sha256": "959ad4103e8afbe1aacecdfa89a85af1700ed003b716a47f8bf716d73147a01b"
     },
     {
       "url": "./help/baxi400-heat-fault-guard.mjs",
@@ -232,8 +232,8 @@
     },
     {
       "url": "./index.html",
-      "bytes": 1586192,
-      "sha256": "ffd27f74a43301a7d38885284dc252a556721d967670aca14962ead4ab6838ef"
+      "bytes": 1586282,
+      "sha256": "54279c5b86b5bf885f4ef3d39b016a72733a48a6a098929085a3db0a627133b1"
     },
     {
       "url": "./local-bridge.js",
@@ -2272,8 +2272,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 119290,
-      "sha256": "b39da704f31d22ad351710e03627f4d8bb03726f5c3c7213625b9397f6e50bd3"
+      "bytes": 120221,
+      "sha256": "6c9775e3270a318146dd94dd7674cec4dfe2be6da6363be7b9e3ad5278b6b440"
     },
     {
       "url": "./vendor/pdf.min.mjs",
@@ -2441,5 +2441,5 @@
       "sha256": "56257dd63648787b76aeb6b2370e869a59a1ce56907a0b0b969937d3c320c04f"
     }
   ],
-  "totalBytes": 174790216
+  "totalBytes": 174791651
 }
