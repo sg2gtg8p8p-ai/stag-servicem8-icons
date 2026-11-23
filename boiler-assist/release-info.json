@@ -1,6 +1,6 @@
 {
-  "appVersion": "2026.11.21-r33-phone-oil-icos-guides",
-  "preparedOn": "2026-11-20",
+  "appVersion": "2026.11.22-r34-phone-grant-three-guides",
+  "preparedOn": "2026-11-22",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1725,
   "gasFires": 43,
@@ -1033,6 +1033,42 @@
       "scope": "Phone saved-guide update only. Exact archived manufacturer descriptive service content; source-specific conditions, installed applicability, numerical/parts/certificate holds remain. No native parity claim.",
       "newNumericRules": false,
       "fullGuideClaim": false
+    },
+    {
+      "id": "grant-vortex-pro-external-15-26-vtxom15-26",
+      "gcNumber": null,
+      "productNumber": "VTXOM15/26",
+      "fuel": "Oil",
+      "servicingTasks": 18,
+      "status": "partial",
+      "sourceReference": "UK DOC0121 Rev2.1 February2026",
+      "scope": "Exact Grant Vortex Pro External Oil descriptive service guide for the reviewed archived manual. Existing numerical, burner, serial, parts, physical and certificate holds remain. Phone-only update; no native parity claim.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "grant-vortex-pro-external-26-46-vtxom26-46",
+      "gcNumber": null,
+      "productNumber": "VTXOM26/46",
+      "fuel": "Oil",
+      "servicingTasks": 18,
+      "status": "partial",
+      "sourceReference": "UK DOC0121 Rev2.1 February2026",
+      "scope": "Exact Grant Vortex Pro External Oil descriptive service guide for the reviewed archived manual. Existing numerical, burner, serial, parts, physical and certificate holds remain. Phone-only update; no native parity claim.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "grant-vortex-pro-external-46-70-vtxom46-70",
+      "gcNumber": null,
+      "productNumber": "VTXOM46/70",
+      "fuel": "Oil",
+      "servicingTasks": 18,
+      "status": "partial",
+      "sourceReference": "UK DOC0121 Rev2.1 February2026",
+      "scope": "Exact Grant Vortex Pro External Oil descriptive service guide for the reviewed archived manual. Existing numerical, burner, serial, parts, physical and certificate holds remain. Phone-only update; no native parity claim.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
     }
   ],
   "sourcePDFsIncluded": [],
@@ -1295,7 +1331,8 @@
     "Added 12 partial manufacturer-authored archived-manual service references for exact Ideal Mexico Super FF4100/FF4125, Classic RS330–RS360, earlier Classic RS30–RS60 and earlier Mexico Super100FF/125FF Natural Gas models: 180 descriptive tasks in total. All 1725 identities/order and 1713 other records unchanged; existing 384 overlay membership retained. Source-specific sequence and conditional holds remain, including source-specific baffle, pilot/spark/thermocouple and range-rating dependencies, installed serial, optional equipment and later revisions. No numerical FGA/FPT rules, parts fitment, certificate verdict or full-guide coverage claimed. Existing R29 handlers/search/UI inherited unchanged.",
     "Added 8 partial manufacturer-authored archived-manual service references for exact Ideal icos HE12/HE15/HE18/HE24 and Classic Slimline FF230/FF240/FF250/FF260 Natural Gas models: 120 descriptive tasks in total. All 1725 identities/order and 1717 other records unchanged; existing 384 overlay membership retained. Source-specific sequence and conditional holds remain, including source-specific ceramic-burner/probe, water-filled trap, three-sensing-tube and misnumbered-reference dependencies, installed serial, optional equipment and later revisions. No numerical FGA/FPT rules, parts fitment, certificate verdict or full-guide coverage claimed. Existing R30 handlers/search/UI inherited unchanged.",
     "Remembered AI device connections persist only the authenticated server-issued expiry after a successful status check. Invalid, revoked and expired grants still require private pairing. Delayed status, revoke and unauthorized responses cannot overwrite a newer pairing. The approved server session policy remains separate from pilot availability and all existing spending and usage caps. No background AI request, automatic ask/photo retry, boiler guide or catalogue change.",
-    "Phone-only guide update: fourteen exact existing models receive 318 descriptive service tasks, comprising six Worcester Greenstar Danesmoor External/External System Oil, six Danesmoor Utility/Utility System Oil and Ideal icos HE30/HE36 Natural Gas. All 1725 boiler identities/order, unrelated presentations and saved-guide UI remain unchanged. R32 remembered-device session behavior is preserved; only its catalogue pin advances. Native/embedded ServiceM8 runtime is unchanged and no native parity is claimed. All partial-guide, numerical, installed-variant, parts and certificate holds remain."
+    "Phone-only guide update: fourteen exact existing models receive 318 descriptive service tasks, comprising six Worcester Greenstar Danesmoor External/External System Oil, six Danesmoor Utility/Utility System Oil and Ideal icos HE30/HE36 Natural Gas. All 1725 boiler identities/order, unrelated presentations and saved-guide UI remain unchanged. R32 remembered-device session behavior is preserved; only its catalogue pin advances. Native/embedded ServiceM8 runtime is unchanged and no native parity is claimed. All partial-guide, numerical, installed-variant, parts and certificate holds remain.",
+    "Phone saved-guide update: three exact Grant Vortex Pro External Oil models receive 54 descriptive service tasks. All other 1,722 active records, including the fourteen R33 guides, and all 1,725 identities/order/pointers are preserved. Remembered AI device-session behavior is unchanged; only the catalogue binding advances. No wiring changes are included. Partial-guide, numerical, burner, serial, parts, physical and certificate holds remain."
   ],
   "releaseStatus": "release"
 }

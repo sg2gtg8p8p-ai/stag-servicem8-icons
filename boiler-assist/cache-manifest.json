@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "27e89833ac3d9273",
+  "buildId": "7a6a4f31c7fe1c33",
   "preparedOn": "2026-11-20",
-  "appVersion": "2026.11.21-r33-phone-oil-icos-guides",
+  "appVersion": "2026.11.22-r34-phone-grant-three-guides",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "bytes": 11629565,
-      "sha256": "9579a4ac5a0e6a35d5518814a803eb6cada58346dff3d852722f40341b574cb8"
+      "bytes": 11649501,
+      "sha256": "a51071afdb9fdaf990b8c85b88596d331821e6e582d05c8cf6376920ab6f650c"
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -63,7 +63,7 @@
     {
       "url": "./help/ai-client.mjs",
       "bytes": 8814,
-      "sha256": "b6d772d2c9a1e9df7ccfc76ff98652540aa27a25f70e68b822a849bdf4360601"
+      "sha256": "edf412c6207f37b3d03ecbdcfe5e7a0daa9a1cd47a602e54a7d6237f7b037c67"
     },
     {
       "url": "./help/baxi400-heat-fault-guard.mjs",
@@ -2272,8 +2272,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 113040,
-      "sha256": "7adf3a58c0518534d4d96d9a74c9382233f0e661e2560c847fd1991873568729"
+      "bytes": 115198,
+      "sha256": "a8145a6033e1be72fb35ad4d0fbc0964a363ac666230de993abe458fc24b4732"
     },
     {
       "url": "./vendor/pdf.min.mjs",
@@ -2436,5 +2436,5 @@
       "sha256": "8b66362be6b42b0d2865e434daf133a4ee27fde78b58730585ae7c38b2310da3"
     }
   ],
-  "totalBytes": 174772988
+  "totalBytes": 174795082
 }
