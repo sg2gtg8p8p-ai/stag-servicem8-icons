@@ -1,3 +1,4 @@
+import {mountVariantPicker} from './variant-picker.mjs';
 import {DATA} from './source-data.mjs';
 import {DIAGRAMS} from './diagram-data.mjs';
 import {TRACE_PLANS,getTrace} from './trace-data.mjs';
@@ -25,7 +26,7 @@ export function mount(root,doc=root?.ownerDocument){
  function hideZoom(){if(dialog.open)dialog.close();zoomBody.replaceChildren();}
  function enlarge(d){zoomTitle.textContent=d.title;zoomBody.replaceChildren(image(d));dialog.showModal();}
  function image(d){const img=make('img');img.src=new URL('./wiring/'+d.asset.replace(/^\.\//,''),doc.baseURI).href;img.alt=d.title+' · complete manufacturer diagram, page '+d.page;img.decoding='async';return img;}
- function home(){hideZoom();selected=null;heading.textContent='Wiring diagrams';intro.hidden=false;grid.hidden=false;detail.hidden=true;detail.replaceChildren();back.textContent='Back to library';root.scrollTop=0;}
+ function home(){variants.hidden=false;hideZoom();selected=null;heading.textContent='Wiring diagrams';intro.hidden=false;grid.hidden=false;detail.hidden=true;detail.replaceChildren();back.textContent='Back to library';root.scrollTop=0;}
  function flowDiagram(flow){
   const svg=doc.createElementNS('http://www.w3.org/2000/svg','svg');svg.classList.add('swr-flow-diagram');svg.setAttribute('font-family','system-ui,sans-serif');svg.setAttribute('role','img');svg.setAttribute('aria-label',flow.label+' full path from mains through controls to boiler and pump');
   const ns=(tag,attrs,text,parent=svg)=>{const el=doc.createElementNS(svg.namespaceURI,tag);for(const[k,v]of Object.entries(attrs))el.setAttribute(k,String(v));if(text)el.textContent=text;parent.append(el);return el;};
@@ -78,13 +79,14 @@ export function mount(root,doc=root?.ownerDocument){
  }
  function show(id,push=false,initial={}){
   const d=DIAGRAMS.find(x=>x.id===id);if(!d){home();return;}
-  hideZoom();selected=d.id;arrangement=initial.arrangement==='overrun'?'overrun':'switched';wire=getTrace(d.id,initial.wire,arrangement)?initial.wire:'1';heading.textContent=d.title;intro.hidden=true;grid.hidden=true;detail.hidden=false;detail.replaceChildren();back.textContent='Back to diagrams';
+  variants.hidden=true;hideZoom();selected=d.id;arrangement=initial.arrangement==='overrun'?'overrun':'switched';wire=getTrace(d.id,initial.wire,arrangement)?initial.wire:'1';heading.textContent=d.title;intro.hidden=true;grid.hidden=true;detail.hidden=false;detail.replaceChildren();back.textContent='Back to diagrams';
   if(TRACE_PLANS[d.id]){const panel=make('section',undefined,'swr-trace-panel');follow(d,panel);detail.append(panel);}
   const original=make('section',undefined,'swr-original');original.append(make('h2','Complete manufacturer drawing'),make('p',d.note,'swr-help'),button('Enlarge diagram',()=>enlarge(d)));
   const page=button('',()=>enlarge(d));page.className='swr-diagram-page';page.setAttribute('aria-label','Enlarge '+d.title+' manufacturer diagram');page.append(image(d));original.append(page);detail.append(original);
   const refs=make('details');refs.append(make('summary','Manufacturer guide and notes'));const source=DATA.sources[d.source];refs.append(make('p',source.title+' · '+source.edition+' · page '+d.page,'swr-help'),make('p','Match the component models and boiler requirements shown. The full page retains its alternatives and notes.','swr-help'));const link=make('a','Open original manufacturer guide');link.href=diagramManualURL(d);link.target='_blank';link.rel='noopener noreferrer';refs.append(link);if(TRACE_PLANS[d.id]){const page=d.id==='s-plan'?26:24;const operation=make('a','Normal operating sequence · page '+page);operation.href=source.url+'#page='+page;operation.target='_blank';operation.rel='noopener noreferrer';refs.append(operation);}detail.append(refs);
   root.scrollTop=0;heading.focus({preventScroll:true});if(push&&active)win.history.pushState({stagWiring:token,diagram:id},'');
  }
+ const variants=mountVariantPicker(main,doc,id=>show(id,true));main.insertBefore(variants,grid);
  for(const d of DIAGRAMS){const b=button('',()=>show(d.id,true));b.className='swr-diagram-card';const img=image(d);img.loading='lazy';b.append(img,make('strong',d.title),make('span',d.subtitle));grid.append(b);}
  const owns=()=>win.history.state?.stagWiring===token;
  const pop=()=>{if(!active)return;if(owns()){const id=win.history.state.diagram;if(id)show(id);else home();}else{active=false;home();onExit();}};win.addEventListener('popstate',pop);

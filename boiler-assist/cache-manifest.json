@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "buildId": "78fcf3eb74146087",
+  "buildId": "0dd22a72a5507eab",
   "preparedOn": "2026-11-20",
-  "appVersion": "2026.11.23-r36-grant-utility-three-guides",
+  "appVersion": "2026.11.23-r37-phone-wiring-controls",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
       "url": "./app.css",
-      "bytes": 22874,
-      "sha256": "89404b90e01428a108b775fbfa57cfe6ec8982e3c4b0083aad9779fdeca7e594"
+      "bytes": 23497,
+      "sha256": "d07ac8b2f7b97016bdab84702f926782adbf62c32cc1a8cd9c0c460626322355"
     },
     {
       "url": "./app.js",
@@ -233,7 +233,7 @@
     {
       "url": "./index.html",
       "bytes": 1586192,
-      "sha256": "e8ba25a85995da00bdb7cd76796e608c0f312c014502dfc9aee99d0c5161d29e"
+      "sha256": "ffd27f74a43301a7d38885284dc252a556721d967670aca14962ead4ab6838ef"
     },
     {
       "url": "./local-bridge.js",
@@ -2272,8 +2272,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 118660,
-      "sha256": "29a85d0a959eee86490dd54e85241a699430fd360c4f28ebff42cdf6cd3ff718"
+      "bytes": 119290,
+      "sha256": "b39da704f31d22ad351710e03627f4d8bb03726f5c3c7213625b9397f6e50bd3"
     },
     {
       "url": "./vendor/pdf.min.mjs",
@@ -2332,8 +2332,8 @@
     },
     {
       "url": "./wiring/runtime.js",
-      "bytes": 55421,
-      "sha256": "996c17e2358ee7f06948366e6a7a76f94ff315949fdcb425a73109ea710ca1ec"
+      "bytes": 63771,
+      "sha256": "f1faa1932dd69e8a157dc32f767955157dcb5ce902158358a7cb5cc997597528"
     },
     {
       "url": "./age/ui.mjs",
@@ -2434,7 +2434,12 @@
       "url": "./manual-pages/worcester-original-6720803800-201211/page-46.png",
       "bytes": 566904,
       "sha256": "8b66362be6b42b0d2865e434daf133a4ee27fde78b58730585ae7c38b2310da3"
+    },
+    {
+      "url": "./wiring/variant-picker.mjs",
+      "bytes": 7153,
+      "sha256": "56257dd63648787b76aeb6b2370e869a59a1ce56907a0b0b969937d3c320c04f"
     }
   ],
-  "totalBytes": 174773460
+  "totalBytes": 174790216
 }
