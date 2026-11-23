@@ -1,6 +1,6 @@
 {
-  "appVersion": "2026.11.22-r34-phone-grant-three-guides",
-  "preparedOn": "2026-11-22",
+  "appVersion": "2026.11.23-r35-original-28cdi-combustion",
+  "preparedOn": "2026-11-23",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1725,
   "gasFires": 43,
@@ -1069,6 +1069,21 @@
       "scope": "Exact Grant Vortex Pro External Oil descriptive service guide for the reviewed archived manual. Existing numerical, burner, serial, parts, physical and certificate holds remain. Phone-only update; no native parity claim.",
       "newNumericRules": false,
       "fullGuideClaim": false
+    },
+    {
+      "id": "worcester-greenstar-28cdi-compact-ng-47-406-44",
+      "gcNumber": "47-406-44",
+      "fuel": "Natural Gas",
+      "status": "partial",
+      "servicingTasks": 13,
+      "updatedServiceTaskIDs": [
+        "original-fan-assessment",
+        "original-analysis-sequence"
+      ],
+      "sourceReference": "6720803800 (2012/11), original 28CDi Compact NG pages38/39",
+      "scope": "Exact original 28CDi Compact NG only: archived manufacturer model-specific combustion/FPT references and original assessment fields. Fitted serial/revision, complete original instructions and competent physical checks remain mandatory; no ErP/LPG transfer or automatic certificate verdict.",
+      "newNumericRules": true,
+      "fullGuideClaim": false
     }
   ],
   "sourcePDFsIncluded": [],
@@ -1332,7 +1347,8 @@
     "Added 8 partial manufacturer-authored archived-manual service references for exact Ideal icos HE12/HE15/HE18/HE24 and Classic Slimline FF230/FF240/FF250/FF260 Natural Gas models: 120 descriptive tasks in total. All 1725 identities/order and 1717 other records unchanged; existing 384 overlay membership retained. Source-specific sequence and conditional holds remain, including source-specific ceramic-burner/probe, water-filled trap, three-sensing-tube and misnumbered-reference dependencies, installed serial, optional equipment and later revisions. No numerical FGA/FPT rules, parts fitment, certificate verdict or full-guide coverage claimed. Existing R30 handlers/search/UI inherited unchanged.",
     "Remembered AI device connections persist only the authenticated server-issued expiry after a successful status check. Invalid, revoked and expired grants still require private pairing. Delayed status, revoke and unauthorized responses cannot overwrite a newer pairing. The approved server session policy remains separate from pilot availability and all existing spending and usage caps. No background AI request, automatic ask/photo retry, boiler guide or catalogue change.",
     "Phone-only guide update: fourteen exact existing models receive 318 descriptive service tasks, comprising six Worcester Greenstar Danesmoor External/External System Oil, six Danesmoor Utility/Utility System Oil and Ideal icos HE30/HE36 Natural Gas. All 1725 boiler identities/order, unrelated presentations and saved-guide UI remain unchanged. R32 remembered-device session behavior is preserved; only its catalogue pin advances. Native/embedded ServiceM8 runtime is unchanged and no native parity is claimed. All partial-guide, numerical, installed-variant, parts and certificate holds remain.",
-    "Phone saved-guide update: three exact Grant Vortex Pro External Oil models receive 54 descriptive service tasks. All other 1,722 active records, including the fourteen R33 guides, and all 1,725 identities/order/pointers are preserved. Remembered AI device-session behavior is unchanged; only the catalogue binding advances. No wiring changes are included. Partial-guide, numerical, burner, serial, parts, physical and certificate holds remain."
+    "Phone saved-guide update: three exact Grant Vortex Pro External Oil models receive 54 descriptive service tasks. All other 1,722 active records, including the fourteen R33 guides, and all 1,725 identities/order/pointers are preserved. Remembered AI device-session behavior is unchanged; only the catalogue binding advances. No wiring changes are included. Partial-guide, numerical, burner, serial, parts, physical and certificate holds remain.",
+    "Exact original Worcester Greenstar 28CDi Compact Natural Gas GC47-406-44: added source-bound original-manual combustion/FPT references and updated its original fan/analysis assessments, retaining partial-guide and fitted-revision holds. All other 1,724 records and public UI are unchanged. No ErP/LPG transfer, gas-valve adjustment authority or automatic certificate verdict is created. Remembered AI session behavior is unchanged; only its catalogue binding advances. Wiring candidate is not included."
   ],
   "releaseStatus": "release"
 }
