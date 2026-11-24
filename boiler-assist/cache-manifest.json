@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "edcb094f98ff0fb1",
+  "buildId": "68daa5d8397885f1",
   "preparedOn": "2026-11-24",
-  "appVersion": "2026.11.24-r43-gas-oil-original28-reference",
+  "appVersion": "2026.11.24-r44-oil-detail-loader",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -77,8 +77,8 @@
     },
     {
       "url": "./decoder.js",
-      "bytes": 1841,
-      "sha256": "c71df4d708964ef0830ceee10faa9b80ede74b45132e377fc4b5910078da135f"
+      "bytes": 1843,
+      "sha256": "32fa471603352b6ec303f094e49a73d193ef99d17737a8b14dd209a6fefd747d"
     },
     {
       "url": "./diagram-viewer.mjs",
@@ -2382,8 +2382,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 196410,
-      "sha256": "cf951ac2d52c2ac654b167a7b166ab4891576993ab664e23e41ed728cc2c0aee"
+      "bytes": 196739,
+      "sha256": "afd7c4bf231b71b78bf5a6e2e8b38242677ab37c066a3d52a195c28ae1fa0b82"
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -2451,5 +2451,5 @@
       "sha256": "56257dd63648787b76aeb6b2370e869a59a1ce56907a0b0b969937d3c320c04f"
     }
   ],
-  "totalBytes": 175434419
+  "totalBytes": 175434750
 }

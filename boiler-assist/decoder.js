@@ -15,7 +15,7 @@ export async function detail(id){
     if(!chunks.has(key)){
       if(!globalThis.DecompressionStream)throw Error('This browser cannot open the saved catalogue. A supported current Safari version is required.');
       const bytes=Uint8Array.from(atob(packed.chunks[chunk]),c=>c.charCodeAt(0));
-      chunks.set(key,(async()=>{const raw=await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer();if(raw.byteLength>1024*1024)throw Error('Offline catalogue size limit exceeded');const rows=JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(raw));if(!Array.isArray(rows))throw Error('Offline catalogue format unavailable');return rows;})().catch(e=>{chunks.delete(key);throw e;}));
+      chunks.set(key,(async()=>{const raw=await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer();if(raw.byteLength>2*1024*1024)throw Error('Offline catalogue size limit exceeded');const rows=JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(raw));if(!Array.isArray(rows))throw Error('Offline catalogue format unavailable');return rows;})().catch(e=>{chunks.delete(key);throw e;}));
     }
     const records=await chunks.get(key),v=records[position];
     if(v?.boiler?.id!==id)throw Error('Offline catalogue identity mismatch');
