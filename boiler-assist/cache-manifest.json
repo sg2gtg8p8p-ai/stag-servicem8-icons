@@ -1,10 +1,35 @@
 {
   "schemaVersion": 1,
-  "buildId": "c2e7b987752884ff",
-  "preparedOn": "2026-11-20",
-  "appVersion": "2026.11.23-r38-viessmann-b0ka30-identity",
+  "buildId": "2249e97d6501b29f",
+  "preparedOn": "2026-11-24",
+  "appVersion": "2026.11.24-r39-worcester30i-wiring",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
+    {
+      "url": "./age/badge-text-review.mjs",
+      "bytes": 2028,
+      "sha256": "787850d2b4aad2428fa0a522ef68fbfca3588e148793529212681ce9abcff083"
+    },
+    {
+      "url": "./age/date-rules.mjs",
+      "bytes": 8816,
+      "sha256": "07ecc0242220ace391e8dfcc97e0afc678aee65d0adbeaf33b49bf67ab9b91e5"
+    },
+    {
+      "url": "./age/ideal-date-code.mjs",
+      "bytes": 2920,
+      "sha256": "987ac85a70491630aa8bf61325f917a10a388aabaa0fda2f27bcab57a1d892be"
+    },
+    {
+      "url": "./age/photo-serial-correction.mjs",
+      "bytes": 791,
+      "sha256": "be50ec23aca461c4f9fa079d2227102cd044b38c323a19c24c405b426bdaf892"
+    },
+    {
+      "url": "./age/ui.mjs",
+      "bytes": 10607,
+      "sha256": "b9217109b11a7203c1ff8f81af8d072eb216f84fb0df925750364705e3427bef"
+    },
     {
       "url": "./app.css",
       "bytes": 23497,
@@ -14,6 +39,16 @@
       "url": "./app.js",
       "bytes": 14711,
       "sha256": "9c13b37288faa2093167c2f9dce1f4ad0ea7567a0dd3c2ac4a35f65f05b11415"
+    },
+    {
+      "url": "./boiler-wiring/reference.js",
+      "bytes": 3220,
+      "sha256": "9f5ea0319b6a17b69a7bc9dd338a20acc714d95b73ed23881a9b84d055b3467c"
+    },
+    {
+      "url": "./boiler-wiring/worcester-6720813280-201507-page60.png",
+      "bytes": 142940,
+      "sha256": "bcc8b0dfca643ccb7e3f4046df788ef1e54d149867614f184872ea1dce8f2249"
     },
     {
       "url": "./data/details-packed.json",
@@ -232,8 +267,8 @@
     },
     {
       "url": "./index.html",
-      "bytes": 1586282,
-      "sha256": "54279c5b86b5bf885f4ef3d39b016a72733a48a6a098929085a3db0a627133b1"
+      "bytes": 1586569,
+      "sha256": "7f348c3a91f8004421717a103d326a0c81da55ffa06f3d46385d6f67c47c1c8c"
     },
     {
       "url": "./local-bridge.js",
@@ -2271,96 +2306,6 @@
       "sha256": "ebf2c1aad77100e76068a4704f79a2eedc22c89e57a30dac776e824327d7f628"
     },
     {
-      "url": "./release-info.json",
-      "bytes": 120221,
-      "sha256": "6c9775e3270a318146dd94dd7674cec4dfe2be6da6363be7b9e3ad5278b6b440"
-    },
-    {
-      "url": "./vendor/pdf.min.mjs",
-      "bytes": 430304,
-      "sha256": "2221020ea508479dcc1221f36f2731656339230097c69ba1f78802832c0ad685"
-    },
-    {
-      "url": "./vendor/pdf.worker.min.mjs",
-      "bytes": 1244253,
-      "sha256": "51a2fd1ea47f1a9b0814e65e0c336c739c54957795ee774e8f93cb81e8028dd1"
-    },
-    {
-      "url": "./vendor/PDFJS-LICENSE.txt",
-      "bytes": 10174,
-      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
-    },
-    {
-      "url": "./wiring/diagrams/hive-current-10-bcfd98a9f0.png",
-      "bytes": 308519,
-      "sha256": "bcfd98a9f046d968b99087c5590fd03d9cf0337bea20a83786d611fb96cd422d"
-    },
-    {
-      "url": "./wiring/diagrams/hive-current-9-fdd865a958.png",
-      "bytes": 387338,
-      "sha256": "fdd865a95873f80ac90c47244acf974a4837fc210b4d5b57a363ede418ac0f00"
-    },
-    {
-      "url": "./wiring/diagrams/hive-legacy-13-3b6755aaab.png",
-      "bytes": 246347,
-      "sha256": "3b6755aaabdff7868cfcfd1ddce01f2a24c080fce10872e47eea3b68db9cf871"
-    },
-    {
-      "url": "./wiring/diagrams/resideo-11-eabd69bfa7.png",
-      "bytes": 394221,
-      "sha256": "eabd69bfa7e84acdcf8134e688ffcd9715be5f6a28468f801d28d33fd53ab90d"
-    },
-    {
-      "url": "./wiring/diagrams/resideo-12-68e87d3c03.png",
-      "bytes": 412284,
-      "sha256": "68e87d3c032fcf2180807a8457e145ed991afcb58c5590300fa5e84b99adeec3"
-    },
-    {
-      "url": "./wiring/diagrams/resideo-15-2e78d35074.png",
-      "bytes": 368549,
-      "sha256": "2e78d3507491cf54e22aa4b01ec459296cbcd675b30300745d296acd64ff309a"
-    },
-    {
-      "url": "./wiring/diagrams/resideo-22-bba777691d.png",
-      "bytes": 440647,
-      "sha256": "bba777691d146ed2120de681fd2828ae089c449104f628d92f50d0d774464fdc"
-    },
-    {
-      "url": "./wiring/diagrams/resideo-6-fee1ef7cb5.png",
-      "bytes": 477539,
-      "sha256": "fee1ef7cb531ac42f6c4e718f1c764449ec8e71b75061b3a36e736993dbad059"
-    },
-    {
-      "url": "./wiring/runtime.js",
-      "bytes": 63771,
-      "sha256": "f1faa1932dd69e8a157dc32f767955157dcb5ce902158358a7cb5cc997597528"
-    },
-    {
-      "url": "./age/ui.mjs",
-      "bytes": 10607,
-      "sha256": "b9217109b11a7203c1ff8f81af8d072eb216f84fb0df925750364705e3427bef"
-    },
-    {
-      "url": "./age/date-rules.mjs",
-      "bytes": 8816,
-      "sha256": "07ecc0242220ace391e8dfcc97e0afc678aee65d0adbeaf33b49bf67ab9b91e5"
-    },
-    {
-      "url": "./age/badge-text-review.mjs",
-      "bytes": 2028,
-      "sha256": "787850d2b4aad2428fa0a522ef68fbfca3588e148793529212681ce9abcff083"
-    },
-    {
-      "url": "./age/photo-serial-correction.mjs",
-      "bytes": 791,
-      "sha256": "be50ec23aca461c4f9fa079d2227102cd044b38c323a19c24c405b426bdaf892"
-    },
-    {
-      "url": "./age/ideal-date-code.mjs",
-      "bytes": 2920,
-      "sha256": "987ac85a70491630aa8bf61325f917a10a388aabaa0fda2f27bcab57a1d892be"
-    },
-    {
       "url": "./manual-pages/worcester-original-6720803800-201211/page-13.png",
       "bytes": 465688,
       "sha256": "0aa1190e92fbea156e4ad5e37ebd1d387e7a60fea4f66f4d9d44fddd53968ceb"
@@ -2436,10 +2381,75 @@
       "sha256": "8b66362be6b42b0d2865e434daf133a4ee27fde78b58730585ae7c38b2310da3"
     },
     {
+      "url": "./release-info.json",
+      "bytes": 120807,
+      "sha256": "822938cc99b8bef33ffd98fcdccc8e42ae553ef0538defa931a0ffaad52c95ee"
+    },
+    {
+      "url": "./vendor/PDFJS-LICENSE.txt",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "url": "./vendor/pdf.min.mjs",
+      "bytes": 430304,
+      "sha256": "2221020ea508479dcc1221f36f2731656339230097c69ba1f78802832c0ad685"
+    },
+    {
+      "url": "./vendor/pdf.worker.min.mjs",
+      "bytes": 1244253,
+      "sha256": "51a2fd1ea47f1a9b0814e65e0c336c739c54957795ee774e8f93cb81e8028dd1"
+    },
+    {
+      "url": "./wiring/diagrams/hive-current-10-bcfd98a9f0.png",
+      "bytes": 308519,
+      "sha256": "bcfd98a9f046d968b99087c5590fd03d9cf0337bea20a83786d611fb96cd422d"
+    },
+    {
+      "url": "./wiring/diagrams/hive-current-9-fdd865a958.png",
+      "bytes": 387338,
+      "sha256": "fdd865a95873f80ac90c47244acf974a4837fc210b4d5b57a363ede418ac0f00"
+    },
+    {
+      "url": "./wiring/diagrams/hive-legacy-13-3b6755aaab.png",
+      "bytes": 246347,
+      "sha256": "3b6755aaabdff7868cfcfd1ddce01f2a24c080fce10872e47eea3b68db9cf871"
+    },
+    {
+      "url": "./wiring/diagrams/resideo-11-eabd69bfa7.png",
+      "bytes": 394221,
+      "sha256": "eabd69bfa7e84acdcf8134e688ffcd9715be5f6a28468f801d28d33fd53ab90d"
+    },
+    {
+      "url": "./wiring/diagrams/resideo-12-68e87d3c03.png",
+      "bytes": 412284,
+      "sha256": "68e87d3c032fcf2180807a8457e145ed991afcb58c5590300fa5e84b99adeec3"
+    },
+    {
+      "url": "./wiring/diagrams/resideo-15-2e78d35074.png",
+      "bytes": 368549,
+      "sha256": "2e78d3507491cf54e22aa4b01ec459296cbcd675b30300745d296acd64ff309a"
+    },
+    {
+      "url": "./wiring/diagrams/resideo-22-bba777691d.png",
+      "bytes": 440647,
+      "sha256": "bba777691d146ed2120de681fd2828ae089c449104f628d92f50d0d774464fdc"
+    },
+    {
+      "url": "./wiring/diagrams/resideo-6-fee1ef7cb5.png",
+      "bytes": 477539,
+      "sha256": "fee1ef7cb531ac42f6c4e718f1c764449ec8e71b75061b3a36e736993dbad059"
+    },
+    {
+      "url": "./wiring/runtime.js",
+      "bytes": 63771,
+      "sha256": "f1faa1932dd69e8a157dc32f767955157dcb5ce902158358a7cb5cc997597528"
+    },
+    {
       "url": "./wiring/variant-picker.mjs",
       "bytes": 7153,
       "sha256": "56257dd63648787b76aeb6b2370e869a59a1ce56907a0b0b969937d3c320c04f"
     }
   ],
-  "totalBytes": 174791651
+  "totalBytes": 174938684
 }

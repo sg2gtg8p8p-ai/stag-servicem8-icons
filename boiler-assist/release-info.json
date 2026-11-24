@@ -1,6 +1,6 @@
 {
-  "appVersion": "2026.11.23-r38-viessmann-b0ka30-identity",
-  "preparedOn": "2026-11-23",
+  "appVersion": "2026.11.24-r39-worcester30i-wiring",
+  "preparedOn": "2026-11-24",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1725,
   "gasFires": 43,
@@ -1396,7 +1396,8 @@
     "Exact original Worcester Greenstar 28CDi Compact Natural Gas GC47-406-44: added source-bound original-manual combustion/FPT references and updated its original fan/analysis assessments, retaining partial-guide and fitted-revision holds. All other 1,724 records and public UI are unchanged. No ErP/LPG transfer, gas-valve adjustment authority or automatic certificate verdict is created. Remembered AI session behavior is unchanged; only its catalogue binding advances. Wiring candidate is not included.",
     "Phone saved-guide update: three exact Grant Vortex Pro Utility Oil models receive 54 descriptive service tasks. All other 1,722 active records, including all previous R33/R34 guides and the live original 28CDi combustion/FPT repair, and all 1,725 identities/order/pointers are preserved. Remembered AI device-session behavior is unchanged; only the catalogue binding advances. No wiring changes are included. Partial-guide, numerical, burner, serial, parts, physical and certificate holds remain.",
     "Phone wiring reference picker: select source-supported S Plan, Y Plan or illustrated S Plan Plus zone arrangements, independently of current/legacy Hive receiver and channel/mode selection. Unsupported pump or receiver combinations remain explicitly withheld; no combined circuit, terminal translation or installation/boiler compatibility approval is generated. Existing source diagrams and online full-document references remain unchanged. Final touch and contrast CSS improves phone reference expansion and diagram scrolling. Boiler catalogue, FPT/FGA/service content, AI remembered-device behavior and backend are unchanged.",
-    "Correct the existing Viessmann B0KA CH25/DHW30 record label to B0KA-30 with GC47-819-57 across saved details and search. All other1724 records, wiring controls and remembered-device behavior are unchanged. Three FGA reference labels now say source rather than official; no procedure, source URL or numerical rules changed. Matching guarded three-file phone AI identity migration is required before publication."
+    "Correct the existing Viessmann B0KA CH25/DHW30 record label to B0KA-30 with GC47-819-57 across saved details and search. All other1724 records, wiring controls and remembered-device behavior are unchanged. Three FGA reference labels now say source rather than official; no procedure, source URL or numerical rules changed. Matching guarded three-file phone AI identity migration is required before publication.",
+    "Add the saved original Worcester Greenstar 30i Natural Gas internal wiring diagram, manual6720813280 revision2015/07 page60, only within Technical data and Sources for exact GC41-406-60/product7733600062 identity and source applicability. The retained reference script and page image are included in the offline pack. Existing controls wiring, catalogue, Viessmann/FGA correction and remembered AI sessions are unchanged. Reference only: confirm fitted appliance/serial/revision and site conditions; no external controls compatibility, terminal testing, parts or certificate approval."
   ],
   "releaseStatus": "release"
 }
