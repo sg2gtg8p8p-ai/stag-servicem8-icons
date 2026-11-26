@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.26-r46-gas-oil-service-batch",
+  "appVersion": "2026.11.26-r47-cbh-title-correction",
   "preparedOn": "2026-11-26",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1725,
@@ -3534,6 +3534,90 @@
       "scope": "Accepted exact-model partial service-guide presentation. Original source/model/fuel/burner/serial/revision/numerical/conflict/diagram/reassembly/parts/certificate holds remain; no complete service or physical acceptance claim.",
       "newNumericRules": false,
       "fullGuideClaim": false
+    },
+    {
+      "id": "mistral-cbh1-aa2fcc43",
+      "gcNumber": null,
+      "productNumber": null,
+      "fuel": "Oil",
+      "servicingTasks": 17,
+      "previousServicingTasks": 17,
+      "newConditionalTasks": 0,
+      "status": "partial",
+      "sourceReference": "Mistral installation and servicing manual (May2024)",
+      "scope": "Scope-card title correction only: non-condensing becomes condensing for the exact CBH model. All task IDs/order/counts, bodies, readings, source references, settings and partial/physical holds remain unchanged.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "mistral-cbh2-189e2c6f",
+      "gcNumber": null,
+      "productNumber": null,
+      "fuel": "Oil",
+      "servicingTasks": 17,
+      "previousServicingTasks": 17,
+      "newConditionalTasks": 0,
+      "status": "partial",
+      "sourceReference": "Mistral installation and servicing manual (May2024)",
+      "scope": "Scope-card title correction only: non-condensing becomes condensing for the exact CBH model. All task IDs/order/counts, bodies, readings, source references, settings and partial/physical holds remain unchanged.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "mistral-cbh3-7cd5ea34",
+      "gcNumber": null,
+      "productNumber": null,
+      "fuel": "Oil",
+      "servicingTasks": 17,
+      "previousServicingTasks": 17,
+      "newConditionalTasks": 0,
+      "status": "partial",
+      "sourceReference": "Mistral installation and servicing manual (May2024)",
+      "scope": "Scope-card title correction only: non-condensing becomes condensing for the exact CBH model. All task IDs/order/counts, bodies, readings, source references, settings and partial/physical holds remain unchanged.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "mistral-cbh4-62e7ac32",
+      "gcNumber": null,
+      "productNumber": null,
+      "fuel": "Oil",
+      "servicingTasks": 17,
+      "previousServicingTasks": 17,
+      "newConditionalTasks": 0,
+      "status": "partial",
+      "sourceReference": "Mistral installation and servicing manual (May2024)",
+      "scope": "Scope-card title correction only: non-condensing becomes condensing for the exact CBH model. All task IDs/order/counts, bodies, readings, source references, settings and partial/physical holds remain unchanged.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "mistral-cbh5-bf098d6d",
+      "gcNumber": null,
+      "productNumber": null,
+      "fuel": "Oil",
+      "servicingTasks": 17,
+      "previousServicingTasks": 17,
+      "newConditionalTasks": 0,
+      "status": "partial",
+      "sourceReference": "Mistral installation and servicing manual (May2024)",
+      "scope": "Scope-card title correction only: non-condensing becomes condensing for the exact CBH model. All task IDs/order/counts, bodies, readings, source references, settings and partial/physical holds remain unchanged.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
+    },
+    {
+      "id": "mistral-cbh6-22cc0599",
+      "gcNumber": null,
+      "productNumber": null,
+      "fuel": "Oil",
+      "servicingTasks": 17,
+      "previousServicingTasks": 17,
+      "newConditionalTasks": 0,
+      "status": "partial",
+      "sourceReference": "Mistral installation and servicing manual (May2024)",
+      "scope": "Scope-card title correction only: non-condensing becomes condensing for the exact CBH model. All task IDs/order/counts, bodies, readings, source references, settings and partial/physical holds remain unchanged.",
+      "newNumericRules": false,
+      "fullGuideClaim": false
     }
   ],
   "sourcePDFsIncluded": [],
@@ -3809,7 +3893,8 @@
     "Phone guide update: 25 exact gas/oil model guides now present 467 reviewed partial descriptive tasks (previously 13 tasks in these guide panels). New content is limited to the pinned independently accepted batch manifest. One exact original28 guide adds an attributed numeric REFERENCE only: no automated calculation, derived target, PASS, new reading or setting. All boiler fields and all other 1700 active records, identity corrections, wiring, index and search assets are unchanged. Existing source/current applicability, numerical/conflict, safe access/restoration, parts and certificate holds remain. Remembered AI session behavior is unchanged; only the catalogue binding advances.",
     "Repairs the phone offline detail-loader size guard for the reviewed current gas/oil catalogue. Existing catalogue, guides, numeric references, search, wiring, AI client and matching backend remain byte-exact. This changes no appliance settings, remembered-device auth, spending caps, pilot policy or physical/certificate acceptance.",
     "Phone guide update: 30 exact gas/oil model guides now present 414 reviewed partial descriptive tasks (previously 0 tasks in these guide panels). New content is limited to the pinned independently accepted batch manifest. All boiler fields and all other 1695 active records, identity corrections, wiring, index and search assets are unchanged. Existing source/current applicability, numerical/conflict, safe access/restoration, parts and certificate holds remain. Remembered AI session behavior is unchanged; only the catalogue binding advances.",
-    "Phone guide update: 27 exact gas/oil model guides now present 283 reviewed partial descriptive tasks (previously 28 tasks in these guide panels). New content is limited to the pinned independently accepted batch manifest. All boiler fields and all other 1698 active records, identity corrections, wiring, index and search assets are unchanged. Existing source/current applicability, numerical/conflict, safe access/restoration, parts and certificate holds remain. Remembered AI session behavior is unchanged; only the catalogue binding advances."
+    "Phone guide update: 27 exact gas/oil model guides now present 283 reviewed partial descriptive tasks (previously 28 tasks in these guide panels). New content is limited to the pinned independently accepted batch manifest. All boiler fields and all other 1698 active records, identity corrections, wiring, index and search assets are unchanged. Existing source/current applicability, numerical/conflict, safe access/restoration, parts and certificate holds remain. Remembered AI session behavior is unchanged; only the catalogue binding advances.",
+    "Corrects 6 existing CBH scope-card titles from non-condensing to condensing, matching their unchanged condensing bodies and own sources. Task totals remain 102 before and 102 after. No service steps, task IDs/order, readings, numerical references/settings, burner facts or source applicability change. All boiler fields and other records, decoder, index/search/wiring, AI session logic and physical/certificate holds remain unchanged. Only the AI catalogue binding and dependent metadata advance."
   ],
   "releaseStatus": "release"
 }
