@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.27-r49-illustrated-full-annual",
+  "appVersion": "2026.11.27-r50-full-annual-gas-oil",
   "preparedOn": "2026-11-27",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1725,
@@ -4038,6 +4038,198 @@
       "numericReferenceOnly": true,
       "newReadings": 0,
       "fullGuideClaim": true
+    },
+    {
+      "id": "vaillant-ecotec-plus-612-41-044-44",
+      "gcNumber": "41-044-44",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 26,
+      "previousServicingTasks": 11,
+      "newConditionalTasks": 7,
+      "status": "complete",
+      "sourceReference": "839592_09 / 09 — 2009 manual revision",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "vaillant-ecotec-plus-615-41-044-45",
+      "gcNumber": "41-044-45",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 26,
+      "previousServicingTasks": 11,
+      "newConditionalTasks": 7,
+      "status": "complete",
+      "sourceReference": "839592_09 / 09 — 2009 manual revision",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "vaillant-ecotec-plus-618-41-044-46",
+      "gcNumber": "41-044-46",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 26,
+      "previousServicingTasks": 11,
+      "newConditionalTasks": 7,
+      "status": "complete",
+      "sourceReference": "839592_09 / 09 — 2009 manual revision",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "vaillant-ecotec-plus-624-41-044-47",
+      "gcNumber": "41-044-47",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 26,
+      "previousServicingTasks": 11,
+      "newConditionalTasks": 7,
+      "status": "complete",
+      "sourceReference": "839592_09 / 09 — 2009 manual revision",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "vaillant-ecotec-plus-630-41-044-48",
+      "gcNumber": "41-044-48",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 26,
+      "previousServicingTasks": 11,
+      "newConditionalTasks": 7,
+      "status": "complete",
+      "sourceReference": "839592_09 / 09 — 2009 manual revision",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "vaillant-ecotec-plus-637-legacy-2009-manual-appliance-identities",
+      "gcNumber": "41-044-49",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 26,
+      "previousServicingTasks": 11,
+      "newConditionalTasks": 7,
+      "status": "complete",
+      "sourceReference": "839592_09 / 09 — 2009 manual revision",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "vaillant-ecotec-plus-824-47-044-31",
+      "gcNumber": "47-044-31",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 26,
+      "previousServicingTasks": 11,
+      "newConditionalTasks": 7,
+      "status": "complete",
+      "sourceReference": "839592_09 / 09 — 2009 manual revision",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "vaillant-ecotec-plus-831-47-044-32",
+      "gcNumber": "47-044-32",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 26,
+      "previousServicingTasks": 11,
+      "newConditionalTasks": 7,
+      "status": "complete",
+      "sourceReference": "839592_09 / 09 — 2009 manual revision",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "vaillant-ecotec-plus-837-legacy-2009-manual-appliance-identities",
+      "gcNumber": "47-044-33",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 26,
+      "previousServicingTasks": 11,
+      "newConditionalTasks": 7,
+      "status": "complete",
+      "sourceReference": "839592_09 / 09 — 2009 manual revision",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "grant-vortex-pro-external-15-26-vtxom15-26",
+      "gcNumber": null,
+      "productNumber": "VTXOM15/26",
+      "fuel": "Oil",
+      "servicingTasks": 24,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "UK DOC0121 Rev2.1 February2026",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "grant-vortex-pro-external-26-46-vtxom26-46",
+      "gcNumber": null,
+      "productNumber": "VTXOM26/46",
+      "fuel": "Oil",
+      "servicingTasks": 24,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "UK DOC0121 Rev2.1 February2026",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "worcester-greenstar-28cdi-compact-ng-47-406-44",
+      "gcNumber": "47-406-44",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 14,
+      "previousServicingTasks": 14,
+      "newConditionalTasks": 0,
+      "status": "complete",
+      "sourceReference": "6720803800 (2012/11), original engineer instructions — manufacturer-authored historic retailer archive; current/installed-serial applicability unproved; 6720803800 (2012/11), Table5 page8 only — original28NG gas-flow/input-basis reference; historical retailer archive; Worcester Technical Bulletin TB0105b (2016/03), Greenstar Natural Gas published gas rates — source-limited reference",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
     }
   ],
   "sourcePDFsIncluded": [],
@@ -5530,6 +5722,1467 @@
       "currentRevisionOrInstalledSerialApplicabilityProved": false,
       "newNumericRules": false,
       "numericReferenceOnly": true
+    },
+    {
+      "modelID": "vaillant-ecotec-plus-612-41-044-44",
+      "model": "ecoTEC plus 612",
+      "gcNumber": "41-044-44",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 14,
+      "images": [
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 30,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "682fc9a45d7b2f81f7928588c9e173866f91bac977dd52b6f59f26ed675d3c8c",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-30.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 31,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "b87ae4513697415496e5a5a64a4fbc2f8b07f62e77c42fa6e10d32917daa8e94",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-31.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 32,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "84e87c5abd39378eab9e60946d268943a9917bda70398b79e9cf9c2047e28f11",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-32.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Adjacent bypass/pump/range-rating/fuel-conversion sections are not annual adjustment instructions in this guide."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 33,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "2b74dca4e92c5d45a95579526ebb01e38ee926861471aaaa272c283aa0c24ef9",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-33.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 34,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "743fd489f52ad9e7b9d4254ded932876aceef9f5857a5bcad7ed503d98203a99",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-34.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Adjacent bypass/pump/range-rating/fuel-conversion sections are not annual adjustment instructions in this guide."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 35,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "1ae2cdbf76ef203505c1c4c078dc15f5dac093321f952278d7a35258740b195f",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-35.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 36,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "f9f924a379b05b49237942c488da0aac31b223237654fe68f807c48f1f1c0462",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-36.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 37,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "24f40172be1cea9289bc3a6eb345ef26f7fe716788d32be908b9c3c710864341",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-37.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 38,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "96dc5ffc188339910b30d6b9b8209acc55bbfd44762ad445be745b8fd88ddd20",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-38.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 39,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "e546bcf106895d690e73697c2bdde0c4205e814349ef830c269e5c475e36563a",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-39.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 40,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "dd3a0427a2ee7062373d37b0237b3de2795bf9700167cde46c0b50ee4f14725b",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-40.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 41,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "214fc7eef8d40906bf6e80f83370867dd3b952217c8029e8bea1abe63d6a74b7",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-41.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 47,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "954cc4f7398bf5567b46a5323048319dab3f5e155cb5bb65a8cbe7f4a312c127",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-47.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Only applicable P.0/P.6 fill/bleed controls and burner replacement if actually required are referenced; P.5 safety-limit test and factory parameter reset are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 50,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "420d4cb71baffb979e36b527986d944c362a6eba112febbb61f2928c9164d539",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-50.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "vaillant-ecotec-plus-615-41-044-45",
+      "model": "ecoTEC plus 615",
+      "gcNumber": "41-044-45",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 14,
+      "images": [
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 30,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "682fc9a45d7b2f81f7928588c9e173866f91bac977dd52b6f59f26ed675d3c8c",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-30.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 31,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "b87ae4513697415496e5a5a64a4fbc2f8b07f62e77c42fa6e10d32917daa8e94",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-31.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 32,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "84e87c5abd39378eab9e60946d268943a9917bda70398b79e9cf9c2047e28f11",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-32.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Adjacent bypass/pump/range-rating/fuel-conversion sections are not annual adjustment instructions in this guide."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 33,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "2b74dca4e92c5d45a95579526ebb01e38ee926861471aaaa272c283aa0c24ef9",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-33.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 34,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "743fd489f52ad9e7b9d4254ded932876aceef9f5857a5bcad7ed503d98203a99",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-34.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Adjacent bypass/pump/range-rating/fuel-conversion sections are not annual adjustment instructions in this guide."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 35,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "1ae2cdbf76ef203505c1c4c078dc15f5dac093321f952278d7a35258740b195f",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-35.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 36,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "f9f924a379b05b49237942c488da0aac31b223237654fe68f807c48f1f1c0462",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-36.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 37,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "24f40172be1cea9289bc3a6eb345ef26f7fe716788d32be908b9c3c710864341",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-37.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 38,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "96dc5ffc188339910b30d6b9b8209acc55bbfd44762ad445be745b8fd88ddd20",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-38.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 39,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "e546bcf106895d690e73697c2bdde0c4205e814349ef830c269e5c475e36563a",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-39.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 40,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "dd3a0427a2ee7062373d37b0237b3de2795bf9700167cde46c0b50ee4f14725b",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-40.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 41,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "214fc7eef8d40906bf6e80f83370867dd3b952217c8029e8bea1abe63d6a74b7",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-41.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 47,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "954cc4f7398bf5567b46a5323048319dab3f5e155cb5bb65a8cbe7f4a312c127",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-47.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Only applicable P.0/P.6 fill/bleed controls and burner replacement if actually required are referenced; P.5 safety-limit test and factory parameter reset are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 50,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "420d4cb71baffb979e36b527986d944c362a6eba112febbb61f2928c9164d539",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-50.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "vaillant-ecotec-plus-618-41-044-46",
+      "model": "ecoTEC plus 618",
+      "gcNumber": "41-044-46",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 14,
+      "images": [
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 30,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "682fc9a45d7b2f81f7928588c9e173866f91bac977dd52b6f59f26ed675d3c8c",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-30.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 31,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "b87ae4513697415496e5a5a64a4fbc2f8b07f62e77c42fa6e10d32917daa8e94",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-31.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 32,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "84e87c5abd39378eab9e60946d268943a9917bda70398b79e9cf9c2047e28f11",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-32.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Adjacent bypass/pump/range-rating/fuel-conversion sections are not annual adjustment instructions in this guide."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 33,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "2b74dca4e92c5d45a95579526ebb01e38ee926861471aaaa272c283aa0c24ef9",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-33.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 34,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "743fd489f52ad9e7b9d4254ded932876aceef9f5857a5bcad7ed503d98203a99",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-34.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Adjacent bypass/pump/range-rating/fuel-conversion sections are not annual adjustment instructions in this guide."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 35,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "1ae2cdbf76ef203505c1c4c078dc15f5dac093321f952278d7a35258740b195f",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-35.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 36,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "f9f924a379b05b49237942c488da0aac31b223237654fe68f807c48f1f1c0462",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-36.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 37,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "24f40172be1cea9289bc3a6eb345ef26f7fe716788d32be908b9c3c710864341",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-37.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 38,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "96dc5ffc188339910b30d6b9b8209acc55bbfd44762ad445be745b8fd88ddd20",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-38.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 39,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "e546bcf106895d690e73697c2bdde0c4205e814349ef830c269e5c475e36563a",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-39.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 40,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "dd3a0427a2ee7062373d37b0237b3de2795bf9700167cde46c0b50ee4f14725b",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-40.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 41,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "214fc7eef8d40906bf6e80f83370867dd3b952217c8029e8bea1abe63d6a74b7",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-41.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 47,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "954cc4f7398bf5567b46a5323048319dab3f5e155cb5bb65a8cbe7f4a312c127",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-47.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Only applicable P.0/P.6 fill/bleed controls and burner replacement if actually required are referenced; P.5 safety-limit test and factory parameter reset are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 50,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "420d4cb71baffb979e36b527986d944c362a6eba112febbb61f2928c9164d539",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-50.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "vaillant-ecotec-plus-624-41-044-47",
+      "model": "ecoTEC plus 624",
+      "gcNumber": "41-044-47",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 14,
+      "images": [
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 30,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "682fc9a45d7b2f81f7928588c9e173866f91bac977dd52b6f59f26ed675d3c8c",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-30.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 31,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "b87ae4513697415496e5a5a64a4fbc2f8b07f62e77c42fa6e10d32917daa8e94",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-31.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 32,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "84e87c5abd39378eab9e60946d268943a9917bda70398b79e9cf9c2047e28f11",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-32.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Adjacent bypass/pump/range-rating/fuel-conversion sections are not annual adjustment instructions in this guide."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 33,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "2b74dca4e92c5d45a95579526ebb01e38ee926861471aaaa272c283aa0c24ef9",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-33.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 34,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "743fd489f52ad9e7b9d4254ded932876aceef9f5857a5bcad7ed503d98203a99",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-34.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Adjacent bypass/pump/range-rating/fuel-conversion sections are not annual adjustment instructions in this guide."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 35,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "1ae2cdbf76ef203505c1c4c078dc15f5dac093321f952278d7a35258740b195f",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-35.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 36,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "f9f924a379b05b49237942c488da0aac31b223237654fe68f807c48f1f1c0462",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-36.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 37,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "24f40172be1cea9289bc3a6eb345ef26f7fe716788d32be908b9c3c710864341",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-37.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 38,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "96dc5ffc188339910b30d6b9b8209acc55bbfd44762ad445be745b8fd88ddd20",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-38.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 39,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "e546bcf106895d690e73697c2bdde0c4205e814349ef830c269e5c475e36563a",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-39.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 40,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "dd3a0427a2ee7062373d37b0237b3de2795bf9700167cde46c0b50ee4f14725b",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-40.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 41,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "214fc7eef8d40906bf6e80f83370867dd3b952217c8029e8bea1abe63d6a74b7",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-41.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 47,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "954cc4f7398bf5567b46a5323048319dab3f5e155cb5bb65a8cbe7f4a312c127",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-47.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Only applicable P.0/P.6 fill/bleed controls and burner replacement if actually required are referenced; P.5 safety-limit test and factory parameter reset are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 50,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "420d4cb71baffb979e36b527986d944c362a6eba112febbb61f2928c9164d539",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-50.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "vaillant-ecotec-plus-630-41-044-48",
+      "model": "ecoTEC plus 630",
+      "gcNumber": "41-044-48",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 14,
+      "images": [
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 30,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "682fc9a45d7b2f81f7928588c9e173866f91bac977dd52b6f59f26ed675d3c8c",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-30.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 31,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "b87ae4513697415496e5a5a64a4fbc2f8b07f62e77c42fa6e10d32917daa8e94",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-31.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 32,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "84e87c5abd39378eab9e60946d268943a9917bda70398b79e9cf9c2047e28f11",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-32.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Adjacent bypass/pump/range-rating/fuel-conversion sections are not annual adjustment instructions in this guide."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 33,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "2b74dca4e92c5d45a95579526ebb01e38ee926861471aaaa272c283aa0c24ef9",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-33.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 34,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "743fd489f52ad9e7b9d4254ded932876aceef9f5857a5bcad7ed503d98203a99",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-34.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Adjacent bypass/pump/range-rating/fuel-conversion sections are not annual adjustment instructions in this guide."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 35,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "1ae2cdbf76ef203505c1c4c078dc15f5dac093321f952278d7a35258740b195f",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-35.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 36,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "f9f924a379b05b49237942c488da0aac31b223237654fe68f807c48f1f1c0462",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-36.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 37,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "24f40172be1cea9289bc3a6eb345ef26f7fe716788d32be908b9c3c710864341",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-37.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 38,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "96dc5ffc188339910b30d6b9b8209acc55bbfd44762ad445be745b8fd88ddd20",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-38.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 39,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "e546bcf106895d690e73697c2bdde0c4205e814349ef830c269e5c475e36563a",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-39.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 40,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "dd3a0427a2ee7062373d37b0237b3de2795bf9700167cde46c0b50ee4f14725b",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-40.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 41,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "214fc7eef8d40906bf6e80f83370867dd3b952217c8029e8bea1abe63d6a74b7",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-41.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 47,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "954cc4f7398bf5567b46a5323048319dab3f5e155cb5bb65a8cbe7f4a312c127",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-47.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Only applicable P.0/P.6 fill/bleed controls and burner replacement if actually required are referenced; P.5 safety-limit test and factory parameter reset are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 50,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "420d4cb71baffb979e36b527986d944c362a6eba112febbb61f2928c9164d539",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-50.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "vaillant-ecotec-plus-637-legacy-2009-manual-appliance-identities",
+      "model": "ecoTEC plus 637",
+      "gcNumber": "41-044-49",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 14,
+      "images": [
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 30,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "682fc9a45d7b2f81f7928588c9e173866f91bac977dd52b6f59f26ed675d3c8c",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-30.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 31,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "b87ae4513697415496e5a5a64a4fbc2f8b07f62e77c42fa6e10d32917daa8e94",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-31.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 32,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "84e87c5abd39378eab9e60946d268943a9917bda70398b79e9cf9c2047e28f11",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-32.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Adjacent bypass/pump/range-rating/fuel-conversion sections are not annual adjustment instructions in this guide."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 33,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "2b74dca4e92c5d45a95579526ebb01e38ee926861471aaaa272c283aa0c24ef9",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-33.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 34,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "743fd489f52ad9e7b9d4254ded932876aceef9f5857a5bcad7ed503d98203a99",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-34.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Adjacent bypass/pump/range-rating/fuel-conversion sections are not annual adjustment instructions in this guide."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 35,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "1ae2cdbf76ef203505c1c4c078dc15f5dac093321f952278d7a35258740b195f",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-35.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 36,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "f9f924a379b05b49237942c488da0aac31b223237654fe68f807c48f1f1c0462",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-36.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 37,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "24f40172be1cea9289bc3a6eb345ef26f7fe716788d32be908b9c3c710864341",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-37.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 38,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "96dc5ffc188339910b30d6b9b8209acc55bbfd44762ad445be745b8fd88ddd20",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-38.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 39,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "e546bcf106895d690e73697c2bdde0c4205e814349ef830c269e5c475e36563a",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-39.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 40,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "dd3a0427a2ee7062373d37b0237b3de2795bf9700167cde46c0b50ee4f14725b",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-40.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 41,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "214fc7eef8d40906bf6e80f83370867dd3b952217c8029e8bea1abe63d6a74b7",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-41.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 47,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "954cc4f7398bf5567b46a5323048319dab3f5e155cb5bb65a8cbe7f4a312c127",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-47.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Only applicable P.0/P.6 fill/bleed controls and burner replacement if actually required are referenced; P.5 safety-limit test and factory parameter reset are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 50,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "420d4cb71baffb979e36b527986d944c362a6eba112febbb61f2928c9164d539",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-50.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "vaillant-ecotec-plus-824-47-044-31",
+      "model": "ecoTEC plus 824",
+      "gcNumber": "47-044-31",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 14,
+      "images": [
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 30,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "682fc9a45d7b2f81f7928588c9e173866f91bac977dd52b6f59f26ed675d3c8c",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-30.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 31,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "b87ae4513697415496e5a5a64a4fbc2f8b07f62e77c42fa6e10d32917daa8e94",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-31.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 32,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "84e87c5abd39378eab9e60946d268943a9917bda70398b79e9cf9c2047e28f11",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-32.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Adjacent bypass/pump/range-rating/fuel-conversion sections are not annual adjustment instructions in this guide."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 33,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "2b74dca4e92c5d45a95579526ebb01e38ee926861471aaaa272c283aa0c24ef9",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-33.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 34,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "743fd489f52ad9e7b9d4254ded932876aceef9f5857a5bcad7ed503d98203a99",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-34.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Adjacent bypass/pump/range-rating/fuel-conversion sections are not annual adjustment instructions in this guide."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 35,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "1ae2cdbf76ef203505c1c4c078dc15f5dac093321f952278d7a35258740b195f",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-35.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 36,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "f9f924a379b05b49237942c488da0aac31b223237654fe68f807c48f1f1c0462",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-36.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 37,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "24f40172be1cea9289bc3a6eb345ef26f7fe716788d32be908b9c3c710864341",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-37.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 38,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "96dc5ffc188339910b30d6b9b8209acc55bbfd44762ad445be745b8fd88ddd20",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-38.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 39,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "e546bcf106895d690e73697c2bdde0c4205e814349ef830c269e5c475e36563a",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-39.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 40,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "dd3a0427a2ee7062373d37b0237b3de2795bf9700167cde46c0b50ee4f14725b",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-40.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 41,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "214fc7eef8d40906bf6e80f83370867dd3b952217c8029e8bea1abe63d6a74b7",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-41.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 47,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "954cc4f7398bf5567b46a5323048319dab3f5e155cb5bb65a8cbe7f4a312c127",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-47.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Only applicable P.0/P.6 fill/bleed controls and burner replacement if actually required are referenced; P.5 safety-limit test and factory parameter reset are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 50,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "420d4cb71baffb979e36b527986d944c362a6eba112febbb61f2928c9164d539",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-50.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "vaillant-ecotec-plus-831-47-044-32",
+      "model": "ecoTEC plus 831",
+      "gcNumber": "47-044-32",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 14,
+      "images": [
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 30,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "682fc9a45d7b2f81f7928588c9e173866f91bac977dd52b6f59f26ed675d3c8c",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-30.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 31,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "b87ae4513697415496e5a5a64a4fbc2f8b07f62e77c42fa6e10d32917daa8e94",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-31.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 32,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "84e87c5abd39378eab9e60946d268943a9917bda70398b79e9cf9c2047e28f11",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-32.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Adjacent bypass/pump/range-rating/fuel-conversion sections are not annual adjustment instructions in this guide."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 33,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "2b74dca4e92c5d45a95579526ebb01e38ee926861471aaaa272c283aa0c24ef9",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-33.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 34,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "743fd489f52ad9e7b9d4254ded932876aceef9f5857a5bcad7ed503d98203a99",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-34.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Adjacent bypass/pump/range-rating/fuel-conversion sections are not annual adjustment instructions in this guide."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 35,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "1ae2cdbf76ef203505c1c4c078dc15f5dac093321f952278d7a35258740b195f",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-35.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 36,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "f9f924a379b05b49237942c488da0aac31b223237654fe68f807c48f1f1c0462",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-36.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 37,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "24f40172be1cea9289bc3a6eb345ef26f7fe716788d32be908b9c3c710864341",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-37.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 38,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "96dc5ffc188339910b30d6b9b8209acc55bbfd44762ad445be745b8fd88ddd20",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-38.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 39,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "e546bcf106895d690e73697c2bdde0c4205e814349ef830c269e5c475e36563a",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-39.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 40,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "dd3a0427a2ee7062373d37b0237b3de2795bf9700167cde46c0b50ee4f14725b",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-40.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 41,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "214fc7eef8d40906bf6e80f83370867dd3b952217c8029e8bea1abe63d6a74b7",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-41.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 47,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "954cc4f7398bf5567b46a5323048319dab3f5e155cb5bb65a8cbe7f4a312c127",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-47.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Only applicable P.0/P.6 fill/bleed controls and burner replacement if actually required are referenced; P.5 safety-limit test and factory parameter reset are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 50,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "420d4cb71baffb979e36b527986d944c362a6eba112febbb61f2928c9164d539",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-50.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "vaillant-ecotec-plus-837-legacy-2009-manual-appliance-identities",
+      "model": "ecoTEC plus 837",
+      "gcNumber": "47-044-33",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 14,
+      "images": [
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 30,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "682fc9a45d7b2f81f7928588c9e173866f91bac977dd52b6f59f26ed675d3c8c",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-30.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 31,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "b87ae4513697415496e5a5a64a4fbc2f8b07f62e77c42fa6e10d32917daa8e94",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-31.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 32,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "84e87c5abd39378eab9e60946d268943a9917bda70398b79e9cf9c2047e28f11",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-32.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Adjacent bypass/pump/range-rating/fuel-conversion sections are not annual adjustment instructions in this guide."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 33,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "2b74dca4e92c5d45a95579526ebb01e38ee926861471aaaa272c283aa0c24ef9",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-33.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 34,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "743fd489f52ad9e7b9d4254ded932876aceef9f5857a5bcad7ed503d98203a99",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-34.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Adjacent bypass/pump/range-rating/fuel-conversion sections are not annual adjustment instructions in this guide."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 35,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "1ae2cdbf76ef203505c1c4c078dc15f5dac093321f952278d7a35258740b195f",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-35.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 36,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "f9f924a379b05b49237942c488da0aac31b223237654fe68f807c48f1f1c0462",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-36.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 37,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "24f40172be1cea9289bc3a6eb345ef26f7fe716788d32be908b9c3c710864341",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-37.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 38,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "96dc5ffc188339910b30d6b9b8209acc55bbfd44762ad445be745b8fd88ddd20",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-38.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 39,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "e546bcf106895d690e73697c2bdde0c4205e814349ef830c269e5c475e36563a",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-39.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 40,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "dd3a0427a2ee7062373d37b0237b3de2795bf9700167cde46c0b50ee4f14725b",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-40.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 41,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "214fc7eef8d40906bf6e80f83370867dd3b952217c8029e8bea1abe63d6a74b7",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-41.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 47,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "954cc4f7398bf5567b46a5323048319dab3f5e155cb5bb65a8cbe7f4a312c127",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-47.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded. Only applicable P.0/P.6 fill/bleed controls and burner replacement if actually required are referenced; P.5 safety-limit test and factory parameter reset are excluded."
+        },
+        {
+          "documentId": "vaillant-ecotec-839592-09",
+          "page": 50,
+          "sourceSHA256": "f3a9d2f7544e56a53e4f9f8663fe6e8f23a5a62f4d7eb1dee17fb02f40b58f65",
+          "sha256": "420d4cb71baffb979e36b527986d944c362a6eba112febbb61f2928c9164d539",
+          "asset": "manual-pages/vaillant-ecotec-839592-09/page-50.png",
+          "caption": "Original839592_09 complete page; only the exact reviewed ecoTEC plus Natural Gas model applies. LPG/Propane, ecoTEC pro and other model columns are excluded."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "grant-vortex-pro-external-15-26-vtxom15-26",
+      "model": "Vortex Pro External 15/26",
+      "gcNumber": null,
+      "fuel": "Oil",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 22,
+      "images": [
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 6,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "7118ef9597c0eaafeeca3bde212e91983b6f48cb0e27bf4304dcfb6d6b448f3c",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-6.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 7,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "dfdb5f94a193d3555fbe487f42bc451beac23740552c1a57dbb7b681ae3d98e6",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-7.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 12,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "20802c9b2586d9be40eb2c9c56b382175c5dcc0ea75ac51cef59f10c678265a8",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-12.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 13,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "6f2380081e3005e4568fcfd3ecf21e49afd3f908de1c1702430bb2cc8e17f563",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-13.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 17,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "8e9ec7b1fa8386c67b5a195326f8925f4946ef94e3bb39cc6d2cda3a5856f1d6",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-17.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 19,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "f4c9cc5798508caf5d36bf4a13468b1ad4a0788c7bc79c5d0613e0eaa7765b80",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-19.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 20,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "e4297c850a3b0dcd865763fe9c40300cd695d77eb6b3d436f646c3a60b60224e",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-20.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 21,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "c41434bc0d1fdd5ed03bc0cda5f9ad88f2dd4c85799c7fcd1f183c0bfb28e017",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-21.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 22,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "f26ec231ff82845cc481cc6adae725dc0bc40cfe5c398c1693bcecf41ab4fb43",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-22.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 36,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "71cc875f698b0200e7b6c7958bcacde86b02c90d8cf2b8352ba44c9fe279d819",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-36.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 37,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "b2fc0acb26a1b70506b1cba1b6102c5979d940856f49193ff7166fcf773443db",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-37.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 38,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "8fe3689bcdcc4317c8339cf3c36e4c19cd3c18d813545ed1a480a2af3288fec3",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-38.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 40,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "951b0742c863315a5641845fdb355a7c2d31a841c94e684cd8357a02b282bf70",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-40.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 41,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "7948300b29bdcc5e0ebfaa5ffc282c6968d245b5d2e5a09f42eef48a62d4b8be",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-41.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 42,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "03e9aded51a530b8e20bf835cee8bee59b0b26113c3ae94066ee9ba685e6a052",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-42.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 43,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "c822ae975fd5d66c14aaf7beefb1b38db873f91cd85883c79f35e9ca00cfd36a",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-43.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 44,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "3dad0462dee00def98a747a7f6d23295d51c2b7c431772cc6caf512f81152de3",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-44.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 45,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "65d0ea4ef14a5fe91a2fed4678e0784ab74aae5f96d8380e55f709fa23e8b96c",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-45.png",
+          "caption": "For these RDB2.2 BX models, use ONLY the RIGHT-column all-model photocell, air-inlet, fan-housing and oil-pump-filter instructions on this page. The LEFT-column RDB3.2 burner servicing/head-setting method is excluded."
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 46,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "64a1eea0473e2a7da61f12a9368ea4632e4e5ff33295f8a3f2f0423bbacffaf9",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-46.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 57,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "5eccdfb2673f73d8811165f60d62d69028c32a031f9ee998848a9503613809be",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-57.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 62,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "524563b4cb5835aedc387c9bb63143fd46326ae046db87cde194c7c18754bfee",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-62.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 63,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "98a74f4b5885236196d94b808a424f31ea052abcaac82be02c004b0d892b5df8",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-63.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "grant-vortex-pro-external-26-46-vtxom26-46",
+      "model": "Vortex Pro External 26/46",
+      "gcNumber": null,
+      "fuel": "Oil",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 22,
+      "images": [
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 6,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "7118ef9597c0eaafeeca3bde212e91983b6f48cb0e27bf4304dcfb6d6b448f3c",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-6.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 7,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "dfdb5f94a193d3555fbe487f42bc451beac23740552c1a57dbb7b681ae3d98e6",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-7.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 12,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "20802c9b2586d9be40eb2c9c56b382175c5dcc0ea75ac51cef59f10c678265a8",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-12.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 13,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "6f2380081e3005e4568fcfd3ecf21e49afd3f908de1c1702430bb2cc8e17f563",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-13.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 17,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "8e9ec7b1fa8386c67b5a195326f8925f4946ef94e3bb39cc6d2cda3a5856f1d6",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-17.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 19,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "f4c9cc5798508caf5d36bf4a13468b1ad4a0788c7bc79c5d0613e0eaa7765b80",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-19.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 20,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "e4297c850a3b0dcd865763fe9c40300cd695d77eb6b3d436f646c3a60b60224e",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-20.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 21,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "c41434bc0d1fdd5ed03bc0cda5f9ad88f2dd4c85799c7fcd1f183c0bfb28e017",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-21.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 22,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "f26ec231ff82845cc481cc6adae725dc0bc40cfe5c398c1693bcecf41ab4fb43",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-22.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 36,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "71cc875f698b0200e7b6c7958bcacde86b02c90d8cf2b8352ba44c9fe279d819",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-36.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 37,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "b2fc0acb26a1b70506b1cba1b6102c5979d940856f49193ff7166fcf773443db",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-37.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 38,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "8fe3689bcdcc4317c8339cf3c36e4c19cd3c18d813545ed1a480a2af3288fec3",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-38.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 40,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "951b0742c863315a5641845fdb355a7c2d31a841c94e684cd8357a02b282bf70",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-40.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 41,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "7948300b29bdcc5e0ebfaa5ffc282c6968d245b5d2e5a09f42eef48a62d4b8be",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-41.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 42,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "03e9aded51a530b8e20bf835cee8bee59b0b26113c3ae94066ee9ba685e6a052",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-42.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 43,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "c822ae975fd5d66c14aaf7beefb1b38db873f91cd85883c79f35e9ca00cfd36a",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-43.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 44,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "3dad0462dee00def98a747a7f6d23295d51c2b7c431772cc6caf512f81152de3",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-44.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 45,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "65d0ea4ef14a5fe91a2fed4678e0784ab74aae5f96d8380e55f709fa23e8b96c",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-45.png",
+          "caption": "For these RDB2.2 BX models, use ONLY the RIGHT-column all-model photocell, air-inlet, fan-housing and oil-pump-filter instructions on this page. The LEFT-column RDB3.2 burner servicing/head-setting method is excluded."
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 46,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "64a1eea0473e2a7da61f12a9368ea4632e4e5ff33295f8a3f2f0423bbacffaf9",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-46.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 57,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "5eccdfb2673f73d8811165f60d62d69028c32a031f9ee998848a9503613809be",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-57.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 62,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "524563b4cb5835aedc387c9bb63143fd46326ae046db87cde194c7c18754bfee",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-62.png"
+        },
+        {
+          "documentId": "grant-pro-external-uk-doc0121-rev21-202602",
+          "page": 63,
+          "sourceSHA256": "14153e18e9416f0ebfff63966528944519f623dfc313f8f92c47c90fef022d3f",
+          "sha256": "98a74f4b5885236196d94b808a424f31ea052abcaac82be02c004b0d892b5df8",
+          "asset": "manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-63.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
     }
   ],
   "liveServiceM8Connection": false,
@@ -5696,7 +7349,9 @@
     "Phone guide update: 27 exact gas/oil model guides now present 283 reviewed partial descriptive tasks (previously 28 tasks in these guide panels). New content is limited to the pinned independently accepted batch manifest. All boiler fields and all other 1698 active records, identity corrections, wiring, index and search assets are unchanged. Existing source/current applicability, numerical/conflict, safe access/restoration, parts and certificate holds remain. Remembered AI session behavior is unchanged; only the catalogue binding advances.",
     "Corrects 6 existing CBH scope-card titles from non-condensing to condensing, matching their unchanged condensing bodies and own sources. Task totals remain 102 before and 102 after. No service steps, task IDs/order, readings, numerical references/settings, burner facts or source applicability change. All boiler fields and other records, decoder, index/search/wiring, AI session logic and physical/certificate holds remain unchanged. Only the AI catalogue binding and dependent metadata advance.",
     "Adds 14 exact-model partial gas/oil guide panels containing 176 retained-source descriptive tasks to previously empty panels. No new numerical reading, setting, automatic PASS or complete-service claim. All boiler objects/settings and all other 1711 records, identities, decoder, index/search/wiring and existing guides remain unchanged. Complete original diagrams, isolation/restoration, fitted parts/serial/current revision and physical/certificate requirements remain. AI session logic stays exact; only its catalogue binding and dependent metadata advance.",
-    "Expands 14 exact-model annual guides from 176 to 338 tasks, with 61 original source-page images. 14 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 14 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1711 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances."
+    "Expands 14 exact-model annual guides from 176 to 338 tasks, with 61 original source-page images. 14 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 14 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1711 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
+    "Expands 12 exact-model annual guides from 149 to 296 tasks, with 97 total original source-page images. 12 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 12 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1713 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
+    "Restores original28 legacy original-page illustrations for its independently admitted complete annual status as well as partial status; exact identity, fuel, source, page, document, task and image guards remain unchanged."
   ],
   "releaseStatus": "release"
 }

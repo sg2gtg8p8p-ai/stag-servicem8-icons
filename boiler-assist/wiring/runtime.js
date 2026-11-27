@@ -474,7 +474,7 @@
       if (s.pumps === "common" && s.zones === expected) out.diagrams.push({ id: { s: "s-plan", splus: "s-plan-plus", y: "y-plan" }[s.plan], label: "Open original " + plan.title + " diagram" });
       else out.holds.push("Selected zone/pump arrangement is not the illustrated " + plan.title + " circuit. Its source shows " + expected + " heating zone" + (expected === "1" ? "" : "s") + " and one common pump. No matching plan route is offered.");
     }
-    if (s.pumps !== "common") out.holds.push("Confirm one common pump before choosing these plan drawings. Separate pumps need their own manufacturer-supported hydraulic/electrical design; an overrun inset is not another pump.");
+    if (s.pumps !== "common") out.holds.push(s.plan === "unknown" ? "No pump or valve compatibility is established by a receiver reference. Before selecting a plan, confirm its illustrated pump arrangement. Separate pumps need their own manufacturer-supported hydraulic/electrical design; an overrun inset is not another pump." : "Confirm one common pump before choosing these plan drawings. Separate pumps need their own manufacturer-supported hydraulic/electrical design; an overrun inset is not another pump.");
     if (s.generation === "unknown" || s.channel === "unknown" || s.mode === "unknown") out.holds.push("Confirm the receiver generation, channel and operating mode to select a receiver reference.");
     else {
       const current = s.generation === "slt3-current";

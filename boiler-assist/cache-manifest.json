@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "86a500950ead8b7c",
+  "buildId": "892407a41601ab10",
   "preparedOn": "2026-11-24",
-  "appVersion": "2026.11.27-r49-illustrated-full-annual",
+  "appVersion": "2026.11.27-r50-full-annual-gas-oil",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -52,8 +52,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "bytes": 12373181,
-      "sha256": "46a32de8f0b846047d7d85fe1de6e2c7097d40480c89885231dc9ddf4d444c1d"
+      "bytes": 12489249,
+      "sha256": "7b4a2cce9bda9174d3a6d3bd8c6de04a7c2d1332dbfc3ff1186b42d853dd53f8"
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -98,7 +98,7 @@
     {
       "url": "./help/ai-client.mjs",
       "bytes": 8814,
-      "sha256": "ee818f953040d41655ed51d840913c4f410c8df1c28397adf784d000b4457510"
+      "sha256": "da6a1825d39ff16f73d82f58f5a92833ff6ca58f96b37ec15a908a3230c274e2"
     },
     {
       "url": "./help/baxi400-heat-fault-guard.mjs",
@@ -267,8 +267,8 @@
     },
     {
       "url": "./index.html",
-      "bytes": 1586825,
-      "sha256": "1600b41e1924ff4fe0ce07ab1b1c58fc237a5f799e94bfd8e96c9848b28bd520"
+      "bytes": 1586846,
+      "sha256": "864b152cbd0b8df1d5ef418c3a17b9850c9b35f5968dbb185c13d70d4134a460"
     },
     {
       "url": "./local-bridge.js",
@@ -2382,8 +2382,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 329855,
-      "sha256": "52154eaee33cea8183a7d6465a492e6320e7648415110f7c330913901e3b462d"
+      "bytes": 432517,
+      "sha256": "a1b0e7192b20cc77c4f2fcf95a64e512af9e03b2a6128d09b91bf0d5b7264f89"
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -2442,18 +2442,18 @@
     },
     {
       "url": "./wiring/runtime.js",
-      "bytes": 63771,
-      "sha256": "f1faa1932dd69e8a157dc32f767955157dcb5ce902158358a7cb5cc997597528"
+      "bytes": 64056,
+      "sha256": "63b2789167c0d710247964a983b94e7c69667abeea885d30a8bc7bb13531dc57"
     },
     {
       "url": "./wiring/variant-picker.mjs",
-      "bytes": 7153,
-      "sha256": "56257dd63648787b76aeb6b2370e869a59a1ce56907a0b0b969937d3c320c04f"
+      "bytes": 7432,
+      "sha256": "b8318dc4a5cac34251f6f538d059a4025241d6c71a7015bc2746e3d19918cb71"
     },
     {
       "url": "./reviewed-service-pages.js",
-      "bytes": 74776,
-      "sha256": "64af23a576e2ecf57fd67e80232de9d21b32e44882273687ac6efbc7e72dd500"
+      "bytes": 163361,
+      "sha256": "ab4abfefe7eed2611f950231acad23dcccd99051cd22b932c531a41d3432f52a"
     },
     {
       "url": "./manual-pages/main-system-he-5121186-02/page-10.png",
@@ -2759,7 +2759,187 @@
       "url": "./manual-pages/riello-bt-20138275-parts-20148110-1/page-3.png",
       "bytes": 279904,
       "sha256": "dc024c22585bfdff0000c1c982d9cf83eb51ddb9542cccad1206f41f006ab8de"
+    },
+    {
+      "url": "./manual-pages/vaillant-ecotec-839592-09/page-30.png",
+      "bytes": 332653,
+      "sha256": "682fc9a45d7b2f81f7928588c9e173866f91bac977dd52b6f59f26ed675d3c8c"
+    },
+    {
+      "url": "./manual-pages/vaillant-ecotec-839592-09/page-31.png",
+      "bytes": 324240,
+      "sha256": "b87ae4513697415496e5a5a64a4fbc2f8b07f62e77c42fa6e10d32917daa8e94"
+    },
+    {
+      "url": "./manual-pages/vaillant-ecotec-839592-09/page-32.png",
+      "bytes": 318821,
+      "sha256": "84e87c5abd39378eab9e60946d268943a9917bda70398b79e9cf9c2047e28f11"
+    },
+    {
+      "url": "./manual-pages/vaillant-ecotec-839592-09/page-33.png",
+      "bytes": 369925,
+      "sha256": "2b74dca4e92c5d45a95579526ebb01e38ee926861471aaaa272c283aa0c24ef9"
+    },
+    {
+      "url": "./manual-pages/vaillant-ecotec-839592-09/page-34.png",
+      "bytes": 216196,
+      "sha256": "743fd489f52ad9e7b9d4254ded932876aceef9f5857a5bcad7ed503d98203a99"
+    },
+    {
+      "url": "./manual-pages/vaillant-ecotec-839592-09/page-35.png",
+      "bytes": 223935,
+      "sha256": "1ae2cdbf76ef203505c1c4c078dc15f5dac093321f952278d7a35258740b195f"
+    },
+    {
+      "url": "./manual-pages/vaillant-ecotec-839592-09/page-36.png",
+      "bytes": 370457,
+      "sha256": "f9f924a379b05b49237942c488da0aac31b223237654fe68f807c48f1f1c0462"
+    },
+    {
+      "url": "./manual-pages/vaillant-ecotec-839592-09/page-37.png",
+      "bytes": 291614,
+      "sha256": "24f40172be1cea9289bc3a6eb345ef26f7fe716788d32be908b9c3c710864341"
+    },
+    {
+      "url": "./manual-pages/vaillant-ecotec-839592-09/page-38.png",
+      "bytes": 432641,
+      "sha256": "96dc5ffc188339910b30d6b9b8209acc55bbfd44762ad445be745b8fd88ddd20"
+    },
+    {
+      "url": "./manual-pages/vaillant-ecotec-839592-09/page-39.png",
+      "bytes": 427869,
+      "sha256": "e546bcf106895d690e73697c2bdde0c4205e814349ef830c269e5c475e36563a"
+    },
+    {
+      "url": "./manual-pages/vaillant-ecotec-839592-09/page-40.png",
+      "bytes": 396442,
+      "sha256": "dd3a0427a2ee7062373d37b0237b3de2795bf9700167cde46c0b50ee4f14725b"
+    },
+    {
+      "url": "./manual-pages/vaillant-ecotec-839592-09/page-41.png",
+      "bytes": 270453,
+      "sha256": "214fc7eef8d40906bf6e80f83370867dd3b952217c8029e8bea1abe63d6a74b7"
+    },
+    {
+      "url": "./manual-pages/vaillant-ecotec-839592-09/page-47.png",
+      "bytes": 354152,
+      "sha256": "954cc4f7398bf5567b46a5323048319dab3f5e155cb5bb65a8cbe7f4a312c127"
+    },
+    {
+      "url": "./manual-pages/vaillant-ecotec-839592-09/page-50.png",
+      "bytes": 351762,
+      "sha256": "420d4cb71baffb979e36b527986d944c362a6eba112febbb61f2928c9164d539"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-6.png",
+      "bytes": 158638,
+      "sha256": "7118ef9597c0eaafeeca3bde212e91983b6f48cb0e27bf4304dcfb6d6b448f3c"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-7.png",
+      "bytes": 392775,
+      "sha256": "dfdb5f94a193d3555fbe487f42bc451beac23740552c1a57dbb7b681ae3d98e6"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-12.png",
+      "bytes": 404176,
+      "sha256": "20802c9b2586d9be40eb2c9c56b382175c5dcc0ea75ac51cef59f10c678265a8"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-13.png",
+      "bytes": 341008,
+      "sha256": "6f2380081e3005e4568fcfd3ecf21e49afd3f908de1c1702430bb2cc8e17f563"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-17.png",
+      "bytes": 525083,
+      "sha256": "8e9ec7b1fa8386c67b5a195326f8925f4946ef94e3bb39cc6d2cda3a5856f1d6"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-19.png",
+      "bytes": 431350,
+      "sha256": "f4c9cc5798508caf5d36bf4a13468b1ad4a0788c7bc79c5d0613e0eaa7765b80"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-20.png",
+      "bytes": 310611,
+      "sha256": "e4297c850a3b0dcd865763fe9c40300cd695d77eb6b3d436f646c3a60b60224e"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-21.png",
+      "bytes": 320129,
+      "sha256": "c41434bc0d1fdd5ed03bc0cda5f9ad88f2dd4c85799c7fcd1f183c0bfb28e017"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-22.png",
+      "bytes": 569898,
+      "sha256": "f26ec231ff82845cc481cc6adae725dc0bc40cfe5c398c1693bcecf41ab4fb43"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-36.png",
+      "bytes": 172719,
+      "sha256": "71cc875f698b0200e7b6c7958bcacde86b02c90d8cf2b8352ba44c9fe279d819"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-37.png",
+      "bytes": 539303,
+      "sha256": "b2fc0acb26a1b70506b1cba1b6102c5979d940856f49193ff7166fcf773443db"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-38.png",
+      "bytes": 448114,
+      "sha256": "8fe3689bcdcc4317c8339cf3c36e4c19cd3c18d813545ed1a480a2af3288fec3"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-40.png",
+      "bytes": 558785,
+      "sha256": "951b0742c863315a5641845fdb355a7c2d31a841c94e684cd8357a02b282bf70"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-41.png",
+      "bytes": 550821,
+      "sha256": "7948300b29bdcc5e0ebfaa5ffc282c6968d245b5d2e5a09f42eef48a62d4b8be"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-42.png",
+      "bytes": 382408,
+      "sha256": "03e9aded51a530b8e20bf835cee8bee59b0b26113c3ae94066ee9ba685e6a052"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-43.png",
+      "bytes": 130092,
+      "sha256": "c822ae975fd5d66c14aaf7beefb1b38db873f91cd85883c79f35e9ca00cfd36a"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-44.png",
+      "bytes": 322587,
+      "sha256": "3dad0462dee00def98a747a7f6d23295d51c2b7c431772cc6caf512f81152de3"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-45.png",
+      "bytes": 348064,
+      "sha256": "65d0ea4ef14a5fe91a2fed4678e0784ab74aae5f96d8380e55f709fa23e8b96c"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-46.png",
+      "bytes": 239820,
+      "sha256": "64a1eea0473e2a7da61f12a9368ea4632e4e5ff33295f8a3f2f0423bbacffaf9"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-57.png",
+      "bytes": 414353,
+      "sha256": "5eccdfb2673f73d8811165f60d62d69028c32a031f9ee998848a9503613809be"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-62.png",
+      "bytes": 505255,
+      "sha256": "524563b4cb5835aedc387c9bb63143fd46326ae046db87cde194c7c18754bfee"
+    },
+    {
+      "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-63.png",
+      "bytes": 593653,
+      "sha256": "98a74f4b5885236196d94b808a424f31ea052abcaac82be02c004b0d892b5df8"
     }
   ],
-  "totalBytes": 196049020
+  "totalBytes": 209697722
 }
