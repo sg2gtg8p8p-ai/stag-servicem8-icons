@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.27-r50-full-annual-gas-oil",
+  "appVersion": "2026.11.27-r51-full-annual-gas-oil",
   "preparedOn": "2026-11-27",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1725,
@@ -4230,6 +4230,438 @@
       "numericReferenceOnly": true,
       "newReadings": 0,
       "fullGuideClaim": true
+    },
+    {
+      "id": "vaillant-ecofit-pure-412-0010020400",
+      "gcNumber": "41-694-08",
+      "productNumber": "0010020400",
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "0020230535_09",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "vaillant-ecofit-pure-415-0010020401",
+      "gcNumber": "41-694-09",
+      "productNumber": "0010020401",
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "0020230535_09",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "vaillant-ecofit-pure-418-0010020402",
+      "gcNumber": "41-694-10",
+      "productNumber": "0010020402",
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "0020230535_09",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "vaillant-ecofit-pure-425-0010020403",
+      "gcNumber": "41-694-11",
+      "productNumber": "0010020403",
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "0020230535_09",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "vaillant-ecofit-pure-430-0010020404",
+      "gcNumber": "41-694-12",
+      "productNumber": "0010020404",
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "0020230535_09",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "vaillant-ecofit-pure-435-0010020405",
+      "gcNumber": "41-694-19",
+      "productNumber": "0010020405",
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "0020230535_09",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-classic-se9-ff-white-41-395-30",
+      "gcNumber": "41-395-30",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 5,
+      "newConditionalTasks": 14,
+      "status": "complete",
+      "sourceReference": "UIN200544A05 (January2008)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-classic-se9-ff-silver-41-397-63",
+      "gcNumber": "41-397-63",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 5,
+      "newConditionalTasks": 14,
+      "status": "complete",
+      "sourceReference": "UIN200544A05 (January2008)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-classic-se12-ff-white-41-395-31",
+      "gcNumber": "41-395-31",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 5,
+      "newConditionalTasks": 14,
+      "status": "complete",
+      "sourceReference": "UIN200544A05 (January2008)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-classic-se12-ff-silver-41-397-64",
+      "gcNumber": "41-397-64",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 5,
+      "newConditionalTasks": 14,
+      "status": "complete",
+      "sourceReference": "UIN200544A05 (January2008)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-classic-se15-ff-white-41-395-32",
+      "gcNumber": "41-395-32",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 5,
+      "newConditionalTasks": 14,
+      "status": "complete",
+      "sourceReference": "UIN200544A05 (January2008)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-classic-se15-ff-silver-41-397-65",
+      "gcNumber": "41-397-65",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 5,
+      "newConditionalTasks": 14,
+      "status": "complete",
+      "sourceReference": "UIN200544A05 (January2008)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-classic-se18-ff-white-41-395-33",
+      "gcNumber": "41-395-33",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 5,
+      "newConditionalTasks": 14,
+      "status": "complete",
+      "sourceReference": "UIN200544A05 (January2008)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-classic-se18-ff-silver-41-397-68",
+      "gcNumber": "41-397-68",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 5,
+      "newConditionalTasks": 14,
+      "status": "complete",
+      "sourceReference": "UIN200544A05 (January2008)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-classic-se21-ff-white-41-395-34",
+      "gcNumber": "41-395-34",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 5,
+      "newConditionalTasks": 14,
+      "status": "complete",
+      "sourceReference": "UIN200544A05 (January2008)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-classic-se21-ff-silver-41-397-69",
+      "gcNumber": "41-397-69",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 5,
+      "newConditionalTasks": 14,
+      "status": "complete",
+      "sourceReference": "UIN200544A05 (January2008)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-classic-se24-ff-white-41-395-35",
+      "gcNumber": "41-395-35",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 5,
+      "newConditionalTasks": 14,
+      "status": "complete",
+      "sourceReference": "UIN200544A05 (January2008)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-classic-se24-ff-silver-41-397-70",
+      "gcNumber": "41-397-70",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 5,
+      "newConditionalTasks": 14,
+      "status": "complete",
+      "sourceReference": "UIN200544A05 (January2008)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-classic-se30-ff-white-41-395-36",
+      "gcNumber": "41-395-36",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 5,
+      "newConditionalTasks": 14,
+      "status": "complete",
+      "sourceReference": "UIN200544A05 (January2008)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-classic-se30-ff-silver-41-397-71",
+      "gcNumber": "41-397-71",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 5,
+      "newConditionalTasks": 14,
+      "status": "complete",
+      "sourceReference": "UIN200544A05 (January2008)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-external-system-12-18-7731600257",
+      "gcNumber": null,
+      "productNumber": "7731600257",
+      "fuel": "Oil",
+      "servicingTasks": 34,
+      "previousServicingTasks": 23,
+      "newConditionalTasks": 3,
+      "status": "complete",
+      "sourceReference": "6721844014 (2022/01); back cover prints6720821725 (2021/09)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-external-system-18-25-7731600258",
+      "gcNumber": null,
+      "productNumber": "7731600258",
+      "fuel": "Oil",
+      "servicingTasks": 34,
+      "previousServicingTasks": 23,
+      "newConditionalTasks": 3,
+      "status": "complete",
+      "sourceReference": "6721844014 (2022/01); back cover prints6720821725 (2021/09)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-external-system-25-32-7731600259",
+      "gcNumber": null,
+      "productNumber": "7731600259",
+      "fuel": "Oil",
+      "servicingTasks": 34,
+      "previousServicingTasks": 23,
+      "newConditionalTasks": 3,
+      "status": "complete",
+      "sourceReference": "6721844014 (2022/01); back cover prints6720821725 (2021/09)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-external-regular-12-18-7731600248",
+      "gcNumber": null,
+      "productNumber": "7731600248",
+      "fuel": "Oil",
+      "servicingTasks": 34,
+      "previousServicingTasks": 23,
+      "newConditionalTasks": 3,
+      "status": "complete",
+      "sourceReference": "6721844014 (2022/01); back cover prints6720821725 (2021/09)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-external-regular-18-25-7731600249",
+      "gcNumber": null,
+      "productNumber": "7731600249",
+      "fuel": "Oil",
+      "servicingTasks": 34,
+      "previousServicingTasks": 23,
+      "newConditionalTasks": 3,
+      "status": "complete",
+      "sourceReference": "6721844014 (2022/01); back cover prints6720821725 (2021/09)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-external-regular-25-32-7731600250",
+      "gcNumber": null,
+      "productNumber": "7731600250",
+      "fuel": "Oil",
+      "servicingTasks": 34,
+      "previousServicingTasks": 23,
+      "newConditionalTasks": 3,
+      "status": "complete",
+      "sourceReference": "6721844014 (2022/01); back cover prints6720821725 (2021/09)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "worcester-greenstar-24ri-erp-7733600068",
+      "gcNumber": "41-406-47",
+      "productNumber": "7733600068",
+      "fuel": "Natural Gas",
+      "servicingTasks": 22,
+      "previousServicingTasks": 15,
+      "newConditionalTasks": 2,
+      "status": "complete",
+      "sourceReference": "6 720 813 283 (2015/07)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
     }
   ],
   "sourcePDFsIncluded": [],
@@ -7183,6 +7615,2763 @@
       "currentRevisionOrInstalledSerialApplicabilityProved": false,
       "newNumericRules": false,
       "numericReferenceOnly": true
+    },
+    {
+      "modelID": "vaillant-ecofit-pure-412-0010020400",
+      "model": "ecoFIT pure 412",
+      "gcNumber": "41-694-08",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 13,
+      "images": [
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 7,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "4eeac33560b99f1b62ffaef5ba991fb66774a70dd5813cb51e54ee4e8afa3097",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-7.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 18,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "3b1195ea153b32de45a7476eafc6b8b37c6c899916358d0b67dd9d0897033936",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-18.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 26,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "fb54a7a90e960ebf5d063608cab3543bf1e48ae0f41dcc7be9d91f322894f19f",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-26.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 27,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "c0e56574efb101f2341bf20b916a591ecd22f3c9dfe56140bcd271351541b163",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-27.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 28,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "c43e3b21e46e9fde6d3dd3cecaeb78b8c8cf47d86a847bd26b21cd0d3c156095",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-28.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 29,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "6de0ee7492f75fb1b24ebccfe1f399d5f135c7d3df5c6d4dcb7aa2db2bc89265",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-29.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 30,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "fef2f678a4e93ce12420068c62f78c4f0c69807a8168cab4a0a869d02f390b8c",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-30.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 31,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "009e3b39b58f35bdc14b6604cd14d4299625a8fad56820311adf02681615946b",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-31.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 32,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "31da141168d194574918cf9c09136a2e8d63d1f69c082f79aee65caf7060c8eb",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-32.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 33,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "80dce316812745c15fd20eb42a64d6234d19976a3131fa582ebf04914f6579dc",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-33.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 34,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "f61aa8bec4d1ac8877f286134f4838bec71a0b535a99fa9cedee120b62ecb7ac",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-34.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 37,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "40afb8d953cc234f60fe67a413311b840d3a03c74de776f5daa33287184eed71",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-37.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 38,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "108dcb6af4396c2e8bff7da740da93b71bb782b575a2d6f21adbb4e298f60fdc",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-38.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "vaillant-ecofit-pure-415-0010020401",
+      "model": "ecoFIT pure 415",
+      "gcNumber": "41-694-09",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 13,
+      "images": [
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 7,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "4eeac33560b99f1b62ffaef5ba991fb66774a70dd5813cb51e54ee4e8afa3097",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-7.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 18,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "3b1195ea153b32de45a7476eafc6b8b37c6c899916358d0b67dd9d0897033936",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-18.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 26,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "fb54a7a90e960ebf5d063608cab3543bf1e48ae0f41dcc7be9d91f322894f19f",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-26.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 27,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "c0e56574efb101f2341bf20b916a591ecd22f3c9dfe56140bcd271351541b163",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-27.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 28,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "c43e3b21e46e9fde6d3dd3cecaeb78b8c8cf47d86a847bd26b21cd0d3c156095",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-28.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 29,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "6de0ee7492f75fb1b24ebccfe1f399d5f135c7d3df5c6d4dcb7aa2db2bc89265",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-29.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 30,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "fef2f678a4e93ce12420068c62f78c4f0c69807a8168cab4a0a869d02f390b8c",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-30.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 31,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "009e3b39b58f35bdc14b6604cd14d4299625a8fad56820311adf02681615946b",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-31.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 32,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "31da141168d194574918cf9c09136a2e8d63d1f69c082f79aee65caf7060c8eb",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-32.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 33,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "80dce316812745c15fd20eb42a64d6234d19976a3131fa582ebf04914f6579dc",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-33.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 34,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "f61aa8bec4d1ac8877f286134f4838bec71a0b535a99fa9cedee120b62ecb7ac",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-34.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 37,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "40afb8d953cc234f60fe67a413311b840d3a03c74de776f5daa33287184eed71",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-37.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 38,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "108dcb6af4396c2e8bff7da740da93b71bb782b575a2d6f21adbb4e298f60fdc",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-38.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "vaillant-ecofit-pure-418-0010020402",
+      "model": "ecoFIT pure 418",
+      "gcNumber": "41-694-10",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 13,
+      "images": [
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 7,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "4eeac33560b99f1b62ffaef5ba991fb66774a70dd5813cb51e54ee4e8afa3097",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-7.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 18,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "3b1195ea153b32de45a7476eafc6b8b37c6c899916358d0b67dd9d0897033936",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-18.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 26,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "fb54a7a90e960ebf5d063608cab3543bf1e48ae0f41dcc7be9d91f322894f19f",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-26.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 27,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "c0e56574efb101f2341bf20b916a591ecd22f3c9dfe56140bcd271351541b163",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-27.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 28,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "c43e3b21e46e9fde6d3dd3cecaeb78b8c8cf47d86a847bd26b21cd0d3c156095",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-28.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 29,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "6de0ee7492f75fb1b24ebccfe1f399d5f135c7d3df5c6d4dcb7aa2db2bc89265",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-29.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 30,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "fef2f678a4e93ce12420068c62f78c4f0c69807a8168cab4a0a869d02f390b8c",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-30.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 31,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "009e3b39b58f35bdc14b6604cd14d4299625a8fad56820311adf02681615946b",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-31.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 32,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "31da141168d194574918cf9c09136a2e8d63d1f69c082f79aee65caf7060c8eb",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-32.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 33,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "80dce316812745c15fd20eb42a64d6234d19976a3131fa582ebf04914f6579dc",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-33.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 34,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "f61aa8bec4d1ac8877f286134f4838bec71a0b535a99fa9cedee120b62ecb7ac",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-34.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 37,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "40afb8d953cc234f60fe67a413311b840d3a03c74de776f5daa33287184eed71",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-37.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 38,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "108dcb6af4396c2e8bff7da740da93b71bb782b575a2d6f21adbb4e298f60fdc",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-38.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "vaillant-ecofit-pure-425-0010020403",
+      "model": "ecoFIT pure 425",
+      "gcNumber": "41-694-11",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 13,
+      "images": [
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 7,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "4eeac33560b99f1b62ffaef5ba991fb66774a70dd5813cb51e54ee4e8afa3097",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-7.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 18,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "3b1195ea153b32de45a7476eafc6b8b37c6c899916358d0b67dd9d0897033936",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-18.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 26,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "fb54a7a90e960ebf5d063608cab3543bf1e48ae0f41dcc7be9d91f322894f19f",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-26.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 27,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "c0e56574efb101f2341bf20b916a591ecd22f3c9dfe56140bcd271351541b163",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-27.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 28,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "c43e3b21e46e9fde6d3dd3cecaeb78b8c8cf47d86a847bd26b21cd0d3c156095",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-28.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 29,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "6de0ee7492f75fb1b24ebccfe1f399d5f135c7d3df5c6d4dcb7aa2db2bc89265",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-29.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 30,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "fef2f678a4e93ce12420068c62f78c4f0c69807a8168cab4a0a869d02f390b8c",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-30.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 31,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "009e3b39b58f35bdc14b6604cd14d4299625a8fad56820311adf02681615946b",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-31.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 32,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "31da141168d194574918cf9c09136a2e8d63d1f69c082f79aee65caf7060c8eb",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-32.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 33,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "80dce316812745c15fd20eb42a64d6234d19976a3131fa582ebf04914f6579dc",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-33.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 34,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "f61aa8bec4d1ac8877f286134f4838bec71a0b535a99fa9cedee120b62ecb7ac",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-34.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 37,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "40afb8d953cc234f60fe67a413311b840d3a03c74de776f5daa33287184eed71",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-37.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 38,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "108dcb6af4396c2e8bff7da740da93b71bb782b575a2d6f21adbb4e298f60fdc",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-38.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "vaillant-ecofit-pure-430-0010020404",
+      "model": "ecoFIT pure 430",
+      "gcNumber": "41-694-12",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 13,
+      "images": [
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 7,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "4eeac33560b99f1b62ffaef5ba991fb66774a70dd5813cb51e54ee4e8afa3097",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-7.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 18,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "3b1195ea153b32de45a7476eafc6b8b37c6c899916358d0b67dd9d0897033936",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-18.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 26,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "fb54a7a90e960ebf5d063608cab3543bf1e48ae0f41dcc7be9d91f322894f19f",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-26.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 27,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "c0e56574efb101f2341bf20b916a591ecd22f3c9dfe56140bcd271351541b163",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-27.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 28,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "c43e3b21e46e9fde6d3dd3cecaeb78b8c8cf47d86a847bd26b21cd0d3c156095",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-28.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 29,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "6de0ee7492f75fb1b24ebccfe1f399d5f135c7d3df5c6d4dcb7aa2db2bc89265",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-29.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 30,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "fef2f678a4e93ce12420068c62f78c4f0c69807a8168cab4a0a869d02f390b8c",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-30.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 31,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "009e3b39b58f35bdc14b6604cd14d4299625a8fad56820311adf02681615946b",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-31.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 32,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "31da141168d194574918cf9c09136a2e8d63d1f69c082f79aee65caf7060c8eb",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-32.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 33,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "80dce316812745c15fd20eb42a64d6234d19976a3131fa582ebf04914f6579dc",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-33.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 34,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "f61aa8bec4d1ac8877f286134f4838bec71a0b535a99fa9cedee120b62ecb7ac",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-34.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 37,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "40afb8d953cc234f60fe67a413311b840d3a03c74de776f5daa33287184eed71",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-37.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 38,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "108dcb6af4396c2e8bff7da740da93b71bb782b575a2d6f21adbb4e298f60fdc",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-38.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "vaillant-ecofit-pure-435-0010020405",
+      "model": "ecoFIT pure 435",
+      "gcNumber": "41-694-19",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 13,
+      "images": [
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 7,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "4eeac33560b99f1b62ffaef5ba991fb66774a70dd5813cb51e54ee4e8afa3097",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-7.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 18,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "3b1195ea153b32de45a7476eafc6b8b37c6c899916358d0b67dd9d0897033936",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-18.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 26,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "fb54a7a90e960ebf5d063608cab3543bf1e48ae0f41dcc7be9d91f322894f19f",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-26.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 27,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "c0e56574efb101f2341bf20b916a591ecd22f3c9dfe56140bcd271351541b163",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-27.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 28,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "c43e3b21e46e9fde6d3dd3cecaeb78b8c8cf47d86a847bd26b21cd0d3c156095",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-28.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 29,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "6de0ee7492f75fb1b24ebccfe1f399d5f135c7d3df5c6d4dcb7aa2db2bc89265",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-29.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 30,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "fef2f678a4e93ce12420068c62f78c4f0c69807a8168cab4a0a869d02f390b8c",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-30.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 31,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "009e3b39b58f35bdc14b6604cd14d4299625a8fad56820311adf02681615946b",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-31.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 32,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "31da141168d194574918cf9c09136a2e8d63d1f69c082f79aee65caf7060c8eb",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-32.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 33,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "80dce316812745c15fd20eb42a64d6234d19976a3131fa582ebf04914f6579dc",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-33.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 34,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "f61aa8bec4d1ac8877f286134f4838bec71a0b535a99fa9cedee120b62ecb7ac",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-34.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 37,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "40afb8d953cc234f60fe67a413311b840d3a03c74de776f5daa33287184eed71",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-37.png"
+        },
+        {
+          "documentId": "ecofit-pure-openvent-0020230535-09",
+          "page": 38,
+          "sourceSHA256": "d70b998bffc20a0619b04fd7515fe8248abc17a2813f3767b24e75f3bdc36123",
+          "sha256": "108dcb6af4396c2e8bff7da740da93b71bb782b575a2d6f21adbb4e298f60fdc",
+          "asset": "manual-pages/ecofit-pure-openvent-0020230535-09/page-38.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-classic-se9-ff-white-41-395-30",
+      "model": "Classic SE9 FF (white)",
+      "gcNumber": "41-395-30",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 4,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "ac0c3ce4ff564fee2dbc498707ec09a88f3c1f21a21ed4e39692cd8de6ad9cdb",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-04.png",
+          "caption": "Original Table2: use ONLY the exact SE output column matched to this guide. White/silver versions share that output column. The gas-consumption footnote states gross/net CV bases. Do not use an OUTPUT figure as INPUT or transfer to another Classic generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 7,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4397b68333cfb5c29b5962295e5a69dc1e8688cda9c8f9e436e27b1916fe54e5",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-07.png",
+          "caption": "Frame2 service access/pelmet restrictions and original casing drawing only. Adjacent installation water-connection material is not a direction to alter pipework during annual service."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 24,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "12305404a5e101533b0a09f053dabda3701c36423c3115601460185625f050bc",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-24.png",
+          "caption": "Frame36 actual running-inlet pressure and service-cock location; Frame38 existing connection/earth/isolation restoration reference only. This guide does not redesign external controls or reproduce current electrical standards."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 27,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "8c3a880f560e8ac6fd66bf1e7d81d4988281490a93bc89967e6bd34541493b35",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-27.png",
+          "caption": "Frame45 casing, controls, nominal firing, pressure measurement and conditional adjustment/restoration only. Frame44 historic gas-purge wording is NOT admitted as a current purge method: use the applicable competent-person gas-safety procedure. No routine valve replacement or automatic pressure adjustment."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 28,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "2af78d303f0f194ea17b74d3cf255ba37f2de30e3cd67a9ec7fde4a63e739118",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-28.png",
+          "caption": "Frames46–48 case/control restoration, general checks and user handover. Installation hot-flushing is not made a mandatory annual operation. Historic registration/regulatory text is not current legal advice."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 29,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "f14a2faf44dc62a826711e8ea9f0a81b0e4777a9b668420788c6ddfaa627e277",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-29.png",
+          "caption": "Frames49–51 exact SE FF annual assessment and conditional case/burner/air-box access. Preserve the original four-position manifold clamping diagram; not Classic HE, RS or another FF generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 30,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4ce78886c37c97be96d8012f33844b9e226fa155bc3caf4296c6823625a2eb4d",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-30.png",
+          "caption": "Frames52–54 rear versus side/top flue access, fan/flueway/burner/pilot cleaning and reverse reassembly. All THREE sensing tubes and the fan leads must be restored."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 31,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "b5c8bf7c5a2cffa2d8fb4332b4810a65bc4096498b83fcfc97713cfc45b9adf8",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-31.png",
+          "caption": "Frames55–57 nominal pressure/pilot limitation and conditional sightglass assembly only. Adjacent Frame58 overheat-thermostat replacement is outside this annual guide."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 33,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "63141a0eb6a056a3d931cbdb6c491a584163dd870724ce7749bbd257150251a9",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-33.png",
+          "caption": "Frame61 pilot burner/injector/electrode/shield method and original spark-gap views only. Adjacent Frame60 limit-thermostat replacement/30mm orientation is not part of this guide."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-classic-se9-ff-silver-41-397-63",
+      "model": "Classic SE9 FF (silver)",
+      "gcNumber": "41-397-63",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 4,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "ac0c3ce4ff564fee2dbc498707ec09a88f3c1f21a21ed4e39692cd8de6ad9cdb",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-04.png",
+          "caption": "Original Table2: use ONLY the exact SE output column matched to this guide. White/silver versions share that output column. The gas-consumption footnote states gross/net CV bases. Do not use an OUTPUT figure as INPUT or transfer to another Classic generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 7,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4397b68333cfb5c29b5962295e5a69dc1e8688cda9c8f9e436e27b1916fe54e5",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-07.png",
+          "caption": "Frame2 service access/pelmet restrictions and original casing drawing only. Adjacent installation water-connection material is not a direction to alter pipework during annual service."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 24,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "12305404a5e101533b0a09f053dabda3701c36423c3115601460185625f050bc",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-24.png",
+          "caption": "Frame36 actual running-inlet pressure and service-cock location; Frame38 existing connection/earth/isolation restoration reference only. This guide does not redesign external controls or reproduce current electrical standards."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 27,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "8c3a880f560e8ac6fd66bf1e7d81d4988281490a93bc89967e6bd34541493b35",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-27.png",
+          "caption": "Frame45 casing, controls, nominal firing, pressure measurement and conditional adjustment/restoration only. Frame44 historic gas-purge wording is NOT admitted as a current purge method: use the applicable competent-person gas-safety procedure. No routine valve replacement or automatic pressure adjustment."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 28,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "2af78d303f0f194ea17b74d3cf255ba37f2de30e3cd67a9ec7fde4a63e739118",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-28.png",
+          "caption": "Frames46–48 case/control restoration, general checks and user handover. Installation hot-flushing is not made a mandatory annual operation. Historic registration/regulatory text is not current legal advice."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 29,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "f14a2faf44dc62a826711e8ea9f0a81b0e4777a9b668420788c6ddfaa627e277",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-29.png",
+          "caption": "Frames49–51 exact SE FF annual assessment and conditional case/burner/air-box access. Preserve the original four-position manifold clamping diagram; not Classic HE, RS or another FF generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 30,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4ce78886c37c97be96d8012f33844b9e226fa155bc3caf4296c6823625a2eb4d",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-30.png",
+          "caption": "Frames52–54 rear versus side/top flue access, fan/flueway/burner/pilot cleaning and reverse reassembly. All THREE sensing tubes and the fan leads must be restored."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 31,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "b5c8bf7c5a2cffa2d8fb4332b4810a65bc4096498b83fcfc97713cfc45b9adf8",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-31.png",
+          "caption": "Frames55–57 nominal pressure/pilot limitation and conditional sightglass assembly only. Adjacent Frame58 overheat-thermostat replacement is outside this annual guide."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 33,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "63141a0eb6a056a3d931cbdb6c491a584163dd870724ce7749bbd257150251a9",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-33.png",
+          "caption": "Frame61 pilot burner/injector/electrode/shield method and original spark-gap views only. Adjacent Frame60 limit-thermostat replacement/30mm orientation is not part of this guide."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-classic-se12-ff-white-41-395-31",
+      "model": "Classic SE12 FF (white)",
+      "gcNumber": "41-395-31",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 4,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "ac0c3ce4ff564fee2dbc498707ec09a88f3c1f21a21ed4e39692cd8de6ad9cdb",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-04.png",
+          "caption": "Original Table2: use ONLY the exact SE output column matched to this guide. White/silver versions share that output column. The gas-consumption footnote states gross/net CV bases. Do not use an OUTPUT figure as INPUT or transfer to another Classic generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 7,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4397b68333cfb5c29b5962295e5a69dc1e8688cda9c8f9e436e27b1916fe54e5",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-07.png",
+          "caption": "Frame2 service access/pelmet restrictions and original casing drawing only. Adjacent installation water-connection material is not a direction to alter pipework during annual service."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 24,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "12305404a5e101533b0a09f053dabda3701c36423c3115601460185625f050bc",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-24.png",
+          "caption": "Frame36 actual running-inlet pressure and service-cock location; Frame38 existing connection/earth/isolation restoration reference only. This guide does not redesign external controls or reproduce current electrical standards."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 27,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "8c3a880f560e8ac6fd66bf1e7d81d4988281490a93bc89967e6bd34541493b35",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-27.png",
+          "caption": "Frame45 casing, controls, nominal firing, pressure measurement and conditional adjustment/restoration only. Frame44 historic gas-purge wording is NOT admitted as a current purge method: use the applicable competent-person gas-safety procedure. No routine valve replacement or automatic pressure adjustment."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 28,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "2af78d303f0f194ea17b74d3cf255ba37f2de30e3cd67a9ec7fde4a63e739118",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-28.png",
+          "caption": "Frames46–48 case/control restoration, general checks and user handover. Installation hot-flushing is not made a mandatory annual operation. Historic registration/regulatory text is not current legal advice."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 29,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "f14a2faf44dc62a826711e8ea9f0a81b0e4777a9b668420788c6ddfaa627e277",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-29.png",
+          "caption": "Frames49–51 exact SE FF annual assessment and conditional case/burner/air-box access. Preserve the original four-position manifold clamping diagram; not Classic HE, RS or another FF generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 30,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4ce78886c37c97be96d8012f33844b9e226fa155bc3caf4296c6823625a2eb4d",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-30.png",
+          "caption": "Frames52–54 rear versus side/top flue access, fan/flueway/burner/pilot cleaning and reverse reassembly. All THREE sensing tubes and the fan leads must be restored."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 31,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "b5c8bf7c5a2cffa2d8fb4332b4810a65bc4096498b83fcfc97713cfc45b9adf8",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-31.png",
+          "caption": "Frames55–57 nominal pressure/pilot limitation and conditional sightglass assembly only. Adjacent Frame58 overheat-thermostat replacement is outside this annual guide."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 33,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "63141a0eb6a056a3d931cbdb6c491a584163dd870724ce7749bbd257150251a9",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-33.png",
+          "caption": "Frame61 pilot burner/injector/electrode/shield method and original spark-gap views only. Adjacent Frame60 limit-thermostat replacement/30mm orientation is not part of this guide."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-classic-se12-ff-silver-41-397-64",
+      "model": "Classic SE12 FF (silver)",
+      "gcNumber": "41-397-64",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 4,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "ac0c3ce4ff564fee2dbc498707ec09a88f3c1f21a21ed4e39692cd8de6ad9cdb",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-04.png",
+          "caption": "Original Table2: use ONLY the exact SE output column matched to this guide. White/silver versions share that output column. The gas-consumption footnote states gross/net CV bases. Do not use an OUTPUT figure as INPUT or transfer to another Classic generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 7,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4397b68333cfb5c29b5962295e5a69dc1e8688cda9c8f9e436e27b1916fe54e5",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-07.png",
+          "caption": "Frame2 service access/pelmet restrictions and original casing drawing only. Adjacent installation water-connection material is not a direction to alter pipework during annual service."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 24,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "12305404a5e101533b0a09f053dabda3701c36423c3115601460185625f050bc",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-24.png",
+          "caption": "Frame36 actual running-inlet pressure and service-cock location; Frame38 existing connection/earth/isolation restoration reference only. This guide does not redesign external controls or reproduce current electrical standards."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 27,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "8c3a880f560e8ac6fd66bf1e7d81d4988281490a93bc89967e6bd34541493b35",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-27.png",
+          "caption": "Frame45 casing, controls, nominal firing, pressure measurement and conditional adjustment/restoration only. Frame44 historic gas-purge wording is NOT admitted as a current purge method: use the applicable competent-person gas-safety procedure. No routine valve replacement or automatic pressure adjustment."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 28,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "2af78d303f0f194ea17b74d3cf255ba37f2de30e3cd67a9ec7fde4a63e739118",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-28.png",
+          "caption": "Frames46–48 case/control restoration, general checks and user handover. Installation hot-flushing is not made a mandatory annual operation. Historic registration/regulatory text is not current legal advice."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 29,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "f14a2faf44dc62a826711e8ea9f0a81b0e4777a9b668420788c6ddfaa627e277",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-29.png",
+          "caption": "Frames49–51 exact SE FF annual assessment and conditional case/burner/air-box access. Preserve the original four-position manifold clamping diagram; not Classic HE, RS or another FF generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 30,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4ce78886c37c97be96d8012f33844b9e226fa155bc3caf4296c6823625a2eb4d",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-30.png",
+          "caption": "Frames52–54 rear versus side/top flue access, fan/flueway/burner/pilot cleaning and reverse reassembly. All THREE sensing tubes and the fan leads must be restored."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 31,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "b5c8bf7c5a2cffa2d8fb4332b4810a65bc4096498b83fcfc97713cfc45b9adf8",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-31.png",
+          "caption": "Frames55–57 nominal pressure/pilot limitation and conditional sightglass assembly only. Adjacent Frame58 overheat-thermostat replacement is outside this annual guide."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 33,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "63141a0eb6a056a3d931cbdb6c491a584163dd870724ce7749bbd257150251a9",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-33.png",
+          "caption": "Frame61 pilot burner/injector/electrode/shield method and original spark-gap views only. Adjacent Frame60 limit-thermostat replacement/30mm orientation is not part of this guide."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-classic-se15-ff-white-41-395-32",
+      "model": "Classic SE15 FF (white)",
+      "gcNumber": "41-395-32",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 4,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "ac0c3ce4ff564fee2dbc498707ec09a88f3c1f21a21ed4e39692cd8de6ad9cdb",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-04.png",
+          "caption": "Original Table2: use ONLY the exact SE output column matched to this guide. White/silver versions share that output column. The gas-consumption footnote states gross/net CV bases. Do not use an OUTPUT figure as INPUT or transfer to another Classic generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 7,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4397b68333cfb5c29b5962295e5a69dc1e8688cda9c8f9e436e27b1916fe54e5",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-07.png",
+          "caption": "Frame2 service access/pelmet restrictions and original casing drawing only. Adjacent installation water-connection material is not a direction to alter pipework during annual service."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 24,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "12305404a5e101533b0a09f053dabda3701c36423c3115601460185625f050bc",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-24.png",
+          "caption": "Frame36 actual running-inlet pressure and service-cock location; Frame38 existing connection/earth/isolation restoration reference only. This guide does not redesign external controls or reproduce current electrical standards."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 27,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "8c3a880f560e8ac6fd66bf1e7d81d4988281490a93bc89967e6bd34541493b35",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-27.png",
+          "caption": "Frame45 casing, controls, nominal firing, pressure measurement and conditional adjustment/restoration only. Frame44 historic gas-purge wording is NOT admitted as a current purge method: use the applicable competent-person gas-safety procedure. No routine valve replacement or automatic pressure adjustment."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 28,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "2af78d303f0f194ea17b74d3cf255ba37f2de30e3cd67a9ec7fde4a63e739118",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-28.png",
+          "caption": "Frames46–48 case/control restoration, general checks and user handover. Installation hot-flushing is not made a mandatory annual operation. Historic registration/regulatory text is not current legal advice."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 29,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "f14a2faf44dc62a826711e8ea9f0a81b0e4777a9b668420788c6ddfaa627e277",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-29.png",
+          "caption": "Frames49–51 exact SE FF annual assessment and conditional case/burner/air-box access. Preserve the original four-position manifold clamping diagram; not Classic HE, RS or another FF generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 30,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4ce78886c37c97be96d8012f33844b9e226fa155bc3caf4296c6823625a2eb4d",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-30.png",
+          "caption": "Frames52–54 rear versus side/top flue access, fan/flueway/burner/pilot cleaning and reverse reassembly. All THREE sensing tubes and the fan leads must be restored."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 31,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "b5c8bf7c5a2cffa2d8fb4332b4810a65bc4096498b83fcfc97713cfc45b9adf8",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-31.png",
+          "caption": "Frames55–57 nominal pressure/pilot limitation and conditional sightglass assembly only. Adjacent Frame58 overheat-thermostat replacement is outside this annual guide."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 33,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "63141a0eb6a056a3d931cbdb6c491a584163dd870724ce7749bbd257150251a9",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-33.png",
+          "caption": "Frame61 pilot burner/injector/electrode/shield method and original spark-gap views only. Adjacent Frame60 limit-thermostat replacement/30mm orientation is not part of this guide."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-classic-se15-ff-silver-41-397-65",
+      "model": "Classic SE15 FF (silver)",
+      "gcNumber": "41-397-65",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 4,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "ac0c3ce4ff564fee2dbc498707ec09a88f3c1f21a21ed4e39692cd8de6ad9cdb",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-04.png",
+          "caption": "Original Table2: use ONLY the exact SE output column matched to this guide. White/silver versions share that output column. The gas-consumption footnote states gross/net CV bases. Do not use an OUTPUT figure as INPUT or transfer to another Classic generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 7,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4397b68333cfb5c29b5962295e5a69dc1e8688cda9c8f9e436e27b1916fe54e5",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-07.png",
+          "caption": "Frame2 service access/pelmet restrictions and original casing drawing only. Adjacent installation water-connection material is not a direction to alter pipework during annual service."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 24,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "12305404a5e101533b0a09f053dabda3701c36423c3115601460185625f050bc",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-24.png",
+          "caption": "Frame36 actual running-inlet pressure and service-cock location; Frame38 existing connection/earth/isolation restoration reference only. This guide does not redesign external controls or reproduce current electrical standards."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 27,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "8c3a880f560e8ac6fd66bf1e7d81d4988281490a93bc89967e6bd34541493b35",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-27.png",
+          "caption": "Frame45 casing, controls, nominal firing, pressure measurement and conditional adjustment/restoration only. Frame44 historic gas-purge wording is NOT admitted as a current purge method: use the applicable competent-person gas-safety procedure. No routine valve replacement or automatic pressure adjustment."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 28,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "2af78d303f0f194ea17b74d3cf255ba37f2de30e3cd67a9ec7fde4a63e739118",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-28.png",
+          "caption": "Frames46–48 case/control restoration, general checks and user handover. Installation hot-flushing is not made a mandatory annual operation. Historic registration/regulatory text is not current legal advice."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 29,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "f14a2faf44dc62a826711e8ea9f0a81b0e4777a9b668420788c6ddfaa627e277",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-29.png",
+          "caption": "Frames49–51 exact SE FF annual assessment and conditional case/burner/air-box access. Preserve the original four-position manifold clamping diagram; not Classic HE, RS or another FF generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 30,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4ce78886c37c97be96d8012f33844b9e226fa155bc3caf4296c6823625a2eb4d",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-30.png",
+          "caption": "Frames52–54 rear versus side/top flue access, fan/flueway/burner/pilot cleaning and reverse reassembly. All THREE sensing tubes and the fan leads must be restored."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 31,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "b5c8bf7c5a2cffa2d8fb4332b4810a65bc4096498b83fcfc97713cfc45b9adf8",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-31.png",
+          "caption": "Frames55–57 nominal pressure/pilot limitation and conditional sightglass assembly only. Adjacent Frame58 overheat-thermostat replacement is outside this annual guide."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 33,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "63141a0eb6a056a3d931cbdb6c491a584163dd870724ce7749bbd257150251a9",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-33.png",
+          "caption": "Frame61 pilot burner/injector/electrode/shield method and original spark-gap views only. Adjacent Frame60 limit-thermostat replacement/30mm orientation is not part of this guide."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-classic-se18-ff-white-41-395-33",
+      "model": "Classic SE18 FF (white)",
+      "gcNumber": "41-395-33",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 4,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "ac0c3ce4ff564fee2dbc498707ec09a88f3c1f21a21ed4e39692cd8de6ad9cdb",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-04.png",
+          "caption": "Original Table2: use ONLY the exact SE output column matched to this guide. White/silver versions share that output column. The gas-consumption footnote states gross/net CV bases. Do not use an OUTPUT figure as INPUT or transfer to another Classic generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 7,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4397b68333cfb5c29b5962295e5a69dc1e8688cda9c8f9e436e27b1916fe54e5",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-07.png",
+          "caption": "Frame2 service access/pelmet restrictions and original casing drawing only. Adjacent installation water-connection material is not a direction to alter pipework during annual service."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 24,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "12305404a5e101533b0a09f053dabda3701c36423c3115601460185625f050bc",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-24.png",
+          "caption": "Frame36 actual running-inlet pressure and service-cock location; Frame38 existing connection/earth/isolation restoration reference only. This guide does not redesign external controls or reproduce current electrical standards."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 27,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "8c3a880f560e8ac6fd66bf1e7d81d4988281490a93bc89967e6bd34541493b35",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-27.png",
+          "caption": "Frame45 casing, controls, nominal firing, pressure measurement and conditional adjustment/restoration only. Frame44 historic gas-purge wording is NOT admitted as a current purge method: use the applicable competent-person gas-safety procedure. No routine valve replacement or automatic pressure adjustment."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 28,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "2af78d303f0f194ea17b74d3cf255ba37f2de30e3cd67a9ec7fde4a63e739118",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-28.png",
+          "caption": "Frames46–48 case/control restoration, general checks and user handover. Installation hot-flushing is not made a mandatory annual operation. Historic registration/regulatory text is not current legal advice."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 29,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "f14a2faf44dc62a826711e8ea9f0a81b0e4777a9b668420788c6ddfaa627e277",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-29.png",
+          "caption": "Frames49–51 exact SE FF annual assessment and conditional case/burner/air-box access. Preserve the original four-position manifold clamping diagram; not Classic HE, RS or another FF generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 30,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4ce78886c37c97be96d8012f33844b9e226fa155bc3caf4296c6823625a2eb4d",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-30.png",
+          "caption": "Frames52–54 rear versus side/top flue access, fan/flueway/burner/pilot cleaning and reverse reassembly. All THREE sensing tubes and the fan leads must be restored."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 31,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "b5c8bf7c5a2cffa2d8fb4332b4810a65bc4096498b83fcfc97713cfc45b9adf8",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-31.png",
+          "caption": "Frames55–57 nominal pressure/pilot limitation and conditional sightglass assembly only. Adjacent Frame58 overheat-thermostat replacement is outside this annual guide."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 33,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "63141a0eb6a056a3d931cbdb6c491a584163dd870724ce7749bbd257150251a9",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-33.png",
+          "caption": "Frame61 pilot burner/injector/electrode/shield method and original spark-gap views only. Adjacent Frame60 limit-thermostat replacement/30mm orientation is not part of this guide."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-classic-se18-ff-silver-41-397-68",
+      "model": "Classic SE18 FF (silver)",
+      "gcNumber": "41-397-68",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 4,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "ac0c3ce4ff564fee2dbc498707ec09a88f3c1f21a21ed4e39692cd8de6ad9cdb",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-04.png",
+          "caption": "Original Table2: use ONLY the exact SE output column matched to this guide. White/silver versions share that output column. The gas-consumption footnote states gross/net CV bases. Do not use an OUTPUT figure as INPUT or transfer to another Classic generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 7,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4397b68333cfb5c29b5962295e5a69dc1e8688cda9c8f9e436e27b1916fe54e5",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-07.png",
+          "caption": "Frame2 service access/pelmet restrictions and original casing drawing only. Adjacent installation water-connection material is not a direction to alter pipework during annual service."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 24,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "12305404a5e101533b0a09f053dabda3701c36423c3115601460185625f050bc",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-24.png",
+          "caption": "Frame36 actual running-inlet pressure and service-cock location; Frame38 existing connection/earth/isolation restoration reference only. This guide does not redesign external controls or reproduce current electrical standards."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 27,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "8c3a880f560e8ac6fd66bf1e7d81d4988281490a93bc89967e6bd34541493b35",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-27.png",
+          "caption": "Frame45 casing, controls, nominal firing, pressure measurement and conditional adjustment/restoration only. Frame44 historic gas-purge wording is NOT admitted as a current purge method: use the applicable competent-person gas-safety procedure. No routine valve replacement or automatic pressure adjustment."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 28,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "2af78d303f0f194ea17b74d3cf255ba37f2de30e3cd67a9ec7fde4a63e739118",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-28.png",
+          "caption": "Frames46–48 case/control restoration, general checks and user handover. Installation hot-flushing is not made a mandatory annual operation. Historic registration/regulatory text is not current legal advice."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 29,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "f14a2faf44dc62a826711e8ea9f0a81b0e4777a9b668420788c6ddfaa627e277",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-29.png",
+          "caption": "Frames49–51 exact SE FF annual assessment and conditional case/burner/air-box access. Preserve the original four-position manifold clamping diagram; not Classic HE, RS or another FF generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 30,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4ce78886c37c97be96d8012f33844b9e226fa155bc3caf4296c6823625a2eb4d",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-30.png",
+          "caption": "Frames52–54 rear versus side/top flue access, fan/flueway/burner/pilot cleaning and reverse reassembly. All THREE sensing tubes and the fan leads must be restored."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 31,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "b5c8bf7c5a2cffa2d8fb4332b4810a65bc4096498b83fcfc97713cfc45b9adf8",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-31.png",
+          "caption": "Frames55–57 nominal pressure/pilot limitation and conditional sightglass assembly only. Adjacent Frame58 overheat-thermostat replacement is outside this annual guide."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 33,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "63141a0eb6a056a3d931cbdb6c491a584163dd870724ce7749bbd257150251a9",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-33.png",
+          "caption": "Frame61 pilot burner/injector/electrode/shield method and original spark-gap views only. Adjacent Frame60 limit-thermostat replacement/30mm orientation is not part of this guide."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-classic-se21-ff-white-41-395-34",
+      "model": "Classic SE21 FF (white)",
+      "gcNumber": "41-395-34",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 4,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "ac0c3ce4ff564fee2dbc498707ec09a88f3c1f21a21ed4e39692cd8de6ad9cdb",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-04.png",
+          "caption": "Original Table2: use ONLY the exact SE output column matched to this guide. White/silver versions share that output column. The gas-consumption footnote states gross/net CV bases. Do not use an OUTPUT figure as INPUT or transfer to another Classic generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 7,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4397b68333cfb5c29b5962295e5a69dc1e8688cda9c8f9e436e27b1916fe54e5",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-07.png",
+          "caption": "Frame2 service access/pelmet restrictions and original casing drawing only. Adjacent installation water-connection material is not a direction to alter pipework during annual service."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 24,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "12305404a5e101533b0a09f053dabda3701c36423c3115601460185625f050bc",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-24.png",
+          "caption": "Frame36 actual running-inlet pressure and service-cock location; Frame38 existing connection/earth/isolation restoration reference only. This guide does not redesign external controls or reproduce current electrical standards."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 27,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "8c3a880f560e8ac6fd66bf1e7d81d4988281490a93bc89967e6bd34541493b35",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-27.png",
+          "caption": "Frame45 casing, controls, nominal firing, pressure measurement and conditional adjustment/restoration only. Frame44 historic gas-purge wording is NOT admitted as a current purge method: use the applicable competent-person gas-safety procedure. No routine valve replacement or automatic pressure adjustment."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 28,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "2af78d303f0f194ea17b74d3cf255ba37f2de30e3cd67a9ec7fde4a63e739118",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-28.png",
+          "caption": "Frames46–48 case/control restoration, general checks and user handover. Installation hot-flushing is not made a mandatory annual operation. Historic registration/regulatory text is not current legal advice."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 29,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "f14a2faf44dc62a826711e8ea9f0a81b0e4777a9b668420788c6ddfaa627e277",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-29.png",
+          "caption": "Frames49–51 exact SE FF annual assessment and conditional case/burner/air-box access. Preserve the original four-position manifold clamping diagram; not Classic HE, RS or another FF generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 30,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4ce78886c37c97be96d8012f33844b9e226fa155bc3caf4296c6823625a2eb4d",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-30.png",
+          "caption": "Frames52–54 rear versus side/top flue access, fan/flueway/burner/pilot cleaning and reverse reassembly. All THREE sensing tubes and the fan leads must be restored."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 31,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "b5c8bf7c5a2cffa2d8fb4332b4810a65bc4096498b83fcfc97713cfc45b9adf8",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-31.png",
+          "caption": "Frames55–57 nominal pressure/pilot limitation and conditional sightglass assembly only. Adjacent Frame58 overheat-thermostat replacement is outside this annual guide."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 33,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "63141a0eb6a056a3d931cbdb6c491a584163dd870724ce7749bbd257150251a9",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-33.png",
+          "caption": "Frame61 pilot burner/injector/electrode/shield method and original spark-gap views only. Adjacent Frame60 limit-thermostat replacement/30mm orientation is not part of this guide."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-classic-se21-ff-silver-41-397-69",
+      "model": "Classic SE21 FF (silver)",
+      "gcNumber": "41-397-69",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 4,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "ac0c3ce4ff564fee2dbc498707ec09a88f3c1f21a21ed4e39692cd8de6ad9cdb",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-04.png",
+          "caption": "Original Table2: use ONLY the exact SE output column matched to this guide. White/silver versions share that output column. The gas-consumption footnote states gross/net CV bases. Do not use an OUTPUT figure as INPUT or transfer to another Classic generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 7,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4397b68333cfb5c29b5962295e5a69dc1e8688cda9c8f9e436e27b1916fe54e5",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-07.png",
+          "caption": "Frame2 service access/pelmet restrictions and original casing drawing only. Adjacent installation water-connection material is not a direction to alter pipework during annual service."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 24,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "12305404a5e101533b0a09f053dabda3701c36423c3115601460185625f050bc",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-24.png",
+          "caption": "Frame36 actual running-inlet pressure and service-cock location; Frame38 existing connection/earth/isolation restoration reference only. This guide does not redesign external controls or reproduce current electrical standards."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 27,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "8c3a880f560e8ac6fd66bf1e7d81d4988281490a93bc89967e6bd34541493b35",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-27.png",
+          "caption": "Frame45 casing, controls, nominal firing, pressure measurement and conditional adjustment/restoration only. Frame44 historic gas-purge wording is NOT admitted as a current purge method: use the applicable competent-person gas-safety procedure. No routine valve replacement or automatic pressure adjustment."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 28,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "2af78d303f0f194ea17b74d3cf255ba37f2de30e3cd67a9ec7fde4a63e739118",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-28.png",
+          "caption": "Frames46–48 case/control restoration, general checks and user handover. Installation hot-flushing is not made a mandatory annual operation. Historic registration/regulatory text is not current legal advice."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 29,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "f14a2faf44dc62a826711e8ea9f0a81b0e4777a9b668420788c6ddfaa627e277",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-29.png",
+          "caption": "Frames49–51 exact SE FF annual assessment and conditional case/burner/air-box access. Preserve the original four-position manifold clamping diagram; not Classic HE, RS or another FF generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 30,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4ce78886c37c97be96d8012f33844b9e226fa155bc3caf4296c6823625a2eb4d",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-30.png",
+          "caption": "Frames52–54 rear versus side/top flue access, fan/flueway/burner/pilot cleaning and reverse reassembly. All THREE sensing tubes and the fan leads must be restored."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 31,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "b5c8bf7c5a2cffa2d8fb4332b4810a65bc4096498b83fcfc97713cfc45b9adf8",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-31.png",
+          "caption": "Frames55–57 nominal pressure/pilot limitation and conditional sightglass assembly only. Adjacent Frame58 overheat-thermostat replacement is outside this annual guide."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 33,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "63141a0eb6a056a3d931cbdb6c491a584163dd870724ce7749bbd257150251a9",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-33.png",
+          "caption": "Frame61 pilot burner/injector/electrode/shield method and original spark-gap views only. Adjacent Frame60 limit-thermostat replacement/30mm orientation is not part of this guide."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-classic-se24-ff-white-41-395-35",
+      "model": "Classic SE24 FF (white)",
+      "gcNumber": "41-395-35",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 4,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "ac0c3ce4ff564fee2dbc498707ec09a88f3c1f21a21ed4e39692cd8de6ad9cdb",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-04.png",
+          "caption": "Original Table2: use ONLY the exact SE output column matched to this guide. White/silver versions share that output column. The gas-consumption footnote states gross/net CV bases. Do not use an OUTPUT figure as INPUT or transfer to another Classic generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 7,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4397b68333cfb5c29b5962295e5a69dc1e8688cda9c8f9e436e27b1916fe54e5",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-07.png",
+          "caption": "Frame2 service access/pelmet restrictions and original casing drawing only. Adjacent installation water-connection material is not a direction to alter pipework during annual service."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 24,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "12305404a5e101533b0a09f053dabda3701c36423c3115601460185625f050bc",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-24.png",
+          "caption": "Frame36 actual running-inlet pressure and service-cock location; Frame38 existing connection/earth/isolation restoration reference only. This guide does not redesign external controls or reproduce current electrical standards."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 27,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "8c3a880f560e8ac6fd66bf1e7d81d4988281490a93bc89967e6bd34541493b35",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-27.png",
+          "caption": "Frame45 casing, controls, nominal firing, pressure measurement and conditional adjustment/restoration only. Frame44 historic gas-purge wording is NOT admitted as a current purge method: use the applicable competent-person gas-safety procedure. No routine valve replacement or automatic pressure adjustment."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 28,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "2af78d303f0f194ea17b74d3cf255ba37f2de30e3cd67a9ec7fde4a63e739118",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-28.png",
+          "caption": "Frames46–48 case/control restoration, general checks and user handover. Installation hot-flushing is not made a mandatory annual operation. Historic registration/regulatory text is not current legal advice."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 29,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "f14a2faf44dc62a826711e8ea9f0a81b0e4777a9b668420788c6ddfaa627e277",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-29.png",
+          "caption": "Frames49–51 exact SE FF annual assessment and conditional case/burner/air-box access. Preserve the original four-position manifold clamping diagram; not Classic HE, RS or another FF generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 30,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4ce78886c37c97be96d8012f33844b9e226fa155bc3caf4296c6823625a2eb4d",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-30.png",
+          "caption": "Frames52–54 rear versus side/top flue access, fan/flueway/burner/pilot cleaning and reverse reassembly. All THREE sensing tubes and the fan leads must be restored."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 31,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "b5c8bf7c5a2cffa2d8fb4332b4810a65bc4096498b83fcfc97713cfc45b9adf8",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-31.png",
+          "caption": "Frames55–57 nominal pressure/pilot limitation and conditional sightglass assembly only. Adjacent Frame58 overheat-thermostat replacement is outside this annual guide."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 33,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "63141a0eb6a056a3d931cbdb6c491a584163dd870724ce7749bbd257150251a9",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-33.png",
+          "caption": "Frame61 pilot burner/injector/electrode/shield method and original spark-gap views only. Adjacent Frame60 limit-thermostat replacement/30mm orientation is not part of this guide."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-classic-se24-ff-silver-41-397-70",
+      "model": "Classic SE24 FF (silver)",
+      "gcNumber": "41-397-70",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 4,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "ac0c3ce4ff564fee2dbc498707ec09a88f3c1f21a21ed4e39692cd8de6ad9cdb",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-04.png",
+          "caption": "Original Table2: use ONLY the exact SE output column matched to this guide. White/silver versions share that output column. The gas-consumption footnote states gross/net CV bases. Do not use an OUTPUT figure as INPUT or transfer to another Classic generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 7,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4397b68333cfb5c29b5962295e5a69dc1e8688cda9c8f9e436e27b1916fe54e5",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-07.png",
+          "caption": "Frame2 service access/pelmet restrictions and original casing drawing only. Adjacent installation water-connection material is not a direction to alter pipework during annual service."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 24,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "12305404a5e101533b0a09f053dabda3701c36423c3115601460185625f050bc",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-24.png",
+          "caption": "Frame36 actual running-inlet pressure and service-cock location; Frame38 existing connection/earth/isolation restoration reference only. This guide does not redesign external controls or reproduce current electrical standards."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 27,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "8c3a880f560e8ac6fd66bf1e7d81d4988281490a93bc89967e6bd34541493b35",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-27.png",
+          "caption": "Frame45 casing, controls, nominal firing, pressure measurement and conditional adjustment/restoration only. Frame44 historic gas-purge wording is NOT admitted as a current purge method: use the applicable competent-person gas-safety procedure. No routine valve replacement or automatic pressure adjustment."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 28,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "2af78d303f0f194ea17b74d3cf255ba37f2de30e3cd67a9ec7fde4a63e739118",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-28.png",
+          "caption": "Frames46–48 case/control restoration, general checks and user handover. Installation hot-flushing is not made a mandatory annual operation. Historic registration/regulatory text is not current legal advice."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 29,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "f14a2faf44dc62a826711e8ea9f0a81b0e4777a9b668420788c6ddfaa627e277",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-29.png",
+          "caption": "Frames49–51 exact SE FF annual assessment and conditional case/burner/air-box access. Preserve the original four-position manifold clamping diagram; not Classic HE, RS or another FF generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 30,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4ce78886c37c97be96d8012f33844b9e226fa155bc3caf4296c6823625a2eb4d",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-30.png",
+          "caption": "Frames52–54 rear versus side/top flue access, fan/flueway/burner/pilot cleaning and reverse reassembly. All THREE sensing tubes and the fan leads must be restored."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 31,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "b5c8bf7c5a2cffa2d8fb4332b4810a65bc4096498b83fcfc97713cfc45b9adf8",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-31.png",
+          "caption": "Frames55–57 nominal pressure/pilot limitation and conditional sightglass assembly only. Adjacent Frame58 overheat-thermostat replacement is outside this annual guide."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 33,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "63141a0eb6a056a3d931cbdb6c491a584163dd870724ce7749bbd257150251a9",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-33.png",
+          "caption": "Frame61 pilot burner/injector/electrode/shield method and original spark-gap views only. Adjacent Frame60 limit-thermostat replacement/30mm orientation is not part of this guide."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-classic-se30-ff-white-41-395-36",
+      "model": "Classic SE30 FF (white)",
+      "gcNumber": "41-395-36",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 4,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "ac0c3ce4ff564fee2dbc498707ec09a88f3c1f21a21ed4e39692cd8de6ad9cdb",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-04.png",
+          "caption": "Original Table2: use ONLY the exact SE output column matched to this guide. White/silver versions share that output column. The gas-consumption footnote states gross/net CV bases. Do not use an OUTPUT figure as INPUT or transfer to another Classic generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 7,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4397b68333cfb5c29b5962295e5a69dc1e8688cda9c8f9e436e27b1916fe54e5",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-07.png",
+          "caption": "Frame2 service access/pelmet restrictions and original casing drawing only. Adjacent installation water-connection material is not a direction to alter pipework during annual service."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 24,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "12305404a5e101533b0a09f053dabda3701c36423c3115601460185625f050bc",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-24.png",
+          "caption": "Frame36 actual running-inlet pressure and service-cock location; Frame38 existing connection/earth/isolation restoration reference only. This guide does not redesign external controls or reproduce current electrical standards."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 27,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "8c3a880f560e8ac6fd66bf1e7d81d4988281490a93bc89967e6bd34541493b35",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-27.png",
+          "caption": "Frame45 casing, controls, nominal firing, pressure measurement and conditional adjustment/restoration only. Frame44 historic gas-purge wording is NOT admitted as a current purge method: use the applicable competent-person gas-safety procedure. No routine valve replacement or automatic pressure adjustment."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 28,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "2af78d303f0f194ea17b74d3cf255ba37f2de30e3cd67a9ec7fde4a63e739118",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-28.png",
+          "caption": "Frames46–48 case/control restoration, general checks and user handover. Installation hot-flushing is not made a mandatory annual operation. Historic registration/regulatory text is not current legal advice."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 29,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "f14a2faf44dc62a826711e8ea9f0a81b0e4777a9b668420788c6ddfaa627e277",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-29.png",
+          "caption": "Frames49–51 exact SE FF annual assessment and conditional case/burner/air-box access. Preserve the original four-position manifold clamping diagram; not Classic HE, RS or another FF generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 30,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4ce78886c37c97be96d8012f33844b9e226fa155bc3caf4296c6823625a2eb4d",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-30.png",
+          "caption": "Frames52–54 rear versus side/top flue access, fan/flueway/burner/pilot cleaning and reverse reassembly. All THREE sensing tubes and the fan leads must be restored."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 31,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "b5c8bf7c5a2cffa2d8fb4332b4810a65bc4096498b83fcfc97713cfc45b9adf8",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-31.png",
+          "caption": "Frames55–57 nominal pressure/pilot limitation and conditional sightglass assembly only. Adjacent Frame58 overheat-thermostat replacement is outside this annual guide."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 33,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "63141a0eb6a056a3d931cbdb6c491a584163dd870724ce7749bbd257150251a9",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-33.png",
+          "caption": "Frame61 pilot burner/injector/electrode/shield method and original spark-gap views only. Adjacent Frame60 limit-thermostat replacement/30mm orientation is not part of this guide."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-classic-se30-ff-silver-41-397-71",
+      "model": "Classic SE30 FF (silver)",
+      "gcNumber": "41-397-71",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 4,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "ac0c3ce4ff564fee2dbc498707ec09a88f3c1f21a21ed4e39692cd8de6ad9cdb",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-04.png",
+          "caption": "Original Table2: use ONLY the exact SE output column matched to this guide. White/silver versions share that output column. The gas-consumption footnote states gross/net CV bases. Do not use an OUTPUT figure as INPUT or transfer to another Classic generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 7,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4397b68333cfb5c29b5962295e5a69dc1e8688cda9c8f9e436e27b1916fe54e5",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-07.png",
+          "caption": "Frame2 service access/pelmet restrictions and original casing drawing only. Adjacent installation water-connection material is not a direction to alter pipework during annual service."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 24,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "12305404a5e101533b0a09f053dabda3701c36423c3115601460185625f050bc",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-24.png",
+          "caption": "Frame36 actual running-inlet pressure and service-cock location; Frame38 existing connection/earth/isolation restoration reference only. This guide does not redesign external controls or reproduce current electrical standards."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 27,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "8c3a880f560e8ac6fd66bf1e7d81d4988281490a93bc89967e6bd34541493b35",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-27.png",
+          "caption": "Frame45 casing, controls, nominal firing, pressure measurement and conditional adjustment/restoration only. Frame44 historic gas-purge wording is NOT admitted as a current purge method: use the applicable competent-person gas-safety procedure. No routine valve replacement or automatic pressure adjustment."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 28,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "2af78d303f0f194ea17b74d3cf255ba37f2de30e3cd67a9ec7fde4a63e739118",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-28.png",
+          "caption": "Frames46–48 case/control restoration, general checks and user handover. Installation hot-flushing is not made a mandatory annual operation. Historic registration/regulatory text is not current legal advice."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 29,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "f14a2faf44dc62a826711e8ea9f0a81b0e4777a9b668420788c6ddfaa627e277",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-29.png",
+          "caption": "Frames49–51 exact SE FF annual assessment and conditional case/burner/air-box access. Preserve the original four-position manifold clamping diagram; not Classic HE, RS or another FF generation."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 30,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "4ce78886c37c97be96d8012f33844b9e226fa155bc3caf4296c6823625a2eb4d",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-30.png",
+          "caption": "Frames52–54 rear versus side/top flue access, fan/flueway/burner/pilot cleaning and reverse reassembly. All THREE sensing tubes and the fan leads must be restored."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 31,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "b5c8bf7c5a2cffa2d8fb4332b4810a65bc4096498b83fcfc97713cfc45b9adf8",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-31.png",
+          "caption": "Frames55–57 nominal pressure/pilot limitation and conditional sightglass assembly only. Adjacent Frame58 overheat-thermostat replacement is outside this annual guide."
+        },
+        {
+          "documentId": "ideal-classic-se-2008",
+          "page": 33,
+          "sourceSHA256": "4d71f1bfba95ea4328c16affc158434b445ac997a6da17eabde10e1210a935a6",
+          "sha256": "63141a0eb6a056a3d931cbdb6c491a584163dd870724ce7749bbd257150251a9",
+          "asset": "manual-pages/ideal-classic-se-200544-a05/page-33.png",
+          "caption": "Frame61 pilot burner/injector/electrode/shield method and original spark-gap views only. Adjacent Frame60 limit-thermostat replacement/30mm orientation is not part of this guide."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "worcester-greenstar-danesmoor-external-system-12-18-7731600257",
+      "model": "Greenstar Danesmoor External system 12/18",
+      "gcNumber": null,
+      "fuel": "Oil",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 17,
+      "images": [
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 2,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "7a3f09852d3937f33855c4d7b700adc12f9cf4cff15912ecc2fbd8c81ff9f887",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-2.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 3,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "364fa911543ca51504baba3721ba87a7fda121732086c22300beaedcbbd02dbf",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-3.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 4,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "cec2ab40924cb15fae21938e5877c8e193352232176ca04eecc8d19468e4499f",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-4.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 13,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "34579381eff3cde8cbb2f6378904e8a5dca6fb01178cbb03e110100789302e0c",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-13.png",
+          "caption": "These original hydraulic examples explain the actual regular/open-vented or sealed/system branch and temporary filling link only; they are not a new wiring diagram, approved redesign or universal vessel-charge setting."
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 30,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "c6c3ef0cb35ffc4c79f209d718cb047a0e9466a82727d34b81e1926f7b239b73",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-30.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 31,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "e1d9655d8a74b4b87c0d2726971fcb229328f5e5e5508996871a337fd33182b1",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-31.png",
+          "caption": "The annual guide uses the own-model geometry and burner-refitting figures. Adjacent pump conversion is NOT an annual service instruction; preserve the actual installed single/two-pipe arrangement."
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 35,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "78b8962ed3de40784c39512209912d9157bfa3758e97c47dca512a32625af56f",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-35.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 36,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "21e144a949b8050a9d0ff210a1a79f7c191066d8c25c173fc56739cdd9850fbe",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-36.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 37,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "deade422c5936173234a4b459f315694eb24c0f528e812565ab650c8d792d3ea",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-37.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 38,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "55b1e9d1f6e12890f46f3b9e0fc5b0ed0b9d4d3b80b7b9e19fafc491fb3bb853",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-38.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 39,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "b00bce3ab7ee0652833273af8c356420d524a969341ef132649ded4b731a7c5c",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-39.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 40,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "fb7a1cdd2df10037c11a79f3ce889e2510366ea230a65adc3c65e53e7b80fd2b",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-40.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 41,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "6b03c40c1a24d665bae2a57780c7a1cd8d2913d409a2454bb0c6c43a1d9fac2d",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-41.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 42,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "4a49b0d2a4896e55c35d1245ce7377b1ca32e3e7bba3630265d5e2e866ab6323",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-42.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 43,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "c8573596c95fc6123355a5a91c0dbea5214748e88ec7f69a022413cc5194d930",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-43.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 44,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "ee44966c77e24975247a8fb785e8f6cc4fd8f1c439f2852719ded2e66c39252b",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-44.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 45,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "eb3da841c9d0173f58584bc71d9eff6c16cf4328282ac6b207e712da6b339485",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-45.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "worcester-greenstar-danesmoor-external-system-18-25-7731600258",
+      "model": "Greenstar Danesmoor External system 18/25",
+      "gcNumber": null,
+      "fuel": "Oil",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 17,
+      "images": [
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 2,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "7a3f09852d3937f33855c4d7b700adc12f9cf4cff15912ecc2fbd8c81ff9f887",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-2.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 3,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "364fa911543ca51504baba3721ba87a7fda121732086c22300beaedcbbd02dbf",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-3.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 4,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "cec2ab40924cb15fae21938e5877c8e193352232176ca04eecc8d19468e4499f",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-4.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 13,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "34579381eff3cde8cbb2f6378904e8a5dca6fb01178cbb03e110100789302e0c",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-13.png",
+          "caption": "These original hydraulic examples explain the actual regular/open-vented or sealed/system branch and temporary filling link only; they are not a new wiring diagram, approved redesign or universal vessel-charge setting."
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 30,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "c6c3ef0cb35ffc4c79f209d718cb047a0e9466a82727d34b81e1926f7b239b73",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-30.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 31,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "e1d9655d8a74b4b87c0d2726971fcb229328f5e5e5508996871a337fd33182b1",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-31.png",
+          "caption": "The annual guide uses the own-model geometry and burner-refitting figures. Adjacent pump conversion is NOT an annual service instruction; preserve the actual installed single/two-pipe arrangement."
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 35,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "78b8962ed3de40784c39512209912d9157bfa3758e97c47dca512a32625af56f",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-35.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 36,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "21e144a949b8050a9d0ff210a1a79f7c191066d8c25c173fc56739cdd9850fbe",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-36.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 37,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "deade422c5936173234a4b459f315694eb24c0f528e812565ab650c8d792d3ea",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-37.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 38,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "55b1e9d1f6e12890f46f3b9e0fc5b0ed0b9d4d3b80b7b9e19fafc491fb3bb853",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-38.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 39,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "b00bce3ab7ee0652833273af8c356420d524a969341ef132649ded4b731a7c5c",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-39.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 40,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "fb7a1cdd2df10037c11a79f3ce889e2510366ea230a65adc3c65e53e7b80fd2b",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-40.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 41,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "6b03c40c1a24d665bae2a57780c7a1cd8d2913d409a2454bb0c6c43a1d9fac2d",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-41.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 42,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "4a49b0d2a4896e55c35d1245ce7377b1ca32e3e7bba3630265d5e2e866ab6323",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-42.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 43,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "c8573596c95fc6123355a5a91c0dbea5214748e88ec7f69a022413cc5194d930",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-43.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 44,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "ee44966c77e24975247a8fb785e8f6cc4fd8f1c439f2852719ded2e66c39252b",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-44.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 45,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "eb3da841c9d0173f58584bc71d9eff6c16cf4328282ac6b207e712da6b339485",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-45.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "worcester-greenstar-danesmoor-external-system-25-32-7731600259",
+      "model": "Greenstar Danesmoor External system 25/32",
+      "gcNumber": null,
+      "fuel": "Oil",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 17,
+      "images": [
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 2,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "7a3f09852d3937f33855c4d7b700adc12f9cf4cff15912ecc2fbd8c81ff9f887",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-2.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 3,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "364fa911543ca51504baba3721ba87a7fda121732086c22300beaedcbbd02dbf",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-3.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 4,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "cec2ab40924cb15fae21938e5877c8e193352232176ca04eecc8d19468e4499f",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-4.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 13,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "34579381eff3cde8cbb2f6378904e8a5dca6fb01178cbb03e110100789302e0c",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-13.png",
+          "caption": "These original hydraulic examples explain the actual regular/open-vented or sealed/system branch and temporary filling link only; they are not a new wiring diagram, approved redesign or universal vessel-charge setting."
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 30,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "c6c3ef0cb35ffc4c79f209d718cb047a0e9466a82727d34b81e1926f7b239b73",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-30.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 31,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "e1d9655d8a74b4b87c0d2726971fcb229328f5e5e5508996871a337fd33182b1",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-31.png",
+          "caption": "The annual guide uses the own-model geometry and burner-refitting figures. Adjacent pump conversion is NOT an annual service instruction; preserve the actual installed single/two-pipe arrangement."
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 35,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "78b8962ed3de40784c39512209912d9157bfa3758e97c47dca512a32625af56f",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-35.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 36,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "21e144a949b8050a9d0ff210a1a79f7c191066d8c25c173fc56739cdd9850fbe",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-36.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 37,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "deade422c5936173234a4b459f315694eb24c0f528e812565ab650c8d792d3ea",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-37.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 38,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "55b1e9d1f6e12890f46f3b9e0fc5b0ed0b9d4d3b80b7b9e19fafc491fb3bb853",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-38.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 39,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "b00bce3ab7ee0652833273af8c356420d524a969341ef132649ded4b731a7c5c",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-39.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 40,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "fb7a1cdd2df10037c11a79f3ce889e2510366ea230a65adc3c65e53e7b80fd2b",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-40.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 41,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "6b03c40c1a24d665bae2a57780c7a1cd8d2913d409a2454bb0c6c43a1d9fac2d",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-41.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 42,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "4a49b0d2a4896e55c35d1245ce7377b1ca32e3e7bba3630265d5e2e866ab6323",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-42.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 43,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "c8573596c95fc6123355a5a91c0dbea5214748e88ec7f69a022413cc5194d930",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-43.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 44,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "ee44966c77e24975247a8fb785e8f6cc4fd8f1c439f2852719ded2e66c39252b",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-44.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 45,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "eb3da841c9d0173f58584bc71d9eff6c16cf4328282ac6b207e712da6b339485",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-45.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "worcester-greenstar-danesmoor-external-regular-12-18-7731600248",
+      "model": "Greenstar Danesmoor External regular 12/18",
+      "gcNumber": null,
+      "fuel": "Oil",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 17,
+      "images": [
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 2,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "7a3f09852d3937f33855c4d7b700adc12f9cf4cff15912ecc2fbd8c81ff9f887",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-2.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 3,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "364fa911543ca51504baba3721ba87a7fda121732086c22300beaedcbbd02dbf",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-3.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 4,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "cec2ab40924cb15fae21938e5877c8e193352232176ca04eecc8d19468e4499f",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-4.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 13,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "34579381eff3cde8cbb2f6378904e8a5dca6fb01178cbb03e110100789302e0c",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-13.png",
+          "caption": "These original hydraulic examples explain the actual regular/open-vented or sealed/system branch and temporary filling link only; they are not a new wiring diagram, approved redesign or universal vessel-charge setting."
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 30,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "c6c3ef0cb35ffc4c79f209d718cb047a0e9466a82727d34b81e1926f7b239b73",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-30.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 31,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "e1d9655d8a74b4b87c0d2726971fcb229328f5e5e5508996871a337fd33182b1",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-31.png",
+          "caption": "The annual guide uses the own-model geometry and burner-refitting figures. Adjacent pump conversion is NOT an annual service instruction; preserve the actual installed single/two-pipe arrangement."
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 35,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "78b8962ed3de40784c39512209912d9157bfa3758e97c47dca512a32625af56f",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-35.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 36,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "21e144a949b8050a9d0ff210a1a79f7c191066d8c25c173fc56739cdd9850fbe",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-36.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 37,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "deade422c5936173234a4b459f315694eb24c0f528e812565ab650c8d792d3ea",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-37.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 38,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "55b1e9d1f6e12890f46f3b9e0fc5b0ed0b9d4d3b80b7b9e19fafc491fb3bb853",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-38.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 39,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "b00bce3ab7ee0652833273af8c356420d524a969341ef132649ded4b731a7c5c",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-39.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 40,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "fb7a1cdd2df10037c11a79f3ce889e2510366ea230a65adc3c65e53e7b80fd2b",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-40.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 41,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "6b03c40c1a24d665bae2a57780c7a1cd8d2913d409a2454bb0c6c43a1d9fac2d",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-41.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 42,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "4a49b0d2a4896e55c35d1245ce7377b1ca32e3e7bba3630265d5e2e866ab6323",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-42.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 43,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "c8573596c95fc6123355a5a91c0dbea5214748e88ec7f69a022413cc5194d930",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-43.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 44,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "ee44966c77e24975247a8fb785e8f6cc4fd8f1c439f2852719ded2e66c39252b",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-44.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 45,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "eb3da841c9d0173f58584bc71d9eff6c16cf4328282ac6b207e712da6b339485",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-45.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "worcester-greenstar-danesmoor-external-regular-18-25-7731600249",
+      "model": "Greenstar Danesmoor External regular 18/25",
+      "gcNumber": null,
+      "fuel": "Oil",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 17,
+      "images": [
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 2,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "7a3f09852d3937f33855c4d7b700adc12f9cf4cff15912ecc2fbd8c81ff9f887",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-2.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 3,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "364fa911543ca51504baba3721ba87a7fda121732086c22300beaedcbbd02dbf",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-3.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 4,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "cec2ab40924cb15fae21938e5877c8e193352232176ca04eecc8d19468e4499f",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-4.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 13,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "34579381eff3cde8cbb2f6378904e8a5dca6fb01178cbb03e110100789302e0c",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-13.png",
+          "caption": "These original hydraulic examples explain the actual regular/open-vented or sealed/system branch and temporary filling link only; they are not a new wiring diagram, approved redesign or universal vessel-charge setting."
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 30,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "c6c3ef0cb35ffc4c79f209d718cb047a0e9466a82727d34b81e1926f7b239b73",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-30.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 31,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "e1d9655d8a74b4b87c0d2726971fcb229328f5e5e5508996871a337fd33182b1",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-31.png",
+          "caption": "The annual guide uses the own-model geometry and burner-refitting figures. Adjacent pump conversion is NOT an annual service instruction; preserve the actual installed single/two-pipe arrangement."
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 35,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "78b8962ed3de40784c39512209912d9157bfa3758e97c47dca512a32625af56f",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-35.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 36,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "21e144a949b8050a9d0ff210a1a79f7c191066d8c25c173fc56739cdd9850fbe",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-36.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 37,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "deade422c5936173234a4b459f315694eb24c0f528e812565ab650c8d792d3ea",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-37.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 38,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "55b1e9d1f6e12890f46f3b9e0fc5b0ed0b9d4d3b80b7b9e19fafc491fb3bb853",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-38.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 39,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "b00bce3ab7ee0652833273af8c356420d524a969341ef132649ded4b731a7c5c",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-39.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 40,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "fb7a1cdd2df10037c11a79f3ce889e2510366ea230a65adc3c65e53e7b80fd2b",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-40.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 41,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "6b03c40c1a24d665bae2a57780c7a1cd8d2913d409a2454bb0c6c43a1d9fac2d",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-41.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 42,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "4a49b0d2a4896e55c35d1245ce7377b1ca32e3e7bba3630265d5e2e866ab6323",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-42.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 43,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "c8573596c95fc6123355a5a91c0dbea5214748e88ec7f69a022413cc5194d930",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-43.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 44,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "ee44966c77e24975247a8fb785e8f6cc4fd8f1c439f2852719ded2e66c39252b",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-44.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 45,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "eb3da841c9d0173f58584bc71d9eff6c16cf4328282ac6b207e712da6b339485",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-45.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "worcester-greenstar-danesmoor-external-regular-25-32-7731600250",
+      "model": "Greenstar Danesmoor External regular 25/32",
+      "gcNumber": null,
+      "fuel": "Oil",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 17,
+      "images": [
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 2,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "7a3f09852d3937f33855c4d7b700adc12f9cf4cff15912ecc2fbd8c81ff9f887",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-2.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 3,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "364fa911543ca51504baba3721ba87a7fda121732086c22300beaedcbbd02dbf",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-3.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 4,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "cec2ab40924cb15fae21938e5877c8e193352232176ca04eecc8d19468e4499f",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-4.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 13,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "34579381eff3cde8cbb2f6378904e8a5dca6fb01178cbb03e110100789302e0c",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-13.png",
+          "caption": "These original hydraulic examples explain the actual regular/open-vented or sealed/system branch and temporary filling link only; they are not a new wiring diagram, approved redesign or universal vessel-charge setting."
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 30,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "c6c3ef0cb35ffc4c79f209d718cb047a0e9466a82727d34b81e1926f7b239b73",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-30.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 31,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "e1d9655d8a74b4b87c0d2726971fcb229328f5e5e5508996871a337fd33182b1",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-31.png",
+          "caption": "The annual guide uses the own-model geometry and burner-refitting figures. Adjacent pump conversion is NOT an annual service instruction; preserve the actual installed single/two-pipe arrangement."
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 35,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "78b8962ed3de40784c39512209912d9157bfa3758e97c47dca512a32625af56f",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-35.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 36,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "21e144a949b8050a9d0ff210a1a79f7c191066d8c25c173fc56739cdd9850fbe",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-36.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 37,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "deade422c5936173234a4b459f315694eb24c0f528e812565ab650c8d792d3ea",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-37.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 38,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "55b1e9d1f6e12890f46f3b9e0fc5b0ed0b9d4d3b80b7b9e19fafc491fb3bb853",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-38.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 39,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "b00bce3ab7ee0652833273af8c356420d524a969341ef132649ded4b731a7c5c",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-39.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 40,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "fb7a1cdd2df10037c11a79f3ce889e2510366ea230a65adc3c65e53e7b80fd2b",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-40.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 41,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "6b03c40c1a24d665bae2a57780c7a1cd8d2913d409a2454bb0c6c43a1d9fac2d",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-41.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 42,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "4a49b0d2a4896e55c35d1245ce7377b1ca32e3e7bba3630265d5e2e866ab6323",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-42.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 43,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "c8573596c95fc6123355a5a91c0dbea5214748e88ec7f69a022413cc5194d930",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-43.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 44,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "ee44966c77e24975247a8fb785e8f6cc4fd8f1c439f2852719ded2e66c39252b",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-44.png"
+        },
+        {
+          "documentId": "danesmoor-external-6721844014-202201",
+          "page": 45,
+          "sourceSHA256": "a50cff1787346170492584482ee792ff71b6311018cc3c5b7cd3d8c98397c33f",
+          "sha256": "eb3da841c9d0173f58584bc71d9eff6c16cf4328282ac6b207e712da6b339485",
+          "asset": "manual-pages/danesmoor-external-6721844014-202201/page-45.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "worcester-greenstar-24ri-erp-7733600068",
+      "model": "Greenstar 24Ri ErP",
+      "gcNumber": "41-406-47",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 18,
+      "images": [
+        {
+          "documentId": "worcester-ri-erp-6720813283-201507",
+          "page": 7,
+          "sourceSHA256": "a07d068a0f8cce19cfd33b2f2592e247d742bf73ed6d7ca50a5b75d694578e8f",
+          "sha256": "0ef1a254863f84f3464a2e6272c8f72b8436d4748fd12d6484cbe71738775d01",
+          "asset": "manual-pages/worcester-ri-erp-6720813283-201507/page-7.png"
+        },
+        {
+          "documentId": "worcester-ri-erp-6720813283-201507",
+          "page": 8,
+          "sourceSHA256": "a07d068a0f8cce19cfd33b2f2592e247d742bf73ed6d7ca50a5b75d694578e8f",
+          "sha256": "a48b99cb23d252cd3837fa466b5cef80bc227958beb16323c548e40cbbb9c280",
+          "asset": "manual-pages/worcester-ri-erp-6720813283-201507/page-8.png"
+        },
+        {
+          "documentId": "worcester-ri-erp-6720813283-201507",
+          "page": 25,
+          "sourceSHA256": "a07d068a0f8cce19cfd33b2f2592e247d742bf73ed6d7ca50a5b75d694578e8f",
+          "sha256": "176569f086b39a1ceaf89415653a9404ca1b4f0f8f0736e9777befcd6087fc92",
+          "asset": "manual-pages/worcester-ri-erp-6720813283-201507/page-25.png"
+        },
+        {
+          "documentId": "worcester-ri-erp-6720813283-201507",
+          "page": 28,
+          "sourceSHA256": "a07d068a0f8cce19cfd33b2f2592e247d742bf73ed6d7ca50a5b75d694578e8f",
+          "sha256": "e57944623418f3cb837d99b0a09ef092a6e5b79d58f45fcc7333a7e03cf1b75e",
+          "asset": "manual-pages/worcester-ri-erp-6720813283-201507/page-28.png"
+        },
+        {
+          "documentId": "worcester-ri-erp-6720813283-201507",
+          "page": 29,
+          "sourceSHA256": "a07d068a0f8cce19cfd33b2f2592e247d742bf73ed6d7ca50a5b75d694578e8f",
+          "sha256": "9ccb0189890b882da1866269ef80b367d88a7f54d25b4d7f49798e81099fd1e8",
+          "asset": "manual-pages/worcester-ri-erp-6720813283-201507/page-29.png"
+        },
+        {
+          "documentId": "worcester-ri-erp-6720813283-201507",
+          "page": 30,
+          "sourceSHA256": "a07d068a0f8cce19cfd33b2f2592e247d742bf73ed6d7ca50a5b75d694578e8f",
+          "sha256": "9bbd1ce2e2e87c5643bdbd9c8ed83cf001a917166e66b0dc28005ccc375732ae",
+          "asset": "manual-pages/worcester-ri-erp-6720813283-201507/page-30.png"
+        },
+        {
+          "documentId": "worcester-ri-erp-6720813283-201507",
+          "page": 31,
+          "sourceSHA256": "a07d068a0f8cce19cfd33b2f2592e247d742bf73ed6d7ca50a5b75d694578e8f",
+          "sha256": "809a14ee1d2ce54df9a3d9a6d11ad92e45a54358a244d97d93d76b9baa9d7ffe",
+          "asset": "manual-pages/worcester-ri-erp-6720813283-201507/page-31.png"
+        },
+        {
+          "documentId": "worcester-ri-erp-6720813283-201507",
+          "page": 32,
+          "sourceSHA256": "a07d068a0f8cce19cfd33b2f2592e247d742bf73ed6d7ca50a5b75d694578e8f",
+          "sha256": "0e0d763556472bab52e294a2761fd82857e7afeac856860bf24aed7701edf709",
+          "asset": "manual-pages/worcester-ri-erp-6720813283-201507/page-32.png"
+        },
+        {
+          "documentId": "worcester-ri-erp-6720813283-201507",
+          "page": 33,
+          "sourceSHA256": "a07d068a0f8cce19cfd33b2f2592e247d742bf73ed6d7ca50a5b75d694578e8f",
+          "sha256": "61fd82842e1f645a691e3552d7b2a00115385f70233e7fc1fd9483f18b3a3917",
+          "asset": "manual-pages/worcester-ri-erp-6720813283-201507/page-33.png"
+        },
+        {
+          "documentId": "worcester-ri-erp-6720813283-201507",
+          "page": 34,
+          "sourceSHA256": "a07d068a0f8cce19cfd33b2f2592e247d742bf73ed6d7ca50a5b75d694578e8f",
+          "sha256": "92b6a7118461dc3794704a46ad454f3ccad211edc2491ed61229884d33fa0c0d",
+          "asset": "manual-pages/worcester-ri-erp-6720813283-201507/page-34.png"
+        },
+        {
+          "documentId": "worcester-ri-erp-6720813283-201507",
+          "page": 35,
+          "sourceSHA256": "a07d068a0f8cce19cfd33b2f2592e247d742bf73ed6d7ca50a5b75d694578e8f",
+          "sha256": "4a4d325e6f801141b0933d8b8cd1ea33bba7be7b186f2f35df7a77cd2979059c",
+          "asset": "manual-pages/worcester-ri-erp-6720813283-201507/page-35.png"
+        },
+        {
+          "documentId": "worcester-ri-erp-6720813283-201507",
+          "page": 36,
+          "sourceSHA256": "a07d068a0f8cce19cfd33b2f2592e247d742bf73ed6d7ca50a5b75d694578e8f",
+          "sha256": "c5e32c2ceff28d464eb86a045ea20a160710abdaa46e0af272b9c5573c591ac7",
+          "asset": "manual-pages/worcester-ri-erp-6720813283-201507/page-36.png"
+        },
+        {
+          "documentId": "worcester-ri-erp-6720813283-201507",
+          "page": 37,
+          "sourceSHA256": "a07d068a0f8cce19cfd33b2f2592e247d742bf73ed6d7ca50a5b75d694578e8f",
+          "sha256": "f1e2f101e9639c3a17a503bfa4260800dda5b54e04b7d2a32bb04e5f4a2e0be6",
+          "asset": "manual-pages/worcester-ri-erp-6720813283-201507/page-37.png"
+        },
+        {
+          "documentId": "worcester-ri-erp-6720813283-201507",
+          "page": 38,
+          "sourceSHA256": "a07d068a0f8cce19cfd33b2f2592e247d742bf73ed6d7ca50a5b75d694578e8f",
+          "sha256": "184d62eac78f988f07e5d0477f35a97813d939c3a719f519f903ed9916b1ac1a",
+          "asset": "manual-pages/worcester-ri-erp-6720813283-201507/page-38.png"
+        },
+        {
+          "documentId": "worcester-ri-erp-6720813283-201507",
+          "page": 43,
+          "sourceSHA256": "a07d068a0f8cce19cfd33b2f2592e247d742bf73ed6d7ca50a5b75d694578e8f",
+          "sha256": "999a0324410e95e8163a4da6ebac7bdedaa3a089d0dffd3c94f901f0f2bcf5e7",
+          "asset": "manual-pages/worcester-ri-erp-6720813283-201507/page-43.png"
+        },
+        {
+          "documentId": "worcester-ri-erp-6720813283-201507",
+          "page": 44,
+          "sourceSHA256": "a07d068a0f8cce19cfd33b2f2592e247d742bf73ed6d7ca50a5b75d694578e8f",
+          "sha256": "e7cc02e46fc00e021ed46c6f41cd8d20a76580db7e56e34c8af7af823a3c889a",
+          "asset": "manual-pages/worcester-ri-erp-6720813283-201507/page-44.png"
+        },
+        {
+          "documentId": "worcester-ri-erp-6720813283-201507",
+          "page": 45,
+          "sourceSHA256": "a07d068a0f8cce19cfd33b2f2592e247d742bf73ed6d7ca50a5b75d694578e8f",
+          "sha256": "1ef7b76aa7262cdd85c4ccebddbe35f07c6c96b28cdcab41978d0c751638f7e0",
+          "asset": "manual-pages/worcester-ri-erp-6720813283-201507/page-45.png"
+        },
+        {
+          "documentId": "worcester-ri-erp-6720813283-201507",
+          "page": 55,
+          "sourceSHA256": "a07d068a0f8cce19cfd33b2f2592e247d742bf73ed6d7ca50a5b75d694578e8f",
+          "sha256": "cfdc74515e037507e0e3b395668dc5c5964c52f14feaff6d2301150c03bdcea0",
+          "asset": "manual-pages/worcester-ri-erp-6720813283-201507/page-55.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
     }
   ],
   "liveServiceM8Connection": false,
@@ -7351,7 +10540,8 @@
     "Adds 14 exact-model partial gas/oil guide panels containing 176 retained-source descriptive tasks to previously empty panels. No new numerical reading, setting, automatic PASS or complete-service claim. All boiler objects/settings and all other 1711 records, identities, decoder, index/search/wiring and existing guides remain unchanged. Complete original diagrams, isolation/restoration, fitted parts/serial/current revision and physical/certificate requirements remain. AI session logic stays exact; only its catalogue binding and dependent metadata advance.",
     "Expands 14 exact-model annual guides from 176 to 338 tasks, with 61 original source-page images. 14 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 14 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1711 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
     "Expands 12 exact-model annual guides from 149 to 296 tasks, with 97 total original source-page images. 12 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 12 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1713 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
-    "Restores original28 legacy original-page illustrations for its independently admitted complete annual status as well as partial status; exact identity, fuel, source, page, document, task and image guards remain unchanged."
+    "Restores original28 legacy original-page illustrations for its independently admitted complete annual status as well as partial status; exact identity, fuel, source, page, document, task and image guards remain unchanged.",
+    "Expands 27 exact-model annual guides from 331 to 686 tasks, with 154 total original source-page images. 27 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 27 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1698 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances."
   ],
   "releaseStatus": "release"
 }

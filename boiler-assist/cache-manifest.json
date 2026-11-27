@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "892407a41601ab10",
+  "buildId": "3ab950e13a27fd42",
   "preparedOn": "2026-11-24",
-  "appVersion": "2026.11.27-r50-full-annual-gas-oil",
+  "appVersion": "2026.11.27-r51-full-annual-gas-oil",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -52,8 +52,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "bytes": 12489249,
-      "sha256": "7b4a2cce9bda9174d3a6d3bd8c6de04a7c2d1332dbfc3ff1186b42d853dd53f8"
+      "bytes": 12743941,
+      "sha256": "77f6e3718e4acc3f080939629e59d16406b10cc62facd02bde512663f0624727"
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -98,7 +98,7 @@
     {
       "url": "./help/ai-client.mjs",
       "bytes": 8814,
-      "sha256": "da6a1825d39ff16f73d82f58f5a92833ff6ca58f96b37ec15a908a3230c274e2"
+      "sha256": "6ba6d316f83178f0dc98319c2eaa3c182a0e5534ead78ca001041c99b43db8e2"
     },
     {
       "url": "./help/baxi400-heat-fault-guard.mjs",
@@ -268,7 +268,7 @@
     {
       "url": "./index.html",
       "bytes": 1586846,
-      "sha256": "864b152cbd0b8df1d5ef418c3a17b9850c9b35f5968dbb185c13d70d4134a460"
+      "sha256": "ecf924dac58b29fce95d86edf2868740b5bb37da81cc08a5a1a6739834e06e9b"
     },
     {
       "url": "./local-bridge.js",
@@ -2382,8 +2382,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 432517,
-      "sha256": "a1b0e7192b20cc77c4f2fcf95a64e512af9e03b2a6128d09b91bf0d5b7264f89"
+      "bytes": 614093,
+      "sha256": "9db59459484f0156c9150796b0505969e6401b299e2c54ef9cc0f3e4321bcbb7"
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -2452,8 +2452,8 @@
     },
     {
       "url": "./reviewed-service-pages.js",
-      "bytes": 163361,
-      "sha256": "ab4abfefe7eed2611f950231acad23dcccd99051cd22b932c531a41d3432f52a"
+      "bytes": 326558,
+      "sha256": "43112be27006fe877db4ddddb97126922b189c372adde1e2968275091cb43ffe"
     },
     {
       "url": "./manual-pages/main-system-he-5121186-02/page-10.png",
@@ -2939,7 +2939,292 @@
       "url": "./manual-pages/grant-pro-external-uk-doc0121-rev21-202602/page-63.png",
       "bytes": 593653,
       "sha256": "98a74f4b5885236196d94b808a424f31ea052abcaac82be02c004b0d892b5df8"
+    },
+    {
+      "url": "./manual-pages/ecofit-pure-openvent-0020230535-09/page-7.png",
+      "bytes": 255357,
+      "sha256": "4eeac33560b99f1b62ffaef5ba991fb66774a70dd5813cb51e54ee4e8afa3097"
+    },
+    {
+      "url": "./manual-pages/ecofit-pure-openvent-0020230535-09/page-18.png",
+      "bytes": 308766,
+      "sha256": "3b1195ea153b32de45a7476eafc6b8b37c6c899916358d0b67dd9d0897033936"
+    },
+    {
+      "url": "./manual-pages/ecofit-pure-openvent-0020230535-09/page-26.png",
+      "bytes": 325421,
+      "sha256": "fb54a7a90e960ebf5d063608cab3543bf1e48ae0f41dcc7be9d91f322894f19f"
+    },
+    {
+      "url": "./manual-pages/ecofit-pure-openvent-0020230535-09/page-27.png",
+      "bytes": 486691,
+      "sha256": "c0e56574efb101f2341bf20b916a591ecd22f3c9dfe56140bcd271351541b163"
+    },
+    {
+      "url": "./manual-pages/ecofit-pure-openvent-0020230535-09/page-28.png",
+      "bytes": 453861,
+      "sha256": "c43e3b21e46e9fde6d3dd3cecaeb78b8c8cf47d86a847bd26b21cd0d3c156095"
+    },
+    {
+      "url": "./manual-pages/ecofit-pure-openvent-0020230535-09/page-29.png",
+      "bytes": 493022,
+      "sha256": "6de0ee7492f75fb1b24ebccfe1f399d5f135c7d3df5c6d4dcb7aa2db2bc89265"
+    },
+    {
+      "url": "./manual-pages/ecofit-pure-openvent-0020230535-09/page-30.png",
+      "bytes": 460068,
+      "sha256": "fef2f678a4e93ce12420068c62f78c4f0c69807a8168cab4a0a869d02f390b8c"
+    },
+    {
+      "url": "./manual-pages/ecofit-pure-openvent-0020230535-09/page-31.png",
+      "bytes": 223560,
+      "sha256": "009e3b39b58f35bdc14b6604cd14d4299625a8fad56820311adf02681615946b"
+    },
+    {
+      "url": "./manual-pages/ecofit-pure-openvent-0020230535-09/page-32.png",
+      "bytes": 497889,
+      "sha256": "31da141168d194574918cf9c09136a2e8d63d1f69c082f79aee65caf7060c8eb"
+    },
+    {
+      "url": "./manual-pages/ecofit-pure-openvent-0020230535-09/page-33.png",
+      "bytes": 630277,
+      "sha256": "80dce316812745c15fd20eb42a64d6234d19976a3131fa582ebf04914f6579dc"
+    },
+    {
+      "url": "./manual-pages/ecofit-pure-openvent-0020230535-09/page-34.png",
+      "bytes": 456066,
+      "sha256": "f61aa8bec4d1ac8877f286134f4838bec71a0b535a99fa9cedee120b62ecb7ac"
+    },
+    {
+      "url": "./manual-pages/ecofit-pure-openvent-0020230535-09/page-37.png",
+      "bytes": 377957,
+      "sha256": "40afb8d953cc234f60fe67a413311b840d3a03c74de776f5daa33287184eed71"
+    },
+    {
+      "url": "./manual-pages/ecofit-pure-openvent-0020230535-09/page-38.png",
+      "bytes": 340392,
+      "sha256": "108dcb6af4396c2e8bff7da740da93b71bb782b575a2d6f21adbb4e298f60fdc"
+    },
+    {
+      "url": "./manual-pages/ideal-classic-se-200544-a05/page-04.png",
+      "bytes": 541746,
+      "sha256": "ac0c3ce4ff564fee2dbc498707ec09a88f3c1f21a21ed4e39692cd8de6ad9cdb"
+    },
+    {
+      "url": "./manual-pages/ideal-classic-se-200544-a05/page-07.png",
+      "bytes": 632455,
+      "sha256": "4397b68333cfb5c29b5962295e5a69dc1e8688cda9c8f9e436e27b1916fe54e5"
+    },
+    {
+      "url": "./manual-pages/ideal-classic-se-200544-a05/page-24.png",
+      "bytes": 791649,
+      "sha256": "12305404a5e101533b0a09f053dabda3701c36423c3115601460185625f050bc"
+    },
+    {
+      "url": "./manual-pages/ideal-classic-se-200544-a05/page-27.png",
+      "bytes": 760025,
+      "sha256": "8c3a880f560e8ac6fd66bf1e7d81d4988281490a93bc89967e6bd34541493b35"
+    },
+    {
+      "url": "./manual-pages/ideal-classic-se-200544-a05/page-28.png",
+      "bytes": 653028,
+      "sha256": "2af78d303f0f194ea17b74d3cf255ba37f2de30e3cd67a9ec7fde4a63e739118"
+    },
+    {
+      "url": "./manual-pages/ideal-classic-se-200544-a05/page-29.png",
+      "bytes": 731988,
+      "sha256": "f14a2faf44dc62a826711e8ea9f0a81b0e4777a9b668420788c6ddfaa627e277"
+    },
+    {
+      "url": "./manual-pages/ideal-classic-se-200544-a05/page-30.png",
+      "bytes": 626652,
+      "sha256": "4ce78886c37c97be96d8012f33844b9e226fa155bc3caf4296c6823625a2eb4d"
+    },
+    {
+      "url": "./manual-pages/ideal-classic-se-200544-a05/page-31.png",
+      "bytes": 505131,
+      "sha256": "b5c8bf7c5a2cffa2d8fb4332b4810a65bc4096498b83fcfc97713cfc45b9adf8"
+    },
+    {
+      "url": "./manual-pages/ideal-classic-se-200544-a05/page-33.png",
+      "bytes": 436936,
+      "sha256": "63141a0eb6a056a3d931cbdb6c491a584163dd870724ce7749bbd257150251a9"
+    },
+    {
+      "url": "./manual-pages/danesmoor-external-6721844014-202201/page-2.png",
+      "bytes": 348860,
+      "sha256": "7a3f09852d3937f33855c4d7b700adc12f9cf4cff15912ecc2fbd8c81ff9f887"
+    },
+    {
+      "url": "./manual-pages/danesmoor-external-6721844014-202201/page-3.png",
+      "bytes": 457004,
+      "sha256": "364fa911543ca51504baba3721ba87a7fda121732086c22300beaedcbbd02dbf"
+    },
+    {
+      "url": "./manual-pages/danesmoor-external-6721844014-202201/page-4.png",
+      "bytes": 559715,
+      "sha256": "cec2ab40924cb15fae21938e5877c8e193352232176ca04eecc8d19468e4499f"
+    },
+    {
+      "url": "./manual-pages/danesmoor-external-6721844014-202201/page-13.png",
+      "bytes": 373699,
+      "sha256": "34579381eff3cde8cbb2f6378904e8a5dca6fb01178cbb03e110100789302e0c"
+    },
+    {
+      "url": "./manual-pages/danesmoor-external-6721844014-202201/page-30.png",
+      "bytes": 298196,
+      "sha256": "c6c3ef0cb35ffc4c79f209d718cb047a0e9466a82727d34b81e1926f7b239b73"
+    },
+    {
+      "url": "./manual-pages/danesmoor-external-6721844014-202201/page-31.png",
+      "bytes": 484826,
+      "sha256": "e1d9655d8a74b4b87c0d2726971fcb229328f5e5e5508996871a337fd33182b1"
+    },
+    {
+      "url": "./manual-pages/danesmoor-external-6721844014-202201/page-35.png",
+      "bytes": 541066,
+      "sha256": "78b8962ed3de40784c39512209912d9157bfa3758e97c47dca512a32625af56f"
+    },
+    {
+      "url": "./manual-pages/danesmoor-external-6721844014-202201/page-36.png",
+      "bytes": 548614,
+      "sha256": "21e144a949b8050a9d0ff210a1a79f7c191066d8c25c173fc56739cdd9850fbe"
+    },
+    {
+      "url": "./manual-pages/danesmoor-external-6721844014-202201/page-37.png",
+      "bytes": 484375,
+      "sha256": "deade422c5936173234a4b459f315694eb24c0f528e812565ab650c8d792d3ea"
+    },
+    {
+      "url": "./manual-pages/danesmoor-external-6721844014-202201/page-38.png",
+      "bytes": 428314,
+      "sha256": "55b1e9d1f6e12890f46f3b9e0fc5b0ed0b9d4d3b80b7b9e19fafc491fb3bb853"
+    },
+    {
+      "url": "./manual-pages/danesmoor-external-6721844014-202201/page-39.png",
+      "bytes": 383225,
+      "sha256": "b00bce3ab7ee0652833273af8c356420d524a969341ef132649ded4b731a7c5c"
+    },
+    {
+      "url": "./manual-pages/danesmoor-external-6721844014-202201/page-40.png",
+      "bytes": 373584,
+      "sha256": "fb7a1cdd2df10037c11a79f3ce889e2510366ea230a65adc3c65e53e7b80fd2b"
+    },
+    {
+      "url": "./manual-pages/danesmoor-external-6721844014-202201/page-41.png",
+      "bytes": 367514,
+      "sha256": "6b03c40c1a24d665bae2a57780c7a1cd8d2913d409a2454bb0c6c43a1d9fac2d"
+    },
+    {
+      "url": "./manual-pages/danesmoor-external-6721844014-202201/page-42.png",
+      "bytes": 422652,
+      "sha256": "4a49b0d2a4896e55c35d1245ce7377b1ca32e3e7bba3630265d5e2e866ab6323"
+    },
+    {
+      "url": "./manual-pages/danesmoor-external-6721844014-202201/page-43.png",
+      "bytes": 377828,
+      "sha256": "c8573596c95fc6123355a5a91c0dbea5214748e88ec7f69a022413cc5194d930"
+    },
+    {
+      "url": "./manual-pages/danesmoor-external-6721844014-202201/page-44.png",
+      "bytes": 450839,
+      "sha256": "ee44966c77e24975247a8fb785e8f6cc4fd8f1c439f2852719ded2e66c39252b"
+    },
+    {
+      "url": "./manual-pages/danesmoor-external-6721844014-202201/page-45.png",
+      "bytes": 243052,
+      "sha256": "eb3da841c9d0173f58584bc71d9eff6c16cf4328282ac6b207e712da6b339485"
+    },
+    {
+      "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-7.png",
+      "bytes": 194356,
+      "sha256": "0ef1a254863f84f3464a2e6272c8f72b8436d4748fd12d6484cbe71738775d01"
+    },
+    {
+      "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-8.png",
+      "bytes": 144116,
+      "sha256": "a48b99cb23d252cd3837fa466b5cef80bc227958beb16323c548e40cbbb9c280"
+    },
+    {
+      "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-25.png",
+      "bytes": 274071,
+      "sha256": "176569f086b39a1ceaf89415653a9404ca1b4f0f8f0736e9777befcd6087fc92"
+    },
+    {
+      "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-28.png",
+      "bytes": 382536,
+      "sha256": "e57944623418f3cb837d99b0a09ef092a6e5b79d58f45fcc7333a7e03cf1b75e"
+    },
+    {
+      "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-29.png",
+      "bytes": 366245,
+      "sha256": "9ccb0189890b882da1866269ef80b367d88a7f54d25b4d7f49798e81099fd1e8"
+    },
+    {
+      "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-30.png",
+      "bytes": 299726,
+      "sha256": "9bbd1ce2e2e87c5643bdbd9c8ed83cf001a917166e66b0dc28005ccc375732ae"
+    },
+    {
+      "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-31.png",
+      "bytes": 248139,
+      "sha256": "809a14ee1d2ce54df9a3d9a6d11ad92e45a54358a244d97d93d76b9baa9d7ffe"
+    },
+    {
+      "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-32.png",
+      "bytes": 382483,
+      "sha256": "0e0d763556472bab52e294a2761fd82857e7afeac856860bf24aed7701edf709"
+    },
+    {
+      "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-33.png",
+      "bytes": 370039,
+      "sha256": "61fd82842e1f645a691e3552d7b2a00115385f70233e7fc1fd9483f18b3a3917"
+    },
+    {
+      "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-34.png",
+      "bytes": 322539,
+      "sha256": "92b6a7118461dc3794704a46ad454f3ccad211edc2491ed61229884d33fa0c0d"
+    },
+    {
+      "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-35.png",
+      "bytes": 360101,
+      "sha256": "4a4d325e6f801141b0933d8b8cd1ea33bba7be7b186f2f35df7a77cd2979059c"
+    },
+    {
+      "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-36.png",
+      "bytes": 424551,
+      "sha256": "c5e32c2ceff28d464eb86a045ea20a160710abdaa46e0af272b9c5573c591ac7"
+    },
+    {
+      "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-37.png",
+      "bytes": 365656,
+      "sha256": "f1e2f101e9639c3a17a503bfa4260800dda5b54e04b7d2a32bb04e5f4a2e0be6"
+    },
+    {
+      "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-38.png",
+      "bytes": 347703,
+      "sha256": "184d62eac78f988f07e5d0477f35a97813d939c3a719f519f903ed9916b1ac1a"
+    },
+    {
+      "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-43.png",
+      "bytes": 396909,
+      "sha256": "999a0324410e95e8163a4da6ebac7bdedaa3a089d0dffd3c94f901f0f2bcf5e7"
+    },
+    {
+      "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-44.png",
+      "bytes": 357705,
+      "sha256": "e7cc02e46fc00e021ed46c6f41cd8d20a76580db7e56e34c8af7af823a3c889a"
+    },
+    {
+      "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-45.png",
+      "bytes": 371841,
+      "sha256": "1ef7b76aa7262cdd85c4ccebddbe35f07c6c96b28cdcab41978d0c751638f7e0"
+    },
+    {
+      "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-55.png",
+      "bytes": 267165,
+      "sha256": "cfdc74515e037507e0e3b395668dc5c5964c52f14feaff6d2301150c03bdcea0"
     }
   ],
-  "totalBytes": 209697722
+  "totalBytes": 234305368
 }
