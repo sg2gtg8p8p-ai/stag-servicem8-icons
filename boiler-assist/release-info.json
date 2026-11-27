@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.27-r48-gas-oil-service-batch",
+  "appVersion": "2026.11.27-r49-illustrated-full-annual",
   "preparedOn": "2026-11-27",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1725,
@@ -3814,6 +3814,230 @@
       "scope": "Exact-model own-retained-fact partial service guide added to a previously empty panel. No new numeric rule/reading/settings or automatic PASS. Existing model/fuel/serial/revision/illustration/conflict/parts/physical/certificate holds remain.",
       "newNumericRules": false,
       "fullGuideClaim": false
+    },
+    {
+      "id": "main-main-system-18-he-41-467-01",
+      "gcNumber": "41-467-01",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 16,
+      "previousServicingTasks": 4,
+      "newConditionalTasks": 2,
+      "status": "complete",
+      "sourceReference": "5121186-02 (02; copyright 2007)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "main-main-system-24-he-41-467-02",
+      "gcNumber": "41-467-02",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 16,
+      "previousServicingTasks": 4,
+      "newConditionalTasks": 2,
+      "status": "complete",
+      "sourceReference": "5121186-02 (02; copyright 2007)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "main-main-system-28-he-41-467-03",
+      "gcNumber": "41-467-03",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 16,
+      "previousServicingTasks": 4,
+      "newConditionalTasks": 2,
+      "status": "complete",
+      "sourceReference": "5121186-02 (02; copyright 2007)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "potterton-potterton-titanium-12-heat-41-592-61",
+      "gcNumber": "41-592-61",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 30,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 2,
+      "status": "complete",
+      "sourceReference": "7717257-02 / 2/20",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "potterton-potterton-titanium-15-heat-41-592-62",
+      "gcNumber": "41-592-62",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 30,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 2,
+      "status": "complete",
+      "sourceReference": "7717257-02 / 2/20",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "potterton-potterton-titanium-18-heat-41-592-63",
+      "gcNumber": "41-592-63",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 30,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 2,
+      "status": "complete",
+      "sourceReference": "7717257-02 / 2/20",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "potterton-potterton-titanium-24-heat-41-592-64",
+      "gcNumber": "41-592-64",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 30,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 2,
+      "status": "complete",
+      "sourceReference": "7717257-02 / 2/20",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "potterton-potterton-titanium-30-heat-41-592-65",
+      "gcNumber": "41-592-65",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 30,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 2,
+      "status": "complete",
+      "sourceReference": "7717257-02 / 2/20",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "main-main-eco-elite-25-combi-erp-7219409",
+      "gcNumber": "47-467-12",
+      "productNumber": "7219409",
+      "fuel": "Natural Gas",
+      "servicingTasks": 19,
+      "previousServicingTasks": 6,
+      "newConditionalTasks": 2,
+      "status": "complete",
+      "sourceReference": "7219660-01 (04/15)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "main-main-eco-elite-30-combi-erp-7219410",
+      "gcNumber": "47-467-13",
+      "productNumber": "7219410",
+      "fuel": "Natural Gas",
+      "servicingTasks": 19,
+      "previousServicingTasks": 6,
+      "newConditionalTasks": 2,
+      "status": "complete",
+      "sourceReference": "7219660-01 (04/15)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "main-main-eco-elite-24-system-7219411",
+      "gcNumber": "41-467-28",
+      "productNumber": "7219411",
+      "fuel": "Natural Gas",
+      "servicingTasks": 18,
+      "previousServicingTasks": 5,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "Main Eco Elite System ErP installation/service manual — document number not printed (Revision/date not printed in retrieved document)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "main-main-eco-elite-28-system-7219412",
+      "gcNumber": "41-467-29",
+      "productNumber": "7219412",
+      "fuel": "Natural Gas",
+      "servicingTasks": 18,
+      "previousServicingTasks": 5,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "Main Eco Elite System ErP installation/service manual — document number not printed (Revision/date not printed in retrieved document)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "worcester-greenstar-utility-regular-32-50-7731600266",
+      "gcNumber": null,
+      "productNumber": "7731600266",
+      "fuel": "Oil",
+      "servicingTasks": 33,
+      "previousServicingTasks": 26,
+      "newConditionalTasks": 3,
+      "status": "complete",
+      "sourceReference": "6721843976(2022/01); retained official URL6720821751; RDB3.2_BX_32-50_20148054-1-parts; UKDOC0120 Rev3.2 February2026; only pump filter subsection47 and mapping57",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "worcester-greenstar-utility-regular-50-70-7731600267",
+      "gcNumber": null,
+      "productNumber": "7731600267",
+      "fuel": "Oil",
+      "servicingTasks": 33,
+      "previousServicingTasks": 26,
+      "newConditionalTasks": 3,
+      "status": "complete",
+      "sourceReference": "6721843976(2022/01); retained official URL6720821751; RDB3.2_BT_50-70_20148110-1-parts; UKDOC0120 Rev3.2 February2026; only pump filter subsection47 and mapping57",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
     }
   ],
   "sourcePDFsIncluded": [],
@@ -3926,12 +4150,1392 @@
       "scope": "Complete unchanged reviewed source-page images at point of use. Not a complete standalone service/repair guide, current revision or installed-serial proof. Historic numeric tables remain source reference only; no numerical FGA/FPT or certificate rule is added.",
       "currentRevisionOrInstalledSerialApplicabilityProved": false,
       "newNumericRules": false
+    },
+    {
+      "modelID": "main-main-system-18-he-41-467-01",
+      "model": "Main System 18 HE",
+      "gcNumber": "41-467-01",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 8,
+      "images": [
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 10,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "f5d502a64241d68531999945a4fed8f44f7bb5173f92bcf7820e50f907b04ec3",
+          "asset": "manual-pages/main-system-he-5121186-02/page-10.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 14,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "5af4e4500d26f18d4cffb39a3bb86fb98f079dc1eff8c0203400bfadfeace36e",
+          "asset": "manual-pages/main-system-he-5121186-02/page-14.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 34,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "8fe3bbd34fefa14bb8c6f112fae2f09335257a34c570970b5829eed83f3f9e9a",
+          "asset": "manual-pages/main-system-he-5121186-02/page-34.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 35,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "70ec7b04b0c53ce8fd3721162c27027f0640f51900f7f23fd7b30a1ec397d411",
+          "asset": "manual-pages/main-system-he-5121186-02/page-35.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 36,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "36e560a7b33b976dd0e250897df2bc68c013019b7dd9e4d70993f0c82049fafd",
+          "asset": "manual-pages/main-system-he-5121186-02/page-36.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 37,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "96c5ee397bf614171edc33605a13271f53f6a4a217a863ddcec2de52f9d892ec",
+          "asset": "manual-pages/main-system-he-5121186-02/page-37.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 38,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "0cd8a6a60df180e82c0c22ab61cc36af9dcd62543fb51aa7a76e58771fd67d51",
+          "asset": "manual-pages/main-system-he-5121186-02/page-38.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 47,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "dbb44fc4cf0a90647ec1ba1f659c841a843761248edf01278f60c2e729f8ded9",
+          "asset": "manual-pages/main-system-he-5121186-02/page-47.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "main-main-system-24-he-41-467-02",
+      "model": "Main System 24 HE",
+      "gcNumber": "41-467-02",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 8,
+      "images": [
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 11,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "dc59bf435effd3cf1c4187b417c5e279cc0756d0c27a85e1487bbc45abdf10f8",
+          "asset": "manual-pages/main-system-he-5121186-02/page-11.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 14,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "5af4e4500d26f18d4cffb39a3bb86fb98f079dc1eff8c0203400bfadfeace36e",
+          "asset": "manual-pages/main-system-he-5121186-02/page-14.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 34,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "8fe3bbd34fefa14bb8c6f112fae2f09335257a34c570970b5829eed83f3f9e9a",
+          "asset": "manual-pages/main-system-he-5121186-02/page-34.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 35,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "70ec7b04b0c53ce8fd3721162c27027f0640f51900f7f23fd7b30a1ec397d411",
+          "asset": "manual-pages/main-system-he-5121186-02/page-35.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 36,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "36e560a7b33b976dd0e250897df2bc68c013019b7dd9e4d70993f0c82049fafd",
+          "asset": "manual-pages/main-system-he-5121186-02/page-36.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 37,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "96c5ee397bf614171edc33605a13271f53f6a4a217a863ddcec2de52f9d892ec",
+          "asset": "manual-pages/main-system-he-5121186-02/page-37.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 38,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "0cd8a6a60df180e82c0c22ab61cc36af9dcd62543fb51aa7a76e58771fd67d51",
+          "asset": "manual-pages/main-system-he-5121186-02/page-38.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 47,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "dbb44fc4cf0a90647ec1ba1f659c841a843761248edf01278f60c2e729f8ded9",
+          "asset": "manual-pages/main-system-he-5121186-02/page-47.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "main-main-system-28-he-41-467-03",
+      "model": "Main System 28 HE",
+      "gcNumber": "41-467-03",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 8,
+      "images": [
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 12,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "37b1e6be8d473230868e35887e725e0703d02559d11ca9ce927ee6606f404451",
+          "asset": "manual-pages/main-system-he-5121186-02/page-12.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 14,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "5af4e4500d26f18d4cffb39a3bb86fb98f079dc1eff8c0203400bfadfeace36e",
+          "asset": "manual-pages/main-system-he-5121186-02/page-14.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 34,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "8fe3bbd34fefa14bb8c6f112fae2f09335257a34c570970b5829eed83f3f9e9a",
+          "asset": "manual-pages/main-system-he-5121186-02/page-34.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 35,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "70ec7b04b0c53ce8fd3721162c27027f0640f51900f7f23fd7b30a1ec397d411",
+          "asset": "manual-pages/main-system-he-5121186-02/page-35.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 36,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "36e560a7b33b976dd0e250897df2bc68c013019b7dd9e4d70993f0c82049fafd",
+          "asset": "manual-pages/main-system-he-5121186-02/page-36.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 37,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "96c5ee397bf614171edc33605a13271f53f6a4a217a863ddcec2de52f9d892ec",
+          "asset": "manual-pages/main-system-he-5121186-02/page-37.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 38,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "0cd8a6a60df180e82c0c22ab61cc36af9dcd62543fb51aa7a76e58771fd67d51",
+          "asset": "manual-pages/main-system-he-5121186-02/page-38.png"
+        },
+        {
+          "documentId": "main-own-main-system-he-2007",
+          "page": 47,
+          "sourceSHA256": "bc6144758848a0caf3f501e90f2f48d2b3537be3df5ea7ab4bb278e9ec9c3419",
+          "sha256": "dbb44fc4cf0a90647ec1ba1f659c841a843761248edf01278f60c2e729f8ded9",
+          "asset": "manual-pages/main-system-he-5121186-02/page-47.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "potterton-potterton-titanium-12-heat-41-592-61",
+      "model": "Potterton Titanium 12 Heat",
+      "gcNumber": "41-592-61",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 16,
+      "images": [
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 12,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "b8a635765aac14fda9d6b34662dd5f41471157ee972c53e2f9c9813bf58f70f2",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-12.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 14,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "962a0b84d1d254e1ed6a8d1acb6e11e9bd5205bc20e1ff955bc9775d332cb1aa",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-14.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 21,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "ae0063b52da0fc1922c63424db466a63b7033b848ccffc930ab4a95bdb01bc52",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-21.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 35,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a4ea6b206efe855deae68fe291e017a3de73da522b1ae26bc15c875402c0d209",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-35.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 42,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a4231db8decf3a6c5c0ee98510514a8c13b6a9bbad4468aa6fd8efa21710886c",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-42.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 43,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "fb4f962d6e8a9188b513adfe8b84c31af090d0b16fa3827e9a3aa205e3bf43bd",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-43.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 44,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "daad1d0013c4b41eff1f01766a76b57d83c890642f618401f576eb3ea7aa5902",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-44.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 45,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "307302adf15257c3396f4a215f4eb7a9f0cbb1567b119061052816280d91b965",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-45.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 46,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a2f117709f4c81850fd288fdbf3aa20ffb9afadf2c9efa0298f94ed9c868bb7c",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-46.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 47,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "9efb4dee5c3ed001841fa4ffe29196a12fb418c799eedc8dbfbe35dc7eae8db2",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-47.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 48,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "8e2103980a36ebf62c86b46a84496e56917962028249e273d6cc793beec0fac7",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-48.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 49,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "243bd83ca26e5ddbdce488860817dc041f1a18bec13f3b4735cb00f96363d303",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-49.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 50,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "7ece9ca87df3553a0fcbc223c8041182eeb5cb5e53a3124204b0a30371807e32",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-50.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 51,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "892c30616483d4b74f02f3a9fdff94b037a2851b56b7b0ce43a8e648071f1469",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-51.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 55,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a735b8495005750b149849f63f4ecab8d310a574de2ed5ecd6824e6fbac54863",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-55.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 62,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "3cdbaf1b01ac4c469a6899a8dcc367c5f6feb57e46f7d797471f492bd8343f80",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-62.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "potterton-potterton-titanium-15-heat-41-592-62",
+      "model": "Potterton Titanium 15 Heat",
+      "gcNumber": "41-592-62",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 16,
+      "images": [
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 12,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "b8a635765aac14fda9d6b34662dd5f41471157ee972c53e2f9c9813bf58f70f2",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-12.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 14,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "962a0b84d1d254e1ed6a8d1acb6e11e9bd5205bc20e1ff955bc9775d332cb1aa",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-14.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 21,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "ae0063b52da0fc1922c63424db466a63b7033b848ccffc930ab4a95bdb01bc52",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-21.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 35,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a4ea6b206efe855deae68fe291e017a3de73da522b1ae26bc15c875402c0d209",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-35.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 42,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a4231db8decf3a6c5c0ee98510514a8c13b6a9bbad4468aa6fd8efa21710886c",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-42.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 43,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "fb4f962d6e8a9188b513adfe8b84c31af090d0b16fa3827e9a3aa205e3bf43bd",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-43.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 44,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "daad1d0013c4b41eff1f01766a76b57d83c890642f618401f576eb3ea7aa5902",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-44.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 45,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "307302adf15257c3396f4a215f4eb7a9f0cbb1567b119061052816280d91b965",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-45.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 46,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a2f117709f4c81850fd288fdbf3aa20ffb9afadf2c9efa0298f94ed9c868bb7c",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-46.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 47,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "9efb4dee5c3ed001841fa4ffe29196a12fb418c799eedc8dbfbe35dc7eae8db2",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-47.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 48,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "8e2103980a36ebf62c86b46a84496e56917962028249e273d6cc793beec0fac7",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-48.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 49,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "243bd83ca26e5ddbdce488860817dc041f1a18bec13f3b4735cb00f96363d303",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-49.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 50,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "7ece9ca87df3553a0fcbc223c8041182eeb5cb5e53a3124204b0a30371807e32",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-50.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 51,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "892c30616483d4b74f02f3a9fdff94b037a2851b56b7b0ce43a8e648071f1469",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-51.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 55,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a735b8495005750b149849f63f4ecab8d310a574de2ed5ecd6824e6fbac54863",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-55.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 62,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "3cdbaf1b01ac4c469a6899a8dcc367c5f6feb57e46f7d797471f492bd8343f80",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-62.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "potterton-potterton-titanium-18-heat-41-592-63",
+      "model": "Potterton Titanium 18 Heat",
+      "gcNumber": "41-592-63",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 16,
+      "images": [
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 12,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "b8a635765aac14fda9d6b34662dd5f41471157ee972c53e2f9c9813bf58f70f2",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-12.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 14,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "962a0b84d1d254e1ed6a8d1acb6e11e9bd5205bc20e1ff955bc9775d332cb1aa",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-14.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 21,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "ae0063b52da0fc1922c63424db466a63b7033b848ccffc930ab4a95bdb01bc52",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-21.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 35,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a4ea6b206efe855deae68fe291e017a3de73da522b1ae26bc15c875402c0d209",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-35.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 42,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a4231db8decf3a6c5c0ee98510514a8c13b6a9bbad4468aa6fd8efa21710886c",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-42.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 43,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "fb4f962d6e8a9188b513adfe8b84c31af090d0b16fa3827e9a3aa205e3bf43bd",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-43.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 44,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "daad1d0013c4b41eff1f01766a76b57d83c890642f618401f576eb3ea7aa5902",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-44.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 45,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "307302adf15257c3396f4a215f4eb7a9f0cbb1567b119061052816280d91b965",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-45.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 46,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a2f117709f4c81850fd288fdbf3aa20ffb9afadf2c9efa0298f94ed9c868bb7c",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-46.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 47,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "9efb4dee5c3ed001841fa4ffe29196a12fb418c799eedc8dbfbe35dc7eae8db2",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-47.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 48,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "8e2103980a36ebf62c86b46a84496e56917962028249e273d6cc793beec0fac7",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-48.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 49,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "243bd83ca26e5ddbdce488860817dc041f1a18bec13f3b4735cb00f96363d303",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-49.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 50,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "7ece9ca87df3553a0fcbc223c8041182eeb5cb5e53a3124204b0a30371807e32",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-50.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 51,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "892c30616483d4b74f02f3a9fdff94b037a2851b56b7b0ce43a8e648071f1469",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-51.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 55,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a735b8495005750b149849f63f4ecab8d310a574de2ed5ecd6824e6fbac54863",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-55.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 62,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "3cdbaf1b01ac4c469a6899a8dcc367c5f6feb57e46f7d797471f492bd8343f80",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-62.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "potterton-potterton-titanium-24-heat-41-592-64",
+      "model": "Potterton Titanium 24 Heat",
+      "gcNumber": "41-592-64",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 16,
+      "images": [
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 12,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "b8a635765aac14fda9d6b34662dd5f41471157ee972c53e2f9c9813bf58f70f2",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-12.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 14,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "962a0b84d1d254e1ed6a8d1acb6e11e9bd5205bc20e1ff955bc9775d332cb1aa",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-14.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 21,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "ae0063b52da0fc1922c63424db466a63b7033b848ccffc930ab4a95bdb01bc52",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-21.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 35,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a4ea6b206efe855deae68fe291e017a3de73da522b1ae26bc15c875402c0d209",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-35.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 42,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a4231db8decf3a6c5c0ee98510514a8c13b6a9bbad4468aa6fd8efa21710886c",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-42.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 43,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "fb4f962d6e8a9188b513adfe8b84c31af090d0b16fa3827e9a3aa205e3bf43bd",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-43.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 44,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "daad1d0013c4b41eff1f01766a76b57d83c890642f618401f576eb3ea7aa5902",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-44.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 45,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "307302adf15257c3396f4a215f4eb7a9f0cbb1567b119061052816280d91b965",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-45.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 46,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a2f117709f4c81850fd288fdbf3aa20ffb9afadf2c9efa0298f94ed9c868bb7c",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-46.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 47,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "9efb4dee5c3ed001841fa4ffe29196a12fb418c799eedc8dbfbe35dc7eae8db2",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-47.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 48,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "8e2103980a36ebf62c86b46a84496e56917962028249e273d6cc793beec0fac7",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-48.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 49,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "243bd83ca26e5ddbdce488860817dc041f1a18bec13f3b4735cb00f96363d303",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-49.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 50,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "7ece9ca87df3553a0fcbc223c8041182eeb5cb5e53a3124204b0a30371807e32",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-50.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 51,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "892c30616483d4b74f02f3a9fdff94b037a2851b56b7b0ce43a8e648071f1469",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-51.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 55,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a735b8495005750b149849f63f4ecab8d310a574de2ed5ecd6824e6fbac54863",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-55.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 62,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "3cdbaf1b01ac4c469a6899a8dcc367c5f6feb57e46f7d797471f492bd8343f80",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-62.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "potterton-potterton-titanium-30-heat-41-592-65",
+      "model": "Potterton Titanium 30 Heat",
+      "gcNumber": "41-592-65",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 16,
+      "images": [
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 12,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "b8a635765aac14fda9d6b34662dd5f41471157ee972c53e2f9c9813bf58f70f2",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-12.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 14,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "962a0b84d1d254e1ed6a8d1acb6e11e9bd5205bc20e1ff955bc9775d332cb1aa",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-14.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 21,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "ae0063b52da0fc1922c63424db466a63b7033b848ccffc930ab4a95bdb01bc52",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-21.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 35,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a4ea6b206efe855deae68fe291e017a3de73da522b1ae26bc15c875402c0d209",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-35.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 42,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a4231db8decf3a6c5c0ee98510514a8c13b6a9bbad4468aa6fd8efa21710886c",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-42.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 43,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "fb4f962d6e8a9188b513adfe8b84c31af090d0b16fa3827e9a3aa205e3bf43bd",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-43.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 44,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "daad1d0013c4b41eff1f01766a76b57d83c890642f618401f576eb3ea7aa5902",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-44.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 45,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "307302adf15257c3396f4a215f4eb7a9f0cbb1567b119061052816280d91b965",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-45.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 46,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a2f117709f4c81850fd288fdbf3aa20ffb9afadf2c9efa0298f94ed9c868bb7c",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-46.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 47,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "9efb4dee5c3ed001841fa4ffe29196a12fb418c799eedc8dbfbe35dc7eae8db2",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-47.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 48,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "8e2103980a36ebf62c86b46a84496e56917962028249e273d6cc793beec0fac7",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-48.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 49,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "243bd83ca26e5ddbdce488860817dc041f1a18bec13f3b4735cb00f96363d303",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-49.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 50,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "7ece9ca87df3553a0fcbc223c8041182eeb5cb5e53a3124204b0a30371807e32",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-50.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 51,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "892c30616483d4b74f02f3a9fdff94b037a2851b56b7b0ce43a8e648071f1469",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-51.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 55,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "a735b8495005750b149849f63f4ecab8d310a574de2ed5ecd6824e6fbac54863",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-55.png"
+        },
+        {
+          "documentId": "potterton-titanium-heat-7717257-02",
+          "page": 62,
+          "sourceSHA256": "af21871c976a7f560be26cd63b095cc6f3fe99edc94d51616c4aef8b1b1d8287",
+          "sha256": "3cdbaf1b01ac4c469a6899a8dcc367c5f6feb57e46f7d797471f492bd8343f80",
+          "asset": "manual-pages/potterton-titanium-heat-7717257-02/page-62.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "main-main-eco-elite-25-combi-erp-7219409",
+      "model": "Main Eco Elite 25 Combi ErP",
+      "gcNumber": "47-467-12",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 7,
+      "images": [
+        {
+          "documentId": "main-own-main-elite-combi-erp",
+          "page": 28,
+          "sourceSHA256": "0ff30528d19d610508c0fada6834202cf31ac683843e979f287b4cf0aaee15ff",
+          "sha256": "2ddaa9e8aceafd87bfd9efa47765acddd2fb5263198e0f0909a2eaebc2e398ad",
+          "asset": "manual-pages/main-own-main-elite-combi-erp/page-28.png"
+        },
+        {
+          "documentId": "main-own-main-elite-combi-erp",
+          "page": 29,
+          "sourceSHA256": "0ff30528d19d610508c0fada6834202cf31ac683843e979f287b4cf0aaee15ff",
+          "sha256": "4a824b48f61deee704c9f061e75b029e83becb2c13826fd728100e7a4ef3c328",
+          "asset": "manual-pages/main-own-main-elite-combi-erp/page-29.png"
+        },
+        {
+          "documentId": "main-own-main-elite-combi-erp",
+          "page": 30,
+          "sourceSHA256": "0ff30528d19d610508c0fada6834202cf31ac683843e979f287b4cf0aaee15ff",
+          "sha256": "d072101e18b7c4225fba64ec89abe86ccb13142c3ea13285c2b79e2324ba696a",
+          "asset": "manual-pages/main-own-main-elite-combi-erp/page-30.png"
+        },
+        {
+          "documentId": "main-own-main-elite-combi-erp",
+          "page": 31,
+          "sourceSHA256": "0ff30528d19d610508c0fada6834202cf31ac683843e979f287b4cf0aaee15ff",
+          "sha256": "2dc63d15b6d1f5c9b5f8f11a27fad7d99ba90c818457e973a9fb730c2516c1f4",
+          "asset": "manual-pages/main-own-main-elite-combi-erp/page-31.png"
+        },
+        {
+          "documentId": "main-own-main-elite-combi-erp",
+          "page": 32,
+          "sourceSHA256": "0ff30528d19d610508c0fada6834202cf31ac683843e979f287b4cf0aaee15ff",
+          "sha256": "7273d2618e6e3b6bb72220ee45edc9e9b5934cd0998a3fa906f938ca8a6d2463",
+          "asset": "manual-pages/main-own-main-elite-combi-erp/page-32.png"
+        },
+        {
+          "documentId": "main-own-main-elite-combi-erp",
+          "page": 33,
+          "sourceSHA256": "0ff30528d19d610508c0fada6834202cf31ac683843e979f287b4cf0aaee15ff",
+          "sha256": "e6778a1d8a41899b08aa998fd250a2767b54dc263c756ce2056e5fcad0767182",
+          "asset": "manual-pages/main-own-main-elite-combi-erp/page-33.png"
+        },
+        {
+          "documentId": "main-own-main-elite-combi-erp",
+          "page": 43,
+          "sourceSHA256": "0ff30528d19d610508c0fada6834202cf31ac683843e979f287b4cf0aaee15ff",
+          "sha256": "8f8989831a7e906bcc8ca186de0197608a375fd69f3ce5ab35fb5aea91f5413b",
+          "asset": "manual-pages/main-own-main-elite-combi-erp/page-43.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "main-main-eco-elite-30-combi-erp-7219410",
+      "model": "Main Eco Elite 30 Combi ErP",
+      "gcNumber": "47-467-13",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 7,
+      "images": [
+        {
+          "documentId": "main-own-main-elite-combi-erp",
+          "page": 28,
+          "sourceSHA256": "0ff30528d19d610508c0fada6834202cf31ac683843e979f287b4cf0aaee15ff",
+          "sha256": "2ddaa9e8aceafd87bfd9efa47765acddd2fb5263198e0f0909a2eaebc2e398ad",
+          "asset": "manual-pages/main-own-main-elite-combi-erp/page-28.png"
+        },
+        {
+          "documentId": "main-own-main-elite-combi-erp",
+          "page": 29,
+          "sourceSHA256": "0ff30528d19d610508c0fada6834202cf31ac683843e979f287b4cf0aaee15ff",
+          "sha256": "4a824b48f61deee704c9f061e75b029e83becb2c13826fd728100e7a4ef3c328",
+          "asset": "manual-pages/main-own-main-elite-combi-erp/page-29.png"
+        },
+        {
+          "documentId": "main-own-main-elite-combi-erp",
+          "page": 30,
+          "sourceSHA256": "0ff30528d19d610508c0fada6834202cf31ac683843e979f287b4cf0aaee15ff",
+          "sha256": "d072101e18b7c4225fba64ec89abe86ccb13142c3ea13285c2b79e2324ba696a",
+          "asset": "manual-pages/main-own-main-elite-combi-erp/page-30.png"
+        },
+        {
+          "documentId": "main-own-main-elite-combi-erp",
+          "page": 31,
+          "sourceSHA256": "0ff30528d19d610508c0fada6834202cf31ac683843e979f287b4cf0aaee15ff",
+          "sha256": "2dc63d15b6d1f5c9b5f8f11a27fad7d99ba90c818457e973a9fb730c2516c1f4",
+          "asset": "manual-pages/main-own-main-elite-combi-erp/page-31.png"
+        },
+        {
+          "documentId": "main-own-main-elite-combi-erp",
+          "page": 32,
+          "sourceSHA256": "0ff30528d19d610508c0fada6834202cf31ac683843e979f287b4cf0aaee15ff",
+          "sha256": "7273d2618e6e3b6bb72220ee45edc9e9b5934cd0998a3fa906f938ca8a6d2463",
+          "asset": "manual-pages/main-own-main-elite-combi-erp/page-32.png"
+        },
+        {
+          "documentId": "main-own-main-elite-combi-erp",
+          "page": 33,
+          "sourceSHA256": "0ff30528d19d610508c0fada6834202cf31ac683843e979f287b4cf0aaee15ff",
+          "sha256": "e6778a1d8a41899b08aa998fd250a2767b54dc263c756ce2056e5fcad0767182",
+          "asset": "manual-pages/main-own-main-elite-combi-erp/page-33.png"
+        },
+        {
+          "documentId": "main-own-main-elite-combi-erp",
+          "page": 43,
+          "sourceSHA256": "0ff30528d19d610508c0fada6834202cf31ac683843e979f287b4cf0aaee15ff",
+          "sha256": "8f8989831a7e906bcc8ca186de0197608a375fd69f3ce5ab35fb5aea91f5413b",
+          "asset": "manual-pages/main-own-main-elite-combi-erp/page-43.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "main-main-eco-elite-24-system-7219411",
+      "model": "Main Eco Elite 24 System ErP",
+      "gcNumber": "41-467-28",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 7,
+      "images": [
+        {
+          "documentId": "main-own-main-elite-system-erp",
+          "page": 27,
+          "sourceSHA256": "11a630116b3342d7e0cc38e5097d28a7df8f378d03ce8803c682112663d67a79",
+          "sha256": "8acb674842fba1b548382710ab2a352959731a4e860e3ffca0748c997addf1ed",
+          "asset": "manual-pages/main-own-main-elite-system-erp/page-27.png"
+        },
+        {
+          "documentId": "main-own-main-elite-system-erp",
+          "page": 28,
+          "sourceSHA256": "11a630116b3342d7e0cc38e5097d28a7df8f378d03ce8803c682112663d67a79",
+          "sha256": "9bd424101694ce601dcfbac7dd4855c727d66e39e7f70e9965471fb26d82691e",
+          "asset": "manual-pages/main-own-main-elite-system-erp/page-28.png"
+        },
+        {
+          "documentId": "main-own-main-elite-system-erp",
+          "page": 29,
+          "sourceSHA256": "11a630116b3342d7e0cc38e5097d28a7df8f378d03ce8803c682112663d67a79",
+          "sha256": "6ac607502e9228392adaa3d19e6510aeb394cfb6b06bb3a7bdfb0e0e9e11250f",
+          "asset": "manual-pages/main-own-main-elite-system-erp/page-29.png"
+        },
+        {
+          "documentId": "main-own-main-elite-system-erp",
+          "page": 30,
+          "sourceSHA256": "11a630116b3342d7e0cc38e5097d28a7df8f378d03ce8803c682112663d67a79",
+          "sha256": "7c230c556a1ad33123834ced070ce44dd84573567384d2ba45845cd9d81f9cce",
+          "asset": "manual-pages/main-own-main-elite-system-erp/page-30.png"
+        },
+        {
+          "documentId": "main-own-main-elite-system-erp",
+          "page": 31,
+          "sourceSHA256": "11a630116b3342d7e0cc38e5097d28a7df8f378d03ce8803c682112663d67a79",
+          "sha256": "05501d9c44dd4420fb8a67434a1b342eaeed14698ae634332e22124f68b07fda",
+          "asset": "manual-pages/main-own-main-elite-system-erp/page-31.png"
+        },
+        {
+          "documentId": "main-own-main-elite-system-erp",
+          "page": 32,
+          "sourceSHA256": "11a630116b3342d7e0cc38e5097d28a7df8f378d03ce8803c682112663d67a79",
+          "sha256": "702c70892aae5313104e1cec15df3aff026c84ddea926d02a0fd005547db8a58",
+          "asset": "manual-pages/main-own-main-elite-system-erp/page-32.png"
+        },
+        {
+          "documentId": "main-own-main-elite-system-erp",
+          "page": 41,
+          "sourceSHA256": "11a630116b3342d7e0cc38e5097d28a7df8f378d03ce8803c682112663d67a79",
+          "sha256": "b7cbb0f169f145d5cf20a341096a25f4c6e77bfd2cd1b4dd2ad1313019677383",
+          "asset": "manual-pages/main-own-main-elite-system-erp/page-41.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "main-main-eco-elite-28-system-7219412",
+      "model": "Main Eco Elite 28 System ErP",
+      "gcNumber": "41-467-29",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 7,
+      "images": [
+        {
+          "documentId": "main-own-main-elite-system-erp",
+          "page": 27,
+          "sourceSHA256": "11a630116b3342d7e0cc38e5097d28a7df8f378d03ce8803c682112663d67a79",
+          "sha256": "8acb674842fba1b548382710ab2a352959731a4e860e3ffca0748c997addf1ed",
+          "asset": "manual-pages/main-own-main-elite-system-erp/page-27.png"
+        },
+        {
+          "documentId": "main-own-main-elite-system-erp",
+          "page": 28,
+          "sourceSHA256": "11a630116b3342d7e0cc38e5097d28a7df8f378d03ce8803c682112663d67a79",
+          "sha256": "9bd424101694ce601dcfbac7dd4855c727d66e39e7f70e9965471fb26d82691e",
+          "asset": "manual-pages/main-own-main-elite-system-erp/page-28.png"
+        },
+        {
+          "documentId": "main-own-main-elite-system-erp",
+          "page": 29,
+          "sourceSHA256": "11a630116b3342d7e0cc38e5097d28a7df8f378d03ce8803c682112663d67a79",
+          "sha256": "6ac607502e9228392adaa3d19e6510aeb394cfb6b06bb3a7bdfb0e0e9e11250f",
+          "asset": "manual-pages/main-own-main-elite-system-erp/page-29.png"
+        },
+        {
+          "documentId": "main-own-main-elite-system-erp",
+          "page": 30,
+          "sourceSHA256": "11a630116b3342d7e0cc38e5097d28a7df8f378d03ce8803c682112663d67a79",
+          "sha256": "7c230c556a1ad33123834ced070ce44dd84573567384d2ba45845cd9d81f9cce",
+          "asset": "manual-pages/main-own-main-elite-system-erp/page-30.png"
+        },
+        {
+          "documentId": "main-own-main-elite-system-erp",
+          "page": 31,
+          "sourceSHA256": "11a630116b3342d7e0cc38e5097d28a7df8f378d03ce8803c682112663d67a79",
+          "sha256": "05501d9c44dd4420fb8a67434a1b342eaeed14698ae634332e22124f68b07fda",
+          "asset": "manual-pages/main-own-main-elite-system-erp/page-31.png"
+        },
+        {
+          "documentId": "main-own-main-elite-system-erp",
+          "page": 32,
+          "sourceSHA256": "11a630116b3342d7e0cc38e5097d28a7df8f378d03ce8803c682112663d67a79",
+          "sha256": "702c70892aae5313104e1cec15df3aff026c84ddea926d02a0fd005547db8a58",
+          "asset": "manual-pages/main-own-main-elite-system-erp/page-32.png"
+        },
+        {
+          "documentId": "main-own-main-elite-system-erp",
+          "page": 41,
+          "sourceSHA256": "11a630116b3342d7e0cc38e5097d28a7df8f378d03ce8803c682112663d67a79",
+          "sha256": "b7cbb0f169f145d5cf20a341096a25f4c6e77bfd2cd1b4dd2ad1313019677383",
+          "asset": "manual-pages/main-own-main-elite-system-erp/page-41.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "worcester-greenstar-utility-regular-32-50-7731600266",
+      "model": "Greenstar Utility regular 32/50",
+      "gcNumber": null,
+      "fuel": "Oil",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 19,
+      "images": [
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 27,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "c95c82cf782997971cef1a962c7ef5669ce2a4ccdb197ac59b9c64db5edf94f4",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-27.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 28,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "93b6ca133d555503e517a8afe806e23f4d7907a22966314b9a3a70e9243a789a",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-28.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 30,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "e4725d5f04678ec1e2f11c7315feadb3bcae03e2aa5f5cf6577e65b556c32ea3",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-30.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 31,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "2d34882dad6f26061d0f317562113fa68c44a248a568af44b8ce5dbd990f80be",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-31.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 32,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "765404af7931b0a2b548090a6248dcc9656c356dca782cce54fd21d633008658",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-32.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 33,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "9f51f6c0044b930563b011246f41a720c5809bbabf9b512843f08d99dbb09274",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-33.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 34,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "998566f59661e8bad87e9c3295d36da6b4bf7d561924aca79cf52a14b3a07266",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-34.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 35,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "061da462a4d00483b4fb3887591250546787074a314a9a1e500ee6434d5a58ba",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-35.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 36,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "bb235b2c305e87c4cb948f8486c9641ed53c29ec5a34ddbb6d6f7d0709c642d3",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-36.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 37,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "0e00ba5cd6a8245ae7b6f19e7ed1bf428f7807e5bcf0acf651ad2f7a0115a2e1",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-37.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 38,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "9fd96c3676ce21ac5db7e49eabf8b5f1a10690c209bc3b90cc65b3b3886715b4",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-38.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 39,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "ce77638f5c3dbf3f42efd3bedfbe3c2c5b22f7aea0abe59860439c0e876d8a24",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-39.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 40,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "76127fd46d368a02ed4bcad1fd38c177798a2a649f88710ed59c1de424b6f5f4",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-40.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 41,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "5a577ae39c212b40a6b9c96d83af6f06e06661f362bb884a2e5f0da3a1f87f0f",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-41.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 42,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "da41f519c1bff85edd099a37b311b7de086bcc449a047c42f18d37970f873f70",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-42.png"
+        },
+        {
+          "documentId": "riello-bx-20138282-parts-20148054-1",
+          "page": 2,
+          "sourceSHA256": "4f9d030c3a0593062ec46861010ea3cb17531812dc1e3fdc670318ff9e3085d4",
+          "sha256": "37601841a2a39d3d9bf2a206401866c1d874dfbb1e2c4b242d6d6889ce702bfc",
+          "asset": "manual-pages/riello-bx-20138282-parts-20148054-1/page-2.png",
+          "caption": "Exact Riello original parts list for this BX/BT burner. Pump/filter component bridge only; not a current spare-part fitment or burner-setting instruction."
+        },
+        {
+          "documentId": "riello-bx-20138282-parts-20148054-1",
+          "page": 3,
+          "sourceSHA256": "4f9d030c3a0593062ec46861010ea3cb17531812dc1e3fdc670318ff9e3085d4",
+          "sha256": "000b9ab627479270ae8df26686823d1a4520d524219651473824acdb49f3f474",
+          "asset": "manual-pages/riello-bx-20138282-parts-20148054-1/page-3.png",
+          "caption": "Exact Riello original parts list for this BX/BT burner. Pump/filter component bridge only; not a current spare-part fitment or burner-setting instruction."
+        },
+        {
+          "documentId": "grant-pump-component-ukdoc0120-rev32-202602",
+          "page": 47,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "3c12d20bc9ae13f8c48e3c0b35c2b9adb5eb2f260ad551b112297dbe6ebb674a",
+          "asset": "manual-pages/grant-pump-component-ukdoc0120-rev32-202602/page-47.png",
+          "caption": "Grant original UKDOC0120 page47: ONLY the Oil pump filter subsection is used for identical pump20030953. All Grant-specific nozzle/electrode/head/air settings on this page are EXCLUDED for Worcester."
+        },
+        {
+          "documentId": "grant-pump-component-ukdoc0120-rev32-202602",
+          "page": 57,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "415e11585d06fde855819f31e4a462630386c24c744a7949f3b33340763de06f",
+          "asset": "manual-pages/grant-pump-component-ukdoc0120-rev32-202602/page-57.png",
+          "caption": "Grant original Table13-4: only pump23=20030953 and filter25=3020436 establish component identity. No Grant burner settings or other component fitment transfer."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "worcester-greenstar-utility-regular-50-70-7731600267",
+      "model": "Greenstar Utility regular 50/70",
+      "gcNumber": null,
+      "fuel": "Oil",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 19,
+      "images": [
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 27,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "c95c82cf782997971cef1a962c7ef5669ce2a4ccdb197ac59b9c64db5edf94f4",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-27.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 28,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "93b6ca133d555503e517a8afe806e23f4d7907a22966314b9a3a70e9243a789a",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-28.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 30,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "e4725d5f04678ec1e2f11c7315feadb3bcae03e2aa5f5cf6577e65b556c32ea3",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-30.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 31,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "2d34882dad6f26061d0f317562113fa68c44a248a568af44b8ce5dbd990f80be",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-31.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 32,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "765404af7931b0a2b548090a6248dcc9656c356dca782cce54fd21d633008658",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-32.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 33,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "9f51f6c0044b930563b011246f41a720c5809bbabf9b512843f08d99dbb09274",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-33.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 34,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "998566f59661e8bad87e9c3295d36da6b4bf7d561924aca79cf52a14b3a07266",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-34.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 35,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "061da462a4d00483b4fb3887591250546787074a314a9a1e500ee6434d5a58ba",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-35.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 36,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "bb235b2c305e87c4cb948f8486c9641ed53c29ec5a34ddbb6d6f7d0709c642d3",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-36.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 37,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "0e00ba5cd6a8245ae7b6f19e7ed1bf428f7807e5bcf0acf651ad2f7a0115a2e1",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-37.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 38,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "9fd96c3676ce21ac5db7e49eabf8b5f1a10690c209bc3b90cc65b3b3886715b4",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-38.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 39,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "ce77638f5c3dbf3f42efd3bedfbe3c2c5b22f7aea0abe59860439c0e876d8a24",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-39.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 40,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "76127fd46d368a02ed4bcad1fd38c177798a2a649f88710ed59c1de424b6f5f4",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-40.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 41,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "5a577ae39c212b40a6b9c96d83af6f06e06661f362bb884a2e5f0da3a1f87f0f",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-41.png"
+        },
+        {
+          "documentId": "utility-high-output-6721843976-202201",
+          "page": 42,
+          "sourceSHA256": "999a3f72e7048018cfa5990c7b7bae7a856364ed22bc81762a1ff252fe139c2d",
+          "sha256": "da41f519c1bff85edd099a37b311b7de086bcc449a047c42f18d37970f873f70",
+          "asset": "manual-pages/utility-high-output-6721843976-202201/page-42.png"
+        },
+        {
+          "documentId": "riello-bt-20138275-parts-20148110-1",
+          "page": 2,
+          "sourceSHA256": "9c81e0d0bda8944d49ea5ff863eceb54c3e8189692e57a27f31a51a5ac54ada6",
+          "sha256": "500b697509b80a4d78905f2bfab9233dc8546fc8fe8db3132fa460a760077fff",
+          "asset": "manual-pages/riello-bt-20138275-parts-20148110-1/page-2.png",
+          "caption": "Exact Riello original parts list for this BX/BT burner. Pump/filter component bridge only; not a current spare-part fitment or burner-setting instruction."
+        },
+        {
+          "documentId": "riello-bt-20138275-parts-20148110-1",
+          "page": 3,
+          "sourceSHA256": "9c81e0d0bda8944d49ea5ff863eceb54c3e8189692e57a27f31a51a5ac54ada6",
+          "sha256": "dc024c22585bfdff0000c1c982d9cf83eb51ddb9542cccad1206f41f006ab8de",
+          "asset": "manual-pages/riello-bt-20138275-parts-20148110-1/page-3.png",
+          "caption": "Exact Riello original parts list for this BX/BT burner. Pump/filter component bridge only; not a current spare-part fitment or burner-setting instruction."
+        },
+        {
+          "documentId": "grant-pump-component-ukdoc0120-rev32-202602",
+          "page": 47,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "3c12d20bc9ae13f8c48e3c0b35c2b9adb5eb2f260ad551b112297dbe6ebb674a",
+          "asset": "manual-pages/grant-pump-component-ukdoc0120-rev32-202602/page-47.png",
+          "caption": "Grant original UKDOC0120 page47: ONLY the Oil pump filter subsection is used for identical pump20030953. All Grant-specific nozzle/electrode/head/air settings on this page are EXCLUDED for Worcester."
+        },
+        {
+          "documentId": "grant-pump-component-ukdoc0120-rev32-202602",
+          "page": 57,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "415e11585d06fde855819f31e4a462630386c24c744a7949f3b33340763de06f",
+          "asset": "manual-pages/grant-pump-component-ukdoc0120-rev32-202602/page-57.png",
+          "caption": "Grant original Table13-4: only pump23=20030953 and filter25=3020436 establish component identity. No Grant burner settings or other component fitment transfer."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
     }
   ],
   "liveServiceM8Connection": false,
   "customerDataIncluded": false,
   "simulatedAssetsIncluded": false,
-  "offlineLimits": "External source PDFs/websites/diagrams require connectivity unless saved separately by the user. No live job sync or observed installed applicability is implied.",
+  "offlineLimits": "Reviewed original source-page images listed in the offline cache are included. External source PDFs and websites require connectivity unless saved separately. No live job sync, observed installed applicability or performed service/certificate is implied.",
   "maintenanceChanges": [
     "Matched compact header and automatic open/foreground update checks with visible explicit Update app.",
     "Four exact Greenstar GC adjustment sections gain verified opposite control directions and source-bound practical methods.",
@@ -4091,7 +5695,8 @@
     "Phone guide update: 30 exact gas/oil model guides now present 414 reviewed partial descriptive tasks (previously 0 tasks in these guide panels). New content is limited to the pinned independently accepted batch manifest. All boiler fields and all other 1695 active records, identity corrections, wiring, index and search assets are unchanged. Existing source/current applicability, numerical/conflict, safe access/restoration, parts and certificate holds remain. Remembered AI session behavior is unchanged; only the catalogue binding advances.",
     "Phone guide update: 27 exact gas/oil model guides now present 283 reviewed partial descriptive tasks (previously 28 tasks in these guide panels). New content is limited to the pinned independently accepted batch manifest. All boiler fields and all other 1698 active records, identity corrections, wiring, index and search assets are unchanged. Existing source/current applicability, numerical/conflict, safe access/restoration, parts and certificate holds remain. Remembered AI session behavior is unchanged; only the catalogue binding advances.",
     "Corrects 6 existing CBH scope-card titles from non-condensing to condensing, matching their unchanged condensing bodies and own sources. Task totals remain 102 before and 102 after. No service steps, task IDs/order, readings, numerical references/settings, burner facts or source applicability change. All boiler fields and other records, decoder, index/search/wiring, AI session logic and physical/certificate holds remain unchanged. Only the AI catalogue binding and dependent metadata advance.",
-    "Adds 14 exact-model partial gas/oil guide panels containing 176 retained-source descriptive tasks to previously empty panels. No new numerical reading, setting, automatic PASS or complete-service claim. All boiler objects/settings and all other 1711 records, identities, decoder, index/search/wiring and existing guides remain unchanged. Complete original diagrams, isolation/restoration, fitted parts/serial/current revision and physical/certificate requirements remain. AI session logic stays exact; only its catalogue binding and dependent metadata advance."
+    "Adds 14 exact-model partial gas/oil guide panels containing 176 retained-source descriptive tasks to previously empty panels. No new numerical reading, setting, automatic PASS or complete-service claim. All boiler objects/settings and all other 1711 records, identities, decoder, index/search/wiring and existing guides remain unchanged. Complete original diagrams, isolation/restoration, fitted parts/serial/current revision and physical/certificate requirements remain. AI session logic stays exact; only its catalogue binding and dependent metadata advance.",
+    "Expands 14 exact-model annual guides from 176 to 338 tasks, with 61 original source-page images. 14 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 14 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1711 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances."
   ],
   "releaseStatus": "release"
 }
