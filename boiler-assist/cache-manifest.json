@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "3ab950e13a27fd42",
+  "buildId": "99d01eb8b00e7c5a",
   "preparedOn": "2026-11-24",
-  "appVersion": "2026.11.27-r51-full-annual-gas-oil",
+  "appVersion": "2026.11.28-r52-full-annual-gas-oil",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -52,8 +52,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "bytes": 12743941,
-      "sha256": "77f6e3718e4acc3f080939629e59d16406b10cc62facd02bde512663f0624727"
+      "bytes": 12846849,
+      "sha256": "1f71a701be546072252a567beabd2c79ef4ae7f3ac92ec1aa7343113c465735b"
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -98,7 +98,7 @@
     {
       "url": "./help/ai-client.mjs",
       "bytes": 8814,
-      "sha256": "6ba6d316f83178f0dc98319c2eaa3c182a0e5534ead78ca001041c99b43db8e2"
+      "sha256": "f42905b47e4009b3b0303486aa97fa9aece7328a564ae8f95aa84c033386b3c7"
     },
     {
       "url": "./help/baxi400-heat-fault-guard.mjs",
@@ -268,7 +268,7 @@
     {
       "url": "./index.html",
       "bytes": 1586846,
-      "sha256": "ecf924dac58b29fce95d86edf2868740b5bb37da81cc08a5a1a6739834e06e9b"
+      "sha256": "49357d7c7439ac04bdc664eb3c64328b12dcabff27e1531be7ab4494e41a47c4"
     },
     {
       "url": "./local-bridge.js",
@@ -2382,8 +2382,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 614093,
-      "sha256": "9db59459484f0156c9150796b0505969e6401b299e2c54ef9cc0f3e4321bcbb7"
+      "bytes": 716895,
+      "sha256": "52617b6deafc21f415e933e47552200f0e695eec490c2ac7f1a5120a5b675a66"
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -2452,8 +2452,8 @@
     },
     {
       "url": "./reviewed-service-pages.js",
-      "bytes": 326558,
-      "sha256": "43112be27006fe877db4ddddb97126922b189c372adde1e2968275091cb43ffe"
+      "bytes": 415017,
+      "sha256": "93e5cc3bde29b22c9670063943ff5986dc334cc30b4233852a804ff5707484d2"
     },
     {
       "url": "./manual-pages/main-system-he-5121186-02/page-10.png",
@@ -3224,7 +3224,262 @@
       "url": "./manual-pages/worcester-ri-erp-6720813283-201507/page-55.png",
       "bytes": 267165,
       "sha256": "cfdc74515e037507e0e3b395668dc5c5964c52f14feaff6d2301150c03bdcea0"
+    },
+    {
+      "url": "./manual-pages/alpha-intec-cx-d330-09-13/page-4.png",
+      "bytes": 354107,
+      "sha256": "baef8b421149c4d2f77270b5d0e94189df9c48890bdf32ac13cd76af60605558"
+    },
+    {
+      "url": "./manual-pages/alpha-intec-cx-d330-09-13/page-16.png",
+      "bytes": 460729,
+      "sha256": "208a4fa1ffbbc50878ea56ba9e4e905e652f9b2cee444b16c498ddb640cbd565"
+    },
+    {
+      "url": "./manual-pages/alpha-intec-cx-d330-09-13/page-17.png",
+      "bytes": 403204,
+      "sha256": "34aca778013a35ecfd1094043a185b6afcd3eb481beed95bd58a18171d6bc43c"
+    },
+    {
+      "url": "./manual-pages/alpha-intec-cx-d330-09-13/page-18.png",
+      "bytes": 292987,
+      "sha256": "3e4c17d59080437f636024eab88fb41e636973b7155df98ab00cf47e84404390"
+    },
+    {
+      "url": "./manual-pages/alpha-intec-cx-d330-09-13/page-23.png",
+      "bytes": 410086,
+      "sha256": "21eaa79da1e73a0b2687bddae3e96c0061fa29fdf610bb9646deb91aab9efab4"
+    },
+    {
+      "url": "./manual-pages/alpha-intec-cx-d330-09-13/page-24.png",
+      "bytes": 554330,
+      "sha256": "75b48377c8af94247c5f86f33c845cedb100ff8c09f7e5b259818f73f85ce497"
+    },
+    {
+      "url": "./manual-pages/alpha-intec-cx-d330-09-13/page-25.png",
+      "bytes": 363926,
+      "sha256": "840bba88e20deac97978f5a1067e758fee4b6c8a0c41ae5a6d9901d90c5f49d8"
+    },
+    {
+      "url": "./manual-pages/alpha-intec-cx-d330-09-13/page-26.png",
+      "bytes": 356320,
+      "sha256": "efd2107b501b93546a6a891f9f0fc913834271e76a0d8cb35fb2de2282e0fc9b"
+    },
+    {
+      "url": "./manual-pages/alpha-intec-cx-d330-09-13/page-27.png",
+      "bytes": 512177,
+      "sha256": "cc5c421b5d39d52393c924726ab2cc12c8eda4d066dd3b1815eeece1eceeab51"
+    },
+    {
+      "url": "./manual-pages/alpha-intec-cx-d330-09-13/page-28.png",
+      "bytes": 460824,
+      "sha256": "93a5dc22c84278100b7bbd6adb2cdfa67cdca22dadd6675979f40bb519a8a144"
+    },
+    {
+      "url": "./manual-pages/alpha-intec-cx-d330-09-13/page-29.png",
+      "bytes": 268625,
+      "sha256": "fdd660c1d248528d8ad72ba2b60260be9d5cfbab20637ba29de0e1777fe4c4b9"
+    },
+    {
+      "url": "./manual-pages/alpha-intec-cx-d330-09-13/page-33.png",
+      "bytes": 426189,
+      "sha256": "2a60b48f2114c613bedeb4c2b7963a5a371f0883a0c314e75d938705b4d0f594"
+    },
+    {
+      "url": "./manual-pages/alpha-intec-cx-d330-09-13/page-34.png",
+      "bytes": 381759,
+      "sha256": "af74453f6f7f91523411905b9026766589bdf7ba00995c6ba28636a91ad513c5"
+    },
+    {
+      "url": "./manual-pages/danesmoor-utility-6721846263-202201/page-3.png",
+      "bytes": 428885,
+      "sha256": "b52e39140a97517414cf94ec3df5d4dd34b516a5b89563a9ba0cc9a84d61e160"
+    },
+    {
+      "url": "./manual-pages/danesmoor-utility-6721846263-202201/page-4.png",
+      "bytes": 365360,
+      "sha256": "e708b86b316d0572db7fec5c8c029beda45b1debc41faa09655e6c64af7b5f83"
+    },
+    {
+      "url": "./manual-pages/danesmoor-utility-6721846263-202201/page-14.png",
+      "bytes": 323558,
+      "sha256": "f90315b318281a3f6ec29877d380e7810631bff60538d3aed547f18e6c183be5"
+    },
+    {
+      "url": "./manual-pages/danesmoor-utility-6721846263-202201/page-33.png",
+      "bytes": 421161,
+      "sha256": "d41aa1cf35fe9291ebf5b1f51eddb113ea2dbe0c7eaaf44448222b3d52f2889d"
+    },
+    {
+      "url": "./manual-pages/danesmoor-utility-6721846263-202201/page-40.png",
+      "bytes": 478864,
+      "sha256": "cfda20f831b9c0fde10608674401b89718bd7176b1003b6d16aaaf60bf97134f"
+    },
+    {
+      "url": "./manual-pages/danesmoor-utility-6721846263-202201/page-41.png",
+      "bytes": 482236,
+      "sha256": "693d2efb8edfc25ad1a4d3cdbaf53dd53772fadbc5bad7e1c014d90b25fc11ea"
+    },
+    {
+      "url": "./manual-pages/danesmoor-utility-6721846263-202201/page-42.png",
+      "bytes": 489425,
+      "sha256": "8f7b068fb88f3c1e5e94f6201c5558e348c6b4abab7ec3aba27b88e54539e7eb"
+    },
+    {
+      "url": "./manual-pages/danesmoor-utility-6721846263-202201/page-43.png",
+      "bytes": 383022,
+      "sha256": "049fa8b4f3172732cf77b6f8ab873e8f056703df3b144aec96e4bb45e65c9e42"
+    },
+    {
+      "url": "./manual-pages/danesmoor-utility-6721846263-202201/page-44.png",
+      "bytes": 242362,
+      "sha256": "fd02500578f3a0e374d71eadd726e61fbebddfd9795bd13376e4e4b4aab56697"
+    },
+    {
+      "url": "./manual-pages/danesmoor-utility-6721846263-202201/page-45.png",
+      "bytes": 245546,
+      "sha256": "c310a26eb39688808a30deb1961791020b4316f860e2ddce03ba28155a0f8133"
+    },
+    {
+      "url": "./manual-pages/danesmoor-utility-6721846263-202201/page-46.png",
+      "bytes": 430113,
+      "sha256": "447c58617ad667d26d24abbb94f461f9f76dc6a79d6804f442d39a666ff0cbb6"
+    },
+    {
+      "url": "./manual-pages/danesmoor-utility-6721846263-202201/page-47.png",
+      "bytes": 248657,
+      "sha256": "a8c5f8ad765ad737296d6d39832514f2af49d2dce5ccf568f75a248b9694d23c"
+    },
+    {
+      "url": "./manual-pages/danesmoor-utility-6721846263-202201/page-48.png",
+      "bytes": 439944,
+      "sha256": "cbb60417a361cb346bb9bf64f571ee682b9eb9617f8e470b7a106f24fbd102cc"
+    },
+    {
+      "url": "./manual-pages/danesmoor-utility-6721846263-202201/page-49.png",
+      "bytes": 400600,
+      "sha256": "7099710e3554a83a36b46d72cc0c5e689df75469ee8c6fcd354447575c626f6a"
+    },
+    {
+      "url": "./manual-pages/danesmoor-utility-6721846263-202201/page-50.png",
+      "bytes": 454681,
+      "sha256": "7283ec5ed3f70385001854fa03f50301e3c5692a98294ed9a89cb75526be96d4"
+    },
+    {
+      "url": "./manual-pages/danesmoor-utility-6721846263-202201/page-51.png",
+      "bytes": 445756,
+      "sha256": "5ad7d6755678c8b997e4d2457913c8282c032eb7a25cdfd5f9f76ec07cec859b"
+    },
+    {
+      "url": "./manual-pages/danesmoor-utility-6721846263-202201/page-52.png",
+      "bytes": 159007,
+      "sha256": "2b48efab018c9def7880541cd29b1cb00234af5cb77244c43c257ef461859178"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-5.png",
+      "bytes": 447986,
+      "sha256": "3ca45e3beec4f904868f77b45ef0e316ca66608c34bd15b8d05555c213fd5e83"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-7.png",
+      "bytes": 405089,
+      "sha256": "a506b9a2ee11955dbad4773edd86af50eaa829f1d7cf318d058f241e8abb46e2"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-12.png",
+      "bytes": 406246,
+      "sha256": "5ce8e09dd1798f0fb9268240225156d5d84606fe107d36a5b34381a37de1307a"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-13.png",
+      "bytes": 341429,
+      "sha256": "86a7d5d206b9459b0353e522e8a9240ae39597454fc4d2fba8848e55c710738b"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-17.png",
+      "bytes": 431690,
+      "sha256": "d383b8800426b5cc318b7b61ee05e8c22c146c1527a32e27a52506ef8be983cb"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-19.png",
+      "bytes": 622382,
+      "sha256": "f06cdfba607bd9a2c3feacf18645d16ff6622bfdf298c59bcb7a7d497add7d02"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-21.png",
+      "bytes": 318136,
+      "sha256": "b900791fc012e453ee00a769f0f1c772db09cb0cda4ba7358a6e8df0627d17e4"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-22.png",
+      "bytes": 548614,
+      "sha256": "2e2eda7873e083fe822db0db009e564d20aecd63f996847e866b8e1e25deef1e"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-38.png",
+      "bytes": 243282,
+      "sha256": "cc4ad619a8d222b51a0dc44365995e11a99b4a249b7285a7850a6e958436cf99"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-39.png",
+      "bytes": 485946,
+      "sha256": "94b5d4afdd04b45831c96eb3112cec077a5ad25e28fb26a65b41669b18802a16"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-40.png",
+      "bytes": 463624,
+      "sha256": "57b0b84142674a3023045134aa270ddc4eba246f6b8d12089c280cd95da38077"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-42.png",
+      "bytes": 563920,
+      "sha256": "2fe2fbcb5aa753f8073f3526ed9518a3cc689e03d0fda50a9686b2119aabf087"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-43.png",
+      "bytes": 557574,
+      "sha256": "2edaf0b2a3431ded1ba7f64249104eee48ea41a2cf24290fb827d2a2bdbfe27f"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-44.png",
+      "bytes": 366607,
+      "sha256": "1cd40db10cfd79344515d1958856640f6afe87785d3ba5ad74b00b0846b1b2ce"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-45.png",
+      "bytes": 143160,
+      "sha256": "25211ae89ee2fdaa493e59388940ebc79e76cd650333e59b5987800bb55f14f2"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-46.png",
+      "bytes": 338477,
+      "sha256": "6a2fce86e41f3a9063e5a834bbbb23111421fad05683e30fc1335d3f63843cc6"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-47.png",
+      "bytes": 382096,
+      "sha256": "3c12d20bc9ae13f8c48e3c0b35c2b9adb5eb2f260ad551b112297dbe6ebb674a"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-48.png",
+      "bytes": 157479,
+      "sha256": "3bdab53938b55987ce4bcd3483a86a9d1a86abc03d4fae156de1a2d83982e64b"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-59.png",
+      "bytes": 416469,
+      "sha256": "39549e056cd85040d7a626f0d21536e49ef4da05e069296cd978bbecea171ff1"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-64.png",
+      "bytes": 506511,
+      "sha256": "1d4d4df7b5d7d0f3e2c1c95f639f5d8c6020ac756865848a69fd272bc3c2660a"
+    },
+    {
+      "url": "./manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-65.png",
+      "bytes": 594453,
+      "sha256": "4783b4b53ec5a7a7cc1dc659cf7874a1654d6fa1d42e9aa7f4bd0667ebd9ec95"
     }
   ],
-  "totalBytes": 234305368
+  "totalBytes": 255025147
 }

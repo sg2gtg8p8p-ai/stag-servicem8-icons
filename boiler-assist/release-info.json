@@ -1,6 +1,6 @@
 {
-  "appVersion": "2026.11.27-r51-full-annual-gas-oil",
-  "preparedOn": "2026-11-27",
+  "appVersion": "2026.11.28-r52-full-annual-gas-oil",
+  "preparedOn": "2026-11-28",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1725,
   "gasFires": 43,
@@ -4657,6 +4657,214 @@
       "newConditionalTasks": 2,
       "status": "complete",
       "sourceReference": "6 720 813 283 (2015/07)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "alpha-intec-24x-ng-47-532-45",
+      "gcNumber": "47-532-45",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 19,
+      "newConditionalTasks": 2,
+      "status": "complete",
+      "sourceReference": "Part No.1.030787 D330;09/13",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "alpha-intec-28x-ng-47-532-46",
+      "gcNumber": "47-532-46",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 19,
+      "newConditionalTasks": 2,
+      "status": "complete",
+      "sourceReference": "Part No.1.030787 D330;09/13",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "alpha-intec-26c-ng-47-532-47",
+      "gcNumber": "47-532-47",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 19,
+      "newConditionalTasks": 2,
+      "status": "complete",
+      "sourceReference": "Part No.1.030787 D330;09/13",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "alpha-intec-30c-ng-47-532-48",
+      "gcNumber": "47-532-48",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 19,
+      "newConditionalTasks": 2,
+      "status": "complete",
+      "sourceReference": "Part No.1.030787 D330;09/13",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "alpha-intec-34c-ng-47-532-49",
+      "gcNumber": "47-532-49",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 23,
+      "previousServicingTasks": 19,
+      "newConditionalTasks": 2,
+      "status": "complete",
+      "sourceReference": "Part No.1.030787 D330;09/13",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-utility-system-12-18-7731600254",
+      "gcNumber": null,
+      "productNumber": "7731600254",
+      "fuel": "Oil",
+      "servicingTasks": 38,
+      "previousServicingTasks": 26,
+      "newConditionalTasks": 3,
+      "status": "complete",
+      "sourceReference": "6721846263 (2022/01); retained selector01.01.2024 onwards",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-utility-system-18-25-7731600255",
+      "gcNumber": null,
+      "productNumber": "7731600255",
+      "fuel": "Oil",
+      "servicingTasks": 38,
+      "previousServicingTasks": 26,
+      "newConditionalTasks": 3,
+      "status": "complete",
+      "sourceReference": "6721846263 (2022/01); retained selector01.01.2024 onwards",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-utility-system-25-32-7731600256",
+      "gcNumber": null,
+      "productNumber": "7731600256",
+      "fuel": "Oil",
+      "servicingTasks": 38,
+      "previousServicingTasks": 26,
+      "newConditionalTasks": 3,
+      "status": "complete",
+      "sourceReference": "6721846263 (2022/01); retained selector01.01.2024 onwards",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-utility-regular-12-18-7731600245",
+      "gcNumber": null,
+      "productNumber": "7731600245",
+      "fuel": "Oil",
+      "servicingTasks": 36,
+      "previousServicingTasks": 24,
+      "newConditionalTasks": 3,
+      "status": "complete",
+      "sourceReference": "6721846263 (2022/01); retained selector01.01.2024 onwards",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-utility-regular-18-25-7731600246",
+      "gcNumber": null,
+      "productNumber": "7731600246",
+      "fuel": "Oil",
+      "servicingTasks": 36,
+      "previousServicingTasks": 24,
+      "newConditionalTasks": 3,
+      "status": "complete",
+      "sourceReference": "6721846263 (2022/01); retained selector01.01.2024 onwards",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "worcester-greenstar-danesmoor-utility-regular-25-32-7731600247",
+      "gcNumber": null,
+      "productNumber": "7731600247",
+      "fuel": "Oil",
+      "servicingTasks": 36,
+      "previousServicingTasks": 24,
+      "newConditionalTasks": 3,
+      "status": "complete",
+      "sourceReference": "6721846263 (2022/01); retained selector01.01.2024 onwards",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "grant-vortex-pro-utility-15-26-vtx15-26",
+      "gcNumber": null,
+      "productNumber": "VTX15/26",
+      "fuel": "Oil",
+      "servicingTasks": 24,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 2,
+      "status": "complete",
+      "sourceReference": "UK DOC0120 Rev3.2 February2026",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "grant-vortex-pro-utility-26-46-vtx26-46",
+      "gcNumber": null,
+      "productNumber": "VTX26/46",
+      "fuel": "Oil",
+      "servicingTasks": 24,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 2,
+      "status": "complete",
+      "sourceReference": "UK DOC0120 Rev3.2 February2026",
       "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
       "newNumericRules": false,
       "numericReferenceOnly": true,
@@ -10372,6 +10580,1688 @@
       "currentRevisionOrInstalledSerialApplicabilityProved": false,
       "newNumericRules": false,
       "numericReferenceOnly": true
+    },
+    {
+      "modelID": "alpha-intec-24x-ng-47-532-45",
+      "model": "InTec 24X (NG)",
+      "gcNumber": "47-532-45",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 13,
+      "images": [
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 4,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "baef8b421149c4d2f77270b5d0e94189df9c48890bdf32ac13cd76af60605558",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-4.png",
+          "caption": "NG technical table ONLY. Match exact model column and CH/DHW/minimum operating condition; gross input is distinct from net input and heat output. No LPG transfer or automatic verdict."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 16,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "208a4fa1ffbbc50878ea56ba9e4e905e652f9b2cee444b16c498ddb640cbd565",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-16.png",
+          "caption": "Fig13a C/X water and gas connections WITHOUT wall jig. Annual trap priming follows section6.4 page29, not the installation-only filling quantity above."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 17,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "34aca778013a35ecfd1094043a185b6afcd3eb481beed95bd58a18171d6bc43c",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-17.png",
+          "caption": "Fig13b C/X connections WITH wall jig and Cyclone if actually fitted. Flue fitting geometry applies only to the stated CD Easy-Flue branch; not a routine cutting/reconfiguration instruction."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 18,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "3e4c17d59080437f636024eab88fb41e636973b7155df98ab00cf47e84404390",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-18.png",
+          "caption": "Original CD Easy-Flue joint/seal/terminal integrity reference only for this actual fitted branch. No authority to modify flue geometry during annual service."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 23,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "21eaa79da1e73a0b2687bddae3e96c0061fa29fdf610bb9646deb91aab9efab4",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-23.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 24,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "75b48377c8af94247c5f86f33c845cedb100ff8c09f7e5b259818f73f85ce497",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-24.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 25,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "840bba88e20deac97978f5a1067e758fee4b6c8a0c41ae5a6d9901d90c5f49d8",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-25.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 26,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "efd2107b501b93546a6a891f9f0fc913834271e76a0d8cb35fb2de2282e0fc9b",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-26.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 27,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "cc5c421b5d39d52393c924726ab2cc12c8eda4d066dd3b1815eeece1eceeab51",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-27.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 28,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "93a5dc22c84278100b7bbd6adb2cdfa67cdca22dadd6675979f40bb519a8a144",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-28.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 29,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "fdd660c1d248528d8ad72ba2b60260be9d5cfbab20637ba29de0e1777fe4c4b9",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-29.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 33,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "2a60b48f2114c613bedeb4c2b7963a5a371f0883a0c314e75d938705b4d0f594",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-33.png",
+          "caption": "Only insulation condition/section7.16, trap and fitted-Cyclone context are used. Controls/sensor/thermal-fuse replacement is outside annual scope; section6.3 erroneous7.19 insulation pointer is not followed."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 34,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "af74453f6f7f91523411905b9026766589bdf7ba00995c6ba28636a91ad513c5",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-34.png",
+          "caption": "Fig34 pump, automatic vent, PRV and drain locations only. Replacement procedures above are outside annual scope."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "alpha-intec-28x-ng-47-532-46",
+      "model": "InTec 28X (NG)",
+      "gcNumber": "47-532-46",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 13,
+      "images": [
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 4,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "baef8b421149c4d2f77270b5d0e94189df9c48890bdf32ac13cd76af60605558",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-4.png",
+          "caption": "NG technical table ONLY. Match exact model column and CH/DHW/minimum operating condition; gross input is distinct from net input and heat output. No LPG transfer or automatic verdict."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 16,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "208a4fa1ffbbc50878ea56ba9e4e905e652f9b2cee444b16c498ddb640cbd565",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-16.png",
+          "caption": "Fig13a C/X water and gas connections WITHOUT wall jig. Annual trap priming follows section6.4 page29, not the installation-only filling quantity above."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 17,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "34aca778013a35ecfd1094043a185b6afcd3eb481beed95bd58a18171d6bc43c",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-17.png",
+          "caption": "Fig13b C/X connections WITH wall jig and Cyclone if actually fitted. Flue fitting geometry applies only to the stated CD Easy-Flue branch; not a routine cutting/reconfiguration instruction."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 18,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "3e4c17d59080437f636024eab88fb41e636973b7155df98ab00cf47e84404390",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-18.png",
+          "caption": "Original CD Easy-Flue joint/seal/terminal integrity reference only for this actual fitted branch. No authority to modify flue geometry during annual service."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 23,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "21eaa79da1e73a0b2687bddae3e96c0061fa29fdf610bb9646deb91aab9efab4",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-23.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 24,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "75b48377c8af94247c5f86f33c845cedb100ff8c09f7e5b259818f73f85ce497",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-24.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 25,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "840bba88e20deac97978f5a1067e758fee4b6c8a0c41ae5a6d9901d90c5f49d8",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-25.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 26,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "efd2107b501b93546a6a891f9f0fc913834271e76a0d8cb35fb2de2282e0fc9b",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-26.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 27,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "cc5c421b5d39d52393c924726ab2cc12c8eda4d066dd3b1815eeece1eceeab51",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-27.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 28,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "93a5dc22c84278100b7bbd6adb2cdfa67cdca22dadd6675979f40bb519a8a144",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-28.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 29,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "fdd660c1d248528d8ad72ba2b60260be9d5cfbab20637ba29de0e1777fe4c4b9",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-29.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 33,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "2a60b48f2114c613bedeb4c2b7963a5a371f0883a0c314e75d938705b4d0f594",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-33.png",
+          "caption": "Only insulation condition/section7.16, trap and fitted-Cyclone context are used. Controls/sensor/thermal-fuse replacement is outside annual scope; section6.3 erroneous7.19 insulation pointer is not followed."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 34,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "af74453f6f7f91523411905b9026766589bdf7ba00995c6ba28636a91ad513c5",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-34.png",
+          "caption": "Fig34 pump, automatic vent, PRV and drain locations only. Replacement procedures above are outside annual scope."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "alpha-intec-26c-ng-47-532-47",
+      "model": "InTec 26C (NG)",
+      "gcNumber": "47-532-47",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 13,
+      "images": [
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 4,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "baef8b421149c4d2f77270b5d0e94189df9c48890bdf32ac13cd76af60605558",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-4.png",
+          "caption": "NG technical table ONLY. Match exact model column and CH/DHW/minimum operating condition; gross input is distinct from net input and heat output. No LPG transfer or automatic verdict."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 16,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "208a4fa1ffbbc50878ea56ba9e4e905e652f9b2cee444b16c498ddb640cbd565",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-16.png",
+          "caption": "Fig13a C/X water and gas connections WITHOUT wall jig. Annual trap priming follows section6.4 page29, not the installation-only filling quantity above."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 17,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "34aca778013a35ecfd1094043a185b6afcd3eb481beed95bd58a18171d6bc43c",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-17.png",
+          "caption": "Fig13b C/X connections WITH wall jig and Cyclone if actually fitted. Flue fitting geometry applies only to the stated CD Easy-Flue branch; not a routine cutting/reconfiguration instruction."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 18,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "3e4c17d59080437f636024eab88fb41e636973b7155df98ab00cf47e84404390",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-18.png",
+          "caption": "Original CD Easy-Flue joint/seal/terminal integrity reference only for this actual fitted branch. No authority to modify flue geometry during annual service."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 23,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "21eaa79da1e73a0b2687bddae3e96c0061fa29fdf610bb9646deb91aab9efab4",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-23.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 24,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "75b48377c8af94247c5f86f33c845cedb100ff8c09f7e5b259818f73f85ce497",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-24.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 25,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "840bba88e20deac97978f5a1067e758fee4b6c8a0c41ae5a6d9901d90c5f49d8",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-25.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 26,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "efd2107b501b93546a6a891f9f0fc913834271e76a0d8cb35fb2de2282e0fc9b",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-26.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 27,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "cc5c421b5d39d52393c924726ab2cc12c8eda4d066dd3b1815eeece1eceeab51",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-27.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 28,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "93a5dc22c84278100b7bbd6adb2cdfa67cdca22dadd6675979f40bb519a8a144",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-28.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 29,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "fdd660c1d248528d8ad72ba2b60260be9d5cfbab20637ba29de0e1777fe4c4b9",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-29.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 33,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "2a60b48f2114c613bedeb4c2b7963a5a371f0883a0c314e75d938705b4d0f594",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-33.png",
+          "caption": "Only insulation condition/section7.16, trap and fitted-Cyclone context are used. Controls/sensor/thermal-fuse replacement is outside annual scope; section6.3 erroneous7.19 insulation pointer is not followed."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 34,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "af74453f6f7f91523411905b9026766589bdf7ba00995c6ba28636a91ad513c5",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-34.png",
+          "caption": "Fig34 pump, automatic vent, PRV and drain locations only. Replacement procedures above are outside annual scope."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "alpha-intec-30c-ng-47-532-48",
+      "model": "InTec 30C (NG)",
+      "gcNumber": "47-532-48",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 13,
+      "images": [
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 4,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "baef8b421149c4d2f77270b5d0e94189df9c48890bdf32ac13cd76af60605558",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-4.png",
+          "caption": "NG technical table ONLY. Match exact model column and CH/DHW/minimum operating condition; gross input is distinct from net input and heat output. No LPG transfer or automatic verdict."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 16,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "208a4fa1ffbbc50878ea56ba9e4e905e652f9b2cee444b16c498ddb640cbd565",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-16.png",
+          "caption": "Fig13a C/X water and gas connections WITHOUT wall jig. Annual trap priming follows section6.4 page29, not the installation-only filling quantity above."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 17,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "34aca778013a35ecfd1094043a185b6afcd3eb481beed95bd58a18171d6bc43c",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-17.png",
+          "caption": "Fig13b C/X connections WITH wall jig and Cyclone if actually fitted. Flue fitting geometry applies only to the stated CD Easy-Flue branch; not a routine cutting/reconfiguration instruction."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 18,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "3e4c17d59080437f636024eab88fb41e636973b7155df98ab00cf47e84404390",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-18.png",
+          "caption": "Original CD Easy-Flue joint/seal/terminal integrity reference only for this actual fitted branch. No authority to modify flue geometry during annual service."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 23,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "21eaa79da1e73a0b2687bddae3e96c0061fa29fdf610bb9646deb91aab9efab4",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-23.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 24,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "75b48377c8af94247c5f86f33c845cedb100ff8c09f7e5b259818f73f85ce497",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-24.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 25,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "840bba88e20deac97978f5a1067e758fee4b6c8a0c41ae5a6d9901d90c5f49d8",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-25.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 26,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "efd2107b501b93546a6a891f9f0fc913834271e76a0d8cb35fb2de2282e0fc9b",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-26.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 27,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "cc5c421b5d39d52393c924726ab2cc12c8eda4d066dd3b1815eeece1eceeab51",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-27.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 28,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "93a5dc22c84278100b7bbd6adb2cdfa67cdca22dadd6675979f40bb519a8a144",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-28.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 29,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "fdd660c1d248528d8ad72ba2b60260be9d5cfbab20637ba29de0e1777fe4c4b9",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-29.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 33,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "2a60b48f2114c613bedeb4c2b7963a5a371f0883a0c314e75d938705b4d0f594",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-33.png",
+          "caption": "Only insulation condition/section7.16, trap and fitted-Cyclone context are used. Controls/sensor/thermal-fuse replacement is outside annual scope; section6.3 erroneous7.19 insulation pointer is not followed."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 34,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "af74453f6f7f91523411905b9026766589bdf7ba00995c6ba28636a91ad513c5",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-34.png",
+          "caption": "Fig34 pump, automatic vent, PRV and drain locations only. Replacement procedures above are outside annual scope."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "alpha-intec-34c-ng-47-532-49",
+      "model": "InTec 34C (NG)",
+      "gcNumber": "47-532-49",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 13,
+      "images": [
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 4,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "baef8b421149c4d2f77270b5d0e94189df9c48890bdf32ac13cd76af60605558",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-4.png",
+          "caption": "NG technical table ONLY. Match exact model column and CH/DHW/minimum operating condition; gross input is distinct from net input and heat output. No LPG transfer or automatic verdict."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 16,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "208a4fa1ffbbc50878ea56ba9e4e905e652f9b2cee444b16c498ddb640cbd565",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-16.png",
+          "caption": "Fig13a C/X water and gas connections WITHOUT wall jig. Annual trap priming follows section6.4 page29, not the installation-only filling quantity above."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 17,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "34aca778013a35ecfd1094043a185b6afcd3eb481beed95bd58a18171d6bc43c",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-17.png",
+          "caption": "Fig13b C/X connections WITH wall jig and Cyclone if actually fitted. Flue fitting geometry applies only to the stated CD Easy-Flue branch; not a routine cutting/reconfiguration instruction."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 18,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "3e4c17d59080437f636024eab88fb41e636973b7155df98ab00cf47e84404390",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-18.png",
+          "caption": "Original CD Easy-Flue joint/seal/terminal integrity reference only for this actual fitted branch. No authority to modify flue geometry during annual service."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 23,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "21eaa79da1e73a0b2687bddae3e96c0061fa29fdf610bb9646deb91aab9efab4",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-23.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 24,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "75b48377c8af94247c5f86f33c845cedb100ff8c09f7e5b259818f73f85ce497",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-24.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 25,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "840bba88e20deac97978f5a1067e758fee4b6c8a0c41ae5a6d9901d90c5f49d8",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-25.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 26,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "efd2107b501b93546a6a891f9f0fc913834271e76a0d8cb35fb2de2282e0fc9b",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-26.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 27,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "cc5c421b5d39d52393c924726ab2cc12c8eda4d066dd3b1815eeece1eceeab51",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-27.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 28,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "93a5dc22c84278100b7bbd6adb2cdfa67cdca22dadd6675979f40bb519a8a144",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-28.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 29,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "fdd660c1d248528d8ad72ba2b60260be9d5cfbab20637ba29de0e1777fe4c4b9",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-29.png"
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 33,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "2a60b48f2114c613bedeb4c2b7963a5a371f0883a0c314e75d938705b4d0f594",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-33.png",
+          "caption": "Only insulation condition/section7.16, trap and fitted-Cyclone context are used. Controls/sensor/thermal-fuse replacement is outside annual scope; section6.3 erroneous7.19 insulation pointer is not followed."
+        },
+        {
+          "documentId": "alpha-intec-cx-d330-09-13",
+          "page": 34,
+          "sourceSHA256": "f48db5ffb694abca2d54175c47a06a03ec99931e84861911c2f2da6c37ea24ba",
+          "sha256": "af74453f6f7f91523411905b9026766589bdf7ba00995c6ba28636a91ad513c5",
+          "asset": "manual-pages/alpha-intec-cx-d330-09-13/page-34.png",
+          "caption": "Fig34 pump, automatic vent, PRV and drain locations only. Replacement procedures above are outside annual scope."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "worcester-greenstar-danesmoor-utility-system-12-18-7731600254",
+      "model": "Greenstar Danesmoor Utility system 12/18",
+      "gcNumber": null,
+      "fuel": "Oil",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 17,
+      "images": [
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 3,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "b52e39140a97517414cf94ec3df5d4dd34b516a5b89563a9ba0cc9a84d61e160",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-3.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 4,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "e708b86b316d0572db7fec5c8c029beda45b1debc41faa09655e6c64af7b5f83",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-4.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 14,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "f90315b318281a3f6ec29877d380e7810631bff60538d3aed547f18e6c183be5",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-14.png",
+          "caption": "Original hydraulic examples and temporary filling connection only; not a new wiring plan, approved redesign or universal expansion-vessel charge. Use the actual regular/open-vented or sealed/System branch."
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 33,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "d41aa1cf35fe9291ebf5b1f51eddb113ea2dbe0c7eaaf44448222b3d52f2889d",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-33.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 40,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "cfda20f831b9c0fde10608674401b89718bd7176b1003b6d16aaaf60bf97134f",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-40.png",
+          "caption": "System-only built-in vessel0.5bar is AS SUPPLIED, not a universal installed charge; section6.2initial filling1–2bar is distinct from page41treatment/refill instructions."
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 41,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "693d2efb8edfc25ad1a4d3cdbaf53dd53772fadbc5bad7e1c014d90b25fc11ea",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-41.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 42,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "8f7b068fb88f3c1e5e94f6201c5558e348c6b4abab7ec3aba27b88e54539e7eb",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-42.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 43,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "049fa8b4f3172732cf77b6f8ab873e8f056703df3b144aec96e4bb45e65c9e42",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-43.png",
+          "caption": "Original section6.4.5/6 methods. Some prose uses legacy letter references; identify pump pressure/bleed and air controls from the actual own numbered Figures64/65/70. Priming/reset is controlled, not repeated-reset permission for an unresolved fault."
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 44,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "fd02500578f3a0e374d71eadd726e61fbebddfd9795bd13376e4e4b4aab56697",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-44.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 45,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "c310a26eb39688808a30deb1961791020b4316f860e2ddce03ba28155a0f8133",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-45.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 46,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "447c58617ad667d26d24abbb94f461f9f76dc6a79d6804f442d39a666ff0cbb6",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-46.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 47,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "a8c5f8ad765ad737296d6d39832514f2af49d2dce5ccf568f75a248b9694d23c",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-47.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 48,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "cbb60417a361cb346bb9bf64f571ee682b9eb9617f8e470b7a106f24fbd102cc",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-48.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 49,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "7099710e3554a83a36b46d72cc0c5e689df75469ee8c6fcd354447575c626f6a",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-49.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 50,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "7283ec5ed3f70385001854fa03f50301e3c5692a98294ed9a89cb75526be96d4",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-50.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 51,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "5ad7d6755678c8b997e4d2457913c8282c032eb7a25cdfd5f9f76ec07cec859b",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-51.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 52,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "2b48efab018c9def7880541cd29b1cb00234af5cb77244c43c257ef461859178",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-52.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "worcester-greenstar-danesmoor-utility-system-18-25-7731600255",
+      "model": "Greenstar Danesmoor Utility system 18/25",
+      "gcNumber": null,
+      "fuel": "Oil",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 17,
+      "images": [
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 3,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "b52e39140a97517414cf94ec3df5d4dd34b516a5b89563a9ba0cc9a84d61e160",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-3.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 4,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "e708b86b316d0572db7fec5c8c029beda45b1debc41faa09655e6c64af7b5f83",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-4.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 14,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "f90315b318281a3f6ec29877d380e7810631bff60538d3aed547f18e6c183be5",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-14.png",
+          "caption": "Original hydraulic examples and temporary filling connection only; not a new wiring plan, approved redesign or universal expansion-vessel charge. Use the actual regular/open-vented or sealed/System branch."
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 33,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "d41aa1cf35fe9291ebf5b1f51eddb113ea2dbe0c7eaaf44448222b3d52f2889d",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-33.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 40,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "cfda20f831b9c0fde10608674401b89718bd7176b1003b6d16aaaf60bf97134f",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-40.png",
+          "caption": "System-only built-in vessel0.5bar is AS SUPPLIED, not a universal installed charge; section6.2initial filling1–2bar is distinct from page41treatment/refill instructions."
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 41,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "693d2efb8edfc25ad1a4d3cdbaf53dd53772fadbc5bad7e1c014d90b25fc11ea",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-41.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 42,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "8f7b068fb88f3c1e5e94f6201c5558e348c6b4abab7ec3aba27b88e54539e7eb",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-42.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 43,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "049fa8b4f3172732cf77b6f8ab873e8f056703df3b144aec96e4bb45e65c9e42",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-43.png",
+          "caption": "Original section6.4.5/6 methods. Some prose uses legacy letter references; identify pump pressure/bleed and air controls from the actual own numbered Figures64/65/70. Priming/reset is controlled, not repeated-reset permission for an unresolved fault."
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 44,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "fd02500578f3a0e374d71eadd726e61fbebddfd9795bd13376e4e4b4aab56697",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-44.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 45,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "c310a26eb39688808a30deb1961791020b4316f860e2ddce03ba28155a0f8133",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-45.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 46,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "447c58617ad667d26d24abbb94f461f9f76dc6a79d6804f442d39a666ff0cbb6",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-46.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 47,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "a8c5f8ad765ad737296d6d39832514f2af49d2dce5ccf568f75a248b9694d23c",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-47.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 48,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "cbb60417a361cb346bb9bf64f571ee682b9eb9617f8e470b7a106f24fbd102cc",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-48.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 49,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "7099710e3554a83a36b46d72cc0c5e689df75469ee8c6fcd354447575c626f6a",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-49.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 50,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "7283ec5ed3f70385001854fa03f50301e3c5692a98294ed9a89cb75526be96d4",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-50.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 51,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "5ad7d6755678c8b997e4d2457913c8282c032eb7a25cdfd5f9f76ec07cec859b",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-51.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 52,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "2b48efab018c9def7880541cd29b1cb00234af5cb77244c43c257ef461859178",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-52.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "worcester-greenstar-danesmoor-utility-system-25-32-7731600256",
+      "model": "Greenstar Danesmoor Utility system 25/32",
+      "gcNumber": null,
+      "fuel": "Oil",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 17,
+      "images": [
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 3,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "b52e39140a97517414cf94ec3df5d4dd34b516a5b89563a9ba0cc9a84d61e160",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-3.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 4,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "e708b86b316d0572db7fec5c8c029beda45b1debc41faa09655e6c64af7b5f83",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-4.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 14,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "f90315b318281a3f6ec29877d380e7810631bff60538d3aed547f18e6c183be5",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-14.png",
+          "caption": "Original hydraulic examples and temporary filling connection only; not a new wiring plan, approved redesign or universal expansion-vessel charge. Use the actual regular/open-vented or sealed/System branch."
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 33,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "d41aa1cf35fe9291ebf5b1f51eddb113ea2dbe0c7eaaf44448222b3d52f2889d",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-33.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 40,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "cfda20f831b9c0fde10608674401b89718bd7176b1003b6d16aaaf60bf97134f",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-40.png",
+          "caption": "System-only built-in vessel0.5bar is AS SUPPLIED, not a universal installed charge; section6.2initial filling1–2bar is distinct from page41treatment/refill instructions."
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 41,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "693d2efb8edfc25ad1a4d3cdbaf53dd53772fadbc5bad7e1c014d90b25fc11ea",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-41.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 42,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "8f7b068fb88f3c1e5e94f6201c5558e348c6b4abab7ec3aba27b88e54539e7eb",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-42.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 43,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "049fa8b4f3172732cf77b6f8ab873e8f056703df3b144aec96e4bb45e65c9e42",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-43.png",
+          "caption": "Original section6.4.5/6 methods. Some prose uses legacy letter references; identify pump pressure/bleed and air controls from the actual own numbered Figures64/65/70. Priming/reset is controlled, not repeated-reset permission for an unresolved fault."
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 44,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "fd02500578f3a0e374d71eadd726e61fbebddfd9795bd13376e4e4b4aab56697",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-44.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 45,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "c310a26eb39688808a30deb1961791020b4316f860e2ddce03ba28155a0f8133",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-45.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 46,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "447c58617ad667d26d24abbb94f461f9f76dc6a79d6804f442d39a666ff0cbb6",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-46.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 47,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "a8c5f8ad765ad737296d6d39832514f2af49d2dce5ccf568f75a248b9694d23c",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-47.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 48,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "cbb60417a361cb346bb9bf64f571ee682b9eb9617f8e470b7a106f24fbd102cc",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-48.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 49,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "7099710e3554a83a36b46d72cc0c5e689df75469ee8c6fcd354447575c626f6a",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-49.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 50,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "7283ec5ed3f70385001854fa03f50301e3c5692a98294ed9a89cb75526be96d4",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-50.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 51,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "5ad7d6755678c8b997e4d2457913c8282c032eb7a25cdfd5f9f76ec07cec859b",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-51.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 52,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "2b48efab018c9def7880541cd29b1cb00234af5cb77244c43c257ef461859178",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-52.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "worcester-greenstar-danesmoor-utility-regular-12-18-7731600245",
+      "model": "Greenstar Danesmoor Utility regular 12/18",
+      "gcNumber": null,
+      "fuel": "Oil",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 17,
+      "images": [
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 3,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "b52e39140a97517414cf94ec3df5d4dd34b516a5b89563a9ba0cc9a84d61e160",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-3.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 4,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "e708b86b316d0572db7fec5c8c029beda45b1debc41faa09655e6c64af7b5f83",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-4.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 14,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "f90315b318281a3f6ec29877d380e7810631bff60538d3aed547f18e6c183be5",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-14.png",
+          "caption": "Original hydraulic examples and temporary filling connection only; not a new wiring plan, approved redesign or universal expansion-vessel charge. Use the actual regular/open-vented or sealed/System branch."
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 33,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "d41aa1cf35fe9291ebf5b1f51eddb113ea2dbe0c7eaaf44448222b3d52f2889d",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-33.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 40,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "cfda20f831b9c0fde10608674401b89718bd7176b1003b6d16aaaf60bf97134f",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-40.png",
+          "caption": "System-only built-in vessel0.5bar is AS SUPPLIED, not a universal installed charge; section6.2initial filling1–2bar is distinct from page41treatment/refill instructions."
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 41,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "693d2efb8edfc25ad1a4d3cdbaf53dd53772fadbc5bad7e1c014d90b25fc11ea",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-41.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 42,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "8f7b068fb88f3c1e5e94f6201c5558e348c6b4abab7ec3aba27b88e54539e7eb",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-42.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 43,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "049fa8b4f3172732cf77b6f8ab873e8f056703df3b144aec96e4bb45e65c9e42",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-43.png",
+          "caption": "Original section6.4.5/6 methods. Some prose uses legacy letter references; identify pump pressure/bleed and air controls from the actual own numbered Figures64/65/70. Priming/reset is controlled, not repeated-reset permission for an unresolved fault."
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 44,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "fd02500578f3a0e374d71eadd726e61fbebddfd9795bd13376e4e4b4aab56697",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-44.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 45,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "c310a26eb39688808a30deb1961791020b4316f860e2ddce03ba28155a0f8133",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-45.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 46,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "447c58617ad667d26d24abbb94f461f9f76dc6a79d6804f442d39a666ff0cbb6",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-46.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 47,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "a8c5f8ad765ad737296d6d39832514f2af49d2dce5ccf568f75a248b9694d23c",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-47.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 48,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "cbb60417a361cb346bb9bf64f571ee682b9eb9617f8e470b7a106f24fbd102cc",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-48.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 49,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "7099710e3554a83a36b46d72cc0c5e689df75469ee8c6fcd354447575c626f6a",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-49.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 50,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "7283ec5ed3f70385001854fa03f50301e3c5692a98294ed9a89cb75526be96d4",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-50.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 51,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "5ad7d6755678c8b997e4d2457913c8282c032eb7a25cdfd5f9f76ec07cec859b",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-51.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 52,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "2b48efab018c9def7880541cd29b1cb00234af5cb77244c43c257ef461859178",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-52.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "worcester-greenstar-danesmoor-utility-regular-18-25-7731600246",
+      "model": "Greenstar Danesmoor Utility regular 18/25",
+      "gcNumber": null,
+      "fuel": "Oil",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 17,
+      "images": [
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 3,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "b52e39140a97517414cf94ec3df5d4dd34b516a5b89563a9ba0cc9a84d61e160",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-3.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 4,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "e708b86b316d0572db7fec5c8c029beda45b1debc41faa09655e6c64af7b5f83",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-4.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 14,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "f90315b318281a3f6ec29877d380e7810631bff60538d3aed547f18e6c183be5",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-14.png",
+          "caption": "Original hydraulic examples and temporary filling connection only; not a new wiring plan, approved redesign or universal expansion-vessel charge. Use the actual regular/open-vented or sealed/System branch."
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 33,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "d41aa1cf35fe9291ebf5b1f51eddb113ea2dbe0c7eaaf44448222b3d52f2889d",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-33.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 40,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "cfda20f831b9c0fde10608674401b89718bd7176b1003b6d16aaaf60bf97134f",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-40.png",
+          "caption": "System-only built-in vessel0.5bar is AS SUPPLIED, not a universal installed charge; section6.2initial filling1–2bar is distinct from page41treatment/refill instructions."
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 41,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "693d2efb8edfc25ad1a4d3cdbaf53dd53772fadbc5bad7e1c014d90b25fc11ea",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-41.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 42,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "8f7b068fb88f3c1e5e94f6201c5558e348c6b4abab7ec3aba27b88e54539e7eb",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-42.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 43,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "049fa8b4f3172732cf77b6f8ab873e8f056703df3b144aec96e4bb45e65c9e42",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-43.png",
+          "caption": "Original section6.4.5/6 methods. Some prose uses legacy letter references; identify pump pressure/bleed and air controls from the actual own numbered Figures64/65/70. Priming/reset is controlled, not repeated-reset permission for an unresolved fault."
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 44,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "fd02500578f3a0e374d71eadd726e61fbebddfd9795bd13376e4e4b4aab56697",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-44.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 45,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "c310a26eb39688808a30deb1961791020b4316f860e2ddce03ba28155a0f8133",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-45.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 46,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "447c58617ad667d26d24abbb94f461f9f76dc6a79d6804f442d39a666ff0cbb6",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-46.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 47,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "a8c5f8ad765ad737296d6d39832514f2af49d2dce5ccf568f75a248b9694d23c",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-47.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 48,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "cbb60417a361cb346bb9bf64f571ee682b9eb9617f8e470b7a106f24fbd102cc",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-48.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 49,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "7099710e3554a83a36b46d72cc0c5e689df75469ee8c6fcd354447575c626f6a",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-49.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 50,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "7283ec5ed3f70385001854fa03f50301e3c5692a98294ed9a89cb75526be96d4",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-50.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 51,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "5ad7d6755678c8b997e4d2457913c8282c032eb7a25cdfd5f9f76ec07cec859b",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-51.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 52,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "2b48efab018c9def7880541cd29b1cb00234af5cb77244c43c257ef461859178",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-52.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "worcester-greenstar-danesmoor-utility-regular-25-32-7731600247",
+      "model": "Greenstar Danesmoor Utility regular 25/32",
+      "gcNumber": null,
+      "fuel": "Oil",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 17,
+      "images": [
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 3,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "b52e39140a97517414cf94ec3df5d4dd34b516a5b89563a9ba0cc9a84d61e160",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-3.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 4,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "e708b86b316d0572db7fec5c8c029beda45b1debc41faa09655e6c64af7b5f83",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-4.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 14,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "f90315b318281a3f6ec29877d380e7810631bff60538d3aed547f18e6c183be5",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-14.png",
+          "caption": "Original hydraulic examples and temporary filling connection only; not a new wiring plan, approved redesign or universal expansion-vessel charge. Use the actual regular/open-vented or sealed/System branch."
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 33,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "d41aa1cf35fe9291ebf5b1f51eddb113ea2dbe0c7eaaf44448222b3d52f2889d",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-33.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 40,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "cfda20f831b9c0fde10608674401b89718bd7176b1003b6d16aaaf60bf97134f",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-40.png",
+          "caption": "System-only built-in vessel0.5bar is AS SUPPLIED, not a universal installed charge; section6.2initial filling1–2bar is distinct from page41treatment/refill instructions."
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 41,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "693d2efb8edfc25ad1a4d3cdbaf53dd53772fadbc5bad7e1c014d90b25fc11ea",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-41.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 42,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "8f7b068fb88f3c1e5e94f6201c5558e348c6b4abab7ec3aba27b88e54539e7eb",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-42.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 43,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "049fa8b4f3172732cf77b6f8ab873e8f056703df3b144aec96e4bb45e65c9e42",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-43.png",
+          "caption": "Original section6.4.5/6 methods. Some prose uses legacy letter references; identify pump pressure/bleed and air controls from the actual own numbered Figures64/65/70. Priming/reset is controlled, not repeated-reset permission for an unresolved fault."
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 44,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "fd02500578f3a0e374d71eadd726e61fbebddfd9795bd13376e4e4b4aab56697",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-44.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 45,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "c310a26eb39688808a30deb1961791020b4316f860e2ddce03ba28155a0f8133",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-45.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 46,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "447c58617ad667d26d24abbb94f461f9f76dc6a79d6804f442d39a666ff0cbb6",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-46.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 47,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "a8c5f8ad765ad737296d6d39832514f2af49d2dce5ccf568f75a248b9694d23c",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-47.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 48,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "cbb60417a361cb346bb9bf64f571ee682b9eb9617f8e470b7a106f24fbd102cc",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-48.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 49,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "7099710e3554a83a36b46d72cc0c5e689df75469ee8c6fcd354447575c626f6a",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-49.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 50,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "7283ec5ed3f70385001854fa03f50301e3c5692a98294ed9a89cb75526be96d4",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-50.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 51,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "5ad7d6755678c8b997e4d2457913c8282c032eb7a25cdfd5f9f76ec07cec859b",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-51.png"
+        },
+        {
+          "documentId": "danesmoor-utility-6721846263-202201",
+          "page": 52,
+          "sourceSHA256": "f2fc1eb532887f82c99d48c2ccf1879d8a921d26b3cfe6e6e4402a5d0f8509d7",
+          "sha256": "2b48efab018c9def7880541cd29b1cb00234af5cb77244c43c257ef461859178",
+          "asset": "manual-pages/danesmoor-utility-6721846263-202201/page-52.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "grant-vortex-pro-utility-15-26-vtx15-26",
+      "model": "Vortex Pro Utility 15/26",
+      "gcNumber": null,
+      "fuel": "Oil",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 21,
+      "images": [
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 5,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "3ca45e3beec4f904868f77b45ef0e316ca66608c34bd15b8d05555c213fd5e83",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-5.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 7,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "a506b9a2ee11955dbad4773edd86af50eaa829f1d7cf318d058f241e8abb46e2",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-7.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 12,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "5ce8e09dd1798f0fb9268240225156d5d84606fe107d36a5b34381a37de1307a",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-12.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 13,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "86a7d5d206b9459b0353e522e8a9240ae39597454fc4d2fba8848e55c710738b",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-13.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 17,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "d383b8800426b5cc318b7b61ee05e8c22c146c1527a32e27a52506ef8be983cb",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-17.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 19,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "f06cdfba607bd9a2c3feacf18645d16ff6622bfdf298c59bcb7a7d497add7d02",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-19.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 21,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "b900791fc012e453ee00a769f0f1c772db09cb0cda4ba7358a6e8df0627d17e4",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-21.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 22,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "2e2eda7873e083fe822db0db009e564d20aecd63f996847e866b8e1e25deef1e",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-22.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 38,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "cc4ad619a8d222b51a0dc44365995e11a99b4a249b7285a7850a6e958436cf99",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-38.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 39,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "94b5d4afdd04b45831c96eb3112cec077a5ad25e28fb26a65b41669b18802a16",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-39.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 40,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "57b0b84142674a3023045134aa270ddc4eba246f6b8d12089c280cd95da38077",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-40.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 42,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "2fe2fbcb5aa753f8073f3526ed9518a3cc689e03d0fda50a9686b2119aabf087",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-42.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 43,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "2edaf0b2a3431ded1ba7f64249104eee48ea41a2cf24290fb827d2a2bdbfe27f",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-43.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 44,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "1cd40db10cfd79344515d1958856640f6afe87785d3ba5ad74b00b0846b1b2ce",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-44.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 45,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "25211ae89ee2fdaa493e59388940ebc79e76cd650333e59b5987800bb55f14f2",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-45.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 46,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "6a2fce86e41f3a9063e5a834bbbb23111421fad05683e30fc1335d3f63843cc6",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-46.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 47,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "3c12d20bc9ae13f8c48e3c0b35c2b9adb5eb2f260ad551b112297dbe6ebb674a",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-47.png",
+          "caption": "Smaller RDB2.2 BX Utility15/26 and26/46: use the RIGHT-column all-model photocell, air/fan and oil-pump-filter maintenance only. The LEFT-column RDB3.2 burner-head method is excluded; use own page46 and Figures10-3–10-5 for the smaller BX head/electrodes."
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 48,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "3bdab53938b55987ce4bcd3483a86a9d1a86abc03d4fae156de1a2d83982e64b",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-48.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 59,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "39549e056cd85040d7a626f0d21536e49ef4da05e069296cd978bbecea171ff1",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-59.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 64,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "1d4d4df7b5d7d0f3e2c1c95f639f5d8c6020ac756865848a69fd272bc3c2660a",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-64.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 65,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "4783b4b53ec5a7a7cc1dc659cf7874a1654d6fa1d42e9aa7f4bd0667ebd9ec95",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-65.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "grant-vortex-pro-utility-26-46-vtx26-46",
+      "model": "Vortex Pro Utility 26/46",
+      "gcNumber": null,
+      "fuel": "Oil",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 21,
+      "images": [
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 5,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "3ca45e3beec4f904868f77b45ef0e316ca66608c34bd15b8d05555c213fd5e83",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-5.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 7,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "a506b9a2ee11955dbad4773edd86af50eaa829f1d7cf318d058f241e8abb46e2",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-7.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 12,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "5ce8e09dd1798f0fb9268240225156d5d84606fe107d36a5b34381a37de1307a",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-12.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 13,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "86a7d5d206b9459b0353e522e8a9240ae39597454fc4d2fba8848e55c710738b",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-13.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 17,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "d383b8800426b5cc318b7b61ee05e8c22c146c1527a32e27a52506ef8be983cb",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-17.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 19,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "f06cdfba607bd9a2c3feacf18645d16ff6622bfdf298c59bcb7a7d497add7d02",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-19.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 21,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "b900791fc012e453ee00a769f0f1c772db09cb0cda4ba7358a6e8df0627d17e4",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-21.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 22,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "2e2eda7873e083fe822db0db009e564d20aecd63f996847e866b8e1e25deef1e",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-22.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 38,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "cc4ad619a8d222b51a0dc44365995e11a99b4a249b7285a7850a6e958436cf99",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-38.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 39,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "94b5d4afdd04b45831c96eb3112cec077a5ad25e28fb26a65b41669b18802a16",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-39.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 40,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "57b0b84142674a3023045134aa270ddc4eba246f6b8d12089c280cd95da38077",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-40.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 42,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "2fe2fbcb5aa753f8073f3526ed9518a3cc689e03d0fda50a9686b2119aabf087",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-42.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 43,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "2edaf0b2a3431ded1ba7f64249104eee48ea41a2cf24290fb827d2a2bdbfe27f",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-43.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 44,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "1cd40db10cfd79344515d1958856640f6afe87785d3ba5ad74b00b0846b1b2ce",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-44.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 45,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "25211ae89ee2fdaa493e59388940ebc79e76cd650333e59b5987800bb55f14f2",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-45.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 46,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "6a2fce86e41f3a9063e5a834bbbb23111421fad05683e30fc1335d3f63843cc6",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-46.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 47,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "3c12d20bc9ae13f8c48e3c0b35c2b9adb5eb2f260ad551b112297dbe6ebb674a",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-47.png",
+          "caption": "Smaller RDB2.2 BX Utility15/26 and26/46: use the RIGHT-column all-model photocell, air/fan and oil-pump-filter maintenance only. The LEFT-column RDB3.2 burner-head method is excluded; use own page46 and Figures10-3–10-5 for the smaller BX head/electrodes."
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 48,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "3bdab53938b55987ce4bcd3483a86a9d1a86abc03d4fae156de1a2d83982e64b",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-48.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 59,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "39549e056cd85040d7a626f0d21536e49ef4da05e069296cd978bbecea171ff1",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-59.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 64,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "1d4d4df7b5d7d0f3e2c1c95f639f5d8c6020ac756865848a69fd272bc3c2660a",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-64.png"
+        },
+        {
+          "documentId": "grant-pro-utility-ukdoc0120-rev32-202602",
+          "page": 65,
+          "sourceSHA256": "272163ab3e1efdf987a27acb1612f26d151794b1cb20a852d1ff2b330e584c8f",
+          "sha256": "4783b4b53ec5a7a7cc1dc659cf7874a1654d6fa1d42e9aa7f4bd0667ebd9ec95",
+          "asset": "manual-pages/grant-pro-utility-ukdoc0120-rev32-202602/page-65.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
     }
   ],
   "liveServiceM8Connection": false,
@@ -10541,7 +12431,8 @@
     "Expands 14 exact-model annual guides from 176 to 338 tasks, with 61 original source-page images. 14 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 14 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1711 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
     "Expands 12 exact-model annual guides from 149 to 296 tasks, with 97 total original source-page images. 12 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 12 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1713 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
     "Restores original28 legacy original-page illustrations for its independently admitted complete annual status as well as partial status; exact identity, fuel, source, page, document, task and image guards remain unchanged.",
-    "Expands 27 exact-model annual guides from 331 to 686 tasks, with 154 total original source-page images. 27 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 27 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1698 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances."
+    "Expands 27 exact-model annual guides from 331 to 686 tasks, with 154 total original source-page images. 27 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 27 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1698 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
+    "Expands 13 exact-model annual guides from 281 to 385 tasks, with 205 total original source-page images. 13 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 13 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1712 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances."
   ],
   "releaseStatus": "release"
 }
