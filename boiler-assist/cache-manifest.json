@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "bc691d8d20a6f17f",
+  "buildId": "d786669b92e24802",
   "preparedOn": "2026-11-24",
-  "appVersion": "2026.11.28-r55-uh8-wiring",
+  "appVersion": "2026.11.28-r56-full-annual-gas-oil",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -52,8 +52,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "bytes": 12912317,
-      "sha256": "48569740c45a6d69477fb35c164846d8ea711c0846cb60481685974cc149d675"
+      "bytes": 12972781,
+      "sha256": "f5e44b4b10386863cf60fbed5ca1615d630f422590e1ea6b372c4c5ecbb5d842"
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -98,7 +98,7 @@
     {
       "url": "./help/ai-client.mjs",
       "bytes": 8814,
-      "sha256": "842275538ec056b360bf84a55b073aef27be143cc45c18caa1621052bcb3674f"
+      "sha256": "020ecb679e119e957dcc4dea2e4338e2cdd7dc7d67ff88f4f4341f0f33c56a3a"
     },
     {
       "url": "./help/baxi400-heat-fault-guard.mjs",
@@ -268,7 +268,7 @@
     {
       "url": "./index.html",
       "bytes": 1586895,
-      "sha256": "060f0729099a2aaf3546bc04cb6c3ac11dbfb551e69548d8149acf54089d1e35"
+      "sha256": "9ba83945f32cc8fe2530fb5033e323f9f2262b6a638b118d9ee255cfac698f4e"
     },
     {
       "url": "./local-bridge.js",
@@ -2382,8 +2382,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 778355,
-      "sha256": "ee91bebd1701a0313531bd2bda67379c5dace2b4f38c84f4752648a4950abab9"
+      "bytes": 833466,
+      "sha256": "bf6b5067d1bf8b203f4d435de5fadd7934ecd4a517c741456e9e0a128dbcc998"
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -2452,8 +2452,8 @@
     },
     {
       "url": "./reviewed-service-pages.js",
-      "bytes": 467966,
-      "sha256": "f24ff6095d8523f4a14dfd845f5cf37ae31b13ac6702207f32d54cd8ba967103"
+      "bytes": 517131,
+      "sha256": "a99f325af02a651ac543f09ea12e6a9be141d66d0b2358ff62a2f7845286226c"
     },
     {
       "url": "./manual-pages/main-system-he-5121186-02/page-10.png",
@@ -3649,7 +3649,87 @@
       "url": "./wiring/uh8-reference.mjs",
       "bytes": 5074,
       "sha256": "d717ff7b7c684653d7b0ca3e0dec468575bf75369e0aecfaee031f190c1f43d7"
+    },
+    {
+      "url": "./manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-15.png",
+      "bytes": 136629,
+      "sha256": "7d57ece5e8310a953d3141793f41610972550d608efdce91b6ab9c84beade6f6"
+    },
+    {
+      "url": "./manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-20.png",
+      "bytes": 263702,
+      "sha256": "695c72c1f1565aaf9e2bd2a177b37d15f0327e3995aeb9c58db6ef21b00d4541"
+    },
+    {
+      "url": "./manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-21.png",
+      "bytes": 466722,
+      "sha256": "0ecf2d93b079536ba0c5663ccfc8fb4655e73f30c9afe31522dffc5b1e401be9"
+    },
+    {
+      "url": "./manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-39.png",
+      "bytes": 363543,
+      "sha256": "83b2b586c1f1a539e55636f1ad1c493d055fdd0c9286e05b965ce91f65199f71"
+    },
+    {
+      "url": "./manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-44.png",
+      "bytes": 377134,
+      "sha256": "e83653ba8fa802ee9b58b781c6519f2346336793d2e121080e6a5cb2ca216638"
+    },
+    {
+      "url": "./manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-45.png",
+      "bytes": 463512,
+      "sha256": "ec89fda4d2a807fa1558c9a328c365f8ea0e0c91473f60819b352e8cc0fc82dc"
+    },
+    {
+      "url": "./manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-46.png",
+      "bytes": 294599,
+      "sha256": "312063456dd984c3a940f9ede46745758e90e8c41237724b515dc56f690440e2"
+    },
+    {
+      "url": "./manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-47.png",
+      "bytes": 409329,
+      "sha256": "e3b06b945e8f1f2ae0304347ccbe816dd3af18566c347788ec4a6a3f5c62cdda"
+    },
+    {
+      "url": "./manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-48.png",
+      "bytes": 268430,
+      "sha256": "4748211f267fc1902fa906f46c55ab40a9218477d197f41e7473023db8b2c82a"
+    },
+    {
+      "url": "./manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-50.png",
+      "bytes": 222827,
+      "sha256": "60f65bb20458d32851021c2a42fe19f47ef37ba27e0c95a6030cec7880d623c0"
+    },
+    {
+      "url": "./manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-52.png",
+      "bytes": 362436,
+      "sha256": "acb664ba6a088492626f7582405ba122465e385718e11f955be3f65816a15fe6"
+    },
+    {
+      "url": "./manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-53.png",
+      "bytes": 465432,
+      "sha256": "148564f75b93a5f99967e1a890492e02348a05b0fc4197dc462fad4e9b3edb11"
+    },
+    {
+      "url": "./manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-54.png",
+      "bytes": 418130,
+      "sha256": "2ebe5f0bbffedba9854689c6772dbb602257cf7cd1a9368909f4a11220884451"
+    },
+    {
+      "url": "./manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-56.png",
+      "bytes": 492099,
+      "sha256": "4ec5f55c0d347b1372f0e734a29d63a01765191b29ed152cf1d801010e46a44a"
+    },
+    {
+      "url": "./manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-63.png",
+      "bytes": 335710,
+      "sha256": "da1545b3884a60d4f5ed29689099a5deefde4fb9a56398561150b6bba88221f9"
+    },
+    {
+      "url": "./manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-71.png",
+      "bytes": 187725,
+      "sha256": "8879c11f3f26a463218102507caaaa6aad06aec9bac40aa7b8d9d6cede1e09ac"
     }
   ],
-  "totalBytes": 264037932
+  "totalBytes": 269730631
 }

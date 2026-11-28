@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.28-r55-uh8-wiring",
+  "appVersion": "2026.11.28-r56-full-annual-gas-oil",
   "preparedOn": "2026-11-28",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1725,
@@ -5009,6 +5009,102 @@
       "newConditionalTasks": 1,
       "status": "complete",
       "sourceReference": "UIN203318 A05 (September2009), V3 Flue System",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "baxi-ecoblue-12-system-erp-41-470-23",
+      "gcNumber": "41-470-23",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 25,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 4,
+      "status": "complete",
+      "sourceReference": "7219708-03 (03/17)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "baxi-ecoblue-15-system-erp-41-470-24",
+      "gcNumber": "41-470-24",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 25,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 4,
+      "status": "complete",
+      "sourceReference": "7219708-03 (03/17)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "baxi-ecoblue-18-system-erp-41-470-25",
+      "gcNumber": "41-470-25",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 25,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 4,
+      "status": "complete",
+      "sourceReference": "7219708-03 (03/17)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "baxi-ecoblue-24-system-erp-41-470-26",
+      "gcNumber": "41-470-26",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 25,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 4,
+      "status": "complete",
+      "sourceReference": "7219708-03 (03/17)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "baxi-ecoblue-28-system-erp-41-470-27",
+      "gcNumber": "41-470-27",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 25,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 4,
+      "status": "complete",
+      "sourceReference": "7219708-03 (03/17)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "baxi-ecoblue-32-system-erp-41-470-28",
+      "gcNumber": "41-470-28",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 25,
+      "previousServicingTasks": 18,
+      "newConditionalTasks": 4,
+      "status": "complete",
+      "sourceReference": "7219708-03 (03/17)",
       "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
       "newNumericRules": false,
       "numericReferenceOnly": true,
@@ -13373,12 +13469,811 @@
       "currentRevisionOrInstalledSerialApplicabilityProved": false,
       "newNumericRules": false,
       "numericReferenceOnly": true
+    },
+    {
+      "modelID": "baxi-ecoblue-12-system-erp-41-470-23",
+      "model": "EcoBlue 12 System ErP",
+      "gcNumber": "41-470-23",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 15,
+      "images": [
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 15,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "7d57ece5e8310a953d3141793f41610972550d608efdce91b6ab9c84beade6f6",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-15.png"
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 20,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "695c72c1f1565aaf9e2bd2a177b37d15f0327e3995aeb9c58db6ef21b00d4541",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-20.png",
+          "caption": "Original schematic drain6/PRV7, flowB/returnD; not numbers from the component view. No conversion or spare-part inference."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 21,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "0ecf2d93b079536ba0c5663ccfc8fb4655e73f30c9afe31522dffc5b1e401be9",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-21.png",
+          "caption": "Original component drain18/PRV14; expansion vessel differs on32, whose charge valve is shown in54. Match fitted output."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 39,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "83b2b586c1f1a539e55636f1ad1c493d055fdd0c9286e05b965ce91f65199f71",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-39.png",
+          "caption": "Own approx300ml FLUE-spigot priming, keep water OUT of air inlet; annual trap must be primed. Front lug/screw access, no invented flue dismantling."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 44,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "e83653ba8fa802ee9b58b781c6519f2346336793d2e121080e6a5cb2ca216638",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-44.png",
+          "caption": "Flow/return OPEN, pump airvent,1.5bar fill then CLOSE/DISCONNECT loop; required electrical/flue/seal checks."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 45,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "ec89fda4d2a807fa1558c9a328c365f8ea0e0c91473f60819b352e8cc0fc82dc",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-45.png",
+          "caption": "Original303combustion vs312deair key/function contexts;3/2labels differ in63 and i/Pcommand in47. Confirm actual rate; no assumed combi/cylinder hardware."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 46,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "312063456dd984c3a940f9ede46745758e90e8c41237724b515dc56f690440e2",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-46.png",
+          "caption": "Complete recommissioning MAX/MIN flowchart with both CO/ratio criteria and stop branches; not a new routine-service CO reading rule."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 47,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "e3b06b945e8f1f2ae0304347ccbe816dd3af18566c347788ec4a6a3f5c62cdda",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-47.png",
+          "caption": "Source operational i/Pkey wording differs from45/63; confirm actual function/rate. Gas-cock inlet location, all-other-appliances-ON pressure versus OFF gas rate."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 48,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "4748211f267fc1902fa906f46c55ab40a9218477d197f41e7473023db8b2c82a",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-48.png",
+          "caption": "Own refill/deair312/no-demand/gasoff/restart conditions; generic diverter wording does not establish fitted hardware."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 50,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "60f65bb20458d32851021c2a42fe19f47ef37ba27e0c95a6030cec7880d623c0",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-50.png",
+          "caption": "Original actual control keys, radiator-on requirement and inactive tap buttons; no guessed menu."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 52,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "acb664ba6a088492626f7582405ba122465e385718e11f955be3f65816a15fe6",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-52.png",
+          "caption": "Annual routine ratio-only criterion and exact escalation order/context; equality is not a PASS. No new certificate profile."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 53,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "148564f75b93a5f99967e1a890492e02348a05b0fc4197dc462fad4e9b3edb11",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-53.png",
+          "caption": "Complete routine assembly/cleaning, trap/lead/clip positions and ALL Fig45 geometry;12/15-only starred5mm distinguished."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 54,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "2ebe5f0bbffedba9854689c6772dbb602257cf7cd1a9368909f4a11220884451",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-54.png",
+          "caption": "Own cold/drained vessel1.0bar,32top-left vsotherunderside, PRV/flamefailureE133; conditional electrode gaskets, not generic fit."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 56,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "4ec5f55c0d347b1372f0e734a29d63a01765191b29ed152cf1d801010e46a44a",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-56.png",
+          "caption": "Condition-triggered burner/insulation geometry only. Gaskets differ; p56 wrong13.1 electrode pointer resolved to own10.3.1p54. No routine spare-part replacement."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 63,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "da1545b3884a60d4f5ed29689099a5deefde4fb9a56398561150b6bba88221f9",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-63.png",
+          "caption": "Exact conditional valve-setting MAX/MIN, opposite throttle/offset directions,hexsizes,1/8turn/retest; NOT universal routine-service metrics."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "baxi-ecoblue-15-system-erp-41-470-24",
+      "model": "EcoBlue 15 System ErP",
+      "gcNumber": "41-470-24",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 15,
+      "images": [
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 15,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "7d57ece5e8310a953d3141793f41610972550d608efdce91b6ab9c84beade6f6",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-15.png"
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 20,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "695c72c1f1565aaf9e2bd2a177b37d15f0327e3995aeb9c58db6ef21b00d4541",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-20.png",
+          "caption": "Original schematic drain6/PRV7, flowB/returnD; not numbers from the component view. No conversion or spare-part inference."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 21,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "0ecf2d93b079536ba0c5663ccfc8fb4655e73f30c9afe31522dffc5b1e401be9",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-21.png",
+          "caption": "Original component drain18/PRV14; expansion vessel differs on32, whose charge valve is shown in54. Match fitted output."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 39,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "83b2b586c1f1a539e55636f1ad1c493d055fdd0c9286e05b965ce91f65199f71",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-39.png",
+          "caption": "Own approx300ml FLUE-spigot priming, keep water OUT of air inlet; annual trap must be primed. Front lug/screw access, no invented flue dismantling."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 44,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "e83653ba8fa802ee9b58b781c6519f2346336793d2e121080e6a5cb2ca216638",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-44.png",
+          "caption": "Flow/return OPEN, pump airvent,1.5bar fill then CLOSE/DISCONNECT loop; required electrical/flue/seal checks."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 45,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "ec89fda4d2a807fa1558c9a328c365f8ea0e0c91473f60819b352e8cc0fc82dc",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-45.png",
+          "caption": "Original303combustion vs312deair key/function contexts;3/2labels differ in63 and i/Pcommand in47. Confirm actual rate; no assumed combi/cylinder hardware."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 46,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "312063456dd984c3a940f9ede46745758e90e8c41237724b515dc56f690440e2",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-46.png",
+          "caption": "Complete recommissioning MAX/MIN flowchart with both CO/ratio criteria and stop branches; not a new routine-service CO reading rule."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 47,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "e3b06b945e8f1f2ae0304347ccbe816dd3af18566c347788ec4a6a3f5c62cdda",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-47.png",
+          "caption": "Source operational i/Pkey wording differs from45/63; confirm actual function/rate. Gas-cock inlet location, all-other-appliances-ON pressure versus OFF gas rate."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 48,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "4748211f267fc1902fa906f46c55ab40a9218477d197f41e7473023db8b2c82a",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-48.png",
+          "caption": "Own refill/deair312/no-demand/gasoff/restart conditions; generic diverter wording does not establish fitted hardware."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 50,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "60f65bb20458d32851021c2a42fe19f47ef37ba27e0c95a6030cec7880d623c0",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-50.png",
+          "caption": "Original actual control keys, radiator-on requirement and inactive tap buttons; no guessed menu."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 52,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "acb664ba6a088492626f7582405ba122465e385718e11f955be3f65816a15fe6",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-52.png",
+          "caption": "Annual routine ratio-only criterion and exact escalation order/context; equality is not a PASS. No new certificate profile."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 53,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "148564f75b93a5f99967e1a890492e02348a05b0fc4197dc462fad4e9b3edb11",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-53.png",
+          "caption": "Complete routine assembly/cleaning, trap/lead/clip positions and ALL Fig45 geometry;12/15-only starred5mm distinguished."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 54,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "2ebe5f0bbffedba9854689c6772dbb602257cf7cd1a9368909f4a11220884451",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-54.png",
+          "caption": "Own cold/drained vessel1.0bar,32top-left vsotherunderside, PRV/flamefailureE133; conditional electrode gaskets, not generic fit."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 56,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "4ec5f55c0d347b1372f0e734a29d63a01765191b29ed152cf1d801010e46a44a",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-56.png",
+          "caption": "Condition-triggered burner/insulation geometry only. Gaskets differ; p56 wrong13.1 electrode pointer resolved to own10.3.1p54. No routine spare-part replacement."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 63,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "da1545b3884a60d4f5ed29689099a5deefde4fb9a56398561150b6bba88221f9",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-63.png",
+          "caption": "Exact conditional valve-setting MAX/MIN, opposite throttle/offset directions,hexsizes,1/8turn/retest; NOT universal routine-service metrics."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "baxi-ecoblue-18-system-erp-41-470-25",
+      "model": "EcoBlue 18 System ErP",
+      "gcNumber": "41-470-25",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 15,
+      "images": [
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 15,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "7d57ece5e8310a953d3141793f41610972550d608efdce91b6ab9c84beade6f6",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-15.png"
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 20,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "695c72c1f1565aaf9e2bd2a177b37d15f0327e3995aeb9c58db6ef21b00d4541",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-20.png",
+          "caption": "Original schematic drain6/PRV7, flowB/returnD; not numbers from the component view. No conversion or spare-part inference."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 21,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "0ecf2d93b079536ba0c5663ccfc8fb4655e73f30c9afe31522dffc5b1e401be9",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-21.png",
+          "caption": "Original component drain18/PRV14; expansion vessel differs on32, whose charge valve is shown in54. Match fitted output."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 39,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "83b2b586c1f1a539e55636f1ad1c493d055fdd0c9286e05b965ce91f65199f71",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-39.png",
+          "caption": "Own approx300ml FLUE-spigot priming, keep water OUT of air inlet; annual trap must be primed. Front lug/screw access, no invented flue dismantling."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 44,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "e83653ba8fa802ee9b58b781c6519f2346336793d2e121080e6a5cb2ca216638",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-44.png",
+          "caption": "Flow/return OPEN, pump airvent,1.5bar fill then CLOSE/DISCONNECT loop; required electrical/flue/seal checks."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 45,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "ec89fda4d2a807fa1558c9a328c365f8ea0e0c91473f60819b352e8cc0fc82dc",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-45.png",
+          "caption": "Original303combustion vs312deair key/function contexts;3/2labels differ in63 and i/Pcommand in47. Confirm actual rate; no assumed combi/cylinder hardware."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 46,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "312063456dd984c3a940f9ede46745758e90e8c41237724b515dc56f690440e2",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-46.png",
+          "caption": "Complete recommissioning MAX/MIN flowchart with both CO/ratio criteria and stop branches; not a new routine-service CO reading rule."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 47,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "e3b06b945e8f1f2ae0304347ccbe816dd3af18566c347788ec4a6a3f5c62cdda",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-47.png",
+          "caption": "Source operational i/Pkey wording differs from45/63; confirm actual function/rate. Gas-cock inlet location, all-other-appliances-ON pressure versus OFF gas rate."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 48,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "4748211f267fc1902fa906f46c55ab40a9218477d197f41e7473023db8b2c82a",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-48.png",
+          "caption": "Own refill/deair312/no-demand/gasoff/restart conditions; generic diverter wording does not establish fitted hardware."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 50,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "60f65bb20458d32851021c2a42fe19f47ef37ba27e0c95a6030cec7880d623c0",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-50.png",
+          "caption": "Original actual control keys, radiator-on requirement and inactive tap buttons; no guessed menu."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 52,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "acb664ba6a088492626f7582405ba122465e385718e11f955be3f65816a15fe6",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-52.png",
+          "caption": "Annual routine ratio-only criterion and exact escalation order/context; equality is not a PASS. No new certificate profile."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 53,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "148564f75b93a5f99967e1a890492e02348a05b0fc4197dc462fad4e9b3edb11",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-53.png",
+          "caption": "Complete routine assembly/cleaning, trap/lead/clip positions and ALL Fig45 geometry;12/15-only starred5mm distinguished."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 54,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "2ebe5f0bbffedba9854689c6772dbb602257cf7cd1a9368909f4a11220884451",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-54.png",
+          "caption": "Own cold/drained vessel1.0bar,32top-left vsotherunderside, PRV/flamefailureE133; conditional electrode gaskets, not generic fit."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 56,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "4ec5f55c0d347b1372f0e734a29d63a01765191b29ed152cf1d801010e46a44a",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-56.png",
+          "caption": "Condition-triggered burner/insulation geometry only. Gaskets differ; p56 wrong13.1 electrode pointer resolved to own10.3.1p54. No routine spare-part replacement."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 63,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "da1545b3884a60d4f5ed29689099a5deefde4fb9a56398561150b6bba88221f9",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-63.png",
+          "caption": "Exact conditional valve-setting MAX/MIN, opposite throttle/offset directions,hexsizes,1/8turn/retest; NOT universal routine-service metrics."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "baxi-ecoblue-24-system-erp-41-470-26",
+      "model": "EcoBlue 24 System ErP",
+      "gcNumber": "41-470-26",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 15,
+      "images": [
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 15,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "7d57ece5e8310a953d3141793f41610972550d608efdce91b6ab9c84beade6f6",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-15.png"
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 20,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "695c72c1f1565aaf9e2bd2a177b37d15f0327e3995aeb9c58db6ef21b00d4541",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-20.png",
+          "caption": "Original schematic drain6/PRV7, flowB/returnD; not numbers from the component view. No conversion or spare-part inference."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 21,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "0ecf2d93b079536ba0c5663ccfc8fb4655e73f30c9afe31522dffc5b1e401be9",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-21.png",
+          "caption": "Original component drain18/PRV14; expansion vessel differs on32, whose charge valve is shown in54. Match fitted output."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 39,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "83b2b586c1f1a539e55636f1ad1c493d055fdd0c9286e05b965ce91f65199f71",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-39.png",
+          "caption": "Own approx300ml FLUE-spigot priming, keep water OUT of air inlet; annual trap must be primed. Front lug/screw access, no invented flue dismantling."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 44,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "e83653ba8fa802ee9b58b781c6519f2346336793d2e121080e6a5cb2ca216638",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-44.png",
+          "caption": "Flow/return OPEN, pump airvent,1.5bar fill then CLOSE/DISCONNECT loop; required electrical/flue/seal checks."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 45,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "ec89fda4d2a807fa1558c9a328c365f8ea0e0c91473f60819b352e8cc0fc82dc",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-45.png",
+          "caption": "Original303combustion vs312deair key/function contexts;3/2labels differ in63 and i/Pcommand in47. Confirm actual rate; no assumed combi/cylinder hardware."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 46,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "312063456dd984c3a940f9ede46745758e90e8c41237724b515dc56f690440e2",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-46.png",
+          "caption": "Complete recommissioning MAX/MIN flowchart with both CO/ratio criteria and stop branches; not a new routine-service CO reading rule."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 47,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "e3b06b945e8f1f2ae0304347ccbe816dd3af18566c347788ec4a6a3f5c62cdda",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-47.png",
+          "caption": "Source operational i/Pkey wording differs from45/63; confirm actual function/rate. Gas-cock inlet location, all-other-appliances-ON pressure versus OFF gas rate."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 48,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "4748211f267fc1902fa906f46c55ab40a9218477d197f41e7473023db8b2c82a",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-48.png",
+          "caption": "Own refill/deair312/no-demand/gasoff/restart conditions; generic diverter wording does not establish fitted hardware."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 50,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "60f65bb20458d32851021c2a42fe19f47ef37ba27e0c95a6030cec7880d623c0",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-50.png",
+          "caption": "Original actual control keys, radiator-on requirement and inactive tap buttons; no guessed menu."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 52,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "acb664ba6a088492626f7582405ba122465e385718e11f955be3f65816a15fe6",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-52.png",
+          "caption": "Annual routine ratio-only criterion and exact escalation order/context; equality is not a PASS. No new certificate profile."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 53,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "148564f75b93a5f99967e1a890492e02348a05b0fc4197dc462fad4e9b3edb11",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-53.png",
+          "caption": "Complete routine assembly/cleaning, trap/lead/clip positions and ALL Fig45 geometry;12/15-only starred5mm distinguished."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 54,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "2ebe5f0bbffedba9854689c6772dbb602257cf7cd1a9368909f4a11220884451",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-54.png",
+          "caption": "Own cold/drained vessel1.0bar,32top-left vsotherunderside, PRV/flamefailureE133; conditional electrode gaskets, not generic fit."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 56,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "4ec5f55c0d347b1372f0e734a29d63a01765191b29ed152cf1d801010e46a44a",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-56.png",
+          "caption": "Condition-triggered burner/insulation geometry only. Gaskets differ; p56 wrong13.1 electrode pointer resolved to own10.3.1p54. No routine spare-part replacement."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 63,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "da1545b3884a60d4f5ed29689099a5deefde4fb9a56398561150b6bba88221f9",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-63.png",
+          "caption": "Exact conditional valve-setting MAX/MIN, opposite throttle/offset directions,hexsizes,1/8turn/retest; NOT universal routine-service metrics."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "baxi-ecoblue-28-system-erp-41-470-27",
+      "model": "EcoBlue 28 System ErP",
+      "gcNumber": "41-470-27",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 15,
+      "images": [
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 15,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "7d57ece5e8310a953d3141793f41610972550d608efdce91b6ab9c84beade6f6",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-15.png"
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 20,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "695c72c1f1565aaf9e2bd2a177b37d15f0327e3995aeb9c58db6ef21b00d4541",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-20.png",
+          "caption": "Original schematic drain6/PRV7, flowB/returnD; not numbers from the component view. No conversion or spare-part inference."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 21,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "0ecf2d93b079536ba0c5663ccfc8fb4655e73f30c9afe31522dffc5b1e401be9",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-21.png",
+          "caption": "Original component drain18/PRV14; expansion vessel differs on32, whose charge valve is shown in54. Match fitted output."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 39,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "83b2b586c1f1a539e55636f1ad1c493d055fdd0c9286e05b965ce91f65199f71",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-39.png",
+          "caption": "Own approx300ml FLUE-spigot priming, keep water OUT of air inlet; annual trap must be primed. Front lug/screw access, no invented flue dismantling."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 44,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "e83653ba8fa802ee9b58b781c6519f2346336793d2e121080e6a5cb2ca216638",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-44.png",
+          "caption": "Flow/return OPEN, pump airvent,1.5bar fill then CLOSE/DISCONNECT loop; required electrical/flue/seal checks."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 45,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "ec89fda4d2a807fa1558c9a328c365f8ea0e0c91473f60819b352e8cc0fc82dc",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-45.png",
+          "caption": "Original303combustion vs312deair key/function contexts;3/2labels differ in63 and i/Pcommand in47. Confirm actual rate; no assumed combi/cylinder hardware."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 46,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "312063456dd984c3a940f9ede46745758e90e8c41237724b515dc56f690440e2",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-46.png",
+          "caption": "Complete recommissioning MAX/MIN flowchart with both CO/ratio criteria and stop branches; not a new routine-service CO reading rule."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 47,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "e3b06b945e8f1f2ae0304347ccbe816dd3af18566c347788ec4a6a3f5c62cdda",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-47.png",
+          "caption": "Source operational i/Pkey wording differs from45/63; confirm actual function/rate. Gas-cock inlet location, all-other-appliances-ON pressure versus OFF gas rate."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 48,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "4748211f267fc1902fa906f46c55ab40a9218477d197f41e7473023db8b2c82a",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-48.png",
+          "caption": "Own refill/deair312/no-demand/gasoff/restart conditions; generic diverter wording does not establish fitted hardware."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 50,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "60f65bb20458d32851021c2a42fe19f47ef37ba27e0c95a6030cec7880d623c0",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-50.png",
+          "caption": "Original actual control keys, radiator-on requirement and inactive tap buttons; no guessed menu."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 52,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "acb664ba6a088492626f7582405ba122465e385718e11f955be3f65816a15fe6",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-52.png",
+          "caption": "Annual routine ratio-only criterion and exact escalation order/context; equality is not a PASS. No new certificate profile."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 53,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "148564f75b93a5f99967e1a890492e02348a05b0fc4197dc462fad4e9b3edb11",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-53.png",
+          "caption": "Complete routine assembly/cleaning, trap/lead/clip positions and ALL Fig45 geometry;12/15-only starred5mm distinguished."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 54,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "2ebe5f0bbffedba9854689c6772dbb602257cf7cd1a9368909f4a11220884451",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-54.png",
+          "caption": "Own cold/drained vessel1.0bar,32top-left vsotherunderside, PRV/flamefailureE133; conditional electrode gaskets, not generic fit."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 56,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "4ec5f55c0d347b1372f0e734a29d63a01765191b29ed152cf1d801010e46a44a",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-56.png",
+          "caption": "Condition-triggered burner/insulation geometry only. Gaskets differ; p56 wrong13.1 electrode pointer resolved to own10.3.1p54. No routine spare-part replacement."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 63,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "da1545b3884a60d4f5ed29689099a5deefde4fb9a56398561150b6bba88221f9",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-63.png",
+          "caption": "Exact conditional valve-setting MAX/MIN, opposite throttle/offset directions,hexsizes,1/8turn/retest; NOT universal routine-service metrics."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "baxi-ecoblue-32-system-erp-41-470-28",
+      "model": "EcoBlue 32 System ErP",
+      "gcNumber": "41-470-28",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 16,
+      "images": [
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 15,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "7d57ece5e8310a953d3141793f41610972550d608efdce91b6ab9c84beade6f6",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-15.png"
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 20,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "695c72c1f1565aaf9e2bd2a177b37d15f0327e3995aeb9c58db6ef21b00d4541",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-20.png",
+          "caption": "Original schematic drain6/PRV7, flowB/returnD; not numbers from the component view. No conversion or spare-part inference."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 21,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "0ecf2d93b079536ba0c5663ccfc8fb4655e73f30c9afe31522dffc5b1e401be9",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-21.png",
+          "caption": "Original component drain18/PRV14; expansion vessel differs on32, whose charge valve is shown in54. Match fitted output."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 39,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "83b2b586c1f1a539e55636f1ad1c493d055fdd0c9286e05b965ce91f65199f71",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-39.png",
+          "caption": "Own approx300ml FLUE-spigot priming, keep water OUT of air inlet; annual trap must be primed. Front lug/screw access, no invented flue dismantling."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 44,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "e83653ba8fa802ee9b58b781c6519f2346336793d2e121080e6a5cb2ca216638",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-44.png",
+          "caption": "Flow/return OPEN, pump airvent,1.5bar fill then CLOSE/DISCONNECT loop; required electrical/flue/seal checks."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 45,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "ec89fda4d2a807fa1558c9a328c365f8ea0e0c91473f60819b352e8cc0fc82dc",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-45.png",
+          "caption": "Original303combustion vs312deair key/function contexts;3/2labels differ in63 and i/Pcommand in47. Confirm actual rate; no assumed combi/cylinder hardware."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 46,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "312063456dd984c3a940f9ede46745758e90e8c41237724b515dc56f690440e2",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-46.png",
+          "caption": "Complete recommissioning MAX/MIN flowchart with both CO/ratio criteria and stop branches; not a new routine-service CO reading rule."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 47,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "e3b06b945e8f1f2ae0304347ccbe816dd3af18566c347788ec4a6a3f5c62cdda",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-47.png",
+          "caption": "Source operational i/Pkey wording differs from45/63; confirm actual function/rate. Gas-cock inlet location, all-other-appliances-ON pressure versus OFF gas rate."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 48,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "4748211f267fc1902fa906f46c55ab40a9218477d197f41e7473023db8b2c82a",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-48.png",
+          "caption": "Own refill/deair312/no-demand/gasoff/restart conditions; generic diverter wording does not establish fitted hardware."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 50,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "60f65bb20458d32851021c2a42fe19f47ef37ba27e0c95a6030cec7880d623c0",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-50.png",
+          "caption": "Original actual control keys, radiator-on requirement and inactive tap buttons; no guessed menu."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 52,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "acb664ba6a088492626f7582405ba122465e385718e11f955be3f65816a15fe6",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-52.png",
+          "caption": "Annual routine ratio-only criterion and exact escalation order/context; equality is not a PASS. No new certificate profile."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 53,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "148564f75b93a5f99967e1a890492e02348a05b0fc4197dc462fad4e9b3edb11",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-53.png",
+          "caption": "Complete routine assembly/cleaning, trap/lead/clip positions and ALL Fig45 geometry;12/15-only starred5mm distinguished."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 54,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "2ebe5f0bbffedba9854689c6772dbb602257cf7cd1a9368909f4a11220884451",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-54.png",
+          "caption": "Own cold/drained vessel1.0bar,32top-left vsotherunderside, PRV/flamefailureE133; conditional electrode gaskets, not generic fit."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 56,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "4ec5f55c0d347b1372f0e734a29d63a01765191b29ed152cf1d801010e46a44a",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-56.png",
+          "caption": "Condition-triggered burner/insulation geometry only. Gaskets differ; p56 wrong13.1 electrode pointer resolved to own10.3.1p54. No routine spare-part replacement."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 63,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "da1545b3884a60d4f5ed29689099a5deefde4fb9a56398561150b6bba88221f9",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-63.png",
+          "caption": "Exact conditional valve-setting MAX/MIN, opposite throttle/offset directions,hexsizes,1/8turn/retest; NOT universal routine-service metrics."
+        },
+        {
+          "documentId": "baxi-ecoblue-system-erp-7219708-03-201703",
+          "page": 71,
+          "sourceSHA256": "673ee7df3eec0abf28880e4581695238a32c60a86f135de0469bc3350de613ab",
+          "sha256": "8879c11f3f26a463218102507caaaa6aad06aec9bac40aa7b8d9d6cede1e09ac",
+          "asset": "manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-71.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
     }
   ],
   "liveServiceM8Connection": false,
   "customerDataIncluded": false,
   "simulatedAssetsIncluded": false,
-  "offlineLimits": "Reviewed original source-page images listed in the offline cache are included. External source PDFs and websites require connectivity unless saved separately. No live job sync, observed installed applicability or performed service/certificate is implied. Separate original Heatmiser UH8 mixed-zone reference pages are included; actual component and installation applicability remain unverified.",
+  "offlineLimits": "Reviewed original source-page images listed in the offline cache are included. External source PDFs and websites require connectivity unless saved separately. No live job sync, observed installed applicability or performed service/certificate is implied.",
   "maintenanceChanges": [
     "Matched compact header and automatic open/foreground update checks with visible explicit Update app.",
     "Four exact Greenstar GC adjustment sections gain verified opposite control directions and source-bound practical methods.",
@@ -13546,7 +14441,8 @@
     "Expands 13 exact-model annual guides from 281 to 385 tasks, with 205 total original source-page images. 13 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 13 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1712 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
     "Expands 5 exact-model annual guides from 95 to 115 tasks, with 224 total original source-page images. 5 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 5 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1720 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
     "Expands 4 exact-model annual guides from 60 to 76 tasks, with 233 total original source-page images. 4 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 4 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1721 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
-    "Adds the separate original Heatmiser wired UH8, DS-SB and TM4-TS example for four underfloor heating zones and radiator zone8 set RAD, including both circuit halves and source notes saved offline. Existing S/Y/Hive references and all boiler guides remain unchanged. This manufacturer reference does not establish Hive substitution, additional pumps, motor-load or boiler-overrun compatibility."
+    "Adds the separate original Heatmiser wired UH8, DS-SB and TM4-TS example for four underfloor heating zones and radiator zone8 set RAD, including both circuit halves and source notes saved offline. Existing S/Y/Hive references and all boiler guides remain unchanged. This manufacturer reference does not establish Hive substitution, additional pumps, motor-load or boiler-overrun compatibility.",
+    "Expands 6 exact-model annual guides from 108 to 150 tasks, with 249 total original source-page images. 6 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 6 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1719 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances."
   ],
   "releaseStatus": "release"
 }
