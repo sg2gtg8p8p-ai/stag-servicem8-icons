@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.28-r53-full-annual-gas-oil",
+  "appVersion": "2026.11.28-r54-full-annual-gas-oil",
   "preparedOn": "2026-11-28",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1725,
@@ -4945,6 +4945,70 @@
       "newConditionalTasks": 0,
       "status": "complete",
       "sourceReference": "UK DOC02 Rev12 October2004",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-icos-he12-41-397-95",
+      "gcNumber": "41-397-95",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 19,
+      "previousServicingTasks": 15,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "UIN203318 A05 (September2009), V3 Flue System",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-icos-he15-41-397-83",
+      "gcNumber": "41-397-83",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 19,
+      "previousServicingTasks": 15,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "UIN203318 A05 (September2009), V3 Flue System",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-icos-he18-41-397-84",
+      "gcNumber": "41-397-84",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 19,
+      "previousServicingTasks": 15,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "UIN203318 A05 (September2009), V3 Flue System",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-icos-he24-41-397-85",
+      "gcNumber": "41-397-85",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 19,
+      "previousServicingTasks": 15,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "UIN203318 A05 (September2009), V3 Flue System",
       "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
       "newNumericRules": false,
       "numericReferenceOnly": true,
@@ -12989,6 +13053,326 @@
       "currentRevisionOrInstalledSerialApplicabilityProved": false,
       "newNumericRules": false,
       "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-icos-he12-41-397-95",
+      "model": "icos HE12",
+      "gcNumber": "41-397-95",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 1,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "b974cd6eb7c4a2068e1c421dccb73d00ea5b55ce5224cd04f6722b4947f35bc5",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-1.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 5,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "a959f0d204c687ca2368341f4b5ca3c8907bcae5e84b6f8ed7e688df9c9cec55",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-5.png",
+          "caption": "Own HE12/15/18/24 Natural Gas Table2 only; match exact model column and quantity. No HE30/36, m3080 or LPG transfer; source references, no automatic verdict."
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 32,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "1ad29a6b25e171233fd4c200221b613168c5398feca94818da503f6a46fb2a44",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-32.png",
+          "caption": "Frame40 commissioning electrical/gas safety prerequisites only; upper Frame39 wiring is context, not rewiring authority or current-law approval."
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 33,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "ddbdbd4de521dc3d9ece2ab36f2442882d83dec41870842897cf6f2ba9865cc4",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-33.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 34,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "def7908fa006e2f8cacd166cc1c0b4a719c8931591301bc1ece0db0e97b72c93",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-34.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 35,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "23f439d25b7a618d165703d47fc768000e7a020e276e94a64853498935100668",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-35.png",
+          "caption": "Own Frames44–46 annual schedule and panel/samplepoint. Optional analyser reference ratio0.004 is not an automatic PASS. Frame45 is front-panel access; actual top sample point is drawn in46."
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 36,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "08104f6b4db0c67d10b103f3401c83aef07fb21652328ecb9cac2c1933eff0ad",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-36.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 37,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "988e8648085393c35710a589f1df8610ae2015ec347d27ceaa4d605ad3ed5e4d",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-37.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 40,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "04c585d2d494034c221ccd9aa49a6ecd14d11023906affab93d8df81141f2893",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-40.png",
+          "caption": "Own separate ignition/detection electrode dimensions and new supplied replacement gaskets. Actual fitted identity/part must match; no dimensional transfer to HE30/36 or m3080."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-icos-he15-41-397-83",
+      "model": "icos HE15",
+      "gcNumber": "41-397-83",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 1,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "b974cd6eb7c4a2068e1c421dccb73d00ea5b55ce5224cd04f6722b4947f35bc5",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-1.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 5,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "a959f0d204c687ca2368341f4b5ca3c8907bcae5e84b6f8ed7e688df9c9cec55",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-5.png",
+          "caption": "Own HE12/15/18/24 Natural Gas Table2 only; match exact model column and quantity. No HE30/36, m3080 or LPG transfer; source references, no automatic verdict."
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 32,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "1ad29a6b25e171233fd4c200221b613168c5398feca94818da503f6a46fb2a44",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-32.png",
+          "caption": "Frame40 commissioning electrical/gas safety prerequisites only; upper Frame39 wiring is context, not rewiring authority or current-law approval."
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 33,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "ddbdbd4de521dc3d9ece2ab36f2442882d83dec41870842897cf6f2ba9865cc4",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-33.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 34,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "def7908fa006e2f8cacd166cc1c0b4a719c8931591301bc1ece0db0e97b72c93",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-34.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 35,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "23f439d25b7a618d165703d47fc768000e7a020e276e94a64853498935100668",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-35.png",
+          "caption": "Own Frames44–46 annual schedule and panel/samplepoint. Optional analyser reference ratio0.004 is not an automatic PASS. Frame45 is front-panel access; actual top sample point is drawn in46."
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 36,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "08104f6b4db0c67d10b103f3401c83aef07fb21652328ecb9cac2c1933eff0ad",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-36.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 37,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "988e8648085393c35710a589f1df8610ae2015ec347d27ceaa4d605ad3ed5e4d",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-37.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 40,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "04c585d2d494034c221ccd9aa49a6ecd14d11023906affab93d8df81141f2893",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-40.png",
+          "caption": "Own separate ignition/detection electrode dimensions and new supplied replacement gaskets. Actual fitted identity/part must match; no dimensional transfer to HE30/36 or m3080."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-icos-he18-41-397-84",
+      "model": "icos HE18",
+      "gcNumber": "41-397-84",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 1,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "b974cd6eb7c4a2068e1c421dccb73d00ea5b55ce5224cd04f6722b4947f35bc5",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-1.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 5,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "a959f0d204c687ca2368341f4b5ca3c8907bcae5e84b6f8ed7e688df9c9cec55",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-5.png",
+          "caption": "Own HE12/15/18/24 Natural Gas Table2 only; match exact model column and quantity. No HE30/36, m3080 or LPG transfer; source references, no automatic verdict."
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 32,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "1ad29a6b25e171233fd4c200221b613168c5398feca94818da503f6a46fb2a44",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-32.png",
+          "caption": "Frame40 commissioning electrical/gas safety prerequisites only; upper Frame39 wiring is context, not rewiring authority or current-law approval."
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 33,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "ddbdbd4de521dc3d9ece2ab36f2442882d83dec41870842897cf6f2ba9865cc4",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-33.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 34,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "def7908fa006e2f8cacd166cc1c0b4a719c8931591301bc1ece0db0e97b72c93",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-34.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 35,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "23f439d25b7a618d165703d47fc768000e7a020e276e94a64853498935100668",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-35.png",
+          "caption": "Own Frames44–46 annual schedule and panel/samplepoint. Optional analyser reference ratio0.004 is not an automatic PASS. Frame45 is front-panel access; actual top sample point is drawn in46."
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 36,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "08104f6b4db0c67d10b103f3401c83aef07fb21652328ecb9cac2c1933eff0ad",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-36.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 37,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "988e8648085393c35710a589f1df8610ae2015ec347d27ceaa4d605ad3ed5e4d",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-37.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 40,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "04c585d2d494034c221ccd9aa49a6ecd14d11023906affab93d8df81141f2893",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-40.png",
+          "caption": "Own separate ignition/detection electrode dimensions and new supplied replacement gaskets. Actual fitted identity/part must match; no dimensional transfer to HE30/36 or m3080."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-icos-he24-41-397-85",
+      "model": "icos HE24",
+      "gcNumber": "41-397-85",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 1,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "b974cd6eb7c4a2068e1c421dccb73d00ea5b55ce5224cd04f6722b4947f35bc5",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-1.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 5,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "a959f0d204c687ca2368341f4b5ca3c8907bcae5e84b6f8ed7e688df9c9cec55",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-5.png",
+          "caption": "Own HE12/15/18/24 Natural Gas Table2 only; match exact model column and quantity. No HE30/36, m3080 or LPG transfer; source references, no automatic verdict."
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 32,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "1ad29a6b25e171233fd4c200221b613168c5398feca94818da503f6a46fb2a44",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-32.png",
+          "caption": "Frame40 commissioning electrical/gas safety prerequisites only; upper Frame39 wiring is context, not rewiring authority or current-law approval."
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 33,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "ddbdbd4de521dc3d9ece2ab36f2442882d83dec41870842897cf6f2ba9865cc4",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-33.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 34,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "def7908fa006e2f8cacd166cc1c0b4a719c8931591301bc1ece0db0e97b72c93",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-34.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 35,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "23f439d25b7a618d165703d47fc768000e7a020e276e94a64853498935100668",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-35.png",
+          "caption": "Own Frames44–46 annual schedule and panel/samplepoint. Optional analyser reference ratio0.004 is not an automatic PASS. Frame45 is front-panel access; actual top sample point is drawn in46."
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 36,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "08104f6b4db0c67d10b103f3401c83aef07fb21652328ecb9cac2c1933eff0ad",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-36.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 37,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "988e8648085393c35710a589f1df8610ae2015ec347d27ceaa4d605ad3ed5e4d",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-37.png"
+        },
+        {
+          "documentId": "ideal-icos-he-203318-a05",
+          "page": 40,
+          "sourceSHA256": "6e9dd93d1db1754c5cc5108a22b3611c7bed5e1753760373ccc50ef9ee652a30",
+          "sha256": "04c585d2d494034c221ccd9aa49a6ecd14d11023906affab93d8df81141f2893",
+          "asset": "manual-pages/ideal-icos-he-203318-a05/page-40.png",
+          "caption": "Own separate ignition/detection electrode dimensions and new supplied replacement gaskets. Actual fitted identity/part must match; no dimensional transfer to HE30/36 or m3080."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
     }
   ],
   "liveServiceM8Connection": false,
@@ -13160,7 +13544,8 @@
     "Restores original28 legacy original-page illustrations for its independently admitted complete annual status as well as partial status; exact identity, fuel, source, page, document, task and image guards remain unchanged.",
     "Expands 27 exact-model annual guides from 331 to 686 tasks, with 154 total original source-page images. 27 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 27 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1698 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
     "Expands 13 exact-model annual guides from 281 to 385 tasks, with 205 total original source-page images. 13 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 13 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1712 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
-    "Expands 5 exact-model annual guides from 95 to 115 tasks, with 224 total original source-page images. 5 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 5 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1720 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances."
+    "Expands 5 exact-model annual guides from 95 to 115 tasks, with 224 total original source-page images. 5 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 5 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1720 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
+    "Expands 4 exact-model annual guides from 60 to 76 tasks, with 233 total original source-page images. 4 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 4 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1721 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances."
   ],
   "releaseStatus": "release"
 }
