@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "75fe65c590e87c80",
+  "buildId": "bc691d8d20a6f17f",
   "preparedOn": "2026-11-24",
-  "appVersion": "2026.11.28-r54-full-annual-gas-oil",
+  "appVersion": "2026.11.28-r55-uh8-wiring",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -267,8 +267,8 @@
     },
     {
       "url": "./index.html",
-      "bytes": 1586846,
-      "sha256": "a0f584f0863e88e3da68dc3562ad32af16239a0ef9e01f16ce1603d8edcbc51c"
+      "bytes": 1586895,
+      "sha256": "060f0729099a2aaf3546bc04cb6c3ac11dbfb551e69548d8149acf54089d1e35"
     },
     {
       "url": "./local-bridge.js",
@@ -2382,8 +2382,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 777823,
-      "sha256": "2074c5546225cdebfbabdb1a199c7fda3f29176a662290b2c3571f59a49349aa"
+      "bytes": 778355,
+      "sha256": "ee91bebd1701a0313531bd2bda67379c5dace2b4f38c84f4752648a4950abab9"
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -2442,8 +2442,8 @@
     },
     {
       "url": "./wiring/runtime.js",
-      "bytes": 64056,
-      "sha256": "63b2789167c0d710247964a983b94e7c69667abeea885d30a8bc7bb13531dc57"
+      "bytes": 70685,
+      "sha256": "ad37da3dc40738797d9310357f8055315a9b8684d5616530707ba9e301a1cfd6"
     },
     {
       "url": "./wiring/variant-picker.mjs",
@@ -3619,7 +3619,37 @@
       "url": "./manual-pages/ideal-icos-he-203318-a05/page-40.png",
       "bytes": 205013,
       "sha256": "04c585d2d494034c221ccd9aa49a6ecd14d11023906affab93d8df81141f2893"
+    },
+    {
+      "url": "./wiring/diagrams/uh8/page-2.png",
+      "bytes": 229670,
+      "sha256": "db6a225cb86f9c18ca089444bfff0405c53bca89238dc8302d8e4c5c06e81045"
+    },
+    {
+      "url": "./wiring/diagrams/uh8/page-4.png",
+      "bytes": 289494,
+      "sha256": "6c423682623746267e0e27a2c92289ef3f8e100739bf320efd3bfbf66dccf6cc"
+    },
+    {
+      "url": "./wiring/diagrams/uh8/page-5.png",
+      "bytes": 275275,
+      "sha256": "94b4e316be8c528b2a7001586cad7260cf5afd3ef90fe6092c5a49d974b6076f"
+    },
+    {
+      "url": "./wiring/diagrams/uh8/page-6.png",
+      "bytes": 148775,
+      "sha256": "272da574c2bfc37590781c970c592f78328325022737433d099430922203c199"
+    },
+    {
+      "url": "./wiring/diagrams/uh8/page-7.png",
+      "bytes": 187827,
+      "sha256": "d8bada4c1ee9a81209408296c5bc2e87683f170ddbb514aa9a0ca76e14100384"
+    },
+    {
+      "url": "./wiring/uh8-reference.mjs",
+      "bytes": 5074,
+      "sha256": "d717ff7b7c684653d7b0ca3e0dec468575bf75369e0aecfaee031f190c1f43d7"
     }
   ],
-  "totalBytes": 262894607
+  "totalBytes": 264037932
 }

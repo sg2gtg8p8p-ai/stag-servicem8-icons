@@ -1,3 +1,4 @@
+import {UH8_REFERENCE,renderUH8Reference} from './uh8-reference.mjs';
 import {mountVariantPicker} from './variant-picker.mjs';
 import {DATA} from './source-data.mjs';
 import {DIAGRAMS} from './diagram-data.mjs';
@@ -26,7 +27,7 @@ export function mount(root,doc=root?.ownerDocument){
  function hideZoom(){if(dialog.open)dialog.close();zoomBody.replaceChildren();}
  function enlarge(d){zoomTitle.textContent=d.title;zoomBody.replaceChildren(image(d));dialog.showModal();}
  function image(d){const img=make('img');img.src=new URL('./wiring/'+d.asset.replace(/^\.\//,''),doc.baseURI).href;img.alt=d.title+' · complete manufacturer diagram, page '+d.page;img.decoding='async';return img;}
- function home(){variants.hidden=false;hideZoom();selected=null;heading.textContent='Wiring diagrams';intro.hidden=false;grid.hidden=false;detail.hidden=true;detail.replaceChildren();back.textContent='Back to library';root.scrollTop=0;}
+ function home(){references.hidden=false;variants.hidden=false;hideZoom();selected=null;heading.textContent='Wiring diagrams';intro.hidden=false;grid.hidden=false;detail.hidden=true;detail.replaceChildren();back.textContent='Back to library';root.scrollTop=0;}
  function flowDiagram(flow){
   const svg=doc.createElementNS('http://www.w3.org/2000/svg','svg');svg.classList.add('swr-flow-diagram');svg.setAttribute('font-family','system-ui,sans-serif');svg.setAttribute('role','img');svg.setAttribute('aria-label',flow.label+' full path from mains through controls to boiler and pump');
   const ns=(tag,attrs,text,parent=svg)=>{const el=doc.createElementNS(svg.namespaceURI,tag);for(const[k,v]of Object.entries(attrs))el.setAttribute(k,String(v));if(text)el.textContent=text;parent.append(el);return el;};
@@ -78,8 +79,12 @@ export function mount(root,doc=root?.ownerDocument){
   box.append(controls,setup,make('p','Tap a wire to follow its connections.','swr-help'),picker,route,make('p','Follow the terminal and wire labels. The complete manufacturer circuit is below; earth and neutral have their own full branch views.','swr-help'));draw();
  }
  function show(id,push=false,initial={}){
+  if(id===UH8_REFERENCE.id){
+   references.hidden=true;variants.hidden=true;hideZoom();selected=id;heading.textContent=UH8_REFERENCE.title;intro.hidden=true;grid.hidden=true;detail.hidden=false;detail.replaceChildren();back.textContent='Back to diagrams';
+   renderUH8Reference(detail,{doc,make,button,image,enlarge});root.scrollTop=0;heading.focus({preventScroll:true});if(push&&active)win.history.pushState({stagWiring:token,diagram:id},'');return;
+  }
   const d=DIAGRAMS.find(x=>x.id===id);if(!d){home();return;}
-  variants.hidden=true;hideZoom();selected=d.id;arrangement=initial.arrangement==='overrun'?'overrun':'switched';wire=getTrace(d.id,initial.wire,arrangement)?initial.wire:'1';heading.textContent=d.title;intro.hidden=true;grid.hidden=true;detail.hidden=false;detail.replaceChildren();back.textContent='Back to diagrams';
+  references.hidden=true;variants.hidden=true;hideZoom();selected=d.id;arrangement=initial.arrangement==='overrun'?'overrun':'switched';wire=getTrace(d.id,initial.wire,arrangement)?initial.wire:'1';heading.textContent=d.title;intro.hidden=true;grid.hidden=true;detail.hidden=false;detail.replaceChildren();back.textContent='Back to diagrams';
   if(TRACE_PLANS[d.id]){const panel=make('section',undefined,'swr-trace-panel');follow(d,panel);detail.append(panel);}
   const original=make('section',undefined,'swr-original');original.append(make('h2','Complete manufacturer drawing'),make('p',d.note,'swr-help'),button('Enlarge diagram',()=>enlarge(d)));
   const page=button('',()=>enlarge(d));page.className='swr-diagram-page';page.setAttribute('aria-label','Enlarge '+d.title+' manufacturer diagram');page.append(image(d));original.append(page);detail.append(original);
@@ -88,6 +93,8 @@ export function mount(root,doc=root?.ownerDocument){
  }
  const variants=mountVariantPicker(main,doc,id=>show(id,true));main.insertBefore(variants,grid);
  for(const d of DIAGRAMS){const b=button('',()=>show(d.id,true));b.className='swr-diagram-card';const img=image(d);img.loading='lazy';b.append(img,make('strong',d.title),make('span',d.subtitle));grid.append(b);}
+ const references=make('section',undefined,'swr-original');references.dataset.manufacturerReference='uh8';references.append(make('h2','Separate manufacturer reference'),make('p','Exact mixed-zone example, separate from the S/Y plan and Hive choices.','swr-help'));
+ const referenceButton=button('UH8 · four UFH zones + radiator zone 8',()=>show(UH8_REFERENCE.id,true));referenceButton.dataset.reference=UH8_REFERENCE.id;references.append(referenceButton);main.insertBefore(references,detail);
  const owns=()=>win.history.state?.stagWiring===token;
  const pop=()=>{if(!active)return;if(owns()){const id=win.history.state.diagram;if(id)show(id);else home();}else{active=false;home();onExit();}};win.addEventListener('popstate',pop);
  dialog.addEventListener('cancel',()=>zoomBody.replaceChildren());
