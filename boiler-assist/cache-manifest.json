@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "9bf1e715f76d2f2e",
+  "buildId": "d19e399e015b6b07",
   "preparedOn": "2026-11-24",
-  "appVersion": "2026.11.28-r57-full-annual-gas-oil",
+  "appVersion": "2026.11.28-r58-full-annual-gas-oil",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -52,8 +52,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "bytes": 13008557,
-      "sha256": "02f29bc76433ef70f5bcb3a19fd91efbc60ccef639de5bf89634bbbefdc2e96c"
+      "bytes": 13061861,
+      "sha256": "496984c9ed4ab0352d2f6f81b8bb5f76f18a5f0aec68b7f3be5b1a49e681f66a"
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -98,7 +98,7 @@
     {
       "url": "./help/ai-client.mjs",
       "bytes": 8814,
-      "sha256": "e980c876c2164b945781a26702978fbbd6b10c954dce68f0451caa6c98ccd712"
+      "sha256": "36da052614e7b8f3f467f8cda632098fc4b7a1038189aeb53e0d709f8240d58b"
     },
     {
       "url": "./help/baxi400-heat-fault-guard.mjs",
@@ -268,7 +268,7 @@
     {
       "url": "./index.html",
       "bytes": 1586895,
-      "sha256": "30e9a90cc1817e8173b99cfcb80fd2e7bc8847dab6402339068afd6cb70e1b34"
+      "sha256": "b9c7f5239c1f701e56501b49770e49637f8cc1a75e15c7b6acc2580f47049b12"
     },
     {
       "url": "./local-bridge.js",
@@ -2382,8 +2382,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 890102,
-      "sha256": "2c2b0d37ab25dc945e97d283fd03e57585de44ea6abe6c6759159f73bdff54e6"
+      "bytes": 920833,
+      "sha256": "66fbc1cfb91e22e83ed33ad5c059590fa43a329e788cd1482314c9377c3fdba7"
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -2452,8 +2452,8 @@
     },
     {
       "url": "./reviewed-service-pages.js",
-      "bytes": 567231,
-      "sha256": "35dfcde109a0ae2f228941bb23aed94a2404f18d5af280143a82f575b1ce3a35"
+      "bytes": 593171,
+      "sha256": "185613970f67309d8cba7d59736411314ce14327ee21691436745cdc4b240408"
     },
     {
       "url": "./manual-pages/main-system-he-5121186-02/page-10.png",
@@ -3849,7 +3849,192 @@
       "url": "./manual-pages/baxi-solo-hea-7204218-06/page-50.png",
       "bytes": 242173,
       "sha256": "142bfc35a8311292e57331b74589e375aef54d603c527e185adc34fae7ed9c60"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-43-221966b-12-04/page-5.png",
+      "bytes": 371819,
+      "sha256": "f71ed664c73839b9c3060895d8248ae0f9b3f55debcdaed089c1304ca1c9c8af"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-43-221966b-12-04/page-7.png",
+      "bytes": 576363,
+      "sha256": "f8d2493ad673a54407c76c6b7471c0990516d6ba034291c2e4972c371d6d6327"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-43-221966b-12-04/page-20.png",
+      "bytes": 678330,
+      "sha256": "20edae0336eb435a1ba3406a8337d4927a6e24b1b0224908d77a7cea2a1fb0dc"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-43-221966b-12-04/page-21.png",
+      "bytes": 659254,
+      "sha256": "3114a6eaa9159384a86a1b4fa3e4896749ca8e702fe14e204ac7d44b0a6c1de0"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-43-221966b-12-04/page-22.png",
+      "bytes": 590062,
+      "sha256": "e65f0032152730554beae0ee1df847d88a20a0c2c73c73dbc68067348a533983"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-43-221966b-12-04/page-23.png",
+      "bytes": 496185,
+      "sha256": "95d64a4180fb3d31bd923cbfd9ecbaa0f06ea82f9537c274941fe1d1430b6043"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-43-221966b-12-04/page-24.png",
+      "bytes": 539032,
+      "sha256": "b819372f78504d2269398136f0db5d7176808d558ab25a5ca3936f31cc4dcff8"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-43-221966b-12-04/page-25.png",
+      "bytes": 611881,
+      "sha256": "7720c0319c60f506841fa15834bc54d517e568970f6a326a02356a05b3c09753"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-43-221966b-12-04/page-26.png",
+      "bytes": 383736,
+      "sha256": "2b6465ac7f83be352167608de6b4d6cc813b25f6f26a912a3f5b2316cfac6217"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-43-221966b-12-04/page-27.png",
+      "bytes": 307167,
+      "sha256": "80a5f1bd285cdf91a8502c6f16950752bac5e671f9d2e647b565740d621cc717"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-48-2000225232a-10-04/page-4.png",
+      "bytes": 479151,
+      "sha256": "9390d8cd6d7d555cb60f014cd4585cc6abf92b5a7749535b61157119e3cfbea5"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-48-2000225232a-10-04/page-6.png",
+      "bytes": 506131,
+      "sha256": "78184b7b5b5cf8f95be2bf6c817db017b3ac42106def0f3c95ad7347dce660bc"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-48-2000225232a-10-04/page-21.png",
+      "bytes": 555093,
+      "sha256": "312b639a4a4838f6a007437b24324ab7d08aec1fd309c4f21ff2b2cebefb00f2"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-48-2000225232a-10-04/page-22.png",
+      "bytes": 519578,
+      "sha256": "0e96a9e758a9651097de4a114a8dc516448fb5fafe6830106ee05fcabb74fbef"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-48-2000225232a-10-04/page-23.png",
+      "bytes": 492397,
+      "sha256": "4fd4f096dbe49e21a41895a08059c6c9f5d8ba3d28d5a61c5f4541def7d01d7e"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-48-2000225232a-10-04/page-24.png",
+      "bytes": 469642,
+      "sha256": "63202eda4a189fba52bbc19a74e14530883ec781352fce0a71e6e287b57b3117"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-48-2000225232a-10-04/page-25.png",
+      "bytes": 541659,
+      "sha256": "74efe346f67762afe49e2fd84f95ceb5b75f7cf13e5fe814ea3427f9d6bf4cfe"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-48-2000225232a-10-04/page-26.png",
+      "bytes": 401452,
+      "sha256": "fcc6d479a109b1e0e04289b3f8f0f76b61f70190a63a61e88a7e6c8e9a87e270"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-48-2000225232a-10-04/page-27.png",
+      "bytes": 344262,
+      "sha256": "8cd97aaa246b6a04ae9c1b2af11a16b43f7febe647398dbbfd952a1f8120c403"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-51-221964d-12-04/page-4.png",
+      "bytes": 449624,
+      "sha256": "91aaa92a440978532ebe3a454ea73544ea3ec5f573bc1cd1670576f8260dbc0c"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-51-221964d-12-04/page-6.png",
+      "bytes": 496422,
+      "sha256": "8231be7cdd8be1ea902a095cf152a8793e3d99285b95dce7ae815a3e72b97b57"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-51-221964d-12-04/page-21.png",
+      "bytes": 430170,
+      "sha256": "b4e00ee7aedc7ba1e0fa28e672d00233c07ddc1ddf3095087e7e8cbc6a5480a9"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-51-221964d-12-04/page-22.png",
+      "bytes": 449047,
+      "sha256": "a58312e1712caf7af55ae7cc56cbec3853e7d458b29778d0c577b350bbf8dbfb"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-51-221964d-12-04/page-23.png",
+      "bytes": 424496,
+      "sha256": "2bae9e37c218d968534ee1ba4614c1b64e170327e533b9010d8991f58a7c9c53"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-51-221964d-12-04/page-24.png",
+      "bytes": 446872,
+      "sha256": "d6564ce7c44b9692cf32de61ba1a05238fbd0b781eef899d4b6236e73d0cd5eb"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-51-221964d-12-04/page-25.png",
+      "bytes": 489222,
+      "sha256": "42a60f52055199faf4a6b71789dbc250da6ef088eeb21b690e7afe7122547e08"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-51-221964d-12-04/page-26.png",
+      "bytes": 334792,
+      "sha256": "ad844e367d9da016e338de92c42483180077b800d8f6b1904f15fa1f0b0a0f00"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-51-221964d-12-04/page-27.png",
+      "bytes": 291086,
+      "sha256": "4f88491fda2b3f06fe3c30bc6db6a70fe0f0afc495782b93aa98250f45153995"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-4.png",
+      "bytes": 478703,
+      "sha256": "079b021a44b68ee7bae38e9da82233db3af284115cd3cae3b53c47786824c638"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-6.png",
+      "bytes": 524289,
+      "sha256": "233f846f0cf1caee6244b0fec8fe729db7ffd6aa3c599e4cd3aaf855764b7957"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-20.png",
+      "bytes": 448188,
+      "sha256": "0c1316933b02b7904de2dfc1b5cb7f8199b2e05876d37a02250f10b6ad720244"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-21.png",
+      "bytes": 571784,
+      "sha256": "8e1f7690c864e87bcefc8b05f26b66c5b32389bfcf121d0120e1f51a323df799"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-22.png",
+      "bytes": 475736,
+      "sha256": "dfb02a07716cf8f3f08b922a6795d47a90e8ae5a33c61cf97ad6d16564a307d1"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-23.png",
+      "bytes": 431609,
+      "sha256": "78b105918f4ea2cedebfb596baba36cb0b25493d532ab44583f5fc7692a468dd"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-24.png",
+      "bytes": 528588,
+      "sha256": "4350695e5897387a6689e3cc956517b898b591986859143e53f719d698a09d05"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-25.png",
+      "bytes": 405275,
+      "sha256": "57cd7cec7b9759280d26e7bc81a668b89d29ba7635b600eb901cc188890843ea"
+    },
+    {
+      "url": "./manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-26.png",
+      "bytes": 286496,
+      "sha256": "5bc1eb2be6e09bb4b0f350258964958c0ef226958c96aae803b35f36504e6b33"
     }
   ],
-  "totalBytes": 278579288
+  "totalBytes": 296174856
 }

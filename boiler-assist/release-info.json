@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.28-r57-full-annual-gas-oil",
+  "appVersion": "2026.11.28-r58-full-annual-gas-oil",
   "preparedOn": "2026-11-28",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1725,
@@ -5217,6 +5217,102 @@
       "newConditionalTasks": 0,
       "status": "complete",
       "sourceReference": "7204218 06(4/14)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "glowworm-ultimate-100ff-41-047-59",
+      "gcNumber": "41-047-59",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 21,
+      "previousServicingTasks": 12,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "221966B.12.04",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "glowworm-ultimate-120ff-41-319-75",
+      "gcNumber": "41-319-75",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 21,
+      "previousServicingTasks": 12,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "221966B.12.04",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "glowworm-ultimate-50ff-41-047-55",
+      "gcNumber": "41-047-55",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 21,
+      "previousServicingTasks": 12,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "2000225232A.10.04",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "glowworm-ultimate-60ff-41-047-56",
+      "gcNumber": "41-047-56",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 21,
+      "previousServicingTasks": 12,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "221964D.12.04",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "glowworm-ultimate-70ff-41-047-57",
+      "gcNumber": "41-047-57",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 21,
+      "previousServicingTasks": 12,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "2000225233A.10.04",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "glowworm-ultimate-80ff-41-047-58",
+      "gcNumber": "41-047-58",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 21,
+      "previousServicingTasks": 12,
+      "newConditionalTasks": 1,
+      "status": "complete",
+      "sourceReference": "2000225233A.10.04",
       "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
       "newNumericRules": false,
       "numericReferenceOnly": true,
@@ -15215,6 +15311,490 @@
       "currentRevisionOrInstalledSerialApplicabilityProved": false,
       "newNumericRules": false,
       "numericReferenceOnly": true
+    },
+    {
+      "modelID": "glowworm-ultimate-100ff-41-047-59",
+      "model": "Ultimate 100FF",
+      "gcNumber": "41-047-59",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 10,
+      "images": [
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 5,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "f71ed664c73839b9c3060895d8248ae0f9b3f55debcdaed089c1304ca1c9c8af",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-5.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 7,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "f8d2493ad673a54407c76c6b7471c0990516d6ba034291c2e4972c371d6d6327",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-7.png",
+          "caption": "Use ONLY this actual model and configured range-rating column. Original pressure/gas-rate/input/output units and qualifications apply. Reference text is not an observed setting, automatic PASS, replacement-part order or current-fit approval."
+        },
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 20,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "20edae0336eb435a1ba3406a8337d4927a6e24b1b0224908d77a7cea2a1fb0dc",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-20.png",
+          "caption": "Own model electrical assembly/lead identification and safe restoration only. Adjacent wiring diagrams do not authorise changing links, bypassing safeties, converting water/control system or borrowing another model circuit."
+        },
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 21,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "3114a6eaa9159384a86a1b4fa3e4896749ca8e702fe14e204ac7d44b0a6c1de0",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-21.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 22,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "e65f0032152730554beae0ee1df847d88a20a0c2c73c73dbc68067348a533983",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-22.png",
+          "caption": "Upper pilot/electrode drawing is100FF; lower is120FF. Use exact model retention/geometry, not an adjacent variant."
+        },
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 23,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "95d64a4180fb3d31bd923cbfd9ecbaa0f06ea82f9537c274941fe1d1430b6043",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-23.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 24,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "b819372f78504d2269398136f0db5d7176808d558ab25a5ca3936f31cc4dcff8",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-24.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 25,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "7720c0319c60f506841fa15834bc54d517e568970f6a326a02356a05b3c09753",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-25.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 26,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "2b6465ac7f83be352167608de6b4d6cc813b25f6f26a912a3f5b2316cfac6217",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-26.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 27,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "80a5f1bd285cdf91a8502c6f16950752bac5e671f9d2e647b565740d621cc717",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-27.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "glowworm-ultimate-120ff-41-319-75",
+      "model": "Ultimate 120FF",
+      "gcNumber": "41-319-75",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 10,
+      "images": [
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 5,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "f71ed664c73839b9c3060895d8248ae0f9b3f55debcdaed089c1304ca1c9c8af",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-5.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 7,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "f8d2493ad673a54407c76c6b7471c0990516d6ba034291c2e4972c371d6d6327",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-7.png",
+          "caption": "Use ONLY this actual model and configured range-rating column. Original pressure/gas-rate/input/output units and qualifications apply. Reference text is not an observed setting, automatic PASS, replacement-part order or current-fit approval."
+        },
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 20,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "20edae0336eb435a1ba3406a8337d4927a6e24b1b0224908d77a7cea2a1fb0dc",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-20.png",
+          "caption": "Own model electrical assembly/lead identification and safe restoration only. Adjacent wiring diagrams do not authorise changing links, bypassing safeties, converting water/control system or borrowing another model circuit."
+        },
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 21,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "3114a6eaa9159384a86a1b4fa3e4896749ca8e702fe14e204ac7d44b0a6c1de0",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-21.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 22,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "e65f0032152730554beae0ee1df847d88a20a0c2c73c73dbc68067348a533983",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-22.png",
+          "caption": "Upper pilot/electrode drawing is100FF; lower is120FF. Use exact model retention/geometry, not an adjacent variant."
+        },
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 23,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "95d64a4180fb3d31bd923cbfd9ecbaa0f06ea82f9537c274941fe1d1430b6043",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-23.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 24,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "b819372f78504d2269398136f0db5d7176808d558ab25a5ca3936f31cc4dcff8",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-24.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 25,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "7720c0319c60f506841fa15834bc54d517e568970f6a326a02356a05b3c09753",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-25.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 26,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "2b6465ac7f83be352167608de6b4d6cc813b25f6f26a912a3f5b2316cfac6217",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-26.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc43",
+          "page": 27,
+          "sourceSHA256": "585b59a9d756273ca21cbe72df767ed8588faa494a667da61f17e31d7efb407c",
+          "sha256": "80a5f1bd285cdf91a8502c6f16950752bac5e671f9d2e647b565740d621cc717",
+          "asset": "manual-pages/glowworm-ultimate-43-221966b-12-04/page-27.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "glowworm-ultimate-50ff-41-047-55",
+      "model": "Ultimate 50FF",
+      "gcNumber": "41-047-55",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "glowworm-ultimate-doc48",
+          "page": 4,
+          "sourceSHA256": "07f94cc6be0e0c9279b08c840afcb2939cb8b36eddd8ba60fdc1c5164c75e6fc",
+          "sha256": "9390d8cd6d7d555cb60f014cd4585cc6abf92b5a7749535b61157119e3cfbea5",
+          "asset": "manual-pages/glowworm-ultimate-48-2000225232a-10-04/page-4.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc48",
+          "page": 6,
+          "sourceSHA256": "07f94cc6be0e0c9279b08c840afcb2939cb8b36eddd8ba60fdc1c5164c75e6fc",
+          "sha256": "78184b7b5b5cf8f95be2bf6c817db017b3ac42106def0f3c95ad7347dce660bc",
+          "asset": "manual-pages/glowworm-ultimate-48-2000225232a-10-04/page-6.png",
+          "caption": "Use ONLY this actual model and configured range-rating column. Original pressure/gas-rate/input/output units and qualifications apply. Reference text is not an observed setting, automatic PASS, replacement-part order or current-fit approval."
+        },
+        {
+          "documentId": "glowworm-ultimate-doc48",
+          "page": 21,
+          "sourceSHA256": "07f94cc6be0e0c9279b08c840afcb2939cb8b36eddd8ba60fdc1c5164c75e6fc",
+          "sha256": "312b639a4a4838f6a007437b24324ab7d08aec1fd309c4f21ff2b2cebefb00f2",
+          "asset": "manual-pages/glowworm-ultimate-48-2000225232a-10-04/page-21.png",
+          "caption": "Own model electrical assembly/lead identification and safe restoration only. Adjacent wiring diagrams do not authorise changing links, bypassing safeties, converting water/control system or borrowing another model circuit."
+        },
+        {
+          "documentId": "glowworm-ultimate-doc48",
+          "page": 22,
+          "sourceSHA256": "07f94cc6be0e0c9279b08c840afcb2939cb8b36eddd8ba60fdc1c5164c75e6fc",
+          "sha256": "0e96a9e758a9651097de4a114a8dc516448fb5fafe6830106ee05fcabb74fbef",
+          "asset": "manual-pages/glowworm-ultimate-48-2000225232a-10-04/page-22.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc48",
+          "page": 23,
+          "sourceSHA256": "07f94cc6be0e0c9279b08c840afcb2939cb8b36eddd8ba60fdc1c5164c75e6fc",
+          "sha256": "4fd4f096dbe49e21a41895a08059c6c9f5d8ba3d28d5a61c5f4541def7d01d7e",
+          "asset": "manual-pages/glowworm-ultimate-48-2000225232a-10-04/page-23.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc48",
+          "page": 24,
+          "sourceSHA256": "07f94cc6be0e0c9279b08c840afcb2939cb8b36eddd8ba60fdc1c5164c75e6fc",
+          "sha256": "63202eda4a189fba52bbc19a74e14530883ec781352fce0a71e6e287b57b3117",
+          "asset": "manual-pages/glowworm-ultimate-48-2000225232a-10-04/page-24.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc48",
+          "page": 25,
+          "sourceSHA256": "07f94cc6be0e0c9279b08c840afcb2939cb8b36eddd8ba60fdc1c5164c75e6fc",
+          "sha256": "74efe346f67762afe49e2fd84f95ceb5b75f7cf13e5fe814ea3427f9d6bf4cfe",
+          "asset": "manual-pages/glowworm-ultimate-48-2000225232a-10-04/page-25.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc48",
+          "page": 26,
+          "sourceSHA256": "07f94cc6be0e0c9279b08c840afcb2939cb8b36eddd8ba60fdc1c5164c75e6fc",
+          "sha256": "fcc6d479a109b1e0e04289b3f8f0f76b61f70190a63a61e88a7e6c8e9a87e270",
+          "asset": "manual-pages/glowworm-ultimate-48-2000225232a-10-04/page-26.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc48",
+          "page": 27,
+          "sourceSHA256": "07f94cc6be0e0c9279b08c840afcb2939cb8b36eddd8ba60fdc1c5164c75e6fc",
+          "sha256": "8cd97aaa246b6a04ae9c1b2af11a16b43f7febe647398dbbfd952a1f8120c403",
+          "asset": "manual-pages/glowworm-ultimate-48-2000225232a-10-04/page-27.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "glowworm-ultimate-60ff-41-047-56",
+      "model": "Ultimate 60FF",
+      "gcNumber": "41-047-56",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "glowworm-ultimate-doc51",
+          "page": 4,
+          "sourceSHA256": "143e55ed5a62c7db88af2ff58fb2591c210ead04c3a9c624e9f80ba98ca58f5b",
+          "sha256": "91aaa92a440978532ebe3a454ea73544ea3ec5f573bc1cd1670576f8260dbc0c",
+          "asset": "manual-pages/glowworm-ultimate-51-221964d-12-04/page-4.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc51",
+          "page": 6,
+          "sourceSHA256": "143e55ed5a62c7db88af2ff58fb2591c210ead04c3a9c624e9f80ba98ca58f5b",
+          "sha256": "8231be7cdd8be1ea902a095cf152a8793e3d99285b95dce7ae815a3e72b97b57",
+          "asset": "manual-pages/glowworm-ultimate-51-221964d-12-04/page-6.png",
+          "caption": "Use ONLY this actual model and configured range-rating column. Original pressure/gas-rate/input/output units and qualifications apply. Reference text is not an observed setting, automatic PASS, replacement-part order or current-fit approval."
+        },
+        {
+          "documentId": "glowworm-ultimate-doc51",
+          "page": 21,
+          "sourceSHA256": "143e55ed5a62c7db88af2ff58fb2591c210ead04c3a9c624e9f80ba98ca58f5b",
+          "sha256": "b4e00ee7aedc7ba1e0fa28e672d00233c07ddc1ddf3095087e7e8cbc6a5480a9",
+          "asset": "manual-pages/glowworm-ultimate-51-221964d-12-04/page-21.png",
+          "caption": "Own model electrical assembly/lead identification and safe restoration only. Adjacent wiring diagrams do not authorise changing links, bypassing safeties, converting water/control system or borrowing another model circuit."
+        },
+        {
+          "documentId": "glowworm-ultimate-doc51",
+          "page": 22,
+          "sourceSHA256": "143e55ed5a62c7db88af2ff58fb2591c210ead04c3a9c624e9f80ba98ca58f5b",
+          "sha256": "a58312e1712caf7af55ae7cc56cbec3853e7d458b29778d0c577b350bbf8dbfb",
+          "asset": "manual-pages/glowworm-ultimate-51-221964d-12-04/page-22.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc51",
+          "page": 23,
+          "sourceSHA256": "143e55ed5a62c7db88af2ff58fb2591c210ead04c3a9c624e9f80ba98ca58f5b",
+          "sha256": "2bae9e37c218d968534ee1ba4614c1b64e170327e533b9010d8991f58a7c9c53",
+          "asset": "manual-pages/glowworm-ultimate-51-221964d-12-04/page-23.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc51",
+          "page": 24,
+          "sourceSHA256": "143e55ed5a62c7db88af2ff58fb2591c210ead04c3a9c624e9f80ba98ca58f5b",
+          "sha256": "d6564ce7c44b9692cf32de61ba1a05238fbd0b781eef899d4b6236e73d0cd5eb",
+          "asset": "manual-pages/glowworm-ultimate-51-221964d-12-04/page-24.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc51",
+          "page": 25,
+          "sourceSHA256": "143e55ed5a62c7db88af2ff58fb2591c210ead04c3a9c624e9f80ba98ca58f5b",
+          "sha256": "42a60f52055199faf4a6b71789dbc250da6ef088eeb21b690e7afe7122547e08",
+          "asset": "manual-pages/glowworm-ultimate-51-221964d-12-04/page-25.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc51",
+          "page": 26,
+          "sourceSHA256": "143e55ed5a62c7db88af2ff58fb2591c210ead04c3a9c624e9f80ba98ca58f5b",
+          "sha256": "ad844e367d9da016e338de92c42483180077b800d8f6b1904f15fa1f0b0a0f00",
+          "asset": "manual-pages/glowworm-ultimate-51-221964d-12-04/page-26.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc51",
+          "page": 27,
+          "sourceSHA256": "143e55ed5a62c7db88af2ff58fb2591c210ead04c3a9c624e9f80ba98ca58f5b",
+          "sha256": "4f88491fda2b3f06fe3c30bc6db6a70fe0f0afc495782b93aa98250f45153995",
+          "asset": "manual-pages/glowworm-ultimate-51-221964d-12-04/page-27.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "glowworm-ultimate-70ff-41-047-57",
+      "model": "Ultimate 70FF",
+      "gcNumber": "41-047-57",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "glowworm-ultimate-doc52",
+          "page": 4,
+          "sourceSHA256": "c1691d43af85e1ac0afbcfb3bb468a8e9ba2dc7124437ef048e72811c8af770d",
+          "sha256": "079b021a44b68ee7bae38e9da82233db3af284115cd3cae3b53c47786824c638",
+          "asset": "manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-4.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc52",
+          "page": 6,
+          "sourceSHA256": "c1691d43af85e1ac0afbcfb3bb468a8e9ba2dc7124437ef048e72811c8af770d",
+          "sha256": "233f846f0cf1caee6244b0fec8fe729db7ffd6aa3c599e4cd3aaf855764b7957",
+          "asset": "manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-6.png",
+          "caption": "Use ONLY this actual model and configured range-rating column. Original pressure/gas-rate/input/output units and qualifications apply. Reference text is not an observed setting, automatic PASS, replacement-part order or current-fit approval."
+        },
+        {
+          "documentId": "glowworm-ultimate-doc52",
+          "page": 20,
+          "sourceSHA256": "c1691d43af85e1ac0afbcfb3bb468a8e9ba2dc7124437ef048e72811c8af770d",
+          "sha256": "0c1316933b02b7904de2dfc1b5cb7f8199b2e05876d37a02250f10b6ad720244",
+          "asset": "manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-20.png",
+          "caption": "Own model electrical assembly/lead identification and safe restoration only. Adjacent wiring diagrams do not authorise changing links, bypassing safeties, converting water/control system or borrowing another model circuit."
+        },
+        {
+          "documentId": "glowworm-ultimate-doc52",
+          "page": 21,
+          "sourceSHA256": "c1691d43af85e1ac0afbcfb3bb468a8e9ba2dc7124437ef048e72811c8af770d",
+          "sha256": "8e1f7690c864e87bcefc8b05f26b66c5b32389bfcf121d0120e1f51a323df799",
+          "asset": "manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-21.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc52",
+          "page": 22,
+          "sourceSHA256": "c1691d43af85e1ac0afbcfb3bb468a8e9ba2dc7124437ef048e72811c8af770d",
+          "sha256": "dfb02a07716cf8f3f08b922a6795d47a90e8ae5a33c61cf97ad6d16564a307d1",
+          "asset": "manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-22.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc52",
+          "page": 23,
+          "sourceSHA256": "c1691d43af85e1ac0afbcfb3bb468a8e9ba2dc7124437ef048e72811c8af770d",
+          "sha256": "78b105918f4ea2cedebfb596baba36cb0b25493d532ab44583f5fc7692a468dd",
+          "asset": "manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-23.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc52",
+          "page": 24,
+          "sourceSHA256": "c1691d43af85e1ac0afbcfb3bb468a8e9ba2dc7124437ef048e72811c8af770d",
+          "sha256": "4350695e5897387a6689e3cc956517b898b591986859143e53f719d698a09d05",
+          "asset": "manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-24.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc52",
+          "page": 25,
+          "sourceSHA256": "c1691d43af85e1ac0afbcfb3bb468a8e9ba2dc7124437ef048e72811c8af770d",
+          "sha256": "57cd7cec7b9759280d26e7bc81a668b89d29ba7635b600eb901cc188890843ea",
+          "asset": "manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-25.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc52",
+          "page": 26,
+          "sourceSHA256": "c1691d43af85e1ac0afbcfb3bb468a8e9ba2dc7124437ef048e72811c8af770d",
+          "sha256": "5bc1eb2be6e09bb4b0f350258964958c0ef226958c96aae803b35f36504e6b33",
+          "asset": "manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-26.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "glowworm-ultimate-80ff-41-047-58",
+      "model": "Ultimate 80FF",
+      "gcNumber": "41-047-58",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "glowworm-ultimate-doc52",
+          "page": 4,
+          "sourceSHA256": "c1691d43af85e1ac0afbcfb3bb468a8e9ba2dc7124437ef048e72811c8af770d",
+          "sha256": "079b021a44b68ee7bae38e9da82233db3af284115cd3cae3b53c47786824c638",
+          "asset": "manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-4.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc52",
+          "page": 6,
+          "sourceSHA256": "c1691d43af85e1ac0afbcfb3bb468a8e9ba2dc7124437ef048e72811c8af770d",
+          "sha256": "233f846f0cf1caee6244b0fec8fe729db7ffd6aa3c599e4cd3aaf855764b7957",
+          "asset": "manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-6.png",
+          "caption": "Use ONLY this actual model and configured range-rating column. Original pressure/gas-rate/input/output units and qualifications apply. Reference text is not an observed setting, automatic PASS, replacement-part order or current-fit approval."
+        },
+        {
+          "documentId": "glowworm-ultimate-doc52",
+          "page": 20,
+          "sourceSHA256": "c1691d43af85e1ac0afbcfb3bb468a8e9ba2dc7124437ef048e72811c8af770d",
+          "sha256": "0c1316933b02b7904de2dfc1b5cb7f8199b2e05876d37a02250f10b6ad720244",
+          "asset": "manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-20.png",
+          "caption": "Own model electrical assembly/lead identification and safe restoration only. Adjacent wiring diagrams do not authorise changing links, bypassing safeties, converting water/control system or borrowing another model circuit."
+        },
+        {
+          "documentId": "glowworm-ultimate-doc52",
+          "page": 21,
+          "sourceSHA256": "c1691d43af85e1ac0afbcfb3bb468a8e9ba2dc7124437ef048e72811c8af770d",
+          "sha256": "8e1f7690c864e87bcefc8b05f26b66c5b32389bfcf121d0120e1f51a323df799",
+          "asset": "manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-21.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc52",
+          "page": 22,
+          "sourceSHA256": "c1691d43af85e1ac0afbcfb3bb468a8e9ba2dc7124437ef048e72811c8af770d",
+          "sha256": "dfb02a07716cf8f3f08b922a6795d47a90e8ae5a33c61cf97ad6d16564a307d1",
+          "asset": "manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-22.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc52",
+          "page": 23,
+          "sourceSHA256": "c1691d43af85e1ac0afbcfb3bb468a8e9ba2dc7124437ef048e72811c8af770d",
+          "sha256": "78b105918f4ea2cedebfb596baba36cb0b25493d532ab44583f5fc7692a468dd",
+          "asset": "manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-23.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc52",
+          "page": 24,
+          "sourceSHA256": "c1691d43af85e1ac0afbcfb3bb468a8e9ba2dc7124437ef048e72811c8af770d",
+          "sha256": "4350695e5897387a6689e3cc956517b898b591986859143e53f719d698a09d05",
+          "asset": "manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-24.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc52",
+          "page": 25,
+          "sourceSHA256": "c1691d43af85e1ac0afbcfb3bb468a8e9ba2dc7124437ef048e72811c8af770d",
+          "sha256": "57cd7cec7b9759280d26e7bc81a668b89d29ba7635b600eb901cc188890843ea",
+          "asset": "manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-25.png"
+        },
+        {
+          "documentId": "glowworm-ultimate-doc52",
+          "page": 26,
+          "sourceSHA256": "c1691d43af85e1ac0afbcfb3bb468a8e9ba2dc7124437ef048e72811c8af770d",
+          "sha256": "5bc1eb2be6e09bb4b0f350258964958c0ef226958c96aae803b35f36504e6b33",
+          "asset": "manual-pages/glowworm-ultimate-52-2000225233a-10-04/page-26.png"
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
     }
   ],
   "liveServiceM8Connection": false,
@@ -15390,7 +15970,8 @@
     "Expands 4 exact-model annual guides from 60 to 76 tasks, with 233 total original source-page images. 4 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 4 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1721 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
     "Adds the separate original Heatmiser wired UH8, DS-SB and TM4-TS example for four underfloor heating zones and radiator zone8 set RAD, including both circuit halves and source notes saved offline. Existing S/Y/Hive references and all boiler guides remain unchanged. This manufacturer reference does not establish Hive substitution, additional pumps, motor-load or boiler-overrun compatibility.",
     "Expands 6 exact-model annual guides from 108 to 150 tasks, with 249 total original source-page images. 6 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 6 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1719 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
-    "Expands 7 exact-model annual guides from 181 to 187 tasks, with 273 total original source-page images. 7 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 7 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1718 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances."
+    "Expands 7 exact-model annual guides from 181 to 187 tasks, with 273 total original source-page images. 7 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 7 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1718 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
+    "Expands 6 exact-model annual guides from 72 to 126 tasks, with 310 total original source-page images. 6 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 6 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1719 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances."
   ],
   "releaseStatus": "release"
 }
