@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "buildId": "d786669b92e24802",
+  "buildId": "9bf1e715f76d2f2e",
   "preparedOn": "2026-11-24",
-  "appVersion": "2026.11.28-r56-full-annual-gas-oil",
+  "appVersion": "2026.11.28-r57-full-annual-gas-oil",
   "workerTemplateSHA256": "e2a79b2d4a088d5a3049201d7c55a9237ca8aea203659a89ccccd05151f5a6f4",
   "files": [
     {
@@ -52,8 +52,8 @@
     },
     {
       "url": "./data/details-packed.json",
-      "bytes": 12972781,
-      "sha256": "f5e44b4b10386863cf60fbed5ca1615d630f422590e1ea6b372c4c5ecbb5d842"
+      "bytes": 13008557,
+      "sha256": "02f29bc76433ef70f5bcb3a19fd91efbc60ccef639de5bf89634bbbefdc2e96c"
     },
     {
       "url": "./data/gas-fire-details.json",
@@ -98,7 +98,7 @@
     {
       "url": "./help/ai-client.mjs",
       "bytes": 8814,
-      "sha256": "020ecb679e119e957dcc4dea2e4338e2cdd7dc7d67ff88f4f4341f0f33c56a3a"
+      "sha256": "e980c876c2164b945781a26702978fbbd6b10c954dce68f0451caa6c98ccd712"
     },
     {
       "url": "./help/baxi400-heat-fault-guard.mjs",
@@ -268,7 +268,7 @@
     {
       "url": "./index.html",
       "bytes": 1586895,
-      "sha256": "9ba83945f32cc8fe2530fb5033e323f9f2262b6a638b118d9ee255cfac698f4e"
+      "sha256": "30e9a90cc1817e8173b99cfcb80fd2e7bc8847dab6402339068afd6cb70e1b34"
     },
     {
       "url": "./local-bridge.js",
@@ -2382,8 +2382,8 @@
     },
     {
       "url": "./release-info.json",
-      "bytes": 833466,
-      "sha256": "bf6b5067d1bf8b203f4d435de5fadd7934ecd4a517c741456e9e0a128dbcc998"
+      "bytes": 890102,
+      "sha256": "2c2b0d37ab25dc945e97d283fd03e57585de44ea6abe6c6759159f73bdff54e6"
     },
     {
       "url": "./vendor/PDFJS-LICENSE.txt",
@@ -2452,8 +2452,8 @@
     },
     {
       "url": "./reviewed-service-pages.js",
-      "bytes": 517131,
-      "sha256": "a99f325af02a651ac543f09ea12e6a9be141d66d0b2358ff62a2f7845286226c"
+      "bytes": 567231,
+      "sha256": "35dfcde109a0ae2f228941bb23aed94a2404f18d5af280143a82f575b1ce3a35"
     },
     {
       "url": "./manual-pages/main-system-he-5121186-02/page-10.png",
@@ -3729,7 +3729,127 @@
       "url": "./manual-pages/baxi-ecoblue-system-erp-7219708-03-201703/page-71.png",
       "bytes": 187725,
       "sha256": "8879c11f3f26a463218102507caaaa6aad06aec9bac40aa7b8d9d6cede1e09ac"
+    },
+    {
+      "url": "./manual-pages/ideal-icos-he30-36-202414-a06/page-4.png",
+      "bytes": 354211,
+      "sha256": "1eb039f22dfa67f4dc0f9a89c618a67f0a4389478903796b2fad6f17c03a1288"
+    },
+    {
+      "url": "./manual-pages/ideal-icos-he30-36-202414-a06/page-29.png",
+      "bytes": 371076,
+      "sha256": "11827969542fdc9ce99af7aa1703ee76278a502b2fa4a2f19138bc7b9039aff7"
+    },
+    {
+      "url": "./manual-pages/ideal-icos-he30-36-202414-a06/page-30.png",
+      "bytes": 393556,
+      "sha256": "a61f5b0d4cde4ab0b896c0b638d7d15b71af17c341fb03324125455ee034613a"
+    },
+    {
+      "url": "./manual-pages/ideal-icos-he30-36-202414-a06/page-31.png",
+      "bytes": 367432,
+      "sha256": "68f581bb7f59956f2b69b62a2d0577d12a951eea97e839f065e60856ebade915"
+    },
+    {
+      "url": "./manual-pages/ideal-icos-he30-36-202414-a06/page-32.png",
+      "bytes": 322283,
+      "sha256": "15e66a2baf23048a9f8328e24e077776f502d8f1319595edcca97eb505ec601a"
+    },
+    {
+      "url": "./manual-pages/ideal-icos-he30-36-202414-a06/page-33.png",
+      "bytes": 245947,
+      "sha256": "b46ea8610ef703b05d5330bbf52e5dd43ef80c49181976d8bbb18437239ce41f"
+    },
+    {
+      "url": "./manual-pages/ideal-icos-he30-36-202414-a06/page-34.png",
+      "bytes": 428056,
+      "sha256": "56649594f4fb7b0f6a982495580982e2e0dfbbb5efcb31c8bdb46862f734be00"
+    },
+    {
+      "url": "./manual-pages/ideal-icos-he30-36-202414-a06/page-35.png",
+      "bytes": 289667,
+      "sha256": "7062209a7096751a1cd48d60b8a86d6e16e110371ccd4da87f22c6b35984ff33"
+    },
+    {
+      "url": "./manual-pages/ideal-icos-he30-36-202414-a06/page-37.png",
+      "bytes": 517743,
+      "sha256": "d04611be467ccc6fe2677e5838d837bb8500d10450c8b6a986107571dcefce45"
+    },
+    {
+      "url": "./manual-pages/baxi-solo-hea-7204218-06/page-10.png",
+      "bytes": 357668,
+      "sha256": "56926f32b4ad0d8835d01441dbc9b3e610131886a9ae9730326932a73871d26c"
+    },
+    {
+      "url": "./manual-pages/baxi-solo-hea-7204218-06/page-35.png",
+      "bytes": 331807,
+      "sha256": "683ed31616627cd2fb917d7db005b7aeacbfac393cedb09fa27dda3e772fec79"
+    },
+    {
+      "url": "./manual-pages/baxi-solo-hea-7204218-06/page-38.png",
+      "bytes": 414096,
+      "sha256": "838baa8f0de7d72bc9a6328830d4264045a398f28870f10aeebcba0b3bb459c2"
+    },
+    {
+      "url": "./manual-pages/baxi-solo-hea-7204218-06/page-39.png",
+      "bytes": 311248,
+      "sha256": "f7845eeccfff6dc2fed4b0c0b05fd6c958388afa8fe30420fac81380aaecafc9"
+    },
+    {
+      "url": "./manual-pages/baxi-solo-hea-7204218-06/page-40.png",
+      "bytes": 238266,
+      "sha256": "09b96bdf093d7ab8266dd0f846874499eae200edcdf0b90cecceeab0c893b65c"
+    },
+    {
+      "url": "./manual-pages/baxi-solo-hea-7204218-06/page-41.png",
+      "bytes": 339284,
+      "sha256": "943a951b828f9499a96ba56a744ceca502117a7704f0ed81d3e04503602bc470"
+    },
+    {
+      "url": "./manual-pages/baxi-solo-hea-7204218-06/page-42.png",
+      "bytes": 233610,
+      "sha256": "0f9f68081619d0ba68b9cefacb8b1a3b2093d3ef57b9d69ae3e86449e72e3ea6"
+    },
+    {
+      "url": "./manual-pages/baxi-solo-hea-7204218-06/page-43.png",
+      "bytes": 375731,
+      "sha256": "2c4c79c33a764720fc9a587345ef45ae7b0fbaefe372c16f29e9d5b9c7afc811"
+    },
+    {
+      "url": "./manual-pages/baxi-solo-hea-7204218-06/page-44.png",
+      "bytes": 500709,
+      "sha256": "cbda4b0002e5345476142cbb8fab7da91e2502531cf03d532139a06dda3d7d89"
+    },
+    {
+      "url": "./manual-pages/baxi-solo-hea-7204218-06/page-45.png",
+      "bytes": 424153,
+      "sha256": "e659e543fd2f2cb601bb8e7631d50bb3f5a6e044b307f8663f5f238a8bbe037a"
+    },
+    {
+      "url": "./manual-pages/baxi-solo-hea-7204218-06/page-46.png",
+      "bytes": 409224,
+      "sha256": "4d1c3f2292c6cb1471fb666c2861404703e6565dcaaf234e918fd6113986b864"
+    },
+    {
+      "url": "./manual-pages/baxi-solo-hea-7204218-06/page-47.png",
+      "bytes": 362462,
+      "sha256": "d6d602707ec6972fee6cdedb57ba5acb557368ca33354f6bfe5db8582d9bb310"
+    },
+    {
+      "url": "./manual-pages/baxi-solo-hea-7204218-06/page-48.png",
+      "bytes": 462954,
+      "sha256": "f41e6c57e4756e8048c3cbb8fd64ab20ed56a66fc939da98312d8b0badc070a4"
+    },
+    {
+      "url": "./manual-pages/baxi-solo-hea-7204218-06/page-49.png",
+      "bytes": 412789,
+      "sha256": "22bee8c5bf1df2afbc59e29d9ce9887db80f40da49687a03801cbdf26ede55f1"
+    },
+    {
+      "url": "./manual-pages/baxi-solo-hea-7204218-06/page-50.png",
+      "bytes": 242173,
+      "sha256": "142bfc35a8311292e57331b74589e375aef54d603c527e185adc34fae7ed9c60"
     }
   ],
-  "totalBytes": 269730631
+  "totalBytes": 278579288
 }

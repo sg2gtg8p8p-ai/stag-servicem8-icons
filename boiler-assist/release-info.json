@@ -1,5 +1,5 @@
 {
-  "appVersion": "2026.11.28-r56-full-annual-gas-oil",
+  "appVersion": "2026.11.28-r57-full-annual-gas-oil",
   "preparedOn": "2026-11-28",
   "catalogueBaseline": "Accepted Boiler Assist v1.0.4",
   "boilers": 1725,
@@ -5105,6 +5105,118 @@
       "newConditionalTasks": 4,
       "status": "complete",
       "sourceReference": "7219708-03 (03/17)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-icos-he30-41-399-10",
+      "gcNumber": "41-399-10",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 18,
+      "previousServicingTasks": 15,
+      "newConditionalTasks": 9,
+      "status": "complete",
+      "sourceReference": "UIN202414 A06 January2008",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "ideal-icos-he36-41-399-16",
+      "gcNumber": "41-399-16",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 18,
+      "previousServicingTasks": 15,
+      "newConditionalTasks": 9,
+      "status": "complete",
+      "sourceReference": "UIN202414 A06 January2008",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "baxi-solo-12-he-a-41-075-65",
+      "gcNumber": "41-075-65",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 30,
+      "previousServicingTasks": 30,
+      "newConditionalTasks": 0,
+      "status": "complete",
+      "sourceReference": "7204218 06(4/14)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "baxi-solo-15-he-a-41-075-66",
+      "gcNumber": "41-075-66",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 30,
+      "previousServicingTasks": 30,
+      "newConditionalTasks": 0,
+      "status": "complete",
+      "sourceReference": "7204218 06(4/14)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "baxi-solo-18-he-a-41-075-67",
+      "gcNumber": "41-075-67",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 30,
+      "previousServicingTasks": 30,
+      "newConditionalTasks": 0,
+      "status": "complete",
+      "sourceReference": "7204218 06(4/14)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "baxi-solo-24-he-a-41-075-68",
+      "gcNumber": "41-075-68",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 30,
+      "previousServicingTasks": 30,
+      "newConditionalTasks": 0,
+      "status": "complete",
+      "sourceReference": "7204218 06(4/14)",
+      "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
+      "newNumericRules": false,
+      "numericReferenceOnly": true,
+      "newReadings": 0,
+      "fullGuideClaim": true
+    },
+    {
+      "id": "baxi-solo-30-he-a-41-075-69",
+      "gcNumber": "41-075-69",
+      "productNumber": null,
+      "fuel": "Natural Gas",
+      "servicingTasks": 31,
+      "previousServicingTasks": 31,
+      "newConditionalTasks": 0,
+      "status": "complete",
+      "sourceReference": "7204218 06(4/14)",
       "scope": "Exact-model manufacturer annual sequence expanded with original page images, conditional maintenance and controlled post-work checks. Technical guide coverage is separate from performed servicing, actual installed applicability, optional fault repair and certification.",
       "newNumericRules": false,
       "numericReferenceOnly": true,
@@ -14268,6 +14380,841 @@
       "currentRevisionOrInstalledSerialApplicabilityProved": false,
       "newNumericRules": false,
       "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-icos-he30-41-399-10",
+      "model": "icos HE30",
+      "gcNumber": "41-399-10",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-icos-he30-36-202414-a06",
+          "page": 4,
+          "sourceSHA256": "5717db98fa02d2d4b72f5406954f9489ba9c33628baadaf031d387f6793e2d5e",
+          "sha256": "1eb039f22dfa67f4dc0f9a89c618a67f0a4389478903796b2fad6f17c03a1288",
+          "asset": "manual-pages/ideal-icos-he30-36-202414-a06/page-4.png",
+          "caption": "Own HE30MAX/HE36MAX/sharedMIN performance columns and complete gross/nettCV notes. Input differs from output; no new settings/part-fit inferred."
+        },
+        {
+          "documentId": "ideal-icos-he30-36-202414-a06",
+          "page": 29,
+          "sourceSHA256": "5717db98fa02d2d4b72f5406954f9489ba9c33628baadaf031d387f6793e2d5e",
+          "sha256": "11827969542fdc9ce99af7aa1703ee76278a502b2fa4a2f19138bc7b9039aff7",
+          "asset": "manual-pages/ideal-icos-he30-36-202414-a06/page-29.png",
+          "caption": "ONLY Frame40 electrical/gassoundness/purge prerequisites used; Frame39 control wiring is not a new wiring/optional-kit proposal. Historical regulations are not current-law advice."
+        },
+        {
+          "documentId": "ideal-icos-he30-36-202414-a06",
+          "page": 30,
+          "sourceSHA256": "5717db98fa02d2d4b72f5406954f9489ba9c33628baadaf031d387f6793e2d5e",
+          "sha256": "a61f5b0d4cde4ab0b896c0b638d7d15b71af17c341fb03324125455ee034613a",
+          "asset": "manual-pages/ideal-icos-he30-36-202414-a06/page-30.png",
+          "caption": "Legend AND figure identifyF INLET testpoint,G GASCOCK,E INJECTORpoint; step7 letterG is contradictory and must NOT select the gascock as testpoint. Actual match required. Sealing panel always fitted for firing; valveSEALED/nonadjustable."
+        },
+        {
+          "documentId": "ideal-icos-he30-36-202414-a06",
+          "page": 31,
+          "sourceSHA256": "5717db98fa02d2d4b72f5406954f9489ba9c33628baadaf031d387f6793e2d5e",
+          "sha256": "68f581bb7f59956f2b69b62a2d0577d12a951eea97e839f065e60856ebade915",
+          "asset": "manual-pages/ideal-icos-he30-36-202414-a06/page-31.png",
+          "caption": "Own10minutefull-output rating/controls/condensate/handover. Installation flushing not mandatory annualflush; archivedregistration text not current-law advice."
+        },
+        {
+          "documentId": "ideal-icos-he30-36-202414-a06",
+          "page": 32,
+          "sourceSHA256": "5717db98fa02d2d4b72f5406954f9489ba9c33628baadaf031d387f6793e2d5e",
+          "sha256": "15e66a2baf23048a9f8328e24e077776f502d8f1319595edcca97eb505ec601a",
+          "asset": "manual-pages/ideal-icos-he30-36-202414-a06/page-32.png",
+          "caption": "Own annual ratio≤.004 AND input≥90% permits no further intrusive cleaning only after actualchecks; otherwise FULL ordered branch. Own panel fixings; no smaller-family transfer."
+        },
+        {
+          "documentId": "ideal-icos-he30-36-202414-a06",
+          "page": 33,
+          "sourceSHA256": "5717db98fa02d2d4b72f5406954f9489ba9c33628baadaf031d387f6793e2d5e",
+          "sha256": "b46ea8610ef703b05d5330bbf52e5dd43ef80c49181976d8bbb18437239ce41f",
+          "asset": "manual-pages/ideal-icos-he30-36-202414-a06/page-33.png",
+          "caption": "Own fanunion/mount and SIXburnerfasteners; ceramicplaque SOFTbrush, neverface-down; preserve front/rear probes."
+        },
+        {
+          "documentId": "ideal-icos-he30-36-202414-a06",
+          "page": 34,
+          "sourceSHA256": "5717db98fa02d2d4b72f5406954f9489ba9c33628baadaf031d387f6793e2d5e",
+          "sha256": "56649594f4fb7b0f6a982495580982e2e0dfbbb5efcb31c8bdb46862f734be00",
+          "asset": "manual-pages/ideal-icos-he30-36-202414-a06/page-34.png",
+          "caption": "Own opaque trap cartridge/ball/sealingnut and FULLWATER trap→sump→electrodes→burner→fan→leads→sealedpanel sequence; optionalpump has own instructions."
+        },
+        {
+          "documentId": "ideal-icos-he30-36-202414-a06",
+          "page": 35,
+          "sourceSHA256": "5717db98fa02d2d4b72f5406954f9489ba9c33628baadaf031d387f6793e2d5e",
+          "sha256": "7062209a7096751a1cd48d60b8a86d6e16e110371ccd4da87f22c6b35984ff33",
+          "asset": "manual-pages/ideal-icos-he30-36-202414-a06/page-35.png",
+          "caption": "Only general52isolation/soundness/rate/restoration context. Thermistor/componentrepair not automatically required annualwork."
+        },
+        {
+          "documentId": "ideal-icos-he30-36-202414-a06",
+          "page": 37,
+          "sourceSHA256": "5717db98fa02d2d4b72f5406954f9489ba9c33628baadaf031d387f6793e2d5e",
+          "sha256": "d04611be467ccc6fe2677e5838d837bb8500d10450c8b6a986107571dcefce45",
+          "asset": "manual-pages/ideal-icos-he30-36-202414-a06/page-37.png",
+          "caption": "Own HE30/36 spark3.5±1mm, ignition15±1mm, detection16±1mm relative to ORIGINAL straightedge; ignitionearth/newgaskets restored. Not generic electrodegap/partfit."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "ideal-icos-he36-41-399-16",
+      "model": "icos HE36",
+      "gcNumber": "41-399-16",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 9,
+      "images": [
+        {
+          "documentId": "ideal-icos-he30-36-202414-a06",
+          "page": 4,
+          "sourceSHA256": "5717db98fa02d2d4b72f5406954f9489ba9c33628baadaf031d387f6793e2d5e",
+          "sha256": "1eb039f22dfa67f4dc0f9a89c618a67f0a4389478903796b2fad6f17c03a1288",
+          "asset": "manual-pages/ideal-icos-he30-36-202414-a06/page-4.png",
+          "caption": "Own HE30MAX/HE36MAX/sharedMIN performance columns and complete gross/nettCV notes. Input differs from output; no new settings/part-fit inferred."
+        },
+        {
+          "documentId": "ideal-icos-he30-36-202414-a06",
+          "page": 29,
+          "sourceSHA256": "5717db98fa02d2d4b72f5406954f9489ba9c33628baadaf031d387f6793e2d5e",
+          "sha256": "11827969542fdc9ce99af7aa1703ee76278a502b2fa4a2f19138bc7b9039aff7",
+          "asset": "manual-pages/ideal-icos-he30-36-202414-a06/page-29.png",
+          "caption": "ONLY Frame40 electrical/gassoundness/purge prerequisites used; Frame39 control wiring is not a new wiring/optional-kit proposal. Historical regulations are not current-law advice."
+        },
+        {
+          "documentId": "ideal-icos-he30-36-202414-a06",
+          "page": 30,
+          "sourceSHA256": "5717db98fa02d2d4b72f5406954f9489ba9c33628baadaf031d387f6793e2d5e",
+          "sha256": "a61f5b0d4cde4ab0b896c0b638d7d15b71af17c341fb03324125455ee034613a",
+          "asset": "manual-pages/ideal-icos-he30-36-202414-a06/page-30.png",
+          "caption": "Legend AND figure identifyF INLET testpoint,G GASCOCK,E INJECTORpoint; step7 letterG is contradictory and must NOT select the gascock as testpoint. Actual match required. Sealing panel always fitted for firing; valveSEALED/nonadjustable."
+        },
+        {
+          "documentId": "ideal-icos-he30-36-202414-a06",
+          "page": 31,
+          "sourceSHA256": "5717db98fa02d2d4b72f5406954f9489ba9c33628baadaf031d387f6793e2d5e",
+          "sha256": "68f581bb7f59956f2b69b62a2d0577d12a951eea97e839f065e60856ebade915",
+          "asset": "manual-pages/ideal-icos-he30-36-202414-a06/page-31.png",
+          "caption": "Own10minutefull-output rating/controls/condensate/handover. Installation flushing not mandatory annualflush; archivedregistration text not current-law advice."
+        },
+        {
+          "documentId": "ideal-icos-he30-36-202414-a06",
+          "page": 32,
+          "sourceSHA256": "5717db98fa02d2d4b72f5406954f9489ba9c33628baadaf031d387f6793e2d5e",
+          "sha256": "15e66a2baf23048a9f8328e24e077776f502d8f1319595edcca97eb505ec601a",
+          "asset": "manual-pages/ideal-icos-he30-36-202414-a06/page-32.png",
+          "caption": "Own annual ratio≤.004 AND input≥90% permits no further intrusive cleaning only after actualchecks; otherwise FULL ordered branch. Own panel fixings; no smaller-family transfer."
+        },
+        {
+          "documentId": "ideal-icos-he30-36-202414-a06",
+          "page": 33,
+          "sourceSHA256": "5717db98fa02d2d4b72f5406954f9489ba9c33628baadaf031d387f6793e2d5e",
+          "sha256": "b46ea8610ef703b05d5330bbf52e5dd43ef80c49181976d8bbb18437239ce41f",
+          "asset": "manual-pages/ideal-icos-he30-36-202414-a06/page-33.png",
+          "caption": "Own fanunion/mount and SIXburnerfasteners; ceramicplaque SOFTbrush, neverface-down; preserve front/rear probes."
+        },
+        {
+          "documentId": "ideal-icos-he30-36-202414-a06",
+          "page": 34,
+          "sourceSHA256": "5717db98fa02d2d4b72f5406954f9489ba9c33628baadaf031d387f6793e2d5e",
+          "sha256": "56649594f4fb7b0f6a982495580982e2e0dfbbb5efcb31c8bdb46862f734be00",
+          "asset": "manual-pages/ideal-icos-he30-36-202414-a06/page-34.png",
+          "caption": "Own opaque trap cartridge/ball/sealingnut and FULLWATER trap→sump→electrodes→burner→fan→leads→sealedpanel sequence; optionalpump has own instructions."
+        },
+        {
+          "documentId": "ideal-icos-he30-36-202414-a06",
+          "page": 35,
+          "sourceSHA256": "5717db98fa02d2d4b72f5406954f9489ba9c33628baadaf031d387f6793e2d5e",
+          "sha256": "7062209a7096751a1cd48d60b8a86d6e16e110371ccd4da87f22c6b35984ff33",
+          "asset": "manual-pages/ideal-icos-he30-36-202414-a06/page-35.png",
+          "caption": "Only general52isolation/soundness/rate/restoration context. Thermistor/componentrepair not automatically required annualwork."
+        },
+        {
+          "documentId": "ideal-icos-he30-36-202414-a06",
+          "page": 37,
+          "sourceSHA256": "5717db98fa02d2d4b72f5406954f9489ba9c33628baadaf031d387f6793e2d5e",
+          "sha256": "d04611be467ccc6fe2677e5838d837bb8500d10450c8b6a986107571dcefce45",
+          "asset": "manual-pages/ideal-icos-he30-36-202414-a06/page-37.png",
+          "caption": "Own HE30/36 spark3.5±1mm, ignition15±1mm, detection16±1mm relative to ORIGINAL straightedge; ignitionearth/newgaskets restored. Not generic electrodegap/partfit."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "baxi-solo-12-he-a-41-075-65",
+      "model": "Solo 12 HE A",
+      "gcNumber": "41-075-65",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 15,
+      "images": [
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 10,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "56926f32b4ad0d8835d01441dbc9b3e610131886a9ae9730326932a73871d26c",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-10.png",
+          "caption": "Exact model/output column only: GROSS input, blank12/18 condensing-minimum cells and table ratio context remain distinct from strict annual/commissioning checks."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 35,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "683ed31616627cd2fb917d7db005b7aeacbfac393cedb09fa27dda3e772fec79",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-35.png",
+          "caption": "Actual30HEA uprating ONLY IF required; never remove RED CN12 on12/15/18/24 or disturb BLUE CN11. Not routine annual work."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 38,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "838baa8f0de7d72bc9a6328830d4264045a398f28870f10aeebcba0b3bb459c2",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-38.png",
+          "caption": "Own commissioning context includes a no-measurement statement that conflicts with mandatory39/annual42: this image does not authorise omission of those checks."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 39,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "f7845eeccfff6dc2fed4b0c0b05fd6c958388afa8fe30420fac81380aaecafc9",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-39.png",
+          "caption": "Whole own maximum AND actual-low commissioning chart; strict CO and ratio together, real modulation/gas-rate measurement and shutdown/advice outcomes."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 40,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "09b96bdf093d7ab8266dd0f846874499eae200edcdf0b90cecceeab0c893b65c",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-40.png",
+          "caption": "Own inlet-only working pressure and exact model gas rate; pressure all-other-appliances-ON versus rating other-appliances/pilots-OFF are separate."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 41,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "943a951b828f9499a96ba56a744ceca502117a7704f0ed81d3e04503602bc470",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-41.png",
+          "caption": "Original casing access/restoration and isolation context; no front-control electrical isolation or live fan/PCB access."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 42,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "0f9f68081619d0ba68b9cefacb8b1a3b2093d3ef57b9d69ae3e86449e72e3ea6",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-42.png",
+          "caption": "Own annual maximum-ratio context, strict less-than boundary, inhibitor and sealed-circuit prerequisites; not an inclusive automatic PASS."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 43,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "2c4c79c33a764720fc9a587345ef45ae7b0fbaefe372c16f29e9d5b9c7afc811",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-43.png",
+          "caption": "Original standard inspection/door lead positions and drain-plug trap service. Component replacement/first-chamber priming is a separate branch."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 44,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "cbda4b0002e5345476142cbb8fab7da91e2502531cf03d532139a06dda3d7d89",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-44.png",
+          "caption": "Only actual required cleaning branch: fan/injector/trap/burner/base/support/insulation sequence and reverse restoration; post-check ratio AND CO2, NO valve adjustment."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 45,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "e659e543fd2f2cb601bb8e7631d50bb3f5a6e044b307f8663f5f238a8bbe037a",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-45.png",
+          "caption": "Actual diagnosed component repair only: water draining/coloured O-ring and isolation/restoration context, not automatic annual draining/replacement."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 46,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "4d1c3f2292c6cb1471fb666c2861404703e6565dcaaf234e918fd6113986b864",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-46.png",
+          "caption": "Actual flow-switch/PCB repair and configuration retention; no copied jumpers or generic30-only uprating."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 47,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "d6d602707ec6972fee6cdedb57ba5acb557368ca33354f6bfe5db8582d9bb310",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-47.png",
+          "caption": "Actual electrode/fan replacement only; all-three-lead electrode route differs from inspection leads, original bracket/injector positions retained."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 48,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "f41e6c57e4756e8048c3cbb8fd64ab20ed56a66fc939da98312d8b0badc070a4",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-48.png",
+          "caption": "Actual gas-valve/trap replacement only; valve NO ADJUSTMENT and CO2/ratio reference mismatch held, trap FIRST CHAMBER prime with no invented volume."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 49,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "22bee8c5bf1df2afbc59e29d9ce9887db80f40da49687a03801cbdf26ede55f1",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-49.png",
+          "caption": "Actual burner/exchanger/insulation repair only; no automatic annual exchanger replacement or transferred handling sequence."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 50,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "142bfc35a8311292e57331b74589e375aef54d603c527e185adc34fae7ed9c60",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-50.png",
+          "caption": "Actual insulation repair only; preserve source component-access dependencies, no unprinted material fit or routine replacement."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "baxi-solo-15-he-a-41-075-66",
+      "model": "Solo 15 HE A",
+      "gcNumber": "41-075-66",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 15,
+      "images": [
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 10,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "56926f32b4ad0d8835d01441dbc9b3e610131886a9ae9730326932a73871d26c",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-10.png",
+          "caption": "Exact model/output column only: GROSS input, blank12/18 condensing-minimum cells and table ratio context remain distinct from strict annual/commissioning checks."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 35,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "683ed31616627cd2fb917d7db005b7aeacbfac393cedb09fa27dda3e772fec79",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-35.png",
+          "caption": "Actual30HEA uprating ONLY IF required; never remove RED CN12 on12/15/18/24 or disturb BLUE CN11. Not routine annual work."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 38,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "838baa8f0de7d72bc9a6328830d4264045a398f28870f10aeebcba0b3bb459c2",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-38.png",
+          "caption": "Own commissioning context includes a no-measurement statement that conflicts with mandatory39/annual42: this image does not authorise omission of those checks."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 39,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "f7845eeccfff6dc2fed4b0c0b05fd6c958388afa8fe30420fac81380aaecafc9",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-39.png",
+          "caption": "Whole own maximum AND actual-low commissioning chart; strict CO and ratio together, real modulation/gas-rate measurement and shutdown/advice outcomes."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 40,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "09b96bdf093d7ab8266dd0f846874499eae200edcdf0b90cecceeab0c893b65c",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-40.png",
+          "caption": "Own inlet-only working pressure and exact model gas rate; pressure all-other-appliances-ON versus rating other-appliances/pilots-OFF are separate."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 41,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "943a951b828f9499a96ba56a744ceca502117a7704f0ed81d3e04503602bc470",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-41.png",
+          "caption": "Original casing access/restoration and isolation context; no front-control electrical isolation or live fan/PCB access."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 42,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "0f9f68081619d0ba68b9cefacb8b1a3b2093d3ef57b9d69ae3e86449e72e3ea6",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-42.png",
+          "caption": "Own annual maximum-ratio context, strict less-than boundary, inhibitor and sealed-circuit prerequisites; not an inclusive automatic PASS."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 43,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "2c4c79c33a764720fc9a587345ef45ae7b0fbaefe372c16f29e9d5b9c7afc811",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-43.png",
+          "caption": "Original standard inspection/door lead positions and drain-plug trap service. Component replacement/first-chamber priming is a separate branch."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 44,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "cbda4b0002e5345476142cbb8fab7da91e2502531cf03d532139a06dda3d7d89",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-44.png",
+          "caption": "Only actual required cleaning branch: fan/injector/trap/burner/base/support/insulation sequence and reverse restoration; post-check ratio AND CO2, NO valve adjustment."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 45,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "e659e543fd2f2cb601bb8e7631d50bb3f5a6e044b307f8663f5f238a8bbe037a",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-45.png",
+          "caption": "Actual diagnosed component repair only: water draining/coloured O-ring and isolation/restoration context, not automatic annual draining/replacement."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 46,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "4d1c3f2292c6cb1471fb666c2861404703e6565dcaaf234e918fd6113986b864",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-46.png",
+          "caption": "Actual flow-switch/PCB repair and configuration retention; no copied jumpers or generic30-only uprating."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 47,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "d6d602707ec6972fee6cdedb57ba5acb557368ca33354f6bfe5db8582d9bb310",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-47.png",
+          "caption": "Actual electrode/fan replacement only; all-three-lead electrode route differs from inspection leads, original bracket/injector positions retained."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 48,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "f41e6c57e4756e8048c3cbb8fd64ab20ed56a66fc939da98312d8b0badc070a4",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-48.png",
+          "caption": "Actual gas-valve/trap replacement only; valve NO ADJUSTMENT and CO2/ratio reference mismatch held, trap FIRST CHAMBER prime with no invented volume."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 49,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "22bee8c5bf1df2afbc59e29d9ce9887db80f40da49687a03801cbdf26ede55f1",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-49.png",
+          "caption": "Actual burner/exchanger/insulation repair only; no automatic annual exchanger replacement or transferred handling sequence."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 50,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "142bfc35a8311292e57331b74589e375aef54d603c527e185adc34fae7ed9c60",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-50.png",
+          "caption": "Actual insulation repair only; preserve source component-access dependencies, no unprinted material fit or routine replacement."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "baxi-solo-18-he-a-41-075-67",
+      "model": "Solo 18 HE A",
+      "gcNumber": "41-075-67",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 15,
+      "images": [
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 10,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "56926f32b4ad0d8835d01441dbc9b3e610131886a9ae9730326932a73871d26c",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-10.png",
+          "caption": "Exact model/output column only: GROSS input, blank12/18 condensing-minimum cells and table ratio context remain distinct from strict annual/commissioning checks."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 35,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "683ed31616627cd2fb917d7db005b7aeacbfac393cedb09fa27dda3e772fec79",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-35.png",
+          "caption": "Actual30HEA uprating ONLY IF required; never remove RED CN12 on12/15/18/24 or disturb BLUE CN11. Not routine annual work."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 38,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "838baa8f0de7d72bc9a6328830d4264045a398f28870f10aeebcba0b3bb459c2",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-38.png",
+          "caption": "Own commissioning context includes a no-measurement statement that conflicts with mandatory39/annual42: this image does not authorise omission of those checks."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 39,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "f7845eeccfff6dc2fed4b0c0b05fd6c958388afa8fe30420fac81380aaecafc9",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-39.png",
+          "caption": "Whole own maximum AND actual-low commissioning chart; strict CO and ratio together, real modulation/gas-rate measurement and shutdown/advice outcomes."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 40,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "09b96bdf093d7ab8266dd0f846874499eae200edcdf0b90cecceeab0c893b65c",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-40.png",
+          "caption": "Own inlet-only working pressure and exact model gas rate; pressure all-other-appliances-ON versus rating other-appliances/pilots-OFF are separate."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 41,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "943a951b828f9499a96ba56a744ceca502117a7704f0ed81d3e04503602bc470",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-41.png",
+          "caption": "Original casing access/restoration and isolation context; no front-control electrical isolation or live fan/PCB access."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 42,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "0f9f68081619d0ba68b9cefacb8b1a3b2093d3ef57b9d69ae3e86449e72e3ea6",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-42.png",
+          "caption": "Own annual maximum-ratio context, strict less-than boundary, inhibitor and sealed-circuit prerequisites; not an inclusive automatic PASS."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 43,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "2c4c79c33a764720fc9a587345ef45ae7b0fbaefe372c16f29e9d5b9c7afc811",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-43.png",
+          "caption": "Original standard inspection/door lead positions and drain-plug trap service. Component replacement/first-chamber priming is a separate branch."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 44,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "cbda4b0002e5345476142cbb8fab7da91e2502531cf03d532139a06dda3d7d89",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-44.png",
+          "caption": "Only actual required cleaning branch: fan/injector/trap/burner/base/support/insulation sequence and reverse restoration; post-check ratio AND CO2, NO valve adjustment."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 45,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "e659e543fd2f2cb601bb8e7631d50bb3f5a6e044b307f8663f5f238a8bbe037a",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-45.png",
+          "caption": "Actual diagnosed component repair only: water draining/coloured O-ring and isolation/restoration context, not automatic annual draining/replacement."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 46,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "4d1c3f2292c6cb1471fb666c2861404703e6565dcaaf234e918fd6113986b864",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-46.png",
+          "caption": "Actual flow-switch/PCB repair and configuration retention; no copied jumpers or generic30-only uprating."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 47,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "d6d602707ec6972fee6cdedb57ba5acb557368ca33354f6bfe5db8582d9bb310",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-47.png",
+          "caption": "Actual electrode/fan replacement only; all-three-lead electrode route differs from inspection leads, original bracket/injector positions retained."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 48,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "f41e6c57e4756e8048c3cbb8fd64ab20ed56a66fc939da98312d8b0badc070a4",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-48.png",
+          "caption": "Actual gas-valve/trap replacement only; valve NO ADJUSTMENT and CO2/ratio reference mismatch held, trap FIRST CHAMBER prime with no invented volume."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 49,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "22bee8c5bf1df2afbc59e29d9ce9887db80f40da49687a03801cbdf26ede55f1",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-49.png",
+          "caption": "Actual burner/exchanger/insulation repair only; no automatic annual exchanger replacement or transferred handling sequence."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 50,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "142bfc35a8311292e57331b74589e375aef54d603c527e185adc34fae7ed9c60",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-50.png",
+          "caption": "Actual insulation repair only; preserve source component-access dependencies, no unprinted material fit or routine replacement."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "baxi-solo-24-he-a-41-075-68",
+      "model": "Solo 24 HE A",
+      "gcNumber": "41-075-68",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 15,
+      "images": [
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 10,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "56926f32b4ad0d8835d01441dbc9b3e610131886a9ae9730326932a73871d26c",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-10.png",
+          "caption": "Exact model/output column only: GROSS input, blank12/18 condensing-minimum cells and table ratio context remain distinct from strict annual/commissioning checks."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 35,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "683ed31616627cd2fb917d7db005b7aeacbfac393cedb09fa27dda3e772fec79",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-35.png",
+          "caption": "Actual30HEA uprating ONLY IF required; never remove RED CN12 on12/15/18/24 or disturb BLUE CN11. Not routine annual work."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 38,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "838baa8f0de7d72bc9a6328830d4264045a398f28870f10aeebcba0b3bb459c2",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-38.png",
+          "caption": "Own commissioning context includes a no-measurement statement that conflicts with mandatory39/annual42: this image does not authorise omission of those checks."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 39,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "f7845eeccfff6dc2fed4b0c0b05fd6c958388afa8fe30420fac81380aaecafc9",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-39.png",
+          "caption": "Whole own maximum AND actual-low commissioning chart; strict CO and ratio together, real modulation/gas-rate measurement and shutdown/advice outcomes."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 40,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "09b96bdf093d7ab8266dd0f846874499eae200edcdf0b90cecceeab0c893b65c",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-40.png",
+          "caption": "Own inlet-only working pressure and exact model gas rate; pressure all-other-appliances-ON versus rating other-appliances/pilots-OFF are separate."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 41,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "943a951b828f9499a96ba56a744ceca502117a7704f0ed81d3e04503602bc470",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-41.png",
+          "caption": "Original casing access/restoration and isolation context; no front-control electrical isolation or live fan/PCB access."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 42,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "0f9f68081619d0ba68b9cefacb8b1a3b2093d3ef57b9d69ae3e86449e72e3ea6",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-42.png",
+          "caption": "Own annual maximum-ratio context, strict less-than boundary, inhibitor and sealed-circuit prerequisites; not an inclusive automatic PASS."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 43,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "2c4c79c33a764720fc9a587345ef45ae7b0fbaefe372c16f29e9d5b9c7afc811",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-43.png",
+          "caption": "Original standard inspection/door lead positions and drain-plug trap service. Component replacement/first-chamber priming is a separate branch."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 44,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "cbda4b0002e5345476142cbb8fab7da91e2502531cf03d532139a06dda3d7d89",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-44.png",
+          "caption": "Only actual required cleaning branch: fan/injector/trap/burner/base/support/insulation sequence and reverse restoration; post-check ratio AND CO2, NO valve adjustment."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 45,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "e659e543fd2f2cb601bb8e7631d50bb3f5a6e044b307f8663f5f238a8bbe037a",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-45.png",
+          "caption": "Actual diagnosed component repair only: water draining/coloured O-ring and isolation/restoration context, not automatic annual draining/replacement."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 46,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "4d1c3f2292c6cb1471fb666c2861404703e6565dcaaf234e918fd6113986b864",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-46.png",
+          "caption": "Actual flow-switch/PCB repair and configuration retention; no copied jumpers or generic30-only uprating."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 47,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "d6d602707ec6972fee6cdedb57ba5acb557368ca33354f6bfe5db8582d9bb310",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-47.png",
+          "caption": "Actual electrode/fan replacement only; all-three-lead electrode route differs from inspection leads, original bracket/injector positions retained."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 48,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "f41e6c57e4756e8048c3cbb8fd64ab20ed56a66fc939da98312d8b0badc070a4",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-48.png",
+          "caption": "Actual gas-valve/trap replacement only; valve NO ADJUSTMENT and CO2/ratio reference mismatch held, trap FIRST CHAMBER prime with no invented volume."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 49,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "22bee8c5bf1df2afbc59e29d9ce9887db80f40da49687a03801cbdf26ede55f1",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-49.png",
+          "caption": "Actual burner/exchanger/insulation repair only; no automatic annual exchanger replacement or transferred handling sequence."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 50,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "142bfc35a8311292e57331b74589e375aef54d603c527e185adc34fae7ed9c60",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-50.png",
+          "caption": "Actual insulation repair only; preserve source component-access dependencies, no unprinted material fit or routine replacement."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
+    },
+    {
+      "modelID": "baxi-solo-30-he-a-41-075-69",
+      "model": "Solo 30 HE A",
+      "gcNumber": "41-075-69",
+      "fuel": "Natural Gas",
+      "status": "reviewed-original-pages-point-of-use",
+      "imageCount": 15,
+      "images": [
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 10,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "56926f32b4ad0d8835d01441dbc9b3e610131886a9ae9730326932a73871d26c",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-10.png",
+          "caption": "Exact model/output column only: GROSS input, blank12/18 condensing-minimum cells and table ratio context remain distinct from strict annual/commissioning checks."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 35,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "683ed31616627cd2fb917d7db005b7aeacbfac393cedb09fa27dda3e772fec79",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-35.png",
+          "caption": "Actual30HEA uprating ONLY IF required; never remove RED CN12 on12/15/18/24 or disturb BLUE CN11. Not routine annual work."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 38,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "838baa8f0de7d72bc9a6328830d4264045a398f28870f10aeebcba0b3bb459c2",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-38.png",
+          "caption": "Own commissioning context includes a no-measurement statement that conflicts with mandatory39/annual42: this image does not authorise omission of those checks."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 39,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "f7845eeccfff6dc2fed4b0c0b05fd6c958388afa8fe30420fac81380aaecafc9",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-39.png",
+          "caption": "Whole own maximum AND actual-low commissioning chart; strict CO and ratio together, real modulation/gas-rate measurement and shutdown/advice outcomes."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 40,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "09b96bdf093d7ab8266dd0f846874499eae200edcdf0b90cecceeab0c893b65c",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-40.png",
+          "caption": "Own inlet-only working pressure and exact model gas rate; pressure all-other-appliances-ON versus rating other-appliances/pilots-OFF are separate."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 41,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "943a951b828f9499a96ba56a744ceca502117a7704f0ed81d3e04503602bc470",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-41.png",
+          "caption": "Original casing access/restoration and isolation context; no front-control electrical isolation or live fan/PCB access."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 42,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "0f9f68081619d0ba68b9cefacb8b1a3b2093d3ef57b9d69ae3e86449e72e3ea6",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-42.png",
+          "caption": "Own annual maximum-ratio context, strict less-than boundary, inhibitor and sealed-circuit prerequisites; not an inclusive automatic PASS."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 43,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "2c4c79c33a764720fc9a587345ef45ae7b0fbaefe372c16f29e9d5b9c7afc811",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-43.png",
+          "caption": "Original standard inspection/door lead positions and drain-plug trap service. Component replacement/first-chamber priming is a separate branch."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 44,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "cbda4b0002e5345476142cbb8fab7da91e2502531cf03d532139a06dda3d7d89",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-44.png",
+          "caption": "Only actual required cleaning branch: fan/injector/trap/burner/base/support/insulation sequence and reverse restoration; post-check ratio AND CO2, NO valve adjustment."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 45,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "e659e543fd2f2cb601bb8e7631d50bb3f5a6e044b307f8663f5f238a8bbe037a",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-45.png",
+          "caption": "Actual diagnosed component repair only: water draining/coloured O-ring and isolation/restoration context, not automatic annual draining/replacement."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 46,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "4d1c3f2292c6cb1471fb666c2861404703e6565dcaaf234e918fd6113986b864",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-46.png",
+          "caption": "Actual flow-switch/PCB repair and configuration retention; no copied jumpers or generic30-only uprating."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 47,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "d6d602707ec6972fee6cdedb57ba5acb557368ca33354f6bfe5db8582d9bb310",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-47.png",
+          "caption": "Actual electrode/fan replacement only; all-three-lead electrode route differs from inspection leads, original bracket/injector positions retained."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 48,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "f41e6c57e4756e8048c3cbb8fd64ab20ed56a66fc939da98312d8b0badc070a4",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-48.png",
+          "caption": "Actual gas-valve/trap replacement only; valve NO ADJUSTMENT and CO2/ratio reference mismatch held, trap FIRST CHAMBER prime with no invented volume."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 49,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "22bee8c5bf1df2afbc59e29d9ce9887db80f40da49687a03801cbdf26ede55f1",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-49.png",
+          "caption": "Actual burner/exchanger/insulation repair only; no automatic annual exchanger replacement or transferred handling sequence."
+        },
+        {
+          "documentId": "baxi-solo-hea-7204218-06",
+          "page": 50,
+          "sourceSHA256": "08dc7135a89631ca58f207cbb55d817bce59d7561fe95c789d77e0f92a8f1998",
+          "sha256": "142bfc35a8311292e57331b74589e375aef54d603c527e185adc34fae7ed9c60",
+          "asset": "manual-pages/baxi-solo-hea-7204218-06/page-50.png",
+          "caption": "Actual insulation repair only; preserve source component-access dependencies, no unprinted material fit or routine replacement."
+        }
+      ],
+      "currentRevisionOrInstalledSerialApplicabilityProved": false,
+      "newNumericRules": false,
+      "numericReferenceOnly": true
     }
   ],
   "liveServiceM8Connection": false,
@@ -14442,7 +15389,8 @@
     "Expands 5 exact-model annual guides from 95 to 115 tasks, with 224 total original source-page images. 5 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 5 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1720 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
     "Expands 4 exact-model annual guides from 60 to 76 tasks, with 233 total original source-page images. 4 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 4 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1721 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
     "Adds the separate original Heatmiser wired UH8, DS-SB and TM4-TS example for four underfloor heating zones and radiator zone8 set RAD, including both circuit halves and source notes saved offline. Existing S/Y/Hive references and all boiler guides remain unchanged. This manufacturer reference does not establish Hive substitution, additional pumps, motor-load or boiler-overrun compatibility.",
-    "Expands 6 exact-model annual guides from 108 to 150 tasks, with 249 total original source-page images. 6 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 6 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1719 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances."
+    "Expands 6 exact-model annual guides from 108 to 150 tasks, with 249 total original source-page images. 6 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 6 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1719 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances.",
+    "Expands 7 exact-model annual guides from 181 to 187 tasks, with 273 total original source-page images. 7 guides have independently admitted complete technical annual coverage; any partial guide retains its explicit finite source gap. 7 guides include declared source-transcribed numeric reference text; no new structured readings, automatic verdict, stored boiler settings or physical/certificate result. Other 1718 records and boiler fields remain exact. AI remembered-session behavior remains exact; only catalogue binding advances."
   ],
   "releaseStatus": "release"
 }
